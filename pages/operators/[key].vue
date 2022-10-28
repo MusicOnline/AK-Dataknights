@@ -1,6 +1,6 @@
 <script setup>
 const route = useRoute();
-const data = await import(`../../data/characters/${route.params.key}.json`);
+const data = await import(`../../data/operators/${route.params.key}.json`);
 </script>
 
 <template>
