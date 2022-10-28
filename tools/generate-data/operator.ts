@@ -248,7 +248,7 @@ export enum SubProfessionId {
   None2 = "none2",
 }
 
-export class Character {
+export class Operator {
   key: string;
   name: string;
   appellation: string;
