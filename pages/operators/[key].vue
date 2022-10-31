@@ -1,7 +1,6 @@
 <script setup>
 const route = useRoute();
-const { t, locale } = useI18n();
-const { locale: globalLocale } = useI18n({ useScope: "global" });
+const { t, locale } = useI18n({ useScope: "local" });
 const data = await import(`../../data/operators/${route.params.key}.json`);
 </script>
 
@@ -15,7 +14,7 @@ const data = await import(`../../data/operators/${route.params.key}.json`);
     <p>{{ t("welcome") }}</p>
     <p>{{ locale }}</p>
     <form>
-      <select v-model="globalLocale">
+      <select v-model="locale">
         <option value="en">en</option>
         <option value="zh-CN">zh-CN</option>
         <option value="zh-TW">zh-TW</option>
@@ -36,3 +35,9 @@ const data = await import(`../../data/operators/${route.params.key}.json`);
   }
 }
 </i18n>
+<i18n locale="en-US" src="../../locales/en-US/operators-data.json"></i18n>
+<i18n locale="en-TL" src="../../locales/en-TL/operators-data.json"></i18n>
+<i18n locale="zh-CN" src="../../locales/zh-CN/operators-data.json"></i18n>
+<i18n locale="ja-JP" src="../../locales/ja-JP/operators-data.json"></i18n>
+<i18n locale="ko-KR" src="../../locales/ko-KR/operators-data.json"></i18n>
+<i18n locale="zh-TW" src="../../locales/zh-TW/operators-data.json"></i18n>
