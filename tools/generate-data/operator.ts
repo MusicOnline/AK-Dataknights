@@ -1,3 +1,5 @@
+import { LocalizationString } from "./utils";
+
 export interface AllSkillLvlup {
   unlockCond: UnlockCond;
   lvlUpCost: Cost[] | null;
@@ -249,10 +251,18 @@ export enum SubProfessionId {
 }
 
 export class Operator {
+  static readonly LOCALIZATION_STRING_ATTRIBUTES = [
+    "name",
+    "appellation",
+    // "description",
+  ];
+
+  private _plainEnglishName: string;
+
   key: string;
-  name: string;
-  appellation: string;
-  description: string | null;
+  name: LocalizationString;
+  appellation: LocalizationString;
+  description: LocalizationString | null;
   canUseGeneralPotentialItem: boolean;
   potentialItemId: string;
   nationId: string | null;
@@ -281,23 +291,48 @@ export class Operator {
 
   constructor(key: string, data: any) {
     this.key = key;
-    this.name = data.name;
-    this.appellation = data.appellation;
-    this.description = data.description;
+    this.name = new LocalizationString(data.name);
+    this._plainEnglishName = data.appellation;
+    this.appellation = new LocalizationString(data.appellation);
+    this.description = LocalizationString.fromDataOrNull(data.description);
     this.rarity = data.rarity;
     this.profession = data.profession;
     this.subProfessionId = data.subProfessionId;
   }
 
+  addLocale(locale: string, data: any) {
+    Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) =>
+      this[attribute]?.addLocale(locale, data[attribute])
+    );
+
+    if (locale === "en-US") this._plainEnglishName = data.name;
+    if (locale === "en-TL" && data._plainEnglishName)
+      this._plainEnglishName = data._plainEnglishName;
+  }
+
   toData(): any {
     return {
       key: this.key,
-      name: this.name,
-      appellation: this.appellation,
-      description: this.description,
       rarity: this.rarity,
       profession: this.profession,
       subProfessionId: this.subProfessionId,
     };
+  }
+
+  toLocaleFileData(locale: string): { [x: string]: string | null } {
+    locale = locale.replace("-", "_");
+    const localeFileData = Operator.LOCALIZATION_STRING_ATTRIBUTES.reduce(
+      (accumulator, current) => {
+        accumulator[current] = this[current]?.[locale] ?? null;
+        return accumulator;
+      },
+      {}
+    );
+    if (locale === "en_TL")
+      return {
+        _plainEnglishName: this._plainEnglishName,
+        ...localeFileData,
+      };
+    return localeFileData;
   }
 }
