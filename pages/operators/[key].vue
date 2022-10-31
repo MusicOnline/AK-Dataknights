@@ -10,31 +10,20 @@ const data = await import(`../../data/operators/${route.params.key}.json`);
     <h1>Key: {{ route.params.key }}</h1>
     <div>{{ data.default }}</div>
     <p>Name: {{ t(`${route.params.key}.name`) }}</p>
-    <p>{{ t("hello") }}</p>
-    <p>{{ t("welcome") }}</p>
-    <p>{{ locale }}</p>
+    <p>Locale: {{ locale }}</p>
     <form>
       <select v-model="locale">
         <option value="en">en</option>
+        <option value="zh">zh</option>
         <option value="zh-CN">zh-CN</option>
-        <option value="zh-TW">zh-TW</option>
         <option value="ja">ja</option>
         <option value="ko">ko</option>
+        <option value="zh-TW">zh-TW</option>
       </select>
     </form>
   </div>
 </template>
 
-<i18n lang="json">
-{
-  "en": {
-    "hello": "Hello world!"
-  },
-  "ja": {
-    "hello": "こんにちは、世界！"
-  }
-}
-</i18n>
 <i18n locale="en-US" src="../../locales/en-US/operators-data.json"></i18n>
 <i18n locale="en-TL" src="../../locales/en-TL/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="../../locales/zh-CN/operators-data.json"></i18n>
