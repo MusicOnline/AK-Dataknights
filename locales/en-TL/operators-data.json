@@ -2,1951 +2,2389 @@
   "char_285_medic2": {
     "_plainEnglishName": "Lancet-2",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_286_cast3": {
     "_plainEnglishName": "Castle-3",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_376_therex": {
     "_plainEnglishName": "THRM-EX",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4000_jnight": {
     "_plainEnglishName": "'Justice Knight'",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_502_nblade": {
     "_plainEnglishName": "Yato",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_500_noirc": {
     "_plainEnglishName": "Noir Corne",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_503_rang": {
     "_plainEnglishName": "Rangers",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_501_durin": {
     "_plainEnglishName": "Durin",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_009_12fce": {
     "_plainEnglishName": "12F",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_123_fang": {
     "_plainEnglishName": "Fang",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_240_wyvern": {
     "_plainEnglishName": "Vanilla",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_504_rguard": {
     "_plainEnglishName": "Reserve Operator - Melee",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_192_falco": {
     "_plainEnglishName": "Plume",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_208_melan": {
     "_plainEnglishName": "Melantha",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_281_popka": {
     "_plainEnglishName": "Popukar",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_209_ardign": {
     "_plainEnglishName": "Cardigan",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_122_beagle": {
     "_plainEnglishName": "Beagle",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_514_rdfend": {
     "_plainEnglishName": "Reserve (Defender)",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_284_spot": {
     "_plainEnglishName": "Spot",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_124_kroos": {
     "_plainEnglishName": "Kroos",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_211_adnach": {
     "_plainEnglishName": "Adnachiel",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_507_rsnipe": {
     "_plainEnglishName": "Reserve Operator - Sniper",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_121_lava": {
     "_plainEnglishName": "Lava",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_120_hibisc": {
     "_plainEnglishName": "Hibiscus",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_212_ansel": {
     "_plainEnglishName": "Ansel",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_506_rmedic": {
     "_plainEnglishName": "Reserve Operator - Logistics",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_210_stward": {
     "_plainEnglishName": "Steward",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_505_rcast": {
     "_plainEnglishName": "Reserve Operator - Caster",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_278_orchid": {
     "_plainEnglishName": "Orchid",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_141_nights": {
     "_plainEnglishName": "Haze",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_109_fmout": {
     "_plainEnglishName": "Gitano",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_253_greyy": {
     "_plainEnglishName": "Greyy",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_328_cammou": {
     "_plainEnglishName": "Click",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_469_indigo": {
     "_plainEnglishName": "Indigo",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4004_pudd": {
     "_plainEnglishName": "Pudding",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_235_jesica": {
     "_plainEnglishName": "Jessica",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_126_shotst": {
     "_plainEnglishName": "Meteor",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_190_clour": {
     "_plainEnglishName": "Vermeil",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_133_mm": {
     "_plainEnglishName": "May",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_118_yuki": {
     "_plainEnglishName": "Shirayuki",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_440_pinecn": {
     "_plainEnglishName": "Pinecone",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_302_glaze": {
     "_plainEnglishName": "Ambriel",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_366_acdrop": {
     "_plainEnglishName": "Aciddrop",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4062_totter": {
     "_plainEnglishName": "Totter",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_198_blackd": {
     "_plainEnglishName": "Courier",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_149_scave": {
     "_plainEnglishName": "Scavenger",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_290_vigna": {
     "_plainEnglishName": "Vigna",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_151_myrtle": {
     "_plainEnglishName": "Myrtle",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_452_bstalk": {
     "_plainEnglishName": "Beanstalk",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_130_doberm": {
     "_plainEnglishName": "Dobermann",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_289_gyuki": {
     "_plainEnglishName": "Matoimaru",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_159_peacok": {
     "_plainEnglishName": "Conviction",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_193_frostl": {
     "_plainEnglishName": "Frostleaf",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_127_estell": {
     "_plainEnglishName": "Estelle",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_185_frncat": {
     "_plainEnglishName": "Mousse",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_301_cutter": {
     "_plainEnglishName": "Cutter",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_337_utage": {
     "_plainEnglishName": "Utage",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_271_spikes": {
     "_plainEnglishName": "Arene",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4067_lolxh": {
     "_plainEnglishName": "Luo Xiaohei",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
+  },
+  "char_4063_quartz": {
+    "_plainEnglishName": "Quartz",
+    "name": null,
+    "appellation": null,
+    "description": null
   },
   "char_237_gravel": {
     "_plainEnglishName": "Gravel",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_272_strong": {
     "_plainEnglishName": "Jaye",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_236_rope": {
     "_plainEnglishName": "Rope",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_117_myrrh": {
     "_plainEnglishName": "Myrrh",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_187_ccheal": {
     "_plainEnglishName": "Gavial",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_298_susuro": {
     "_plainEnglishName": "Sussurro",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_181_flower": {
     "_plainEnglishName": "Perfumer",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_385_finlpp": {
     "_plainEnglishName": "Purestream",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4041_chnut": {
     "_plainEnglishName": "Chestnut",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_199_yak": {
     "_plainEnglishName": "Matterhorn",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_150_snakek": {
     "_plainEnglishName": "Cuora",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_381_bubble": {
     "_plainEnglishName": "Bubble",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_196_sunbr": {
     "_plainEnglishName": "Gummy",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_260_durnar": {
     "_plainEnglishName": "Dur-nar",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_110_deepcl": {
     "_plainEnglishName": "Deepcolor",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_183_skgoat": {
     "_plainEnglishName": "Earthspirit",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_258_podego": {
     "_plainEnglishName": "Podenco",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_484_robrta": {
     "_plainEnglishName": "Roberta",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_355_ethan": {
     "_plainEnglishName": "Ethan",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_277_sqrrel": {
     "_plainEnglishName": "Shaw",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_128_plosis": {
     "_plainEnglishName": "Ptilopsis",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_275_breeze": {
     "_plainEnglishName": "Breeze",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_115_headbr": {
     "_plainEnglishName": "Zima",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_102_texas": {
     "_plainEnglishName": "Texas",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_349_chiave": {
     "_plainEnglishName": "Chiave",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_513_apionr": {
     "_plainEnglishName": "Tulip",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_261_sddrag": {
     "_plainEnglishName": "Reed",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_496_wildmn": {
     "_plainEnglishName": "Wild Mane",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_401_elysm": {
     "_plainEnglishName": "Elysium",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_476_blkngt": {
     "_plainEnglishName": "Blacknight",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_497_ctable": {
     "_plainEnglishName": "Cantabile",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_308_swire": {
     "_plainEnglishName": "Swire",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_265_sophia": {
     "_plainEnglishName": "Whislash",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_106_franka": {
     "_plainEnglishName": "Franka",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_131_flameb": {
     "_plainEnglishName": "Flamebringer",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_508_aguard": {
     "_plainEnglishName": "Sharp",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_155_tiger": {
     "_plainEnglishName": "Indra",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_415_flint": {
     "_plainEnglishName": "Flint",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_157_dagda": {
     "_plainEnglishName": "Dagda",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_140_whitew": {
     "_plainEnglishName": "Lappland",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_294_ayer": {
     "_plainEnglishName": "Ayerscarpe",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_252_bibeak": {
     "_plainEnglishName": "Bibeak",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_459_tachak": {
     "_plainEnglishName": "Tachanka",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_143_ghost": {
     "_plainEnglishName": "Specter",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_356_broca": {
     "_plainEnglishName": "Broca",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_274_astesi": {
     "_plainEnglishName": "Astesia",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_333_sidero": {
     "_plainEnglishName": "Sideroca",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_475_akafyu": {
     "_plainEnglishName": "Akafuyu",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_421_crow": {
     "_plainEnglishName": "La Pluma",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4066_highmo": {
     "_plainEnglishName": "Highmore",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_486_takila": {
     "_plainEnglishName": "Tequila",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_129_bluep": {
     "_plainEnglishName": "Blue Poison",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_204_platnm": {
     "_plainEnglishName": "Platinum",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_367_swllow": {
     "_plainEnglishName": "GreyThroat",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_511_asnipe": {
     "_plainEnglishName": "Stormeye",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_365_aprl": {
     "_plainEnglishName": "April",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_1021_kroos2": {
     "_plainEnglishName": "Kroos the Keen Glint",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_219_meteo": {
     "_plainEnglishName": "Meteorite",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_379_sesa": {
     "_plainEnglishName": "Sesa",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_279_excu": {
     "_plainEnglishName": "Executor",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_346_aosta": {
     "_plainEnglishName": "Aosta",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_002_amiya": {
     "_plainEnglishName": "Amiya",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_405_absin": {
     "_plainEnglishName": "Absinthe",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_411_tomimi": {
     "_plainEnglishName": "Tomimi",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
+  },
+  "char_466_qanik": {
+    "_plainEnglishName": "Qanipalaat",
+    "name": null,
+    "appellation": null,
+    "description": null
   },
   "char_166_skfire": {
     "_plainEnglishName": "Skyfire",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_509_acast": {
     "_plainEnglishName": "Pith",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_306_leizi": {
     "_plainEnglishName": "Leizi",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_135_halo": {
     "_plainEnglishName": "Astgenne",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_344_beewax": {
     "_plainEnglishName": "Beeswax",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_373_lionhd": {
     "_plainEnglishName": "Leonhardt",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_388_mint": {
     "_plainEnglishName": "Mint",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_338_iris": {
     "_plainEnglishName": "Iris",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_1011_lava2": {
     "_plainEnglishName": "Lava the Purgatory",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_489_serum": {
     "_plainEnglishName": "Corroserum",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4013_kjera": {
     "_plainEnglishName": "Kjera",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4040_rockr": {
     "_plainEnglishName": "Rockrock",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4054_malist": {
     "_plainEnglishName": "Minimalist",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_242_otter": {
     "_plainEnglishName": "Mayer",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_336_folivo": {
     "_plainEnglishName": "Scene",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_108_silent": {
     "_plainEnglishName": "Silence",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_171_bldsk": {
     "_plainEnglishName": "Warfarin",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_345_folnic": {
     "_plainEnglishName": "Folinic",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_510_amedic": {
     "_plainEnglishName": "Touch",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_348_ceylon": {
     "_plainEnglishName": "Ceylon",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_436_whispr": {
     "_plainEnglishName": "Whisperain",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_402_tuye": {
     "_plainEnglishName": "Tuye",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_473_mberry": {
     "_plainEnglishName": "Mulberry",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_449_glider": {
     "_plainEnglishName": "Honeyberry",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_1024_hbisc2": {
     "_plainEnglishName": "Hibiscus the Purifier",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4071_peper": {
     "_plainEnglishName": "Paprika",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_148_nearl": {
     "_plainEnglishName": "Nearl",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_226_hmau": {
     "_plainEnglishName": "Hung",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_144_red": {
     "_plainEnglishName": "Projekt Red",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_243_waaifu": {
     "_plainEnglishName": "Waai Fu",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_214_kafka": {
     "_plainEnglishName": "Kafka",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_455_nothin": {
     "_plainEnglishName": "Mr. Nothing",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_107_liskam": {
     "_plainEnglishName": "Liskarm",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_201_moeshd": {
     "_plainEnglishName": "Croissant",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_325_bison": {
     "_plainEnglishName": "Bison",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_163_hpsts": {
     "_plainEnglishName": "Vulcan",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_378_asbest": {
     "_plainEnglishName": "Asbestos",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_512_aprot": {
     "_plainEnglishName": "Shalem",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4025_aprot2": {
     "_plainEnglishName": "Shalem",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4047_pianst": {
     "_plainEnglishName": "Czerny",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_457_blitz": {
     "_plainEnglishName": "Blitz",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_304_zebra": {
     "_plainEnglishName": "Heavyrain",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_431_ashlok": {
     "_plainEnglishName": "Ashlock",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_422_aurora": {
     "_plainEnglishName": "Aurora",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_145_prove": {
     "_plainEnglishName": "Provence",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_158_milu": {
     "_plainEnglishName": "Firewatch",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_218_cuttle": {
     "_plainEnglishName": "Andreana",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
+  },
+  "char_4014_lunacu": {
+    "_plainEnglishName": "Lunacub",
+    "name": null,
+    "appellation": null,
+    "description": null
   },
   "char_363_toddi": {
     "_plainEnglishName": "Toddifons",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4043_erato": {
     "_plainEnglishName": "Erato",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_1027_greyy2": {
     "_plainEnglishName": "Greyy the Lightningbearer",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_173_slchan": {
     "_plainEnglishName": "Cliffheart",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_383_snsant": {
     "_plainEnglishName": "Snowsant",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_174_slbell": {
     "_plainEnglishName": "Pramanix",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_254_vodfox": {
     "_plainEnglishName": "Shamare",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_195_glassb": {
     "_plainEnglishName": "Istina",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_326_glacus": {
     "_plainEnglishName": "Glaucus",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4032_provs": {
     "_plainEnglishName": "Proviso",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_433_windft": {
     "_plainEnglishName": "Windflit",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_101_sora": {
     "_plainEnglishName": "Sora",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4045_heidi": {
     "_plainEnglishName": "Heidi",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_343_tknogi": {
     "_plainEnglishName": "Tsukinogi",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4019_ncdeer": {
     "_plainEnglishName": "Nine-Colored Deer",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_492_quercu": {
     "_plainEnglishName": "Quercus",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_215_mantic": {
     "_plainEnglishName": "Manticore",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_478_kirara": {
     "_plainEnglishName": "Kirara",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_241_panda": {
     "_plainEnglishName": "FEater",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4036_forcer": {
     "_plainEnglishName": "Enforcer",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_451_robin": {
     "_plainEnglishName": "Robin",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_458_rfrost": {
     "_plainEnglishName": "Frost",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_369_bena": {
     "_plainEnglishName": "Bena",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4016_kazema": {
     "_plainEnglishName": "Kazemaru",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_103_angel": {
     "_plainEnglishName": "Exusiai",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_332_archet": {
     "_plainEnglishName": "Archetto",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_456_ash": {
     "_plainEnglishName": "Ash",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_340_shwaz": {
     "_plainEnglishName": "Schwarz",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4055_bgsnow": {
-    "_plainEnglishName": "Pozyomka",
+    "_plainEnglishName": "Позёмка",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_430_fartth": {
     "_plainEnglishName": "Fartooth",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_113_cqbw": {
     "_plainEnglishName": "W",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_300_phenxi": {
     "_plainEnglishName": "Fiammetta",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_197_poca": {
     "_plainEnglishName": "Rosa",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_391_rosmon": {
     "_plainEnglishName": "Rosmontis",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_1013_chen2": {
     "_plainEnglishName": "Ch'en the Holungday",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_112_siege": {
     "_plainEnglishName": "Siege",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_222_bpipe": {
     "_plainEnglishName": "Bagpipe",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_362_saga": {
     "_plainEnglishName": "Saga",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_479_sleach": {
     "_plainEnglishName": "Saileach",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_420_flamtl": {
     "_plainEnglishName": "Flametail",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
+  },
+  "char_427_vigil": {
+    "_plainEnglishName": "Vigil",
+    "name": null,
+    "appellation": null,
+    "description": null
   },
   "char_134_ifrit": {
     "_plainEnglishName": "Ifrit",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_213_mostma": {
     "_plainEnglishName": "Mostima",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_180_amgoat": {
     "_plainEnglishName": "Eyjafjalla",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_2013_cerber": {
     "_plainEnglishName": "Ceobe",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_2015_dusk": {
     "_plainEnglishName": "Dusk",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_472_pasngr": {
     "_plainEnglishName": "Passenger",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_426_billro": {
     "_plainEnglishName": "Carnelian",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_377_gdglow": {
     "_plainEnglishName": "Goldenglow",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4046_ebnhlz": {
     "_plainEnglishName": "Ebenholz",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_206_gnosis": {
     "_plainEnglishName": "Gnosis",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_291_aglina": {
     "_plainEnglishName": "Angelina",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_358_lisa": {
     "_plainEnglishName": "Suzuran",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_248_mgllan": {
     "_plainEnglishName": "Magallan",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_1012_skadi2": {
     "_plainEnglishName": "Skadi the Corrupting Heart",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_2023_ling": {
     "_plainEnglishName": "Ling",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4072_ironmn": {
     "_plainEnglishName": "Stainless",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_250_phatom": {
     "_plainEnglishName": "Phantom",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
+  },
+  "char_1028_texas2": {
+    "_plainEnglishName": "Texas the Omertosa",
+    "name": null,
+    "appellation": null,
+    "description": null
   },
   "char_322_lmlee": {
     "_plainEnglishName": "Lee",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_400_weedy": {
     "_plainEnglishName": "Weedy",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_225_haak": {
     "_plainEnglishName": "Aak",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_474_glady": {
     "_plainEnglishName": "Gladiia",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_437_mizuki": {
     "_plainEnglishName": "Mizuki",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_1023_ghost2": {
     "_plainEnglishName": "Specter the Unchained",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4048_doroth": {
     "_plainEnglishName": "Dorothy",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_147_shining": {
     "_plainEnglishName": "Shining",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_179_cgbird": {
     "_plainEnglishName": "Nightingale",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_003_kalts": {
     "_plainEnglishName": "Kal'tsit",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4042_lumen": {
     "_plainEnglishName": "Lumen",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_136_hsguma": {
     "_plainEnglishName": "Hoshiguma",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_202_demkni": {
     "_plainEnglishName": "Saria",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_423_blemsh": {
     "_plainEnglishName": "Blemishine",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_2014_nian": {
     "_plainEnglishName": "Nian",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_311_mudrok": {
     "_plainEnglishName": "Mudrock",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
+  },
+  "char_4065_judge": {
+    "_plainEnglishName": "Penance",
+    "name": null,
+    "appellation": null,
+    "description": null
   },
   "char_416_zumama": {
     "_plainEnglishName": "Eunectes",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4039_horn": {
     "_plainEnglishName": "Horn",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_264_f12yin": {
     "_plainEnglishName": "Mountain",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_172_svrash": {
     "_plainEnglishName": "SilverAsh",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_293_thorns": {
     "_plainEnglishName": "Thorns",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_010_chen": {
     "_plainEnglishName": "Ch'en",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4009_irene": {
     "_plainEnglishName": "Irene",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_017_huang": {
     "_plainEnglishName": "Blaze",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_1026_gvial2": {
     "_plainEnglishName": "Gavial the Invincible",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_350_surtr": {
     "_plainEnglishName": "Surtr",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_188_helage": {
     "_plainEnglishName": "Hellagur",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_485_pallas": {
     "_plainEnglishName": "Pallas",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_1014_nearl2": {
     "_plainEnglishName": "Nearl the Radiant Knight",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_4064_mlynar": {
-    "_plainEnglishName": "Mlynar",
+    "_plainEnglishName": "Młynar",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10000_silent_healrb": {
     "_plainEnglishName": "Medic Drone",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10001_deepcl_tentac": {
     "_plainEnglishName": "Tentacle",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10002_kalts_mon3tr": {
     "_plainEnglishName": "Mon3tr",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10003_cgbird_bird": {
     "_plainEnglishName": "Mirage",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10004_otter_motter": {
     "_plainEnglishName": "Robotter",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10005_mgllan_drone1": {
     "_plainEnglishName": "Soaring Dragon F",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10005_mgllan_drone2": {
     "_plainEnglishName": "Soaring Dragon L",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10005_mgllan_drone3": {
     "_plainEnglishName": "Soaring Dragon A",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10006_vodfox_doll": {
     "_plainEnglishName": "Cursed Doll",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10007_phatom_twin": {
     "_plainEnglishName": "Phantom in the Mirror",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10008_cqbw_box": {
     "_plainEnglishName": "Front Toward Enemy",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10009_weedy_cannon": {
     "_plainEnglishName": "Industrial Water Cannon",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10010_folivo_car": {
     "_plainEnglishName": "Mobile Buggy Cam",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10011_beewax_oblisk": {
     "_plainEnglishName": "Sand Obelisk",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10012_rosmon_shield": {
     "_plainEnglishName": "Rosmontis's Tactical Equipment",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10013_robin_mine": {
     "_plainEnglishName": "'Clip'",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10014_bstalk_crab": {
     "_plainEnglishName": "Metal Crab Guard Team",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10015_dusk_drgn": {
     "_plainEnglishName": "'Freeling'",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10016_rfrost_mine": {
     "_plainEnglishName": "Welcome Mat",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10017_skadi2_dedant": {
     "_plainEnglishName": "Skadi's Seaborn",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10018_robrta_mach": {
     "_plainEnglishName": "Full Auto Modeler",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10019_nearl2_sword": {
     "_plainEnglishName": "'Blazing Sun'",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10020_ling_soul1": {
     "_plainEnglishName": "'Tranquility'",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10020_ling_soul2": {
     "_plainEnglishName": "'Peripateticism'",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10020_ling_soul3": {
     "_plainEnglishName": "'Thunderer'",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10021_blkngt_hypnos": {
     "_plainEnglishName": "Slumberfoot",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10022_kazema_shadow": {
     "_plainEnglishName": "Kaminingyo",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10023_windft_wrench": {
     "_plainEnglishName": "Reliable Battery",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10024_ebnhlz_rcube": {
     "_plainEnglishName": "Old Day Remnants",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10025_doroth_recttp": {
     "_plainEnglishName": "Resonator",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10026_bgsnow_subbow": {
     "_plainEnglishName": "Typewriters",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10027_ironmn_pile1": {
     "_plainEnglishName": "Stainless™ Multifunctional platform",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10027_ironmn_pile2": {
     "_plainEnglishName": "Stainless™ Multifunctional platform",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "token_10027_ironmn_pile3": {
     "_plainEnglishName": "Prototype of Feist's Metal Crab",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
+  },
+  "token_10028_vigil_wolf": {
+    "_plainEnglishName": "Vigil",
+    "name": null,
+    "appellation": null,
+    "description": null
   },
   "trap_001_crate": {
     "_plainEnglishName": "Roadblock",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_002_emp": {
     "_plainEnglishName": "Stun Generator",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_003_gate": {
     "_plainEnglishName": "Gate",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_005_sensor": {
     "_plainEnglishName": "Detector",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_006_antidr": {
     "_plainEnglishName": "Jammer",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_007_ballis": {
     "_plainEnglishName": "Turret",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_008_farm": {
     "_plainEnglishName": "Command Terminal",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_009_battery": {
     "_plainEnglishName": "Portable Supply Station",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_010_frosts": {
     "_plainEnglishName": "Originium Ice Crystal",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_011_ore": {
     "_plainEnglishName": "Originium Altar",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_012_mine": {
     "_plainEnglishName": "Interference Mine",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_013_blower": {
     "_plainEnglishName": "Originium Flow Generator",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_014_tower": {
     "_plainEnglishName": "L-44 'Gramophone'",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_015_tree": {
     "_plainEnglishName": "Giant Mushroom",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_016_peon": {
     "_plainEnglishName": "Temporary Rhodes Island Employee",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_018_bomb": {
     "_plainEnglishName": "Mr. Boom",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_019_electric": {
     "_plainEnglishName": "Mieszko Coil",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_020_roadblock": {
     "_plainEnglishName": "Static Roadblock",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_021_flame": {
     "_plainEnglishName": "Energy Aggregate",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_022_frosts_friend": {
     "_plainEnglishName": "FrostNova's Originium Ice Crystal",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_023_ore_friend": {
     "_plainEnglishName": "Patriot's Originium Altar",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_024_npcsld": {
     "_plainEnglishName": "Shieldguard",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_025_prison": {
     "_plainEnglishName": "Imprisonment Device",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_026_inverter": {
     "_plainEnglishName": "Two-Step Firecracker mk2",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_027_stone": {
     "_plainEnglishName": "Rubble",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_028_cannon": {
     "_plainEnglishName": "Pulse Defense Module",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_029_poison": {
     "_plainEnglishName": "Teargas Control Valve",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_030_factory": {
     "_plainEnglishName": "Drone Factory",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_031_sleep": {
     "_plainEnglishName": "Snowsant's Safe Escape Crane",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_032_mound": {
     "_plainEnglishName": "Dirt Mound",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_033_sbomb": {
     "_plainEnglishName": "High-Energy Originium Bomb",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_034_machst": {
     "_plainEnglishName": "Reinforcement Device",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_035_emperor": {
     "_plainEnglishName": "Emperor",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_036_storm": {
     "_plainEnglishName": "Sandstorm",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_037_airsup": {
     "_plainEnglishName": "Mobile Tactical Hangar",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_038_dsbell": {
     "_plainEnglishName": "Emergency Aid Building",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_039_dstnta": {
     "_plainEnglishName": "Offspring",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_040_canoe": {
     "_plainEnglishName": "Custom Floating Platform",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_041_fcanon": {
     "_plainEnglishName": "Kite",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_042_tidectrl": {
     "_plainEnglishName": "Tide Controller",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_043_dupilr": {
     "_plainEnglishName": "Tattered Pillar",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_044_duruin": {
     "_plainEnglishName": "Battlefield Ruins",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_045_dublst": {
     "_plainEnglishName": "Demolition Device",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_046_oxygen": {
     "_plainEnglishName": "Erosion-Resistant Coating Application Device",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_048_neonlamp": {
     "_plainEnglishName": "City Neon",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_049_candle": {
     "_plainEnglishName": "Knight Crest",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_050_blizzard": {
     "_plainEnglishName": "Blizzard",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_051_vultres": {
     "_plainEnglishName": "Unowned Treasure",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_052_slowfd": {
     "_plainEnglishName": "Broken Fog Machine",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_053_airbomb": {
     "_plainEnglishName": "Gas Tank P.",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_054_dancdol": {
     "_plainEnglishName": "'Host's Assistant'",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_055_tileblock": {
     "_plainEnglishName": "Sealed Floor",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_056_sfsuifire": {
     "_plainEnglishName": "Dantian",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_057_wpnsts": {
     "_plainEnglishName": "'Gelato Stop'",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_058_gunctrl": {
     "_plainEnglishName": "Londinium Secondary Defense Artillery",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_059_peacokfool": {
     "_plainEnglishName": "Conviction",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_060_bouncy": {
     "_plainEnglishName": "Hand of Saint",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_061_creep": {
     "_plainEnglishName": "Sealed Floor",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_062_magicstart": {
     "_plainEnglishName": "\"Tuba\"",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_063_magicturn": {
     "_plainEnglishName": "L-7 \"Whisperer\"",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_064_magiccircle": {
     "_plainEnglishName": "\"Resonator\"",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_069_buffcard": {
     "_plainEnglishName": "Equipment Activation Valve",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_070_supplycard": {
     "_plainEnglishName": "Preparation Area Transmitter",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_071_recyclecard": {
     "_plainEnglishName": "Emergency Recall Box",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_072_revivecard": {
     "_plainEnglishName": "Recuperation Area Transmitter",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_073_btauntcard": {
     "_plainEnglishName": "Contaminated Mineral",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_074_bbombcard": {
     "_plainEnglishName": "Heat Cluster",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_082_salecard": {
     "_plainEnglishName": "Reassignment Transmitter",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_075_bgarmn": {
     "_plainEnglishName": "R-31 powered heavy armor",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_076_bgarms": {
     "_plainEnglishName": "R-31a powered heavy armor",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_077_rmtarmn": {
     "_plainEnglishName": "R-11 power armor",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_078_rmtarms": {
     "_plainEnglishName": "R-11a power armor",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_080_garage": {
     "_plainEnglishName": "Starting Point",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_081_turngear": {
     "_plainEnglishName": "One-way Traffic",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_085_paras": {
     "_plainEnglishName": "Fluorescent Spores",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_090_recodr": {
     "_plainEnglishName": "Entitative Program",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_091_brctrl": {
     "_plainEnglishName": "Brctrl",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_230_savage": {
     "_plainEnglishName": "Savage",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_282_catap": {
     "_plainEnglishName": "Catapult",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_283_midn": {
     "_plainEnglishName": "Midnight",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_137_brownb": {
     "_plainEnglishName": "Beehunter",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_347_jaksel": {
     "_plainEnglishName": "Jackie",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_164_nightm": {
     "_plainEnglishName": "Nightmare",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_220_grani": {
     "_plainEnglishName": "Grani",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "char_263_skadi": {
     "_plainEnglishName": "Skadi",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_065_normbox": {
     "_plainEnglishName": "Treasure Chest",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_066_rarebox": {
     "_plainEnglishName": "Spike Treasure Chest",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_068_badbox": {
     "_plainEnglishName": "Chest Seaborn",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_083_bunker": {
     "_plainEnglishName": "Barrier",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_084_aidkit": {
     "_plainEnglishName": "First-aid Kit",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_079_allydonq": {
     "_plainEnglishName": "The Tide-hunt Knight",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_067_dice": {
     "_plainEnglishName": "Dice",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_088_dice2": {
     "_plainEnglishName": "Eight-sided Dice",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_089_dice3": {
     "_plainEnglishName": "Twelve-sided Dice",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_093_tbattbc": {
     "_plainEnglishName": "Gloompincer Shell Meal",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_094_tbpsnc": {
     "_plainEnglishName": "Efficient Baking Powder",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_095_tbsmmc": {
     "_plainEnglishName": "Fragrant Essential Oil",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_086_larva": {
     "_plainEnglishName": "\"Twigs that crave\"",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
   },
   "trap_087_allady": {
     "_plainEnglishName": "Allerdale bewards",
     "name": null,
-    "appellation": null
+    "appellation": null,
+    "description": null
+  },
+  "trap_092_vgctrl": {
+    "_plainEnglishName": "Vendetta",
+    "name": null,
+    "appellation": null,
+    "description": null
   }
 }

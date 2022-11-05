@@ -17,6 +17,14 @@ export class LocalizationString {
 
   addLocale(locale: string, translation: string | null) {
     locale = locale.replace("-", "_");
+    // @ts-ignore
     this[locale] = translation;
   }
+}
+
+export function normalizeForLocaleFile(original: string | null): string | null {
+  if (original === null) return null;
+  return original
+    .replaceAll(/\{(.*?)\}/g, "{'{'}$1{'}'}")
+    .replaceAll("@", "{'@'}");
 }

@@ -1,4 +1,22 @@
-import { LocalizationString } from "./utils";
+import { LocalizationString, normalizeForLocaleFile } from "./utils";
+
+const CHINESE_TO_ENGLISH_TAGS = {
+  新手: "STARTER",
+  位移: "SHIFT",
+  减速: "SLOW",
+  削弱: "DEBUFF",
+  召唤: "SUMMON",
+  快速复活: "FAST_REDEPLOY",
+  控场: "CROWD_CONTROL",
+  支援: "SUPPORT",
+  治疗: "HEALING",
+  爆发: "NUKE",
+  生存: "SURVIVAL",
+  群攻: "AOE",
+  费用回复: "DP_RECOVERY",
+  输出: "DPS",
+  防护: "DEFENSE",
+} as const;
 
 export interface AllSkillLvlup {
   unlockCond: UnlockCond;
@@ -120,23 +138,6 @@ export interface LevelUpCostCond {
   levelUpCost: Cost[] | null;
 }
 
-export enum TagList {
-  Shift = "位移",
-  Slow = "减速",
-  Debuff = "削弱",
-  Summon = "召唤",
-  FastRedeploy = "快速复活",
-  CrowdControl = "控场",
-  Support = "支援",
-  Healing = "治疗",
-  Nuke = "爆发",
-  Survival = "生存",
-  AoE = "群攻",
-  DpRecovery = "费用回复",
-  Dps = "输出",
-  Defense = "防护",
-}
-
 export interface Talent {
   candidates: TalentCandidate[] | null;
 }
@@ -254,7 +255,7 @@ export class Operator {
   static readonly LOCALIZATION_STRING_ATTRIBUTES = [
     "name",
     "appellation",
-    // "description",
+    "description",
   ];
 
   private _plainEnglishName: string;
@@ -269,13 +270,13 @@ export class Operator {
   groupId: string | null;
   teamId: string | null;
   displayNumber: string | null;
-  tokenKey: null;
+  tokenKey: string | null; // Token summon character key
   position: Position;
-  tagList: TagList[] | null;
+  tagList: string[] | null;
   itemUsage: string | null;
   itemDesc: string | null;
   itemObtainApproach: string | null;
-  isNotObtainable: boolean;
+  isNotObtainable: boolean; // true if Integrated Strategies operators
   isSpChar: boolean;
   maxPotentialLevel: number;
   rarity: number;
@@ -291,6 +292,7 @@ export class Operator {
 
   constructor(key: string, data: any) {
     this.key = key;
+    this.displayNumber = data.displayNumber;
     this.name = new LocalizationString(data.name);
     this._plainEnglishName = data.appellation;
     this.appellation = new LocalizationString(data.appellation);
@@ -298,10 +300,20 @@ export class Operator {
     this.rarity = data.rarity;
     this.profession = data.profession;
     this.subProfessionId = data.subProfessionId;
+    this.position = data.position;
+    this.tagList = data.tagList;
+    this.nationId = data.nationId;
+    this.groupId = data.groupId;
+    this.teamId = data.teamId;
+    this.canUseGeneralPotentialItem = data.canUseGeneralPotentialItem;
+    this.potentialItemId = data.potentialItemId;
+    this.tokenKey = data.tokenKey;
+    this.isNotObtainable = data.isNotObtainable;
   }
 
   addLocale(locale: string, data: any) {
     Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) =>
+      // @ts-ignore
       this[attribute]?.addLocale(locale, data[attribute])
     );
 
@@ -313,17 +325,45 @@ export class Operator {
   toData(): any {
     return {
       key: this.key,
+      displayNumber: this.displayNumber,
       rarity: this.rarity,
       profession: this.profession,
       subProfessionId: this.subProfessionId,
+      position: this.position,
+      tagList: this.normalizedTagList,
+      nationId: this.nationId,
+      groupId: this.groupId,
+      teamId: this.teamId,
+      canUseGeneralPotentialItem: this.canUseGeneralPotentialItem,
+      potentialItem: this.potentialItem,
+      tokenSummon: this.tokenSummon,
+      isNotObtainable: this.isNotObtainable,
+    };
+  }
+
+  toIndexData(): any {
+    return {
+      key: this.key,
+      displayNumber: this.displayNumber,
+      rarity: this.rarity,
+      profession: this.profession,
+      subProfessionId: this.subProfessionId,
+      position: this.position,
+      tagList: this.normalizedTagList,
+      nationId: this.nationId,
+      groupId: this.groupId,
+      teamId: this.teamId,
+      isNotObtainable: this.isNotObtainable,
     };
   }
 
   toLocaleFileData(locale: string): { [x: string]: string | null } {
     locale = locale.replace("-", "_");
     const localeFileData = Operator.LOCALIZATION_STRING_ATTRIBUTES.reduce(
-      (accumulator, current) => {
-        accumulator[current] = this[current]?.[locale] ?? null;
+      (accumulator: any, current) => {
+        // @ts-ignore
+        const localizedString = this[current]?.[locale] ?? null;
+        accumulator[current] = normalizeForLocaleFile(localizedString);
         return accumulator;
       },
       {}
@@ -334,5 +374,24 @@ export class Operator {
         ...localeFileData,
       };
     return localeFileData;
+  }
+
+  get potentialItem() {
+    // TODO
+    this.potentialItemId;
+    return null;
+  }
+
+  get tokenSummon() {
+    // TODO
+    this.tokenKey;
+    return null;
+  }
+
+  get normalizedTagList(): string[] {
+    return (this.tagList ?? []).map(
+      // @ts-ignore
+      (chineseTag) => CHINESE_TO_ENGLISH_TAGS[chineseTag]
+    );
   }
 }

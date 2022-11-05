@@ -1,15 +1,19 @@
 <script setup>
-const route = useRoute();
+const {
+  params: { key: operatorKey },
+} = useRoute();
 const { t, locale } = useI18n({ useScope: "local" });
-const data = await import(`../../data/operators/${route.params.key}.json`);
+const data = await import(`../../data/operators/${operatorKey}.json`);
 </script>
 
 <template>
   <div>
     <h1>Operator specific page</h1>
-    <h1>Key: {{ route.params.key }}</h1>
+    <h1>Key: {{ operatorKey }}</h1>
+    <p>Name: {{ t(`${operatorKey}.name`) }}</p>
+    <p>Appellation: {{ t(`${operatorKey}.appellation`) }}</p>
+    <p>Description: {{ t(`${operatorKey}.description`) }}</p>
     <div>{{ data.default }}</div>
-    <p>Name: {{ t(`${route.params.key}.name`) }}</p>
     <p>Locale: {{ locale }}</p>
     <form>
       <select v-model="locale">
