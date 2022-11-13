@@ -1,3 +1,4 @@
+import * as constants from "./constants";
 import { LocalizationString, normalizeForLocaleFile } from "./utils";
 
 const CHINESE_TO_ENGLISH_TAGS = {
@@ -392,6 +393,13 @@ export class Operator {
     return (this.tagList ?? []).map(
       // @ts-ignore
       (chineseTag) => CHINESE_TO_ENGLISH_TAGS[chineseTag]
+    );
+  }
+
+  get isActualOperator() {
+    return (
+      ![Profession.Trap, Profession.Token].includes(this.profession) &&
+      !constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(this.key)
     );
   }
 }

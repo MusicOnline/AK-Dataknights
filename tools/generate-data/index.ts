@@ -44,7 +44,10 @@ async function generateOperatorFiles() {
     return operator;
   });
 
-  const indexFileObject = operators.map((operator) => operator.toIndexData());
+  const indexFileObject = operators.flatMap((operator) => {
+    if (!operator.isActualOperator) return [];
+    return operator.toIndexData();
+  });
   await fs.mkdir("data/operators", { recursive: true });
 
   return Promise.all([

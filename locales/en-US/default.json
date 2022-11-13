@@ -1,0 +1,24 @@
+{
+  "locales": {
+    "en": {
+      "inCurrentLanguage": "English",
+      "inNativeLanguage": "English"
+    },
+    "ja": {
+      "inCurrentLanguage": "Japanese",
+      "inNativeLanguage": "日本語"
+    },
+    "ko": {
+      "inCurrentLanguage": "Korean",
+      "inNativeLanguage": "한국어"
+    },
+    "zh-CN": {
+      "inCurrentLanguage": "Simplified Chinese",
+      "inNativeLanguage": "简体中文"
+    },
+    "zh-TW": {
+      "inCurrentLanguage": "Traditional Chinese",
+      "inNativeLanguage": "繁體中文"
+    }
+  }
+}

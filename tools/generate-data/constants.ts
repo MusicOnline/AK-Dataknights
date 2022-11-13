@@ -12,3 +12,5 @@ export const LOCALES = [
 export const OPERATOR_TABLE_RELATIVE_PATH =
   "gamedata/excel/character_table.json";
 export const MODULE_TABLE_RELATIVE_PATH = "gamedata/excel/uniequip_table.json";
+
+export const FALSE_POSITIVE_ACTUAL_OPERATORS = ["char_512_aprot"];
