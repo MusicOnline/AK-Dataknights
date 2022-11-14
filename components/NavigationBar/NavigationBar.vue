@@ -34,6 +34,7 @@ const { t } = useI18n();
             </button>
           </li>
         </ul>
+        <LocaleSelect />
       </nav>
     </header>
     <BottomNavigationBar class="md:hidden" />
