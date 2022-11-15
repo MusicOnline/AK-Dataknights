@@ -5,7 +5,7 @@ const { t } = useI18n();
 
 <template>
   <nav
-    class="fixed bottom-0 left-0 flex h-16 w-full rounded-t-2xl bg-gray-50 px-4 shadow-[0_-1px_12px_rgb(0_0_0_/_15%)] dark:bg-gray-900"
+    class="fixed bottom-0 left-0 flex h-16 w-full bg-gray-50 px-4 shadow-[0_-1px_3px_rgb(0_0_0_/_10%)] dark:bg-gray-900"
   >
     <ul class="flex w-full items-center text-gray-800">
       <li class="nav-item">

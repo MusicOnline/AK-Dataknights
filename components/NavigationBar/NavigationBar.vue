@@ -6,12 +6,12 @@ const { t } = useI18n();
 <template>
   <div>
     <header
-      class="fixed top-0 left-0 h-12 w-full border-b border-gray-900 bg-gray-50 p-2 shadow dark:bg-gray-900"
+      class="fixed top-0 left-0 z-10 grid h-12 w-full bg-gray-50 p-2 shadow dark:bg-gray-900"
     >
       <nav class="flex items-center gap-4">
-        <NuxtLink :to="localePath('/operators')" class="block w-fit">
+        <NuxtLink :to="localePath('/operators')" class="block">
           <SiteBrand
-            class="text-3xl text-gray-800 transition-colors hover:text-gray-900"
+            class="text-2xl text-gray-800 transition-colors hover:text-gray-900 md:text-3xl"
           />
         </NuxtLink>
         <ul class="hidden w-full items-center gap-2 text-gray-600 md:flex">
@@ -34,7 +34,7 @@ const { t } = useI18n();
             </button>
           </li>
         </ul>
-        <LocaleSelect />
+        <LocaleSelect class="ml-auto" />
       </nav>
     </header>
     <BottomNavigationBar class="md:hidden" />
@@ -44,7 +44,7 @@ const { t } = useI18n();
 <style scoped lang="scss">
 .nav-item {
   .nav-link {
-    @apply rounded py-1 px-2 transition-colors hover:text-gray-900;
+    @apply gap-1 rounded py-1 px-2 transition-colors hover:text-gray-900;
 
     display: flex;
     width: 100%;

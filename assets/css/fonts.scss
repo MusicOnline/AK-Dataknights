@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @font-face {
   font-family: "Noto Sans";
   font-weight: 400;
@@ -246,57 +248,123 @@
     url("~/assets/fonts/NotoSerifKR-Bold.otf") format("opentype");
 }
 
-html,
-html[lang^="en"],
-html[lang^="en"] .sans {
-  font-family: "Noto Sans", "Noto Sans SC", sans-serif;
+$sans-font-faces: (
+  "en": (
+    "Noto Sans",
+    "Noto Sans SC",
+    sans-serif,
+  ),
+  "zh": (
+    "Noto Sans SC",
+    "Noto Sans TC",
+    "Noto Sans",
+    sans-serif,
+  ),
+  "zh-CN": (
+    "Noto Sans SC",
+    "Noto Sans TC",
+    "Noto Sans",
+    sans-serif,
+  ),
+  "zh-Hans": (
+    "Noto Sans SC",
+    "Noto Sans TC",
+    "Noto Sans",
+    sans-serif,
+  ),
+  "zh-TW": (
+    "Noto Sans TC",
+    "Noto Sans SC",
+    "Noto Sans",
+    sans-serif,
+  ),
+  "zh-Hant": (
+    "Noto Sans TC",
+    "Noto Sans SC",
+    "Noto Sans",
+    sans-serif,
+  ),
+  "ja": (
+    "Noto Sans JP",
+    "Noto Sans SC",
+    "Noto Sans",
+    sans-serif,
+  ),
+  "ko": (
+    "Noto Sans KR",
+    "Noto Sans SC",
+    "Noto Sans",
+    sans-serif,
+  ),
+);
+$serif-font-faces: (
+  "en": (
+    "Noto Serif",
+    "Noto Serif SC",
+    serif,
+  ),
+  "zh": (
+    "Noto Serif SC",
+    "Noto Serif TC",
+    "Noto Serif",
+    serif,
+  ),
+  "zh-CN": (
+    "Noto Serif SC",
+    "Noto Serif TC",
+    "Noto Serif",
+    serif,
+  ),
+  "zh-Herif": (
+    "Noto Serif SC",
+    "Noto Serif TC",
+    "Noto Serif",
+    serif,
+  ),
+  "zh-TW": (
+    "Noto Serif TC",
+    "Noto Serif SC",
+    "Noto Serif",
+    serif,
+  ),
+  "zh-Hant": (
+    "Noto Serif TC",
+    "Noto Serif SC",
+    "Noto Serif",
+    serif,
+  ),
+  "ja": (
+    "Noto Serif JP",
+    "Noto Serif SC",
+    "Noto Serif",
+    serif,
+  ),
+  "ko": (
+    "Noto Serif KR",
+    "Noto Serif SC",
+    "Noto Serif",
+    serif,
+  ),
+);
+
+@each $lang, $font-list in $sans-font-faces {
+  html[lang^="#{$lang}"],
+  .sans [data-lang^="#{$lang}"],
+  [data-lang^="#{$lang}"] .sans,
+  html[lang^="#{$lang}"] .sans,
+  [data-lang^="#{$lang}"] {
+    font-family: $font-list;
+  }
 }
 
-html[lang^="zh"],
-html[lang^="zh"] .sans,
-html[lang^="zh-CN"],
-html[lang^="zh-CN"] .sans,
-html[lang^="zh-Hans"],
-html[lang^="zh-Hans"] .sans {
-  font-family: "Noto Sans SC", "Noto Sans TC", "Noto Sans", sans-serif;
+@each $lang, $font-list in $serif-font-faces {
+  .serif [data-lang^="#{$lang}"],
+  [data-lang^="#{$lang}"] .serif,
+  html[lang^="#{$lang}"] .serif {
+    font-family: $font-list;
+  }
 }
 
-html[lang^="zh-TW"],
-html[lang^="zh-TW"] .sans,
-html[lang^="zh-Hant"],
-html[lang^="zh-Hant"] .sans {
-  font-family: "Noto Sans TC", "Noto Sans SC", "Noto Sans", sans-serif;
-}
-
-html[lang^="ja"],
-html[lang^="ja"] .sans {
-  font-family: "Noto Sans JP", "Noto Sans SC", "Noto Sans", sans-serif;
-}
-
-html[lang^="ko"],
-html[lang^="ko"] .sans {
-  font-family: "Noto Sans KR", "Noto Sans SC", "Noto Sans", sans-serif;
-}
-
-html[lang^="en"] .serif {
-  font-family: "Noto Serif", "Noto Serif SC", serif;
-}
-
-html[lang^="zh"] .serif,
-html[lang^="zh-CN"] .serif,
-html[lang^="zh-Hans"] .serif {
-  font-family: "Noto Serif SC", "Noto Serif TC", "Noto Serif", serif;
-}
-
-html[lang^="zh-TW"] .serif,
-html[lang^="zh-Hant"] .serif {
-  font-family: "Noto Serif TC", "Noto Serif SC", "Noto Serif", serif;
-}
-
-html[lang^="ja"] .serif {
-  font-family: "Noto Serif JP", "Noto Serif SC", "Noto Serif", serif;
-}
-
-html[lang^="ko"] .serif {
-  font-family: "Noto Serif KR", "Noto Serif SC", "Noto Serif", serif;
+html {
+  font-family: map.get($sans-font-faces, "en");
 }

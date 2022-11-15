@@ -5,7 +5,13 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/i18n", "@nuxtjs/tailwindcss", "nuxt-icon"],
   plugins: [{ src: "~/plugins/oruga.ts" }],
   i18n: {
-    locales: ["en", "ja", "ko", "zh", "zh-CN", "zh-TW"],
+    locales: [
+      { code: "en", name: "English" },
+      { code: "ja", name: "日本語" },
+      { code: "ko", name: "한국어" },
+      { code: "zh", name: "简体中文" },
+      { code: "zh-TW", name: "繁體中文" },
+    ],
     strategy: "prefix_and_default",
     defaultLocale: "en",
     vueI18n: {
