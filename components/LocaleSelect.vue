@@ -16,7 +16,7 @@ const availableLocales = $computed(() => {
 });
 
 const currentLocaleObject = $computed(() => {
-  // @ts-ignore microsoft/TypeScript#44373
+  // @ts-ignore microsoft/TypeScript#44373 since June 2021
   return locales.find((locale) => locale.code === currentLocale);
 });
 </script>

@@ -11,7 +11,7 @@ const { locale } = useI18n();
       <Title>AK Dataknights</Title>
     </Head>
     <NavigationBar />
-    <main>
+    <main class="overflow-hidden p-2">
       <NuxtPage />
     </main>
     <footer>Made with <Icon name="logos:nuxt-icon" /></footer>
@@ -29,7 +29,7 @@ const { locale } = useI18n();
 
 @layer base {
   body {
-    @apply mt-12 bg-gray-50 text-gray-900 dark:bg-gray-800 dark:text-gray-50;
+    @apply mt-12 mb-16 bg-gray-50 text-gray-900 dark:bg-gray-800 dark:text-gray-50 md:mb-0;
   }
 
   svg {

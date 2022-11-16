@@ -8,8 +8,11 @@ node_modules
 .vscode
 
 # Generated
-data
+data/*
 dist
+
+# Not generated data
+!data/custom
 
 # Generated locales from game data, does not need to be in repository (unlike en-TL)
 locales/en-US/*-data.json

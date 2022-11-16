@@ -15,6 +15,8 @@ export default defineNuxtConfig({
     strategy: "prefix_and_default",
     defaultLocale: "en",
     vueI18n: {
+      fallbackWarn: false,
+      missingWarn: false,
       legacy: false,
       locale: "en",
       fallbackLocale: {

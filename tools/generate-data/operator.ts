@@ -1,5 +1,7 @@
 import * as constants from "./constants";
 import { LocalizationString, normalizeForLocaleFile } from "./utils";
+import OPERATOR_KEY_OVERRIDE from "../../data/custom/operator-key-override.json";
+import { Outfit } from "./outfit";
 
 const CHINESE_TO_ENGLISH_TAGS = {
   新手: "STARTER",
@@ -252,26 +254,18 @@ export enum SubProfessionId {
   None2 = "none2",
 }
 
-export class Operator {
-  static readonly LOCALIZATION_STRING_ATTRIBUTES = [
-    "name",
-    "appellation",
-    "description",
-  ];
-
-  private _plainEnglishName: string;
-
-  key: string;
-  name: LocalizationString;
-  appellation: LocalizationString;
-  description: LocalizationString | null;
+export interface CharacterTableData {
+  // character-table.json
+  name: string;
+  appellation: string;
+  description: string | null;
   canUseGeneralPotentialItem: boolean;
   potentialItemId: string;
   nationId: string | null;
   groupId: string | null;
   teamId: string | null;
   displayNumber: string | null;
-  tokenKey: string | null; // Token summon character key
+  tokenKey: string | null; // Token summon character id
   position: Position;
   tagList: string[] | null;
   itemUsage: string | null;
@@ -280,7 +274,7 @@ export class Operator {
   isNotObtainable: boolean; // true if Integrated Strategies operators
   isSpChar: boolean;
   maxPotentialLevel: number;
-  rarity: number;
+  rarity: number; // Number of stars in-game, minus one
   profession: Profession;
   subProfessionId: SubProfessionId;
   trait: Trait | null;
@@ -290,18 +284,92 @@ export class Operator {
   potentialRanks: PotentialRank[];
   favorKeyFrames: KeyFrame[] | null;
   allSkillLvlup: AllSkillLvlup[];
+}
 
-  constructor(key: string, data: any) {
-    this.key = key;
+interface DefaultOutfits {
+  0: Outfit;
+  1?: Outfit;
+  2?: Outfit;
+}
+
+export interface GeneratedOperatorData {
+  key: any;
+  id: string;
+  displayNumber: string | null;
+  rarity: number;
+  profession: Profession;
+  subProfessionId: SubProfessionId;
+  position: Position;
+  tagList: string[];
+  nationId: string | null;
+  groupId: string | null;
+  teamId: string | null;
+  canUseGeneralPotentialItem: boolean;
+  potentialItem: null;
+  tokenSummon: null;
+  isNotObtainable: boolean;
+  defaultOutfits: { [elite: number]: string };
+}
+
+export interface GeneratedOperatorIndexData {
+  key: any;
+  id: string;
+  displayNumber: string | null;
+  rarity: number;
+  profession: Profession;
+  subProfessionId: SubProfessionId;
+  position: Position;
+  tagList: string[];
+  nationId: string | null;
+  groupId: string | null;
+  teamId: string | null;
+  isNotObtainable: boolean;
+  defaultOutfits: { [elite: number]: string };
+}
+
+export class Operator {
+  static readonly LOCALIZATION_STRING_ATTRIBUTES = [
+    "name",
+    "appellation",
+    "description",
+  ] as const;
+
+  private _unnormalizedKey: string; // Only used if not in OPERATOR_KEY_OVERRIDE
+
+  // Original attributes
+  id: string; // Key in charactertable
+  name: LocalizationString;
+  appellation: LocalizationString;
+  description: LocalizationString | null;
+  canUseGeneralPotentialItem: boolean;
+  potentialItemId: string;
+  nationId: string | null;
+  groupId: string | null;
+  teamId: string | null;
+  displayNumber: string | null;
+  tokenKey: string | null; // Token summon character id
+  position: Position;
+  tagList: (keyof typeof CHINESE_TO_ENGLISH_TAGS)[] | null;
+  isNotObtainable: boolean; // true if Integrated Strategies operators
+  rarity: number; // Number of stars in-game
+  profession: Profession;
+  subProfessionId: SubProfessionId;
+
+  // Additional attributes
+  defaultOutfits: DefaultOutfits;
+
+  // Accepts zh-CN data only
+  public constructor(id: string, data: CharacterTableData) {
+    this.id = id;
     this.displayNumber = data.displayNumber;
     this.name = new LocalizationString(data.name);
-    this._plainEnglishName = data.appellation;
     this.appellation = new LocalizationString(data.appellation);
     this.description = LocalizationString.fromDataOrNull(data.description);
-    this.rarity = data.rarity;
+    this.rarity = data.rarity + 1;
     this.profession = data.profession;
     this.subProfessionId = data.subProfessionId;
     this.position = data.position;
+    // @ts-ignore
     this.tagList = data.tagList;
     this.nationId = data.nationId;
     this.groupId = data.groupId;
@@ -310,22 +378,35 @@ export class Operator {
     this.potentialItemId = data.potentialItemId;
     this.tokenKey = data.tokenKey;
     this.isNotObtainable = data.isNotObtainable;
+
+    this._unnormalizedKey = data.appellation;
+
+    const skinTable = constants.OUTFIT_TABLES[constants.ORIGINAL_LOCALE];
+    this.defaultOutfits = Object.entries(skinTable.buildinEvolveMap[id]).reduce(
+      (accumulator: any, [elite, skinId]) => {
+        accumulator[elite] = new Outfit(skinTable.charSkins[skinId]);
+        return accumulator;
+      },
+      {}
+    );
   }
 
-  addLocale(locale: string, data: any) {
+  public addLocale(
+    locale: typeof constants.OUTPUT_LOCALES[number],
+    data: CharacterTableData
+  ) {
     Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) =>
-      // @ts-ignore
       this[attribute]?.addLocale(locale, data[attribute])
     );
 
-    if (locale === "en-US") this._plainEnglishName = data.name;
-    if (locale === "en-TL" && data._plainEnglishName)
-      this._plainEnglishName = data._plainEnglishName;
+    if (locale === "en-US") this._unnormalizedKey = data.name;
+    if (locale === "en-TL" && data.name) this._unnormalizedKey = data.name;
   }
 
-  toData(): any {
+  public toData(): GeneratedOperatorData {
     return {
       key: this.key,
+      id: this.id,
       displayNumber: this.displayNumber,
       rarity: this.rarity,
       profession: this.profession,
@@ -339,12 +420,20 @@ export class Operator {
       potentialItem: this.potentialItem,
       tokenSummon: this.tokenSummon,
       isNotObtainable: this.isNotObtainable,
+      defaultOutfits: Object.entries(this.defaultOutfits).reduce(
+        (accumulator: { [elite: string]: string }, [elite, outfit]) => {
+          accumulator[elite] = outfit.avatarId;
+          return accumulator;
+        },
+        {}
+      ),
     };
   }
 
-  toIndexData(): any {
+  public toIndexData(): GeneratedOperatorIndexData {
     return {
       key: this.key,
+      id: this.id,
       displayNumber: this.displayNumber,
       rarity: this.rarity,
       profession: this.profession,
@@ -355,26 +444,49 @@ export class Operator {
       groupId: this.groupId,
       teamId: this.teamId,
       isNotObtainable: this.isNotObtainable,
+      defaultOutfits: Object.entries(this.defaultOutfits).reduce(
+        (accumulator: { [elite: string]: string }, [elite, outfit]) => {
+          accumulator[elite] = outfit.avatarId;
+          return accumulator;
+        },
+        {}
+      ),
     };
   }
 
-  toLocaleFileData(locale: string): { [x: string]: string | null } {
-    locale = locale.replace("-", "_");
-    const localeFileData = Operator.LOCALIZATION_STRING_ATTRIBUTES.reduce(
+  public toLocaleFileData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+    const transformedLocale = locale.replace("-", "_");
+    return Operator.LOCALIZATION_STRING_ATTRIBUTES.reduce(
       (accumulator: any, current) => {
         // @ts-ignore
-        const localizedString = this[current]?.[locale] ?? null;
+        const localizedString = this[current]?.[transformedLocale] ?? null;
         accumulator[current] = normalizeForLocaleFile(localizedString);
         return accumulator;
       },
       {}
     );
-    if (locale === "en_TL")
-      return {
-        _plainEnglishName: this._plainEnglishName,
-        ...localeFileData,
-      };
-    return localeFileData;
+  }
+
+  public get key() {
+    // @ts-ignore
+    if (OPERATOR_KEY_OVERRIDE[this.id]) return OPERATOR_KEY_OVERRIDE[this.id];
+    return this._unnormalizedKey
+      .toLowerCase()
+      .replace(/[.'()]/g, "")
+      .replace(/[-\s]+/g, "-");
+  }
+
+  public get normalizedTagList(): string[] {
+    return (this.tagList ?? []).map(
+      (chineseTag) => CHINESE_TO_ENGLISH_TAGS[chineseTag]
+    );
+  }
+
+  public get isActualOperator() {
+    return (
+      ![Profession.Trap, Profession.Token].includes(this.profession) &&
+      !constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(this.id)
+    );
   }
 
   get potentialItem() {
@@ -387,19 +499,5 @@ export class Operator {
     // TODO
     this.tokenKey;
     return null;
-  }
-
-  get normalizedTagList(): string[] {
-    return (this.tagList ?? []).map(
-      // @ts-ignore
-      (chineseTag) => CHINESE_TO_ENGLISH_TAGS[chineseTag]
-    );
-  }
-
-  get isActualOperator() {
-    return (
-      ![Profession.Trap, Profession.Token].includes(this.profession) &&
-      !constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(this.key)
-    );
   }
 }
