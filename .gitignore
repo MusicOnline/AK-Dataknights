@@ -12,6 +12,7 @@ data/*
 dist
 
 # Not generated data
+!data/.game-data-sha
 !data/custom
 
 # Generated locales from game data, does not need to be in repository (unlike en-TL)

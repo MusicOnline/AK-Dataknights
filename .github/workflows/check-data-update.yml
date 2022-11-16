@@ -1,0 +1,26 @@
+name: Get Kengxxiao/ArknightsGameData latest commit SHA
+on:
+  schedule:
+    # Every 15 minutes
+    - cron: "0/15 * * * *"
+jobs:
+  get-commit-sha:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.REPO_SCOPED_TOKEN }}
+      - name: Fetch latest commit SHA
+        run: |
+          curl -sL https://api.github.com/repos/Kengxxiao/ArknightsGameData/commits/master | \
+          jq -r ".sha" > data/.game-data-sha
+      - name: Check for modified files
+        id: git-check
+        run: echo "modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")" >> $GITHUB_OUTPUT
+      - name: Commit & push latest commit SHA
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git config --global user.name 'Mizuki'
+          git config --global user.email 'mizuki@arknights'
+          git commit -am "Update latest Kengxxiao/ArknightsGameData commit SHA"
+          git push
