@@ -1,4 +1,9 @@
 {
+  "savage": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
   "lancet-2": {
     "name": null,
     "appellation": null,
@@ -9,27 +14,7 @@
     "appellation": null,
     "description": null
   },
-  "thrm-ex": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "justice-knight": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
   "yato": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "noir-corne": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "rangers": {
     "name": null,
     "appellation": null,
     "description": null
@@ -44,6 +29,16 @@
     "appellation": null,
     "description": null
   },
+  "rangers": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "noir-corne": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
   "fang": {
     "name": null,
     "appellation": null,
@@ -54,62 +49,7 @@
     "appellation": null,
     "description": null
   },
-  "reserve-operator-melee": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
   "plume": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "melantha": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "popukar": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "cardigan": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "beagle": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "reserve-operator-defender": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "spot": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "kroos": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "adnachiel": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "reserve-operator-sniper": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "lava": {
     "name": null,
     "appellation": null,
     "description": null
@@ -124,7 +64,7 @@
     "appellation": null,
     "description": null
   },
-  "reserve-operator-logistics": {
+  "lava": {
     "name": null,
     "appellation": null,
     "description": null
@@ -134,7 +74,12 @@
     "appellation": null,
     "description": null
   },
-  "reserve-operator-caster": {
+  "kroos": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "adnachiel": {
     "name": null,
     "appellation": null,
     "description": null
@@ -144,77 +89,17 @@
     "appellation": null,
     "description": null
   },
-  "haze": {
+  "melantha": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "gitano": {
+  "beagle": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "greyy": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "click": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "indigo": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "pudding": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "jessica": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "meteor": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "vermeil": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "may": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "shirayuki": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "pinecone": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "ambriel": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "aciddrop": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "totter": {
+  "cardigan": {
     "name": null,
     "appellation": null,
     "description": null
@@ -234,86 +119,6 @@
     "appellation": null,
     "description": null
   },
-  "myrtle": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "beanstalk": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "dobermann": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "matoimaru": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "conviction": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "frostleaf": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "estelle": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "mousse": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "cutter": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "utage": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "arene": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "luo-xiaohei": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "quartz": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "gravel": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "jaye": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "rope": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
   "myrrh": {
     "name": null,
     "appellation": null,
@@ -324,47 +129,47 @@
     "appellation": null,
     "description": null
   },
-  "sussurro": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
   "perfumer": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "purestream": {
+  "haze": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "chestnut": {
+  "gitano": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "matterhorn": {
+  "gravel": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "cuora": {
+  "rope": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "bubble": {
+  "shaw": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "gummy": {
+  "shirayuki": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "dur-nar": {
+  "meteor": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "jessica": {
     "name": null,
     "appellation": null,
     "description": null
@@ -379,37 +184,47 @@
     "appellation": null,
     "description": null
   },
-  "podenco": {
+  "dobermann": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "roberta": {
+  "estelle": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "ethan": {
+  "beehunter": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "shaw": {
+  "mousse": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "ptilopsis": {
+  "frostleaf": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "breeze": {
+  "matoimaru": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "zima": {
+  "cuora": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "gummy": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "matterhorn": {
     "name": null,
     "appellation": null,
     "description": null
@@ -419,282 +234,12 @@
     "appellation": null,
     "description": null
   },
-  "chiave": {
+  "zima": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "tulip": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "reed": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "wild-mane": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "elysium": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "blacknight": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "cantabile": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "swire": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "whislash": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "franka": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "flamebringer": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "sharp": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "indra": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "flint": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "dagda": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "lappland": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "ayerscarpe": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "bibeak": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "tachanka": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "specter": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "broca": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "astesia": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "sideroca": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "akafuyu": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "la-pluma": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "highmore": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "tequila": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "blue-poison": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "platinum": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "greythroat": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "stormeye": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "april": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "kroos-the-keen-glint": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "meteorite": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "sesa": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "executor": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "aosta": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "amiya": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "absinthe": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "tomimi": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "qanipalaat": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "skyfire": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "pith": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "leizi": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "astgenne": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "beeswax": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "leonhardt": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "mint": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "iris": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "lava-the-purgatory": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "corroserum": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "kjera": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "rockrock": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "minimalist": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "mayer": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "scene": {
+  "ptilopsis": {
     "name": null,
     "appellation": null,
     "description": null
@@ -709,57 +254,17 @@
     "appellation": null,
     "description": null
   },
-  "folinic": {
+  "amiya": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "touch": {
+  "nightmare": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "ceylon": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "whisperain": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "tuye": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "mulberry": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "honeyberry": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "hibiscus-the-purifier": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "paprika": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "nearl": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "hung": {
+  "skyfire": {
     "name": null,
     "appellation": null,
     "description": null
@@ -769,107 +274,7 @@
     "appellation": null,
     "description": null
   },
-  "waai-fu": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "kafka": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "mr-nothing": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "liskarm": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "croissant": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "bison": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "vulcan": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "asbestos": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "shalem": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "czerny": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "blitz": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "heavyrain": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "ashlock": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "aurora": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "provence": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "firewatch": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "andreana": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "lunacub": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "toddifons": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "erato": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "greyy-the-lightningbearer": {
+  "manticore": {
     "name": null,
     "appellation": null,
     "description": null
@@ -879,7 +284,32 @@
     "appellation": null,
     "description": null
   },
-  "snowsant": {
+  "feater": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "provence": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "blue-poison": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "firewatch": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "meteorite": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "platinum": {
     "name": null,
     "appellation": null,
     "description": null
@@ -889,27 +319,12 @@
     "appellation": null,
     "description": null
   },
-  "shamare": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
   "istina": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "glaucus": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "proviso": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "windflit": {
+  "mayer": {
     "name": null,
     "appellation": null,
     "description": null
@@ -919,272 +334,52 @@
     "appellation": null,
     "description": null
   },
-  "heidi": {
+  "franka": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "tsukinogi": {
+  "specter": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "nine-colored-deer": {
+  "indra": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "quercus": {
+  "chen": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "manticore": {
+  "lappland": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "kirara": {
+  "nearl": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "feater": {
+  "liskarm": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "enforcer": {
+  "vulcan": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "robin": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "frost": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "bena": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "kazemaru": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "exusiai": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "archetto": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "ash": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "schwarz": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "pozymoka": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "fartooth": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "w": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "fiammetta": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "rosa": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "rosmontis": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "chen-the-holungday": {
+  "croissant": {
     "name": null,
     "appellation": null,
     "description": null
   },
   "siege": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "bagpipe": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "saga": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "saileach": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "flametail": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "vigil": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "ifrit": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "mostima": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "eyjafjalla": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "ceobe": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "dusk": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "passenger": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "carnelian": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "goldenglow": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "ebenholz": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "gnosis": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "angelina": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "suzuran": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "magallan": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "skadi-the-corrupting-heart": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "ling": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "stainless": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "phantom": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "texas-the-omertosa": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "lee": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "weedy": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "aak": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "gladiia": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "mizuki": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "specter-the-unchained": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "dorothy": {
     "name": null,
     "appellation": null,
     "description": null
@@ -1199,12 +394,27 @@
     "appellation": null,
     "description": null
   },
-  "kaltsit": {
+  "ifrit": {
     "name": null,
     "appellation": null,
     "description": null
   },
-  "lumen": {
+  "eyjafjalla": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "exusiai": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "angelina": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "silverash": {
     "name": null,
     "appellation": null,
     "description": null
@@ -1219,122 +429,12 @@
     "appellation": null,
     "description": null
   },
-  "blemishine": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "nian": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "mudrock": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "penance": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "eunectes": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "horn": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "mountain": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "silverash": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "thorns": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "chen": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "irene": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "blaze": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "gavial-the-invincible": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "surtr": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "hellagur": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "pallas": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "nearl-the-radiant-knight": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "mlynar": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "savage": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
   "catapult": {
     "name": null,
     "appellation": null,
     "description": null
   },
   "midnight": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "beehunter": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "jackie": {
-    "name": null,
-    "appellation": null,
-    "description": null
-  },
-  "nightmare": {
     "name": null,
     "appellation": null,
     "description": null
@@ -1346,6 +446,906 @@
   },
   "skadi": {
     "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "popukar": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "swire": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "spot": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "greyy": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "schwarz": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "glaucus": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "ceylon": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "sussurro": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "myrtle": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "astesia": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "hellagur": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "dur-nar": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "vermeil": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "magallan": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "flamebringer": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "executor": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "ethan": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "breeze": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "waai-fu": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "mostima": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "may": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "bison": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "reed": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "broca": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "ambriel": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "greythroat": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "blaze": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "snowsant": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "aak": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "hung": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "nian": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "ceobe": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "leizi": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "purestream": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "bagpipe": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "bibeak": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "sesa": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "utage": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "conviction": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "phantom": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "shamare": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "cutter": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "sideroca": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "thrm-ex": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "w": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "weedy": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "elysium": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "asbestos": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "tsukinogi": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "podenco": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "absinthe": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "leonhardt": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "rosa": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "click": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "ayerscarpe": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "folinic": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "suzuran": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "beeswax": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "chiave": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "scene": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "jaye": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "andreana": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "thorns": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "eunectes": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "tomimi": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "flint": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "aciddrop": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "pith": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "sharp": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "touch": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "stormeye": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "reserve-operator-melee": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "reserve-operator-sniper": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "reserve-operator-logistics": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "reserve-operator-caster": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "surtr": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "arene": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "mint": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "april": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "blemishine": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "aosta": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "whislash": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "bubble": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "rosmontis": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "mudrock": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "whisperain": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "jackie": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "mountain": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "kafka": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "robin": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "pinecone": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "archetto": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "iris": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "beanstalk": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "tuye": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "lava-the-purgatory": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "dusk": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "saga": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "mr-nothing": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "ash": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "frost": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "blitz": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "tachanka": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "passenger": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "toddifons": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "heavyrain": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "skadi-the-corrupting-heart": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "gladiia": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "kaltsit": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "akafuyu": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "carnelian": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "kirara": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "bena": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "indigo": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "pallas": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "chen-the-holungday": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "mizuki": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "la-pluma": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "tequila": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "saileach": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "mulberry": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "roberta": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "fartooth": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "ashlock": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "nearl-the-radiant-knight": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "flametail": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "corroserum": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "honeyberry": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "wild-mane": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "pudding": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "justice-knight": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "gnosis": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "aurora": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "kjera": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "shalem": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "nine-colored-deer": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "ling": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "lee": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "blacknight": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "kroos-the-keen-glint": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "goldenglow": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "quercus": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "fiammetta": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "enforcer": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "kazemaru": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "horn": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "rockrock": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "heidi": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "chestnut": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "irene": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "specter-the-unchained": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "lumen": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "windflit": {
+    "name": null,
+    "appellation": null,
+    "description": null
+  },
+  "erato": {
+    "name": "Erato",
+    "appellation": null,
+    "description": null
+  },
+  "ebenholz": {
+    "name": "Ebenholz",
+    "appellation": null,
+    "description": null
+  },
+  "czerny": {
+    "name": "Czerny",
+    "appellation": null,
+    "description": null
+  },
+  "hibiscus-the-purifier": {
+    "name": "Hibiscus the Purifier",
+    "appellation": null,
+    "description": null
+  },
+  "dorothy": {
+    "name": "Dorothy",
+    "appellation": null,
+    "description": null
+  },
+  "astgenne": {
+    "name": "Astgenne",
+    "appellation": null,
+    "description": null
+  },
+  "greyy-the-lightningbearer": {
+    "name": "Greyy the Lightningbearer",
+    "appellation": null,
+    "description": null
+  },
+  "gavial-the-invincible": {
+    "name": "Gavial the Invincible",
+    "appellation": null,
+    "description": null
+  },
+  "pozymoka": {
+    "name": "Pozyomka",
+    "appellation": null,
+    "description": null
+  },
+  "cantabile": {
+    "name": "Cantabile",
+    "appellation": null,
+    "description": null
+  },
+  "minimalist": {
+    "name": "Minimalist",
+    "appellation": null,
+    "description": null
+  },
+  "mlynar": {
+    "name": "Młynar",
+    "appellation": null,
+    "description": null
+  },
+  "proviso": {
+    "name": "Proviso",
+    "appellation": null,
+    "description": null
+  },
+  "luo-xiaohei": {
+    "name": "Luo Xiaohei",
+    "appellation": null,
+    "description": null
+  },
+  "highmore": {
+    "name": "Highmore",
+    "appellation": null,
+    "description": null
+  },
+  "tulip": {
+    "name": "Tulip",
+    "appellation": null,
+    "description": null
+  },
+  "reserve-operator-defender": {
+    "name": "Reserve Operator - Defender",
+    "appellation": null,
+    "description": null
+  },
+  "stainless": {
+    "name": "Stainless",
+    "appellation": null,
+    "description": null
+  },
+  "dagda": {
+    "name": "Dagda",
+    "appellation": null,
+    "description": null
+  },
+  "paprika": {
+    "name": "Paprika",
+    "appellation": null,
+    "description": null
+  },
+  "totter": {
+    "name": "Totter",
+    "appellation": null,
+    "description": null
+  },
+  "penance": {
+    "name": "Penance",
+    "appellation": null,
+    "description": null
+  },
+  "texas-the-omertosa": {
+    "name": "Texas the Omertosa",
+    "appellation": null,
+    "description": null
+  },
+  "vigil": {
+    "name": "Vigil",
+    "appellation": null,
+    "description": null
+  },
+  "lunacub": {
+    "name": "Lunacub",
+    "appellation": null,
+    "description": null
+  },
+  "qanipalaat": {
+    "name": "Qanipalaat",
+    "appellation": null,
+    "description": null
+  },
+  "quartz": {
+    "name": "Quartz",
     "appellation": null,
     "description": null
   }

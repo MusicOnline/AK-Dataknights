@@ -2,6 +2,7 @@ import * as fs from "fs/promises";
 import * as constants from "./constants";
 import { Operator } from "./operator";
 import { CharacterTable } from "./tables";
+import OPERATOR_RELEASE_ORDER from "../../data/custom/operator-release.json";
 
 async function generateOperatorFiles() {
   let enTLOperatorLocaleData: any = {};
@@ -13,10 +14,14 @@ async function generateOperatorFiles() {
       "No en-TL/operators-data.json (translated) found. A new file will be created."
     );
   }
-
-  const operators = Object.entries(
-    constants.OPERATOR_TABLES[constants.ORIGINAL_LOCALE]
-  ).map(([key, data]) => {
+  const operatorIdReleaseOrder = [
+    ...OPERATOR_RELEASE_ORDER,
+    ...Object.keys(constants.OPERATOR_TABLES[constants.ORIGINAL_LOCALE]).filter(
+      (id) => !OPERATOR_RELEASE_ORDER.includes(id)
+    ),
+  ];
+  const operators = operatorIdReleaseOrder.map((key) => {
+    const data = constants.OPERATOR_TABLES[constants.ORIGINAL_LOCALE][key];
     const operator = new Operator(key, data);
     Object.entries(constants.OPERATOR_TABLES).forEach(
       // @ts-ignore

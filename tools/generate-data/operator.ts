@@ -293,7 +293,7 @@ interface DefaultOutfits {
 }
 
 export interface GeneratedOperatorData {
-  key: any;
+  key: string;
   id: string;
   displayNumber: string | null;
   rarity: number;
@@ -312,7 +312,7 @@ export interface GeneratedOperatorData {
 }
 
 export interface GeneratedOperatorIndexData {
-  key: any;
+  key: string;
   id: string;
   displayNumber: string | null;
   rarity: number;
@@ -458,6 +458,14 @@ export class Operator {
     const transformedLocale = locale.replace("-", "_");
     return Operator.LOCALIZATION_STRING_ATTRIBUTES.reduce(
       (accumulator: any, current) => {
+        if (locale === "en-TL" && current === "name") {
+          accumulator[current] = normalizeForLocaleFile(
+            !this.name?.en_US && !this.name?.en_TL
+              ? this.appellation.zh_CN
+              : this.name?.en_TL ?? null
+          );
+          return accumulator;
+        }
         // @ts-ignore
         const localizedString = this[current]?.[transformedLocale] ?? null;
         accumulator[current] = normalizeForLocaleFile(localizedString);
@@ -467,7 +475,7 @@ export class Operator {
     );
   }
 
-  public get key() {
+  public get key(): string {
     // @ts-ignore
     if (OPERATOR_KEY_OVERRIDE[this.id]) return OPERATOR_KEY_OVERRIDE[this.id];
     return this._unnormalizedKey

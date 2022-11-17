@@ -15,6 +15,10 @@ export default {
           main: "#f1ff7a",
         },
       },
+      fontSize: {
+        "operator-name-3xs": ["0.55rem", "0.60rem"],
+        "2xs": ["0.625rem", "0.65rem"],
+      },
     },
   },
 };
