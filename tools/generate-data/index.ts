@@ -20,9 +20,9 @@ async function generateOperatorFiles() {
       (id) => !OPERATOR_RELEASE_ORDER.includes(id)
     ),
   ];
-  const operators = operatorIdReleaseOrder.map((key) => {
-    const data = constants.OPERATOR_TABLES[constants.ORIGINAL_LOCALE][key];
-    const operator = new Operator(key, data);
+  const operators = operatorIdReleaseOrder.map((id) => {
+    const data = constants.OPERATOR_TABLES[constants.ORIGINAL_LOCALE][id];
+    const operator = new Operator(id, data);
     Object.entries(constants.OPERATOR_TABLES).forEach(
       // @ts-ignore
       ([locale, table]: [
@@ -30,11 +30,11 @@ async function generateOperatorFiles() {
         CharacterTable
       ]) => {
         if (locale === constants.ORIGINAL_LOCALE) return;
-        if (table[key]) operator.addLocale(locale, table[key]);
+        if (table[id]) operator.addLocale(locale, table[id]);
       }
     );
-    if (enTLOperatorLocaleData[key])
-      operator.addLocale("en-TL", enTLOperatorLocaleData[key]);
+    if (enTLOperatorLocaleData[operator.key])
+      operator.addLocale("en-TL", enTLOperatorLocaleData[operator.key]);
     return operator;
   });
   const actualOperators = operators.filter(
