@@ -2,6 +2,7 @@ import { generateDataFiles } from "./tools/generate-data";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  ssr: process.env.ENABLE_SSR?.toLowerCase() === "true",
   modules: ["@nuxtjs/i18n", "@nuxtjs/tailwindcss", "nuxt-icon"],
   plugins: [{ src: "~/plugins/oruga.ts" }],
   i18n: {

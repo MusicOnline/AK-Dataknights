@@ -1,32 +1,44 @@
 # AK-Dataknights
 
-Arknights database made with [Nuxt 3](https://v3.nuxtjs.org) for educational purposes. Uses data from [Kengxxiao/ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData).
+数据方舟 | データナイツ | 자료방주
 
-## Setup
+Website: https://musiconline.github.io/AK-Dataknights/
 
-Make sure to install the dependencies:
+Work-in-progress Arknights database made with [Nuxt](https://nuxt.com) for educational purposes.
+
+## Development
+
+### Setup
+
+Prerequisites:
+
+- Node.js (developed with version 18)
+
+Clone the repository, then install the dependencies:
 
 ```bash
-# yarn
-yarn install
-
-# npm
+git clone https://github.com/MusicOnline/AK-Dataknights
 npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
-## Configuration
+### Configuration
 
-Create a `.env` file with the following content:
+Create a `.env` file with the following content or define the environment variables elsewhere:
 
 ```bash
-# https://github.com/Kengxxiao/ArknightsGameData
+# Clone https://github.com/Kengxxiao/ArknightsGameData
 GAME_DATA_ROOT_PATH=/path/to/ArknightsGameData
+# Set to true if "npm run generate" output may still rely on SSR (partial pre-render)
+# Alternatively, this can be set in nuxt.config.ts in ssr
+ENABLE_SSR=false
+# For generating SSG for GitHub Pages deployment,
+# repository pages are deployed to username.github.io/RespositoryNameHere
+# Therefore this must be set to correct routing base URL
+# Alternatively, this can be set in nuxt.config.ts in app.baseURL
+NUXT_APP_BASE_URL=RepositoryNameHere
 ```
 
-## Development Server
+### Development Server
 
 Start the development server on http://localhost:3000
 
@@ -34,12 +46,22 @@ Start the development server on http://localhost:3000
 npm run dev
 ```
 
-## Production
+### Production
 
-Build the application for production:
+Server-Side Rendering (SSR):
 
 ```bash
 npm run build
+# Start server
+node .output/server/index.mjs
+```
+
+Static Site Generation (SSG):
+
+```bash
+npm run generate
+# Serve .output/public, example:
+npx http-server .output/public
 ```
 
 Locally preview production build:
@@ -48,4 +70,15 @@ Locally preview production build:
 npm run preview
 ```
 
-Check out the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+### Continuous Deployment
+
+The [`check-data-update`](./.github/workflows/check-data-update.yml) workflow checks for updates in the master branch of Kengxxiao/ArknightsGameData. If there is an update, [`.game-data-sha`](./data/.game-data-sha) is updated in this repository.
+
+Any pushes to the main branch of this repository will trigger the [`deploy-ssg`](./.github/workflows/deploy-ssg.yml) workflow to deploy the website to GitHub Pages.
+
+## Special Thanks
+
+In no particular order:
+
+- [Kengxxiao](https://github.com/Kengxxiao) ([ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData))
+- [Aceship](https://github.com/Aceship) ([Arknight-Images](https://github.com/Aceship/Arknight-Images))
