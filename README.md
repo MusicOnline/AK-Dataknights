@@ -2,6 +2,8 @@
 
 数据方舟 | データナイツ | 자료방주
 
+[![Deploy SSG to GitHub Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ssg.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ssg.yml)
+
 Website: https://musiconline.github.io/AK-Dataknights/
 
 Work-in-progress Arknights database made with [Nuxt](https://nuxt.com) for educational purposes.
