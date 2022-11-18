@@ -13,7 +13,7 @@
     "@oruga-ui/oruga-next": "^0.5.8",
     "@types/node": "^18.8.0",
     "import-sort-style-module": "^6.0.0",
-    "nuxt": "^3.0.0-rc.13",
+    "nuxt": "^3.0.0",
     "nuxt-icon": "^0.1.7",
     "postcss": "^8.4.19",
     "postcss-html": "^1.5.0",
