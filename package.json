@@ -12,11 +12,16 @@
     "@nuxtjs/tailwindcss": "^6.1.3",
     "@oruga-ui/oruga-next": "^0.5.8",
     "@types/node": "^18.8.0",
+    "import-sort-style-module": "^6.0.0",
     "nuxt": "^3.0.0-rc.13",
     "nuxt-icon": "^0.1.7",
+    "postcss": "^8.4.19",
     "postcss-html": "^1.5.0",
     "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.13",
+    "prettier-plugin-css-order": "^1.3.0",
+    "prettier-plugin-import-sort": "^0.0.7",
+    "prettier-plugin-organize-attributes": "^0.0.5",
+    "prettier-plugin-tailwindcss": "^0.2.0-beta.2",
     "sass": "^1.56.0",
     "stylelint": "^14.14.1",
     "stylelint-config-clean-order": "^2.0.0",
@@ -38,5 +43,14 @@
       "function-no-unknown": null,
       "at-rule-empty-line-before": null
     }
+  },
+  "prettier": {
+    "pluginSearchDirs": false,
+    "plugins": [
+      "prettier-plugin-css-order",
+      "prettier-plugin-import-sort",
+      "prettier-plugin-organize-attributes",
+      "prettier-plugin-tailwindcss"
+    ]
   }
 }
