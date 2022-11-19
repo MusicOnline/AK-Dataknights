@@ -6,9 +6,9 @@ const { t } = useI18n();
 <template>
   <div>
     <header
-      class="fixed top-0 left-0 z-10 grid h-12 w-full bg-gray-50 p-2 shadow dark:bg-gray-900"
+      class="fixed top-0 left-0 z-10 h-12 w-full bg-gray-50 p-2 shadow dark:bg-gray-900"
     >
-      <nav class="flex items-center gap-4">
+      <nav class="m-auto flex max-w-7xl items-center gap-4">
         <NuxtLink :to="localePath('/operators')" class="block">
           <SiteBrand
             class="text-2xl text-gray-800 transition-colors hover:text-gray-900 md:text-3xl"

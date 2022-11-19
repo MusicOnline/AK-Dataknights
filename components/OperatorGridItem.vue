@@ -17,14 +17,7 @@ const { operator } = defineProps<{
     <NuxtLink
       :to="localePath(`/operators/${operator.key}`)"
       class="flex h-full flex-col p-1 shadow-sm transition-all duration-75 hover:shadow"
-      :class="{
-        'operator-rarity-1': operator.rarity === 1,
-        'operator-rarity-2': operator.rarity === 2,
-        'operator-rarity-3': operator.rarity === 3,
-        'operator-rarity-4': operator.rarity === 4,
-        'operator-rarity-5': operator.rarity === 5,
-        'operator-rarity-6': operator.rarity === 6,
-      }"
+      :class="`operator-rarity-${operator.rarity}`"
     >
       <img
         :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${encodeURI(

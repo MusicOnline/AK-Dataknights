@@ -1,10 +1,10 @@
 import { CharacterTableData } from "./operator";
-import { SkinTableSkinData } from "./outfit";
+import { SkinTableCharSkinData } from "./outfit";
 
 export type CharacterTable = { [id: string]: CharacterTableData };
 
 export interface SkinTable {
-  charSkins: { [id: string]: SkinTableSkinData };
+  charSkins: { [id: string]: SkinTableCharSkinData };
   buildinEvolveMap: {
     [characterId: string]: {
       0: string;

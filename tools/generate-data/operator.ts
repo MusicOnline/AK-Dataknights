@@ -1,7 +1,7 @@
 import * as constants from "./constants";
 import { LocalizationString, normalizeForLocaleFile } from "./utils";
 import OPERATOR_KEY_OVERRIDE from "../../data/custom/operator-key-override.json";
-import { Outfit } from "./outfit";
+import { GeneratedOutfitData, Outfit } from "./outfit";
 
 const CHINESE_TO_ENGLISH_TAGS = {
   新手: "STARTER",
@@ -114,18 +114,18 @@ export interface AttributeModifier {
   fetchBaseValueFromSourceEntity: boolean;
 }
 
-export enum Profession {
-  Caster = "CASTER",
-  Medic = "MEDIC",
-  Vanguard = "PIONEER",
-  Sniper = "SNIPER",
-  Specialist = "SPECIAL",
-  Supporter = "SUPPORT",
-  Defender = "TANK",
-  Guard = "WARRIOR",
-  Token = "TOKEN", // Non-trap summons
-  Trap = "TRAP", // Trapmaster summons
-}
+export const ACTUAL_OPERATOR_CLASSES = {
+  CASTER: "CASTER",
+  TANK: "DEFENDER",
+  WARRIOR: "GUARD",
+  MEDIC: "MEDIC",
+  SNIPER: "SNIPER",
+  SPECIAL: "SPECIALIST",
+  SUPPORT: "SUPPORTER",
+  PIONEER: "VANGUARD",
+  TOKEN: "TOKEN", // Non-trap summons
+  TRAP: "TRAP", // Trapmaster summons
+} as const;
 
 export interface Skill {
   skillId: string | null;
@@ -275,7 +275,7 @@ export interface CharacterTableData {
   isSpChar: boolean;
   maxPotentialLevel: number;
   rarity: number; // Number of stars in-game, minus one
-  profession: Profession;
+  profession: keyof typeof ACTUAL_OPERATOR_CLASSES;
   subProfessionId: SubProfessionId;
   trait: Trait | null;
   phases: Phase[];
@@ -297,8 +297,8 @@ export interface GeneratedOperatorData {
   id: string;
   displayNumber: string | null;
   rarity: number;
-  profession: Profession;
-  subProfessionId: SubProfessionId;
+  class: typeof ACTUAL_OPERATOR_CLASSES[keyof typeof ACTUAL_OPERATOR_CLASSES];
+  classBranch: SubProfessionId;
   position: Position;
   tagList: string[];
   nationId: string | null;
@@ -308,7 +308,7 @@ export interface GeneratedOperatorData {
   potentialItem: null;
   tokenSummon: null;
   isNotObtainable: boolean;
-  defaultOutfits: { [elite: number]: string };
+  defaultOutfits: { [elite: number]: GeneratedOutfitData };
 }
 
 export interface GeneratedOperatorIndexData {
@@ -316,8 +316,8 @@ export interface GeneratedOperatorIndexData {
   id: string;
   displayNumber: string | null;
   rarity: number;
-  profession: Profession;
-  subProfessionId: SubProfessionId;
+  class: typeof ACTUAL_OPERATOR_CLASSES[keyof typeof ACTUAL_OPERATOR_CLASSES];
+  classBranch: SubProfessionId;
   position: Position;
   tagList: string[];
   nationId: string | null;
@@ -352,8 +352,8 @@ export class Operator {
   tagList: (keyof typeof CHINESE_TO_ENGLISH_TAGS)[] | null;
   isNotObtainable: boolean; // true if Integrated Strategies operators
   rarity: number; // Number of stars in-game
-  profession: Profession;
-  subProfessionId: SubProfessionId;
+  class: typeof ACTUAL_OPERATOR_CLASSES[keyof typeof ACTUAL_OPERATOR_CLASSES];
+  classBranch: SubProfessionId;
 
   // Additional attributes
   defaultOutfits: DefaultOutfits;
@@ -366,8 +366,8 @@ export class Operator {
     this.appellation = new LocalizationString(data.appellation);
     this.description = LocalizationString.fromDataOrNull(data.description);
     this.rarity = data.rarity + 1;
-    this.profession = data.profession;
-    this.subProfessionId = data.subProfessionId;
+    this.class = ACTUAL_OPERATOR_CLASSES[data.profession];
+    this.classBranch = data.subProfessionId;
     this.position = data.position;
     // @ts-ignore
     this.tagList = data.tagList;
@@ -409,8 +409,8 @@ export class Operator {
       id: this.id,
       displayNumber: this.displayNumber,
       rarity: this.rarity,
-      profession: this.profession,
-      subProfessionId: this.subProfessionId,
+      class: this.class,
+      classBranch: this.classBranch,
       position: this.position,
       tagList: this.normalizedTagList,
       nationId: this.nationId,
@@ -420,9 +420,10 @@ export class Operator {
       potentialItem: this.potentialItem,
       tokenSummon: this.tokenSummon,
       isNotObtainable: this.isNotObtainable,
+      // @ts-ignore elite is a number string
       defaultOutfits: Object.entries(this.defaultOutfits).reduce(
         (accumulator: { [elite: string]: string }, [elite, outfit]) => {
-          accumulator[elite] = outfit.avatarId;
+          accumulator[elite] = outfit.toData();
           return accumulator;
         },
         {}
@@ -436,8 +437,8 @@ export class Operator {
       id: this.id,
       displayNumber: this.displayNumber,
       rarity: this.rarity,
-      profession: this.profession,
-      subProfessionId: this.subProfessionId,
+      class: this.class,
+      classBranch: this.classBranch,
       position: this.position,
       tagList: this.normalizedTagList,
       nationId: this.nationId,
@@ -446,7 +447,7 @@ export class Operator {
       isNotObtainable: this.isNotObtainable,
       defaultOutfits: Object.entries(this.defaultOutfits).reduce(
         (accumulator: { [elite: string]: string }, [elite, outfit]) => {
-          accumulator[elite] = outfit.avatarId;
+          accumulator[elite] = outfit.toIndexData();
           return accumulator;
         },
         {}
@@ -492,7 +493,7 @@ export class Operator {
 
   public get isActualOperator() {
     return (
-      ![Profession.Trap, Profession.Token].includes(this.profession) &&
+      !["TRAP", "TOKEN"].includes(this.class) &&
       !constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(this.id)
     );
   }

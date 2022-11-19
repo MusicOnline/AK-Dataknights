@@ -35,38 +35,64 @@ export enum VoiceType {
   None = "NONE",
 }
 
-export interface SkinTableSkinData {
+export interface SkinTableCharSkinData {
   // skin-table.json
   skinId: string;
   charId: string;
   tokenSkinMap: TokenSkinMap[] | null;
   illustId: string | null;
-  dynIllustId: string | null;
-  avatarId: string;
-  portraitId: string | null;
-  dynPortraitId: string | null;
+  dynIllustId: string | null; // For dynamic outfits in store and of limited E2
+  avatarId: string; // Square icon in deployment menu in combat
+  portraitId: string | null; // Rectangular crop in squad menu; Full splash (Aceship)
+  dynPortraitId: string | null; // Only for dynamic outfits in store (not limited E2)
   dynEntranceId: string | null;
   buildingId: string | null;
   battleSkin: BattleSkin;
   isBuySkin: boolean;
   tmplId: string | null;
   voiceId: string | null;
-  voiceType: keyof typeof VoiceType;
+  voiceType: VoiceType;
   displaySkin: DisplaySkin;
+}
+
+export interface GeneratedOutfitData {
+  id: string;
+  dynIllustId: string | null;
+  avatarId: string;
+  portraitId: string | null;
+  voiceId: string | null;
+  voiceType: VoiceType;
 }
 
 export class Outfit {
   id: string;
   dynIllustId: string | null;
   avatarId: string;
+  portraitId: string | null;
   voiceId: string | null;
   voiceType: VoiceType;
 
-  public constructor(data: SkinTableSkinData) {
+  public constructor(data: SkinTableCharSkinData) {
     this.id = data.skinId;
     this.dynIllustId = data.dynIllustId;
     this.avatarId = data.avatarId;
+    this.portraitId = data.portraitId;
     this.voiceId = data.voiceId;
-    this.voiceType = VoiceType[data.voiceType];
+    this.voiceType = data.voiceType;
+  }
+
+  public toData(): GeneratedOutfitData {
+    return {
+      id: this.id,
+      dynIllustId: this.dynIllustId,
+      avatarId: this.avatarId,
+      portraitId: this.portraitId,
+      voiceId: this.voiceId,
+      voiceType: this.voiceType,
+    };
+  }
+
+  public toIndexData() {
+    return this.avatarId;
   }
 }
