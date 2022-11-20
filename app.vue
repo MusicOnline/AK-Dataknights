@@ -36,4 +36,12 @@ const { locale } = useI18n();
     user-select: none;
   }
 }
+
+.ba-markup {
+  font-weight: bold;
+}
+
+.ba-keyword {
+  @apply text-blue-500;
+}
 </style>
