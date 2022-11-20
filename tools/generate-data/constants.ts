@@ -1,4 +1,5 @@
 import path from "path";
+
 import { CharacterTable, SkinTable } from "./tables";
 
 export const ORIGINAL_LOCALE = "zh-CN";

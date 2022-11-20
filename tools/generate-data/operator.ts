@@ -1,7 +1,7 @@
-import * as constants from "./constants";
-import { LocalizationString, normalizeForLocaleFile } from "./utils";
 import OPERATOR_KEY_OVERRIDE from "../../data/custom/operator-key-override.json";
+import * as constants from "./constants";
 import { GeneratedOutfitData, Outfit } from "./outfit";
+import { LocalizationString, normalizeForLocaleFile } from "./utils";
 
 const CHINESE_TO_ENGLISH_TAGS = {
   新手: "STARTER",

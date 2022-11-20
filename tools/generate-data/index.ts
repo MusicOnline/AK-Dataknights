@@ -1,8 +1,9 @@
 import * as fs from "fs/promises";
+
+import OPERATOR_RELEASE_ORDER from "../../data/custom/operator-release.json";
 import * as constants from "./constants";
 import { Operator } from "./operator";
 import { CharacterTable } from "./tables";
-import OPERATOR_RELEASE_ORDER from "../../data/custom/operator-release.json";
 
 async function generateOperatorFiles() {
   let enTLOperatorLocaleData: any = {};
