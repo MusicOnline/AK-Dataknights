@@ -64,7 +64,7 @@ async function generateOperatorFiles() {
       const localeFileData: any = {};
       actualOperators.forEach(
         (operator) =>
-          (localeFileData[operator.key] = operator.toLocaleFileData(locale))
+          (localeFileData[operator.key] = operator.toLocaleData(locale))
       );
       return fs.writeFile(
         `locales/${locale}/operators-data.json`,

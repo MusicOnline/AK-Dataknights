@@ -2,1351 +2,5741 @@
   "savage": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "lancet-2": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "castle-3": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "yato": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "durin": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "12f": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "rangers": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "noir-corne": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "fang": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "vanilla": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "plume": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "hibiscus": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "ansel": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "lava": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "steward": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "kroos": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "adnachiel": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "orchid": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "melantha": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "beagle": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "cardigan": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "courier": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "scavenger": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "vigna": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "myrrh": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "gavial": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "perfumer": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "haze": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "gitano": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "gravel": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "rope": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "shaw": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "shirayuki": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "meteor": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "jessica": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "deepcolor": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "earthspirit": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "dobermann": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "estelle": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "beehunter": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "mousse": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "frostleaf": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "matoimaru": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "cuora": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "gummy": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "matterhorn": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "texas": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "zima": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "ptilopsis": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "silence": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "warfarin": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "amiya": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "nightmare": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "skyfire": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "projekt-red": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "manticore": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "cliffheart": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "feater": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "provence": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "blue-poison": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "firewatch": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "meteorite": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "platinum": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "pramanix": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "istina": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "mayer": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "sora": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "franka": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "specter": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "indra": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "chen": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "lappland": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "nearl": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "liskarm": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "vulcan": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "croissant": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "siege": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "shining": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "nightingale": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "ifrit": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "eyjafjalla": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "exusiai": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "angelina": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "silverash": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "hoshiguma": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "saria": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "catapult": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "midnight": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "grani": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "skadi": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "popukar": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "swire": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "spot": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "greyy": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "schwarz": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "glaucus": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "ceylon": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "sussurro": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "myrtle": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "astesia": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "hellagur": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "dur-nar": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "vermeil": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "magallan": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "flamebringer": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "executor": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "ethan": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "breeze": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "waai-fu": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "mostima": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "may": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "bison": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "reed": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "broca": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "ambriel": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "greythroat": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "blaze": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "snowsant": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "aak": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "hung": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "nian": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "ceobe": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "leizi": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "purestream": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "bagpipe": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "bibeak": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "sesa": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "utage": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "conviction": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "phantom": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "shamare": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "cutter": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "sideroca": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "thrm-ex": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "w": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "weedy": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "elysium": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "asbestos": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "tsukinogi": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "podenco": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "absinthe": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "leonhardt": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "rosa": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "click": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "ayerscarpe": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "folinic": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "suzuran": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "beeswax": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "chiave": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "scene": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "jaye": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "andreana": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "thorns": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "eunectes": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "tomimi": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "flint": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "aciddrop": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "pith": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "sharp": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "touch": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "stormeye": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "reserve-operator-melee": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "reserve-operator-sniper": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "reserve-operator-logistics": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "reserve-operator-caster": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "surtr": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "arene": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "mint": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "april": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "blemishine": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "aosta": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "whislash": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "bubble": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "rosmontis": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "mudrock": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "whisperain": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "jackie": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "mountain": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "kafka": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "robin": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "pinecone": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "archetto": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "iris": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "beanstalk": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "tuye": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "lava-the-purgatory": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "dusk": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "saga": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "mr-nothing": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "ash": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "frost": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "blitz": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "tachanka": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "passenger": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "toddifons": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "heavyrain": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "skadi-the-corrupting-heart": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "gladiia": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "kaltsit": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "akafuyu": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "carnelian": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "kirara": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "bena": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "indigo": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "pallas": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "chen-the-holungday": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "mizuki": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "la-pluma": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "tequila": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "saileach": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "mulberry": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "roberta": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "fartooth": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "ashlock": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "nearl-the-radiant-knight": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "flametail": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "corroserum": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "honeyberry": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "wild-mane": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "pudding": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "justice-knight": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "gnosis": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "aurora": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "kjera": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "shalem": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "nine-colored-deer": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "ling": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "lee": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "blacknight": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "kroos-the-keen-glint": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "goldenglow": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "quercus": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "fiammetta": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "enforcer": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "kazemaru": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "horn": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "rockrock": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "heidi": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "chestnut": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "irene": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "specter-the-unchained": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "lumen": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "windflit": {
     "name": null,
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "erato": {
     "name": "Erato",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "ebenholz": {
     "name": "Ebenholz",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "czerny": {
     "name": "Czerny",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "hibiscus-the-purifier": {
     "name": "Hibiscus the Purifier",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "dorothy": {
     "name": "Dorothy",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "astgenne": {
     "name": "Astgenne",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "greyy-the-lightningbearer": {
     "name": "Greyy the Lightningbearer",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "gavial-the-invincible": {
     "name": "Gavial the Invincible",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "pozymoka": {
     "name": "Pozyomka",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "cantabile": {
     "name": "Cantabile",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "minimalist": {
     "name": "Minimalist",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "mlynar": {
     "name": "Młynar",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "proviso": {
     "name": "Proviso",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "luo-xiaohei": {
     "name": "Luo Xiaohei",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "highmore": {
     "name": "Highmore",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "tulip": {
     "name": "Tulip",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "reserve-operator-defender": {
     "name": "Reserve Operator - Defender",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "stainless": {
     "name": "Stainless",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "dagda": {
     "name": "Dagda",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "paprika": {
     "name": "Paprika",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "totter": {
     "name": "Totter",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "penance": {
     "name": "Penance",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "texas-the-omertosa": {
     "name": "Texas the Omertosa",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "vigil": {
     "name": "Vigil",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "lunacub": {
     "name": "Lunacub",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "qanipalaat": {
     "name": "Qanipalaat",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   },
   "quartz": {
     "name": "Quartz",
     "appellation": null,
-    "description": null
+    "description": null,
+    "phases": [
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      },
+      {
+        "trait": {
+          "description": null
+        }
+      }
+    ]
   }
 }

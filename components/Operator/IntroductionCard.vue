@@ -3,9 +3,20 @@ import { GeneratedOperatorData } from "~/tools/generate-data/operator";
 
 const { t, locale, getLocaleMessage } = useI18n();
 
-const { operator } = defineProps<{
+const { operator, operatorState } = defineProps<{
   operator: GeneratedOperatorData;
+  operatorState: any;
 }>();
+
+const currentAvatarUrl = $computed(() => {
+  let phase = operator.phases[operatorState.elite];
+  while (!phase.outfit?.avatarId && phase.elite !== 0)
+    phase = operator.phases[phase.elite - 1];
+
+  return `https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${encodeURI(
+    phase.outfit!.avatarId
+  )}.png`;
+});
 
 // https://github.com/intlify/vue-i18n-next/issues/1235
 function getSpecificTranslation(
@@ -37,12 +48,7 @@ function getSpecificTranslationWithTL(
 <template>
   <div :class="`operator-rarity-${operator.rarity}`">
     <div class="flex max-w-4xl flex-col gap-1 sm:flex-row">
-      <img
-        class="m-auto h-32 w-fit sm:m-0 sm:h-fit"
-        :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${encodeURI(
-          operator.defaultOutfits[0].avatarId
-        )}.png`"
-      />
+      <img class="m-auto h-32 w-fit sm:m-0 sm:h-fit" :src="currentAvatarUrl" />
       <div class="flex flex-col gap-2">
         <!-- Icon, name, rarity, class -->
         <div class="flex md:h-16">
@@ -113,7 +119,13 @@ function getSpecificTranslationWithTL(
             </div>
             <div
               class="bg-gray-200 px-1 py-0.5"
-              v-html="convertRichText(t(`${operator.key}.description`))"
+              v-html="
+                convertRichText(
+                  t(
+                    `${operator.key}.phases.${operatorState.elite}.trait.description`
+                  )
+                )
+              "
             />
           </div>
         </div>

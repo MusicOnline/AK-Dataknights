@@ -11,8 +11,29 @@ const { t } = useI18n();
 const { default: operator }: { default: GeneratedOperatorData } = await import(
   `../../data/operators/${operatorKey}.json`
 );
+const finalPhase = operator.phases.slice(-1)[0];
 
 const isSidebarExpanded = $ref(false);
+const operatorState = $ref({
+  elite: finalPhase.elite,
+  level: finalPhase.maxLevel,
+  maxTrust: true,
+});
+const currentPhase = $computed(() => operator.phases[operatorState.elite]);
+
+// https://stackoverflow.com/questions/22534837/input-range-thumb-do-not-refreshes-after-changed-max-value
+watch(
+  () => operatorState.elite,
+  () => (operatorState.level = currentPhase.maxLevel)
+);
+
+function limitOperatorLevel() {
+  if (operatorState.level > currentPhase.maxLevel) {
+    operatorState.level = currentPhase.maxLevel;
+  } else if (operatorState.level < 1) {
+    operatorState.level = 1;
+  }
+}
 </script>
 
 <template>
@@ -20,8 +41,59 @@ const isSidebarExpanded = $ref(false);
     <OperatorSidebar :is-sidebar-expanded="isSidebarExpanded" />
     <div class="flex flex-col gap-2 md:ml-56 lg:ml-72">
       <Breadcrumbs class="text-sm" />
-      <OperatorIntroductionCard :operator="operator" />
-      <div>{{ operator }}</div>
+      <OperatorIntroductionCard
+        :operator="operator"
+        :operator-state="operatorState"
+      />
+      <div class="sticky top-12 mt-1 flex bg-gray-400 p-1">
+        <ul class="flex gap-1">
+          <li v-for="elite in [...Array(finalPhase.elite + 1).keys()]">
+            <button
+              class="w-8 bg-gray-800"
+              @click="operatorState.elite = elite"
+            >
+              <img
+                class="w-full object-contain"
+                :class="{
+                  'brightness-50': operatorState.elite !== elite,
+                }"
+                :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/${elite}.png`"
+              />
+            </button>
+          </li>
+        </ul>
+        <input
+          class="ml-auto w-12"
+          v-model.number="operatorState.level"
+          :min="1"
+          :max="currentPhase.maxLevel"
+          type="number"
+          @change="limitOperatorLevel"
+        />
+        <o-slider
+          class="mt-2 hidden sm:block"
+          v-model.number="operatorState.level"
+          :min="1"
+          :max="currentPhase.maxLevel"
+          fill-class="bg-primary-main"
+        >
+          <template
+            v-for="val in [...Array(currentPhase.maxLevel / 10).keys()]"
+            :key="val"
+          >
+            <o-slider-tick :value="val * 10">{{ val * 10 }}</o-slider-tick>
+          </template>
+        </o-slider>
+      </div>
+      <div class="mt-1 bg-gray-200 p-1">{{ operatorState }}</div>
+      <div class="mt-1 whitespace-pre bg-gray-200 p-1 font-mono">
+        {{ JSON.stringify(operator, null, 2) }}
+      </div>
+      <div class="mt-1 bg-gray-200 p-1">{{ operator }}</div>
+      <div class="mt-1 bg-gray-200 p-1">{{ operator }}</div>
+      <div class="mt-1 bg-gray-200 p-1">{{ operator }}</div>
+      <div class="mt-1 bg-gray-200 p-1">{{ operator }}</div>
+      <div class="mt-1 bg-gray-200 p-1">{{ operator }}</div>
     </div>
   </div>
 </template>

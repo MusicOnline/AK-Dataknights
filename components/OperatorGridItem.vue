@@ -15,15 +15,15 @@ const { operator } = defineProps<{
 <template>
   <li>
     <NuxtLink
-      :to="localePath(`/operators/${operator.key}`)"
       class="flex h-full flex-col p-1 shadow-sm transition-all duration-75 hover:shadow"
+      :to="localePath(`/operators/${operator.key}`)"
       :class="`operator-rarity-${operator.rarity}`"
     >
       <img
-        :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${encodeURI(
-          operator.defaultOutfits[0]
-        )}.png`"
         class="operator-image"
+        :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${encodeURI(
+          operator.phases[0].outfit!
+        )}.png`"
       />
       <div
         class="m-auto text-center"

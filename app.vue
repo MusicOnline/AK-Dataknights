@@ -11,7 +11,7 @@ const { locale } = useI18n();
       <Title>AK Dataknights</Title>
     </Head>
     <NavigationBar />
-    <main class="overflow-hidden p-2">
+    <main class="p-2">
       <NuxtPage />
     </main>
     <footer>Made with <Icon name="logos:nuxt-icon" /></footer>

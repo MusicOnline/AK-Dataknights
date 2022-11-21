@@ -10,7 +10,8 @@ export const GAME_LOCALES = [
   "ko-KR",
   "zh-TW",
 ] as const;
-export const OUTPUT_LOCALES = [...GAME_LOCALES, "en-TL"] as const;
+export const TRANSLATED_LOCALES = ["en-TL"] as const;
+export const OUTPUT_LOCALES = [...GAME_LOCALES, ...TRANSLATED_LOCALES] as const;
 
 export const OPERATOR_TABLE_PATH = "gamedata/excel/character_table.json";
 export const MODULE_TABLE_PATH = "gamedata/excel/uniequip_table.json";
