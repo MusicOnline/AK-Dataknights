@@ -145,18 +145,24 @@ export class Operator implements Localizable {
     };
   }
 
-  public addLocale(locale: typeof constants.OUTPUT_LOCALES[number], data: any) {
+  public addLocale(locale: typeof constants.GAME_LOCALES[number], data: any) {
     Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) =>
       this[attribute]?.addLocale(locale, data[attribute])
     );
-    if (!locale.endsWith("-TL")) {
-      this.phases.forEach((phase) => phase.addLocale(locale, data));
-    } else {
-      // @ts-ignore
-      this.phases.forEach((phase) => phase.addLocaleTL(locale, data));
-    }
+    this.phases.forEach((phase) => phase.addLocale(locale, data));
 
     if (locale === "en-US") this._unnormalizedKey = data.name;
+  }
+
+  public addLocaleTL(
+    locale: typeof constants.TRANSLATED_LOCALES[number],
+    data: any
+  ) {
+    Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) =>
+      this[attribute]?.addLocaleTL(locale, data[attribute])
+    );
+    this.phases.forEach((phase) => phase.addLocaleTL(locale, data));
+
     if (locale === "en-TL" && data.name) this._unnormalizedKey = data.name;
   }
 

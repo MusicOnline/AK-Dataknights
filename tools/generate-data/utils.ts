@@ -1,8 +1,12 @@
-import { OUTPUT_LOCALES } from "./constants";
+import * as constants from "./constants";
 
 export interface Localizable {
-  addLocale(locale: typeof OUTPUT_LOCALES[number], ...data: any): void;
-  toLocaleData(locale: typeof OUTPUT_LOCALES[number]): any;
+  addLocale(locale: typeof constants.GAME_LOCALES[number], ...data: any): void;
+  addLocaleTL(
+    locale: typeof constants.TRANSLATED_LOCALES[number],
+    ...data: any
+  ): void;
+  toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]): any;
 }
 
 export class LocalizationString implements Localizable {
@@ -24,8 +28,8 @@ export class LocalizationString implements Localizable {
     return new LocalizationString(zh_CN);
   }
 
-  public addLocale(
-    locale: typeof OUTPUT_LOCALES[number],
+  private addLocaleCommon(
+    locale: typeof constants.OUTPUT_LOCALES[number],
     translation: string | null
   ) {
     const transformedLocale = locale.replace("-", "_");
@@ -33,7 +37,21 @@ export class LocalizationString implements Localizable {
     this[transformedLocale] = translation;
   }
 
-  public toLocaleData(locale: typeof OUTPUT_LOCALES[number]) {
+  public addLocale(
+    locale: typeof constants.GAME_LOCALES[number],
+    translation: string | null
+  ) {
+    this.addLocaleCommon(locale, translation);
+  }
+
+  public addLocaleTL(
+    locale: typeof constants.TRANSLATED_LOCALES[number],
+    translation: string | null
+  ) {
+    this.addLocaleCommon(locale, translation);
+  }
+
+  public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
     const transformedLocale = locale.replace("-", "_");
     // @ts-ignore
     return normalizeForLocaleFile(this[transformedLocale] ?? null);

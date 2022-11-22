@@ -37,7 +37,7 @@ export class Trait implements Localizable {
   }
 
   public addLocale(
-    locale: typeof constants.OUTPUT_LOCALES[number],
+    locale: typeof constants.GAME_LOCALES[number],
     elite: number,
     data: CharacterTableData
   ) {
@@ -57,7 +57,10 @@ export class Trait implements Localizable {
     elite: number,
     data: any
   ) {
-    this.description.addLocale(locale, data?.phases?.[elite].trait.description);
+    this.description.addLocaleTL(
+      locale,
+      data?.phases?.[elite].trait.description
+    );
   }
 
   public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
@@ -119,7 +122,7 @@ export class ElitePhase implements Localizable {
   }
 
   public addLocale(
-    locale: typeof constants.OUTPUT_LOCALES[number],
+    locale: typeof constants.GAME_LOCALES[number],
     data: CharacterTableData
   ) {
     this.trait?.addLocale(locale, this.elite, data);

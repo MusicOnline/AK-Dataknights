@@ -6,15 +6,18 @@ import { Operator } from "./operator";
 import { CharacterTable } from "./tables";
 
 async function generateOperatorFiles() {
-  let enTLOperatorLocaleData: any = {};
+  const translatedLocaleData = constants.TRANSLATED_LOCALES.reduce(
+    (accumulator: any, locale) => {
+      try {
+        accumulator[
+          locale
+        ] = require(`../../locales/${locale}/operators-data.json`);
+      } catch {}
+      return accumulator;
+    },
+    {}
+  );
 
-  try {
-    enTLOperatorLocaleData = require("../../locales/en-TL/operators-data.json");
-  } catch {
-    console.warn(
-      "No en-TL/operators-data.json (translated) found. A new file will be created."
-    );
-  }
   const operatorIdReleaseOrder = [
     ...OPERATOR_RELEASE_ORDER,
     ...Object.keys(constants.OPERATOR_TABLES[constants.ORIGINAL_LOCALE]).filter(
@@ -34,8 +37,13 @@ async function generateOperatorFiles() {
         if (table[id]) operator.addLocale(locale, table[id]);
       }
     );
-    if (enTLOperatorLocaleData[operator.key])
-      operator.addLocale("en-TL", enTLOperatorLocaleData[operator.key]);
+    Object.entries(translatedLocaleData).forEach(
+      // @ts-ignore
+      ([locale, table]: [typeof constants.TRANSLATED_LOCALES[number], any]) => {
+        if (table[operator.key])
+          operator.addLocaleTL(locale, table[operator.key]);
+      }
+    );
     return operator;
   });
   const actualOperators = operators.filter(
