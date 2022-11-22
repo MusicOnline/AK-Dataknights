@@ -123,6 +123,19 @@
       "shotprotector": "Sentinel",
       "chainhealer": "Chain Medic",
       "crusher": "Crusher"
+    },
+    "attribute": {
+      "hp": "HP",
+      "atk": "ATK",
+      "def": "DEF",
+      "res": "RES",
+      "dpCost": "DP Cost",
+      "attackInterval": "Attack Interval",
+      "block": "Block",
+      "redeploymentTime": "Redeployment Time"
     }
+  },
+  "general": {
+    "nSeconds": "{value}s"
   }
 }

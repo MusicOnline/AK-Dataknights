@@ -86,6 +86,11 @@ function limitOperatorLevel() {
         </o-slider>
       </div>
       <div class="mt-1 bg-gray-200 p-1">{{ operatorState }}</div>
+      <OperatorAttributesTable
+        class="mt-1 bg-gray-200 p-1"
+        :operator="operator"
+        :operator-state="operatorState"
+      />
       <div class="mt-1 whitespace-pre bg-gray-200 p-1 font-mono">
         {{ JSON.stringify(operator, null, 2) }}
       </div>
