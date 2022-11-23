@@ -129,10 +129,11 @@
       "atk": "ATK",
       "def": "DEF",
       "res": "RES",
-      "dpCost": "DP Cost",
-      "attackInterval": "Attack Interval",
+      "dpCost": "Cost",
+      "attackInterval": "ATK Interval",
       "block": "Block",
-      "redeploymentTime": "Redeployment Time"
+      "redeploymentTime": "Redeploy",
+      "trust": "Trust"
     }
   },
   "general": {

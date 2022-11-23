@@ -31,9 +31,13 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
         const valueDifference = endKeyFrame.data[name] - startValue;
         const levelDifference = endKeyFrame.level - startKeyFrame.level;
         const valuePerLevel = valueDifference / levelDifference;
+        // @ts-ignore
+        const trustBonus: number = operatorState.maxTrust
+          ? operator.trustKeyFrames?.slice(-1)[0].data[name] ?? 0
+          : 0;
 
         accumulator[name] = Math.round(
-          startValue + valuePerLevel * (operatorState.level - 1)
+          startValue + valuePerLevel * (operatorState.level - 1) + trustBonus
         );
       }
       return accumulator;

@@ -30,6 +30,7 @@ export interface GeneratedOperatorData {
   tokenSummon: null;
   isNotObtainable: boolean;
   phases: GeneratedElitePhaseData[];
+  trustKeyFrames: raw.KeyFrame[] | null;
 }
 
 export interface GeneratedOperatorIndexData {
@@ -78,6 +79,7 @@ export class Operator implements Localizable {
 
   // Additional attributes
   phases: ElitePhase[];
+  trustKeyFrames: raw.KeyFrame[] | null;
 
   // Accepts zh-CN data only
   public constructor(id: string, data: raw.CharacterTableData) {
@@ -104,6 +106,7 @@ export class Operator implements Localizable {
     this._unnormalizedKey = data.appellation;
 
     this.phases = ElitePhase.getAllFromData(id, data);
+    this.trustKeyFrames = data.favorKeyFrames;
   }
 
   public toData(): GeneratedOperatorData {
@@ -124,6 +127,7 @@ export class Operator implements Localizable {
       tokenSummon: this.tokenSummon,
       isNotObtainable: this.isNotObtainable,
       phases: this.phases.map((phase) => phase.toData()),
+      trustKeyFrames: this.trustKeyFrames,
     };
   }
 

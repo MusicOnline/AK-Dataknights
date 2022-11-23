@@ -84,6 +84,9 @@ function limitOperatorLevel() {
             <o-slider-tick :value="val * 10">{{ val * 10 }}</o-slider-tick>
           </template>
         </o-slider>
+        <o-switch v-model="operatorState.maxTrust">
+          {{ t("operator.attribute.trust") }}
+        </o-switch>
       </div>
       <div class="mt-1 bg-gray-200 p-1">{{ operatorState }}</div>
       <OperatorAttributesTable
