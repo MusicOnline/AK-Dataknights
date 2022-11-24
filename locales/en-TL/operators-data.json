@@ -19,7 +19,18 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      }
+    }
   },
   "lancet-2": {
     "name": null,
@@ -31,7 +42,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "castle-3": {
     "name": null,
@@ -43,7 +71,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "yato": {
     "name": null,
@@ -55,7 +100,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "durin": {
     "name": null,
@@ -67,7 +129,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "12f": {
     "name": null,
@@ -79,7 +158,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "rangers": {
     "name": null,
@@ -91,7 +187,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "noir-corne": {
     "name": null,
@@ -103,7 +216,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "fang": {
     "name": null,
@@ -120,7 +250,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "vanilla": {
     "name": null,
@@ -137,7 +284,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "plume": {
     "name": null,
@@ -154,7 +318,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "hibiscus": {
     "name": null,
@@ -171,7 +352,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "ansel": {
     "name": null,
@@ -188,7 +386,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "lava": {
     "name": null,
@@ -205,7 +420,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "steward": {
     "name": null,
@@ -222,7 +454,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "kroos": {
     "name": null,
@@ -239,7 +488,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "adnachiel": {
     "name": null,
@@ -256,7 +522,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "orchid": {
     "name": null,
@@ -273,7 +556,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "melantha": {
     "name": null,
@@ -290,7 +590,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "beagle": {
     "name": null,
@@ -307,7 +624,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "cardigan": {
     "name": null,
@@ -324,7 +658,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "courier": {
     "name": null,
@@ -346,7 +697,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "scavenger": {
     "name": null,
@@ -368,7 +736,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "vigna": {
     "name": null,
@@ -390,7 +775,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "myrrh": {
     "name": null,
@@ -412,7 +814,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "gavial": {
     "name": null,
@@ -434,7 +853,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "perfumer": {
     "name": null,
@@ -456,7 +892,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "haze": {
     "name": null,
@@ -478,7 +931,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "gitano": {
     "name": null,
@@ -500,7 +970,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "gravel": {
     "name": null,
@@ -522,7 +1009,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "rope": {
     "name": null,
@@ -544,7 +1048,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "shaw": {
     "name": null,
@@ -566,7 +1087,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "shirayuki": {
     "name": null,
@@ -588,7 +1126,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "meteor": {
     "name": null,
@@ -610,7 +1165,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "jessica": {
     "name": null,
@@ -632,7 +1204,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "deepcolor": {
     "name": null,
@@ -654,7 +1243,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "earthspirit": {
     "name": null,
@@ -676,7 +1282,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "dobermann": {
     "name": null,
@@ -698,7 +1321,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "estelle": {
     "name": null,
@@ -720,7 +1360,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "beehunter": {
     "name": null,
@@ -742,7 +1399,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "mousse": {
     "name": null,
@@ -764,7 +1438,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "frostleaf": {
     "name": null,
@@ -786,7 +1477,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "matoimaru": {
     "name": null,
@@ -808,7 +1516,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "cuora": {
     "name": null,
@@ -830,7 +1555,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "gummy": {
     "name": null,
@@ -852,7 +1594,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "matterhorn": {
     "name": null,
@@ -874,7 +1633,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "texas": {
     "name": null,
@@ -896,7 +1672,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "zima": {
     "name": null,
@@ -918,7 +1711,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "ptilopsis": {
     "name": null,
@@ -940,7 +1750,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "silence": {
     "name": null,
@@ -962,7 +1789,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "warfarin": {
     "name": null,
@@ -984,7 +1828,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "amiya": {
     "name": null,
@@ -1006,7 +1867,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "nightmare": {
     "name": null,
@@ -1028,7 +1906,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "skyfire": {
     "name": null,
@@ -1050,7 +1945,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "projekt-red": {
     "name": null,
@@ -1072,7 +1984,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "manticore": {
     "name": null,
@@ -1094,7 +2023,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "cliffheart": {
     "name": null,
@@ -1116,7 +2062,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "feater": {
     "name": null,
@@ -1138,7 +2101,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "provence": {
     "name": null,
@@ -1160,7 +2140,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "blue-poison": {
     "name": null,
@@ -1182,7 +2179,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "firewatch": {
     "name": null,
@@ -1204,7 +2218,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "meteorite": {
     "name": null,
@@ -1226,7 +2257,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "platinum": {
     "name": null,
@@ -1248,7 +2296,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "pramanix": {
     "name": null,
@@ -1270,7 +2335,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "istina": {
     "name": null,
@@ -1292,7 +2374,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "mayer": {
     "name": null,
@@ -1314,7 +2413,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "sora": {
     "name": null,
@@ -1336,7 +2452,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "franka": {
     "name": null,
@@ -1358,7 +2491,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "specter": {
     "name": null,
@@ -1380,7 +2530,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "indra": {
     "name": null,
@@ -1402,7 +2569,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "chen": {
     "name": null,
@@ -1424,7 +2608,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "lappland": {
     "name": null,
@@ -1446,7 +2647,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "nearl": {
     "name": null,
@@ -1468,7 +2686,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "liskarm": {
     "name": null,
@@ -1490,7 +2725,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "vulcan": {
     "name": null,
@@ -1512,7 +2764,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "croissant": {
     "name": null,
@@ -1534,7 +2803,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "siege": {
     "name": null,
@@ -1556,7 +2842,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "shining": {
     "name": null,
@@ -1578,7 +2881,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "nightingale": {
     "name": null,
@@ -1600,7 +2920,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "ifrit": {
     "name": null,
@@ -1622,7 +2959,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "eyjafjalla": {
     "name": null,
@@ -1644,7 +2998,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "exusiai": {
     "name": null,
@@ -1666,7 +3037,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "angelina": {
     "name": null,
@@ -1688,7 +3076,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "silverash": {
     "name": null,
@@ -1710,7 +3115,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "hoshiguma": {
     "name": null,
@@ -1732,7 +3154,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "saria": {
     "name": null,
@@ -1754,7 +3193,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "catapult": {
     "name": null,
@@ -1771,7 +3227,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "midnight": {
     "name": null,
@@ -1788,7 +3261,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "grani": {
     "name": null,
@@ -1810,7 +3300,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "skadi": {
     "name": null,
@@ -1832,7 +3339,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "popukar": {
     "name": null,
@@ -1849,7 +3373,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "swire": {
     "name": null,
@@ -1871,7 +3412,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "spot": {
     "name": null,
@@ -1888,7 +3446,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "greyy": {
     "name": null,
@@ -1910,7 +3485,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "schwarz": {
     "name": null,
@@ -1932,7 +3524,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "glaucus": {
     "name": null,
@@ -1954,7 +3563,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "ceylon": {
     "name": null,
@@ -1976,7 +3602,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "sussurro": {
     "name": null,
@@ -1998,7 +3641,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "myrtle": {
     "name": null,
@@ -2020,7 +3680,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "astesia": {
     "name": null,
@@ -2042,7 +3719,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "hellagur": {
     "name": null,
@@ -2064,7 +3758,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "dur-nar": {
     "name": null,
@@ -2086,7 +3797,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "vermeil": {
     "name": null,
@@ -2108,7 +3836,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "magallan": {
     "name": null,
@@ -2130,7 +3875,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "flamebringer": {
     "name": null,
@@ -2152,7 +3914,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "executor": {
     "name": null,
@@ -2174,7 +3953,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "ethan": {
     "name": null,
@@ -2196,7 +3992,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "breeze": {
     "name": null,
@@ -2218,7 +4031,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "waai-fu": {
     "name": null,
@@ -2240,7 +4070,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "mostima": {
     "name": null,
@@ -2262,7 +4109,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "may": {
     "name": null,
@@ -2284,7 +4148,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "bison": {
     "name": null,
@@ -2306,7 +4187,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "reed": {
     "name": null,
@@ -2328,7 +4226,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "broca": {
     "name": null,
@@ -2350,7 +4265,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "ambriel": {
     "name": null,
@@ -2372,7 +4304,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "greythroat": {
     "name": null,
@@ -2394,7 +4343,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "blaze": {
     "name": null,
@@ -2416,7 +4382,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "snowsant": {
     "name": null,
@@ -2438,7 +4421,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "aak": {
     "name": null,
@@ -2460,7 +4460,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "hung": {
     "name": null,
@@ -2482,7 +4499,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "nian": {
     "name": null,
@@ -2504,7 +4538,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "ceobe": {
     "name": null,
@@ -2526,7 +4577,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "leizi": {
     "name": null,
@@ -2548,7 +4616,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "purestream": {
     "name": null,
@@ -2570,7 +4655,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "bagpipe": {
     "name": null,
@@ -2592,7 +4694,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "bibeak": {
     "name": null,
@@ -2614,7 +4733,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "sesa": {
     "name": null,
@@ -2636,7 +4772,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "utage": {
     "name": null,
@@ -2658,7 +4811,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "conviction": {
     "name": null,
@@ -2680,7 +4850,8 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {}
   },
   "phantom": {
     "name": null,
@@ -2702,7 +4873,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "shamare": {
     "name": null,
@@ -2724,7 +4912,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "cutter": {
     "name": null,
@@ -2746,7 +4951,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "sideroca": {
     "name": null,
@@ -2768,7 +4990,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "thrm-ex": {
     "name": null,
@@ -2780,7 +5019,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "w": {
     "name": null,
@@ -2802,7 +5058,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "weedy": {
     "name": null,
@@ -2824,7 +5097,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "elysium": {
     "name": null,
@@ -2846,7 +5136,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "asbestos": {
     "name": null,
@@ -2868,7 +5175,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "tsukinogi": {
     "name": null,
@@ -2890,7 +5214,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "podenco": {
     "name": null,
@@ -2912,7 +5253,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "absinthe": {
     "name": null,
@@ -2934,7 +5292,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "leonhardt": {
     "name": null,
@@ -2956,7 +5331,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "rosa": {
     "name": null,
@@ -2978,7 +5370,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "click": {
     "name": null,
@@ -3000,7 +5409,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "ayerscarpe": {
     "name": null,
@@ -3022,7 +5448,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "folinic": {
     "name": null,
@@ -3044,7 +5487,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "suzuran": {
     "name": null,
@@ -3066,7 +5526,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "beeswax": {
     "name": null,
@@ -3088,7 +5565,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "chiave": {
     "name": null,
@@ -3110,7 +5604,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "scene": {
     "name": null,
@@ -3132,7 +5643,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "jaye": {
     "name": null,
@@ -3154,7 +5682,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "andreana": {
     "name": null,
@@ -3176,7 +5721,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "thorns": {
     "name": null,
@@ -3198,7 +5760,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "eunectes": {
     "name": null,
@@ -3220,7 +5799,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "tomimi": {
     "name": null,
@@ -3242,7 +5838,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "flint": {
     "name": null,
@@ -3264,7 +5877,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "aciddrop": {
     "name": null,
@@ -3286,7 +5916,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "pith": {
     "name": null,
@@ -3308,7 +5955,8 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {}
   },
   "sharp": {
     "name": null,
@@ -3330,7 +5978,8 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {}
   },
   "touch": {
     "name": null,
@@ -3352,7 +6001,8 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {}
   },
   "stormeye": {
     "name": null,
@@ -3374,7 +6024,8 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {}
   },
   "reserve-operator-melee": {
     "name": null,
@@ -3391,7 +6042,8 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {}
   },
   "reserve-operator-sniper": {
     "name": null,
@@ -3408,7 +6060,8 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {}
   },
   "reserve-operator-logistics": {
     "name": null,
@@ -3425,7 +6078,8 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {}
   },
   "reserve-operator-caster": {
     "name": null,
@@ -3442,7 +6096,8 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {}
   },
   "surtr": {
     "name": null,
@@ -3464,7 +6119,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "arene": {
     "name": null,
@@ -3486,7 +6158,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "mint": {
     "name": null,
@@ -3508,7 +6197,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "april": {
     "name": null,
@@ -3530,7 +6236,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "blemishine": {
     "name": null,
@@ -3552,7 +6275,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "aosta": {
     "name": null,
@@ -3574,7 +6314,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "whislash": {
     "name": null,
@@ -3596,7 +6353,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "bubble": {
     "name": null,
@@ -3618,7 +6392,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "rosmontis": {
     "name": null,
@@ -3640,7 +6431,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "mudrock": {
     "name": null,
@@ -3662,7 +6470,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "whisperain": {
     "name": null,
@@ -3684,7 +6509,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "jackie": {
     "name": null,
@@ -3706,7 +6548,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "mountain": {
     "name": null,
@@ -3728,7 +6587,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "kafka": {
     "name": null,
@@ -3750,7 +6626,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "robin": {
     "name": null,
@@ -3772,7 +6665,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "pinecone": {
     "name": null,
@@ -3794,7 +6704,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "archetto": {
     "name": null,
@@ -3816,7 +6743,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "iris": {
     "name": null,
@@ -3838,7 +6782,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "beanstalk": {
     "name": null,
@@ -3860,7 +6821,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "tuye": {
     "name": null,
@@ -3882,7 +6860,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "lava-the-purgatory": {
     "name": null,
@@ -3904,7 +6899,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "dusk": {
     "name": null,
@@ -3926,7 +6938,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "saga": {
     "name": null,
@@ -3948,7 +6977,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "mr-nothing": {
     "name": null,
@@ -3970,7 +7016,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "ash": {
     "name": null,
@@ -3992,7 +7055,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "frost": {
     "name": null,
@@ -4014,7 +7094,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "blitz": {
     "name": null,
@@ -4036,7 +7133,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "tachanka": {
     "name": null,
@@ -4058,7 +7172,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "passenger": {
     "name": null,
@@ -4080,7 +7211,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "toddifons": {
     "name": null,
@@ -4102,7 +7250,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "heavyrain": {
     "name": null,
@@ -4124,7 +7289,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "skadi-the-corrupting-heart": {
     "name": null,
@@ -4146,7 +7328,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "gladiia": {
     "name": null,
@@ -4168,7 +7367,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "kaltsit": {
     "name": null,
@@ -4190,7 +7406,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "akafuyu": {
     "name": null,
@@ -4212,7 +7445,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "carnelian": {
     "name": null,
@@ -4234,7 +7484,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "kirara": {
     "name": null,
@@ -4256,7 +7523,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "bena": {
     "name": null,
@@ -4278,7 +7562,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "indigo": {
     "name": null,
@@ -4300,7 +7601,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "pallas": {
     "name": null,
@@ -4322,7 +7640,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "chen-the-holungday": {
     "name": null,
@@ -4344,7 +7679,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "mizuki": {
     "name": null,
@@ -4366,7 +7718,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "la-pluma": {
     "name": null,
@@ -4388,7 +7757,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "tequila": {
     "name": null,
@@ -4410,7 +7796,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "saileach": {
     "name": null,
@@ -4432,7 +7835,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "mulberry": {
     "name": null,
@@ -4454,7 +7874,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "roberta": {
     "name": null,
@@ -4476,7 +7913,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "fartooth": {
     "name": null,
@@ -4498,7 +7952,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "ashlock": {
     "name": null,
@@ -4520,7 +7991,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "nearl-the-radiant-knight": {
     "name": null,
@@ -4542,7 +8030,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "flametail": {
     "name": null,
@@ -4564,7 +8069,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "corroserum": {
     "name": null,
@@ -4586,7 +8108,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "honeyberry": {
     "name": null,
@@ -4608,7 +8147,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "wild-mane": {
     "name": null,
@@ -4630,7 +8186,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "pudding": {
     "name": null,
@@ -4652,7 +8225,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "justice-knight": {
     "name": null,
@@ -4664,7 +8254,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "gnosis": {
     "name": null,
@@ -4686,7 +8293,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "aurora": {
     "name": null,
@@ -4708,7 +8332,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "kjera": {
     "name": null,
@@ -4730,7 +8371,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "shalem": {
     "name": null,
@@ -4752,7 +8410,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "nine-colored-deer": {
     "name": null,
@@ -4774,7 +8449,8 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {}
   },
   "ling": {
     "name": null,
@@ -4796,7 +8472,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "lee": {
     "name": null,
@@ -4818,7 +8511,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "blacknight": {
     "name": null,
@@ -4840,7 +8550,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "kroos-the-keen-glint": {
     "name": null,
@@ -4862,7 +8589,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "goldenglow": {
     "name": null,
@@ -4884,7 +8628,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "quercus": {
     "name": null,
@@ -4906,7 +8667,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "fiammetta": {
     "name": null,
@@ -4928,7 +8706,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "enforcer": {
     "name": null,
@@ -4950,7 +8745,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "kazemaru": {
     "name": null,
@@ -4972,7 +8784,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "horn": {
     "name": null,
@@ -4994,7 +8823,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "rockrock": {
     "name": null,
@@ -5016,7 +8862,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "heidi": {
     "name": null,
@@ -5038,7 +8901,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "chestnut": {
     "name": null,
@@ -5060,7 +8940,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "irene": {
     "name": null,
@@ -5082,7 +8979,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "specter-the-unchained": {
     "name": null,
@@ -5104,7 +9018,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "lumen": {
     "name": null,
@@ -5126,7 +9057,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "windflit": {
     "name": null,
@@ -5148,7 +9096,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "erato": {
     "name": "Erato",
@@ -5170,7 +9135,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "ebenholz": {
     "name": "Ebenholz",
@@ -5192,7 +9174,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "czerny": {
     "name": "Czerny",
@@ -5214,7 +9213,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "hibiscus-the-purifier": {
     "name": "Hibiscus the Purifier",
@@ -5236,7 +9252,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "dorothy": {
     "name": "Dorothy",
@@ -5258,7 +9291,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "astgenne": {
     "name": "Astgenne",
@@ -5280,7 +9330,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "greyy-the-lightningbearer": {
     "name": "Greyy the Lightningbearer",
@@ -5302,7 +9369,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "gavial-the-invincible": {
     "name": "Gavial the Invincible",
@@ -5324,7 +9408,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "pozymoka": {
     "name": "Pozyomka",
@@ -5346,7 +9447,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "cantabile": {
     "name": "Cantabile",
@@ -5368,7 +9486,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "minimalist": {
     "name": "Minimalist",
@@ -5390,7 +9525,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "mlynar": {
     "name": "Młynar",
@@ -5412,7 +9564,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "proviso": {
     "name": "Proviso",
@@ -5434,7 +9603,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "luo-xiaohei": {
     "name": "Luo Xiaohei",
@@ -5456,7 +9642,8 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {}
   },
   "highmore": {
     "name": "Highmore",
@@ -5478,7 +9665,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "tulip": {
     "name": "Tulip",
@@ -5500,7 +9704,8 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {}
   },
   "reserve-operator-defender": {
     "name": "Reserve Operator - Defender",
@@ -5517,7 +9722,8 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {}
   },
   "stainless": {
     "name": "Stainless",
@@ -5539,7 +9745,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "dagda": {
     "name": "Dagda",
@@ -5561,7 +9784,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "paprika": {
     "name": "Paprika",
@@ -5583,7 +9823,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "totter": {
     "name": "Totter",
@@ -5605,7 +9862,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "penance": {
     "name": "Penance",
@@ -5627,7 +9901,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "texas-the-omertosa": {
     "name": "Texas the Omertosa",
@@ -5649,7 +9940,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "vigil": {
     "name": "Vigil",
@@ -5671,7 +9979,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "lunacub": {
     "name": "Lunacub",
@@ -5693,7 +10018,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "qanipalaat": {
     "name": "Qanipalaat",
@@ -5715,7 +10057,24 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   },
   "quartz": {
     "name": "Quartz",
@@ -5737,6 +10096,23 @@
           "description": null
         }
       }
-    ]
+    ],
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    }
   }
 }

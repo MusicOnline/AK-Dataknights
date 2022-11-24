@@ -98,6 +98,14 @@ function limitOperatorLevel() {
         v-if="currentPhase.range"
         :range="currentPhase.range"
       />
+      <div class="mt-1 bg-gray-200 p-1">
+        <ul>
+          <li v-for="(potential, index) in operator.potentials" :key="index">
+            P{{ index + 2 }}:
+            {{ t(`${operator.key}.potentials.${index + 2}.description`) }}
+          </li>
+        </ul>
+      </div>
       <div class="mt-1 whitespace-pre bg-gray-200 p-1 font-mono">
         {{ JSON.stringify(operator, null, 2) }}
       </div>
