@@ -1,4 +1,5 @@
-import { CharacterTableData } from "./operator";
+import { RangeTableData } from "./operator/range";
+import { CharacterTableData } from "./operator/raw";
 import { SkinTableCharSkinData } from "./outfit";
 
 export type CharacterTable = { [id: string]: CharacterTableData };
@@ -20,3 +21,5 @@ export interface SkinTable {
   brandList: { [id: string]: any };
   specialSkinInfoList: any[];
 }
+
+export type RangeTable = { [id: string]: RangeTableData };

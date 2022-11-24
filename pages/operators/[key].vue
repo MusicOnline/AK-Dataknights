@@ -94,6 +94,10 @@ function limitOperatorLevel() {
         :operator="operator"
         :operator-state="operatorState"
       />
+      <OperatorRangeGrid
+        v-if="currentPhase.range"
+        :range="currentPhase.range"
+      />
       <div class="mt-1 whitespace-pre bg-gray-200 p-1 font-mono">
         {{ JSON.stringify(operator, null, 2) }}
       </div>

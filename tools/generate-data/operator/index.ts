@@ -59,7 +59,7 @@ export class Operator implements Localizable {
   private _unnormalizedKey: string; // Only used if not in OPERATOR_KEY_OVERRIDE
 
   // Original attributes
-  id: string; // Key in charactertable
+  id: string; // Key in character_table
   name: LocalizationString;
   appellation: LocalizationString;
   description: LocalizationString | null;

@@ -1,6 +1,7 @@
 import * as constants from "../constants";
 import { GeneratedOutfitData, Outfit } from "../outfit";
 import { Localizable, LocalizationString } from "../utils";
+import { GeneratedRangeData, Range } from "./range";
 import { Blackboard, CharacterTableData, KeyFrame } from "./raw";
 
 export class Trait implements Localizable {
@@ -76,6 +77,7 @@ export interface GeneratedElitePhaseData {
   trait?: { variables: Blackboard[] };
   outfit?: GeneratedOutfitData;
   attributeKeyFrames: KeyFrame[];
+  range?: GeneratedRangeData;
 }
 
 export interface GeneratedElitePhaseIndexData {
@@ -88,10 +90,12 @@ export class ElitePhase implements Localizable {
   trait: Trait | null;
   outfit: Outfit | null;
   attributeKeyFrames: KeyFrame[];
+  range: Range | null;
 
   public constructor(id: string, elite: number, data: CharacterTableData) {
+    const phase = data.phases[elite];
     this.elite = elite;
-    this.maxLevel = data.phases[elite].maxLevel;
+    this.maxLevel = phase.maxLevel;
     this.trait = Trait.fromCharacterData(elite, data);
 
     const skinTable = constants.OUTFIT_TABLES[constants.ORIGINAL_LOCALE];
@@ -99,7 +103,8 @@ export class ElitePhase implements Localizable {
     const skinId: string | undefined = skinTable.buildinEvolveMap[id][elite];
     this.outfit = skinId ? new Outfit(skinTable.charSkins[skinId]) : null;
 
-    this.attributeKeyFrames = data.phases[elite].attributesKeyFrames;
+    this.attributeKeyFrames = phase.attributesKeyFrames;
+    this.range = phase.rangeId ? new Range(phase.rangeId) : null;
   }
 
   public static getAllFromData(
@@ -116,6 +121,7 @@ export class ElitePhase implements Localizable {
       trait: this.trait?.toData(),
       outfit: this.outfit?.toData(),
       attributeKeyFrames: this.attributeKeyFrames,
+      range: this.range?.toData(),
     };
   }
 
