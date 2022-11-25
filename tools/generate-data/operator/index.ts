@@ -11,7 +11,7 @@ import {
   GeneratedElitePhaseData,
   GeneratedElitePhaseIndexData,
 } from "./elite";
-import { Potential } from "./potential";
+import { GeneratedPotentialData, Potential } from "./potential";
 import * as raw from "./raw";
 
 export interface GeneratedOperatorData {
@@ -32,7 +32,7 @@ export interface GeneratedOperatorData {
   isNotObtainable: boolean;
   phases: GeneratedElitePhaseData[];
   trustKeyFrames: raw.KeyFrame[] | null;
-  potentials: Object[];
+  potentials: GeneratedPotentialData[];
 }
 
 export interface GeneratedOperatorIndexData {

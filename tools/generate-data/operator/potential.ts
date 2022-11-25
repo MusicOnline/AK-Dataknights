@@ -4,6 +4,10 @@ import { CharacterTableData, PotentialRank } from "./raw";
 
 const POTENTIAL_NUMBER_OFFSET = 2;
 
+export interface GeneratedPotentialData {
+  potentialNumber: number;
+}
+
 export class Potential implements Localizable {
   id: string;
   potentialNumber: number;
@@ -27,8 +31,8 @@ export class Potential implements Localizable {
     );
   }
 
-  public toData() {
-    return {};
+  public toData(): GeneratedPotentialData {
+    return { potentialNumber: this.potentialNumber };
   }
 
   public addLocale(
