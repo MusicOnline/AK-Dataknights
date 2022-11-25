@@ -109,6 +109,32 @@ function limitOperatorLevel() {
           </li>
         </ul>
       </div>
+      <div class="mt-1 bg-gray-200 p-1">
+        <ul>
+          <li v-for="talent in operator.talents" :key="talent.talentNumber">
+            <ul>
+              <li v-for="candidate in talent.candidates" :key="candidate.key">
+                <div class="font-bold">
+                  {{
+                    t(
+                      `${operator.key}.talents.${talent.talentNumber}.${candidate.key}.name`
+                    )
+                  }}
+                </div>
+                <div
+                  v-html="
+                    convertRichText(
+                      t(
+                        `${operator.key}.talents.${talent.talentNumber}.${candidate.key}.description`
+                      )
+                    )
+                  "
+                />
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <div class="mt-1 whitespace-pre bg-gray-200 p-1 font-mono">
         {{ JSON.stringify(operator, null, 2) }}
       </div>
