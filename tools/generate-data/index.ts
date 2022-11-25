@@ -24,8 +24,13 @@ async function generateOperatorFiles() {
       (id) => !OPERATOR_RELEASE_ORDER.includes(id)
     ),
   ];
-  const operators = operatorIdReleaseOrder.map((id) => {
+  const operators = operatorIdReleaseOrder.flatMap((id) => {
     const data = constants.OPERATOR_TABLES[constants.ORIGINAL_LOCALE][id];
+    if (
+      ["TRAP", "TOKEN"].includes(data.profession) ||
+      constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(id)
+    )
+      return [];
     const operator = new Operator(id, data);
     Object.entries(constants.OPERATOR_TABLES).forEach(
       // @ts-ignore
@@ -46,17 +51,12 @@ async function generateOperatorFiles() {
     );
     return operator;
   });
-  const actualOperators = operators.filter(
-    (operator) => operator.isActualOperator
-  );
-  const indexFileObject = actualOperators.map((operator) =>
-    operator.toIndexData()
-  );
+  const indexFileObject = operators.map((operator) => operator.toIndexData());
 
   await fs.mkdir("data/operators", { recursive: true });
 
   return Promise.all([
-    ...actualOperators.map((operator) =>
+    ...operators.map((operator) =>
       fs.writeFile(
         `data/operators/${operator.key}.json`,
         JSON.stringify(operator.toData(), null, 2),
@@ -70,7 +70,7 @@ async function generateOperatorFiles() {
     ),
     ...constants.OUTPUT_LOCALES.map((locale) => {
       const localeFileData: any = {};
-      actualOperators.forEach(
+      operators.forEach(
         (operator) =>
           (localeFileData[operator.key] = operator.toLocaleData(locale))
       );
