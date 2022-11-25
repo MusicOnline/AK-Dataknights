@@ -86,10 +86,13 @@ async function generateOperatorFiles() {
 async function generateLocaleFiles() {}
 
 export async function generateDataFiles() {
+  console.time("Generate data files");
   await Promise.all(
     constants.OUTPUT_LOCALES.map((locale) =>
       fs.mkdir(`locales/${locale}`, { recursive: true })
     )
   );
-  return Promise.all([generateOperatorFiles(), generateLocaleFiles()]);
+  return Promise.all([generateOperatorFiles(), generateLocaleFiles()]).then(
+    () => console.timeEnd("Generate data files")
+  );
 }
