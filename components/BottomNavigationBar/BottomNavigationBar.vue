@@ -5,13 +5,13 @@ const { t } = useI18n();
 
 <template>
   <nav
-    class="fixed bottom-0 left-0 z-10 flex h-16 w-full bg-white px-4 shadow-[0_-1px_3px_rgb(0_0_0_/_10%)] dark:bg-gray-900"
+    class="fixed bottom-0 left-0 z-20 flex h-16 w-full bg-white px-4 shadow-[0_-1px_3px_rgb(0_0_0_/_10%)] dark:bg-gray-900"
   >
     <ul class="flex w-full items-center text-gray-800">
       <li class="nav-item">
-        <NuxtLink :to="localePath('/operators')" class="nav-link">
-          <Icon name="heroicons:users" class="inactive-icon" />
-          <Icon name="heroicons:users-solid" class="active-icon" />
+        <NuxtLink class="nav-link" :to="localePath('/operators')">
+          <Icon class="inactive-icon" name="heroicons:users" />
+          <Icon class="active-icon" name="heroicons:users-solid" />
           <span class="nav-text">
             {{ t("navigation.operators") }}
           </span>
@@ -19,8 +19,8 @@ const { t } = useI18n();
       </li>
       <li class="nav-item">
         <button class="nav-link">
-          <Icon name="heroicons:cog-6-tooth" class="inactive-icon" />
-          <Icon name="heroicons:cog-6-tooth-solid" class="active-icon" />
+          <Icon class="inactive-icon" name="heroicons:cog-6-tooth" />
+          <Icon class="active-icon" name="heroicons:cog-6-tooth-solid" />
           <span class="nav-text">
             {{ t("settings.title") }}
           </span>
