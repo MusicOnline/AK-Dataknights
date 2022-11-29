@@ -10,18 +10,22 @@ import {
 
 export interface GeneratedTalentCandidateData {
   key: string;
-  elite: number;
-  level: number;
-  potential: number;
+  unlockConditions: {
+    elite: number;
+    level: number;
+    potential: number;
+  };
   range?: GeneratedRangeData;
   variables: Blackboard[];
 }
 
 export class TalentCandidate implements Localizable {
   talentNumber: number;
-  elite: number;
-  level: number;
-  potential: number;
+  unlockConditions: {
+    elite: number;
+    level: number;
+    potential: number;
+  };
   name: LocalizationString | null;
   description: LocalizationString | null;
   range: Range | null;
@@ -29,9 +33,11 @@ export class TalentCandidate implements Localizable {
 
   public constructor(talentNumber: number, data: RawTalentCandidate) {
     this.talentNumber = talentNumber;
-    this.elite = data.unlockCondition.phase;
-    this.level = data.unlockCondition.level;
-    this.potential = data.requiredPotentialRank + 1; // 0 = Potential 1 (Base operator)
+    this.unlockConditions = {
+      elite: data.unlockCondition.phase,
+      level: data.unlockCondition.level,
+      potential: data.requiredPotentialRank + 1, // 0 = Potential 1 (Base operator)
+    };
     this.name = LocalizationString.fromDataOrNull(data.name);
     this.description = LocalizationString.fromDataOrNull(data.description);
     this.range = data.rangeId ? new Range(data.rangeId) : null;
@@ -41,9 +47,7 @@ export class TalentCandidate implements Localizable {
   public toData(): GeneratedTalentCandidateData {
     return {
       key: this.key,
-      elite: this.elite,
-      level: this.level,
-      potential: this.potential,
+      unlockConditions: this.unlockConditions,
       range: this.range?.toData(),
       variables: this.variables,
     };
@@ -74,7 +78,7 @@ export class TalentCandidate implements Localizable {
   }
 
   public get key(): string {
-    return `E${this.elite}-L${this.level}-P${this.potential}`;
+    return `E${this.unlockConditions.elite}-L${this.unlockConditions.level}-P${this.unlockConditions.potential}`;
   }
 }
 
@@ -120,9 +124,12 @@ export class Talent implements Localizable {
     this.candidates.forEach((candidate) => {
       const rawCandidate = rawTalent.candidates!.find(
         (rawCandidate) =>
-          rawCandidate.unlockCondition.phase === candidate.elite &&
-          rawCandidate.unlockCondition.level === candidate.level &&
-          rawCandidate.requiredPotentialRank === candidate.potential - 1
+          rawCandidate.unlockCondition.phase ===
+            candidate.unlockConditions.elite &&
+          rawCandidate.unlockCondition.level ===
+            candidate.unlockConditions.level &&
+          rawCandidate.requiredPotentialRank ===
+            candidate.unlockConditions.potential - 1
       );
       candidate.addLocale(locale, rawCandidate!);
     });
