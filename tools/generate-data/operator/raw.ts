@@ -126,7 +126,7 @@ export interface Skill {
   skillId: string | null;
   overridePrefabKey: string | null;
   overrideTokenKey: string | null;
-  levelUpCostCond: LevelUpCostCond[];
+  levelUpCostCond: LevelUpCostCond[]; // Mastery
   unlockCond: UnlockCond;
 }
 

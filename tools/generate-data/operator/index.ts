@@ -13,6 +13,7 @@ import {
 } from "./elite";
 import { GeneratedPotentialData, Potential } from "./potential";
 import * as raw from "./raw";
+import { GeneratedSkillData, Skill } from "./skill";
 import { GeneratedTalentData, Talent } from "./talent";
 
 export interface GeneratedOperatorData {
@@ -35,6 +36,7 @@ export interface GeneratedOperatorData {
   trustKeyFrames: raw.KeyFrame[] | null;
   potentials: GeneratedPotentialData[];
   talents: GeneratedTalentData[] | null;
+  skills: GeneratedSkillData[];
 }
 
 export interface GeneratedOperatorIndexData {
@@ -86,6 +88,7 @@ export class Operator implements Localizable {
   trustKeyFrames: raw.KeyFrame[] | null;
   potentials: Potential[];
   talents: Talent[] | null;
+  skills: Skill[];
 
   // Accepts zh-CN data only
   public constructor(id: string, data: raw.CharacterTableData) {
@@ -115,6 +118,7 @@ export class Operator implements Localizable {
     this.trustKeyFrames = data.favorKeyFrames;
     this.potentials = Potential.getAllFromData(data);
     this.talents = Talent.getAllFromData(data);
+    this.skills = Skill.getAllFromData(data);
   }
 
   public toData(): GeneratedOperatorData {
@@ -138,6 +142,7 @@ export class Operator implements Localizable {
       trustKeyFrames: this.trustKeyFrames,
       potentials: this.potentials.map((potential) => potential.toData()),
       talents: this.talents?.map((talent) => talent.toData()) ?? null,
+      skills: this.skills.map((skill) => skill.toData()),
     };
   }
 
@@ -166,6 +171,7 @@ export class Operator implements Localizable {
     this.phases.forEach((phase) => phase.addLocale(locale, data));
     this.potentials.forEach((potential) => potential.addLocale(locale, data));
     this.talents?.forEach((talent) => talent.addLocale(locale, data));
+    this.skills.forEach((skill) => skill.addLocale(locale));
 
     if (locale === "en-US") this._unnormalizedKey = data.name;
   }
@@ -180,6 +186,7 @@ export class Operator implements Localizable {
     this.phases.forEach((phase) => phase.addLocaleTL(locale, data));
     this.potentials.forEach((potential) => potential.addLocaleTL(locale, data));
     this.talents?.forEach((talent) => talent.addLocaleTL(locale, data));
+    this.skills.forEach((skill) => skill.addLocaleTL(locale, data));
 
     if (locale === "en-TL" && data.name) this._unnormalizedKey = data.name;
   }
@@ -215,7 +222,16 @@ export class Operator implements Localizable {
       },
       {}
     );
-    return { ...commonAttributes, phases, potentials, talents };
+    const skills = this.skills.reduce(
+      (accumulator: { [id: string]: any }, skill) => {
+        // @nuxtjs/i18n key does not work with [] in it
+        const escapedId = skill.id.replace(/\[/g, "<").replace(/\]/g, ">");
+        accumulator[escapedId] = skill.toLocaleData(locale);
+        return accumulator;
+      },
+      {}
+    );
+    return { ...commonAttributes, phases, potentials, talents, skills };
   }
 
   public get key(): string {

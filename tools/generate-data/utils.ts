@@ -30,23 +30,23 @@ export class LocalizationString implements Localizable {
 
   private addLocaleCommon(
     locale: typeof constants.OUTPUT_LOCALES[number],
-    translation: string | null
+    translation?: string | null
   ) {
     const transformedLocale = locale.replace("-", "_");
     // @ts-ignore
-    this[transformedLocale] = translation;
+    this[transformedLocale] = translation ?? null;
   }
 
   public addLocale(
     locale: typeof constants.GAME_LOCALES[number],
-    translation: string | null
+    translation?: string | null
   ) {
     this.addLocaleCommon(locale, translation);
   }
 
   public addLocaleTL(
     locale: typeof constants.TRANSLATED_LOCALES[number],
-    translation: string | null
+    translation?: string | null
   ) {
     this.addLocaleCommon(locale, translation);
   }
@@ -60,5 +60,7 @@ export class LocalizationString implements Localizable {
 
 export function normalizeForLocaleFile(original: string | null): string | null {
   if (original === null) return null;
-  return original.replace(/\{(.*?)\}/g, "{'{'}$1{'}'}").replace(/@/g, "{'@'}");
+  return original
+    .replace(/\{(.*?)\}/g, "{'{'}$1{'}'}")
+    .replace(/(@|%)/g, "{'$1'}");
 }

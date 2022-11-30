@@ -123,7 +123,8 @@ function getSpecificTranslationWithTL(
                 convertRichText(
                   t(
                     `${operator.key}.phases.${operatorState.elite}.trait.description`
-                  )
+                  ),
+                  { replace: operator.phases[operatorState.elite].trait!.variables }
                 )
               "
             />

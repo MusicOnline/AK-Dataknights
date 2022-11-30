@@ -1,3 +1,8 @@
+import { Blackboard } from "~~/tools/generate-data/operator/raw";
+
+const VARIABLE_REGEX =
+  /\{(?<sign>-)?(?<name>.+?)(?::(?<formatSpecifier>.+?))?\}/g;
+
 // gamedata_const.json
 export const RICH_TEXT_TAG_TO_ENGLISH = {
   // General
@@ -57,15 +62,23 @@ export const ENGLISH_CLASS_TO_RICH_TEXT_REGEX = Object.entries(
 );
 
 export interface ConvertRichTextOptions {
-  html: boolean;
+  html?: boolean;
+  replace?:
+    | {
+        [name: string]: number;
+      }
+    | Blackboard[];
+  locale?: string;
 }
 
 export function convertRichText(
   richText: string,
-  options: ConvertRichTextOptions = { html: true }
+  options: ConvertRichTextOptions = {}
 ): string {
+  const { locale = "en-US" } = options;
+
   let transformedString = richText.replace(/\\n/g, "\n");
-  if (options.html) {
+  if (options.html ?? true) {
     transformedString = transformedString.replace(/\n/g, "<br/>");
     Object.entries(ENGLISH_CLASS_TO_RICH_TEXT_REGEX).forEach(
       ([targetClass, regex]) =>
@@ -78,6 +91,46 @@ export function convertRichText(
     Object.values(ENGLISH_CLASS_TO_RICH_TEXT_REGEX).forEach(
       (regex) => (transformedString = transformedString.replace(regex, "$1"))
     );
+  }
+
+  const matches = transformedString.matchAll(VARIABLE_REGEX);
+  for (const match of matches) {
+    const { sign, name, formatSpecifier } = match.groups!;
+    let value;
+    if (Array.isArray(options?.replace)) {
+      // options.replace: Blackboard[]
+      value = options.replace.find(
+        ({ key }) => key === name.toLowerCase()
+      )?.value;
+    } else {
+      value = options?.replace?.[name.toLowerCase()];
+    }
+    if (value === null || value === undefined) continue;
+    if (sign === "-") value = -value;
+    let replacedValue = value.toString();
+    switch (formatSpecifier) {
+      case "0":
+      case "0%":
+        replacedValue = value.toLocaleString(locale, {
+          style: "percent",
+          maximumFractionDigits: 0,
+        });
+        break;
+      case "0.0":
+        replacedValue = value.toLocaleString(locale, {
+          minimumFractionDigits: 1,
+          maximumFractionDigits: 1,
+        });
+        break;
+      case "0.0%":
+        replacedValue = value.toLocaleString(locale, {
+          style: "percent",
+          minimumFractionDigits: 1,
+          maximumFractionDigits: 1,
+        });
+        break;
+    }
+    transformedString = transformedString.replace(match[0], replacedValue);
   }
   return transformedString;
 }

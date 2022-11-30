@@ -135,10 +135,40 @@ function limitOperatorLevel() {
           </li>
         </ul>
       </div>
+      <div
+        class="mt-1 bg-gray-200 p-1"
+        v-for="skill in operator.skills"
+        :key="skill.id"
+      >
+        <ul>
+          <li v-for="level in skill.levels" :key="level.level">
+            <div class="font-bold">
+              {{
+                t(
+                  `${operator.key}.skills.${skill.id
+                    .replace(/\[/g, "<")
+                    .replace(/\]/g, ">")}.${level.level}.name`
+                )
+              }}
+            </div>
+            <div
+              v-html="
+                convertRichText(
+                  t(
+                    `${operator.key}.skills.${skill.id
+                      .replace(/\[/g, '<')
+                      .replace(/\]/g, '>')}.${level.level}.description`
+                  ),
+                  { replace: level.variables }
+                )
+              "
+            />
+          </li>
+        </ul>
+      </div>
       <div class="mt-1 whitespace-pre bg-gray-200 p-1 font-mono">
         {{ JSON.stringify(operator, null, 2) }}
       </div>
-      <div class="mt-1 bg-gray-200 p-1">{{ operator }}</div>
       <div class="mt-1 bg-gray-200 p-1">{{ operator }}</div>
       <div class="mt-1 bg-gray-200 p-1">{{ operator }}</div>
       <div class="mt-1 bg-gray-200 p-1">{{ operator }}</div>

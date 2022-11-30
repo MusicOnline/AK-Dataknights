@@ -1,9 +1,9 @@
-import { generateDataFiles } from "./tools/generate-data";
 import ENGLISH_DEFAULT from "./locales/en-US/default.json";
 import JAPANESE_DEFAULT from "./locales/ja-JP/default.json";
 import KOREAN_DEFAULT from "./locales/ko-KR/default.json";
 import CHINESE_DEFAULT from "./locales/zh-CN/default.json";
 import TRADITIONAL_CHINESE_DEFAULT from "./locales/zh-TW/default.json";
+import { generateDataFiles } from "./tools/generate-data";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -40,7 +40,7 @@ export default defineNuxtConfig({
         "ko-KR": KOREAN_DEFAULT,
         "zh-CN": CHINESE_DEFAULT,
         "zh-TW": TRADITIONAL_CHINESE_DEFAULT,
-      }
+      },
     },
   },
   hooks: {

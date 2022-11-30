@@ -1,6 +1,6 @@
 import path from "path";
 
-import { CharacterTable, RangeTable, SkinTable } from "./tables";
+import { CharacterTable, RangeTable, SkillTable, SkinTable } from "./tables";
 
 export const ORIGINAL_LOCALE = "zh-CN";
 export const GAME_LOCALES = [
@@ -17,6 +17,7 @@ export const OPERATOR_TABLE_PATH = "gamedata/excel/character_table.json";
 export const MODULE_TABLE_PATH = "gamedata/excel/uniequip_table.json";
 export const OUTFIT_TABLE_PATH = "gamedata/excel/skin_table.json";
 export const RANGE_TABLE_PATH = "gamedata/excel/range_table.json";
+export const SKILL_TABLE_PATH = "gamedata/excel/skill_table.json";
 
 export const FALSE_POSITIVE_ACTUAL_OPERATORS = ["char_512_aprot"];
 
@@ -33,6 +34,9 @@ export const RANGE_TABLE: RangeTable = require(path.join(
   ORIGINAL_LOCALE.replace("-", "_"),
   RANGE_TABLE_PATH
 ));
+
+export const SKILL_TABLES: LocaleTableMap<SkillTable> =
+  requireAllLocaleTables(SKILL_TABLE_PATH);
 
 function requireAllLocaleTables(tablePath: string) {
   return GAME_LOCALES.reduce((accumulator: any, locale) => {
