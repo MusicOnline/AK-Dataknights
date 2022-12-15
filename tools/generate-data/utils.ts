@@ -25,7 +25,7 @@ export class LocalizationString implements Localizable {
     zh_CN?: string | null
   ): LocalizationString | null {
     if (zh_CN === null || zh_CN === undefined) return null;
-    return new LocalizationString(zh_CN);
+    return new LocalizationString(zh_CN.trim());
   }
 
   private addLocaleCommon(
@@ -34,7 +34,7 @@ export class LocalizationString implements Localizable {
   ) {
     const transformedLocale = locale.replace("-", "_");
     // @ts-ignore
-    this[transformedLocale] = translation ?? null;
+    this[transformedLocale] = translation?.trim() ?? null;
   }
 
   public addLocale(

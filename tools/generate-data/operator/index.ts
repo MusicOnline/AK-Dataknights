@@ -238,6 +238,7 @@ export class Operator implements Localizable {
     // @ts-ignore
     if (OPERATOR_KEY_OVERRIDE[this.id]) return OPERATOR_KEY_OVERRIDE[this.id];
     return this._unnormalizedKey
+      .trim()
       .toLowerCase()
       .replace(/[.'()]/g, "")
       .replace(/[-\s]+/g, "-");
