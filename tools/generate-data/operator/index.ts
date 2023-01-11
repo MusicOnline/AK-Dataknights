@@ -15,6 +15,7 @@ import { GeneratedPotentialData, Potential } from "./potential";
 import * as raw from "./raw";
 import { GeneratedSkillData, Skill } from "./skill";
 import { GeneratedTalentData, Talent } from "./talent";
+import { GeneratedTraitCandidateData, TraitCandidate } from "./trait";
 
 export interface GeneratedOperatorData {
   key: string;
@@ -37,6 +38,7 @@ export interface GeneratedOperatorData {
   potentials: GeneratedPotentialData[];
   talents: GeneratedTalentData[] | null;
   skills: GeneratedSkillData[];
+  traitCandidates: GeneratedTraitCandidateData[];
 }
 
 export interface GeneratedOperatorIndexData {
@@ -89,6 +91,7 @@ export class Operator implements Localizable {
   potentials: Potential[];
   talents: Talent[] | null;
   skills: Skill[];
+  traitCandidates: TraitCandidate[];
 
   // Accepts zh-CN data only
   public constructor(id: string, data: raw.CharacterTableData) {
@@ -119,6 +122,7 @@ export class Operator implements Localizable {
     this.potentials = Potential.getAllFromData(data);
     this.talents = Talent.getAllFromData(data);
     this.skills = Skill.getAllFromData(data);
+    this.traitCandidates = TraitCandidate.getAllFromData(data);
   }
 
   public toData(): GeneratedOperatorData {
@@ -143,6 +147,9 @@ export class Operator implements Localizable {
       potentials: this.potentials.map((potential) => potential.toData()),
       talents: this.talents?.map((talent) => talent.toData()) ?? null,
       skills: this.skills.map((skill) => skill.toData()),
+      traitCandidates: this.traitCandidates.map((candidate) =>
+        candidate.toData()
+      ),
     };
   }
 
@@ -168,10 +175,10 @@ export class Operator implements Localizable {
     Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) =>
       this[attribute]?.addLocale(locale, data[attribute])
     );
-    this.phases.forEach((phase) => phase.addLocale(locale, data));
     this.potentials.forEach((potential) => potential.addLocale(locale, data));
     this.talents?.forEach((talent) => talent.addLocale(locale, data));
     this.skills.forEach((skill) => skill.addLocale(locale));
+    this.traitCandidates.forEach((trait) => trait.addLocale(locale, data));
 
     if (locale === "en-US") this._unnormalizedKey = data.name;
   }
@@ -183,10 +190,10 @@ export class Operator implements Localizable {
     Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) =>
       this[attribute]?.addLocaleTL(locale, data[attribute])
     );
-    this.phases.forEach((phase) => phase.addLocaleTL(locale, data));
     this.potentials.forEach((potential) => potential.addLocaleTL(locale, data));
     this.talents?.forEach((talent) => talent.addLocaleTL(locale, data));
     this.skills.forEach((skill) => skill.addLocaleTL(locale, data));
+    this.traitCandidates.forEach((trait) => trait.addLocaleTL(locale, data));
 
     if (locale === "en-TL" && data.name) this._unnormalizedKey = data.name;
   }
@@ -207,7 +214,6 @@ export class Operator implements Localizable {
       },
       {}
     );
-    const phases = this.phases.map((phase) => phase.toLocaleData(locale));
     const potentials = this.potentials.reduce(
       (accumulator: { [potentialNumber: number]: any }, potential) => {
         accumulator[potential.potentialNumber] = potential.toLocaleData(locale);
@@ -231,7 +237,20 @@ export class Operator implements Localizable {
       },
       {}
     );
-    return { ...commonAttributes, phases, potentials, talents, skills };
+    const traitCandidates = this.traitCandidates.reduce(
+      (accumulator: { [key: string]: any }, candidate) => {
+        accumulator[candidate.key] = candidate.toLocaleData(locale);
+        return accumulator;
+      },
+      {}
+    );
+    return {
+      ...commonAttributes,
+      potentials,
+      talents,
+      skills,
+      traitCandidates,
+    };
   }
 
   public get key(): string {

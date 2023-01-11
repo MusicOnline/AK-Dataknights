@@ -3,23 +3,6 @@
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -128,19 +111,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "lancet-2": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -186,19 +167,17 @@
         }
       }
     },
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "castle-3": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -244,19 +223,17 @@
         }
       }
     },
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "yato": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -282,19 +259,17 @@
         }
       }
     },
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "durin": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -320,19 +295,17 @@
         }
       }
     },
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "12f": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -358,19 +331,17 @@
         }
       }
     },
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "rangers": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -396,19 +367,17 @@
         }
       }
     },
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "noir-corne": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -434,24 +403,17 @@
         }
       }
     },
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "fang": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -508,24 +470,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "vanilla": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -586,24 +541,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "plume": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -664,24 +612,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "hibiscus": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -742,24 +683,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "ansel": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -828,24 +762,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "lava": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -914,24 +841,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "steward": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -992,24 +912,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "kroos": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -1078,24 +991,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "adnachiel": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -1156,24 +1062,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "orchid": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -1234,24 +1133,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "melantha": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -1312,24 +1204,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "beagle": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -1390,24 +1275,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "cardigan": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -1468,29 +1346,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "courier": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -1613,29 +1479,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "scavenger": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -1758,29 +1612,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "vigna": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -1903,29 +1745,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "myrrh": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -2048,29 +1878,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "gavial": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -2193,29 +2011,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "perfumer": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -2338,29 +2144,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "haze": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -2483,29 +2277,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "gitano": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -2628,29 +2410,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "gravel": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -2769,29 +2539,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "rope": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -2914,29 +2672,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "shaw": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -3051,29 +2797,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "shirayuki": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -3184,29 +2918,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "meteor": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -3329,29 +3051,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "jessica": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -3466,29 +3176,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "deepcolor": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -3607,29 +3305,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "earthspirit": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -3744,29 +3430,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "dobermann": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -3889,29 +3563,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "estelle": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -4034,29 +3696,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "beehunter": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -4179,29 +3829,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "mousse": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -4324,29 +3962,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "frostleaf": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -4457,29 +4083,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "matoimaru": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -4594,29 +4208,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "cuora": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -4731,29 +4333,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "gummy": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -4876,29 +4466,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "matterhorn": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -5013,29 +4591,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "texas": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -5150,29 +4716,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "zima": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -5287,29 +4841,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "ptilopsis": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -5424,29 +4966,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "silence": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -5569,29 +5099,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "warfarin": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -5706,29 +5224,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "amiya": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -5889,29 +5395,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "nightmare": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -6034,29 +5528,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "skyfire": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -6179,29 +5661,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "projekt-red": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -6324,29 +5794,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "manticore": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -6469,29 +5927,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "cliffheart": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -6614,29 +6060,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "feater": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -6759,29 +6193,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "provence": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -6904,29 +6326,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "blue-poison": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -7049,29 +6459,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "firewatch": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -7194,29 +6592,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "meteorite": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -7331,29 +6717,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "platinum": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -7476,29 +6850,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "pramanix": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -7627,29 +6989,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "istina": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -7764,29 +7114,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "mayer": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -7905,29 +7243,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "sora": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -8042,29 +7368,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "franka": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -8179,29 +7493,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "specter": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -8324,29 +7626,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "indra": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -8469,29 +7759,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "chen": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -8658,29 +7936,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "lappland": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -8803,29 +8069,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "nearl": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -8948,29 +8202,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "liskarm": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -9091,29 +8333,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "vulcan": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -9236,29 +8466,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "croissant": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -9381,29 +8599,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "siege": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -9574,29 +8780,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "shining": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -9779,29 +8973,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "nightingale": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -9980,29 +9162,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "ifrit": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -10185,29 +9355,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "eyjafjalla": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -10382,29 +9540,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "exusiai": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -10579,29 +9725,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "angelina": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -10776,29 +9910,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "silverash": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -10969,29 +10091,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "hoshiguma": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -11166,29 +10276,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "saria": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -11359,24 +10457,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "catapult": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -11433,24 +10524,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "midnight": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -11519,29 +10603,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "grani": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -11664,29 +10736,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "skadi": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -11857,24 +10917,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "popukar": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -11943,29 +10996,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "swire": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -12096,24 +11137,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "spot": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -12182,29 +11216,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "greyy": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -12319,29 +11341,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "schwarz": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -12512,29 +11522,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "glaucus": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -12657,29 +11655,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "ceylon": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -12802,29 +11788,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "sussurro": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -12947,29 +11921,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "myrtle": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -13084,29 +12046,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "astesia": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -13221,29 +12171,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "hellagur": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -13414,29 +12352,23 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      },
+      "E1-L1": {
+        "description": null
+      },
+      "E2-L1": {
+        "description": null
+      }
     }
   },
   "dur-nar": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -13551,29 +12483,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "vermeil": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -13688,29 +12608,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "magallan": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -13889,29 +12797,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "flamebringer": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -14034,29 +12930,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "executor": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -14179,29 +13063,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "ethan": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -14316,29 +13188,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "breeze": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -14453,29 +13313,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "waai-fu": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -14598,29 +13446,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "mostima": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -14787,29 +13623,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "may": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -14932,29 +13756,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "bison": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -15077,29 +13889,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "reed": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -15214,29 +14014,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "broca": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -15359,29 +14147,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "ambriel": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -15496,29 +14272,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "greythroat": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -15633,29 +14397,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "blaze": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -15830,29 +14582,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "snowsant": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -15975,29 +14715,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "aak": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -16168,29 +14896,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "hung": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -16313,29 +15029,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "nian": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -16506,29 +15210,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "ceobe": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -16699,29 +15391,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "leizi": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -16844,29 +15524,20 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      },
+      "E2-L1": {
+        "description": null
+      }
     }
   },
   "purestream": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -16981,29 +15652,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "bagpipe": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -17178,29 +15837,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "bibeak": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -17323,29 +15970,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "sesa": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -17468,29 +16103,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "utage": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -17609,29 +16232,23 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      },
+      "E1-L1": {
+        "description": null
+      },
+      "E2-L1": {
+        "description": null
+      }
     }
   },
   "conviction": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {},
     "talents": {
       "1": {
@@ -17730,29 +16347,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "phantom": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -17915,29 +16520,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "shamare": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -18068,29 +16661,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "cutter": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -18213,29 +16794,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "sideroca": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -18350,19 +16919,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "thrm-ex": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -18408,29 +16975,17 @@
         }
       }
     },
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "w": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -18597,29 +17152,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "weedy": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -18782,29 +17325,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "elysium": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -18927,29 +17458,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "asbestos": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -19064,29 +17583,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "tsukinogi": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -19209,29 +17716,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "podenco": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -19354,29 +17849,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "absinthe": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -19499,29 +17982,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "leonhardt": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -19644,29 +18115,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "rosa": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -19833,29 +18292,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "click": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -19970,29 +18417,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "ayerscarpe": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -20115,29 +18550,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "folinic": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -20256,29 +18679,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "suzuran": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -20445,29 +18856,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "beeswax": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -20582,29 +18981,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "chiave": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -20727,29 +19114,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "scene": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -20868,29 +19243,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "jaye": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -21013,29 +19376,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "andreana": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -21158,29 +19509,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "thorns": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -21355,29 +19694,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "eunectes": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -21548,29 +19875,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "tomimi": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -21701,29 +20016,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "flint": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -21846,29 +20149,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "aciddrop": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -21983,29 +20274,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "pith": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {},
     "talents": {
       "1": {
@@ -22062,29 +20341,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "sharp": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {},
     "talents": {
       "1": {
@@ -22141,29 +20408,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "touch": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {},
     "talents": {
       "1": {
@@ -22220,29 +20475,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "stormeye": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {},
     "talents": {
       "1": {
@@ -22299,105 +20542,65 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "reserve-operator-melee": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {},
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "reserve-operator-sniper": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {},
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "reserve-operator-logistics": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {},
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "reserve-operator-caster": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {},
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "surtr": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -22580,29 +20783,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "arene": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -22729,29 +20920,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "mint": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -22874,29 +21053,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "april": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -23011,29 +21178,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "blemishine": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -23204,29 +21359,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "aosta": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -23349,29 +21492,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "whislash": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -23502,29 +21633,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "bubble": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -23639,29 +21758,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "rosmontis": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -23832,29 +21939,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "mudrock": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -24033,29 +22128,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "whisperain": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -24178,29 +22261,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "jackie": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -24323,29 +22394,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "mountain": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -24516,29 +22575,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "kafka": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -24665,29 +22712,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "robin": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -24818,29 +22853,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "pinecone": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -24963,29 +22986,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "archetto": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -25152,29 +23163,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "iris": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -25297,29 +23296,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "beanstalk": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -25438,29 +23425,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "tuye": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -25583,29 +23558,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "lava-the-purgatory": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -25728,29 +23691,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "dusk": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -25921,29 +23872,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "saga": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -26110,29 +24049,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "mr-nothing": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -26255,29 +24182,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "ash": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -26444,29 +24359,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "frost": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -26597,29 +24500,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "blitz": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -26748,29 +24639,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "tachanka": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -26897,29 +24776,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "passenger": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -27094,29 +24961,20 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      },
+      "E2-L1": {
+        "description": null
+      }
     }
   },
   "toddifons": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -27239,29 +25097,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "heavyrain": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -27384,29 +25230,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "skadi-the-corrupting-heart": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -27573,29 +25407,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "gladiia": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -27762,29 +25584,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "kaltsit": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -27955,29 +25765,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "akafuyu": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -28096,29 +25894,23 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      },
+      "E1-L1": {
+        "description": null
+      },
+      "E2-L1": {
+        "description": null
+      }
     }
   },
   "carnelian": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -28289,29 +26081,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "kirara": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -28434,29 +26214,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "bena": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -28583,29 +26351,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "indigo": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -28728,29 +26484,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "pallas": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -28917,29 +26661,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "chen-the-holungday": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -29110,29 +26842,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "mizuki": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -29303,29 +27023,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "la-pluma": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -29444,29 +27152,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "tequila": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -29589,29 +27285,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "saileach": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -29782,29 +27466,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "mulberry": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -29927,29 +27599,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "roberta": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -30080,29 +27740,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "fartooth": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -30273,29 +27921,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "ashlock": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -30418,29 +28054,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "nearl-the-radiant-knight": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -30607,29 +28231,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "flametail": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -30796,29 +28408,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "corroserum": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -30941,29 +28541,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "honeyberry": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -31086,29 +28674,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "wild-mane": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -31223,29 +28799,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "pudding": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -31360,19 +28924,20 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      },
+      "E2-L1": {
+        "description": null
+      }
     }
   },
   "justice-knight": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -31418,29 +28983,17 @@
         }
       }
     },
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "gnosis": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -31611,29 +29164,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "aurora": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -31756,29 +29297,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "kjera": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -31901,29 +29430,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "shalem": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -32052,29 +29569,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "nine-colored-deer": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {},
     "talents": {
       "1": {
@@ -32177,29 +29682,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "ling": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -32378,29 +29871,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "lee": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -32571,29 +30052,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "blacknight": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -32712,29 +30181,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "kroos-the-keen-glint": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -32857,29 +30314,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "goldenglow": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -33054,29 +30499,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "quercus": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -33199,29 +30632,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "fiammetta": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -33392,29 +30813,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "enforcer": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -33537,29 +30946,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "kazemaru": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -33690,29 +31087,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "horn": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -33887,29 +31272,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "rockrock": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -34032,29 +31405,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "heidi": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -34183,29 +31544,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "chestnut": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -34328,29 +31677,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "irene": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -34517,29 +31854,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "specter-the-unchained": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -34710,29 +32035,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "lumen": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -34899,29 +32212,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "windflit": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -35052,29 +32353,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "erato": {
     "name": null,
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -35193,29 +32482,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "ebenholz": {
     "name": "Ebenholz",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -35382,29 +32659,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "czerny": {
     "name": "Czerny",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -35527,29 +32792,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "hibiscus-the-purifier": {
     "name": "Hibiscus the Purifier",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -35672,29 +32925,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "dorothy": {
     "name": "Dorothy",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -35877,29 +33118,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "astgenne": {
     "name": "Astgenne",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -36014,29 +33243,20 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      },
+      "E2-L1": {
+        "description": null
+      }
     }
   },
   "greyy-the-lightningbearer": {
     "name": "Greyy the Lightningbearer",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -36151,29 +33371,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "gavial-the-invincible": {
     "name": "Gavial the Invincible",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -36348,29 +33556,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
-  "pozymoka": {
-    "name": "Pozyomka",
+  "pozemka": {
+    "name": "Pozёmka",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -36541,29 +33737,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "cantabile": {
     "name": "Cantabile",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -36686,29 +33870,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "minimalist": {
     "name": "Minimalist",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -36831,29 +34003,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "mlynar": {
     "name": "Młynar",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -37028,29 +34188,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "proviso": {
     "name": "Proviso",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -37173,29 +34321,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "luo-xiaohei": {
     "name": "Luo Xiaohei",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {},
     "talents": {
       "1": {
@@ -37294,29 +34430,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "highmore": {
     "name": "Highmore",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -37449,29 +34573,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "tulip": {
     "name": "Tulip",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {},
     "talents": {
       "1": {
@@ -37528,48 +34640,29 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "reserve-operator-defender": {
     "name": "Reserve Operator - Defender",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {},
-    "skills": {}
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
   },
   "stainless": {
     "name": "Stainless",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -37740,29 +34833,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "dagda": {
     "name": "Dagda",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -37883,29 +34964,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "paprika": {
     "name": "Paprika",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -38028,29 +35097,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "totter": {
     "name": "Totter",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -38181,29 +35238,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "penance": {
     "name": "Penance",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -38386,29 +35431,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "texas-the-omertosa": {
     "name": "Texas the Omertosa",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -38575,29 +35608,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "vigil": {
     "name": "Vigil",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -38768,29 +35789,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "lunacub": {
     "name": "Lunacub",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -38905,29 +35914,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "qanipalaat": {
     "name": "Qanipalaat",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -39050,29 +36047,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "quartz": {
     "name": "Quartz",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -39195,29 +36180,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "puzzle": {
     "name": "Puzzle",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -39340,29 +36313,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "harmonie": {
     "name": "Harmonie",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -39485,29 +36446,17 @@
           "description": null
         }
       }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
     }
   },
   "reed-the-flame-shadow": {
     "name": "Reed the Flame Shadow",
     "appellation": null,
     "description": null,
-    "phases": [
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      },
-      {
-        "trait": {
-          "description": null
-        }
-      }
-    ],
     "potentials": {
       "2": {
         "description": null
@@ -39681,6 +36630,11 @@
           "name": null,
           "description": null
         }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
       }
     }
   }

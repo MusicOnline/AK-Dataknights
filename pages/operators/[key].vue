@@ -78,11 +78,18 @@ function limitOperatorLevel() {
           fill-class="bg-primary-main"
         >
           <template
-            v-for="val in [...Array(currentPhase.maxLevel / 10).keys()]"
+            v-for="val in [
+              ...Array(Math.floor(currentPhase.maxLevel / 10) + 1).keys(),
+            ]"
             :key="val"
           >
             <o-slider-tick :value="val * 10">{{ val * 10 }}</o-slider-tick>
           </template>
+          <o-slider-tick
+            v-if="currentPhase.maxLevel % 10"
+            :value="currentPhase.maxLevel"
+            >{{ currentPhase.maxLevel }}</o-slider-tick
+          >
         </o-slider>
         <o-switch v-model="operatorState.maxTrust">
           {{ t("operator.attribute.trust") }}

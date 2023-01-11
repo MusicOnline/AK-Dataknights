@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import { GeneratedTraitCandidateData } from "~~/tools/generate-data/operator/trait";
 
 const { t, locale, getLocaleMessage } = useI18n();
 
@@ -16,6 +17,36 @@ const currentAvatarUrl = $computed(() => {
   return `https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${encodeURI(
     phase.outfit!.avatarId
   )}.png`;
+});
+
+const currentTraitCandidate = $computed<GeneratedTraitCandidateData>(() => {
+  let currentCandidate: GeneratedTraitCandidateData | null = null;
+  operator.traitCandidates.forEach((candidate) => {
+    if (
+      // Insufficient elite promotion
+      candidate.unlockConditions.elite > operatorState.elite ||
+      // Same elite but insufficient level
+      (candidate.unlockConditions.elite === operatorState.elite &&
+        candidate.unlockConditions.level > operatorState.level)
+    )
+      return;
+    if (!currentCandidate) {
+      currentCandidate = candidate;
+      return;
+    }
+    if (
+      candidate.unlockConditions.elite >
+        currentCandidate.unlockConditions.elite ||
+      (candidate.unlockConditions.elite ===
+        currentCandidate.unlockConditions.elite &&
+        candidate.unlockConditions.level >
+          currentCandidate.unlockConditions.level)
+    ) {
+      currentCandidate = candidate;
+    }
+  });
+  if (!currentCandidate) throw new Error("No usable operator trait found");
+  return currentCandidate;
 });
 
 // https://github.com/intlify/vue-i18n-next/issues/1235
@@ -122,9 +153,9 @@ function getSpecificTranslationWithTL(
               v-html="
                 convertRichText(
                   t(
-                    `${operator.key}.phases.${operatorState.elite}.trait.description`
+                    `${operator.key}.traitCandidates.E${currentTraitCandidate.unlockConditions.elite}-L${currentTraitCandidate.unlockConditions.level}.description`
                   ),
-                  { replace: operator.phases[operatorState.elite].trait!.variables }
+                  { replace: currentTraitCandidate.variables }
                 )
               "
             />
