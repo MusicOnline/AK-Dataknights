@@ -49,6 +49,7 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
 
 <template>
   <div class="grid grid-cols-4">
+    <!-- Row 1 -->
     <div class="flex flex-col">
       <div class="flex items-center gap-1 text-emerald-500">
         <Icon name="bx:plus-medical" />
@@ -78,6 +79,7 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
       <div>{{ operatorAttributes.magicResistance }}</div>
     </div>
 
+    <!-- Row 2 -->
     <div class="flex flex-col">
       <div class="flex items-center gap-1 text-lime-500">
         <Icon name="mdi:alpha-c-circle" />

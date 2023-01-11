@@ -70,7 +70,7 @@ function limitOperatorLevel() {
           type="number"
           @change="limitOperatorLevel"
         />
-        <o-slider
+        <OSlider
           class="mt-2 hidden sm:block"
           v-model.number="operatorState.level"
           :min="1"
@@ -83,34 +83,47 @@ function limitOperatorLevel() {
             ]"
             :key="val"
           >
-            <o-slider-tick :value="val * 10">{{ val * 10 }}</o-slider-tick>
+            <OSliderTick :value="val * 10">{{ val * 10 }}</OSliderTick>
           </template>
-          <o-slider-tick
+          <OSliderTick
             v-if="currentPhase.maxLevel % 10"
             :value="currentPhase.maxLevel"
-            >{{ currentPhase.maxLevel }}</o-slider-tick
+            >{{ currentPhase.maxLevel }}</OSliderTick
           >
-        </o-slider>
-        <o-switch v-model="operatorState.maxTrust">
-          {{ t("operator.attribute.trust") }}
-        </o-switch>
+        </OSlider>
+        <OSwitch v-model="operatorState.maxTrust">
+          <VTooltip>
+            <a>Bonuses</a>
+            <template #popper>
+              <!-- {{ t("operator.attribute.trust") }} -->
+              Include stats gained from max Trust, selected Potential and
+              selected Module Stage
+            </template>
+          </VTooltip>
+        </OSwitch>
       </div>
       <div class="mt-1 bg-gray-200 p-1">{{ operatorState }}</div>
-      <OperatorAttributesTable
-        class="mt-1 bg-gray-200 p-1"
-        :operator="operator"
-        :operator-state="operatorState"
-      />
-      <OperatorRangeGrid
-        v-if="currentPhase.range"
-        :range="currentPhase.range"
-      />
+      <div class="mt-1 flex gap-4 bg-gray-200 p-1">
+        <OperatorRangeGrid
+          v-if="currentPhase.range"
+          :range="currentPhase.range"
+        />
+        <OperatorAttributesTable
+          class="flex-1"
+          :operator="operator"
+          :operator-state="operatorState"
+        />
+      </div>
       <div class="mt-1 bg-gray-200 p-1">
         <ul>
           <li
             v-for="{ potentialNumber } in operator.potentials"
             :key="potentialNumber"
           >
+            <img
+              class="inline-block w-8"
+              :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/potential/${potentialNumber}.png`"
+            />
             P{{ potentialNumber }}:
             {{ t(`${operator.key}.potentials.${potentialNumber}.description`) }}
           </li>
