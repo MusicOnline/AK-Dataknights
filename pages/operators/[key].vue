@@ -33,7 +33,7 @@ const currentPhase = $computed(() => operator.phases[operatorState.elite]);
         :operator-state="operatorState"
       />
       <OperatorLevelSelectWidget
-        class="sticky top-12 mt-1 bg-gray-400 p-1"
+        class="sticky top-12 bg-gray-300 p-2"
         v-model:elite="operatorState.elite"
         v-model:level="operatorState.level"
         v-model:are-bonuses-included="operatorState.areBonusesIncluded"
