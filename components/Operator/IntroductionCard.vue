@@ -6,7 +6,11 @@ const { t, locale, getLocaleMessage } = useI18n();
 
 const { operator, operatorState } = defineProps<{
   operator: GeneratedOperatorData;
-  operatorState: any;
+  operatorState: {
+    elite: number;
+    level: number;
+    areBonusesIncluded: boolean;
+  };
 }>();
 
 const currentAvatarUrl = $computed(() => {

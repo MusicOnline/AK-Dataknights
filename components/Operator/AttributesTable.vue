@@ -6,7 +6,11 @@ const { t } = useI18n();
 
 const { operator, operatorState } = defineProps<{
   operator: GeneratedOperatorData;
-  operatorState: any;
+  operatorState: {
+    elite: number;
+    level: number;
+    areBonusesIncluded: boolean;
+  };
 }>();
 
 // @ts-ignore
@@ -32,7 +36,7 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
         const levelDifference = endKeyFrame.level - startKeyFrame.level;
         const valuePerLevel = valueDifference / levelDifference;
         // @ts-ignore
-        const trustBonus: number = operatorState.maxTrust
+        const trustBonus: number = operatorState.areBonusesIncluded
           ? operator.trustKeyFrames?.slice(-1)[0].data[name] ?? 0
           : 0;
 
@@ -116,5 +120,3 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
     </div>
   </div>
 </template>
-
-<style scoped lang="scss"></style>
