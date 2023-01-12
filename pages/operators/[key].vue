@@ -5,7 +5,7 @@ import { OperatorState } from "~/utils";
 const {
   params: { key: operatorKey },
 } = useRoute();
-const { t } = useI18n();
+const { t, locale } = useI18n();
 
 // Dynamic imports must start with ./ or ../
 // https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#limitations
@@ -62,12 +62,14 @@ const currentPhase = $computed(() => operator.phases[operatorState.elite]);
         />
       </div>
       <div class="bg-gray-200 p-1">{{ operatorState }}</div>
+      <!-- Talents -->
       <div class="bg-gray-200 p-1">
         <ul>
           <li v-for="talent in operator.talents" :key="talent.talentNumber">
             <ul>
               <li v-for="candidate in talent.candidates" :key="candidate.key">
                 <div class="font-bold">
+                  {{ candidate.key }}:
                   {{
                     t(
                       `${operator.key}.talents.${talent.talentNumber}.${candidate.key}.name`
@@ -88,6 +90,7 @@ const currentPhase = $computed(() => operator.phases[operatorState.elite]);
           </li>
         </ul>
       </div>
+      <!-- Skills -->
       <div
         class="bg-gray-200 p-1"
         v-for="skill in operator.skills"
@@ -103,6 +106,31 @@ const currentPhase = $computed(() => operator.phases[operatorState.elite]);
                     .replace(/\]/g, ">")}.${level.level}.name`
                 )
               }}
+              Lv. {{ level.level }}
+            </div>
+            <div class="flex gap-x-2 gap-y-1 text-sm text-white">
+              <div class="bg-primary-main px-1">
+                {{ t(`operator.skill.skillType.${level.skillType}`) }}
+              </div>
+              <template v-if="level.skillType !== 'PASSIVE'">
+                <div class="bg-primary-main px-1">
+                  {{ t(`operator.skill.spType.${level.spData.spType}`) }}
+                </div>
+                <div class="bg-primary-main px-1">
+                  {{ level.spData.spCost }} SP Cost
+                </div>
+                <div class="bg-primary-main px-1" v-if="level.spData.initSp">
+                  {{ level.spData.initSp }} Init SP
+                </div>
+              </template>
+              <div class="bg-primary-main px-1" v-if="level.duration > 0">
+                {{
+                  level.duration.toLocaleString(locale, {
+                    style: "unit",
+                    unit: "second",
+                  })
+                }}
+              </div>
             </div>
             <div
               v-html="
@@ -119,13 +147,9 @@ const currentPhase = $computed(() => operator.phases[operatorState.elite]);
           </li>
         </ul>
       </div>
-      <div class="whitespace-pre bg-gray-200 p-1 font-mono">
+      <div class="overflow-x-auto whitespace-pre bg-gray-200 p-1 font-mono">
         {{ JSON.stringify(operator, null, 2) }}
       </div>
-      <div class="bg-gray-200 p-1">{{ operator }}</div>
-      <div class="bg-gray-200 p-1">{{ operator }}</div>
-      <div class="bg-gray-200 p-1">{{ operator }}</div>
-      <div class="bg-gray-200 p-1">{{ operator }}</div>
     </div>
   </div>
 </template>

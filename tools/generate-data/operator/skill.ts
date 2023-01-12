@@ -4,9 +4,9 @@ import { GeneratedRangeData, Range } from "./range";
 import { Blackboard, CharacterTableData, Skill as RawSkill } from "./raw";
 
 export enum SkillActivationType {
-  Passive = 0,
-  Manual = 1,
-  Auto = 2,
+  PASSIVE = 0,
+  MANUAL = 1,
+  AUTO = 2,
 }
 
 export enum DurationType {
@@ -16,16 +16,16 @@ export enum DurationType {
 }
 
 export enum SpRecoveryType {
-  Auto = 1,
-  Attack = 2,
-  Defensive = 4,
-  OnDeploy = 8, // Executors, technically no recovery
+  AUTO = 1,
+  OFFENSIVE = 2,
+  DEFENSIVE = 4,
+  ON_DEPLOY = 8, // Executors, technically no recovery
 }
 
 export interface SpData {
   spType: SpRecoveryType;
   levelUpCost: null;
-  maxChargeTime: number;
+  maxChargeTime: number; // Affected by charges & Charged effect
   spCost: number;
   initSp: number;
   increment: number;
@@ -50,13 +50,19 @@ export interface SkillTableDataLevel {
   blackboard: Blackboard[];
 }
 
+export interface GeneratedSkillLevelSpData {
+  spType: keyof typeof SpRecoveryType;
+  spCost: number;
+  initSp: number;
+}
+
 export interface GeneratedSkillLevelData {
   level: number;
   range?: GeneratedRangeData;
   variables: Blackboard[];
-  skillType: SkillActivationType;
-  durationType: DurationType;
+  skillType: keyof typeof SkillActivationType;
   duration: number;
+  spData: GeneratedSkillLevelSpData;
 }
 
 export interface GeneratedSkillData {
@@ -72,9 +78,9 @@ export class SkillLevel implements Localizable {
   description: LocalizationString | null;
   range: Range | null;
   variables: Blackboard[];
-  skillType: SkillActivationType;
-  durationType: DurationType;
+  skillType: keyof typeof SkillActivationType;
   duration: number;
+  spData: GeneratedSkillLevelSpData;
 
   public constructor(level: number, data: SkillTableDataLevel) {
     this.level = level;
@@ -82,9 +88,15 @@ export class SkillLevel implements Localizable {
     this.description = LocalizationString.fromDataOrNull(data.description);
     this.range = data.rangeId ? new Range(data.rangeId) : null;
     this.variables = data.blackboard;
-    this.skillType = data.skillType;
-    this.durationType = data.durationType;
+    this.skillType = <keyof typeof SkillActivationType>(
+      SkillActivationType[data.skillType]
+    );
     this.duration = data.duration;
+    this.spData = {
+      spType: <keyof typeof SpRecoveryType>SpRecoveryType[data.spData.spType],
+      spCost: data.spData.spCost,
+      initSp: data.spData.initSp,
+    };
   }
 
   public toData(): GeneratedSkillLevelData {
@@ -93,8 +105,8 @@ export class SkillLevel implements Localizable {
       range: this.range?.toData(),
       variables: this.variables,
       skillType: this.skillType,
-      durationType: this.durationType,
       duration: this.duration,
+      spData: this.spData,
     };
   }
 
@@ -178,12 +190,9 @@ export class Skill implements Localizable {
   }
 
   public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
-    return this.levels.reduce(
-      (accumulator: { [level: number]: any }, level) => {
-        accumulator[level.level] = level.toLocaleData(locale);
-        return accumulator;
-      },
-      {}
-    );
+    return this.levels.reduce((accumulator, level) => {
+      accumulator[level.level] = level.toLocaleData(locale);
+      return accumulator;
+    }, <{ [level: number]: any }>{});
   }
 }

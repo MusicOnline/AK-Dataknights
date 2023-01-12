@@ -48,7 +48,11 @@ const { isSidebarExpanded } = defineProps<{
       </OCollapse>
     </nav>
     <div>
-      <input type="text" :placeholder="t('operators.searchOperator')" />
+      <input
+        class="max-w-full"
+        type="text"
+        :placeholder="t('operators.searchOperator')"
+      />
       <ul>
         <li>A</li>
         <li>A</li>

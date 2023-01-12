@@ -133,6 +133,19 @@
       "baseAttackTime": "ATK Interval",
       "blockCnt": "Block",
       "respawnTime": "Redeploy"
+    },
+    "skill": {
+      "skillType": {
+        "PASSIVE": "Passive",
+        "MANUAL": "Manual Activation",
+        "AUTO": "Auto Activation"
+      },
+      "spType": {
+        "AUTO": "Auto Recovery",
+        "OFFENSIVE": "Offensive Recovery",
+        "DEFENSIVE": "Defensive Recovery",
+        "ON_DEPLOY": "Does not require SP"
+      }
     }
   }
 }
