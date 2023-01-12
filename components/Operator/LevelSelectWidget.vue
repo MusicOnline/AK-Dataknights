@@ -79,7 +79,9 @@ function limitOperatorLevel(event: Event) {
         @change="limitOperatorLevel"
       />
     </label>
-    <span class="lg:hidden"><span class="text-xl">/</span>90</span>
+    <span class="lg:hidden"
+      ><span class="text-xl">/</span>{{ currentPhase.maxLevel }}</span
+    >
     <OSlider
       class="mx-3 mb-2 hidden lg:block"
       v-model.number="operatorState.level"
