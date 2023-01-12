@@ -101,8 +101,18 @@ export interface Attributes {
   attributeModifiers: AttributeModifier[];
 }
 
+export enum AttributeType {
+  maxHp = 0,
+  atk = 1,
+  def = 2,
+  magicResistance = 3,
+  cost = 4,
+  attackSpeed = 7,
+  respawnTime = 21,
+}
+
 export interface AttributeModifier {
-  attributeType: number;
+  attributeType: AttributeType;
   formulaItem: number;
   value: number;
   loadFromBlackboard: boolean;

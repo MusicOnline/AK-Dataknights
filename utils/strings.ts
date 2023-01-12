@@ -1,4 +1,4 @@
-import { Blackboard } from "~~/tools/generate-data/operator/raw";
+import { Blackboard } from "~/tools/generate-data/operator/raw";
 
 const VARIABLE_REGEX =
   /\{(?<sign>-)?(?<name>.+?)(?::(?<formatSpecifier>.+?))?\}/g;

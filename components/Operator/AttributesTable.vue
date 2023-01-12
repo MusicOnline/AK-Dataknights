@@ -1,17 +1,25 @@
 <script setup lang="ts">
 import { GeneratedOperatorData } from "~/tools/generate-data/operator";
 import { KeyFrameData } from "~/tools/generate-data/operator/raw";
+import { OperatorState } from "~/utils";
+
+const CALCULATED_ATTRIBUTES = [
+  "maxHp",
+  "atk",
+  "def",
+  "magicResistance",
+  "cost",
+  "baseAttackTime",
+  "blockCnt",
+  "respawnTime",
+];
+const ROUNDED_ATTRIBTUES = ["maxHp", "atk", "def", "magicResistance"];
 
 const { t, locale } = useI18n();
 
 const { operator, operatorState } = defineProps<{
   operator: GeneratedOperatorData;
-  operatorState: {
-    elite: number;
-    level: number;
-    isMaxTrustIncluded: boolean;
-    areBonusesIncluded: boolean;
-  };
+  operatorState: OperatorState;
 }>();
 
 // @ts-ignore
@@ -27,8 +35,8 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
       [name, startValue]: [keyof KeyFrameData, number | boolean]
     ) => {
       if (
-        typeof startValue === "boolean" ||
-        endKeyFrame.data[name] === startValue
+        !CALCULATED_ATTRIBUTES.includes(name) ||
+        typeof startValue === "boolean"
       ) {
         accumulator[name] = startValue;
       } else {
@@ -41,10 +49,25 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
           operatorState.areBonusesIncluded && operatorState.isMaxTrustIncluded
             ? operator.trustKeyFrames?.slice(-1)[0].data[name] ?? 0
             : 0;
+        let potentialBonus: number = 0;
+        if (operatorState.areBonusesIncluded) {
+          for (let i = 2; i <= operatorState.potential; i++) {
+            // Index 0 = Potential 2
+            const potential = operator.potentials[i - 2];
+            if (potential.attribute?.key === name)
+              potentialBonus += potential.attribute!.value;
+          }
+        }
 
-        accumulator[name] = Math.round(
-          startValue + valuePerLevel * (operatorState.level - 1) + trustBonus
-        );
+        let total =
+          startValue +
+          valuePerLevel * (operatorState.level - 1) +
+          trustBonus +
+          potentialBonus;
+        if (ROUNDED_ATTRIBTUES.includes(name)) {
+          total = Math.round(total);
+        }
+        accumulator[name] = total;
       }
       return accumulator;
     },

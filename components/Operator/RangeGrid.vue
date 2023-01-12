@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { GeneratedRangeData } from "~~/tools/generate-data/operator/range";
+import { GeneratedRangeData } from "~/tools/generate-data/operator/range";
 
 const { range } = defineProps<{
   range: GeneratedRangeData;

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import { OperatorState } from "~/utils";
 
 const {
   params: { key: operatorKey },
@@ -14,23 +15,12 @@ const { default: operator }: { default: GeneratedOperatorData } = await import(
 const finalPhase = operator.phases.slice(-1)[0];
 
 const isSidebarExpanded = $ref(false);
-const operatorState = $ref({
+const operatorState = $ref<OperatorState>({
   elite: finalPhase.elite,
   level: finalPhase.maxLevel,
   potential: 1,
   isMaxTrustIncluded: true,
   areBonusesIncluded: true,
-});
-
-const trustStats = $computed(() => {
-  if (!operator.trustKeyFrames) return null;
-  return Object.entries(operator.trustKeyFrames[1].data).reduce(
-    (accumulator: { [key: string]: number }, [key, value]) => {
-      if (value) accumulator[key] = value;
-      return accumulator;
-    },
-    {}
-  );
 });
 
 const currentPhase = $computed(() => operator.phases[operatorState.elite]);
@@ -65,55 +55,11 @@ const currentPhase = $computed(() => operator.phases[operatorState.elite]);
           :operator="operator"
           :operator-state="operatorState"
         />
-        <div class="flex flex-col gap-1">
-          <ul class="flex flex-col gap-1">
-            <li class="flex gap-0.5 text-sm">
-              <img
-                class="block h-6 w-6 bg-gray-800 p-0.5 align-middle"
-                src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/potential/1.png"
-              />
-              <div class="align-middle">Operator Recruited</div>
-            </li>
-            <li
-              class="flex gap-0.5 text-sm"
-              v-for="{ potentialNumber } in operator.potentials"
-              :key="potentialNumber"
-            >
-              <img
-                class="block h-6 w-6 bg-gray-800 p-0.5 align-middle"
-                :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/potential/${potentialNumber}.png`"
-              />
-              <div class="align-middle">
-                {{
-                  t(`${operator.key}.potentials.${potentialNumber}.description`)
-                }}
-              </div>
-            </li>
-          </ul>
-          <button
-            class="flex gap-0.5 text-sm"
-            v-if="trustStats"
-            @click="
-              operatorState.isMaxTrustIncluded =
-                !operatorState.isMaxTrustIncluded
-            "
-          >
-            <Icon
-              class="h-6 w-6 p-0.5"
-              :class="{
-                'bg-gray-600 text-orange-300':
-                  !operatorState.isMaxTrustIncluded,
-                'bg-gray-800 text-orange-400': operatorState.isMaxTrustIncluded,
-              }"
-              name="mdi:handshake"
-            />
-            <div class="flex flex-wrap gap-x-1">
-              <span v-for="(value, key) in trustStats" :key="key">
-                {{ t(`operator.attribute.${String(key)}`) }} +{{ value }}
-              </span>
-            </div>
-          </button>
-        </div>
+        <OperatorPotentialTrustList
+          v-model:potential="operatorState.potential"
+          v-model:is-max-trust-included="operatorState.isMaxTrustIncluded"
+          :operator="operator"
+        />
       </div>
       <div class="bg-gray-200 p-1">{{ operatorState }}</div>
       <div class="bg-gray-200 p-1">

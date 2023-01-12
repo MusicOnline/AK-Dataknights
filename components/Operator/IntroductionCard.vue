@@ -1,16 +1,13 @@
 <script setup lang="ts">
 import { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import { GeneratedTraitCandidateData } from "~~/tools/generate-data/operator/trait";
+import { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait";
+import { OperatorState } from "~/utils";
 
 const { t, locale, getLocaleMessage } = useI18n();
 
 const { operator, operatorState } = defineProps<{
   operator: GeneratedOperatorData;
-  operatorState: {
-    elite: number;
-    level: number;
-    areBonusesIncluded: boolean;
-  };
+  operatorState: OperatorState;
 }>();
 
 const currentAvatarUrl = $computed(() => {
