@@ -25,7 +25,7 @@ const { isSidebarExpanded } = defineProps<{
       />
     </button>
     <nav>
-      <o-collapse animation="slide">
+      <OCollapse animation="slide">
         <template #trigger="props">
           <button class="flex items-center gap-1">
             <div>Table of Contents</div>
@@ -45,7 +45,7 @@ const { isSidebarExpanded } = defineProps<{
             </ul>
           </div>
         </div>
-      </o-collapse>
+      </OCollapse>
     </nav>
     <div>
       <input type="text" :placeholder="t('operators.searchOperator')" />

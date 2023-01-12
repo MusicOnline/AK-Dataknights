@@ -22,7 +22,7 @@ const currentLocaleObject = $computed(() => {
 </script>
 
 <template>
-  <o-dropdown
+  <ODropdown
     v-model="currentLocale"
     :triggers="['click', 'hover', 'focus']"
     menu-class="bg-gray-200 w-max sm:w-full shadow p-1"
@@ -30,27 +30,27 @@ const currentLocaleObject = $computed(() => {
     @update:modelValue="setLocale(currentLocale)"
   >
     <template #trigger="{ active }">
-      <o-button
+      <OButton
         label-class="flex items-center gap-1 bg-gray-200 p-1 text-gray-600"
       >
-        <Icon name="heroicons:globe-alt" class="text-xl" />
+        <Icon class="text-xl" name="heroicons:globe-alt" />
         <span class="hidden sm:block">{{ currentLocaleObject.name }}</span>
-        <Icon name="heroicons:chevron-down" class="text-xl" />
-      </o-button>
+        <Icon class="text-xl" name="heroicons:chevron-down" />
+      </OButton>
     </template>
 
-    <o-dropdown-item
+    <ODropdownItem
+      class="p-1 text-gray-900 hover:bg-gray-300"
       v-for="locale in availableLocales"
       :key="locale.code"
       :value="locale.code"
       :data-lang="locale.code"
-      class="p-1 text-gray-900 hover:bg-gray-300"
       item-active-class="bg-primary-main hover:bg-primary-main text-gray-50"
       aria-role="listitem"
     >
       {{ locale.name }}
-    </o-dropdown-item>
-  </o-dropdown>
+    </ODropdownItem>
+  </ODropdown>
 </template>
 
 <style scoped lang="scss">
