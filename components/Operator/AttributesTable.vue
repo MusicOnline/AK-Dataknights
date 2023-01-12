@@ -84,8 +84,8 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
     <div
       class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-1 md:order-1 lg:order-1"
     >
-      <div class="flex items-center gap-1 text-emerald-500">
-        <Icon name="bx:plus-medical" />
+      <div class="flex gap-1 text-emerald-500">
+        <Icon class="mt-1 flex-shrink-0" name="bx:plus-medical" />
         <span>{{ t("operator.attribute.maxHp") }}</span>
       </div>
       <div>{{ operatorAttributes.maxHp }}</div>
@@ -93,8 +93,8 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
     <div
       class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-3 md:order-2 lg:order-3"
     >
-      <div class="flex items-center gap-1 text-red-500">
-        <Icon name="mdi:sword-cross" />
+      <div class="flex gap-1 text-red-500">
+        <Icon class="mt-1 flex-shrink-0" name="mdi:sword-cross" />
         <span>{{ t("operator.attribute.atk") }}</span>
       </div>
       <div>{{ operatorAttributes.atk }}</div>
@@ -102,8 +102,8 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
     <div
       class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-5 md:order-3 lg:order-5"
     >
-      <div class="flex items-center gap-1 text-sky-500">
-        <Icon name="mdi:shield" />
+      <div class="flex gap-1 text-sky-500">
+        <Icon class="mt-1 flex-shrink-0" name="mdi:shield" />
         <span>{{ t("operator.attribute.def") }}</span>
       </div>
       <div>{{ operatorAttributes.def }}</div>
@@ -111,8 +111,11 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
     <div
       class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-7 md:order-4 lg:order-7"
     >
-      <div class="flex items-center gap-1 text-violet-500">
-        <Icon class="rotate-45" name="uil:vector-square-alt" />
+      <div class="flex gap-1 text-violet-500">
+        <Icon
+          class="mt-1 flex-shrink-0 rotate-45"
+          name="uil:vector-square-alt"
+        />
         <span>{{ t("operator.attribute.magicResistance") }}</span>
       </div>
       <div>{{ operatorAttributes.magicResistance }}</div>
@@ -122,8 +125,8 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
     <div
       class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-2 md:order-5 lg:order-2"
     >
-      <div class="flex items-center gap-1 text-lime-500">
-        <Icon name="mdi:alpha-c-circle" />
+      <div class="flex gap-1 text-lime-500">
+        <Icon class="mt-1 flex-shrink-0" name="mdi:alpha-c-circle" />
         <span>{{ t("operator.attribute.cost") }}</span>
       </div>
       <div>{{ operatorAttributes.cost }}</div>
@@ -131,8 +134,8 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
     <div
       class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-4 md:order-6 lg:order-4"
     >
-      <div class="flex items-center gap-1 text-rose-500">
-        <Icon name="game-icons:spinning-sword" />
+      <div class="flex gap-1 text-rose-500">
+        <Icon class="mt-1 flex-shrink-0" name="game-icons:spinning-sword" />
         <span>{{ t("operator.attribute.baseAttackTime") }}</span>
       </div>
       <div>
@@ -147,8 +150,8 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
     <div
       class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-6 md:order-7 lg:order-6"
     >
-      <div class="flex items-center gap-1 text-blue-500">
-        <Icon name="mdi:shield-account" />
+      <div class="flex gap-1 text-blue-500">
+        <Icon class="mt-1 flex-shrink-0" name="mdi:shield-account" />
         <span>{{ t("operator.attribute.blockCnt") }}</span>
       </div>
       <div>{{ operatorAttributes.blockCnt }}</div>
@@ -156,8 +159,11 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
     <div
       class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-8 md:order-8 lg:order-8"
     >
-      <div class="flex items-center gap-1 text-pink-500">
-        <Icon name="ph:clock-counter-clockwise-bold" />
+      <div class="flex gap-1 text-pink-500">
+        <Icon
+          class="mt-1 flex-shrink-0"
+          name="ph:clock-counter-clockwise-bold"
+        />
         <span>{{ t("operator.attribute.respawnTime") }}</span>
       </div>
       <div>

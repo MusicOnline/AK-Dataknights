@@ -36,7 +36,7 @@ const trustStats = $computed(() => {
           class="flex w-full gap-0.5 text-left hover:bg-gray-300"
           @click="$emit('update:potential', (operatorState.potential = 1))"
         >
-          <div class="block h-6 w-6 bg-gray-800 p-0.5">
+          <div class="block h-6 w-6 flex-shrink-0 bg-gray-800 p-0.5">
             <img
               src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/potential/1.png"
             />
@@ -58,7 +58,7 @@ const trustStats = $computed(() => {
           "
         >
           <div
-            class="block h-6 w-6 p-0.5"
+            class="block h-6 w-6 flex-shrink-0 p-0.5"
             :class="{
               'bg-gray-400': operatorState.potential < potentialNumber,
               'bg-gray-800': operatorState.potential >= potentialNumber,
@@ -88,7 +88,7 @@ const trustStats = $computed(() => {
       "
     >
       <div
-        class="flex h-6 w-6 p-0.5"
+        class="flex h-6 w-6 flex-shrink-0 p-0.5"
         :class="{
           'bg-gray-400 text-orange-300': !operatorState.isMaxTrustIncluded,
           'bg-gray-800 text-orange-400': operatorState.isMaxTrustIncluded,
