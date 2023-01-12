@@ -5,12 +5,17 @@ const { range } = defineProps<{
   range: GeneratedRangeData;
 }>();
 
+const editedGrid = [...range.grids];
+if (!editedGrid.find(({ row, col }) => row === 0 && col === 0)) {
+  editedGrid.push({ row: 0, col: 0 });
+}
+
 const gridData = $computed(() => {
   let minRow = 0;
   let maxRow = 0;
   let minCol = 0;
   let maxCol = 0;
-  range.grids.forEach(({ row, col }) => {
+  editedGrid.forEach(({ row, col }) => {
     if (row < minRow) minRow = row;
     if (row > maxRow) maxRow = row;
     if (col < minCol) minCol = col;
@@ -37,7 +42,7 @@ const gridData = $computed(() => {
   >
     <div
       class="border"
-      v-for="{ row, col } in range.grids"
+      v-for="{ row, col } in editedGrid"
       :class="{
         'bg-primary-main border-primary-alt': row === 0 && col === 0,
         'border-gray-800 bg-gray-300': row !== 0 || col !== 0,

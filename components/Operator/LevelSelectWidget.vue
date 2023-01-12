@@ -68,10 +68,10 @@ function limitOperatorLevel(event: Event) {
         </button>
       </li>
     </ul>
-    <label class="flex items-center gap-1">
-      <span class="font-bold">Lv.</span>
+    <label class="flex items-center gap-1 font-bold">
+      <span>Lv.</span>
       <input
-        class="ml-auto w-12"
+        class="ml-auto w-14 px-1 text-xl"
         v-model.number="operatorState.level"
         :min="1"
         :max="currentPhase.maxLevel"
@@ -79,6 +79,7 @@ function limitOperatorLevel(event: Event) {
         @change="limitOperatorLevel"
       />
     </label>
+    <span class="lg:hidden"><span class="text-xl">/</span>90</span>
     <OSlider
       class="mx-3 mb-2 hidden lg:block"
       v-model.number="operatorState.level"

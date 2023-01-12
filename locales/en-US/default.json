@@ -125,18 +125,14 @@
       "crusher": "Crusher"
     },
     "attribute": {
-      "hp": "HP",
+      "maxHp": "HP",
       "atk": "ATK",
       "def": "DEF",
-      "res": "RES",
-      "dpCost": "Cost",
-      "attackInterval": "ATK Interval",
-      "block": "Block",
-      "redeploymentTime": "Redeploy",
-      "trust": "Trust"
+      "magicResistance": "RES",
+      "cost": "Cost",
+      "baseAttackTime": "ATK Interval",
+      "blockCnt": "Block",
+      "respawnTime": "Redeploy"
     }
-  },
-  "general": {
-    "nSeconds": "{value}s"
   }
 }

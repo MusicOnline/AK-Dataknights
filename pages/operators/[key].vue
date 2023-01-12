@@ -17,7 +17,20 @@ const isSidebarExpanded = $ref(false);
 const operatorState = $ref({
   elite: finalPhase.elite,
   level: finalPhase.maxLevel,
+  potential: 1,
+  isMaxTrustIncluded: true,
   areBonusesIncluded: true,
+});
+
+const trustStats = $computed(() => {
+  if (!operator.trustKeyFrames) return null;
+  return Object.entries(operator.trustKeyFrames[1].data).reduce(
+    (accumulator: { [key: string]: number }, [key, value]) => {
+      if (value) accumulator[key] = value;
+      return accumulator;
+    },
+    {}
+  );
 });
 
 const currentPhase = $computed(() => operator.phases[operatorState.elite]);
@@ -33,40 +46,77 @@ const currentPhase = $computed(() => operator.phases[operatorState.elite]);
         :operator-state="operatorState"
       />
       <OperatorLevelSelectWidget
-        class="sticky top-12 bg-gray-300 p-2"
+        class="sticky top-12 bg-gray-300 p-2 shadow"
         v-model:elite="operatorState.elite"
         v-model:level="operatorState.level"
         v-model:are-bonuses-included="operatorState.areBonusesIncluded"
         :operator="operator"
       />
-      <div class="mt-1 bg-gray-200 p-1">{{ operatorState }}</div>
-      <div class="mt-1 flex gap-4 bg-gray-200 p-1">
-        <OperatorRangeGrid
-          v-if="currentPhase.range"
-          :range="currentPhase.range"
-        />
+      <div class="grid grid-flow-col-dense gap-1 bg-gray-200 p-2">
+        <div class="grid max-w-xs bg-gray-300 px-1">
+          <OperatorRangeGrid
+            class="m-auto"
+            v-if="currentPhase.range"
+            :range="currentPhase.range"
+          />
+        </div>
         <OperatorAttributesTable
           class="flex-1"
           :operator="operator"
           :operator-state="operatorState"
         />
-      </div>
-      <div class="mt-1 bg-gray-200 p-1">
-        <ul>
-          <li
-            v-for="{ potentialNumber } in operator.potentials"
-            :key="potentialNumber"
+        <div class="flex flex-col gap-1">
+          <ul class="flex flex-col gap-1">
+            <li class="flex gap-0.5 text-sm">
+              <img
+                class="block h-6 w-6 bg-gray-800 p-0.5 align-middle"
+                src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/potential/1.png"
+              />
+              <div class="align-middle">Operator Recruited</div>
+            </li>
+            <li
+              class="flex gap-0.5 text-sm"
+              v-for="{ potentialNumber } in operator.potentials"
+              :key="potentialNumber"
+            >
+              <img
+                class="block h-6 w-6 bg-gray-800 p-0.5 align-middle"
+                :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/potential/${potentialNumber}.png`"
+              />
+              <div class="align-middle">
+                {{
+                  t(`${operator.key}.potentials.${potentialNumber}.description`)
+                }}
+              </div>
+            </li>
+          </ul>
+          <button
+            class="flex gap-0.5 text-sm"
+            v-if="trustStats"
+            @click="
+              operatorState.isMaxTrustIncluded =
+                !operatorState.isMaxTrustIncluded
+            "
           >
-            <img
-              class="inline-block w-8"
-              :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/potential/${potentialNumber}.png`"
+            <Icon
+              class="h-6 w-6 p-0.5"
+              :class="{
+                'bg-gray-600 text-orange-300':
+                  !operatorState.isMaxTrustIncluded,
+                'bg-gray-800 text-orange-400': operatorState.isMaxTrustIncluded,
+              }"
+              name="mdi:handshake"
             />
-            P{{ potentialNumber }}:
-            {{ t(`${operator.key}.potentials.${potentialNumber}.description`) }}
-          </li>
-        </ul>
+            <div class="flex flex-wrap gap-x-1">
+              <span v-for="(value, key) in trustStats" :key="key">
+                {{ t(`operator.attribute.${String(key)}`) }} +{{ value }}
+              </span>
+            </div>
+          </button>
+        </div>
       </div>
-      <div class="mt-1 bg-gray-200 p-1">
+      <div class="bg-gray-200 p-1">{{ operatorState }}</div>
+      <div class="bg-gray-200 p-1">
         <ul>
           <li v-for="talent in operator.talents" :key="talent.talentNumber">
             <ul>
@@ -93,7 +143,7 @@ const currentPhase = $computed(() => operator.phases[operatorState.elite]);
         </ul>
       </div>
       <div
-        class="mt-1 bg-gray-200 p-1"
+        class="bg-gray-200 p-1"
         v-for="skill in operator.skills"
         :key="skill.id"
       >
@@ -123,13 +173,13 @@ const currentPhase = $computed(() => operator.phases[operatorState.elite]);
           </li>
         </ul>
       </div>
-      <div class="mt-1 whitespace-pre bg-gray-200 p-1 font-mono">
+      <div class="whitespace-pre bg-gray-200 p-1 font-mono">
         {{ JSON.stringify(operator, null, 2) }}
       </div>
-      <div class="mt-1 bg-gray-200 p-1">{{ operator }}</div>
-      <div class="mt-1 bg-gray-200 p-1">{{ operator }}</div>
-      <div class="mt-1 bg-gray-200 p-1">{{ operator }}</div>
-      <div class="mt-1 bg-gray-200 p-1">{{ operator }}</div>
+      <div class="bg-gray-200 p-1">{{ operator }}</div>
+      <div class="bg-gray-200 p-1">{{ operator }}</div>
+      <div class="bg-gray-200 p-1">{{ operator }}</div>
+      <div class="bg-gray-200 p-1">{{ operator }}</div>
     </div>
   </div>
 </template>
