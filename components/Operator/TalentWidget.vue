@@ -299,7 +299,6 @@ const talentsAndBestAndNextCandidate = $computed<
           </div>
           <div>
             <span
-              class="align-middle"
               v-html="
                 convertRichText(
                   t(
@@ -333,19 +332,16 @@ const talentsAndBestAndNextCandidate = $computed<
               )
             }}
           </div>
-          <div>
+          <div class="flex items-center gap-1">
             <!-- TODO: Consider adding elite icon -->
-            <Icon class="align-middle" name="heroicons:lock-closed-solid" />
-            <span
-              class="align-middle"
-              v-if="nextCandidate.unlockConditions.level === 1"
-            >
+            <Icon name="heroicons:lock-closed-solid" />
+            <div v-if="nextCandidate.unlockConditions.level === 1">
               Unlocks at Elite {{ nextCandidate.unlockConditions.elite }}.
-            </span>
-            <span class="align-middle" v-else>
+            </div>
+            <div v-else>
               Unlocks at Elite {{ nextCandidate.unlockConditions.elite }} Lv.
               {{ nextCandidate.unlockConditions.level }}.
-            </span>
+            </div>
           </div>
         </button>
       </li>
