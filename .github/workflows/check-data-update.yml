@@ -24,5 +24,6 @@ jobs:
         run: |
           git config --global user.name 'Mizuki'
           git config --global user.email 'mizuki@arknights'
-          git commit -am "Update latest Kengxxiao/ArknightsGameData commit SHA"
+          git commit -am "chore: update latest game data commit SHA" \
+            -m "This is an automated commit triggered by GitHub Actions. Data repository: Kengxxiao/ArknightsGameData"
           git push
