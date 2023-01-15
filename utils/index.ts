@@ -5,3 +5,9 @@ export interface OperatorState {
   isMaxTrustIncluded: boolean;
   areBonusesIncluded: boolean;
 }
+
+export interface TalentState {
+  elite: number;
+  level: number;
+  potential: number;
+}

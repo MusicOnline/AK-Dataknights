@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import { OperatorState } from "~/utils";
+import { OperatorState, TalentState } from "~/utils";
 
 const {
   params: { key: operatorKey },
@@ -24,6 +24,72 @@ const operatorState = $ref<OperatorState>({
 });
 
 const currentPhase = $computed(() => operator.phases[operatorState.elite]);
+
+const talentEliteLevelNumbers = $computed(
+  () =>
+    operator.talents
+      ?.reduce((accumulator, talent) => {
+        talent.candidates.forEach(({ unlockConditions: { elite, level } }) => {
+          if (
+            !accumulator.find(
+              ([otherElite, otherLevel]) =>
+                otherElite === elite && otherLevel === level
+            )
+          )
+            accumulator.push([elite, level]);
+        });
+        return accumulator;
+      }, <[number, number][]>[])
+      .sort(([aElite, aLevel], [bElite, bLevel]) =>
+        aElite === bElite ? aLevel - bLevel : aElite - bElite
+      ) || []
+);
+const talentPotentialNumbers = $computed(
+  () =>
+    operator.talents
+      ?.reduce((accumulator, talent) => {
+        talent.candidates.forEach(({ unlockConditions: { potential } }) => {
+          if (!accumulator.includes(potential)) accumulator.push(potential);
+        });
+        return accumulator;
+      }, <number[]>[])
+      .sort() || []
+);
+
+const talentState = $ref<TalentState>({
+  elite: talentEliteLevelNumbers.slice(-1)[0][0],
+  level: talentEliteLevelNumbers.slice(-1)[0][1],
+  potential: talentPotentialNumbers[0],
+});
+
+function changeToNearestEliteLevel() {
+  let bestEliteLevel: [number, number] | null = null;
+  talentEliteLevelNumbers.forEach(([elite, level]) => {
+    if (elite === operatorState.elite) {
+      // Prefer if bestEliteLevel and operatorState are equal non-1 level (E1 Lv55)
+      if (bestEliteLevel && bestEliteLevel[1] === level) return;
+      bestEliteLevel = [elite, level];
+    }
+  });
+  if (bestEliteLevel) {
+    talentState.elite = bestEliteLevel[0];
+    talentState.level = bestEliteLevel[1];
+  }
+}
+
+watch(() => operatorState.elite, changeToNearestEliteLevel);
+watch(() => operatorState.level, changeToNearestEliteLevel);
+watch(
+  () => operatorState.potential,
+  () => {
+    let bestPotential: number = 1;
+    talentPotentialNumbers.forEach((potential) => {
+      if (potential > bestPotential && potential <= operatorState.potential)
+        bestPotential = potential;
+    });
+    talentState.potential = bestPotential;
+  }
+);
 </script>
 
 <template>
@@ -31,17 +97,20 @@ const currentPhase = $computed(() => operator.phases[operatorState.elite]);
     <OperatorSidebar :is-sidebar-expanded="isSidebarExpanded" />
     <div class="flex flex-col gap-2 md:ml-56 lg:ml-72">
       <Breadcrumbs class="text-sm" />
+      <!-- General information -->
       <OperatorIntroductionCard
         :operator="operator"
         :operator-state="operatorState"
       />
+      <!-- Sticky level select -->
       <OperatorLevelSelectWidget
-        class="sticky top-12 bg-gray-300 p-2 shadow"
+        class="sticky top-12 z-10 bg-gray-300 p-2 shadow"
         v-model:elite="operatorState.elite"
         v-model:level="operatorState.level"
         v-model:are-bonuses-included="operatorState.areBonusesIncluded"
         :operator="operator"
       />
+      <!-- Range, stats, potentials, trust -->
       <div class="grid grid-flow-col-dense gap-1 bg-gray-200 p-2">
         <div class="grid max-w-xs bg-gray-300 px-1">
           <OperatorRangeGrid
@@ -62,34 +131,14 @@ const currentPhase = $computed(() => operator.phases[operatorState.elite]);
         />
       </div>
       <div class="bg-gray-200 p-1">{{ operatorState }}</div>
+      <div class="bg-gray-200 p-1">{{ talentState }}</div>
       <!-- Talents -->
-      <div class="bg-gray-200 p-1">
-        <ul>
-          <li v-for="talent in operator.talents" :key="talent.talentNumber">
-            <ul>
-              <li v-for="candidate in talent.candidates" :key="candidate.key">
-                <div class="font-bold">
-                  {{ candidate.key }}:
-                  {{
-                    t(
-                      `${operator.key}.talents.${talent.talentNumber}.${candidate.key}.name`
-                    )
-                  }}
-                </div>
-                <div
-                  v-html="
-                    convertRichText(
-                      t(
-                        `${operator.key}.talents.${talent.talentNumber}.${candidate.key}.description`
-                      )
-                    )
-                  "
-                />
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+      <OperatorTalentWidget
+        v-model:elite="talentState.elite"
+        v-model:level="talentState.level"
+        v-model:potential="talentState.potential"
+        :operator="operator"
+      />
       <!-- Skills -->
       <div
         class="bg-gray-200 p-1"

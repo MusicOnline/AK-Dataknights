@@ -9,9 +9,9 @@ const { operator, elite, level, areBonusesIncluded } = defineProps<{
 }>();
 
 const operatorState = $ref({
-  elite: elite,
-  level: level,
-  areBonusesIncluded: areBonusesIncluded,
+  elite,
+  level,
+  areBonusesIncluded,
 });
 
 const emit = defineEmits([

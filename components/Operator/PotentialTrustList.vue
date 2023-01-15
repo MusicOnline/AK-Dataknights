@@ -12,8 +12,8 @@ defineEmits(["update:potential", "update:isMaxTrustIncluded"]);
 const { t } = useI18n();
 
 const operatorState = $ref({
-  potential: potential,
-  isMaxTrustIncluded: isMaxTrustIncluded,
+  potential,
+  isMaxTrustIncluded,
 });
 
 const trustStats = $computed(() => {
