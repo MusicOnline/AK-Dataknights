@@ -196,9 +196,6 @@ watch(
           </li>
         </ul>
       </div>
-      <div class="overflow-x-auto whitespace-pre bg-gray-200 p-1 font-mono">
-        {{ JSON.stringify(operator, null, 2) }}
-      </div>
     </div>
   </div>
 </template>
