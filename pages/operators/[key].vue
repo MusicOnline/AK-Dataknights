@@ -140,62 +140,13 @@ watch(
         :operator="operator"
       />
       <!-- Skills -->
-      <div
-        class="bg-gray-200 p-1"
+      <OperatorSkillWidget
+        class="bg-gray-200 p-2"
         v-for="skill in operator.skills"
         :key="skill.id"
-      >
-        <ul>
-          <li v-for="level in skill.levels" :key="level.level">
-            <div class="font-bold">
-              {{
-                t(
-                  `${operator.key}.skills.${skill.id
-                    .replace(/\[/g, "<")
-                    .replace(/\]/g, ">")}.${level.level}.name`
-                )
-              }}
-              Lv. {{ level.level }}
-            </div>
-            <div class="flex gap-x-2 gap-y-1 text-sm text-white">
-              <div class="bg-primary-main px-1">
-                {{ t(`operator.skill.skillType.${level.skillType}`) }}
-              </div>
-              <template v-if="level.skillType !== 'PASSIVE'">
-                <div class="bg-primary-main px-1">
-                  {{ t(`operator.skill.spType.${level.spData.spType}`) }}
-                </div>
-                <div class="bg-primary-main px-1">
-                  {{ level.spData.spCost }} SP Cost
-                </div>
-                <div class="bg-primary-main px-1" v-if="level.spData.initSp">
-                  {{ level.spData.initSp }} Init SP
-                </div>
-              </template>
-              <div class="bg-primary-main px-1" v-if="level.duration > 0">
-                {{
-                  level.duration.toLocaleString(locale, {
-                    style: "unit",
-                    unit: "second",
-                  })
-                }}
-              </div>
-            </div>
-            <div
-              v-html="
-                convertRichText(
-                  t(
-                    `${operator.key}.skills.${skill.id
-                      .replace(/\[/g, '<')
-                      .replace(/\]/g, '>')}.${level.level}.description`
-                  ),
-                  { replace: level.variables }
-                )
-              "
-            />
-          </li>
-        </ul>
-      </div>
+        :operator="operator"
+        :skill="skill"
+      />
     </div>
   </div>
 </template>
