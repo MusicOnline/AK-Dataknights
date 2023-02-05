@@ -9,7 +9,7 @@ const { operator, skill } = defineProps<{
 
 const { t, locale } = useI18n();
 
-function getRowSpanValuesForEqualValues(values: number[]): number[] {
+function getRowSpanValuesForEqualValues(values: any[]): number[] {
   const rowSpanValues: number[] = [];
   values.forEach((value, index) => {
     if (index !== 0 && value === values[index - 1]) {
@@ -37,6 +37,12 @@ const spCostRowSpanValues = $computed(() =>
 );
 const durationRowSpanValues = $computed(() =>
   getRowSpanValuesForEqualValues(skill.levels.map(({ duration }) => duration))
+);
+const rangeRowSpanValues = $computed(() =>
+  getRowSpanValuesForEqualValues(skill.levels.map(({ range }) => range?.id))
+);
+const isRangeExistent = $computed(() =>
+  skill.levels.some(({ range }) => range)
 );
 
 const initSpIsNotAlwaysZero = $computed(
@@ -95,11 +101,12 @@ const initSpIsNotAlwaysZero = $computed(
           </template>
           <th class="sm:w-20" v-if="skill.levels[0].duration > 0">Duration</th>
           <th>Description</th>
+          <th v-if="isRangeExistent">Attack Range</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="level in skill.levels" :key="level.level">
-          <td>
+          <td class="text-center">
             <template v-if="level.level <= 7"> {{ level.level }} </template>
             <img
               class="mx-auto"
@@ -111,6 +118,7 @@ const initSpIsNotAlwaysZero = $computed(
           </td>
           <template v-if="level.skillType !== 'PASSIVE'">
             <td
+              class="text-center"
               v-if="
                 initSpIsNotAlwaysZero &&
                 initSpRowSpanValues[level.level - 1] !== 0
@@ -120,6 +128,7 @@ const initSpIsNotAlwaysZero = $computed(
               {{ level.spData.initSp }}
             </td>
             <td
+              class="text-center"
               v-if="spCostRowSpanValues[level.level - 1] !== 0"
               :rowspan="spCostRowSpanValues[level.level - 1]"
             >
@@ -127,6 +136,7 @@ const initSpIsNotAlwaysZero = $computed(
             </td>
           </template>
           <td
+            class="text-center"
             v-if="
               level.duration > 0 && durationRowSpanValues[level.level - 1] !== 0
             "
@@ -140,6 +150,7 @@ const initSpIsNotAlwaysZero = $computed(
             }}
           </td>
           <td
+            class="description"
             v-html="
               convertRichText(
                 t(
@@ -151,6 +162,12 @@ const initSpIsNotAlwaysZero = $computed(
               )
             "
           />
+          <td
+            v-if="level.range && rangeRowSpanValues[level.level - 1] !== 0"
+            :rowspan="rangeRowSpanValues[level.level - 1]"
+          >
+            <OperatorRangeGrid :range="level.range" />
+          </td>
         </tr>
       </tbody>
     </table>
@@ -171,12 +188,8 @@ tbody tr td:first-child {
   @apply bg-gray-800 font-bold text-white;
 }
 
-tbody tr td:not(:last-child) {
-  @apply text-center;
-}
-
-tbody tr td:not(:first-child, :last-child),
-tbody tr:nth-child(odd) td:last-child {
+tbody tr td:not(:first-child, .description),
+tbody tr:nth-child(odd) .description {
   @apply bg-gray-300;
 }
 </style>
