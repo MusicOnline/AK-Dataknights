@@ -1,8 +1,7 @@
 import * as constants from "../constants";
 import { GeneratedOutfitData, Outfit } from "../outfit";
-import { Localizable, LocalizationString } from "../utils";
 import { GeneratedRangeData, Range } from "./range";
-import { Blackboard, CharacterTableData, KeyFrame } from "./raw";
+import { CharacterTableData, KeyFrame } from "./raw";
 
 export interface GeneratedElitePhaseData {
   elite: number;

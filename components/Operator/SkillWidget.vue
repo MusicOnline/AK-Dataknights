@@ -2,66 +2,184 @@
 import { GeneratedOperatorData } from "~/tools/generate-data/operator";
 import { GeneratedSkillData } from "~~/tools/generate-data/operator/skill";
 
-const { operator } = defineProps<{
+const { operator, skill } = defineProps<{
   operator: GeneratedOperatorData;
   skill: GeneratedSkillData;
 }>();
 
 const { t, locale } = useI18n();
+
+function getRowSpanValuesForEqualValues(values: number[]): number[] {
+  const rowSpanValues: number[] = [];
+  values.forEach((value, index) => {
+    if (index !== 0 && value === values[index - 1]) {
+      let lastNonZeroRowSpanIndex = index - 1;
+      while (rowSpanValues[lastNonZeroRowSpanIndex] === 0)
+        lastNonZeroRowSpanIndex--;
+      rowSpanValues[lastNonZeroRowSpanIndex]++;
+      rowSpanValues.push(0);
+    } else {
+      rowSpanValues.push(1);
+    }
+  });
+  return rowSpanValues;
+}
+
+const initSpRowSpanValues = $computed(() =>
+  getRowSpanValuesForEqualValues(
+    skill.levels.map(({ spData: { initSp } }) => initSp)
+  )
+);
+const spCostRowSpanValues = $computed(() =>
+  getRowSpanValuesForEqualValues(
+    skill.levels.map(({ spData: { spCost } }) => spCost)
+  )
+);
+const durationRowSpanValues = $computed(() =>
+  getRowSpanValuesForEqualValues(skill.levels.map(({ duration }) => duration))
+);
+
+const initSpIsNotAlwaysZero = $computed(
+  () =>
+    skill.levels[0].spData.initSp !== 0 ||
+    initSpRowSpanValues[0] !== initSpRowSpanValues.length
+);
 </script>
 
 <template>
-  <ul class="flex flex-col gap-2">
-    <li v-for="level in skill.levels" :key="level.level">
-      <div class="font-bold">
-        {{
-          t(
-            `${operator.key}.skills.${skill.id
-              .replace(/\[/g, "<")
-              .replace(/\]/g, ">")}.${level.level}.name`
-          )
-        }}
-        Lv. {{ level.level }}
-      </div>
-      <div class="flex gap-x-2 gap-y-1 text-sm text-white">
-        <div class="bg-primary-main px-1">
-          {{ t(`operator.skill.skillType.${level.skillType}`) }}
-        </div>
-        <template v-if="level.skillType !== 'PASSIVE'">
-          <div class="bg-primary-main px-1">
-            {{ t(`operator.skill.spType.${level.spData.spType}`) }}
-          </div>
-          <div class="bg-primary-main px-1">
-            {{ level.spData.spCost }} SP Cost
-          </div>
-          <div class="bg-primary-main px-1" v-if="level.spData.initSp">
-            {{ level.spData.initSp }} Init SP
-          </div>
-        </template>
-        <div class="bg-primary-main px-1" v-if="level.duration > 0">
+  <div class="flex flex-col gap-2">
+    <!-- Name, SP recovery type, activation type -->
+    <div class="flex gap-2">
+      <img
+        class="h-16 w-16"
+        :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/skills/skill_icon_${
+          skill.iconId || skill.id
+        }.png`"
+      />
+      <div class="flex flex-col gap-1">
+        <div class="text-2xl font-bold">
           {{
-            level.duration.toLocaleString(locale, {
-              style: "unit",
-              unit: "second",
-            })
-          }}
-        </div>
-      </div>
-      <div
-        v-html="
-          convertRichText(
             t(
               `${operator.key}.skills.${skill.id
-                .replace(/\[/g, '<')
-                .replace(/\]/g, '>')}.${level.level}.description`
-            ),
-            { replace: level.variables }
-          )
-        "
-      />
-    </li>
-  </ul>
+                .replace(/\[/g, "<")
+                .replace(/\]/g, ">")}.1.name`
+            )
+          }}
+        </div>
+        <div class="flex gap-2 text-white">
+          <div
+            class="bg-primary-main px-2"
+            v-if="skill.levels[0].skillType !== 'PASSIVE'"
+            :class="{
+              'bg-green-500': skill.levels[0].spData.spType === 'AUTO',
+              'bg-orange-500': skill.levels[0].spData.spType === 'OFFENSIVE',
+              'bg-yellow-500': skill.levels[0].spData.spType === 'DEFENSIVE',
+            }"
+          >
+            {{ t(`operator.skill.spType.${skill.levels[0].spData.spType}`) }}
+          </div>
+          <div class="bg-gray-500 px-2">
+            {{ t(`operator.skill.skillType.${skill.levels[0].skillType}`) }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Level data table -->
+    <table class="mr-auto table-fixed border-hidden">
+      <thead>
+        <tr>
+          <th class="w-8 sm:w-16">Lv.</th>
+          <template v-if="skill.levels[0].skillType !== 'PASSIVE'">
+            <th class="sm:w-20" v-if="initSpIsNotAlwaysZero">Init SP</th>
+            <th class="sm:w-20">SP Cost</th>
+          </template>
+          <th class="sm:w-20" v-if="skill.levels[0].duration > 0">Duration</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="level in skill.levels" :key="level.level">
+          <td>
+            <template v-if="level.level <= 7"> {{ level.level }} </template>
+            <img
+              class="mx-auto"
+              v-else
+              :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/rank/m-${
+                level.level - 7
+              }.png`"
+            />
+          </td>
+          <template v-if="level.skillType !== 'PASSIVE'">
+            <td
+              v-if="
+                initSpIsNotAlwaysZero &&
+                initSpRowSpanValues[level.level - 1] !== 0
+              "
+              :rowspan="initSpRowSpanValues[level.level - 1]"
+            >
+              {{ level.spData.initSp }}
+            </td>
+            <td
+              v-if="spCostRowSpanValues[level.level - 1] !== 0"
+              :rowspan="spCostRowSpanValues[level.level - 1]"
+            >
+              {{ level.spData.spCost }}
+            </td>
+          </template>
+          <td
+            v-if="
+              level.duration > 0 && durationRowSpanValues[level.level - 1] !== 0
+            "
+            :rowspan="durationRowSpanValues[level.level - 1]"
+          >
+            {{
+              level.duration.toLocaleString(locale, {
+                style: "unit",
+                unit: "second",
+              })
+            }}
+          </td>
+          <td
+            v-html="
+              convertRichText(
+                t(
+                  `${operator.key}.skills.${skill.id
+                    .replace(/\[/g, '<')
+                    .replace(/\]/g, '>')}.${level.level}.description`
+                ),
+                { replace: level.variables }
+              )
+            "
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
+
+<style scoped lang="scss">
+thead th,
+tbody td {
+  @apply border-2 px-2;
+}
+
+thead tr {
+  @apply bg-primary-main text-white;
+}
+
+tbody tr td:first-child {
+  @apply bg-gray-800 font-bold text-white;
+}
+
+tbody tr td:not(:last-child) {
+  @apply text-center;
+}
+
+tbody tr td:not(:first-child, :last-child),
+tbody tr:nth-child(odd) td:last-child {
+  @apply bg-gray-300;
+}
+</style>
 
 <i18n locale="en-US" src="~/locales/en-US/operators-data.json"></i18n>
 <i18n locale="en-TL" src="~/locales/en-TL/operators-data.json"></i18n>

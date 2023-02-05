@@ -25,7 +25,7 @@ export const RICH_TEXT_TAG_TO_ENGLISH = {
   invisible: "invisibility", // Firewatch S1
   camou: "camouflage", // April S2
   strong: "vigor", // Pallas's talent
-  protect: "shelter", // Abjurer common talent
+  protect: "sanctuary", // Abjurer common talent
   fragile: "fragile", // Hexer common talent
   magicfragile: "arts-fragile", // Hibiscus the Purifier S2
   dying: "critically-wounded", // Saga & Luo Xiaohei's talent

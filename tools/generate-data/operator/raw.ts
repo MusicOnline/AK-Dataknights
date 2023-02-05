@@ -156,21 +156,13 @@ export interface TalentCandidate {
   prefabKey: string;
   name: string | null;
   description: string | null;
-  rangeId: RangeId | null;
+  rangeId: string | null;
   blackboard: Blackboard[];
 }
 
 export interface Blackboard {
   key: string;
   value: number;
-}
-
-export enum RangeId {
-  RangeB1 = "b-1",
-  Range11 = "1-1",
-  Range31 = "3-1",
-  RangeX4 = "x-4",
-  RangeX5 = "x-5",
 }
 
 export interface Trait {

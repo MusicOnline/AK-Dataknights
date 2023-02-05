@@ -44,4 +44,17 @@ const { locale } = useI18n();
 .ba-keyword {
   @apply text-blue-500;
 }
+
+.ba-reminder {
+  @apply font-normal text-orange-500;
+}
+
+.ba-value-increase,
+.ba-potential {
+  @apply text-blue-500;
+}
+
+.ba-value-decrease {
+  @apply text-red-500;
+}
 </style>
