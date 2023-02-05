@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { GeneratedOperatorData } from "~/tools/generate-data/operator";
 
+const { t } = useI18n();
+
 const { operator, elite, level, areBonusesIncluded } = defineProps<{
   operator: GeneratedOperatorData;
   elite: number;
@@ -124,13 +126,14 @@ function limitOperatorLevel(event: Event) {
         "
       >
         <a class="flex items-center gap-0.5">
-          <span>Bonuses</span>
+          <span class="whitespace-nowrap">{{
+            t("operator.ui.includeBonuses.title")
+          }}</span>
           <Icon class="text-xl" name="heroicons:question-mark-circle-solid" />
         </a>
       </OSwitch>
       <template #popper>
-        Include stats gained from max Trust, selected Potential and selected
-        Module Stage
+        {{ t("operator.ui.includeBonuses.description") }}
       </template>
     </VTooltip>
   </div>

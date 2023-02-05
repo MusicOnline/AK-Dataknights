@@ -6,7 +6,7 @@ const { t } = useI18n();
 <template>
   <div>
     <header
-      class="fixed top-0 left-0 z-20 h-12 w-full bg-white p-2 shadow dark:bg-gray-900"
+      class="fixed top-0 left-0 z-30 h-12 w-full bg-white p-2 shadow dark:bg-gray-900"
     >
       <nav class="m-auto flex max-w-7xl items-center gap-4">
         <NuxtLink class="block" :to="localePath('/operators')">

@@ -8,7 +8,7 @@ const { isSidebarExpanded } = defineProps<{
 
 <template>
   <div
-    class="fixed top-0 left-0 z-10 mt-12 h-[calc(100vh-7rem)] w-56 bg-gray-200 bg-opacity-90 shadow backdrop-blur transition-all md:ml-0 md:mb-0 md:h-[calc(100vh-3rem)] lg:w-72"
+    class="fixed top-0 left-0 z-20 mt-12 h-[calc(100vh-7rem)] w-56 bg-gray-200 bg-opacity-90 shadow backdrop-blur transition-all md:ml-0 md:mb-0 md:h-[calc(100vh-3rem)] lg:w-72"
     :class="{
       '-ml-56': !isSidebarExpanded,
     }"
@@ -24,7 +24,7 @@ const { isSidebarExpanded } = defineProps<{
         :name="isSidebarExpanded ? 'ph:caret-left-fill' : 'ph:caret-right-fill'"
       />
     </button>
-    <nav>
+    <!-- <nav>
       <OCollapse animation="slide">
         <template #trigger="props">
           <button class="flex items-center gap-1">
@@ -58,7 +58,7 @@ const { isSidebarExpanded } = defineProps<{
         <li>A</li>
         <li>A</li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 

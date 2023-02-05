@@ -117,7 +117,59 @@
       "geek": "鬼才",
       "merchant": "行商人",
       "traper": "罠師",
-      "dollkeeper": "傀儡師"
+      "dollkeeper": "傀儡師",
+      "agent": "偵察兵",
+      "incantationmedic": "呪癒師",
+      "chainhealer": "連鎖癒師"
+    },
+    "attribute": {
+      "atk": "攻撃力",
+      "attackRange": "攻撃範囲",
+      "baseAttackTime": "攻撃間隔",
+      "blockCnt": "ブロック数",
+      "cost": "配置コスト",
+      "def": "防御力",
+      "magicResistance": "術耐性",
+      "maxHp": "HP",
+      "respawnTime": "再配置時間"
+    },
+    "skill": {
+      "duration": "継続時間",
+      "initSp": "初期SP",
+      "skillDescription": "説明",
+      "skillType": {
+        "AUTO": "自動発動",
+        "MANUAL": "手動発動",
+        "PASSIVE": "パッシブ"
+      },
+      "spCost": "必要SP",
+      "spType": {
+        "AUTO": "自動回復",
+        "OFFENSIVE": "攻撃回復",
+        "DEFENSIVE": "被撃回復",
+        "ON_DEPLOY": "SP不要"
+      }
+    },
+    "ui": {
+      "attributes": "ステータス",
+      "class": "職業",
+      "classBranch": "ブランチ",
+      "maxTrust": "信頼度MAX (100%)",
+      "skills": "スキル",
+      "operatorRecruited": "オペレーター雇用",
+      "talents": "素質",
+      "modules": "モジュール",
+      "includeBonuses": {
+        "title": "ボーナスを含む",
+        "description": "有効にすると、計算には信頼度MAX、選択した潜在能力、および選択したモジュールステージからのステータスが含まれます"
+      }
     }
+  },
+  "navigation": {
+    "operators": "オペレーター"
+  },
+  "settings": {
+    "language": "表示言語",
+    "title": "設定"
   }
 }

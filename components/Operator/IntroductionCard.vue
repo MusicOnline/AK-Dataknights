@@ -80,7 +80,7 @@ function getSpecificTranslationWithTL(
 <template>
   <div :class="`operator-rarity-${operator.rarity}`">
     <div class="flex max-w-4xl flex-col gap-1 sm:flex-row">
-      <img class="m-auto h-32 w-fit sm:m-0 sm:h-fit" :src="currentAvatarUrl" />
+      <img class="m-auto h-32 w-32 sm:m-0 sm:h-fit" :src="currentAvatarUrl" />
       <div class="flex flex-col gap-2">
         <!-- Icon, name, rarity, class -->
         <div class="flex md:h-16">

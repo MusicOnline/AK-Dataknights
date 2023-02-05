@@ -21,7 +21,28 @@
       "inNativeLanguage": "繁體中文"
     }
   },
+  "navigation": {
+    "operators": "Operators"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Display Language"
+  },
   "operator": {
+    "ui": {
+      "includeBonuses": {
+        "title": "Bonuses",
+        "description": "When enabled, calculation includes stats gained from max Trust, selected Potential and selected Module Stage"
+      },
+      "class": "Class",
+      "classBranch": "Class Branch",
+      "maxTrust": "Max Trust (100%)",
+      "operatorRecruited": "Operator Hired",
+      "attributes": "Attributes",
+      "talents": "Talents",
+      "skills": "Skills",
+      "modules": "Modules"
+    },
     "rarityName": {
       "TOP_OPERATOR": "Top Operator",
       "SENIOR_OPERATOR": "Senior Operator"
@@ -132,9 +153,14 @@
       "cost": "Cost",
       "baseAttackTime": "ATK Interval",
       "blockCnt": "Block",
-      "respawnTime": "Redeploy"
+      "respawnTime": "Redeploy",
+      "attackRange": "Attack Range"
     },
     "skill": {
+      "initSp": "Initial SP",
+      "spCost": "SP Cost",
+      "duration": "Duration",
+      "skillDescription": "Description",
       "skillType": {
         "PASSIVE": "Passive",
         "MANUAL": "Manual Activation",

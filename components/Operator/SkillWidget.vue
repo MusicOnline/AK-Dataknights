@@ -96,12 +96,18 @@ const initSpIsNotAlwaysZero = $computed(
         <tr>
           <th class="w-8 sm:w-16">Lv.</th>
           <template v-if="skill.levels[0].skillType !== 'PASSIVE'">
-            <th class="sm:w-20" v-if="initSpIsNotAlwaysZero">Init SP</th>
-            <th class="sm:w-20">SP Cost</th>
+            <th class="sm:w-20" v-if="initSpIsNotAlwaysZero">
+              {{ t("operator.skill.initSp") }}
+            </th>
+            <th class="sm:w-20">{{ t("operator.skill.spCost") }}</th>
           </template>
-          <th class="sm:w-20" v-if="skill.levels[0].duration > 0">Duration</th>
-          <th>Description</th>
-          <th v-if="isRangeExistent">Attack Range</th>
+          <th class="sm:w-20" v-if="skill.levels[0].duration > 0">
+            {{ t("operator.skill.duration") }}
+          </th>
+          <th>{{ t("operator.skill.skillDescription") }}</th>
+          <th v-if="isRangeExistent">
+            {{ t("operator.attribute.attackRange") }}
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -177,11 +183,15 @@ const initSpIsNotAlwaysZero = $computed(
 <style scoped lang="scss">
 thead th,
 tbody td {
-  @apply border-2 px-2;
+  @apply border-2;
 }
 
 thead tr {
   @apply bg-primary-main text-white;
+}
+
+tbody td {
+  @apply px-2;
 }
 
 tbody tr td:first-child {

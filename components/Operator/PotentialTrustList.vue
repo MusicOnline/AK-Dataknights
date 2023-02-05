@@ -41,7 +41,7 @@ const trustStats = $computed(() => {
               src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/potential/1.png"
             />
           </div>
-          <div>Operator Recruited</div>
+          <div>{{ t("operator.ui.operatorRecruited") }}</div>
         </button>
       </li>
       <li

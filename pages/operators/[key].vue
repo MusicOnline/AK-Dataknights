@@ -96,7 +96,7 @@ watch(
   <div>
     <OperatorSidebar :is-sidebar-expanded="isSidebarExpanded" />
     <div class="flex flex-col gap-2 md:ml-56 lg:ml-72">
-      <Breadcrumbs class="text-sm" />
+      <!-- <Breadcrumbs class="text-sm" /> -->
       <!-- General information -->
       <OperatorIntroductionCard
         :operator="operator"
@@ -130,8 +130,8 @@ watch(
           :operator="operator"
         />
       </div>
-      <div class="bg-gray-200 p-1">{{ operatorState }}</div>
-      <div class="bg-gray-200 p-1">{{ talentState }}</div>
+      <!-- <div class="bg-gray-200 p-1">{{ operatorState }}</div>
+      <div class="bg-gray-200 p-1">{{ talentState }}</div> -->
       <!-- Talents -->
       <OperatorTalentWidget
         v-model:elite="talentState.elite"

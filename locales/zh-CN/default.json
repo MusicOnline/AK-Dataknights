@@ -123,6 +123,55 @@
       "shotprotector": "哨戒铁卫",
       "chainhealer": "链愈师",
       "crusher": "重剑手"
+    },
+    "attribute": {
+      "atk": "攻击力",
+      "attackRange": "攻击范围",
+      "baseAttackTime": "攻击间隔",
+      "blockCnt": "阻挡数",
+      "cost": "部署费用",
+      "def": "防御力",
+      "magicResistance": "法术抗性",
+      "maxHp": "生命值",
+      "respawnTime": "再部署时间"
+    },
+    "skill": {
+      "duration": "持续时间",
+      "initSp": "初始技力",
+      "skillDescription": "技能描述",
+      "skillType": {
+        "AUTO": "自动触发",
+        "MANUAL": "手动触发",
+        "PASSIVE": "被动"
+      },
+      "spCost": "消耗技力",
+      "spType": {
+        "AUTO": "自动回复",
+        "OFFENSIVE": "攻击回复",
+        "DEFENSIVE": "受击回复",
+        "ON_DEPLOY": "不需技力"
+      }
+    },
+    "ui": {
+      "attributes": "属性",
+      "class": "职业",
+      "classBranch": "分支",
+      "maxTrust": "满信赖 (100%)",
+      "skills": "技能",
+      "operatorRecruited": "获得干员",
+      "talents": "天赋",
+      "modules": "模组",
+      "includeBonuses": {
+        "title": "包括加成",
+        "description": "启用后，属性计算将包括来自满信赖、所选潜能及所选模组等级的加成"
+      }
     }
+  },
+  "navigation": {
+    "operators": "干员"
+  },
+  "settings": {
+    "language": "显示语言",
+    "title": "设置"
   }
 }

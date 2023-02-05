@@ -14,7 +14,7 @@ const { locale } = useI18n();
     <main class="p-2">
       <NuxtPage />
     </main>
-    <footer>Made with <Icon name="logos:nuxt-icon" /></footer>
+    <!-- <footer>Made with <Icon name="logos:nuxt-icon" /></footer> -->
   </div>
 </template>
 
