@@ -111,8 +111,10 @@ watch(
         :operator="operator"
       />
       <!-- Range, stats, potentials, trust -->
-      <div class="grid grid-flow-col-dense gap-1 bg-gray-200 p-2">
-        <div class="grid max-w-xs bg-gray-300 px-1">
+      <div
+        class="flex flex-wrap justify-center gap-1 bg-gray-200 p-2 sm:flex-nowrap sm:justify-start lg:gap-8"
+      >
+        <div class="grid w-full bg-gray-300 p-2 sm:max-w-[8rem]">
           <OperatorRangeGrid
             class="m-auto"
             v-if="currentPhase.range"
@@ -120,7 +122,7 @@ watch(
           />
         </div>
         <OperatorAttributesTable
-          class="flex-1"
+          class="max-w-xl flex-1"
           :operator="operator"
           :operator-state="operatorState"
         />

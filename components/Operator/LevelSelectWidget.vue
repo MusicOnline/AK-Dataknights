@@ -126,7 +126,7 @@ function limitOperatorLevel(event: Event) {
         "
       >
         <a class="flex items-center gap-0.5">
-          <span class="whitespace-nowrap">{{
+          <span class="hidden whitespace-nowrap sm:inline">{{
             t("operator.ui.includeBonuses.title")
           }}</span>
           <Icon class="text-xl" name="heroicons:question-mark-circle-solid" />

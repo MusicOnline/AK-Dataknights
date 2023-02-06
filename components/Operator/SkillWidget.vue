@@ -53,7 +53,7 @@ const initSpIsNotAlwaysZero = $computed(
 </script>
 
 <template>
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-2 overflow-x-auto">
     <!-- Name, SP recovery type, activation type -->
     <div class="flex gap-2">
       <img
@@ -196,6 +196,10 @@ tbody td {
 
 tbody tr td:first-child {
   @apply bg-gray-800 font-bold text-white;
+}
+
+.description {
+  min-width: 16rem;
 }
 
 tbody tr td:not(:first-child, .description),
