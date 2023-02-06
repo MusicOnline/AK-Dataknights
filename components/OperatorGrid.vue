@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { GeneratedOperatorIndexData } from "~/tools/generate-data/operator";
 import data from "~/data/operators/index.json";
+import { GeneratedOperatorIndexData } from "~/tools/generate-data/operator";
 
 // @ts-ignore
 const operatorRarityOrder = $computed<GeneratedOperatorIndexData[]>(() =>
@@ -30,10 +30,5 @@ const operatorRarityOrder = $computed<GeneratedOperatorIndexData[]>(() =>
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--min-item-width), 1fr));
-
-  .operator-image {
-    min-width: calc(var(--min-item-width) - (0.25rem * 2));
-    min-height: calc(var(--min-item-width) - (0.25rem * 2));
-  }
 }
 </style>

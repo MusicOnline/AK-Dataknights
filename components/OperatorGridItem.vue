@@ -20,7 +20,7 @@ const { operator } = defineProps<{
       :class="`operator-rarity-${operator.rarity}`"
     >
       <img
-        class="operator-image"
+        class="aspect-square w-full"
         :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${encodeURI(
           operator.phases[0].outfit!
         )}.png`"
