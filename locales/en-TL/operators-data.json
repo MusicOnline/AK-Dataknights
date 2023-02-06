@@ -36187,8 +36187,8 @@
       }
     }
   },
-  "puzzle": {
-    "name": "Puzzle",
+  "reed-the-flame-shadow": {
+    "name": "Reed the Flame Shadow",
     "appellation": null,
     "description": null,
     "potentials": {
@@ -36214,7 +36214,7 @@
           "name": null,
           "description": null
         },
-        "E1-L1-P5": {
+        "E1-L1-P3": {
           "name": null,
           "description": null
         },
@@ -36222,147 +36222,24 @@
           "name": null,
           "description": null
         },
-        "E2-L1-P5": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "skills": {
-      "skchr_puzzle_1": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
+        "E2-L1-P3": {
           "name": null,
           "description": null
         }
       },
-      "skchr_puzzle_2": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "traitCandidates": {
-      "E0-L1": {
-        "description": null
-      }
-    }
-  },
-  "jieyun": {
-    "name": "Jieyun",
-    "appellation": null,
-    "description": null,
-    "potentials": {
       "2": {
-        "description": null
-      },
-      "3": {
-        "description": null
-      },
-      "4": {
-        "description": null
-      },
-      "5": {
-        "description": null
-      },
-      "6": {
-        "description": null
-      }
-    },
-    "talents": {
-      "1": {
-        "E1-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E1-L1-P5": {
-          "name": null,
-          "description": null
-        },
         "E2-L1-P1": {
           "name": null,
           "description": null
         },
-        "E2-L1-P5": {
+        "E2-L1-P6": {
           "name": null,
           "description": null
         }
       }
     },
     "skills": {
-      "skchr_bdhkgt_1": {
+      "skcom_quickattack<3>": {
         "1": {
           "name": null,
           "description": null
@@ -36404,7 +36281,49 @@
           "description": null
         }
       },
-      "skchr_bdhkgt_2": {
+      "skchr_reed2_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_reed2_3": {
         "1": {
           "name": null,
           "description": null
@@ -36586,8 +36505,8 @@
       }
     }
   },
-  "firewhistle": {
-    "name": "Firewhistle",
+  "puzzle": {
+    "name": "Puzzle",
     "appellation": null,
     "description": null,
     "potentials": {
@@ -36628,7 +36547,7 @@
       }
     },
     "skills": {
-      "skchr_firwhl_1": {
+      "skchr_puzzle_1": {
         "1": {
           "name": null,
           "description": null
@@ -36670,7 +36589,7 @@
           "description": null
         }
       },
-      "skchr_firwhl_2": {
+      "skchr_puzzle_2": {
         "1": {
           "name": null,
           "description": null
@@ -36904,191 +36823,6 @@
       }
     }
   },
-  "reed-the-flame-shadow": {
-    "name": "Reed the Flame Shadow",
-    "appellation": null,
-    "description": null,
-    "potentials": {
-      "2": {
-        "description": null
-      },
-      "3": {
-        "description": null
-      },
-      "4": {
-        "description": null
-      },
-      "5": {
-        "description": null
-      },
-      "6": {
-        "description": null
-      }
-    },
-    "talents": {
-      "1": {
-        "E1-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E1-L1-P3": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P3": {
-          "name": null,
-          "description": null
-        }
-      },
-      "2": {
-        "E2-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P6": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "skills": {
-      "skcom_quickattack<3>": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      },
-      "skchr_reed2_2": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      },
-      "skchr_reed2_3": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "traitCandidates": {
-      "E0-L1": {
-        "description": null
-      }
-    }
-  },
   "chongyue": {
     "name": "Chongyue",
     "appellation": null,
@@ -37222,6 +36956,272 @@
         }
       },
       "skchr_chyue_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
+  },
+  "firewhistle": {
+    "name": "Firewhistle",
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_firwhl_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_firwhl_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    }
+  },
+  "jieyun": {
+    "name": "Jieyun",
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_bdhkgt_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_bdhkgt_2": {
         "1": {
           "name": null,
           "description": null
