@@ -4,7 +4,9 @@
 
 [![Deploy SSG to Cloudflare Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml)[![Deploy SSG to GitHub Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml)
 
-Website: https://musiconline.github.io/AK-Dataknights/
+Website: https://dataknights.pages.dev
+
+Mirror: https://musiconline.github.io/AK-Dataknights/
 
 Work-in-progress Arknights database made with [Nuxt](https://nuxt.com) for educational purposes.
 

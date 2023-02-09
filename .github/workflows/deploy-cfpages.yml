@@ -73,7 +73,7 @@ jobs:
           # Optional: Enable this to have GitHub Deployments triggered
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: cloudflare-pages
           path: .output/public
