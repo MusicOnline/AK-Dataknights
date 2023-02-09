@@ -1,14 +1,16 @@
 # AK-Dataknights
 
-数据方舟 | データナイツ | 자료방주
+**数据方舟 | データナイツ | 자료방주**
 
-[![Deploy SSG to Cloudflare Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml)[![Deploy SSG to GitHub Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml)
+**Website: https://dataknights.pages.dev**
 
-Website: https://dataknights.pages.dev
+[![Deploy SSG to Cloudflare Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml) [![Deploy SSG to GitHub Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml)
 
-Mirror: https://musiconline.github.io/AK-Dataknights/
+Work-in-progress Arknights database made with [Nuxt](https://nuxt.com) for educational purposes. Features Mainland Chinese, English, Japanese and Korean game data and technical support for custom translations (English only for now).
 
-Work-in-progress Arknights database made with [Nuxt](https://nuxt.com) for educational purposes.
+_Note: Taiwanese translations are outdated due to unavailable up-to-date data. This project currently does not datamine its own data._
+
+All Arknights content is the copyright of Hypergryph Network Technology Co. Ltd.
 
 ## Development
 
@@ -30,15 +32,19 @@ npm install
 Create a `.env` file with the following content or define the environment variables elsewhere:
 
 ```bash
-# Clone https://github.com/Kengxxiao/ArknightsGameData
+# Clone https://github.com/Kengxxiao/ArknightsGameData to this path
+# Game data is processed before being used to generate the website
 GAME_DATA_ROOT_PATH=/path/to/ArknightsGameData
+
 # Set to true if "npm run generate" output may still rely on SSR (partial pre-render)
 # Alternatively, this can be set in nuxt.config.ts in ssr
 ENABLE_SSR=false
+
 # For generating SSG for GitHub Pages deployment,
 # repository pages are deployed to username.github.io/RespositoryNameHere
 # Therefore this must be set to correct routing base URL
 # Alternatively, this can be set in nuxt.config.ts in app.baseURL
+# Omit this variable if pages are deployed to the root URL
 NUXT_APP_BASE_URL=RepositoryNameHere
 ```
 
@@ -81,6 +87,10 @@ The [`check-data-update`](./.github/workflows/check-data-update.yml) workflow ch
 Any pushes to this repository will trigger the [`deploy-cfpages`](./.github/workflows/deploy-cfpages.yml) workflow to deploy the website to Cloudflare Pages.
 
 Additionally, any pushes to the main branch of this repository will trigger the [`deploy-ghpages`](./.github/workflows/deploy-ghpages.yml) workflow to deploy the website to GitHub Pages.
+
+GitHub Pages Mirror: https://musiconline.github.io/AK-Dataknights/
+
+Artifacts for both builds are available for download in their respective GitHub Actions pages.
 
 ## Special Thanks
 
