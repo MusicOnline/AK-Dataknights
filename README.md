@@ -2,7 +2,7 @@
 
 数据方舟 | データナイツ | 자료방주
 
-[![Deploy SSG to GitHub Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ssg.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ssg.yml)
+[![Deploy SSG to Cloudflare Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml)[![Deploy SSG to GitHub Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml)
 
 Website: https://musiconline.github.io/AK-Dataknights/
 
@@ -76,7 +76,9 @@ npm run preview
 
 The [`check-data-update`](./.github/workflows/check-data-update.yml) workflow checks for updates in the master branch of Kengxxiao/ArknightsGameData. If there is an update, [`.game-data-sha`](./data/.game-data-sha) is updated in this repository.
 
-Any pushes to the main branch of this repository will trigger the [`deploy-ssg`](./.github/workflows/deploy-ssg.yml) workflow to deploy the website to GitHub Pages.
+Any pushes to this repository will trigger the [`deploy-cfpages`](./.github/workflows/deploy-cfpages.yml) workflow to deploy the website to Cloudflare Pages.
+
+Additionally, any pushes to the main branch of this repository will trigger the [`deploy-ghpages`](./.github/workflows/deploy-ghpages.yml) workflow to deploy the website to GitHub Pages.
 
 ## Special Thanks
 
