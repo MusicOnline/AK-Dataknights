@@ -19,6 +19,7 @@ const operatorState = $ref<OperatorState>({
   elite: finalPhase.elite,
   level: finalPhase.maxLevel,
   potential: 1,
+  moduleId: operator.modules?.[0].id ?? null,
   isMaxTrustIncluded: true,
   areBonusesIncluded: true,
 });
@@ -95,7 +96,8 @@ watch(
 <template>
   <div>
     <OperatorSidebar :is-sidebar-expanded="isSidebarExpanded" />
-    <div class="flex flex-col gap-2 md:ml-56 lg:ml-72">
+    <!-- Main content -->
+    <main class="flex flex-col gap-2 md:ml-56 lg:ml-72">
       <!-- <Breadcrumbs class="text-sm" /> -->
       <!-- General information -->
       <OperatorIntroductionCard
@@ -132,8 +134,10 @@ watch(
           :operator="operator"
         />
       </div>
-      <!-- <div class="bg-gray-200 p-1">{{ operatorState }}</div>
-      <div class="bg-gray-200 p-1">{{ talentState }}</div> -->
+      <DevOnly>
+        <div class="bg-gray-200 p-1">{{ operatorState }}</div>
+        <div class="bg-gray-200 p-1">{{ talentState }}</div>
+      </DevOnly>
       <!-- Talents -->
       <OperatorTalentWidget
         v-model:elite="talentState.elite"
@@ -149,7 +153,15 @@ watch(
         :operator="operator"
         :skill="skill"
       />
-    </div>
+      <!-- Modules -->
+      <OperatorModuleWidget
+        class="bg-gray-200 p-2"
+        v-for="mod in operator.modules"
+        :key="mod.id"
+        :operator="operator"
+        :module="mod"
+      />
+    </main>
   </div>
 </template>
 

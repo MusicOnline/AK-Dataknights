@@ -147,11 +147,13 @@
     },
     "attribute": {
       "maxHp": "HP",
+      "max_hp": "HP",
       "atk": "ATK",
       "def": "DEF",
       "magicResistance": "RES",
       "cost": "Cost",
       "baseAttackTime": "ATK Interval",
+      "attack_speed": "ASPD",
       "blockCnt": "Block",
       "respawnTime": "Redeploy",
       "attackRange": "Attack Range"

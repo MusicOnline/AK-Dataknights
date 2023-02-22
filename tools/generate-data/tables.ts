@@ -1,3 +1,10 @@
+import {
+  BattleEquipTableData,
+  UniEquipTableEquipDictData,
+  UniEquipTableEquipTrackDictData,
+  UniEquipTableMissionListData,
+  UniEquipTableSubProfDictData,
+} from "./operator/module";
 import { RangeTableData } from "./operator/range";
 import { CharacterTableData } from "./operator/raw";
 import { SkillTableData } from "./operator/skill";
@@ -26,3 +33,13 @@ export interface SkinTable {
 export type RangeTable = { [id: string]: RangeTableData };
 
 export type SkillTable = { [id: string]: SkillTableData };
+
+export type BattleEquipTable = { [id: string]: BattleEquipTableData };
+
+export type UniEquipTable = {
+  equipDict: { [key: string]: UniEquipTableEquipDictData };
+  missionList: { [key: string]: UniEquipTableMissionListData };
+  subProfDict: { [key: string]: UniEquipTableSubProfDictData };
+  charEquip: { [key: string]: string[] };
+  equipTrackDict: UniEquipTableEquipTrackDictData[];
+};
