@@ -41781,7 +41781,7 @@
     }
   },
   "ebenholz": {
-    "name": "Ebenholz",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -42078,7 +42078,7 @@
     }
   },
   "czerny": {
-    "name": "Czerny",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -42211,7 +42211,7 @@
     }
   },
   "hibiscus-the-purifier": {
-    "name": "Hibiscus the Purifier",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -42838,7 +42838,7 @@
     }
   },
   "gavial-the-invincible": {
-    "name": "Gavial the Invincible",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -43023,7 +43023,7 @@
     }
   },
   "pozemka": {
-    "name": "Pozёmka",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -43252,7 +43252,7 @@
     }
   },
   "cantabile": {
-    "name": "Cantabile",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -43385,7 +43385,7 @@
     }
   },
   "minimalist": {
-    "name": "Minimalist",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
