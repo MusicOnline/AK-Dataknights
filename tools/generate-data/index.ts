@@ -6,17 +6,17 @@ import { Operator } from "./operator";
 import { CharacterTable } from "./tables";
 
 async function generateOperatorFiles() {
-  const translatedLocaleData = constants.TRANSLATED_LOCALES.reduce(
-    (accumulator: any, locale) => {
-      try {
-        accumulator[
-          locale
-        ] = require(`../../locales/${locale}/operators-data.json`);
-      } catch {}
-      return accumulator;
-    },
-    {}
-  );
+  const translatedLocaleData: any = {};
+  for (const locale of constants.TRANSLATED_LOCALES) {
+    try {
+      translatedLocaleData[locale] = fs
+        .readFile(`locales/${locale}/operators-data.json`, {
+          encoding: "utf-8",
+        })
+        .then((data) => JSON.parse(data));
+    } catch {}
+  }
+  await Promise.all(Object.values(translatedLocaleData));
 
   const operatorIdReleaseOrder = [
     ...OPERATOR_RELEASE_ORDER,
@@ -35,7 +35,7 @@ async function generateOperatorFiles() {
     Object.entries(constants.OPERATOR_TABLES).forEach(
       // @ts-ignore
       ([locale, table]: [
-        typeof constants.GAME_LOCALES[number],
+        (typeof constants.GAME_LOCALES)[number],
         CharacterTable
       ]) => {
         if (locale === constants.ORIGINAL_LOCALE) return;
@@ -44,7 +44,10 @@ async function generateOperatorFiles() {
     );
     Object.entries(translatedLocaleData).forEach(
       // @ts-ignore
-      ([locale, table]: [typeof constants.TRANSLATED_LOCALES[number], any]) => {
+      ([locale, table]: [
+        (typeof constants.TRANSLATED_LOCALES)[number],
+        any
+      ]) => {
         if (table[operator.key])
           operator.addLocaleTL(locale, table[operator.key]);
       }

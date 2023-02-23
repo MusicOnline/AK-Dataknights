@@ -1,3 +1,4 @@
+import fs from "fs";
 import path from "path";
 
 import {
@@ -30,7 +31,10 @@ export const BATTLE_EQUIP_TABLE_PATH = "gamedata/excel/battle_equip_table.json";
 
 export const FALSE_POSITIVE_ACTUAL_OPERATORS = ["char_512_aprot"];
 
-export type LocaleTableMap<Table> = Record<typeof GAME_LOCALES[number], Table>;
+export type LocaleTableMap<Table> = Record<
+  (typeof GAME_LOCALES)[number],
+  Table
+>;
 
 export const OPERATOR_TABLES: LocaleTableMap<CharacterTable> =
   requireAllLocaleTables(OPERATOR_TABLE_PATH);
@@ -38,11 +42,13 @@ export const OPERATOR_TABLES: LocaleTableMap<CharacterTable> =
 export const OUTFIT_TABLES: LocaleTableMap<SkinTable> =
   requireAllLocaleTables(OUTFIT_TABLE_PATH);
 
-export const RANGE_TABLE: RangeTable = require(path.join(
-  process.env.GAME_DATA_ROOT_PATH!,
-  ORIGINAL_LOCALE.replace("-", "_"),
-  RANGE_TABLE_PATH
-));
+export const RANGE_TABLE: RangeTable = requireByReadFileSync(
+  path.join(
+    process.env.GAME_DATA_ROOT_PATH!,
+    ORIGINAL_LOCALE.replace("-", "_"),
+    RANGE_TABLE_PATH
+  )
+);
 
 export const SKILL_TABLES: LocaleTableMap<SkillTable> =
   requireAllLocaleTables(SKILL_TABLE_PATH);
@@ -53,15 +59,21 @@ export const UNI_EQUIP_TABLES: LocaleTableMap<UniEquipTable> =
 export const BATTLE_EQUIP_TABLES: LocaleTableMap<BattleEquipTable> =
   requireAllLocaleTables(BATTLE_EQUIP_TABLE_PATH);
 
+function requireByReadFileSync(filepath: string): any {
+  return JSON.parse(fs.readFileSync(filepath, { encoding: "utf-8" }));
+}
+
 function requireAllLocaleTables(tablePath: string): LocaleTableMap<any> {
   return GAME_LOCALES.reduce((accumulator, locale) => {
     // Some locales may not have the data yet or stale data
     try {
-      accumulator[locale] = require(path.join(
-        process.env.GAME_DATA_ROOT_PATH!,
-        locale.replace("-", "_"),
-        tablePath
-      ));
+      accumulator[locale] = requireByReadFileSync(
+        path.join(
+          process.env.GAME_DATA_ROOT_PATH!,
+          locale.replace("-", "_"),
+          tablePath
+        )
+      );
     } catch {}
     return accumulator;
   }, <any>{});
