@@ -177,6 +177,7 @@ export interface GeneratedModuleStageTraitUpgradeData {
 export interface GeneratedModuleStageTalentUpgradeData {
   index: number; // for Localization ID tracking
   isToken: boolean;
+  isHidden: boolean;
   candidates: GeneratedModuleStageTalentUpgradeCandidateData[];
 }
 
@@ -473,10 +474,15 @@ export class TalentUpgrade implements Localizable {
     );
   }
 
+  private get isHidden(): boolean {
+    return this.candidates.some((candidate) => candidate.isHidden);
+  }
+
   public toData(): GeneratedModuleStageTalentUpgradeData {
     return {
       index: this.index,
       isToken: this.isToken,
+      isHidden: this.isHidden,
       candidates: this.candidates.map((candidate) => candidate.toData()),
     };
   }
@@ -502,9 +508,10 @@ export class TalentUpgrade implements Localizable {
 
   public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
     return {
-      candidates: this.candidates.map((candidate) =>
-        candidate.toLocaleData(locale)
-      ),
+      candidates: this.candidates.reduce((accumulator, current) => {
+        accumulator[current.key] = current.toLocaleData(locale);
+        return accumulator;
+      }, <any>{}),
     };
   }
 }
@@ -527,9 +534,17 @@ export class TalentUpgradeCandidate implements Localizable {
     this.unlockCondition = {
       elite: data.unlockCondition.phase,
       level: data.unlockCondition.level,
-      potential: data.requiredPotentialRank,
+      potential: data.requiredPotentialRank + 1,
     };
     this.variables = data.blackboard;
+  }
+
+  public get key(): string {
+    return `${this.unlockCondition.potential}`;
+  }
+
+  public get isHidden(): boolean {
+    return !this.name;
   }
 
   public toData(): GeneratedModuleStageTalentUpgradeCandidateData {
@@ -556,9 +571,10 @@ export class TalentUpgradeCandidate implements Localizable {
   }
 
   public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+    if (this.isHidden) return {};
     return {
-      name: this.name?.toLocaleData(locale),
-      description: this.description?.toLocaleData(locale),
+      name: this.name!.toLocaleData(locale),
+      description: this.description!.toLocaleData(locale),
     };
   }
 }

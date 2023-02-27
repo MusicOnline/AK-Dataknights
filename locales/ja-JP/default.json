@@ -131,7 +131,14 @@
       "def": "防御力",
       "magicResistance": "術耐性",
       "maxHp": "HP",
-      "respawnTime": "再配置時間"
+      "respawnTime": "再配置時間",
+      "attackSpeed": "攻撃速度",
+      "attack_speed": "@:operator.attribute.attackSpeed",
+      "base_attack_time": "@:operator.attribute.baseAttackTime",
+      "block_cnt": "@:operator.attribute.blockCnt",
+      "magic_resistance": "@:operator.attribute.magicResistance",
+      "max_hp": "@:operator.attribute.maxHp",
+      "respawn_time": "@:operator.attribute.respawnTime"
     },
     "skill": {
       "duration": "継続時間",
@@ -153,7 +160,7 @@
     "ui": {
       "attributes": "ステータス",
       "class": "職業",
-      "classBranch": "ブランチ",
+      "classBranch": "職分",
       "maxTrust": "信頼度MAX (100%)",
       "skills": "スキル",
       "operatorRecruited": "オペレーター雇用",
@@ -162,7 +169,16 @@
       "includeBonuses": {
         "title": "ボーナスを含む",
         "description": "有効にすると、計算には信頼度MAX、選択した潜在能力、および選択したモジュールステージからのステータスが含まれます"
-      }
+      },
+      "trait": "特性",
+      "specificBranchTrait": "{branch}の特性"
+    },
+    "module": {
+      "attributes": "ステータス",
+      "moduleDescription": "強化説明",
+      "stage": "STAGE",
+      "selectModule": "モジュールを選択",
+      "moduleSelected": "選択済み"
     }
   },
   "navigation": {

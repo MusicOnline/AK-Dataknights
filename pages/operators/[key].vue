@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import { OperatorState, TalentState } from "~/utils";
+import { ModuleState, OperatorState, TalentState } from "~/utils";
 
 const {
   params: { key: operatorKey },
@@ -19,7 +19,8 @@ const operatorState = $ref<OperatorState>({
   elite: finalPhase.elite,
   level: finalPhase.maxLevel,
   potential: 1,
-  moduleId: operator.modules?.[0].id ?? null,
+  moduleId: operator.modules?.[0].id ?? null, // ORIGINAL module or null
+  moduleStage: null,
   isMaxTrustIncluded: true,
   areBonusesIncluded: true,
 });
@@ -83,12 +84,12 @@ watch(() => operatorState.level, changeToNearestEliteLevel);
 watch(
   () => operatorState.potential,
   () => {
-    let bestPotential: number = 1;
-    talentPotentialNumbers.forEach((potential) => {
-      if (potential > bestPotential && potential <= operatorState.potential)
-        bestPotential = potential;
-    });
-    talentState.potential = bestPotential;
+    let bestPotential: number;
+    for (const potential of talentPotentialNumbers) {
+      if (potential > operatorState.potential) break;
+      bestPotential = potential;
+    }
+    talentState.potential = bestPotential!;
   }
 );
 </script>
@@ -139,6 +140,7 @@ watch(
         <div class="bg-gray-200 p-1">{{ talentState }}</div>
       </DevOnly>
       <!-- Talents -->
+      <h1 class="heading">{{ t("operator.ui.talents") }}</h1>
       <OperatorTalentWidget
         v-model:elite="talentState.elite"
         v-model:level="talentState.level"
@@ -146,6 +148,7 @@ watch(
         :operator="operator"
       />
       <!-- Skills -->
+      <h1 class="heading">{{ t("operator.ui.skills") }}</h1>
       <OperatorSkillWidget
         class="bg-gray-200 p-2"
         v-for="skill in operator.skills"
@@ -154,9 +157,13 @@ watch(
         :skill="skill"
       />
       <!-- Modules -->
+      <h1 class="heading">{{ t("operator.ui.modules") }}</h1>
       <OperatorModuleWidget
         class="bg-gray-200 p-2"
         v-for="mod in operator.modules"
+        v-model:module-id="operatorState.moduleId"
+        v-model:module-stage="operatorState.moduleStage"
+        :potential="operatorState.potential"
         :key="mod.id"
         :operator="operator"
         :module="mod"
@@ -164,6 +171,14 @@ watch(
     </main>
   </div>
 </template>
+
+<style scoped lang="scss">
+.heading {
+  @apply text-3xl;
+
+  font-weight: bold;
+}
+</style>
 
 <i18n locale="en-US" src="~/locales/en-US/operators-data.json"></i18n>
 <i18n locale="en-TL" src="~/locales/en-TL/operators-data.json"></i18n>

@@ -35,13 +35,15 @@
         "description": "When enabled, calculation includes stats gained from max Trust, selected Potential and selected Module Stage"
       },
       "class": "Class",
-      "classBranch": "Class Branch",
+      "classBranch": "Job Branch",
       "maxTrust": "Max Trust (100%)",
       "operatorRecruited": "Operator Hired",
       "attributes": "Attributes",
       "talents": "Talents",
       "skills": "Skills",
-      "modules": "Modules"
+      "modules": "Modules",
+      "trait": "Trait",
+      "specificBranchTrait": "{branch} Trait"
     },
     "rarityName": {
       "TOP_OPERATOR": "Top Operator",
@@ -147,16 +149,21 @@
     },
     "attribute": {
       "maxHp": "HP",
-      "max_hp": "HP",
       "atk": "ATK",
       "def": "DEF",
       "magicResistance": "RES",
       "cost": "Cost",
       "baseAttackTime": "ATK Interval",
-      "attack_speed": "ASPD",
+      "attackSpeed": "ASPD",
       "blockCnt": "Block",
       "respawnTime": "Redeploy",
-      "attackRange": "Attack Range"
+      "attackRange": "Attack Range",
+      "max_hp": "@:operator.attribute.maxHp",
+      "magic_resistance": "@:operator.attribute.magicResistance",
+      "base_attack_time": "@:operator.attribute.baseAttackTime",
+      "attack_speed": "@:operator.attribute.attackSpeed",
+      "block_cnt": "@:operator.attribute.blockCnt",
+      "respawn_time": "@:operator.attribute.respawnTime"
     },
     "skill": {
       "initSp": "Initial SP",
@@ -174,6 +181,13 @@
         "DEFENSIVE": "Defensive Recovery",
         "ON_DEPLOY": "Does not require SP"
       }
+    },
+    "module": {
+      "selectModule": "Select Module",
+      "moduleSelected": "Module Selected",
+      "stage": "Stage",
+      "attributes": "Stats",
+      "moduleDescription": "Upgrade Description"
     }
   }
 }

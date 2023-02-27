@@ -13,7 +13,15 @@ const CALCULATED_ATTRIBUTES = [
   "blockCnt",
   "respawnTime",
 ];
+
 const ROUNDED_ATTRIBTUES = ["maxHp", "atk", "def", "magicResistance"];
+const ALTERNATE_ATTRIBUTE_NAMES = {
+  max_hp: "maxHp",
+  magic_resistance: "magicResistance",
+  base_attack_time: "baseAttackTime",
+  block_cnt: "blockCnt",
+  respawn_time: "respawnTime",
+};
 
 const { t, locale } = useI18n();
 
@@ -58,12 +66,33 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
               potentialBonus += potential.attribute!.value;
           }
         }
+        let moduleBonus: number = 0;
+        if (operatorState.areBonusesIncluded && operatorState.moduleId) {
+          const module = operator.modules!.find(
+            ({ id }) => id === operatorState.moduleId
+          )!;
+          if (
+            operatorState.elite > module.unlockConditions.elite ||
+            (operatorState.elite === module.unlockConditions.elite &&
+              operatorState.level >= module.unlockConditions.level)
+          ) {
+            const attribute = module.stages?.[
+              (operatorState.moduleStage || 1) - 1
+            ].attributes.find(({ key }) => {
+              // @ts-ignore
+              const compatibleKey = ALTERNATE_ATTRIBUTE_NAMES[key] || key;
+              return compatibleKey === name;
+            });
+            if (attribute) moduleBonus = attribute.value;
+          }
+        }
 
         let total =
           startValue +
           valuePerLevel * (operatorState.level - 1) +
           trustBonus +
-          potentialBonus;
+          potentialBonus +
+          moduleBonus;
         if (ROUNDED_ATTRIBTUES.includes(name)) {
           total = Math.round(total);
         }

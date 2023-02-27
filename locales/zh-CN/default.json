@@ -133,7 +133,14 @@
       "def": "防御力",
       "magicResistance": "法术抗性",
       "maxHp": "生命值",
-      "respawnTime": "再部署时间"
+      "respawnTime": "再部署时间",
+      "attackSpeed": "攻击速度",
+      "attack_speed": "@:operator.attribute.attackSpeed",
+      "base_attack_time": "@:operator.attribute.baseAttackTime",
+      "block_cnt": "@:operator.attribute.blockCnt",
+      "magic_resistance": "@:operator.attribute.magicResistance",
+      "max_hp": "@:operator.attribute.maxHp",
+      "respawn_time": "@:operator.attribute.respawnTime"
     },
     "skill": {
       "duration": "持续时间",
@@ -164,7 +171,16 @@
       "includeBonuses": {
         "title": "包括加成",
         "description": "启用后，属性计算将包括来自满信赖、所选潜能及所选模组等级的加成"
-      }
+      },
+      "trait": "特性",
+      "specificBranchTrait": "{branch}特性"
+    },
+    "module": {
+      "attributes": "属性",
+      "moduleDescription": "强化描述",
+      "stage": "等级",
+      "selectModule": "选择模组",
+      "moduleSelected": "选中模组"
     }
   },
   "navigation": {

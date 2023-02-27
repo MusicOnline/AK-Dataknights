@@ -131,7 +131,14 @@
       "def": "방어력",
       "magicResistance": "마법 저항력",
       "maxHp": "HP",
-      "respawnTime": "재배치 시간"
+      "respawnTime": "재배치 시간",
+      "attackSpeed": "공격 속도",
+      "attack_speed": "@:operator.attribute.attackSpeed",
+      "block_cnt": "@:operator.attribute.blockCnt",
+      "base_attack_time": "@:operator.attribute.baseAttackTime",
+      "max_hp": "@:operator.attribute.maxHp",
+      "magic_resistance": "@:operator.attribute.magicResistance",
+      "respawn_time": "@:operator.attribute.respawnTime"
     },
     "skill": {
       "duration": "지속시간",
@@ -160,7 +167,17 @@
       "modules": "모듈",
       "includeBonuses": {
         "title": "보너스 포함"
-      }
+      },
+      "classBranch": "세부 분류가",
+      "trait": "특성",
+      "specificBranchTrait": "{branch} 특성"
+    },
+    "module": {
+      "moduleDescription": "강화 설명",
+      "stage": "레벨",
+      "selectModule": "모듈 선택",
+      "moduleSelected": "선택된 모듈",
+      "attributes": "스탯"
     }
   },
   "navigation": {
