@@ -53,7 +53,7 @@ export const ENGLISH_CLASS_TO_RICH_TEXT_REGEX = Object.entries(
 ).reduce(
   (accumulator: { [key: string]: RegExp }, [richTextTag, englishClass]) => {
     accumulator[englishClass] = new RegExp(
-      `<[@$]ba.${richTextTag.replace(/\./g, "\\.")}>(.+?)</>`,
+      `<[#?]ba.${richTextTag.replace(/\./g, "\\.")}>(.+?)</>`,
       "g"
     );
     return accumulator;
@@ -79,7 +79,10 @@ export function convertRichText(
 
   let transformedString = richText.replace(/\\n/g, "\n");
   if (options.html ?? true) {
-    transformedString = transformedString.replace(/\n/g, "<br/>");
+    transformedString = transformedString
+      .replace(/\n/g, "<br/>")
+      .replace(/<</g, "&lt;")
+      .replace(/>>/g, "&gt;");
     Object.entries(ENGLISH_CLASS_TO_RICH_TEXT_REGEX).forEach(
       ([targetClass, regex]) =>
         (transformedString = transformedString.replace(
@@ -91,6 +94,9 @@ export function convertRichText(
     Object.values(ENGLISH_CLASS_TO_RICH_TEXT_REGEX).forEach(
       (regex) => (transformedString = transformedString.replace(regex, "$1"))
     );
+    transformedString = transformedString
+      .replace(/<</g, "<")
+      .replace(/>>/g, ">");
   }
 
   const matches = transformedString.matchAll(VARIABLE_REGEX);

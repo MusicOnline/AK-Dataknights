@@ -37,24 +37,26 @@ const { locale } = useI18n();
   }
 }
 
-.ba-markup {
+.ba-keyword {
+  @apply text-blue-500;
+
   font-weight: bold;
 }
 
-.ba-keyword {
-  @apply text-blue-500;
-}
-
 .ba-reminder {
-  @apply font-normal text-orange-500;
+  @apply text-orange-500;
 }
 
 .ba-value-increase,
 .ba-potential {
   @apply text-blue-500;
+
+  font-weight: bold;
 }
 
 .ba-value-decrease {
   @apply text-red-500;
+
+  font-weight: bold;
 }
 </style>

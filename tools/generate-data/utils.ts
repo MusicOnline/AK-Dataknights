@@ -59,8 +59,24 @@ export class LocalizationString implements Localizable {
 }
 
 export function normalizeForLocaleFile(original: string | null): string | null {
+  /**
+   * Special characters, require interpolation: { } @ $ |
+   * % also seems to be a special character due to (deprecated) Rails i18n format.
+   * https://vue-i18n.intlify.dev/guide/essentials/syntax.html#special-characters
+   */
+
   if (original === null) return null;
-  return original
-    .replace(/\{(.*?)\}/g, "{'{'}$1{'}'}")
-    .replace(/(@|%)/g, "{'$1'}");
+  return (
+    original
+      // "{a}" -> "{'{'}a{'}'}"
+      .replace(/\{(.*?)\}/g, "{'{'}$1{'}'}")
+      // <Substitute> -> <<Substitute>>
+      .replace(/(?<!<)<(?!<|@|\$|\/)(.+?)(?<!>)>(?!>)/g, "<<$1>>")
+      // <@tag.sub>text</> to <#tag.sub>text</> (Formatting only)
+      .replace(/<@(?<tag>[^<]+?)>(?<text>.+?)<\/>/g, "<#$<tag>>$<text></>")
+      // <$tag.sub>text</> to <?tag.sub>text</> (With tooltip explanation)
+      .replace(/<\$(?<tag>[^<]+?)>(?<text>.+?)<\/>/g, "<?$<tag>>$<text></>")
+      // {variable:0%} to <#>variable:0{'%'}</#>
+      .replace(/(@|%)/g, "{'$1'}")
+  );
 }

@@ -59,12 +59,13 @@ const talentPotentialNumbers = $computed(
 );
 
 const talentState = $ref<TalentState>({
-  elite: talentEliteLevelNumbers.slice(-1)[0][0],
-  level: talentEliteLevelNumbers.slice(-1)[0][1],
-  potential: talentPotentialNumbers[0],
+  elite: talentEliteLevelNumbers.slice(-1)[0]?.[0] || 0,
+  level: talentEliteLevelNumbers.slice(-1)[0]?.[1] || 0,
+  potential: talentPotentialNumbers?.[0] || 0,
 });
 
 function changeToNearestEliteLevel() {
+  if (!operator.talents?.length) return;
   let bestEliteLevel: [number, number] | null = null;
   talentEliteLevelNumbers.forEach(([elite, level]) => {
     if (elite === operatorState.elite) {
@@ -140,15 +141,20 @@ watch(
         <div class="bg-gray-200 p-1">{{ talentState }}</div>
       </DevOnly>
       <!-- Talents -->
-      <h1 class="heading">{{ t("operator.ui.talents") }}</h1>
+      <h1 class="heading" v-if="operator.talents?.length">
+        {{ t("operator.ui.talents") }}
+      </h1>
       <OperatorTalentWidget
+        v-if="operator.talents?.length"
         v-model:elite="talentState.elite"
         v-model:level="talentState.level"
         v-model:potential="talentState.potential"
         :operator="operator"
       />
       <!-- Skills -->
-      <h1 class="heading">{{ t("operator.ui.skills") }}</h1>
+      <h1 class="heading" v-if="operator.skills?.length">
+        {{ t("operator.ui.skills") }}
+      </h1>
       <OperatorSkillWidget
         class="bg-gray-200 p-2"
         v-for="skill in operator.skills"
@@ -157,7 +163,9 @@ watch(
         :skill="skill"
       />
       <!-- Modules -->
-      <h1 class="heading">{{ t("operator.ui.modules") }}</h1>
+      <h1 class="heading" v-if="operator.modules?.length">
+        {{ t("operator.ui.modules") }}
+      </h1>
       <OperatorModuleWidget
         class="bg-gray-200 p-2"
         v-for="mod in operator.modules"
