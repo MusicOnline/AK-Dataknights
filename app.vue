@@ -13,6 +13,7 @@ useSeoMeta({
   description: () => t("general.siteIndexDescription"),
   ogDescription: () => t("general.siteIndexDescription"),
   ogLocale: () => transformLocaleCode(locale.value),
+  ogType: "website",
   ogImage: "/favicon-96x96.png",
   ogImageType: "image/png",
   ogImageWidth: "96",
@@ -50,7 +51,7 @@ function transformLocaleCode(locale: string): string {
 
 <template>
   <div>
-    <Html :lang="locale"></Html>
+    <Html :lang="locale" prefix="og: https://ogp.me/ns#"></Html>
     <NavigationBar />
     <main class="p-2">
       <NuxtPage />
