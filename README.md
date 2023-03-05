@@ -36,9 +36,9 @@ Create a `.env` file with the following content or define the environment variab
 # Game data is processed before being used to generate the website
 GAME_DATA_ROOT_PATH=/path/to/ArknightsGameData
 
-# Set to true if "npm run generate" output may still rely on SSR (partial pre-render)
+# Set to true if "npm run generate" should be prerendered
 # Alternatively, this can be set in nuxt.config.ts in ssr
-ENABLE_SSR=false
+ENABLE_SSR=true
 
 # For generating SSG for GitHub Pages deployment,
 # repository pages are deployed to username.github.io/RespositoryNameHere

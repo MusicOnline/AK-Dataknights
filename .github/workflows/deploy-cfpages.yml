@@ -28,7 +28,7 @@ jobs:
       - name: Set environment variables
         run: |
           echo "GAME_DATA_ROOT_PATH=$(echo $GITHUB_WORKSPACE)/ArknightsGameData" >> $GITHUB_ENV
-          echo "ENABLE_SSR=false" >> $GITHUB_ENV
+          echo "ENABLE_SSR=true" >> $GITHUB_ENV
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -61,8 +61,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Generate static site
         env:
-          NODE_OPTIONS: --max_old_space_size=4096
-        run: ${{ steps.detect-package-manager.outputs.manager }} run generate
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: ${{ steps.detect-package-manager.outputs.manager }} run generate-linux
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
