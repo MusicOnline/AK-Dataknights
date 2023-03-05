@@ -1,4 +1,10 @@
 {
+  "general": {
+    "siteIndexTitle": "AK Dataknights",
+    "siteIndexTitleMeta": "AK Dataknights: Arknights Database",
+    "sitePageTitle": "{0} | AK Dataknights",
+    "siteIndexDescription": "AK Dataknights is a database website for the mobile game Arknights developed by Hypergryph and published globally by Yostar. Current resources include operators in all localizations."
+  },
   "locales": {
     "en": {
       "inCurrentLanguage": "English",

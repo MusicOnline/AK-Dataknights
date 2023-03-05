@@ -186,5 +186,10 @@
   "settings": {
     "language": "표시 언어",
     "title": "설정"
+  },
+  "general": {
+    "siteIndexTitle": "자료방주",
+    "sitePageTitle": "{0} | 자료방주",
+    "siteIndexTitleMeta": "자료방주: 명일방주 데이터베이스"
   }
 }

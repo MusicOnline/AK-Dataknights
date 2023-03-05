@@ -187,5 +187,11 @@
   "settings": {
     "language": "表示言語",
     "title": "設定"
+  },
+  "general": {
+    "siteIndexTitle": "データナイツ",
+    "sitePageTitle": "{0} | データナイツ",
+    "siteIndexTitleMeta": "データナイツ：アークナイツ データベース",
+    "siteIndexDescription": "「データナイツ」は、Hypergryphが開発し、Yostarが日本・グローバル版を運営しているスマホゲーム「アークナイツ」のデータベースサイトです。現在、各版のオペレーター情報を掲載しています。"
   }
 }

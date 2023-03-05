@@ -189,5 +189,11 @@
   "settings": {
     "language": "顯示語言",
     "title": "設置"
+  },
+  "general": {
+    "siteIndexTitle": "數據方舟",
+    "sitePageTitle": "{0} | 數據方舟",
+    "siteIndexTitleMeta": "數據方舟：明日方舟資料庫",
+    "siteIndexDescription": "《數據方舟》是鷹角網絡開發、龍成網絡臺港澳代理手機遊戲《明日方舟》的資料庫網站。目前包括各伺服器的幹員資料。"
   }
 }
