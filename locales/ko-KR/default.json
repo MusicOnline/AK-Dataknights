@@ -178,6 +178,9 @@
       "selectModule": "모듈 선택",
       "moduleSelected": "선택된 모듈",
       "attributes": "스탯"
+    },
+    "meta": {
+      "title": "{name} — {rarity}★ {class} ({branch})"
     }
   },
   "navigation": {
@@ -189,7 +192,7 @@
   },
   "general": {
     "siteIndexTitle": "자료방주",
-    "sitePageTitle": "{0} | 자료방주",
-    "siteIndexTitleMeta": "자료방주: 명일방주 데이터베이스"
+    "sitePageTitle": "{0} {'|'} 자료방주",
+    "siteIndexMetaTitle": "자료방주: 명일방주 데이터베이스"
   }
 }

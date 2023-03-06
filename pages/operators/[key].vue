@@ -1,21 +1,91 @@
 <script setup lang="ts">
+import { useSeoMeta } from "@unhead/vue";
 import { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import { ModuleState, OperatorState, TalentState } from "~/utils";
+import { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait";
+import { OperatorState, TalentState } from "~/utils";
 
 const {
   params: { key: operatorKey },
 } = useRoute();
-const { t, locale } = useI18n();
+const { t } = useI18n();
 
 // Dynamic imports must start with ./ or ../
 // https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#limitations
 const { default: operator }: { default: GeneratedOperatorData } = await import(
   `../../data/operators/${operatorKey}.json`
 );
+
+const finalTraitCandidate = computed<GeneratedTraitCandidateData>(() => {
+  let finalCandidate: GeneratedTraitCandidateData | null = null;
+  operator.traitCandidates.forEach((candidate) => {
+    if (
+      !finalCandidate ||
+      candidate.unlockConditions.elite >
+        finalCandidate.unlockConditions.elite ||
+      (candidate.unlockConditions.elite ===
+        finalCandidate.unlockConditions.elite &&
+        candidate.unlockConditions.level >
+          finalCandidate.unlockConditions.level)
+    )
+      finalCandidate = candidate;
+  });
+  if (!finalCandidate) throw new Error("No usable operator trait found");
+  return finalCandidate;
+});
+
+const pageMetaTitle = computed(() =>
+  t("operator.meta.title", {
+    name: t(`${operator.key}.name`),
+    rarity: operator.rarity,
+    class: t(`operator.class.${operator.class}`),
+    branch: t(`operator.classBranch.${operator.classBranch}`),
+  })
+);
+
+const pageDescription = computed(() =>
+  convertRichText(
+    t(
+      `${operator.key}.traitCandidates.E${finalTraitCandidate.value.unlockConditions.elite}-L${finalTraitCandidate.value.unlockConditions.level}.description`
+    ),
+    { replace: finalTraitCandidate.value.variables, html: false }
+  )
+);
+
+useSeoMeta({
+  ogTitle: () => pageMetaTitle.value,
+  description: () => pageDescription.value,
+  ogDescription: () => pageDescription.value,
+  twitterCard: "summary",
+});
+
+useHead({
+  title: () => t(`${operator.key}.name`),
+  meta: () => [
+    {
+      key: "og:image",
+      property: "og:image",
+      content: `https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${
+        operator.phases[0].outfit!.avatarId
+      }.png`,
+    },
+    {
+      key: "og:image:type",
+      property: "og:image:type",
+      content: "image/png",
+    },
+    {
+      key: "og:image:width",
+    },
+    {
+      key: "og:image:height",
+    },
+  ],
+});
+
 const finalPhase = operator.phases.slice(-1)[0];
 
-const isSidebarExpanded = $ref(false);
-const operatorState = $ref<OperatorState>({
+const isSidebarExpanded = ref(false);
+const operatorState = ref<OperatorState>({
   elite: finalPhase.elite,
   level: finalPhase.maxLevel,
   potential: 1,
@@ -25,9 +95,9 @@ const operatorState = $ref<OperatorState>({
   areBonusesIncluded: true,
 });
 
-const currentPhase = $computed(() => operator.phases[operatorState.elite]);
+const currentPhase = computed(() => operator.phases[operatorState.value.elite]);
 
-const talentEliteLevelNumbers = $computed(
+const talentEliteLevelNumbers = computed(
   () =>
     operator.talents
       ?.reduce((accumulator, talent) => {
@@ -46,7 +116,7 @@ const talentEliteLevelNumbers = $computed(
         aElite === bElite ? aLevel - bLevel : aElite - bElite
       ) || []
 );
-const talentPotentialNumbers = $computed(
+const talentPotentialNumbers = computed(
   () =>
     operator.talents
       ?.reduce((accumulator, talent) => {
@@ -58,39 +128,39 @@ const talentPotentialNumbers = $computed(
       .sort() || []
 );
 
-const talentState = $ref<TalentState>({
-  elite: talentEliteLevelNumbers.slice(-1)[0]?.[0] || 0,
-  level: talentEliteLevelNumbers.slice(-1)[0]?.[1] || 0,
-  potential: talentPotentialNumbers?.[0] || 0,
+const talentState = ref<TalentState>({
+  elite: talentEliteLevelNumbers.value.slice(-1)[0]?.[0] || 0,
+  level: talentEliteLevelNumbers.value.slice(-1)[0]?.[1] || 0,
+  potential: talentPotentialNumbers.value?.[0] || 0,
 });
 
 function changeToNearestEliteLevel() {
   if (!operator.talents?.length) return;
   let bestEliteLevel: [number, number] | null = null;
-  talentEliteLevelNumbers.forEach(([elite, level]) => {
-    if (elite === operatorState.elite) {
+  talentEliteLevelNumbers.value.forEach(([elite, level]) => {
+    if (elite === operatorState.value.elite) {
       // Prefer if bestEliteLevel and operatorState are equal non-1 level (E1 Lv55)
       if (bestEliteLevel && bestEliteLevel[1] === level) return;
       bestEliteLevel = [elite, level];
     }
   });
   if (bestEliteLevel) {
-    talentState.elite = bestEliteLevel[0];
-    talentState.level = bestEliteLevel[1];
+    talentState.value.elite = bestEliteLevel[0];
+    talentState.value.level = bestEliteLevel[1];
   }
 }
 
-watch(() => operatorState.elite, changeToNearestEliteLevel);
-watch(() => operatorState.level, changeToNearestEliteLevel);
+watch(() => operatorState.value.elite, changeToNearestEliteLevel);
+watch(() => operatorState.value.level, changeToNearestEliteLevel);
 watch(
-  () => operatorState.potential,
+  () => operatorState.value.potential,
   () => {
     let bestPotential: number;
-    for (const potential of talentPotentialNumbers) {
-      if (potential > operatorState.potential) break;
+    for (const potential of talentPotentialNumbers.value) {
+      if (potential > operatorState.value.potential) break;
       bestPotential = potential;
     }
-    talentState.potential = bestPotential!;
+    talentState.value.potential = bestPotential!;
   }
 );
 </script>

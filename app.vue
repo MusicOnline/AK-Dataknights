@@ -3,34 +3,61 @@ import "~/assets/css/index.scss";
 
 import { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables";
 import { useSeoMeta } from "@unhead/vue";
-import { ComputedRef } from "vue";
 
 const { t, locale, locales } = useI18n();
 
 useSeoMeta({
-  ogSiteName: () => t("general.siteIndexTitle"),
-  ogTitle: () => t("general.siteIndexTitleMeta"),
+  // https://github.com/nuxt/nuxt/issues/19460
+  // ogSiteName: () => t("general.siteIndexTitle"),
+  ogTitle: () => t("general.siteIndexMetaTitle"),
   description: () => t("general.siteIndexDescription"),
   ogDescription: () => t("general.siteIndexDescription"),
   ogLocale: () => transformLocaleCode(locale.value),
   ogType: "website",
-  ogImage: "/favicon-96x96.png",
-  ogImageType: "image/png",
-  ogImageWidth: "96",
-  ogImageHeight: "96",
   twitterCard: "summary",
 });
 
 useHead({
-  title: () => t("general.siteIndexTitle"),
-  meta: () =>
-    (<ComputedRef<LocaleObject[]>>locales).value.flatMap(({ code }) => {
-      if (code === locale.value) return [];
-      return {
-        property: "og:locale:alternate",
-        content: transformLocaleCode(code),
-      };
-    }),
+  titleTemplate(title) {
+    return title
+      ? t("general.sitePageTitle", [title])
+      : t("general.siteIndexTitle");
+  },
+  title: null,
+  meta: () => [
+    {
+      property: "og:site_name",
+      content: t("general.siteIndexTitle"),
+    },
+    {
+      key: "og:image",
+      property: "og:image",
+      content: "/favicon-96x96.png",
+    },
+    {
+      key: "og:image:type",
+      property: "og:image:type",
+      content: "image/png",
+    },
+    {
+      key: "og:image:width",
+      property: "og:image:width",
+      content: "96",
+    },
+    {
+      key: "og:image:height",
+      property: "og:image:height",
+      content: "96",
+    },
+    {
+      property: "og:locale:alternate",
+      content: (<LocaleObject[]>locales.value).flatMap(({ code }) => {
+        const transformedCode = transformLocaleCode(code);
+        if (code === locale.value) return [];
+        return transformedCode;
+      }),
+    },
+  ],
 });
 
 function transformLocaleCode(locale: string): string {

@@ -77,6 +77,6 @@ export function normalizeForLocaleFile(original: string | null): string | null {
       // <$tag.sub>text</> to <?tag.sub>text</> (With tooltip explanation)
       .replace(/<\$(?<tag>[^<]+?)>(?<text>.+?)<\/>/g, "<?$<tag>>$<text></>")
       // {variable:0%} to <#>variable:0{'%'}</#>
-      .replace(/(@|%)/g, "{'$1'}")
+      .replace(/(@|\$|%|\|)/g, "{'$1'}")
   );
 }

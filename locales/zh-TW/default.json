@@ -181,6 +181,9 @@
       "stage": "等級",
       "moduleSelected": "選中模組",
       "selectModule": "選擇模組"
+    },
+    "meta": {
+      "title": "{name} — {rarity}★ {class} ({branch})"
     }
   },
   "navigation": {
@@ -192,8 +195,8 @@
   },
   "general": {
     "siteIndexTitle": "數據方舟",
-    "sitePageTitle": "{0} | 數據方舟",
-    "siteIndexTitleMeta": "數據方舟：明日方舟資料庫",
+    "sitePageTitle": "{0} {'|'} 數據方舟",
+    "siteIndexMetaTitle": "數據方舟：明日方舟資料庫",
     "siteIndexDescription": "《數據方舟》是鷹角網絡開發、龍成網絡臺港澳代理手機遊戲《明日方舟》的資料庫網站。目前包括各伺服器的幹員資料。"
   }
 }

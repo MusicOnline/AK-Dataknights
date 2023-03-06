@@ -181,6 +181,9 @@
       "stage": "等级",
       "selectModule": "选择模组",
       "moduleSelected": "选中模组"
+    },
+    "meta": {
+      "title": "{name} — {rarity}★ {class} ({branch})"
     }
   },
   "navigation": {
@@ -192,8 +195,8 @@
   },
   "general": {
     "siteIndexTitle": "数据方舟",
-    "sitePageTitle": "{0} | 数据方舟",
-    "siteIndexTitleMeta": "数据方舟：明日方舟数据库",
+    "sitePageTitle": "{0} {'|'} 数据方舟",
+    "siteIndexMetaTitle": "数据方舟：明日方舟数据库",
     "siteIndexDescription": "《数据方舟》是鹰角网络开发、上海悠星海外代理手机游戏《明日方舟》的数据库网站。目前包括各服务器的干员资料。"
   }
 }
