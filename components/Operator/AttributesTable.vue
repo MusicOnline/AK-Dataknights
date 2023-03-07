@@ -21,6 +21,7 @@ const ALTERNATE_ATTRIBUTE_NAMES = {
   base_attack_time: "baseAttackTime",
   block_cnt: "blockCnt",
   respawn_time: "respawnTime",
+  attack_speed: "attackSpeed",
 };
 
 const { t, locale } = useI18n();
@@ -30,8 +31,8 @@ const { operator, operatorState } = defineProps<{
   operatorState: OperatorState;
 }>();
 
-// @ts-ignore
-const operatorAttributes = $computed<KeyFrameData>(() => {
+// @ts-ignore Unreliable Array.reduce inference
+const operatorAttributes = computed<KeyFrameData>(() => {
   const startKeyFrame =
     operator.phases[operatorState.elite].attributeKeyFrames[0];
   const endKeyFrame =
@@ -47,62 +48,105 @@ const operatorAttributes = $computed<KeyFrameData>(() => {
         typeof startValue === "boolean"
       ) {
         accumulator[name] = startValue;
-      } else {
-        // @ts-ignore
-        const valueDifference = endKeyFrame.data[name] - startValue;
-        const levelDifference = endKeyFrame.level - startKeyFrame.level;
-        const valuePerLevel = valueDifference / levelDifference;
-        // @ts-ignore
-        const trustBonus: number =
-          operatorState.areBonusesIncluded && operatorState.isMaxTrustIncluded
-            ? operator.trustKeyFrames?.slice(-1)[0].data[name] ?? 0
-            : 0;
-        let potentialBonus: number = 0;
-        if (operatorState.areBonusesIncluded) {
-          for (let i = 2; i <= operatorState.potential; i++) {
-            // Index 0 = Potential 2
-            const potential = operator.potentials[i - 2];
-            if (potential.attribute?.key === name)
-              potentialBonus += potential.attribute!.value;
-          }
-        }
-        let moduleBonus: number = 0;
-        if (operatorState.areBonusesIncluded && operatorState.moduleId) {
-          const module = operator.modules!.find(
-            ({ id }) => id === operatorState.moduleId
-          )!;
-          if (
-            operatorState.elite > module.unlockConditions.elite ||
-            (operatorState.elite === module.unlockConditions.elite &&
-              operatorState.level >= module.unlockConditions.level)
-          ) {
-            const attribute = module.stages?.[
-              (operatorState.moduleStage || 1) - 1
-            ].attributes.find(({ key }) => {
-              // @ts-ignore
-              const compatibleKey = ALTERNATE_ATTRIBUTE_NAMES[key] || key;
-              return compatibleKey === name;
-            });
-            if (attribute) moduleBonus = attribute.value;
-          }
-        }
+        return accumulator;
+      }
+      const valueDifference: number =
+        <number>endKeyFrame.data[name] - startValue;
+      const levelDifference: number = endKeyFrame.level - startKeyFrame.level;
+      const valuePerLevel: number = valueDifference / levelDifference;
+      const trustBonus: number = getTrustBonus(name);
+      const potentialBonus: number = getPotentialBonus(name);
+      const moduleBonus: number = getModuleBonus(name);
 
-        let total =
-          startValue +
-          valuePerLevel * (operatorState.level - 1) +
-          trustBonus +
-          potentialBonus +
-          moduleBonus;
-        if (ROUNDED_ATTRIBTUES.includes(name)) {
-          total = Math.round(total);
-        }
-        accumulator[name] = total;
+      const totalBaseAttribute: number =
+        startValue +
+        valuePerLevel * (operatorState.level - 1) +
+        trustBonus +
+        potentialBonus +
+        moduleBonus;
+
+      if (name === "baseAttackTime") {
+        accumulator[name] = calculateFinalAttackTime(totalBaseAttribute);
+      } else if (ROUNDED_ATTRIBTUES.includes(name)) {
+        accumulator[name] = Math.round(totalBaseAttribute);
+      } else {
+        accumulator[name] = totalBaseAttribute;
       }
       return accumulator;
     },
     {}
   );
 });
+
+function getTrustBonus(attribute: keyof KeyFrameData): number {
+  if (!operatorState.areBonusesIncluded || !operatorState.isMaxTrustIncluded)
+    return 0;
+
+  const trustBonus = operator.trustKeyFrames?.slice(-1)[0].data[attribute];
+  if (typeof trustBonus === "boolean")
+    throw new Error(`Trust bonus of ${attribute} is a boolean`);
+
+  return trustBonus ?? 0;
+}
+
+function getPotentialBonus(attribute: keyof KeyFrameData): number {
+  if (!operatorState.areBonusesIncluded) return 0;
+
+  let potentialBonus: number = 0;
+  for (let i = 2; i <= operatorState.potential; i++) {
+    // Index 0 = Potential 2
+    const potential = operator.potentials[i - 2];
+    if (potential.attribute?.key === attribute)
+      potentialBonus += potential.attribute!.value;
+  }
+
+  return potentialBonus;
+}
+
+function getModuleBonus(attribute: keyof KeyFrameData): number {
+  if (!operatorState.areBonusesIncluded || !operatorState.moduleId) return 0;
+
+  let moduleBonus: number = 0;
+  const module = operator.modules!.find(
+    ({ id }) => id === operatorState.moduleId
+  )!;
+  if (
+    operatorState.elite > module.unlockConditions.elite ||
+    (operatorState.elite === module.unlockConditions.elite &&
+      operatorState.level >= module.unlockConditions.level)
+  ) {
+    const attributeObject = module.stages?.[
+      (operatorState.moduleStage || 1) - 1
+    ].attributes.find(({ key }) => {
+      // @ts-ignore
+      const compatibleKey: string = ALTERNATE_ATTRIBUTE_NAMES[key] || key;
+      return compatibleKey === attribute;
+    });
+    if (attributeObject) moduleBonus = attributeObject.value;
+  }
+
+  return moduleBonus;
+}
+
+function getBaseAttackSpeedModifiers() {
+  const attribute = "attackSpeed";
+  return (
+    getTrustBonus(attribute) +
+    getPotentialBonus(attribute) +
+    getModuleBonus(attribute)
+  );
+}
+
+function calculateFinalAttackTime(baseAttackTime: number): number {
+  // https://arknights.fandom.com/wiki/Attribute/Attack_interval#ASPD_calculation
+  // https://gamepress.gg/arknights/core-gameplay/arknights-mechanics-behind-numbers-attack-speed#topic-566596
+  const flatAttackTimeModifier: number = 0; // Attack Interval modifiers come from skills only
+  const baseAttackSpeedModifiers: number = getBaseAttackSpeedModifiers();
+  return (
+    (baseAttackTime + flatAttackTimeModifier) /
+    (1 + baseAttackSpeedModifiers / 100)
+  );
+}
 </script>
 
 <template>
