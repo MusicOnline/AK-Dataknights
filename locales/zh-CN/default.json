@@ -173,7 +173,11 @@
         "description": "启用后，属性计算将包括来自满信赖、所选潜能及所选模组等级的加成"
       },
       "trait": "特性",
-      "specificBranchTrait": "{branch}特性"
+      "specificBranchTrait": "{branch}特性",
+      "unlocksAtSpecificElite": "精英{elite}后解锁",
+      "unlocksAtSpecificEliteAndLevel": "精英{elite} LV.{level}后解锁",
+      "level": "LV.",
+      "elite": "精英"
     },
     "module": {
       "attributes": "属性",

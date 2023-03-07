@@ -71,7 +71,7 @@ function limitOperatorLevel(event: Event) {
       </li>
     </ul>
     <label class="flex items-center gap-1 font-bold">
-      <span>Lv.</span>
+      <span>{{ t("operator.ui.level") }}</span>
       <input
         class="ml-auto w-14 px-1 text-xl"
         v-model.number="operatorState.level"

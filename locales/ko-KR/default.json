@@ -170,7 +170,11 @@
       },
       "classBranch": "세부 분류가",
       "trait": "특성",
-      "specificBranchTrait": "{branch} 특성"
+      "specificBranchTrait": "{branch} 특성",
+      "unlocksAtSpecificElite": "{elite}차 정예화 시 개방",
+      "unlocksAtSpecificEliteAndLevel": "{elite}차 정예화 Lv.{level} 시 개방",
+      "level": "Lv.",
+      "elite": "정예화"
     },
     "module": {
       "moduleDescription": "강화 설명",

@@ -43,6 +43,8 @@
         "title": "Bonuses",
         "description": "When enabled, calculation includes stats gained from max Trust, selected Potential and selected Module Stage"
       },
+      "level": "Lv.",
+      "elite": "Elite",
       "class": "Class",
       "classBranch": "Job Branch",
       "maxTrust": "Max Trust (100%)",
@@ -52,7 +54,9 @@
       "skills": "Skills",
       "modules": "Modules",
       "trait": "Trait",
-      "specificBranchTrait": "{branch} Trait"
+      "specificBranchTrait": "{branch} Trait",
+      "unlocksAtSpecificElite": "Unlocks at Elite {elite}",
+      "unlocksAtSpecificEliteAndLevel": "Unlocks at Elite {elite} Lv. {level}"
     },
     "rarityName": {
       "TOP_OPERATOR": "Top Operator",

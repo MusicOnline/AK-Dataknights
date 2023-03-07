@@ -333,14 +333,23 @@ const talentsAndBestAndNextCandidate = $computed<
             }}
           </div>
           <div class="flex items-center gap-1">
-            <!-- TODO: Consider adding elite icon -->
             <Icon name="heroicons:lock-closed-solid" />
             <div v-if="nextCandidate.unlockConditions.level === 1">
+              {{
+                t(
+                  "operator.ui.unlocksAtSpecificElite",
+                  nextCandidate.unlockConditions
+                )
+              }}
               Unlocks at Elite {{ nextCandidate.unlockConditions.elite }}.
             </div>
             <div v-else>
-              Unlocks at Elite {{ nextCandidate.unlockConditions.elite }} Lv.
-              {{ nextCandidate.unlockConditions.level }}.
+              {{
+                t(
+                  "operator.ui.unlocksAtSpecificEliteAndLevel",
+                  nextCandidate.unlockConditions
+                )
+              }}
             </div>
           </div>
         </button>

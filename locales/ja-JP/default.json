@@ -171,7 +171,11 @@
         "description": "有効にすると、計算には信頼度MAX、選択した潜在能力、および選択したモジュールステージからのステータスが含まれます"
       },
       "trait": "特性",
-      "specificBranchTrait": "{branch}の特性"
+      "specificBranchTrait": "{branch}の特性",
+      "unlocksAtSpecificElite": "昇進{elite}で解放",
+      "unlocksAtSpecificEliteAndLevel": "昇進{elite} LV.{level}で解放",
+      "level": "LV.",
+      "elite": "昇進"
     },
     "module": {
       "attributes": "ステータス",

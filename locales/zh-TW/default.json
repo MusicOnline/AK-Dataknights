@@ -173,7 +173,11 @@
         "description": "啓用後，屬性計算將包括來自滿信賴、所選潛能及所選模組等級的加成"
       },
       "trait": "特性",
-      "specificBranchTrait": "{branch}特性"
+      "specificBranchTrait": "{branch}特性",
+      "unlocksAtSpecificElite": "精英{elite}後解鎖",
+      "unlocksAtSpecificEliteAndLevel": "精英{elite} LV.{level}後解鎖",
+      "level": "LV.",
+      "elite": "精英"
     },
     "module": {
       "attributes": "屬性",

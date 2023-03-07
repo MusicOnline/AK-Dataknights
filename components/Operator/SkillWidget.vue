@@ -94,7 +94,7 @@ const initSpIsNotAlwaysZero = $computed(
     <table class="mr-auto table-fixed border-hidden">
       <thead>
         <tr>
-          <th class="w-8 sm:w-16">Lv.</th>
+          <th class="w-8 sm:w-16">{{ t("operator.ui.level") }}</th>
           <template v-if="skill.levels[0].skillType !== 'PASSIVE'">
             <th class="sm:w-20" v-if="initSpIsNotAlwaysZero">
               {{ t("operator.skill.initSp") }}
