@@ -4,7 +4,7 @@
 
 **Website: https://dataknights.pages.dev**
 
-[![Deploy SSG to Cloudflare Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml) [![Deploy SSG to GitHub Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml)
+[![Deploy SSG to GitHub Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml)
 
 Work-in-progress Arknights database made with [Nuxt](https://nuxt.com) for educational purposes. Features Mainland Chinese, English, Japanese and Korean game data and technical support for custom translations (English only for now).
 
@@ -84,7 +84,7 @@ npm run preview
 
 The [`check-data-update`](./.github/workflows/check-data-update.yml) workflow checks for updates in the master branch of Kengxxiao/ArknightsGameData. If there is an update, [`.game-data-sha`](./data/.game-data-sha) is updated in this repository.
 
-Any pushes to this repository will trigger the [`deploy-cfpages`](./.github/workflows/deploy-cfpages.yml) workflow to deploy the website to Cloudflare Pages.
+Any pushes to this repository will trigger Cloudflare Pages to build and deploy the website its automatic deployments feature. Otherwise, [`deploy-cfpages`](./.github/workflows/deploy-cfpages.yml) may be triggered manually instead.
 
 Additionally, any pushes to the main branch of this repository will trigger the [`deploy-ghpages`](./.github/workflows/deploy-ghpages.yml) workflow to deploy the website to GitHub Pages.
 

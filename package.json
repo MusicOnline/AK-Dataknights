@@ -3,6 +3,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "generate-ci": "bash ./tools/ci-generate.sh",
     "generate-linux": "NODE_OPTIONS=--max_old_space_size=8192 nuxt generate",
     "generate-windows": "set NODE_OPTIONS=--max_old_space_size=8192 && nuxt generate",
     "preview": "nuxt preview",
