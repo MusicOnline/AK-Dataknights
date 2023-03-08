@@ -55,7 +55,8 @@
       "DEBUFF": "削弱",
       "FAST_REDEPLOY": "快速复活",
       "SHIFT": "位移",
-      "SUMMON": "召唤"
+      "SUMMON": "召唤",
+      "ROBOT": "支援机械"
     },
     "gender": {
       "MALE": "男性",

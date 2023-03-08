@@ -268,9 +268,11 @@ export class Operator implements Localizable {
   }
 
   public get normalizedTagList(): string[] {
-    return (this.tagList ?? []).map(
-      (chineseTag) => raw.CHINESE_TO_ENGLISH_TAGS[chineseTag]
-    );
+    return (this.tagList ?? []).map((chineseTag) => {
+      const tag: string | undefined = raw.CHINESE_TO_ENGLISH_TAGS[chineseTag];
+      if (!tag) throw new Error(`No english tag implemented for ${chineseTag}`);
+      return tag;
+    });
   }
 
   public get isActualOperator() {

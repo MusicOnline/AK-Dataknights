@@ -55,7 +55,8 @@
       "DEBUFF": "弱化",
       "FAST_REDEPLOY": "高速再配置",
       "SHIFT": "強制移動",
-      "SUMMON": "召喚"
+      "SUMMON": "召喚",
+      "ROBOT": "ロボット"
     },
     "gender": {
       "MALE": "男性",
@@ -120,7 +121,9 @@
       "dollkeeper": "傀儡師",
       "agent": "偵察兵",
       "incantationmedic": "呪癒師",
-      "chainhealer": "連鎖癒師"
+      "chainhealer": "連鎖癒師",
+      "shotprotector": "哨戒衛士",
+      "crusher": "重剣士"
     },
     "attribute": {
       "atk": "攻撃力",

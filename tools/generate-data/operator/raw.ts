@@ -14,6 +14,7 @@ export const CHINESE_TO_ENGLISH_TAGS = {
   费用回复: "DP_RECOVERY",
   输出: "DPS",
   防护: "DEFENSE",
+  支援机械: "ROBOT",
 } as const;
 
 export interface AllSkillLvlup {
