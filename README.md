@@ -84,7 +84,7 @@ npm run preview
 
 The [`check-data-update`](./.github/workflows/check-data-update.yml) workflow checks for updates in the master branch of Kengxxiao/ArknightsGameData. If there is an update, [`.game-data-sha`](./data/.game-data-sha) is updated in this repository.
 
-Any pushes to this repository will trigger Cloudflare Pages to build and deploy the website its automatic deployments feature. Otherwise, [`deploy-cfpages`](./.github/workflows/deploy-cfpages.yml) may be triggered manually instead.
+Any pushes to this repository will trigger Cloudflare Pages to build and deploy the website with its automatic deployments feature. [`deploy-cfpages`](./.github/workflows/deploy-cfpages.yml) is also triggered with GitHub Actions in case the Cloudflare build fails.
 
 Additionally, any pushes to the main branch of this repository will trigger the [`deploy-ghpages`](./.github/workflows/deploy-ghpages.yml) workflow to deploy the website to GitHub Pages.
 
