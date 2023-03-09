@@ -4,7 +4,7 @@
 
 **Website: https://dataknights.pages.dev**
 
-[![Deploy SSG to GitHub Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml)
+[![Deploy SSG to Cloudflare Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml) [![Deploy SSG to GitHub Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml)
 
 Work-in-progress Arknights database made with [Nuxt](https://nuxt.com) for educational purposes. Features Mainland Chinese, English, Japanese and Korean game data and technical support for custom translations (English only for now).
 
