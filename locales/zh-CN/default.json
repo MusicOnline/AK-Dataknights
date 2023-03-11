@@ -178,7 +178,8 @@
       "unlocksAtSpecificElite": "精英{elite}后解锁",
       "unlocksAtSpecificEliteAndLevel": "精英{elite} LV.{level}后解锁",
       "level": "LV.",
-      "elite": "精英"
+      "elite": "精英",
+      "introduction": "介绍"
     },
     "module": {
       "attributes": "属性",

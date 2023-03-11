@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useSeoMeta } from "@unhead/vue";
 import { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import { GeneratedModuleData } from "~/tools/generate-data/operator/module";
 import { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait";
 import { OperatorState, TalentState } from "~/utils";
 
@@ -150,6 +151,11 @@ function changeToNearestEliteLevel() {
   }
 }
 
+function getCombinedModuleTypeName(module: GeneratedModuleData): string {
+  if (!module.typeName2) return module.typeName1.toLowerCase();
+  return `${module.typeName1}-${module.typeName2}`.toLowerCase();
+}
+
 watch(() => operatorState.value.elite, changeToNearestEliteLevel);
 watch(() => operatorState.value.level, changeToNearestEliteLevel);
 watch(
@@ -167,11 +173,15 @@ watch(
 
 <template>
   <div>
-    <OperatorSidebar :is-sidebar-expanded="isSidebarExpanded" />
+    <OperatorSidebar
+      :operator="operator"
+      :is-sidebar-expanded="isSidebarExpanded"
+    />
     <!-- Main content -->
-    <main class="flex flex-col gap-2 md:ml-56 lg:ml-72">
+    <main class="flex max-w-7xl flex-col gap-2 md:ml-56 lg:ml-72">
       <!-- <Breadcrumbs class="text-sm" /> -->
       <!-- General information -->
+      <div class="anchor-ghost" id="introduction" />
       <OperatorIntroductionCard
         :operator="operator"
         :operator-state="operatorState"
@@ -185,6 +195,7 @@ watch(
         :operator="operator"
       />
       <!-- Range, stats, potentials, trust -->
+      <div class="anchor-ghost" id="stats" />
       <div
         class="flex flex-wrap justify-center gap-1 bg-gray-200 p-2 sm:flex-nowrap sm:justify-start lg:gap-8"
       >
@@ -211,41 +222,55 @@ watch(
         <div class="bg-gray-200 p-1">{{ talentState }}</div>
       </DevOnly>
       <!-- Talents -->
-      <h1 class="heading" v-if="operator.talents?.length">
-        {{ t("operator.ui.talents") }}
-      </h1>
-      <OperatorTalentWidget
-        v-if="operator.talents?.length"
-        v-model:elite="talentState.elite"
-        v-model:level="talentState.level"
-        v-model:potential="talentState.potential"
-        :operator="operator"
-      />
+      <template v-if="operator.talents?.length">
+        <div class="anchor-ghost" id="talents" />
+        <h1 class="heading">
+          {{ t("operator.ui.talents") }}
+        </h1>
+        <OperatorTalentWidget
+          v-model:elite="talentState.elite"
+          v-model:level="talentState.level"
+          v-model:potential="talentState.potential"
+          :operator="operator"
+        />
+      </template>
       <!-- Skills -->
-      <h1 class="heading" v-if="operator.skills?.length">
-        {{ t("operator.ui.skills") }}
-      </h1>
-      <OperatorSkillWidget
-        class="bg-gray-200 p-2"
-        v-for="skill in operator.skills"
-        :key="skill.id"
-        :operator="operator"
-        :skill="skill"
-      />
+      <template v-if="operator.skills.length">
+        <div class="anchor-ghost" id="skills" />
+        <h1 class="heading">
+          {{ t("operator.ui.skills") }}
+        </h1>
+        <template v-for="(skill, index) in operator.skills" :key="skill.id">
+          <div class="anchor-ghost" :id="`skill-${index + 1}`" />
+          <OperatorSkillWidget
+            class="bg-gray-200 p-2"
+            :operator="operator"
+            :skill="skill"
+          />
+        </template>
+      </template>
       <!-- Modules -->
-      <h1 class="heading" v-if="operator.modules?.length">
-        {{ t("operator.ui.modules") }}
-      </h1>
-      <OperatorModuleWidget
-        class="bg-gray-200 p-2"
-        v-for="mod in operator.modules"
-        v-model:module-id="operatorState.moduleId"
-        v-model:module-stage="operatorState.moduleStage"
-        :potential="operatorState.potential"
-        :key="mod.id"
-        :operator="operator"
-        :module="mod"
-      />
+      <template v-if="operator.modules?.length">
+        <div class="anchor-ghost" id="modules" />
+        <h1 class="heading">
+          {{ t("operator.ui.modules") }}
+        </h1>
+        <template v-for="mod in operator.modules" :key="mod.id">
+          <div
+            class="anchor-ghost"
+            :id="`module-${getCombinedModuleTypeName(mod)}`"
+          />
+          <OperatorModuleWidget
+            class="bg-gray-200 p-2"
+            v-for="mod in operator.modules"
+            v-model:module-id="operatorState.moduleId"
+            v-model:module-stage="operatorState.moduleStage"
+            :potential="operatorState.potential"
+            :operator="operator"
+            :module="mod"
+          />
+        </template>
+      </template>
     </main>
   </div>
 </template>
@@ -255,6 +280,12 @@ watch(
   @apply text-3xl;
 
   font-weight: bold;
+}
+
+.anchor-ghost {
+  @apply -top-24 -mb-2;
+
+  position: relative;
 }
 </style>
 

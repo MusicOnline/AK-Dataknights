@@ -175,7 +175,8 @@
       "unlocksAtSpecificElite": "{elite}차 정예화 시 개방",
       "unlocksAtSpecificEliteAndLevel": "{elite}차 정예화 Lv.{level} 시 개방",
       "level": "Lv.",
-      "elite": "정예화"
+      "elite": "정예화",
+      "introduction": "소개"
     },
     "module": {
       "moduleDescription": "강화 설명",

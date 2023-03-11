@@ -1,14 +1,16 @@
 <script setup lang="ts">
+import { GeneratedOperatorData } from "~/tools/generate-data/operator";
 const { t } = useI18n();
 
 const { isSidebarExpanded } = defineProps<{
+  operator: GeneratedOperatorData;
   isSidebarExpanded: boolean;
 }>();
 </script>
 
 <template>
   <div
-    class="fixed top-0 left-0 z-20 mt-12 h-[calc(100vh-7rem)] w-56 bg-gray-200 bg-opacity-90 shadow backdrop-blur transition-all md:ml-0 md:mb-0 md:h-[calc(100vh-3rem)] lg:w-72"
+    class="fixed top-0 left-0 z-20 mt-12 h-[calc(100vh-7rem)] w-56 bg-gray-200 bg-opacity-90 p-2 shadow backdrop-blur transition-all md:ml-0 md:mb-0 md:h-[calc(100vh-3rem)] lg:w-72"
     :class="{
       '-ml-56': !isSidebarExpanded,
     }"
@@ -24,41 +26,8 @@ const { isSidebarExpanded } = defineProps<{
         :name="isSidebarExpanded ? 'ph:caret-left-fill' : 'ph:caret-right-fill'"
       />
     </button>
-    <!-- <nav>
-      <OCollapse animation="slide">
-        <template #trigger="props">
-          <button class="flex items-center gap-1">
-            <div>Table of Contents</div>
-            <Icon
-              :name="
-                props.open ? 'heroicons:chevron-up' : 'heroicons:chevron-down'
-              "
-            />
-          </button>
-        </template>
-        <div>
-          <div>
-            <ul>
-              <li>a</li>
-              <li>a</li>
-              <li>a</li>
-            </ul>
-          </div>
-        </div>
-      </OCollapse>
-    </nav>
-    <div>
-      <input
-        class="max-w-full"
-        type="text"
-        :placeholder="t('operators.searchOperator')"
-      />
-      <ul>
-        <li>A</li>
-        <li>A</li>
-        <li>A</li>
-      </ul>
-    </div> -->
+    <OperatorTableOfContentsList :operator="operator" />
+    <OperatorSearchWidget v-if="false" />
   </div>
 </template>
 

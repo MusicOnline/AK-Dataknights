@@ -178,7 +178,8 @@
       "unlocksAtSpecificElite": "昇進{elite}で解放",
       "unlocksAtSpecificEliteAndLevel": "昇進{elite} LV.{level}で解放",
       "level": "LV.",
-      "elite": "昇進"
+      "elite": "昇進",
+      "introduction": "紹介"
     },
     "module": {
       "attributes": "ステータス",

@@ -43,7 +43,7 @@ function limitOperatorLevel(event: Event) {
 </script>
 
 <template>
-  <div class="flex items-center gap-1">
+  <div class="flex h-12 items-center gap-1">
     <!-- Elite buttons -->
     <ul class="flex gap-1">
       <li
