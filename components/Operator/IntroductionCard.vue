@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait";
-import { OperatorState } from "~/utils";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait";
+import type { OperatorState } from "~/utils";
 
-const { t, locale, getLocaleMessage } = useI18n();
+const { t, locale } = useI18n();
 
 const { operator, operatorState } = defineProps<{
   operator: GeneratedOperatorData;
   operatorState: OperatorState;
 }>();
 
-const currentAvatarUrl = $computed(() => {
+const currentAvatarUrl = computed(() => {
   let phase = operator.phases[operatorState.elite];
   while (!phase.outfit?.avatarId && phase.elite !== 0)
     phase = operator.phases[phase.elite - 1];
@@ -20,7 +20,7 @@ const currentAvatarUrl = $computed(() => {
   )}.png`;
 });
 
-const currentTraitCandidate = $computed<GeneratedTraitCandidateData>(() => {
+const currentTraitCandidate = computed<GeneratedTraitCandidateData>(() => {
   let currentCandidate: GeneratedTraitCandidateData | null = null;
   operator.traitCandidates.forEach((candidate) => {
     if (
@@ -50,30 +50,21 @@ const currentTraitCandidate = $computed<GeneratedTraitCandidateData>(() => {
   return currentCandidate;
 });
 
-// https://github.com/intlify/vue-i18n-next/issues/1235
-function getSpecificTranslation(
+function getLocalizedName(
   locale: string,
   operator: GeneratedOperatorData
 ): string | null {
-  return (
-    // @ts-ignore
-    getLocaleMessage(locale)?.[operator.key]?.name?.({
-      normalize: (s: string[]) => s[0],
-    }) ?? null
-  );
+  return t(`${operator.key}.name`, {}, { locale });
 }
 
-function getSpecificTranslationWithTL(
+function getLocalizedNameWithTL(
   lang: string,
   region: string,
   operator: GeneratedOperatorData
 ): string | null {
-  const officialTranslation = getSpecificTranslation(
-    `${lang}-${region}`,
-    operator
-  );
+  const officialTranslation = getLocalizedName(`${lang}-${region}`, operator);
   if (officialTranslation) return officialTranslation;
-  return getSpecificTranslation(`${lang}-TL`, operator);
+  return getLocalizedName(`${lang}-TL`, operator);
 }
 </script>
 
@@ -94,14 +85,14 @@ function getSpecificTranslationWithTL(
                 class="other-lang-alias"
                 v-if="
                   !locale.startsWith('en') &&
-                  getSpecificTranslationWithTL('en', 'US', operator)
+                  getLocalizedNameWithTL('en', 'US', operator)
                 "
                 data-lang="en"
               >
-                {{ getSpecificTranslationWithTL("en", "US", operator) }}
+                {{ getLocalizedNameWithTL("en", "US", operator) }}
               </li>
               <li class="other-lang-alias" v-if="!locale.startsWith('zh')">
-                {{ getSpecificTranslation("zh-CN", operator) }}
+                {{ getLocalizedName("zh-CN", operator) }}
               </li>
               <template
                 v-for="[nameLang, nameRegion] in [
@@ -113,13 +104,11 @@ function getSpecificTranslationWithTL(
                   class="other-lang-alias"
                   v-if="
                     !locale.startsWith(nameLang) &&
-                    getSpecificTranslationWithTL(nameLang, nameRegion, operator)
+                    getLocalizedNameWithTL(nameLang, nameRegion, operator)
                   "
                   :data-lang="nameLang"
                 >
-                  {{
-                    getSpecificTranslationWithTL(nameLang, nameRegion, operator)
-                  }}
+                  {{ getLocalizedNameWithTL(nameLang, nameRegion, operator) }}
                 </li>
               </template>
             </ul>

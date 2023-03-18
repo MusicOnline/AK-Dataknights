@@ -42462,7 +42462,7 @@
     }
   },
   "dorothy": {
-    "name": "Dorothy",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -42655,7 +42655,7 @@
     }
   },
   "astgenne": {
-    "name": "Astgenne",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -42831,7 +42831,7 @@
     }
   },
   "greyy-the-lightningbearer": {
-    "name": "Greyy the Lightningbearer",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -44345,7 +44345,7 @@
     }
   },
   "reserve-operator-defender": {
-    "name": "Reserve (Defender)",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {},

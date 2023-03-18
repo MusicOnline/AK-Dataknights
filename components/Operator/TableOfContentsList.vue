@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import { GeneratedModuleData } from "~/tools/generate-data/operator/module";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import type { GeneratedModuleData } from "~/tools/generate-data/operator/module";
 
-const { operator } = defineProps<{
+const props = defineProps<{
   operator: GeneratedOperatorData;
 }>();
 
@@ -19,7 +19,7 @@ function getCombinedModuleTypeName(module: GeneratedModuleData): string {
     <OCollapse animation="slide">
       <template #trigger="props">
         <button class="flex items-center gap-1">
-          <div class="font-bold">
+          <div class="text-left text-xl font-bold">
             {{ t(`${operator.key}.name`) }}
           </div>
           <Icon

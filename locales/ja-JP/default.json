@@ -179,7 +179,8 @@
       "unlocksAtSpecificEliteAndLevel": "昇進{elite} LV.{level}で解放",
       "level": "LV.",
       "elite": "昇進",
-      "introduction": "紹介"
+      "introduction": "紹介",
+      "searchOperator": "コードネームでオペレーターを検索…"
     },
     "module": {
       "attributes": "ステータス",

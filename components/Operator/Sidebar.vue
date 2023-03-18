@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { GeneratedOperatorData } from "~/tools/generate-data/operator";
-const { t } = useI18n();
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
 
+// TODO: isSidebarExpanded should be a v-model
 const { isSidebarExpanded } = defineProps<{
   operator: GeneratedOperatorData;
   isSidebarExpanded: boolean;
@@ -10,7 +10,7 @@ const { isSidebarExpanded } = defineProps<{
 
 <template>
   <div
-    class="fixed top-0 left-0 z-20 mt-12 h-[calc(100vh-7rem)] w-56 bg-gray-200 bg-opacity-90 p-2 shadow backdrop-blur transition-all md:ml-0 md:mb-0 md:h-[calc(100vh-3rem)] lg:w-72"
+    class="fixed top-0 left-0 z-20 mt-12 flex h-[calc(100vh-7rem)] w-56 flex-col gap-2 bg-gray-200 bg-opacity-90 p-2 shadow backdrop-blur transition-all md:ml-0 md:mb-0 md:h-[calc(100vh-3rem)] lg:w-72"
     :class="{
       '-ml-56': !isSidebarExpanded,
     }"
@@ -27,13 +27,6 @@ const { isSidebarExpanded } = defineProps<{
       />
     </button>
     <OperatorTableOfContentsList :operator="operator" />
-    <OperatorSearchWidget v-if="false" />
+    <OperatorSearchWidget :operator="operator" />
   </div>
 </template>
-
-<i18n locale="en-US" src="~/locales/en-US/operators-data.json"></i18n>
-<i18n locale="en-TL" src="~/locales/en-TL/operators-data.json"></i18n>
-<i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
-<i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
-<i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>
-<i18n locale="zh-TW" src="~/locales/zh-TW/operators-data.json"></i18n>

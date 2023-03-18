@@ -55,6 +55,7 @@
       "skills": "Skills",
       "modules": "Modules",
       "trait": "Trait",
+      "searchOperator": "Search Operators by code name...",
       "specificBranchTrait": "{branch} Trait",
       "unlocksAtSpecificElite": "Unlocks at Elite {elite}",
       "unlocksAtSpecificEliteAndLevel": "Unlocks at Elite {elite} Lv. {level}"

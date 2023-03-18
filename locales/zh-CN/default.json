@@ -179,7 +179,8 @@
       "unlocksAtSpecificEliteAndLevel": "精英{elite} LV.{level}后解锁",
       "level": "LV.",
       "elite": "精英",
-      "introduction": "介绍"
+      "introduction": "介绍",
+      "searchOperator": "按代号搜索干员……"
     },
     "module": {
       "attributes": "属性",

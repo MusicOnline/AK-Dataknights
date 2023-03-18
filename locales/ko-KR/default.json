@@ -176,7 +176,8 @@
       "unlocksAtSpecificEliteAndLevel": "{elite}차 정예화 Lv.{level} 시 개방",
       "level": "Lv.",
       "elite": "정예화",
-      "introduction": "소개"
+      "introduction": "소개",
+      "searchOperator": "코드네임으로 오퍼레이터 검색..."
     },
     "module": {
       "moduleDescription": "강화 설명",
