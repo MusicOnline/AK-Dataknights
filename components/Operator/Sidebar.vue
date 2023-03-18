@@ -27,6 +27,8 @@ const { isSidebarExpanded } = defineProps<{
       />
     </button>
     <OperatorTableOfContentsList :operator="operator" />
-    <OperatorSearchWidget :operator="operator" />
+    <ClientOnly>
+      <OperatorSearchWidget :operator="operator" />
+    </ClientOnly>
   </div>
 </template>

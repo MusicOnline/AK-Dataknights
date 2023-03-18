@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import { KeyFrameData } from "~/tools/generate-data/operator/raw";
-import { OperatorState } from "~/utils";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import type { KeyFrameData } from "~/tools/generate-data/operator/raw";
+import type { OperatorState } from "~/utils";
 
 const CALCULATED_ATTRIBUTES = [
   "maxHp",

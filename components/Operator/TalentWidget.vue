@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import {
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import type {
   GeneratedTalentCandidateData,
   GeneratedTalentData,
 } from "~/tools/generate-data/operator/talent";
-import { TalentState } from "~/utils";
+import type { TalentState } from "~/utils";
 
 const { operator, elite, level, potential } = defineProps<{
   operator: GeneratedOperatorData;
@@ -17,7 +17,7 @@ defineEmits(["update:elite", "update:level", "update:potential"]);
 
 const { t } = useI18n();
 
-const talentEliteLevelNumbers = $computed(
+const talentEliteLevelNumbers = computed<[number, number][]>(
   () =>
     operator.talents
       ?.reduce((accumulator, talent) => {
@@ -36,7 +36,7 @@ const talentEliteLevelNumbers = $computed(
         aElite === bElite ? aLevel - bLevel : aElite - bElite
       ) || []
 );
-const talentPotentialNumbers = $computed(
+const talentPotentialNumbers = computed<number[]>(
   () =>
     operator.talents
       ?.reduce((accumulator, talent) => {
@@ -48,7 +48,7 @@ const talentPotentialNumbers = $computed(
       .sort() || []
 );
 
-const talentState = $ref<TalentState>({
+const talentState = ref<TalentState>({
   elite,
   level,
   potential,
@@ -57,21 +57,21 @@ const talentState = $ref<TalentState>({
 watch(
   () => elite,
   () => {
-    talentState.elite = elite;
+    talentState.value.elite = elite;
   }
 );
 
 watch(
   () => level,
   () => {
-    talentState.level = level;
+    talentState.value.level = level;
   }
 );
 
 watch(
   () => potential,
   () => {
-    talentState.potential = potential;
+    talentState.value.potential = potential;
   }
 );
 
@@ -95,9 +95,9 @@ function getBestTalentCandidate(
   talent.candidates.forEach((candidate) => {
     if (
       // Insufficient level
-      isHigherLevel(candidate.unlockConditions, talentState) ||
+      isHigherLevel(candidate.unlockConditions, talentState.value) ||
       // Insufficient potential
-      candidate.unlockConditions.potential > talentState.potential
+      candidate.unlockConditions.potential > talentState.value.potential
     )
       return;
     if (!bestCandidate) {
@@ -145,7 +145,7 @@ function getNextTalentCandidate(
         candidate.unlockConditions,
         nextCandidate.unlockConditions
       ) &&
-      candidate.unlockConditions.potential <= talentState.potential &&
+      candidate.unlockConditions.potential <= talentState.value.potential &&
       candidate.unlockConditions.potential >=
         nextCandidate.unlockConditions.potential
     ) {
@@ -199,7 +199,7 @@ function getNextTalentCandidate(
   return nextCandidate;
 }
 
-const talentsAndBestAndNextCandidate = $computed<
+const talentsAndBestAndNextCandidate = computed<
   [
     GeneratedTalentData,
     GeneratedTalentCandidateData | null,
@@ -211,7 +211,6 @@ const talentsAndBestAndNextCandidate = $computed<
       talent,
       getBestTalentCandidate(talent),
       getNextTalentCandidate(talent),
-      // null,
     ]) || []
 );
 </script>

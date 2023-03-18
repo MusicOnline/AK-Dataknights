@@ -2,7 +2,7 @@
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
 import type { GeneratedModuleData } from "~/tools/generate-data/operator/module";
 
-const props = defineProps<{
+defineProps<{
   operator: GeneratedOperatorData;
 }>();
 

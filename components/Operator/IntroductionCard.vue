@@ -10,7 +10,7 @@ const { operator, operatorState } = defineProps<{
   operatorState: OperatorState;
 }>();
 
-const currentAvatarUrl = computed(() => {
+const currentAvatarUrl = computed<string>(() => {
   let phase = operator.phases[operatorState.elite];
   while (!phase.outfit?.avatarId && phase.elite !== 0)
     phase = operator.phases[phase.elite - 1];

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
 
 const { operator, potential, isMaxTrustIncluded } = defineProps<{
   operator: GeneratedOperatorData;
@@ -11,12 +11,12 @@ defineEmits(["update:potential", "update:isMaxTrustIncluded"]);
 
 const { t } = useI18n();
 
-const operatorState = $ref({
+const operatorState = ref({
   potential,
   isMaxTrustIncluded,
 });
 
-const trustStats = $computed(() => {
+const trustStats = computed<{ [key: string]: number } | null>(() => {
   if (!operator.trustKeyFrames) return null;
   return Object.entries(operator.trustKeyFrames[1].data).reduce(
     (accumulator: { [key: string]: number }, [key, value]) => {

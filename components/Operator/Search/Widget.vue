@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import data from "~/data/operators/index.json";
 import type {
   GeneratedOperatorData,
   GeneratedOperatorIndexData,
@@ -21,18 +20,12 @@ const { t } = useI18n();
 
 const nameInput = useDebounce<string>("", 150);
 
-const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
-  const rarityOrder = <GeneratedOperatorIndexData[]>[...data].sort((a, b) => {
-    const rarityComparison = b.rarity - a.rarity;
-    if (rarityComparison) return rarityComparison;
-    return data.indexOf(a) - data.indexOf(b);
-  });
+const operators: GeneratedOperatorIndexData[] = useOperatorsIndexData();
 
+const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
   if (!nameInput.value && !operator) return [];
   if (!nameInput.value) {
-    const index: number = rarityOrder.findIndex(
-      ({ id }) => operator!.id === id
-    );
+    const index: number = operators.findIndex(({ id }) => operator!.id === id);
 
     const lowerBoundIndex: number = Math.max(
       0,
@@ -40,14 +33,14 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
     );
     const upperBoundIndex: number = lowerBoundIndex + NUMBER_OF_SEARCH_RESULTS;
 
-    return rarityOrder.slice(lowerBoundIndex, upperBoundIndex);
+    return operators.slice(lowerBoundIndex, upperBoundIndex);
   }
 
   const input: string = nameInput.value.toLowerCase();
   const searchResults: GeneratedOperatorIndexData[] = [];
 
   console.time(`searchResults (${input})`);
-  for (const otherOperator of rarityOrder) {
+  for (const otherOperator of operators) {
     if (searchResults.length >= NUMBER_OF_SEARCH_RESULTS) break;
     if (
       otherOperator.key.length >= input.length &&

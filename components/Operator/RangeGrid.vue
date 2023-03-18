@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { GeneratedRangeData } from "~/tools/generate-data/operator/range";
+import type { GeneratedRangeData } from "~/tools/generate-data/operator/range";
 
 const { range } = defineProps<{
   range: GeneratedRangeData;
@@ -10,7 +10,14 @@ if (!editedGrid.find(({ row, col }) => row === 0 && col === 0)) {
   editedGrid.push({ row: 0, col: 0 });
 }
 
-const gridData = $computed(() => {
+const gridData = computed<{
+  minRow: number;
+  maxRow: number;
+  totalRow: number;
+  minCol: number;
+  maxCol: number;
+  totalCol: number;
+}>(() => {
   let minRow = 0;
   let maxRow = 0;
   let minCol = 0;

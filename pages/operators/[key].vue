@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { useSeoMeta } from "@unhead/vue";
-import { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import { GeneratedModuleData } from "~/tools/generate-data/operator/module";
-import { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait";
-import { OperatorState, TalentState } from "~/utils";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import type { GeneratedModuleData } from "~/tools/generate-data/operator/module";
+import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait";
+import type { OperatorState, TalentState } from "~/utils";
+import type { GeneratedElitePhaseData } from "~~/tools/generate-data/operator/elite";
 
 const {
   params: { key: operatorKey },
@@ -12,8 +13,8 @@ const { t } = useI18n();
 
 // Dynamic imports must start with ./ or ../
 // https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#limitations
-const { default: operator }: { default: GeneratedOperatorData } = await import(
-  `../../data/operators/${operatorKey}.json`
+const operator: GeneratedOperatorData = await useOperatorData(
+  <string>operatorKey
 );
 
 const finalTraitCandidate = computed<GeneratedTraitCandidateData>(() => {
@@ -34,7 +35,7 @@ const finalTraitCandidate = computed<GeneratedTraitCandidateData>(() => {
   return finalCandidate;
 });
 
-const pageMetaTitle = computed(() =>
+const pageMetaTitle = computed<string>(() =>
   t("operator.meta.title", {
     name: t(`${operator.key}.name`),
     rarity: operator.rarity,
@@ -43,7 +44,7 @@ const pageMetaTitle = computed(() =>
   })
 );
 
-const pageDescription = computed(() =>
+const pageDescription = computed<string>(() =>
   convertRichText(
     t(
       `${operator.key}.traitCandidates.E${finalTraitCandidate.value.unlockConditions.elite}-L${finalTraitCandidate.value.unlockConditions.level}.description`
@@ -85,7 +86,7 @@ useHead({
 
 const finalPhase = operator.phases.slice(-1)[0];
 
-const isSidebarExpanded = ref(false);
+const isSidebarExpanded = ref<boolean>(false);
 const operatorState = ref<OperatorState>({
   elite: finalPhase.elite,
   level: finalPhase.maxLevel,
@@ -96,9 +97,11 @@ const operatorState = ref<OperatorState>({
   areBonusesIncluded: true,
 });
 
-const currentPhase = computed(() => operator.phases[operatorState.value.elite]);
+const currentPhase = computed<GeneratedElitePhaseData>(
+  () => operator.phases[operatorState.value.elite]
+);
 
-const talentEliteLevelNumbers = computed(
+const talentEliteLevelNumbers = computed<[number, number][]>(
   () =>
     operator.talents
       ?.reduce((accumulator, talent) => {
@@ -117,7 +120,7 @@ const talentEliteLevelNumbers = computed(
         aElite === bElite ? aLevel - bLevel : aElite - bElite
       ) || []
 );
-const talentPotentialNumbers = computed(
+const talentPotentialNumbers = computed<number[]>(
   () =>
     operator.talents
       ?.reduce((accumulator, talent) => {

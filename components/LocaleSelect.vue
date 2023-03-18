@@ -1,12 +1,14 @@
 <script setup lang="ts">
+import type { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables";
+
 const {
   locale: currentLocale,
   locales,
   setLocale,
-} = $(useI18n({ useScope: "global" }));
+} = useI18n({ useScope: "global" });
 
-const availableLocales = $computed(() => {
-  return locales.map((locale) => {
+const availableLocales = computed<LocaleObject[]>(() => {
+  return locales.value.map((locale) => {
     if (typeof locale === "object") return locale;
     return {
       code: locale,
@@ -15,10 +17,12 @@ const availableLocales = $computed(() => {
   });
 });
 
-const currentLocaleObject = $computed(() => {
-  // @ts-ignore microsoft/TypeScript#44373 since June 2021
-  return locales.find((locale) => locale.code === currentLocale);
-});
+const currentLocaleObject = computed<LocaleObject>(
+  () =>
+    (<LocaleObject[]>locales.value).find(
+      (locale) => locale.code === currentLocale.value
+    )!
+);
 </script>
 
 <template>
@@ -27,7 +31,7 @@ const currentLocaleObject = $computed(() => {
     :triggers="['click', 'hover', 'focus']"
     menu-class="bg-gray-200 w-max sm:w-full shadow p-1"
     aria-role="list"
-    @update:modelValue="setLocale(currentLocale)"
+    @update:modelValue="setLocale(<string>currentLocale)"
   >
     <template #trigger="{ active }">
       <OButton

@@ -1,21 +1,11 @@
 <script setup lang="ts">
-import data from "~/data/operators/index.json";
-import { GeneratedOperatorIndexData } from "~/tools/generate-data/operator";
-
-// @ts-ignore
-const operatorRarityOrder = $computed<GeneratedOperatorIndexData[]>(() =>
-  [...data].sort((a, b) => {
-    const rarityOrder = b.rarity - a.rarity;
-    if (rarityOrder) return rarityOrder;
-    return data.indexOf(a) - data.indexOf(b);
-  })
-);
+const operators = useOperatorsIndexData();
 </script>
 
 <template>
   <ul class="operator-grid">
     <OperatorGridItem
-      v-for="operator in operatorRarityOrder"
+      v-for="operator in operators"
       :key="operator.key"
       :operator="operator"
     />

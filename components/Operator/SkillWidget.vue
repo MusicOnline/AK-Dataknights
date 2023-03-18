@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import { GeneratedSkillData } from "~~/tools/generate-data/operator/skill";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import type { GeneratedSkillData } from "~~/tools/generate-data/operator/skill";
 
-const { operator, skill } = defineProps<{
+const { skill } = defineProps<{
   operator: GeneratedOperatorData;
   skill: GeneratedSkillData;
 }>();
@@ -25,30 +25,30 @@ function getRowSpanValuesForEqualValues(values: any[]): number[] {
   return rowSpanValues;
 }
 
-const initSpRowSpanValues = $computed(() =>
+const initSpRowSpanValues = computed<number[]>(() =>
   getRowSpanValuesForEqualValues(
     skill.levels.map(({ spData: { initSp } }) => initSp)
   )
 );
-const spCostRowSpanValues = $computed(() =>
+const spCostRowSpanValues = computed<number[]>(() =>
   getRowSpanValuesForEqualValues(
     skill.levels.map(({ spData: { spCost } }) => spCost)
   )
 );
-const durationRowSpanValues = $computed(() =>
+const durationRowSpanValues = computed<number[]>(() =>
   getRowSpanValuesForEqualValues(skill.levels.map(({ duration }) => duration))
 );
-const rangeRowSpanValues = $computed(() =>
+const rangeRowSpanValues = computed<number[]>(() =>
   getRowSpanValuesForEqualValues(skill.levels.map(({ range }) => range?.id))
 );
-const isRangeExistent = $computed(() =>
+const isRangeExistent = computed<boolean>(() =>
   skill.levels.some(({ range }) => range)
 );
 
-const initSpIsNotAlwaysZero = $computed(
+const isInitSpNotAlwaysZero = computed<boolean>(
   () =>
     skill.levels[0].spData.initSp !== 0 ||
-    initSpRowSpanValues[0] !== initSpRowSpanValues.length
+    initSpRowSpanValues.value[0] !== initSpRowSpanValues.value.length
 );
 </script>
 
@@ -96,7 +96,7 @@ const initSpIsNotAlwaysZero = $computed(
         <tr>
           <th class="w-8 sm:w-16">{{ t("operator.ui.level") }}</th>
           <template v-if="skill.levels[0].skillType !== 'PASSIVE'">
-            <th class="sm:w-20" v-if="initSpIsNotAlwaysZero">
+            <th class="sm:w-20" v-if="isInitSpNotAlwaysZero">
               {{ t("operator.skill.initSp") }}
             </th>
             <th class="sm:w-20">{{ t("operator.skill.spCost") }}</th>
@@ -126,7 +126,7 @@ const initSpIsNotAlwaysZero = $computed(
             <td
               class="text-center"
               v-if="
-                initSpIsNotAlwaysZero &&
+                isInitSpNotAlwaysZero &&
                 initSpRowSpanValues[level.level - 1] !== 0
               "
               :rowspan="initSpRowSpanValues[level.level - 1]"

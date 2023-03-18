@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import "~/assets/css/index.scss";
 
-import { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables";
+import type { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables";
 import { useSeoMeta } from "@unhead/vue";
 
 const { t, locale, locales } = useI18n();

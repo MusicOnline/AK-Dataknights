@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import { GeneratedModuleData } from "~/tools/generate-data/operator/module";
-import { ModuleState } from "~/utils";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import type { GeneratedModuleData } from "~/tools/generate-data/operator/module";
+import type { ModuleState } from "~/utils";
 
-const { operator, module, potential } = defineProps<{
+const { module, potential } = defineProps<{
   operator: GeneratedOperatorData;
   module: GeneratedModuleData;
   potential: number; // ModuleState, affected by OperatorState
@@ -22,7 +22,7 @@ const modulePotentialNumbers = module.stages
   }, <number[]>[])
   .sort() ?? [1];
 
-const bestPotential = $computed(() => {
+const bestPotential = computed<number>(() => {
   let bestPotential: number;
   for (const pot of modulePotentialNumbers) {
     if (pot > potential) break;
@@ -31,15 +31,15 @@ const bestPotential = $computed(() => {
   return bestPotential!;
 });
 
-const moduleState = $ref<ModuleState>({
-  potential: bestPotential,
+const moduleState = ref<ModuleState>({
+  potential: bestPotential.value,
 });
 
 defineEmits(["update:moduleId", "update:moduleStage", "update:potential"]);
 
 const { t } = useI18n();
 
-const combinedModuleTypeName = $computed(() => {
+const combinedModuleTypeName = computed<string>(() => {
   if (!module.typeName2) return module.typeName1;
   return `${module.typeName1}-${module.typeName2}`;
 });
@@ -47,7 +47,7 @@ const combinedModuleTypeName = $computed(() => {
 watch(
   () => potential,
   () => {
-    moduleState.potential = bestPotential;
+    moduleState.value.potential = bestPotential.value;
   }
 );
 </script>

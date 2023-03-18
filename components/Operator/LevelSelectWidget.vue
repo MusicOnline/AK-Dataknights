@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import type { GeneratedElitePhaseData } from "~/tools/generate-data/operator/elite";
 
 const { t } = useI18n();
 
@@ -10,7 +11,7 @@ const { operator, elite, level, areBonusesIncluded } = defineProps<{
   areBonusesIncluded: boolean;
 }>();
 
-const operatorState = $ref({
+const operatorState = ref({
   elite,
   level,
   areBonusesIncluded,
@@ -22,23 +23,25 @@ const emit = defineEmits([
   "update:areBonusesIncluded",
 ]);
 
-const currentPhase = $computed(() => operator.phases[operatorState.elite]);
+const currentPhase = computed<GeneratedElitePhaseData>(
+  () => operator.phases[operatorState.value.elite]
+);
 
 function changeElite(eliteChoice: number) {
-  operatorState.elite = eliteChoice;
-  operatorState.level = currentPhase.maxLevel;
-  emit("update:elite", operatorState.elite);
-  emit("update:level", operatorState.level);
+  operatorState.value.elite = eliteChoice;
+  operatorState.value.level = currentPhase.value.maxLevel;
+  emit("update:elite", operatorState.value.elite);
+  emit("update:level", operatorState.value.level);
 }
 
 function limitOperatorLevel(event: Event) {
   const value = parseInt((<HTMLInputElement>event.target).value);
-  if (value > currentPhase.maxLevel) {
-    operatorState.level = currentPhase.maxLevel;
+  if (value > currentPhase.value.maxLevel) {
+    operatorState.value.level = currentPhase.value.maxLevel;
   } else if (value < 1) {
-    operatorState.level = 1;
+    operatorState.value.level = 1;
   }
-  emit("update:level", operatorState.level);
+  emit("update:level", operatorState.value.level);
 }
 </script>
 
