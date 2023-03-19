@@ -225,9 +225,9 @@ const talentsAndBestAndNextCandidate = computed<
           class="relative h-8 w-8 flex-shrink-0 p-0.5"
           v-for="[elite, level] in talentEliteLevelNumbers"
           :class="{
-            'bg-gray-400 hover:bg-gray-500':
+            'bg-slate-400 hover:bg-slate-500':
               talentState.elite !== elite || talentState.level !== level,
-            'bg-gray-800':
+            'bg-slate-800':
               talentState.elite === elite && talentState.level === level,
           }"
           :key="`${elite}-${level}`"

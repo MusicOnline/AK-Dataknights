@@ -116,7 +116,7 @@ function getLocalizedNameWithTL(
               <h1 class="text-2xl font-bold">
                 {{ t(`${operator.key}.name`) }}
               </h1>
-              <div class="flex h-fit py-0.5 px-1 text-lg text-gray-50">
+              <div class="flex h-fit py-0.5 px-1 text-lg text-slate-50">
                 <Icon
                   class="-mx-0.5 rotate-12 drop-shadow"
                   v-for="i in [...Array(operator.rarity).keys()]"
@@ -187,7 +187,7 @@ function getLocalizedNameWithTL(
 }
 
 .name-rarity-container {
-  @apply flex-1 border-b-4 border-b-gray-800 px-2 pt-2;
+  @apply flex-1 border-b-4 border-b-slate-900 px-2 pt-2;
 
   .operator-rarity-1 & {
     @apply bg-gray-400;
