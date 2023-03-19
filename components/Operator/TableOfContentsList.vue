@@ -88,10 +88,6 @@ function getCombinedModuleTypeName(module: GeneratedModuleData): string {
   @apply text-primary-main;
 }
 
-.item-secondary-text {
-  @apply text-gray-600;
-}
-
 .item-primary-text,
 .item-secondary-text {
   font-weight: bold;

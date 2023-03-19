@@ -74,9 +74,9 @@ function getLocalizedNameWithTL(
       <img class="m-auto h-32 w-32 sm:m-0 sm:h-fit" :src="currentAvatarUrl" />
       <div class="flex flex-col gap-2">
         <!-- Icon, name, rarity, class -->
-        <div class="flex md:h-16">
+        <div class="flex text-slate-900 md:h-16">
           <img
-            class="h-12 bg-gray-800 object-contain p-0.5 md:h-full"
+            class="h-12 bg-slate-900 object-contain p-0.5 md:h-full"
             :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_${operator.class.toLowerCase()}.png`"
           />
           <div class="name-rarity-container">
@@ -130,16 +130,16 @@ function getLocalizedNameWithTL(
         <!-- Class branch, trait -->
         <div class="flex">
           <img
-            class="h-9 w-9 bg-gray-800 object-contain p-0.5"
+            class="h-9 w-9 bg-slate-900 object-contain p-0.5"
             :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/subclass/sub_${operator.classBranch}_icon.png`"
           />
           <div>
-            <div class="w-fit bg-gray-800 px-1 text-sm text-white">
+            <div class="w-fit bg-slate-900 px-1 text-sm text-slate-50">
               {{ t(`operator.class.${operator.class}`) }} &mdash;
               {{ t(`operator.classBranch.${operator.classBranch}`) }}
             </div>
             <div
-              class="bg-gray-200 px-1 py-0.5"
+              class="bg-bg-container-1-normal text-fg-body px-1 py-0.5"
               v-html="
                 convertRichText(
                   t(
@@ -153,14 +153,14 @@ function getLocalizedNameWithTL(
         </div>
         <!-- Tags -->
         <ul class="flex flex-wrap justify-center gap-1 sm:justify-start">
-          <li class="bg-gray-500 px-2 text-gray-50">
+          <li class="bg-slate-500 px-2 text-slate-50">
             {{ operator.displayNumber }}
           </li>
-          <li class="bg-gray-500 px-2 text-gray-50">
+          <li class="bg-slate-500 px-2 text-slate-50">
             {{ t(`operator.position.${operator.position}`) }}
           </li>
           <li
-            class="bg-gray-200 px-2"
+            class="bg-slate-200 px-2 text-slate-900"
             v-for="tag in operator.tagList"
             :key="tag"
           >

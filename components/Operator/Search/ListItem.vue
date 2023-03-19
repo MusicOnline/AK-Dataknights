@@ -13,7 +13,7 @@ const { large = false } = defineProps<{
 <template>
   <li>
     <NuxtLink
-      class="flex h-full gap-2 shadow-sm transition-all duration-75 hover:shadow"
+      class="flex h-full gap-2 text-slate-900 shadow-sm transition-all duration-75 hover:shadow"
       :to="localePath(`/operators/${operator.key}`)"
       :class="[
         { 'px-3 py-2': large, 'p-0.5': !large },

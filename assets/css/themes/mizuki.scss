@@ -1,0 +1,76 @@
+@mixin light-mode {
+  --color-primary-main: 96, 165, 250;
+  --color-primary-alt: 30, 64, 175;
+  --color-secondary-main: 224, 142, 214;
+  --color-secondary-alt: 100, 78, 204;
+  --color-tertiary-main: 241, 255, 122;
+
+  // Brand
+  --color-brand-icon: var(--color-primary-main);
+  --color-brand-text: var(--tw-slate-900);
+
+  // Navigation bar
+  --color-bg-navbar: var(--tw-slate-50);
+  --color-fg-navbar-inactive: var(--tw-slate-700);
+  --color-fg-navbar-active: var(--color-primary-main);
+  --color-fg-navbar-focus: var(--tw-slate-900);
+
+  // Body
+  --color-bg-body: var(--tw-slate-50);
+  --color-fg-body: var(--tw-slate-900);
+
+  // Primary container
+  --color-bg-primary: var(--color-primary-main);
+  --color-fg-primary: var(--tw-slate-50);
+
+  // Input
+  --color-bg-input: var(--tw-slate-200);
+  --color-bg-input-focus: var(--tw-slate-50);
+  --color-fg-input: var(--tw-slate-900);
+  --color-fg-input-placeholder: var(--tw-slate-400);
+
+  // Container 1
+  --color-bg-container-1: var(--tw-slate-200);
+  --color-bg-container-1-focus: var(--tw-slate-300);
+  --color-fg-container-1: var(--tw-slate-700);
+}
+
+@mixin dark-mode-override {
+  // Brand
+  --color-brand-icon: var(--color-primary-main);
+  --color-brand-text: var(--tw-slate-50);
+
+  // Navigation bar
+  --color-bg-navbar: var(--tw-slate-900);
+  --color-fg-navbar-inactive: var(--tw-slate-300);
+  --color-fg-navbar-active: var(--color-primary-main);
+  --color-fg-navbar-focus: var(--tw-slate-50);
+
+  // Body
+  --color-bg-body: var(--tw-slate-800);
+  --color-fg-body: var(--tw-slate-50);
+
+  // Input
+  --color-bg-input: var(--tw-slate-800);
+  --color-bg-input-focus: var(--tw-slate-700);
+  --color-fg-input: var(--tw-slate-50);
+  --color-fg-input-placeholder: var(--tw-slate-400);
+
+  // Container 1
+  --color-bg-container-1: var(--tw-slate-700);
+  --color-bg-container-1-focus: var(--tw-slate-600);
+  --color-fg-container-1: var(--tw-slate-300);
+}
+
+:root,
+[data-theme="mizuki"] {
+  @include light-mode;
+
+  &[data-mode="dark"] {
+    @include dark-mode-override;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @include light-mode;
+  }
+}

@@ -218,7 +218,7 @@ const talentsAndBestAndNextCandidate = computed<
 <template>
   <div class="flex flex-col">
     <!-- Elite & potential buttons -->
-    <div class="flex gap-1 bg-gray-300">
+    <div class="bg-bg-container-1-normal flex gap-1">
       <!-- Elites -->
       <div class="flex gap-1">
         <button
@@ -246,7 +246,7 @@ const talentsAndBestAndNextCandidate = computed<
             }"
           />
           <span
-            class="absolute left-0 top-0 h-full w-full text-center text-xs text-white"
+            class="absolute left-0 top-0 h-full w-full text-center text-xs text-slate-50"
             v-if="level !== 1"
             :class="{
               'opacity-90':
@@ -262,9 +262,9 @@ const talentsAndBestAndNextCandidate = computed<
           class="h-8 w-8 flex-shrink-0 p-0.5"
           v-for="potential in talentPotentialNumbers"
           :class="{
-            'bg-gray-400 hover:bg-gray-500':
+            'bg-slate-500 hover:bg-slate-600':
               talentState.potential !== potential,
-            'bg-gray-800': talentState.potential === potential,
+            'bg-slate-900': talentState.potential === potential,
           }"
           :key="potential"
           @click="
@@ -279,7 +279,7 @@ const talentsAndBestAndNextCandidate = computed<
       </div>
     </div>
     <!-- List of talent details -->
-    <ul class="flex flex-col gap-2 bg-gray-200 p-2">
+    <ul class="flex flex-col gap-2 p-2">
       <li
         v-for="[
           talent,
@@ -289,7 +289,7 @@ const talentsAndBestAndNextCandidate = computed<
         :key="talent.talentNumber"
       >
         <template v-if="bestCandidate">
-          <div class="bg-primary-main w-fit px-1 py-0.5 text-xs text-white">
+          <div class="bg-bg-primary text-fg-primary w-fit px-1 py-0.5 text-xs">
             {{
               t(
                 `${operator.key}.talents.${talent.talentNumber}.${bestCandidate.key}.name`
@@ -324,7 +324,7 @@ const talentsAndBestAndNextCandidate = computed<
             }
           "
         >
-          <div class="w-fit bg-gray-400 px-1 py-0.5 text-xs text-white">
+          <div class="w-fit bg-slate-500 px-1 py-0.5 text-xs text-slate-50">
             {{
               t(
                 `${operator.key}.talents.${talent.talentNumber}.${nextCandidate.key}.name`

@@ -5,9 +5,9 @@ const { t } = useI18n();
 
 <template>
   <nav
-    class="fixed bottom-0 left-0 z-30 flex h-16 w-full bg-white px-4 shadow-[0_-1px_3px_rgb(0_0_0_/_10%)] dark:bg-gray-900"
+    class="bg-bg-navbar fixed bottom-0 left-0 z-30 flex h-16 w-full px-4 shadow-[0_-1px_3px_rgb(0_0_0_/_10%)]"
   >
-    <ul class="flex w-full items-center text-gray-800">
+    <ul class="text-fg-navbar-inactive flex w-full items-center">
       <li class="nav-item">
         <NuxtLink class="nav-link" :to="localePath('/operators')">
           <Icon class="inactive-icon" name="heroicons:users" />
@@ -35,7 +35,7 @@ const { t } = useI18n();
   flex: 1;
 
   .nav-link {
-    @apply transition-colors  hover:text-gray-900;
+    @apply hover:text-fg-navbar-focus  focus:text-fg-navbar-focus transition-colors;
 
     display: block;
     width: 100%;
@@ -54,6 +54,8 @@ const { t } = useI18n();
 
     &.router-link-active,
     &.active {
+      @apply text-fg-navbar-active;
+
       .inactive-icon {
         display: none;
       }

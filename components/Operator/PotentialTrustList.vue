@@ -33,10 +33,10 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
     <ul class="flex flex-col gap-1 text-sm">
       <li>
         <button
-          class="flex w-full gap-0.5 text-left hover:bg-gray-300"
+          class="hover:bg-bg-input-focus flex w-full gap-0.5 text-left"
           @click="$emit('update:potential', (operatorState.potential = 1))"
         >
-          <div class="block h-6 w-6 flex-shrink-0 bg-gray-800 p-0.5">
+          <div class="block h-6 w-6 flex-shrink-0 bg-slate-900 p-0.5">
             <img
               src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/potential/1.png"
             />
@@ -49,7 +49,7 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
         :key="potentialNumber"
       >
         <button
-          class="flex w-full gap-0.5 text-left hover:bg-gray-300"
+          class="hover:bg-bg-input-focus flex w-full gap-0.5 text-left"
           @click="
             $emit(
               'update:potential',
@@ -60,8 +60,8 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
           <div
             class="block h-6 w-6 flex-shrink-0 p-0.5"
             :class="{
-              'bg-gray-400': operatorState.potential < potentialNumber,
-              'bg-gray-800': operatorState.potential >= potentialNumber,
+              'bg-slate-500': operatorState.potential < potentialNumber,
+              'bg-slate-900': operatorState.potential >= potentialNumber,
             }"
           >
             <img
@@ -78,7 +78,7 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
       </li>
     </ul>
     <button
-      class="flex gap-0.5 text-left text-sm hover:bg-gray-300"
+      class="hover:bg-bg-input-focus flex gap-0.5 text-left text-sm"
       v-if="trustStats"
       @click="
         $emit(
@@ -90,8 +90,8 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
       <div
         class="flex h-6 w-6 flex-shrink-0 p-0.5"
         :class="{
-          'bg-gray-400 text-orange-300': !operatorState.isMaxTrustIncluded,
-          'bg-gray-800 text-orange-400': operatorState.isMaxTrustIncluded,
+          'bg-slate-500 text-orange-300': !operatorState.isMaxTrustIncluded,
+          'bg-slate-900 text-orange-400': operatorState.isMaxTrustIncluded,
         }"
       >
         <Icon

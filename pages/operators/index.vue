@@ -3,7 +3,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div class="m-auto flex max-w-7xl flex-col gap-2">
+  <div class="m-auto flex flex-col gap-2">
     <!-- <Breadcrumbs class="text-sm" /> -->
     <h1 class="text-2xl font-bold">{{ t("navigation.operators") }}</h1>
     <OperatorSearchWidget

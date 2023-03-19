@@ -108,10 +108,12 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
 
 <template>
   <div class="flex flex-col" :class="{ 'gap-2': !overlayResults }">
-    <div class="flex items-center gap-2 bg-gray-200 p-2">
+    <div
+      class="bg-bg-input-normal focus-within:bg-bg-input-focus text-fg-input-normal outline-fg-input-placeholder flex items-center gap-2 p-2 outline outline-1"
+    >
       <Icon name="heroicons:magnifying-glass" />
       <input
-        class="min-w-0 flex-grow bg-transparent outline-none"
+        class="placeholder:text-fg-input-placeholder min-w-0 flex-grow bg-transparent outline-none"
         v-model.trim="nameInput"
         type="text"
         :placeholder="t('operator.ui.searchOperator')"
@@ -121,7 +123,7 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
       <OperatorSearchList
         :operators="operatorSearchResults"
         :class="{
-          'absolute top-0 left-0 w-full bg-gray-200 p-2 shadow-2xl':
+          'bg-bg-input-focus outline-fg-input-placeholder absolute top-0 left-0 w-full p-2 shadow-2xl outline outline-1':
             overlayResults,
         }"
         :large="large"

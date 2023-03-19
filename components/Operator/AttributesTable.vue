@@ -151,11 +151,11 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
 
 <template>
   <div
-    class="grid grid-flow-col-dense grid-rows-4 gap-0.5 bg-gray-300 sm:grid-rows-2 md:grid-rows-4 lg:grid-rows-2"
+    class="bg-bg-container-1-normal grid grid-flow-col-dense grid-rows-4 gap-0.5 sm:grid-rows-2 md:grid-rows-4 lg:grid-rows-2"
   >
     <!-- Row 1 -->
     <div
-      class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-1 md:order-1 lg:order-1"
+      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-1 md:order-1 lg:order-1"
     >
       <div class="flex gap-1 text-emerald-500">
         <Icon class="mt-1 flex-shrink-0" name="bx:plus-medical" />
@@ -164,7 +164,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       <div>{{ operatorAttributes.maxHp }}</div>
     </div>
     <div
-      class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-3 md:order-2 lg:order-3"
+      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-3 md:order-2 lg:order-3"
     >
       <div class="flex gap-1 text-red-500">
         <Icon class="mt-1 flex-shrink-0" name="mdi:sword-cross" />
@@ -173,7 +173,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       <div>{{ operatorAttributes.atk }}</div>
     </div>
     <div
-      class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-5 md:order-3 lg:order-5"
+      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-5 md:order-3 lg:order-5"
     >
       <div class="flex gap-1 text-sky-500">
         <Icon class="mt-1 flex-shrink-0" name="mdi:shield" />
@@ -182,7 +182,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       <div>{{ operatorAttributes.def }}</div>
     </div>
     <div
-      class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-7 md:order-4 lg:order-7"
+      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-7 md:order-4 lg:order-7"
     >
       <div class="flex gap-1 text-violet-500">
         <Icon
@@ -196,7 +196,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
 
     <!-- Row 2 -->
     <div
-      class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-2 md:order-5 lg:order-2"
+      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-2 md:order-5 lg:order-2"
     >
       <div class="flex gap-1 text-lime-500">
         <Icon class="mt-1 flex-shrink-0" name="mdi:alpha-c-circle" />
@@ -205,7 +205,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       <div>{{ operatorAttributes.cost }}</div>
     </div>
     <div
-      class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-4 md:order-6 lg:order-4"
+      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-4 md:order-6 lg:order-4"
     >
       <div class="flex gap-1 text-rose-500">
         <Icon class="mt-1 flex-shrink-0" name="game-icons:spinning-sword" />
@@ -221,7 +221,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       </div>
     </div>
     <div
-      class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-6 md:order-7 lg:order-6"
+      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-6 md:order-7 lg:order-6"
     >
       <div class="flex gap-1 text-blue-500">
         <Icon class="mt-1 flex-shrink-0" name="mdi:shield-account" />
@@ -230,7 +230,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       <div>{{ operatorAttributes.blockCnt }}</div>
     </div>
     <div
-      class="flex flex-col bg-gray-200 px-2 py-0.5 sm:order-8 md:order-8 lg:order-8"
+      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-8 md:order-8 lg:order-8"
     >
       <div class="flex gap-1 text-pink-500">
         <Icon

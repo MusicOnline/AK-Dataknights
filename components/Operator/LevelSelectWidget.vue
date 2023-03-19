@@ -56,10 +56,10 @@ function limitOperatorLevel(event: Event) {
         ]"
       >
         <button
-          class="w-8 p-0.5"
+          class="w-8 p-0.5 hover:bg-slate-600"
           :class="{
-            'bg-gray-800': elite === eliteChoice,
-            'bg-gray-600': elite !== eliteChoice,
+            'bg-slate-800': elite === eliteChoice,
+            'bg-slate-500': elite !== eliteChoice,
           }"
           @click="changeElite(eliteChoice)"
         >
@@ -76,7 +76,7 @@ function limitOperatorLevel(event: Event) {
     <label class="flex items-center gap-1 font-bold">
       <span>{{ t("operator.ui.level") }}</span>
       <input
-        class="ml-auto w-14 px-1 text-xl"
+        class="bg-bg-input-normal focus:bg-bg-input-focus text-fg-input-normal placeholder:text-fg-input-placeholder ml-auto w-14 px-1 text-xl"
         v-model.number="operatorState.level"
         :min="1"
         :max="currentPhase.maxLevel"
@@ -84,9 +84,10 @@ function limitOperatorLevel(event: Event) {
         @change="limitOperatorLevel"
       />
     </label>
-    <span class="lg:hidden"
-      ><span class="text-xl">/</span>{{ currentPhase.maxLevel }}</span
-    >
+    <span class="lg:hidden">
+      <span class="text-xl">/</span>
+      {{ currentPhase.maxLevel }}
+    </span>
     <OSlider
       class="mx-3 mb-2 hidden lg:block"
       v-model.number="operatorState.level"
@@ -94,7 +95,7 @@ function limitOperatorLevel(event: Event) {
       :max="currentPhase.maxLevel"
       :tooltip="false"
       fill-class="bg-primary-main"
-      track-class="bg-gray-100"
+      track-class="bg-slate-100"
       @update:modelValue="$emit('update:level', operatorState.level)"
     >
       <OSliderTick value="1" tick-label-class="mt-1.5 text-xs">1</OSliderTick>
@@ -120,9 +121,9 @@ function limitOperatorLevel(event: Event) {
       <OSwitch
         v-model="operatorState.areBonusesIncluded"
         :rounded="false"
-        check-class="bg-gray-600 outline outline-1 outline-gray-700 transition-colors"
+        check-class="bg-slate-500 outline outline-1 outline-slate-600 transition-colors"
         check-checked-class="bg-green-400 outline-green-500"
-        check-switch-class="bg-white transition-transform"
+        check-switch-class="bg-slate-50 transition-transform"
         label-class="ml-1"
         @update:modelValue="
           $emit('update:areBonusesIncluded', operatorState.areBonusesIncluded)

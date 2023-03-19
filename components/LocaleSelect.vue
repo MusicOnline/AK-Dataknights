@@ -29,13 +29,13 @@ const currentLocaleObject = computed<LocaleObject>(
   <ODropdown
     v-model="currentLocale"
     :triggers="['click', 'hover', 'focus']"
-    menu-class="bg-gray-200 w-max sm:w-full shadow p-1"
+    menu-class="bg-bg-container-1-normal w-max sm:w-full shadow p-1"
     aria-role="list"
     @update:modelValue="setLocale(<string>currentLocale)"
   >
     <template #trigger="{ active }">
       <OButton
-        label-class="flex items-center gap-1 bg-gray-200 p-1 text-gray-600"
+        label-class="flex items-center gap-1 bg-bg-container-1-normal p-1 text-fg-container-1"
       >
         <Icon class="text-xl" name="heroicons:globe-alt" />
         <span class="hidden sm:block">{{ currentLocaleObject.name }}</span>
@@ -44,12 +44,12 @@ const currentLocaleObject = computed<LocaleObject>(
     </template>
 
     <ODropdownItem
-      class="p-1 text-gray-900 hover:bg-gray-300"
+      class="bg-bg-container-1-normal hover:bg-bg-container-1-focus p-1"
       v-for="locale in availableLocales"
       :key="locale.code"
       :value="locale.code"
       :data-lang="locale.code"
-      item-active-class="bg-primary-main hover:bg-primary-main text-gray-50"
+      item-active-class="bg-bg-primary hover:bg-bg-primary text-fg-primary"
       aria-role="listitem"
     >
       {{ locale.name }}

@@ -175,13 +175,25 @@ watch(
 </script>
 
 <template>
-  <div>
+  <div class="relative flex">
     <OperatorSidebar
+      class="mt-12 h-[calc(100vh-7rem)] w-56 md:ml-0 md:mb-0 md:h-[calc(100vh-3rem)] lg:w-72"
+      v-model:is-sidebar-expanded="isSidebarExpanded"
+      :class="{
+        '-ml-56': !isSidebarExpanded,
+      }"
       :operator="operator"
-      :is-sidebar-expanded="isSidebarExpanded"
     />
     <!-- Main content -->
-    <main class="flex max-w-7xl flex-col gap-2 md:ml-56 lg:ml-72">
+    <!--
+      Page:     max-w-7xl = 80rem (from app.vue NuxtPage)
+      Sidebar:  lg:w-72   = 18rem 
+      Gap:      p-2       = 0.5rem (from app.vue NuxtPage's parent)
+      80rem + 2 * (18rem + 0.5rem)
+    -->
+    <main
+      class="flex flex-col gap-2 md:ml-56 lg:ml-[clamp(0rem,calc((117rem-100vw)/2),18rem)]"
+    >
       <!-- <Breadcrumbs class="text-sm" /> -->
       <!-- General information -->
       <div class="anchor-ghost" id="introduction" />
@@ -191,7 +203,7 @@ watch(
       />
       <!-- Sticky level select -->
       <OperatorLevelSelectWidget
-        class="sticky top-12 z-10 bg-gray-300 p-2 shadow"
+        class="bg-bg-container-1-normal text-fg-container-1 sticky top-12 z-10 p-2 shadow"
         v-model:elite="operatorState.elite"
         v-model:level="operatorState.level"
         v-model:are-bonuses-included="operatorState.areBonusesIncluded"
@@ -200,9 +212,9 @@ watch(
       <!-- Range, stats, potentials, trust -->
       <div class="anchor-ghost" id="stats" />
       <div
-        class="flex flex-wrap justify-center gap-1 bg-gray-200 p-2 sm:flex-nowrap sm:justify-start lg:gap-8"
+        class="outline-bg-container-1-normal flex flex-wrap justify-center gap-1 p-2 outline outline-1 sm:flex-nowrap sm:justify-start lg:gap-8"
       >
-        <div class="grid w-full bg-gray-300 p-2 sm:max-w-[8rem]">
+        <div class="grid w-full p-2 sm:max-w-[8rem]">
           <OperatorRangeGrid
             class="m-auto"
             v-if="currentPhase.range"
@@ -221,8 +233,12 @@ watch(
         />
       </div>
       <DevOnly>
-        <div class="bg-gray-200 p-1">{{ operatorState }}</div>
-        <div class="bg-gray-200 p-1">{{ talentState }}</div>
+        <div class="outline-bg-container-1-normal p-1 outline outline-1">
+          {{ operatorState }}
+        </div>
+        <div class="outline-bg-container-1-normal p-1 outline outline-1">
+          {{ talentState }}
+        </div>
       </DevOnly>
       <!-- Talents -->
       <template v-if="operator.talents?.length">
@@ -231,6 +247,7 @@ watch(
           {{ t("operator.ui.talents") }}
         </h1>
         <OperatorTalentWidget
+          class="outline-bg-container-1-normal outline outline-1"
           v-model:elite="talentState.elite"
           v-model:level="talentState.level"
           v-model:potential="talentState.potential"
@@ -246,7 +263,7 @@ watch(
         <template v-for="(skill, index) in operator.skills" :key="skill.id">
           <div class="anchor-ghost" :id="`skill-${index + 1}`" />
           <OperatorSkillWidget
-            class="bg-gray-200 p-2"
+            class="outline-bg-container-1-normal p-2 outline outline-1"
             :operator="operator"
             :skill="skill"
           />
@@ -264,8 +281,7 @@ watch(
             :id="`module-${getCombinedModuleTypeName(mod)}`"
           />
           <OperatorModuleWidget
-            class="bg-gray-200 p-2"
-            v-for="mod in operator.modules"
+            class="outline-bg-container-1-normal p-2 outline outline-1"
             v-model:module-id="operatorState.moduleId"
             v-model:module-stage="operatorState.moduleStage"
             :potential="operatorState.potential"

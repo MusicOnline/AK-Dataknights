@@ -72,19 +72,19 @@ const isInitSpNotAlwaysZero = computed<boolean>(
             )
           }}
         </div>
-        <div class="flex gap-2 text-white">
+        <div class="flex gap-2 text-slate-900">
           <div
             class="bg-primary-main px-2"
             v-if="skill.levels[0].skillType !== 'PASSIVE'"
             :class="{
-              'bg-green-500': skill.levels[0].spData.spType === 'AUTO',
-              'bg-orange-500': skill.levels[0].spData.spType === 'OFFENSIVE',
-              'bg-yellow-500': skill.levels[0].spData.spType === 'DEFENSIVE',
+              'bg-green-400': skill.levels[0].spData.spType === 'AUTO',
+              'bg-orange-400': skill.levels[0].spData.spType === 'OFFENSIVE',
+              'bg-yellow-400': skill.levels[0].spData.spType === 'DEFENSIVE',
             }"
           >
             {{ t(`operator.skill.spType.${skill.levels[0].spData.spType}`) }}
           </div>
-          <div class="bg-gray-500 px-2">
+          <div class="bg-slate-300 px-2">
             {{ t(`operator.skill.skillType.${skill.levels[0].skillType}`) }}
           </div>
         </div>
@@ -183,11 +183,11 @@ const isInitSpNotAlwaysZero = computed<boolean>(
 <style scoped lang="scss">
 thead th,
 tbody td {
-  @apply border-2;
+  @apply border-bg-body border-2;
 }
 
 thead tr {
-  @apply bg-primary-main text-white;
+  @apply bg-bg-primary text-fg-primary;
 }
 
 tbody td {
@@ -195,7 +195,7 @@ tbody td {
 }
 
 tbody tr td:first-child {
-  @apply bg-gray-800 font-bold text-white;
+  @apply bg-slate-900 font-bold text-slate-50;
 }
 
 .description {
@@ -204,7 +204,7 @@ tbody tr td:first-child {
 
 tbody tr td:not(:first-child, .description),
 tbody tr:nth-child(odd) .description {
-  @apply bg-gray-300;
+  @apply bg-bg-container-1-normal;
 }
 </style>
 

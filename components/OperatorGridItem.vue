@@ -15,7 +15,7 @@ const localePath = useLocalePath();
 <template>
   <li>
     <NuxtLink
-      class="flex h-full flex-col p-1 shadow-sm transition-all duration-75 hover:shadow"
+      class="flex h-full flex-col p-1 text-slate-900 shadow-sm transition-all duration-75 hover:shadow"
       :to="localePath(`/operators/${operator.key}`)"
       :class="`operator-rarity-${operator.rarity}`"
     >

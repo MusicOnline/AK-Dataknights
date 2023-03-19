@@ -5,16 +5,14 @@ const { t } = useI18n();
 
 <template>
   <div>
-    <header
-      class="fixed top-0 left-0 z-30 h-12 w-full bg-white p-2 shadow dark:bg-gray-900"
-    >
+    <header class="bg-bg-navbar fixed top-0 left-0 z-30 h-12 w-full p-2 shadow">
       <nav class="m-auto flex max-w-7xl items-center gap-4">
         <NuxtLink class="block" :to="localePath('/operators')">
-          <SiteBrand
-            class="text-2xl text-gray-800 transition-colors hover:text-gray-900 md:text-3xl"
-          />
+          <SiteBrand class="text-2xl transition-colors md:text-3xl" />
         </NuxtLink>
-        <ul class="hidden w-full items-center gap-2 text-gray-600 md:flex">
+        <ul
+          class="text-fg-navbar-inactive hidden w-full items-center gap-2 md:flex"
+        >
           <li class="nav-item">
             <NuxtLink class="nav-link" :to="localePath('/operators')">
               <Icon class="inactive-icon" name="heroicons:users" />
@@ -34,7 +32,8 @@ const { t } = useI18n();
             </button>
           </li>
         </ul>
-        <LocaleSelect class="ml-auto" />
+        <DarkModeSwitch class="ml-auto" />
+        <LocaleSelect />
       </nav>
     </header>
     <BottomNavigationBar class="md:hidden" />
@@ -44,7 +43,7 @@ const { t } = useI18n();
 <style scoped lang="scss">
 .nav-item {
   .nav-link {
-    @apply gap-1 rounded py-1 px-2 transition-colors hover:text-gray-900;
+    @apply hover:text-fg-navbar-focus focus:text-fg-navbar-focus gap-1 rounded py-1 px-2 transition-colors;
 
     display: flex;
     width: 100%;
@@ -59,6 +58,8 @@ const { t } = useI18n();
 
     &.router-link-active,
     &.active {
+      @apply text-fg-navbar-active;
+
       .inactive-icon {
         display: none;
       }

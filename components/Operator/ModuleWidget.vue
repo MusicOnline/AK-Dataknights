@@ -58,7 +58,7 @@ watch(
       <!-- Icon and name -->
       <div class="flex gap-2">
         <div
-          class="h-12 w-12 bg-gray-800 bg-contain bg-center bg-no-repeat p-1"
+          class="h-12 w-12 bg-slate-900 bg-contain bg-center bg-no-repeat p-1"
           :style="{
             backgroundImage: module.stages
               ? `url('https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/shining/${module.shiningColor}_shining.png')`
@@ -86,9 +86,9 @@ watch(
           class="h-8 w-8 flex-shrink-0 p-0.5"
           v-for="potential in modulePotentialNumbers"
           :class="{
-            'bg-gray-400 hover:bg-gray-500':
+            'bg-slate-500 hover:bg-slate-600':
               moduleState.potential !== potential,
-            'bg-gray-800': moduleState.potential === potential,
+            'bg-slate-900': moduleState.potential === potential,
           }"
           :key="potential"
           @click="moduleState.potential = potential"
@@ -102,7 +102,7 @@ watch(
       <!-- Select module -->
       <div class="ml-auto">
         <button
-          class="flex items-center gap-0.5 bg-gray-800 p-1 text-white"
+          class="bg-bg-container-1-normal text-fg-container-1 flex gap-1 p-1"
           @click="
             () => {
               $emit('update:moduleId', module.id);
@@ -114,15 +114,15 @@ watch(
             }
           "
         >
-          <Icon
-            class="text-xl"
-            :class="{ 'text-green-400': moduleId === module.id }"
-            :name="
-              moduleId === module.id
-                ? 'mdi:checkbox-marked'
-                : 'mdi:checkbox-blank'
-            "
-          />
+          <div
+            class="h-6 w-6 text-slate-50"
+            :class="{
+              'bg-green-400': moduleId === module.id,
+              'bg-slate-50': moduleId !== module.id,
+            }"
+          >
+            <Icon name="fa-solid:check" />
+          </div>
           <span>
             {{
               moduleId === module.id
@@ -135,7 +135,7 @@ watch(
     </div>
     <table class="mr-auto table-fixed border-hidden" v-if="module.stages">
       <thead>
-        <tr class="bg-primary-main text-white">
+        <tr class="bg-bg-primary text-fg-primary">
           <th class="w-8 sm:w-16">{{ t("operator.module.stage") }}</th>
           <th class="sm:w-32">{{ t("operator.module.attributes") }}</th>
           <th>{{ t("operator.module.moduleDescription") }}</th>
@@ -159,11 +159,11 @@ watch(
           "
         >
           <td
-            class="text-center font-bold text-white"
+            class="text-center font-bold text-slate-50"
             :class="{
-              'bg-gray-600':
+              'bg-slate-500':
                 module.id !== moduleId || stage.stage !== moduleStage,
-              'bg-gray-800':
+              'bg-slate-900':
                 module.id === moduleId && stage.stage === moduleStage,
             }"
           >
@@ -186,7 +186,9 @@ watch(
           <td class="description">
             <!-- Trait upgrade stage -->
             <template v-if="stage.stage === 1">
-              <div class="bg-primary-main w-fit px-1 py-0.5 text-xs text-white">
+              <div
+                class="bg-bg-primary text-fg-primary w-fit px-1 py-0.5 text-xs"
+              >
                 {{
                   t("operator.ui.specificBranchTrait", {
                     branch: t(`operator.classBranch.${operator.classBranch}`),
@@ -212,7 +214,7 @@ watch(
             >
               <template v-if="!upgrade.isHidden">
                 <div
-                  class="bg-primary-main w-fit px-1 py-0.5 text-xs text-white"
+                  class="bg-bg-primary text-fg-primary w-fit px-1 py-0.5 text-xs"
                 >
                   {{
                     t(
@@ -241,29 +243,25 @@ watch(
 <style scoped lang="scss">
 thead th,
 tbody td {
-  @apply border-2;
+  @apply border-bg-body border-2;
 }
 
 tbody td:not(:first-child) {
   @apply px-2 py-1;
 }
 
-// tbody tr:not(.active) td:not(:first-child) {
-//   @apply bg-gray-300;
-// }
-
 tbody tr:hover {
   td:first-child {
-    @apply bg-gray-800;
+    @apply bg-slate-900;
   }
 
   td:not(:first-child) {
-    @apply bg-gray-400;
+    @apply bg-bg-container-1-focus;
   }
 }
 
 tbody tr:nth-child(odd):not(:hover) td:not(:first-child) {
-  @apply bg-gray-300;
+  @apply bg-bg-container-1-normal;
 }
 
 .description {
