@@ -1,60 +1,60 @@
-import * as constants from "./constants";
+import * as constants from "./constants"
 
 export interface Localizable {
-  addLocale(locale: typeof constants.GAME_LOCALES[number], ...data: any): void;
+  addLocale(locale: typeof constants.GAME_LOCALES[number], ...data: any): void
   addLocaleTL(
     locale: typeof constants.TRANSLATED_LOCALES[number],
     ...data: any
-  ): void;
-  toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]): any;
+  ): void
+  toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]): any
 }
 
 export class LocalizationString implements Localizable {
-  zh_CN: string;
-  en_US: string | null = null;
-  ja_JP: string | null = null;
-  ko_KR: string | null = null;
-  zh_TW: string | null = null;
-  en_TL: string | null = null;
+  zh_CN: string
+  en_US: string | null = null
+  ja_JP: string | null = null
+  ko_KR: string | null = null
+  zh_TW: string | null = null
+  en_TL: string | null = null
 
   public constructor(zh_CN: string) {
-    this.zh_CN = zh_CN;
+    this.zh_CN = zh_CN
   }
 
   public static fromDataOrNull(
     zh_CN?: string | null
   ): LocalizationString | null {
-    if (zh_CN === null || zh_CN === undefined) return null;
-    return new LocalizationString(zh_CN.trim());
+    if (zh_CN === null || zh_CN === undefined) return null
+    return new LocalizationString(zh_CN.trim())
   }
 
   private addLocaleCommon(
     locale: typeof constants.OUTPUT_LOCALES[number],
     translation?: string | null
   ) {
-    const transformedLocale = locale.replace("-", "_");
+    const transformedLocale = locale.replace("-", "_")
     // @ts-ignore
-    this[transformedLocale] = translation?.trim() ?? null;
+    this[transformedLocale] = translation?.trim() ?? null
   }
 
   public addLocale(
     locale: typeof constants.GAME_LOCALES[number],
     translation?: string | null
   ) {
-    this.addLocaleCommon(locale, translation);
+    this.addLocaleCommon(locale, translation)
   }
 
   public addLocaleTL(
     locale: typeof constants.TRANSLATED_LOCALES[number],
     translation?: string | null
   ) {
-    this.addLocaleCommon(locale, translation);
+    this.addLocaleCommon(locale, translation)
   }
 
   public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
-    const transformedLocale = locale.replace("-", "_");
+    const transformedLocale = locale.replace("-", "_")
     // @ts-ignore
-    return normalizeForLocaleFile(this[transformedLocale] ?? null);
+    return normalizeForLocaleFile(this[transformedLocale] ?? null)
   }
 }
 
@@ -65,7 +65,7 @@ export function normalizeForLocaleFile(original: string | null): string | null {
    * https://vue-i18n.intlify.dev/guide/essentials/syntax.html#special-characters
    */
 
-  if (original === null) return null;
+  if (original === null) return null
   return (
     original
       // "{a}" -> "{'{'}a{'}'}"
@@ -78,5 +78,5 @@ export function normalizeForLocaleFile(original: string | null): string | null {
       .replace(/<\$(?<tag>[^<]+?)>(?<text>.+?)<\/>/g, "<?$<tag>>$<text></>")
       // {variable:0%} to <#>variable:0{'%'}</#>
       .replace(/(@|\$|%|\|)/g, "{'$1'}")
-  );
+  )
 }

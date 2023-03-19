@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { GeneratedOperatorIndexData } from "~/tools/generate-data/operator";
+import type { GeneratedOperatorIndexData } from "~/tools/generate-data/operator"
 
 const { large = false } = defineProps<{
-  operators: GeneratedOperatorIndexData[];
-  large?: boolean;
-}>();
+  operators: GeneratedOperatorIndexData[]
+  large?: boolean
+}>()
 </script>
 
 <template>

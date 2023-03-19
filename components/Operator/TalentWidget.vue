@@ -1,21 +1,21 @@
 <script setup lang="ts">
-import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type {
   GeneratedTalentCandidateData,
   GeneratedTalentData,
-} from "~/tools/generate-data/operator/talent";
-import type { TalentState } from "~/utils";
+} from "~/tools/generate-data/operator/talent"
+import type { TalentState } from "~/utils"
 
 const { operator, elite, level, potential } = defineProps<{
-  operator: GeneratedOperatorData;
-  elite: number;
-  level: number;
-  potential: number;
-}>();
+  operator: GeneratedOperatorData
+  elite: number
+  level: number
+  potential: number
+}>()
 
-defineEmits(["update:elite", "update:level", "update:potential"]);
+defineEmits(["update:elite", "update:level", "update:potential"])
 
-const { t } = useI18n();
+const { t } = useI18n()
 
 const talentEliteLevelNumbers = computed<[number, number][]>(
   () =>
@@ -28,70 +28,70 @@ const talentEliteLevelNumbers = computed<[number, number][]>(
                 otherElite === elite && otherLevel === level
             )
           )
-            accumulator.push([elite, level]);
-        });
-        return accumulator;
+            accumulator.push([elite, level])
+        })
+        return accumulator
       }, <[number, number][]>[])
       .sort(([aElite, aLevel], [bElite, bLevel]) =>
         aElite === bElite ? aLevel - bLevel : aElite - bElite
       ) || []
-);
+)
 const talentPotentialNumbers = computed<number[]>(
   () =>
     operator.talents
       ?.reduce((accumulator, talent) => {
         talent.candidates.forEach(({ unlockConditions: { potential } }) => {
-          if (!accumulator.includes(potential)) accumulator.push(potential);
-        });
-        return accumulator;
+          if (!accumulator.includes(potential)) accumulator.push(potential)
+        })
+        return accumulator
       }, <number[]>[])
       .sort() || []
-);
+)
 
 const talentState = ref<TalentState>({
   elite,
   level,
   potential,
-});
+})
 
 watch(
   () => elite,
   () => {
-    talentState.value.elite = elite;
+    talentState.value.elite = elite
   }
-);
+)
 
 watch(
   () => level,
   () => {
-    talentState.value.level = level;
+    talentState.value.level = level
   }
-);
+)
 
 watch(
   () => potential,
   () => {
-    talentState.value.potential = potential;
+    talentState.value.potential = potential
   }
-);
+)
 
 type EliteAndLevel = {
-  elite: number;
-  level: number;
-};
+  elite: number
+  level: number
+}
 
 function isHigherLevel(a: EliteAndLevel, b: EliteAndLevel): boolean {
-  return a.elite > b.elite || (a.elite === b.elite && a.level > b.level);
+  return a.elite > b.elite || (a.elite === b.elite && a.level > b.level)
 }
 
 function isLowerLevel(a: EliteAndLevel, b: EliteAndLevel): boolean {
-  return isHigherLevel(b, a);
+  return isHigherLevel(b, a)
 }
 
 function getBestTalentCandidate(
   talent: GeneratedTalentData
 ): GeneratedTalentCandidateData | null {
-  let bestCandidate: GeneratedTalentCandidateData | null = null;
+  let bestCandidate: GeneratedTalentCandidateData | null = null
   talent.candidates.forEach((candidate) => {
     if (
       // Insufficient level
@@ -99,12 +99,12 @@ function getBestTalentCandidate(
       // Insufficient potential
       candidate.unlockConditions.potential > talentState.value.potential
     )
-      return;
+      return
     if (!bestCandidate) {
-      bestCandidate = candidate;
-      return;
+      bestCandidate = candidate
+      return
     }
-    const attributes = ["elite", "level", "potential"] as const;
+    const attributes = ["elite", "level", "potential"] as const
     if (
       attributes.some(
         (attribute) =>
@@ -112,16 +112,16 @@ function getBestTalentCandidate(
           bestCandidate!.unlockConditions[attribute]
       )
     )
-      bestCandidate = candidate;
-  });
-  return bestCandidate;
+      bestCandidate = candidate
+  })
+  return bestCandidate
 }
 
 function getNextTalentCandidate(
   talent: GeneratedTalentData
 ): GeneratedTalentCandidateData | null {
-  const bestCandidate = getBestTalentCandidate(talent);
-  let nextCandidate: GeneratedTalentCandidateData | null = null;
+  const bestCandidate = getBestTalentCandidate(talent)
+  let nextCandidate: GeneratedTalentCandidateData | null = null
 
   talent.candidates.forEach((candidate) => {
     /**
@@ -129,8 +129,8 @@ function getNextTalentCandidate(
      * Procedure: Assign any cand to next cand
      */
     if (!bestCandidate && !nextCandidate) {
-      nextCandidate = candidate;
-      return;
+      nextCandidate = candidate
+      return
     }
     /**
      * Case 2: No best cand, but next cand exists
@@ -149,8 +149,8 @@ function getNextTalentCandidate(
       candidate.unlockConditions.potential >=
         nextCandidate.unlockConditions.potential
     ) {
-      nextCandidate = candidate;
-      return;
+      nextCandidate = candidate
+      return
     }
     /**
      * Case 3: Best cand exists, but no next cand (may or may not exist)
@@ -167,8 +167,8 @@ function getNextTalentCandidate(
       candidate.unlockConditions.potential ===
         bestCandidate.unlockConditions.potential
     ) {
-      nextCandidate = candidate;
-      return;
+      nextCandidate = candidate
+      return
     }
     /**
      * Case 4: Best cand and next cand exists
@@ -191,12 +191,12 @@ function getNextTalentCandidate(
       candidate.unlockConditions.potential ===
         nextCandidate.unlockConditions.potential
     ) {
-      nextCandidate = candidate;
-      return;
+      nextCandidate = candidate
+      return
     }
-  });
+  })
 
-  return nextCandidate;
+  return nextCandidate
 }
 
 const talentsAndBestAndNextCandidate = computed<
@@ -212,7 +212,7 @@ const talentsAndBestAndNextCandidate = computed<
       getBestTalentCandidate(talent),
       getNextTalentCandidate(talent),
     ]) || []
-);
+)
 </script>
 
 <template>
@@ -233,8 +233,8 @@ const talentsAndBestAndNextCandidate = computed<
           :key="`${elite}-${level}`"
           @click="
             () => {
-              $emit('update:elite', (talentState.elite = elite));
-              $emit('update:level', (talentState.level = level));
+              $emit('update:elite', (talentState.elite = elite))
+              $emit('update:level', (talentState.level = level))
             }
           "
         >
@@ -316,11 +316,11 @@ const talentsAndBestAndNextCandidate = computed<
               $emit(
                 'update:elite',
                 (talentState.elite = nextCandidate.unlockConditions.elite)
-              );
+              )
               $emit(
                 'update:level',
                 (talentState.level = nextCandidate.unlockConditions.level)
-              );
+              )
             }
           "
         >

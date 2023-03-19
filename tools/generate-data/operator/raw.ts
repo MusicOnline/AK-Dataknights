@@ -15,22 +15,22 @@ export const CHINESE_TO_ENGLISH_TAGS = {
   输出: "DPS",
   防护: "DEFENSE",
   支援机械: "ROBOT",
-} as const;
+} as const
 
 export interface AllSkillLvlup {
-  unlockCond: UnlockCond;
-  lvlUpCost: Cost[] | null;
+  unlockCond: UnlockCond
+  lvlUpCost: Cost[] | null
 }
 
 export interface UnlockCond {
-  phase: number;
-  level: number;
+  phase: number
+  level: number
 }
 
 export interface Cost {
-  id: string;
-  count: number;
-  type: Type;
+  id: string
+  count: number
+  type: Type
 }
 
 export enum Type {
@@ -38,41 +38,41 @@ export enum Type {
 }
 
 export interface KeyFrame {
-  level: number;
-  data: KeyFrameData;
+  level: number
+  data: KeyFrameData
 }
 
 export interface KeyFrameData {
-  maxHp: number;
-  atk: number;
-  def: number;
-  magicResistance: number;
-  cost: number;
-  blockCnt: number;
-  moveSpeed: number;
-  attackSpeed: number;
-  baseAttackTime: number;
-  respawnTime: number;
-  hpRecoveryPerSec: number;
-  spRecoveryPerSec: number;
-  maxDeployCount: number;
-  maxDeckStackCnt: number;
-  tauntLevel: number;
-  massLevel: number;
-  baseForceLevel: number;
-  stunImmune: boolean;
-  silenceImmune: boolean;
-  sleepImmune: boolean;
-  frozenImmune: boolean;
-  levitateImmune: boolean;
+  maxHp: number
+  atk: number
+  def: number
+  magicResistance: number
+  cost: number
+  blockCnt: number
+  moveSpeed: number
+  attackSpeed: number
+  baseAttackTime: number
+  respawnTime: number
+  hpRecoveryPerSec: number
+  spRecoveryPerSec: number
+  maxDeployCount: number
+  maxDeckStackCnt: number
+  tauntLevel: number
+  massLevel: number
+  baseForceLevel: number
+  stunImmune: boolean
+  silenceImmune: boolean
+  sleepImmune: boolean
+  frozenImmune: boolean
+  levitateImmune: boolean
 }
 
 export interface Phase {
-  characterPrefabKey: string;
-  rangeId: string | null;
-  maxLevel: number;
-  attributesKeyFrames: KeyFrame[];
-  evolveCost: Cost[] | null;
+  characterPrefabKey: string
+  rangeId: string | null
+  maxLevel: number
+  attributesKeyFrames: KeyFrame[]
+  evolveCost: Cost[] | null
 }
 
 export enum Position {
@@ -83,23 +83,23 @@ export enum Position {
 }
 
 export interface PotentialRank {
-  type: number;
-  description: string;
-  buff: Buff | null;
-  equivalentCost: null;
+  type: number
+  description: string
+  buff: Buff | null
+  equivalentCost: null
 }
 
 export interface Buff {
-  attributes: Attributes;
+  attributes: Attributes
 }
 
 export interface Attributes {
-  abnormalFlags: null;
-  abnormalImmunes: null;
-  abnormalAntis: null;
-  abnormalCombos: null;
-  abnormalComboImmunes: null;
-  attributeModifiers: AttributeModifier[];
+  abnormalFlags: null
+  abnormalImmunes: null
+  abnormalAntis: null
+  abnormalCombos: null
+  abnormalComboImmunes: null
+  attributeModifiers: AttributeModifier[]
 }
 
 export enum AttributeType {
@@ -113,11 +113,11 @@ export enum AttributeType {
 }
 
 export interface AttributeModifier {
-  attributeType: AttributeType;
-  formulaItem: number;
-  value: number;
-  loadFromBlackboard: boolean;
-  fetchBaseValueFromSourceEntity: boolean;
+  attributeType: AttributeType
+  formulaItem: number
+  value: number
+  loadFromBlackboard: boolean
+  fetchBaseValueFromSourceEntity: boolean
 }
 
 export const ACTUAL_OPERATOR_CLASSES = {
@@ -131,52 +131,52 @@ export const ACTUAL_OPERATOR_CLASSES = {
   PIONEER: "VANGUARD",
   TOKEN: "TOKEN", // Non-trap summons
   TRAP: "TRAP", // Trapmaster summons
-} as const;
+} as const
 
 export interface Skill {
-  skillId: string | null;
-  overridePrefabKey: string | null;
-  overrideTokenKey: string | null;
-  levelUpCostCond: LevelUpCostCond[]; // Mastery
-  unlockCond: UnlockCond;
+  skillId: string | null
+  overridePrefabKey: string | null
+  overrideTokenKey: string | null
+  levelUpCostCond: LevelUpCostCond[] // Mastery
+  unlockCond: UnlockCond
 }
 
 export interface LevelUpCostCond {
-  unlockCond: UnlockCond;
-  lvlUpTime: number;
-  levelUpCost: Cost[] | null;
+  unlockCond: UnlockCond
+  lvlUpTime: number
+  levelUpCost: Cost[] | null
 }
 
 export interface Talent {
-  candidates: TalentCandidate[] | null;
+  candidates: TalentCandidate[] | null
 }
 
 export interface TalentCandidate {
-  unlockCondition: UnlockCond;
-  requiredPotentialRank: number;
-  prefabKey: string;
-  name: string | null;
-  description: string | null;
-  rangeId: string | null;
-  blackboard: Blackboard[];
+  unlockCondition: UnlockCond
+  requiredPotentialRank: number
+  prefabKey: string
+  name: string | null
+  description: string | null
+  rangeId: string | null
+  blackboard: Blackboard[]
 }
 
 export interface Blackboard {
-  key: string;
-  value: number;
+  key: string
+  value: number
 }
 
 export interface Trait {
-  candidates: TraitCandidate[];
+  candidates: TraitCandidate[]
 }
 
 export interface TraitCandidate {
-  unlockCondition: UnlockCond;
-  requiredPotentialRank: number;
-  blackboard: Blackboard[];
-  overrideDescripton: string | null;
-  prefabKey: string | null;
-  rangeId: string | null;
+  unlockCondition: UnlockCond
+  requiredPotentialRank: number
+  blackboard: Blackboard[]
+  overrideDescripton: string | null
+  prefabKey: string | null
+  rangeId: string | null
 }
 
 export enum SubProfessionId {
@@ -254,8 +254,8 @@ export enum SubProfessionId {
 
 /** character_table.json array element */
 export interface CharacterTableData {
-  name: string;
-  appellation: string;
+  name: string
+  appellation: string
   /**
    * Operator trait.
    * Affected by:
@@ -263,30 +263,30 @@ export interface CharacterTableData {
    * - Override ({@link TraitCandidate.overrideDescripton} in {@link CharacterTableData.trait})
    * - Stage 1 Module
    */
-  description: string | null;
-  canUseGeneralPotentialItem: boolean;
-  potentialItemId: string;
-  nationId: string | null;
-  groupId: string | null;
-  teamId: string | null;
-  displayNumber: string | null;
-  tokenKey: string | null; // Token summon character id
-  position: Position;
-  tagList: string[] | null;
-  itemUsage: string | null;
-  itemDesc: string | null;
-  itemObtainApproach: string | null;
-  isNotObtainable: boolean; // true if Integrated Strategies operators
-  isSpChar: boolean;
-  maxPotentialLevel: number;
-  rarity: number; // Number of stars in-game, minus one
-  profession: keyof typeof ACTUAL_OPERATOR_CLASSES;
-  subProfessionId: SubProfessionId;
-  trait: Trait | null;
-  phases: Phase[];
-  skills: Skill[];
-  talents: Talent[] | null;
-  potentialRanks: PotentialRank[];
-  favorKeyFrames: KeyFrame[] | null;
-  allSkillLvlup: AllSkillLvlup[];
+  description: string | null
+  canUseGeneralPotentialItem: boolean
+  potentialItemId: string
+  nationId: string | null
+  groupId: string | null
+  teamId: string | null
+  displayNumber: string | null
+  tokenKey: string | null // Token summon character id
+  position: Position
+  tagList: string[] | null
+  itemUsage: string | null
+  itemDesc: string | null
+  itemObtainApproach: string | null
+  isNotObtainable: boolean // true if Integrated Strategies operators
+  isSpChar: boolean
+  maxPotentialLevel: number
+  rarity: number // Number of stars in-game, minus one
+  profession: keyof typeof ACTUAL_OPERATOR_CLASSES
+  subProfessionId: SubProfessionId
+  trait: Trait | null
+  phases: Phase[]
+  skills: Skill[]
+  talents: Talent[] | null
+  potentialRanks: PotentialRank[]
+  favorKeyFrames: KeyFrame[] | null
+  allSkillLvlup: AllSkillLvlup[]
 }

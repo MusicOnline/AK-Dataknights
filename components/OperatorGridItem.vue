@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import type { GeneratedOperatorIndexData } from "~/tools/generate-data/operator";
+import type { GeneratedOperatorIndexData } from "~/tools/generate-data/operator"
 
-const OPERATOR_NAME_LENGTH_SIZE_FIRST_CUTOFF = 10;
-const OPERATOR_NAME_LENGTH_SIZE_SECOND_CUTOFF = 18;
+const OPERATOR_NAME_LENGTH_SIZE_FIRST_CUTOFF = 10
+const OPERATOR_NAME_LENGTH_SIZE_SECOND_CUTOFF = 18
 
 defineProps<{
-  operator: GeneratedOperatorIndexData;
-}>();
+  operator: GeneratedOperatorIndexData
+}>()
 
-const { t } = useI18n();
-const localePath = useLocalePath();
+const { t } = useI18n()
+const localePath = useLocalePath()
 </script>
 
 <template>

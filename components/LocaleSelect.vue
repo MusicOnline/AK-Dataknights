@@ -1,28 +1,28 @@
 <script setup lang="ts">
-import type { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables";
+import type { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables"
 
 const {
   locale: currentLocale,
   locales,
   setLocale,
-} = useI18n({ useScope: "global" });
+} = useI18n({ useScope: "global" })
 
 const availableLocales = computed<LocaleObject[]>(() => {
   return locales.value.map((locale) => {
-    if (typeof locale === "object") return locale;
+    if (typeof locale === "object") return locale
     return {
       code: locale,
       name: locale,
-    };
-  });
-});
+    }
+  })
+})
 
 const currentLocaleObject = computed<LocaleObject>(
   () =>
     (<LocaleObject[]>locales.value).find(
       (locale) => locale.code === currentLocale.value
     )!
-);
+)
 </script>
 
 <template>

@@ -1,38 +1,38 @@
-import * as constants from "../constants";
-import { Localizable, LocalizationString } from "../utils";
-import { AttributeType, CharacterTableData, PotentialRank } from "./raw";
+import * as constants from "../constants"
+import { Localizable, LocalizationString } from "../utils"
+import { AttributeType, CharacterTableData, PotentialRank } from "./raw"
 
-const POTENTIAL_NUMBER_OFFSET_FROM_ZERO_INDEX = 2;
+const POTENTIAL_NUMBER_OFFSET_FROM_ZERO_INDEX = 2
 
 export interface GeneratedPotentialData {
-  potentialNumber: number;
+  potentialNumber: number
   attribute?: {
-    key: keyof typeof AttributeType;
-    value: number;
-  };
+    key: keyof typeof AttributeType
+    value: number
+  }
 }
 
 export class Potential implements Localizable {
-  potentialNumber: number;
-  description: LocalizationString;
+  potentialNumber: number
+  description: LocalizationString
   attribute?: {
-    key: keyof typeof AttributeType;
-    value: number;
-  };
+    key: keyof typeof AttributeType
+    value: number
+  }
 
   public constructor(potentialNumber: number, data: PotentialRank) {
-    this.potentialNumber = potentialNumber;
-    this.description = new LocalizationString(data.description);
+    this.potentialNumber = potentialNumber
+    this.description = new LocalizationString(data.description)
     if (data.buff) {
       if (data.buff.attributes.attributeModifiers.length !== 1)
         throw new Error(
           "Unexpected more than one attribute modifier in potential buff"
-        );
-      const modifier = data.buff.attributes.attributeModifiers[0];
+        )
+      const modifier = data.buff.attributes.attributeModifiers[0]
       this.attribute = {
         key: <keyof typeof AttributeType>AttributeType[modifier.attributeType],
         value: modifier.value,
-      };
+      }
     }
   }
 
@@ -45,11 +45,11 @@ export class Potential implements Localizable {
           index + POTENTIAL_NUMBER_OFFSET_FROM_ZERO_INDEX,
           potentialData
         )
-    );
+    )
   }
 
   public toData(): GeneratedPotentialData {
-    return { potentialNumber: this.potentialNumber, attribute: this.attribute };
+    return { potentialNumber: this.potentialNumber, attribute: this.attribute }
   }
 
   public addLocale(
@@ -61,7 +61,7 @@ export class Potential implements Localizable {
       data.potentialRanks[
         this.potentialNumber - POTENTIAL_NUMBER_OFFSET_FROM_ZERO_INDEX
       ]?.description
-    );
+    )
   }
 
   public addLocaleTL(
@@ -71,12 +71,12 @@ export class Potential implements Localizable {
     this.description.addLocaleTL(
       locale,
       data?.potentials?.[this.potentialNumber]?.description ?? null
-    );
+    )
   }
 
   public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
     return {
       description: this.description.toLocaleData(locale),
-    };
+    }
   }
 }

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import type { KeyFrameData } from "~/tools/generate-data/operator/raw";
-import type { OperatorState } from "~/utils";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
+import type { KeyFrameData } from "~/tools/generate-data/operator/raw"
+import type { OperatorState } from "~/utils"
 
 const CALCULATED_ATTRIBUTES = [
   "maxHp",
@@ -12,9 +12,9 @@ const CALCULATED_ATTRIBUTES = [
   "baseAttackTime",
   "blockCnt",
   "respawnTime",
-];
+]
 
-const ROUNDED_ATTRIBTUES = ["maxHp", "atk", "def", "magicResistance"];
+const ROUNDED_ATTRIBTUES = ["maxHp", "atk", "def", "magicResistance"]
 const ALTERNATE_ATTRIBUTE_NAMES = {
   max_hp: "maxHp",
   magic_resistance: "magicResistance",
@@ -22,21 +22,20 @@ const ALTERNATE_ATTRIBUTE_NAMES = {
   block_cnt: "blockCnt",
   respawn_time: "respawnTime",
   attack_speed: "attackSpeed",
-};
+}
 
-const { t, locale } = useI18n();
+const { t, locale } = useI18n()
 
 const { operator, operatorState } = defineProps<{
-  operator: GeneratedOperatorData;
-  operatorState: OperatorState;
-}>();
+  operator: GeneratedOperatorData
+  operatorState: OperatorState
+}>()
 
 // @ts-ignore Unreliable Array.reduce inference
 const operatorAttributes = computed<KeyFrameData>(() => {
   const startKeyFrame =
-    operator.phases[operatorState.elite].attributeKeyFrames[0];
-  const endKeyFrame =
-    operator.phases[operatorState.elite].attributeKeyFrames[1];
+    operator.phases[operatorState.elite].attributeKeyFrames[0]
+  const endKeyFrame = operator.phases[operatorState.elite].attributeKeyFrames[1]
   return Object.entries(startKeyFrame.data).reduce(
     // @ts-ignore
     (
@@ -47,69 +46,69 @@ const operatorAttributes = computed<KeyFrameData>(() => {
         !CALCULATED_ATTRIBUTES.includes(name) ||
         typeof startValue === "boolean"
       ) {
-        accumulator[name] = startValue;
-        return accumulator;
+        accumulator[name] = startValue
+        return accumulator
       }
       const valueDifference: number =
-        <number>endKeyFrame.data[name] - startValue;
-      const levelDifference: number = endKeyFrame.level - startKeyFrame.level;
-      const valuePerLevel: number = valueDifference / levelDifference;
-      const trustBonus: number = getTrustBonus(name);
-      const potentialBonus: number = getPotentialBonus(name);
-      const moduleBonus: number = getModuleBonus(name);
+        <number>endKeyFrame.data[name] - startValue
+      const levelDifference: number = endKeyFrame.level - startKeyFrame.level
+      const valuePerLevel: number = valueDifference / levelDifference
+      const trustBonus: number = getTrustBonus(name)
+      const potentialBonus: number = getPotentialBonus(name)
+      const moduleBonus: number = getModuleBonus(name)
 
       const totalBaseAttribute: number =
         startValue +
         valuePerLevel * (operatorState.level - 1) +
         trustBonus +
         potentialBonus +
-        moduleBonus;
+        moduleBonus
 
       if (name === "baseAttackTime") {
-        accumulator[name] = calculateFinalAttackTime(totalBaseAttribute);
+        accumulator[name] = calculateFinalAttackTime(totalBaseAttribute)
       } else if (ROUNDED_ATTRIBTUES.includes(name)) {
-        accumulator[name] = Math.round(totalBaseAttribute);
+        accumulator[name] = Math.round(totalBaseAttribute)
       } else {
-        accumulator[name] = totalBaseAttribute;
+        accumulator[name] = totalBaseAttribute
       }
-      return accumulator;
+      return accumulator
     },
     {}
-  );
-});
+  )
+})
 
 function getTrustBonus(attribute: keyof KeyFrameData): number {
   if (!operatorState.areBonusesIncluded || !operatorState.isMaxTrustIncluded)
-    return 0;
+    return 0
 
-  const trustBonus = operator.trustKeyFrames?.slice(-1)[0].data[attribute];
+  const trustBonus = operator.trustKeyFrames?.slice(-1)[0].data[attribute]
   if (typeof trustBonus === "boolean")
-    throw new Error(`Trust bonus of ${attribute} is a boolean`);
+    throw new Error(`Trust bonus of ${attribute} is a boolean`)
 
-  return trustBonus ?? 0;
+  return trustBonus ?? 0
 }
 
 function getPotentialBonus(attribute: keyof KeyFrameData): number {
-  if (!operatorState.areBonusesIncluded) return 0;
+  if (!operatorState.areBonusesIncluded) return 0
 
-  let potentialBonus: number = 0;
+  let potentialBonus: number = 0
   for (let i = 2; i <= operatorState.potential; i++) {
     // Index 0 = Potential 2
-    const potential = operator.potentials[i - 2];
+    const potential = operator.potentials[i - 2]
     if (potential.attribute?.key === attribute)
-      potentialBonus += potential.attribute!.value;
+      potentialBonus += potential.attribute!.value
   }
 
-  return potentialBonus;
+  return potentialBonus
 }
 
 function getModuleBonus(attribute: keyof KeyFrameData): number {
-  if (!operatorState.areBonusesIncluded || !operatorState.moduleId) return 0;
+  if (!operatorState.areBonusesIncluded || !operatorState.moduleId) return 0
 
-  let moduleBonus: number = 0;
+  let moduleBonus: number = 0
   const module = operator.modules!.find(
     ({ id }) => id === operatorState.moduleId
-  )!;
+  )!
   if (
     operatorState.elite > module.unlockConditions.elite ||
     (operatorState.elite === module.unlockConditions.elite &&
@@ -119,33 +118,33 @@ function getModuleBonus(attribute: keyof KeyFrameData): number {
       (operatorState.moduleStage || 1) - 1
     ].attributes.find(({ key }) => {
       // @ts-ignore
-      const compatibleKey: string = ALTERNATE_ATTRIBUTE_NAMES[key] || key;
-      return compatibleKey === attribute;
-    });
-    if (attributeObject) moduleBonus = attributeObject.value;
+      const compatibleKey: string = ALTERNATE_ATTRIBUTE_NAMES[key] || key
+      return compatibleKey === attribute
+    })
+    if (attributeObject) moduleBonus = attributeObject.value
   }
 
-  return moduleBonus;
+  return moduleBonus
 }
 
 function getBaseAttackSpeedModifiers() {
-  const attribute = "attackSpeed";
+  const attribute = "attackSpeed"
   return (
     getTrustBonus(attribute) +
     getPotentialBonus(attribute) +
     getModuleBonus(attribute)
-  );
+  )
 }
 
 function calculateFinalAttackTime(baseAttackTime: number): number {
   // https://arknights.fandom.com/wiki/Attribute/Attack_interval#ASPD_calculation
   // https://gamepress.gg/arknights/core-gameplay/arknights-mechanics-behind-numbers-attack-speed#topic-566596
-  const flatAttackTimeModifier: number = 0; // Attack Interval modifiers come from skills only
-  const baseAttackSpeedModifiers: number = getBaseAttackSpeedModifiers();
+  const flatAttackTimeModifier: number = 0 // Attack Interval modifiers come from skills only
+  const baseAttackSpeedModifiers: number = getBaseAttackSpeedModifiers()
   return (
     (baseAttackTime + flatAttackTimeModifier) /
     (1 + baseAttackSpeedModifiers / 100)
-  );
+  )
 }
 </script>
 

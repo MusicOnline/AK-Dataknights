@@ -1,55 +1,55 @@
 <script setup lang="ts">
-import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import type { GeneratedSkillData } from "~~/tools/generate-data/operator/skill";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
+import type { GeneratedSkillData } from "~~/tools/generate-data/operator/skill"
 
 const { skill } = defineProps<{
-  operator: GeneratedOperatorData;
-  skill: GeneratedSkillData;
-}>();
+  operator: GeneratedOperatorData
+  skill: GeneratedSkillData
+}>()
 
-const { t, locale } = useI18n();
+const { t, locale } = useI18n()
 
 function getRowSpanValuesForEqualValues(values: any[]): number[] {
-  const rowSpanValues: number[] = [];
+  const rowSpanValues: number[] = []
   values.forEach((value, index) => {
     if (index !== 0 && value === values[index - 1]) {
-      let lastNonZeroRowSpanIndex = index - 1;
+      let lastNonZeroRowSpanIndex = index - 1
       while (rowSpanValues[lastNonZeroRowSpanIndex] === 0)
-        lastNonZeroRowSpanIndex--;
-      rowSpanValues[lastNonZeroRowSpanIndex]++;
-      rowSpanValues.push(0);
+        lastNonZeroRowSpanIndex--
+      rowSpanValues[lastNonZeroRowSpanIndex]++
+      rowSpanValues.push(0)
     } else {
-      rowSpanValues.push(1);
+      rowSpanValues.push(1)
     }
-  });
-  return rowSpanValues;
+  })
+  return rowSpanValues
 }
 
 const initSpRowSpanValues = computed<number[]>(() =>
   getRowSpanValuesForEqualValues(
     skill.levels.map(({ spData: { initSp } }) => initSp)
   )
-);
+)
 const spCostRowSpanValues = computed<number[]>(() =>
   getRowSpanValuesForEqualValues(
     skill.levels.map(({ spData: { spCost } }) => spCost)
   )
-);
+)
 const durationRowSpanValues = computed<number[]>(() =>
   getRowSpanValuesForEqualValues(skill.levels.map(({ duration }) => duration))
-);
+)
 const rangeRowSpanValues = computed<number[]>(() =>
   getRowSpanValuesForEqualValues(skill.levels.map(({ range }) => range?.id))
-);
+)
 const isRangeExistent = computed<boolean>(() =>
   skill.levels.some(({ range }) => range)
-);
+)
 
 const isInitSpNotAlwaysZero = computed<boolean>(
   () =>
     skill.levels[0].spData.initSp !== 0 ||
     initSpRowSpanValues.value[0] !== initSpRowSpanValues.value.length
-);
+)
 </script>
 
 <template>

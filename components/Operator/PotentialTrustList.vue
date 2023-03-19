@@ -1,31 +1,31 @@
 <script setup lang="ts">
-import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 
 const { operator, potential, isMaxTrustIncluded } = defineProps<{
-  operator: GeneratedOperatorData;
-  potential: number;
-  isMaxTrustIncluded: boolean;
-}>();
+  operator: GeneratedOperatorData
+  potential: number
+  isMaxTrustIncluded: boolean
+}>()
 
-defineEmits(["update:potential", "update:isMaxTrustIncluded"]);
+defineEmits(["update:potential", "update:isMaxTrustIncluded"])
 
-const { t } = useI18n();
+const { t } = useI18n()
 
 const operatorState = ref({
   potential,
   isMaxTrustIncluded,
-});
+})
 
 const trustStats = computed<{ [key: string]: number } | null>(() => {
-  if (!operator.trustKeyFrames) return null;
+  if (!operator.trustKeyFrames) return null
   return Object.entries(operator.trustKeyFrames[1].data).reduce(
     (accumulator: { [key: string]: number }, [key, value]) => {
-      if (value) accumulator[key] = value;
-      return accumulator;
+      if (value) accumulator[key] = value
+      return accumulator
     },
     {}
-  );
-});
+  )
+})
 </script>
 
 <template>

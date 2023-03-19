@@ -2,61 +2,61 @@
 import type {
   GeneratedOperatorData,
   GeneratedOperatorIndexData,
-} from "~/tools/generate-data/operator";
+} from "~/tools/generate-data/operator"
 
-const NUMBER_OF_SEARCH_RESULTS = 11;
+const NUMBER_OF_SEARCH_RESULTS = 11
 
 const {
   operator,
   overlayResults = false,
   large = false,
 } = defineProps<{
-  operator?: GeneratedOperatorData;
-  overlayResults?: boolean;
-  large?: boolean;
-}>();
+  operator?: GeneratedOperatorData
+  overlayResults?: boolean
+  large?: boolean
+}>()
 
-const { t } = useI18n();
+const { t } = useI18n()
 
-const nameInput = useDebounce<string>("", 150);
+const nameInput = useDebounce<string>("", 150)
 
-const operators: GeneratedOperatorIndexData[] = useOperatorsIndexData();
+const operators: GeneratedOperatorIndexData[] = useOperatorsIndexData()
 
 const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
-  if (!nameInput.value && !operator) return [];
+  if (!nameInput.value && !operator) return []
   if (!nameInput.value) {
-    const index: number = operators.findIndex(({ id }) => operator!.id === id);
+    const index: number = operators.findIndex(({ id }) => operator!.id === id)
 
     const lowerBoundIndex: number = Math.max(
       0,
       index - Math.trunc(NUMBER_OF_SEARCH_RESULTS / 2)
-    );
-    const upperBoundIndex: number = lowerBoundIndex + NUMBER_OF_SEARCH_RESULTS;
+    )
+    const upperBoundIndex: number = lowerBoundIndex + NUMBER_OF_SEARCH_RESULTS
 
-    return operators.slice(lowerBoundIndex, upperBoundIndex);
+    return operators.slice(lowerBoundIndex, upperBoundIndex)
   }
 
-  const input: string = nameInput.value.toLowerCase();
-  const searchResults: GeneratedOperatorIndexData[] = [];
+  const input: string = nameInput.value.toLowerCase()
+  const searchResults: GeneratedOperatorIndexData[] = []
 
-  console.time(`searchResults (${input})`);
+  console.time(`searchResults (${input})`)
   for (const otherOperator of operators) {
-    if (searchResults.length >= NUMBER_OF_SEARCH_RESULTS) break;
+    if (searchResults.length >= NUMBER_OF_SEARCH_RESULTS) break
     if (
       otherOperator.key.length >= input.length &&
       otherOperator.key.toLowerCase().includes(input)
     ) {
-      searchResults.push(otherOperator);
-      continue;
+      searchResults.push(otherOperator)
+      continue
     }
 
-    const localizedName: string = t(`${otherOperator.key}.name`);
+    const localizedName: string = t(`${otherOperator.key}.name`)
     if (
       localizedName.length >= input.length &&
       localizedName.toLowerCase().includes(input)
     ) {
-      searchResults.push(otherOperator);
-      continue;
+      searchResults.push(otherOperator)
+      continue
     }
 
     // // Takes >500 ms
@@ -96,14 +96,14 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
       otherOperator.id.length >= input.length &&
       otherOperator.id.toLowerCase().includes(input)
     ) {
-      searchResults.push(otherOperator);
-      continue;
+      searchResults.push(otherOperator)
+      continue
     }
   }
-  console.timeEnd(`searchResults (${input})`);
+  console.timeEnd(`searchResults (${input})`)
 
-  return searchResults;
-});
+  return searchResults
+})
 </script>
 
 <template>

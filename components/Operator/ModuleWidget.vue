@@ -1,55 +1,55 @@
 <script setup lang="ts">
-import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import type { GeneratedModuleData } from "~/tools/generate-data/operator/module";
-import type { ModuleState } from "~/utils";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
+import type { GeneratedModuleData } from "~/tools/generate-data/operator/module"
+import type { ModuleState } from "~/utils"
 
 const { module, potential } = defineProps<{
-  operator: GeneratedOperatorData;
-  module: GeneratedModuleData;
-  potential: number; // ModuleState, affected by OperatorState
-  moduleId: string | null; // OperatorState
-  moduleStage: number | null; // OperatorState
-}>();
+  operator: GeneratedOperatorData
+  module: GeneratedModuleData
+  potential: number // ModuleState, affected by OperatorState
+  moduleId: string | null // OperatorState
+  moduleStage: number | null // OperatorState
+}>()
 
 const modulePotentialNumbers = module.stages
   ?.slice(-1)[0]
   .talentUpgrades?.reduce((accumulator, upgrade) => {
     upgrade.candidates.forEach((candidate) => {
       if (!accumulator.includes(candidate.unlockCondition.potential))
-        accumulator.push(candidate.unlockCondition.potential);
-    });
-    return accumulator;
+        accumulator.push(candidate.unlockCondition.potential)
+    })
+    return accumulator
   }, <number[]>[])
-  .sort() ?? [1];
+  .sort() ?? [1]
 
 const bestPotential = computed<number>(() => {
-  let bestPotential: number;
+  let bestPotential: number
   for (const pot of modulePotentialNumbers) {
-    if (pot > potential) break;
-    bestPotential = pot;
+    if (pot > potential) break
+    bestPotential = pot
   }
-  return bestPotential!;
-});
+  return bestPotential!
+})
 
 const moduleState = ref<ModuleState>({
   potential: bestPotential.value,
-});
+})
 
-defineEmits(["update:moduleId", "update:moduleStage", "update:potential"]);
+defineEmits(["update:moduleId", "update:moduleStage", "update:potential"])
 
-const { t } = useI18n();
+const { t } = useI18n()
 
 const combinedModuleTypeName = computed<string>(() => {
-  if (!module.typeName2) return module.typeName1;
-  return `${module.typeName1}-${module.typeName2}`;
-});
+  if (!module.typeName2) return module.typeName1
+  return `${module.typeName1}-${module.typeName2}`
+})
 
 watch(
   () => potential,
   () => {
-    moduleState.value.potential = bestPotential.value;
+    moduleState.value.potential = bestPotential.value
   }
-);
+)
 </script>
 
 <template>
@@ -105,11 +105,11 @@ watch(
           class="bg-bg-container-1-normal text-fg-container-1 flex gap-1 p-1"
           @click="
             () => {
-              $emit('update:moduleId', module.id);
+              $emit('update:moduleId', module.id)
               if (module.stages && !moduleStage) {
-                $emit('update:moduleStage', 1);
+                $emit('update:moduleStage', 1)
               } else if (!module.stages) {
-                $emit('update:moduleStage', null);
+                $emit('update:moduleStage', null)
               }
             }
           "
@@ -151,9 +151,9 @@ watch(
           :key="stage.stage"
           @click="
             () => {
-              $emit('update:moduleStage', stage.stage);
+              $emit('update:moduleStage', stage.stage)
               if (module.id !== moduleId) {
-                $emit('update:moduleId', module.id);
+                $emit('update:moduleId', module.id)
               }
             }
           "

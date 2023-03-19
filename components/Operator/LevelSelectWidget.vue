@@ -1,47 +1,47 @@
 <script setup lang="ts">
-import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import type { GeneratedElitePhaseData } from "~/tools/generate-data/operator/elite";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
+import type { GeneratedElitePhaseData } from "~/tools/generate-data/operator/elite"
 
-const { t } = useI18n();
+const { t } = useI18n()
 
 const { operator, elite, level, areBonusesIncluded } = defineProps<{
-  operator: GeneratedOperatorData;
-  elite: number;
-  level: number;
-  areBonusesIncluded: boolean;
-}>();
+  operator: GeneratedOperatorData
+  elite: number
+  level: number
+  areBonusesIncluded: boolean
+}>()
 
 const operatorState = ref({
   elite,
   level,
   areBonusesIncluded,
-});
+})
 
 const emit = defineEmits([
   "update:elite",
   "update:level",
   "update:areBonusesIncluded",
-]);
+])
 
 const currentPhase = computed<GeneratedElitePhaseData>(
   () => operator.phases[operatorState.value.elite]
-);
+)
 
 function changeElite(eliteChoice: number) {
-  operatorState.value.elite = eliteChoice;
-  operatorState.value.level = currentPhase.value.maxLevel;
-  emit("update:elite", operatorState.value.elite);
-  emit("update:level", operatorState.value.level);
+  operatorState.value.elite = eliteChoice
+  operatorState.value.level = currentPhase.value.maxLevel
+  emit("update:elite", operatorState.value.elite)
+  emit("update:level", operatorState.value.level)
 }
 
 function limitOperatorLevel(event: Event) {
-  const value = parseInt((<HTMLInputElement>event.target).value);
+  const value = parseInt((<HTMLInputElement>event.target).value)
   if (value > currentPhase.value.maxLevel) {
-    operatorState.value.level = currentPhase.value.maxLevel;
+    operatorState.value.level = currentPhase.value.maxLevel
   } else if (value < 1) {
-    operatorState.value.level = 1;
+    operatorState.value.level = 1
   }
-  emit("update:level", operatorState.value.level);
+  emit("update:level", operatorState.value.level)
 }
 </script>
 

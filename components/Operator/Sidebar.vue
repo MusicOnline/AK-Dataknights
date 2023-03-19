@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 
 const { isSidebarExpanded } = defineProps<{
-  operator: GeneratedOperatorData;
-  isSidebarExpanded: boolean;
-}>();
+  operator: GeneratedOperatorData
+  isSidebarExpanded: boolean
+}>()
 
-defineEmits(["update:isSidebarExpanded"]);
+defineEmits(["update:isSidebarExpanded"])
 </script>
 
 <template>

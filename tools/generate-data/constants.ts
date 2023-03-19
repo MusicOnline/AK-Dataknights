@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+import fs from "fs"
+import path from "path"
 
 import {
   BattleEquipTable,
@@ -8,39 +8,36 @@ import {
   SkillTable,
   SkinTable,
   UniEquipTable,
-} from "./tables";
+} from "./tables"
 
-export const ORIGINAL_LOCALE = "zh-CN";
+export const ORIGINAL_LOCALE = "zh-CN"
 export const GAME_LOCALES = [
   ORIGINAL_LOCALE, // Always first
   "en-US",
   "ja-JP",
   "ko-KR",
   "zh-TW",
-] as const;
-export const TRANSLATED_LOCALES = ["en-TL"] as const;
-export const OUTPUT_LOCALES = [...GAME_LOCALES, ...TRANSLATED_LOCALES] as const;
+] as const
+export const TRANSLATED_LOCALES = ["en-TL"] as const
+export const OUTPUT_LOCALES = [...GAME_LOCALES, ...TRANSLATED_LOCALES] as const
 
-export const OPERATOR_TABLE_PATH = "gamedata/excel/character_table.json";
-export const MODULE_TABLE_PATH = "gamedata/excel/uniequip_table.json";
-export const OUTFIT_TABLE_PATH = "gamedata/excel/skin_table.json";
-export const RANGE_TABLE_PATH = "gamedata/excel/range_table.json";
-export const SKILL_TABLE_PATH = "gamedata/excel/skill_table.json";
-export const UNI_EQUIP_TABLE_PATH = "gamedata/excel/uniequip_table.json";
-export const BATTLE_EQUIP_TABLE_PATH = "gamedata/excel/battle_equip_table.json";
+export const OPERATOR_TABLE_PATH = "gamedata/excel/character_table.json"
+export const MODULE_TABLE_PATH = "gamedata/excel/uniequip_table.json"
+export const OUTFIT_TABLE_PATH = "gamedata/excel/skin_table.json"
+export const RANGE_TABLE_PATH = "gamedata/excel/range_table.json"
+export const SKILL_TABLE_PATH = "gamedata/excel/skill_table.json"
+export const UNI_EQUIP_TABLE_PATH = "gamedata/excel/uniequip_table.json"
+export const BATTLE_EQUIP_TABLE_PATH = "gamedata/excel/battle_equip_table.json"
 
-export const FALSE_POSITIVE_ACTUAL_OPERATORS = ["char_512_aprot"];
+export const FALSE_POSITIVE_ACTUAL_OPERATORS = ["char_512_aprot"]
 
-export type LocaleTableMap<Table> = Record<
-  (typeof GAME_LOCALES)[number],
-  Table
->;
+export type LocaleTableMap<Table> = Record<typeof GAME_LOCALES[number], Table>
 
 export const OPERATOR_TABLES: LocaleTableMap<CharacterTable> =
-  requireAllLocaleTables(OPERATOR_TABLE_PATH);
+  requireAllLocaleTables(OPERATOR_TABLE_PATH)
 
 export const OUTFIT_TABLES: LocaleTableMap<SkinTable> =
-  requireAllLocaleTables(OUTFIT_TABLE_PATH);
+  requireAllLocaleTables(OUTFIT_TABLE_PATH)
 
 export const RANGE_TABLE: RangeTable = requireByReadFileSync(
   path.join(
@@ -48,19 +45,19 @@ export const RANGE_TABLE: RangeTable = requireByReadFileSync(
     ORIGINAL_LOCALE.replace("-", "_"),
     RANGE_TABLE_PATH
   )
-);
+)
 
 export const SKILL_TABLES: LocaleTableMap<SkillTable> =
-  requireAllLocaleTables(SKILL_TABLE_PATH);
+  requireAllLocaleTables(SKILL_TABLE_PATH)
 
 export const UNI_EQUIP_TABLES: LocaleTableMap<UniEquipTable> =
-  requireAllLocaleTables(UNI_EQUIP_TABLE_PATH);
+  requireAllLocaleTables(UNI_EQUIP_TABLE_PATH)
 
 export const BATTLE_EQUIP_TABLES: LocaleTableMap<BattleEquipTable> =
-  requireAllLocaleTables(BATTLE_EQUIP_TABLE_PATH);
+  requireAllLocaleTables(BATTLE_EQUIP_TABLE_PATH)
 
 function requireByReadFileSync(filepath: string): any {
-  return JSON.parse(fs.readFileSync(filepath, { encoding: "utf-8" }));
+  return JSON.parse(fs.readFileSync(filepath, { encoding: "utf-8" }))
 }
 
 function requireAllLocaleTables(tablePath: string): LocaleTableMap<any> {
@@ -73,8 +70,8 @@ function requireAllLocaleTables(tablePath: string): LocaleTableMap<any> {
           locale.replace("-", "_"),
           tablePath
         )
-      );
+      )
     } catch {}
-    return accumulator;
-  }, <any>{});
+    return accumulator
+  }, <any>{})
 }

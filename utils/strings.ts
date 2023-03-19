@@ -1,7 +1,7 @@
-import { Blackboard } from "~/tools/generate-data/operator/raw";
+import { Blackboard } from "~/tools/generate-data/operator/raw"
 
 const VARIABLE_REGEX =
-  /\{(?<sign>-)?(?<name>.+?)(?::(?<formatSpecifier>.+?))?\}/g;
+  /\{(?<sign>-)?(?<name>.+?)(?::(?<formatSpecifier>.+?))?\}/g
 
 // gamedata_const.json
 export const RICH_TEXT_TAG_TO_ENGLISH = {
@@ -46,7 +46,7 @@ export const RICH_TEXT_TAG_TO_ENGLISH = {
   "dt.erosion": "corrosion-damage",
   "dt.burning": "burn-damage",
   "dt.apoptosis": "necrosis-damage",
-};
+}
 
 export const ENGLISH_CLASS_TO_RICH_TEXT_REGEX = Object.entries(
   RICH_TEXT_TAG_TO_ENGLISH
@@ -55,88 +55,88 @@ export const ENGLISH_CLASS_TO_RICH_TEXT_REGEX = Object.entries(
     accumulator[englishClass] = new RegExp(
       `<[#?]ba.${richTextTag.replace(/\./g, "\\.")}>(.+?)</>`,
       "g"
-    );
-    return accumulator;
+    )
+    return accumulator
   },
   {}
-);
+)
 
 export interface ConvertRichTextOptions {
-  html?: boolean;
+  html?: boolean
   replace?:
     | {
-        [name: string]: number;
+        [name: string]: number
       }
-    | Blackboard[];
-  locale?: string;
+    | Blackboard[]
+  locale?: string
 }
 
 export function convertRichText(
   richText: string,
   options: ConvertRichTextOptions = {}
 ): string {
-  const { locale = "en-US" } = options;
+  const { locale = "en-US" } = options
 
-  let transformedString = richText.replace(/\\n/g, "\n");
+  let transformedString = richText.replace(/\\n/g, "\n")
   if (options.html ?? true) {
     transformedString = transformedString
       .replace(/\n/g, "<br/>")
       .replace(/<</g, "&lt;")
-      .replace(/>>/g, "&gt;");
+      .replace(/>>/g, "&gt;")
     Object.entries(ENGLISH_CLASS_TO_RICH_TEXT_REGEX).forEach(
       ([targetClass, regex]) =>
         (transformedString = transformedString.replace(
           regex,
           `<span class="ba-markup ba-${targetClass}">$1</span>`
         ))
-    );
+    )
   } else {
     Object.values(ENGLISH_CLASS_TO_RICH_TEXT_REGEX).forEach(
       (regex) => (transformedString = transformedString.replace(regex, "$1"))
-    );
+    )
     transformedString = transformedString
       .replace(/<</g, "<")
-      .replace(/>>/g, ">");
+      .replace(/>>/g, ">")
   }
 
-  const matches = transformedString.matchAll(VARIABLE_REGEX);
+  const matches = transformedString.matchAll(VARIABLE_REGEX)
   for (const match of matches) {
-    const { sign, name, formatSpecifier } = match.groups!;
-    let value;
+    const { sign, name, formatSpecifier } = match.groups!
+    let value
     if (Array.isArray(options?.replace)) {
       // options.replace: Blackboard[]
       value = options.replace.find(
         ({ key }) => key === name.toLowerCase()
-      )?.value;
+      )?.value
     } else {
-      value = options?.replace?.[name.toLowerCase()];
+      value = options?.replace?.[name.toLowerCase()]
     }
-    if (value === null || value === undefined) continue;
-    if (sign === "-") value = -value;
-    let replacedValue = value.toString();
+    if (value === null || value === undefined) continue
+    if (sign === "-") value = -value
+    let replacedValue = value.toString()
     switch (formatSpecifier) {
       case "0":
       case "0%":
         replacedValue = value.toLocaleString(locale, {
           style: "percent",
           maximumFractionDigits: 0,
-        });
-        break;
+        })
+        break
       case "0.0":
         replacedValue = value.toLocaleString(locale, {
           minimumFractionDigits: 1,
           maximumFractionDigits: 1,
-        });
-        break;
+        })
+        break
       case "0.0%":
         replacedValue = value.toLocaleString(locale, {
           style: "percent",
           minimumFractionDigits: 1,
           maximumFractionDigits: 1,
-        });
-        break;
+        })
+        break
     }
-    transformedString = transformedString.replace(match[0], replacedValue);
+    transformedString = transformedString.replace(match[0], replacedValue)
   }
-  return transformedString;
+  return transformedString
 }

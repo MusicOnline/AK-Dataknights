@@ -1,27 +1,27 @@
 <script setup lang="ts">
-import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait";
-import type { OperatorState } from "~/utils";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
+import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait"
+import type { OperatorState } from "~/utils"
 
-const { t, locale } = useI18n();
+const { t, locale } = useI18n()
 
 const { operator, operatorState } = defineProps<{
-  operator: GeneratedOperatorData;
-  operatorState: OperatorState;
-}>();
+  operator: GeneratedOperatorData
+  operatorState: OperatorState
+}>()
 
 const currentAvatarUrl = computed<string>(() => {
-  let phase = operator.phases[operatorState.elite];
+  let phase = operator.phases[operatorState.elite]
   while (!phase.outfit?.avatarId && phase.elite !== 0)
-    phase = operator.phases[phase.elite - 1];
+    phase = operator.phases[phase.elite - 1]
 
   return `https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${encodeURI(
     phase.outfit!.avatarId
-  )}.png`;
-});
+  )}.png`
+})
 
 const currentTraitCandidate = computed<GeneratedTraitCandidateData>(() => {
-  let currentCandidate: GeneratedTraitCandidateData | null = null;
+  let currentCandidate: GeneratedTraitCandidateData | null = null
   operator.traitCandidates.forEach((candidate) => {
     if (
       // Insufficient elite promotion
@@ -30,10 +30,10 @@ const currentTraitCandidate = computed<GeneratedTraitCandidateData>(() => {
       (candidate.unlockConditions.elite === operatorState.elite &&
         candidate.unlockConditions.level > operatorState.level)
     )
-      return;
+      return
     if (!currentCandidate) {
-      currentCandidate = candidate;
-      return;
+      currentCandidate = candidate
+      return
     }
     if (
       candidate.unlockConditions.elite >
@@ -43,18 +43,18 @@ const currentTraitCandidate = computed<GeneratedTraitCandidateData>(() => {
         candidate.unlockConditions.level >
           currentCandidate.unlockConditions.level)
     ) {
-      currentCandidate = candidate;
+      currentCandidate = candidate
     }
-  });
-  if (!currentCandidate) throw new Error("No usable operator trait found");
-  return currentCandidate;
-});
+  })
+  if (!currentCandidate) throw new Error("No usable operator trait found")
+  return currentCandidate
+})
 
 function getLocalizedName(
   locale: string,
   operator: GeneratedOperatorData
 ): string | null {
-  return t(`${operator.key}.name`, {}, { locale });
+  return t(`${operator.key}.name`, {}, { locale })
 }
 
 function getLocalizedNameWithTL(
@@ -62,9 +62,9 @@ function getLocalizedNameWithTL(
   region: string,
   operator: GeneratedOperatorData
 ): string | null {
-  const officialTranslation = getLocalizedName(`${lang}-${region}`, operator);
-  if (officialTranslation) return officialTranslation;
-  return getLocalizedName(`${lang}-TL`, operator);
+  const officialTranslation = getLocalizedName(`${lang}-${region}`, operator)
+  if (officialTranslation) return officialTranslation
+  return getLocalizedName(`${lang}-TL`, operator)
 }
 </script>
 

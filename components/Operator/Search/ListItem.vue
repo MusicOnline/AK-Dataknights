@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import type { GeneratedOperatorIndexData } from "~/tools/generate-data/operator";
+import type { GeneratedOperatorIndexData } from "~/tools/generate-data/operator"
 
-const { t } = useI18n();
-const localePath = useLocalePath();
+const { t } = useI18n()
+const localePath = useLocalePath()
 
 const { large = false } = defineProps<{
-  operator: GeneratedOperatorIndexData;
-  large?: boolean;
-}>();
+  operator: GeneratedOperatorIndexData
+  large?: boolean
+}>()
 </script>
 
 <template>

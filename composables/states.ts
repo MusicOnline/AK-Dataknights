@@ -1,2 +1,2 @@
 export const useIsDarkModeEnabled = () =>
-  useState<boolean>("isDarkModeEnabled", () => false);
+  useState<boolean>("isDarkModeEnabled", () => false)

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const isDarkModeEnabled = useIsDarkModeEnabled();
+const isDarkModeEnabled = useIsDarkModeEnabled()
 </script>
 
 <template>

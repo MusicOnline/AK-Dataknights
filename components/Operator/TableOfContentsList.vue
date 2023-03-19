@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import type { GeneratedOperatorData } from "~/tools/generate-data/operator";
-import type { GeneratedModuleData } from "~/tools/generate-data/operator/module";
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
+import type { GeneratedModuleData } from "~/tools/generate-data/operator/module"
 
 defineProps<{
-  operator: GeneratedOperatorData;
-}>();
+  operator: GeneratedOperatorData
+}>()
 
-const { t } = useI18n();
+const { t } = useI18n()
 
 function getCombinedModuleTypeName(module: GeneratedModuleData): string {
-  if (!module.typeName2) return module.typeName1.toLowerCase();
-  return `${module.typeName1}-${module.typeName2}`.toLowerCase();
+  if (!module.typeName2) return module.typeName1.toLowerCase()
+  return `${module.typeName1}-${module.typeName2}`.toLowerCase()
 }
 </script>
 

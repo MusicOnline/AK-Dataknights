@@ -1,47 +1,47 @@
-import * as constants from "../constants";
-import { Localizable, LocalizationString } from "../utils";
-import { GeneratedRangeData, Range } from "./range";
+import * as constants from "../constants"
+import { Localizable, LocalizationString } from "../utils"
+import { GeneratedRangeData, Range } from "./range"
 import {
   Blackboard,
   CharacterTableData,
   Talent as RawTalent,
   TalentCandidate as RawTalentCandidate,
-} from "./raw";
+} from "./raw"
 
 export interface GeneratedTalentCandidateData {
-  key: string;
+  key: string
   unlockConditions: {
-    elite: number;
-    level: number;
-    potential: number;
-  };
-  range?: GeneratedRangeData;
-  variables: Blackboard[];
+    elite: number
+    level: number
+    potential: number
+  }
+  range?: GeneratedRangeData
+  variables: Blackboard[]
 }
 
 export class TalentCandidate implements Localizable {
-  talentNumber: number;
+  talentNumber: number
   unlockConditions: {
-    elite: number;
-    level: number;
-    potential: number;
-  };
-  name: LocalizationString | null;
-  description: LocalizationString | null;
-  range: Range | null;
-  variables: Blackboard[];
+    elite: number
+    level: number
+    potential: number
+  }
+  name: LocalizationString | null
+  description: LocalizationString | null
+  range: Range | null
+  variables: Blackboard[]
 
   public constructor(talentNumber: number, data: RawTalentCandidate) {
-    this.talentNumber = talentNumber;
+    this.talentNumber = talentNumber
     this.unlockConditions = {
       elite: data.unlockCondition.phase,
       level: data.unlockCondition.level,
       potential: data.requiredPotentialRank + 1, // 0 = Potential 1 (Base operator)
-    };
-    this.name = LocalizationString.fromDataOrNull(data.name);
-    this.description = LocalizationString.fromDataOrNull(data.description);
-    this.range = data.rangeId ? new Range(data.rangeId) : null;
-    this.variables = data.blackboard;
+    }
+    this.name = LocalizationString.fromDataOrNull(data.name)
+    this.description = LocalizationString.fromDataOrNull(data.description)
+    this.range = data.rangeId ? new Range(data.rangeId) : null
+    this.variables = data.blackboard
   }
 
   public toData(): GeneratedTalentCandidateData {
@@ -50,67 +50,67 @@ export class TalentCandidate implements Localizable {
       unlockConditions: this.unlockConditions,
       range: this.range?.toData(),
       variables: this.variables,
-    };
+    }
   }
 
   public addLocale(
     locale: typeof constants.GAME_LOCALES[number],
     data: RawTalentCandidate
   ) {
-    this.name?.addLocale(locale, data.name);
-    this.description?.addLocale(locale, data.description);
+    this.name?.addLocale(locale, data.name)
+    this.description?.addLocale(locale, data.description)
   }
 
   public addLocaleTL(
     locale: typeof constants.TRANSLATED_LOCALES[number],
     data: any
   ) {
-    const candidate = data?.talents?.[this.talentNumber]?.[this.key];
-    this.name?.addLocaleTL(locale, candidate?.name);
-    this.description?.addLocaleTL(locale, candidate?.description);
+    const candidate = data?.talents?.[this.talentNumber]?.[this.key]
+    this.name?.addLocaleTL(locale, candidate?.name)
+    this.description?.addLocaleTL(locale, candidate?.description)
   }
 
   public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
     return {
       name: this.name?.toLocaleData(locale),
       description: this.description?.toLocaleData(locale),
-    };
+    }
   }
 
   public get key(): string {
-    return `E${this.unlockConditions.elite}-L${this.unlockConditions.level}-P${this.unlockConditions.potential}`;
+    return `E${this.unlockConditions.elite}-L${this.unlockConditions.level}-P${this.unlockConditions.potential}`
   }
 }
 
 export interface GeneratedTalentData {
-  talentNumber: number;
-  candidates: GeneratedTalentCandidateData[];
+  talentNumber: number
+  candidates: GeneratedTalentCandidateData[]
 }
 
 export class Talent implements Localizable {
-  talentNumber: number; // One-indexed
-  candidates: TalentCandidate[];
+  talentNumber: number // One-indexed
+  candidates: TalentCandidate[]
 
   public constructor(talentNumber: number, data: RawTalent) {
-    this.talentNumber = talentNumber;
-    if (!data.candidates) throw new Error("Talent has no candidates");
+    this.talentNumber = talentNumber
+    if (!data.candidates) throw new Error("Talent has no candidates")
     this.candidates = data.candidates.map(
       (candidateData) => new TalentCandidate(talentNumber, candidateData)
-    );
+    )
   }
 
   public static getAllFromData(data: CharacterTableData): Talent[] | null {
     const talents = data.talents
       ?.filter(({ candidates }) => candidates)
-      .map((talentData, index) => new Talent(index + 1, talentData));
-    return talents?.length ? talents : null;
+      .map((talentData, index) => new Talent(index + 1, talentData))
+    return talents?.length ? talents : null
   }
 
   public toData(): GeneratedTalentData {
     return {
       talentNumber: this.talentNumber,
       candidates: this.candidates.map((candidate) => candidate.toData()),
-    };
+    }
   }
 
   public addLocale(
@@ -119,8 +119,8 @@ export class Talent implements Localizable {
   ): void {
     const rawTalent = data.talents!.filter(({ candidates }) => candidates)[
       this.talentNumber - 1
-    ];
-    if (!rawTalent) return; // Magallan's Soaring Dragon summons have different number of talents between locales
+    ]
+    if (!rawTalent) return // Magallan's Soaring Dragon summons have different number of talents between locales
     this.candidates.forEach((candidate) => {
       const rawCandidate = rawTalent.candidates!.find(
         (rawCandidate) =>
@@ -130,25 +130,25 @@ export class Talent implements Localizable {
             candidate.unlockConditions.level &&
           rawCandidate.requiredPotentialRank ===
             candidate.unlockConditions.potential - 1
-      );
-      candidate.addLocale(locale, rawCandidate!);
-    });
+      )
+      candidate.addLocale(locale, rawCandidate!)
+    })
   }
 
   public addLocaleTL(
     locale: typeof constants.TRANSLATED_LOCALES[number],
     data: any
   ): void {
-    this.candidates.forEach((candidate) => candidate.addLocaleTL(locale, data));
+    this.candidates.forEach((candidate) => candidate.addLocaleTL(locale, data))
   }
 
   public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
     return this.candidates.reduce(
       (accumulator: { [key: string]: any }, candidate) => {
-        accumulator[candidate.key] = candidate.toLocaleData(locale);
-        return accumulator;
+        accumulator[candidate.key] = candidate.toLocaleData(locale)
+        return accumulator
       },
       {}
-    );
+    )
   }
 }

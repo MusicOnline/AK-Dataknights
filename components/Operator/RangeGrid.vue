@@ -1,33 +1,33 @@
 <script setup lang="ts">
-import type { GeneratedRangeData } from "~/tools/generate-data/operator/range";
+import type { GeneratedRangeData } from "~/tools/generate-data/operator/range"
 
 const { range } = defineProps<{
-  range: GeneratedRangeData;
-}>();
+  range: GeneratedRangeData
+}>()
 
-const editedGrid = [...range.grids];
+const editedGrid = [...range.grids]
 if (!editedGrid.find(({ row, col }) => row === 0 && col === 0)) {
-  editedGrid.push({ row: 0, col: 0 });
+  editedGrid.push({ row: 0, col: 0 })
 }
 
 const gridData = computed<{
-  minRow: number;
-  maxRow: number;
-  totalRow: number;
-  minCol: number;
-  maxCol: number;
-  totalCol: number;
+  minRow: number
+  maxRow: number
+  totalRow: number
+  minCol: number
+  maxCol: number
+  totalCol: number
 }>(() => {
-  let minRow = 0;
-  let maxRow = 0;
-  let minCol = 0;
-  let maxCol = 0;
+  let minRow = 0
+  let maxRow = 0
+  let minCol = 0
+  let maxCol = 0
   editedGrid.forEach(({ row, col }) => {
-    if (row < minRow) minRow = row;
-    if (row > maxRow) maxRow = row;
-    if (col < minCol) minCol = col;
-    if (col > maxCol) maxCol = col;
-  });
+    if (row < minRow) minRow = row
+    if (row > maxRow) maxRow = row
+    if (col < minCol) minCol = col
+    if (col > maxCol) maxCol = col
+  })
   return {
     minRow,
     maxRow,
@@ -35,8 +35,8 @@ const gridData = computed<{
     minCol,
     maxCol,
     totalCol: maxCol - minCol + 1,
-  };
-});
+  }
+})
 </script>
 
 <template>

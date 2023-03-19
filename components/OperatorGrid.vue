@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const operators = useOperatorsIndexData();
+const operators = useOperatorsIndexData()
 </script>
 
 <template>

@@ -54,7 +54,8 @@
       "prettier-plugin-import-sort",
       "prettier-plugin-organize-attributes",
       "prettier-plugin-tailwindcss"
-    ]
+    ],
+    "semi": false
   },
   "importSort": {
     ".js, .jsx, .ts, .tsx, .vue": {
