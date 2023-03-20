@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import "~/assets/css/index.scss";
+import "~/assets/css/index.scss"
 
-import type { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables";
-import { useSeoMeta } from "@unhead/vue";
+import type { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables"
+import { useSeoMeta } from "@unhead/vue"
 
-const { t, locale, locales } = useI18n();
-const isDarkModeEnabled = useIsDarkModeEnabled();
+const { t, locale, locales } = useI18n()
+const isDarkModeEnabled = useIsDarkModeEnabled()
 
 useSeoMeta({
   // https://github.com/nuxt/nuxt/issues/19460
@@ -16,13 +16,13 @@ useSeoMeta({
   ogLocale: () => transformLocaleCode(locale.value),
   ogType: "website",
   twitterCard: "summary",
-});
+})
 
 useHead({
   titleTemplate(title) {
     return title
       ? t("general.sitePageTitle", [title])
-      : t("general.siteIndexTitle");
+      : t("general.siteIndexTitle")
   },
   title: null,
   meta: () => [
@@ -53,44 +53,44 @@ useHead({
     {
       property: "og:locale:alternate",
       content: (<LocaleObject[]>locales.value).flatMap(({ code }) => {
-        const transformedCode = transformLocaleCode(code);
-        if (code === locale.value) return [];
-        return transformedCode;
+        const transformedCode = transformLocaleCode(code)
+        if (code === locale.value) return []
+        return transformedCode
       }),
     },
   ],
-});
+})
 
-const isMounted = ref<boolean>(false);
+const isMounted = ref<boolean>(false)
 
 onMounted(() => {
-  updateColorMode();
-  isMounted.value = true;
-});
+  updateColorMode()
+  isMounted.value = true
+})
 
-watch(getIsDarkModeSystemPreference, updateColorMode);
+watch(getIsDarkModeSystemPreference, updateColorMode)
 
 function getIsDarkModeSystemPreference(): boolean {
-  return window?.matchMedia("(prefers-color-scheme: dark)").matches || false;
+  return window?.matchMedia("(prefers-color-scheme: dark)").matches || false
 }
 
 function updateColorMode() {
-  isDarkModeEnabled.value = getIsDarkModeSystemPreference();
+  isDarkModeEnabled.value = getIsDarkModeSystemPreference()
 }
 
 function transformLocaleCode(locale: string): string {
-  locale = locale.replace("-", "_");
+  locale = locale.replace("-", "_")
   switch (locale) {
     case "en":
-      return "en_US";
+      return "en_US"
     case "ja":
-      return "ja_JP";
+      return "ja_JP"
     case "ko":
-      return "ko_KR";
+      return "ko_KR"
     case "zh":
-      return "zh_CN";
+      return "zh_CN"
   }
-  return locale;
+  return locale
 }
 </script>
 
