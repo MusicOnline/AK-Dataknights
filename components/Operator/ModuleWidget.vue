@@ -53,7 +53,7 @@ watch(
 </script>
 
 <template>
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-2 overflow-x-auto">
     <div class="flex gap-2">
       <!-- Icon and name -->
       <div class="flex gap-2">

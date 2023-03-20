@@ -192,7 +192,7 @@ watch(
       80rem + 2 * (18rem + 0.5rem)
     -->
     <main
-      class="flex flex-col gap-2 md:ml-56 lg:ml-[clamp(0rem,calc((117rem-100vw)/2),18rem)]"
+      class="flex w-full flex-col gap-2 md:ml-56 lg:ml-[clamp(0rem,calc((117rem-100vw)/2),18rem)]"
     >
       <!-- <Breadcrumbs class="text-sm" /> -->
       <!-- General information -->
