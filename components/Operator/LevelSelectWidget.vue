@@ -117,28 +117,31 @@ function limitOperatorLevel(event: Event) {
       >
     </OSlider>
 
-    <VTooltip class="ml-auto flex">
-      <OSwitch
-        v-model="operatorState.areBonusesIncluded"
-        :rounded="false"
-        check-class="bg-slate-500 outline outline-1 outline-slate-600 transition-colors"
-        check-checked-class="bg-green-400 outline-green-500"
-        check-switch-class="bg-slate-50 transition-transform"
-        label-class="ml-1"
-        @update:modelValue="
-          $emit('update:areBonusesIncluded', operatorState.areBonusesIncluded)
-        "
-      >
-        <a class="flex items-center gap-0.5">
-          <span class="hidden whitespace-nowrap sm:inline">{{
-            t("operator.ui.includeBonuses.title")
-          }}</span>
-          <Icon class="text-xl" name="heroicons:question-mark-circle-solid" />
-        </a>
-      </OSwitch>
-      <template #popper>
-        {{ t("operator.ui.includeBonuses.description") }}
-      </template>
-    </VTooltip>
+    <ClientOnly>
+      <!-- Probably involves non-body teleport which does not work with SSR -->
+      <VTooltip class="ml-auto flex">
+        <OSwitch
+          v-model="operatorState.areBonusesIncluded"
+          :rounded="false"
+          check-class="bg-slate-500 outline outline-1 outline-slate-600 transition-colors"
+          check-checked-class="bg-green-400 outline-green-500"
+          check-switch-class="bg-slate-50 transition-transform"
+          label-class="ml-1"
+          @update:modelValue="
+            $emit('update:areBonusesIncluded', operatorState.areBonusesIncluded)
+          "
+        >
+          <a class="flex items-center gap-0.5">
+            <span class="hidden whitespace-nowrap sm:inline">{{
+              t("operator.ui.includeBonuses.title")
+            }}</span>
+            <Icon class="text-xl" name="heroicons:question-mark-circle-solid" />
+          </a>
+        </OSwitch>
+        <template #popper>
+          {{ t("operator.ui.includeBonuses.description") }}
+        </template>
+      </VTooltip>
+    </ClientOnly>
   </div>
 </template>
