@@ -63,6 +63,11 @@ export interface GeneratedOutfitData {
   voiceId: string | null
   voiceType: VoiceType
 }
+export interface GeneratedOutfitIndexData {
+  id: string
+  avatarId: string
+  portraitId: string | null
+}
 
 export class Outfit {
   id: string
@@ -92,7 +97,11 @@ export class Outfit {
     }
   }
 
-  public toIndexData() {
-    return this.avatarId
+  public toIndexData(): GeneratedOutfitIndexData {
+    return {
+      id: this.id,
+      avatarId: this.avatarId,
+      portraitId: this.portraitId,
+    }
   }
 }

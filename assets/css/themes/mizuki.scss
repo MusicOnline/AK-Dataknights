@@ -9,6 +9,36 @@
   --color-brand-icon: var(--color-primary-main);
   --color-brand-text: var(--tw-slate-900);
 
+  // Rarity: 1 star
+  --color-rarity-1-card: var(--tw-gray-400);
+  --color-rarity-1-item: var(--tw-gray-200);
+  --color-rarity-1-item-focus: var(--tw-gray-300);
+
+  // Rarity: 2 star
+  --color-rarity-2-card: var(--tw-lime-400);
+  --color-rarity-2-item: var(--tw-lime-200);
+  --color-rarity-2-item-focus: var(--tw-lime-300);
+
+  // Rarity: 3 star
+  --color-rarity-3-card: var(--tw-sky-400);
+  --color-rarity-3-item: var(--tw-sky-200);
+  --color-rarity-3-item-focus: var(--tw-sky-300);
+
+  // Rarity: 4 star
+  --color-rarity-4-card: var(--tw-indigo-400);
+  --color-rarity-4-item: var(--tw-indigo-200);
+  --color-rarity-4-item-focus: var(--tw-indigo-300);
+
+  // Rarity: 5 star
+  --color-rarity-5-card: var(--tw-yellow-400);
+  --color-rarity-5-item: var(--tw-yellow-200);
+  --color-rarity-5-item-focus: var(--tw-yellow-300);
+
+  // Rarity: 6 star
+  --color-rarity-6-card: var(--tw-orange-400);
+  --color-rarity-6-item: var(--tw-orange-200);
+  --color-rarity-6-item-focus: var(--tw-orange-300);
+
   // Navigation bar
   --color-bg-navbar: var(--tw-slate-50);
   --color-fg-navbar-inactive: var(--tw-slate-700);
@@ -24,7 +54,7 @@
   --color-fg-primary: var(--tw-slate-50);
 
   // Input
-  --color-bg-input: var(--tw-slate-200);
+  --color-bg-input: var(--tw-slate-50);
   --color-bg-input-focus: var(--tw-slate-50);
   --color-fg-input: var(--tw-slate-900);
   --color-fg-input-placeholder: var(--tw-slate-400);

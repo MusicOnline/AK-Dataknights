@@ -1,10 +1,43 @@
 :root {
+  // Tailwind Slate
   --tw-slate-50: 248, 250, 252;
+  --tw-slate-100: 241, 245, 249;
   --tw-slate-200: 226, 232, 240;
   --tw-slate-300: 203, 213, 225;
   --tw-slate-400: 148, 163, 184;
+  --tw-slate-500: 100, 116, 139;
   --tw-slate-600: 71, 85, 105;
   --tw-slate-700: 51, 65, 85;
   --tw-slate-800: 30, 41, 59;
   --tw-slate-900: 15, 23, 42;
+
+  // Tailwind Gray (Rarity: 1 star)
+  --tw-gray-200: 229, 231, 235;
+  --tw-gray-300: 209, 213, 219;
+  --tw-gray-400: 156, 163, 175;
+
+  // Tailwind Lime (Rarity: 2 star)
+  --tw-lime-200: 217, 249, 157;
+  --tw-lime-300: 190, 242, 100;
+  --tw-lime-400: 163, 230, 53;
+
+  // Tailwind Sky (Rarity: 3 star)
+  --tw-sky-200: 186, 230, 253;
+  --tw-sky-300: 125, 211, 252;
+  --tw-sky-400: 56, 189, 248;
+
+  // Tailwind Indigo (Rarity: 4 star)
+  --tw-indigo-200: 199, 210, 254;
+  --tw-indigo-300: 165, 180, 252;
+  --tw-indigo-400: 129, 140, 248;
+
+  // Tailwind Yellow (Rarity: 5 star)
+  --tw-yellow-200: 254, 240, 138;
+  --tw-yellow-300: 253, 224, 71;
+  --tw-yellow-400: 250, 204, 21;
+
+  // Tailwind Orange (Rarity: 6 star)
+  --tw-orange-200: 254, 215, 170;
+  --tw-orange-300: 253, 186, 116;
+  --tw-orange-400: 251, 146, 60;
 }

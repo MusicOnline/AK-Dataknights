@@ -90,7 +90,7 @@ export default defineNuxtConfig({
   },
   sourcemap: process.env.NODE_ENV !== "production",
   ssr: process.env.ENABLE_SSR?.toLowerCase() === "true",
-  modules: ["@nuxtjs/i18n", "@nuxtjs/tailwindcss", "nuxt-icon"],
+  modules: ["nuxt-lodash", "@nuxtjs/i18n", "@nuxtjs/tailwindcss", "nuxt-icon"],
   i18n: {
     locales: [
       { code: "en", name: "English" },

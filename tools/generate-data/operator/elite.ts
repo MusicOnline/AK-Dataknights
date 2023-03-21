@@ -1,5 +1,9 @@
 import * as constants from "../constants"
-import { GeneratedOutfitData, Outfit } from "../outfit"
+import {
+  GeneratedOutfitData,
+  GeneratedOutfitIndexData,
+  Outfit,
+} from "../outfit"
 import { GeneratedRangeData, Range } from "./range"
 import { CharacterTableData, KeyFrame } from "./raw"
 
@@ -12,7 +16,7 @@ export interface GeneratedElitePhaseData {
 }
 
 export interface GeneratedElitePhaseIndexData {
-  outfit: string | undefined
+  outfit: GeneratedOutfitIndexData | null
 }
 
 export class ElitePhase {
@@ -55,7 +59,7 @@ export class ElitePhase {
 
   public toIndexData(): GeneratedElitePhaseIndexData {
     return {
-      outfit: this.outfit?.toIndexData(),
+      outfit: this.outfit?.toIndexData() ?? null,
     }
   }
 }

@@ -180,7 +180,9 @@
       "level": "LV.",
       "elite": "昇進",
       "introduction": "紹介",
-      "searchOperator": "コードネームでオペレーターを検索…"
+      "searchOperator": "コードネームでオペレーターを検索…",
+      "viewDetails": "詳細確認",
+      "randomOperator": "ランダム"
     },
     "module": {
       "attributes": "ステータス",

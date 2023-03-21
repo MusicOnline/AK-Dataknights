@@ -7,7 +7,7 @@ const { t } = useI18n()
   <div>
     <header class="bg-bg-navbar fixed top-0 left-0 z-30 h-12 w-full p-2 shadow">
       <nav class="m-auto flex max-w-7xl items-center gap-4">
-        <NuxtLink class="block" :to="localePath('/operators')">
+        <NuxtLink class="block" :to="localePath('/')">
           <SiteBrand class="text-2xl transition-colors md:text-3xl" />
         </NuxtLink>
         <ul

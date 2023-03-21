@@ -1,5 +1,11 @@
 export default {
   darkMode: ["class", '[data-mode="dark"]'],
+  safelist: [
+    {
+      pattern: /bg-rarity-\d/,
+      variants: ["hover", "focus"],
+    },
+  ],
   theme: {
     extend: {
       colors: {
@@ -15,11 +21,55 @@ export default {
           main: "rgba(var(--color-tertiary-main), <alpha-value>)",
         },
         brand: {
-          icon: "rgba(var( --color-brand-icon), <alpha-value>)",
+          icon: "rgba(var(--color-brand-icon), <alpha-value>)",
           text: "rgba(var(--color-brand-text), <alpha-value>)",
         },
+        rarity: {
+          "1": {
+            item: {
+              normal: "rgba(var(--color-rarity-1-item), <alpha-value>)",
+              focus: "rgba(var(--color-rarity-1-item-focus), <alpha-value>)",
+            },
+            card: "rgba(var(--color-rarity-1-card), <alpha-value>)",
+          },
+          "2": {
+            item: {
+              normal: "rgba(var(--color-rarity-2-item), <alpha-value>)",
+              focus: "rgba(var(--color-rarity-2-item-focus), <alpha-value>)",
+            },
+            card: "rgba(var(--color-rarity-2-card), <alpha-value>)",
+          },
+          "3": {
+            item: {
+              normal: "rgba(var(--color-rarity-3-item), <alpha-value>)",
+              focus: "rgba(var(--color-rarity-3-item-focus), <alpha-value>)",
+            },
+            card: "rgba(var(--color-rarity-3-card), <alpha-value>)",
+          },
+          "4": {
+            item: {
+              normal: "rgba(var(--color-rarity-4-item), <alpha-value>)",
+              focus: "rgba(var(--color-rarity-4-item-focus), <alpha-value>)",
+            },
+            card: "rgba(var(--color-rarity-4-card), <alpha-value>)",
+          },
+          "5": {
+            item: {
+              normal: "rgba(var(--color-rarity-5-item), <alpha-value>)",
+              focus: "rgba(var(--color-rarity-5-item-focus), <alpha-value>)",
+            },
+            card: "rgba(var(--color-rarity-5-card), <alpha-value>)",
+          },
+          "6": {
+            item: {
+              normal: "rgba(var(--color-rarity-6-item), <alpha-value>)",
+              focus: "rgba(var(--color-rarity-6-item-focus), <alpha-value>)",
+            },
+            card: "rgba(var(--color-rarity-6-card), <alpha-value>)",
+          },
+        },
         bg: {
-          navbar: "rgba(var( --color-bg-navbar), <alpha-value>)",
+          navbar: "rgba(var(--color-bg-navbar), <alpha-value>)",
           body: "rgba(var(--color-bg-body), <alpha-value>)",
           primary: "rgba(var(--color-bg-primary), <alpha-value>)",
           input: {
@@ -57,4 +107,4 @@ export default {
       },
     },
   },
-};
+}

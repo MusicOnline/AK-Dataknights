@@ -58,7 +58,9 @@
       "searchOperator": "Search Operators by code name...",
       "specificBranchTrait": "{branch} Trait",
       "unlocksAtSpecificElite": "Unlocks at Elite {elite}",
-      "unlocksAtSpecificEliteAndLevel": "Unlocks at Elite {elite} Lv. {level}"
+      "unlocksAtSpecificEliteAndLevel": "Unlocks at Elite {elite} Lv. {level}",
+      "viewDetails": "View Details",
+      "randomOperator": "Random"
     },
     "rarityName": {
       "TOP_OPERATOR": "Top Operator",

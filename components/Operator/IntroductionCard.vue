@@ -49,23 +49,6 @@ const currentTraitCandidate = computed<GeneratedTraitCandidateData>(() => {
   if (!currentCandidate) throw new Error("No usable operator trait found")
   return currentCandidate
 })
-
-function getLocalizedName(
-  locale: string,
-  operator: GeneratedOperatorData
-): string | null {
-  return t(`${operator.key}.name`, {}, { locale })
-}
-
-function getLocalizedNameWithTL(
-  lang: string,
-  region: string,
-  operator: GeneratedOperatorData
-): string | null {
-  const officialTranslation = getLocalizedName(`${lang}-${region}`, operator)
-  if (officialTranslation) return officialTranslation
-  return getLocalizedName(`${lang}-TL`, operator)
-}
 </script>
 
 <template>
@@ -74,59 +57,7 @@ function getLocalizedNameWithTL(
       <img class="m-auto h-32 w-32 sm:m-0 sm:h-fit" :src="currentAvatarUrl" />
       <div class="flex flex-col gap-2">
         <!-- Icon, name, rarity, class -->
-        <div class="flex text-slate-900 md:h-16">
-          <img
-            class="h-12 bg-slate-900 object-contain p-0.5 md:h-full"
-            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_${operator.class.toLowerCase()}.png`"
-          />
-          <div class="name-rarity-container">
-            <ul class="flex flex-wrap text-xs">
-              <li
-                class="other-lang-alias"
-                v-if="
-                  !locale.startsWith('en') &&
-                  getLocalizedNameWithTL('en', 'US', operator)
-                "
-                data-lang="en"
-              >
-                {{ getLocalizedNameWithTL("en", "US", operator) }}
-              </li>
-              <li class="other-lang-alias" v-if="!locale.startsWith('zh')">
-                {{ getLocalizedName("zh-CN", operator) }}
-              </li>
-              <template
-                v-for="[nameLang, nameRegion] in [
-                  ['ja', 'JP'],
-                  ['ko', 'KR'],
-                ]"
-              >
-                <li
-                  class="other-lang-alias"
-                  v-if="
-                    !locale.startsWith(nameLang) &&
-                    getLocalizedNameWithTL(nameLang, nameRegion, operator)
-                  "
-                  :data-lang="nameLang"
-                >
-                  {{ getLocalizedNameWithTL(nameLang, nameRegion, operator) }}
-                </li>
-              </template>
-            </ul>
-            <div class="flex flex-wrap items-center gap-x-1">
-              <h1 class="text-2xl font-bold">
-                {{ t(`${operator.key}.name`) }}
-              </h1>
-              <div class="flex h-fit py-0.5 px-1 text-lg text-slate-50">
-                <Icon
-                  class="-mx-0.5 rotate-12 drop-shadow"
-                  v-for="i in [...Array(operator.rarity).keys()]"
-                  :key="i"
-                  name="material-symbols:star-rate"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <OperatorNameClassRarityLabel :operator="operator" />
         <!-- Class branch, trait -->
         <div class="flex">
           <img
@@ -178,39 +109,3 @@ function getLocalizedNameWithTL(
 <i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>
 <i18n locale="zh-TW" src="~/locales/zh-TW/operators-data.json"></i18n>
-
-<style scoped lang="scss">
-.other-lang-alias + .other-lang-alias::before {
-  @apply px-1;
-
-  content: "|\00a0";
-}
-
-.name-rarity-container {
-  @apply flex-1 border-b-4 border-b-slate-900 px-2 pt-2;
-
-  .operator-rarity-1 & {
-    @apply bg-gray-400;
-  }
-
-  .operator-rarity-2 & {
-    @apply bg-lime-400;
-  }
-
-  .operator-rarity-3 & {
-    @apply bg-sky-400;
-  }
-
-  .operator-rarity-4 & {
-    @apply bg-indigo-400;
-  }
-
-  .operator-rarity-5 & {
-    @apply bg-yellow-400;
-  }
-
-  .operator-rarity-6 & {
-    @apply bg-orange-400;
-  }
-}
-</style>

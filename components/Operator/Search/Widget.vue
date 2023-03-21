@@ -18,7 +18,7 @@ const {
 
 const { t } = useI18n()
 
-const nameInput = useDebounce<string>("", 150)
+const nameInput = useDebounceRef<string>("", 150)
 
 const operators: GeneratedOperatorIndexData[] = useOperatorsIndexData()
 
@@ -119,7 +119,7 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
         :placeholder="t('operator.ui.searchOperator')"
       />
     </div>
-    <div class="relative" v-if="operatorSearchResults.length">
+    <div class="relative z-10" v-if="operatorSearchResults.length">
       <OperatorSearchList
         :operators="operatorSearchResults"
         :class="{
