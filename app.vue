@@ -8,8 +8,7 @@ const { t, locale, locales } = useI18n()
 const isDarkModeEnabled = useIsDarkModeEnabled()
 
 useSeoMeta({
-  // https://github.com/nuxt/nuxt/issues/19460
-  // ogSiteName: () => t("general.siteIndexTitle"),
+  ogSiteName: () => t("general.siteIndexTitle"),
   ogTitle: () => t("general.siteIndexMetaTitle"),
   description: () => t("general.siteIndexDescription"),
   ogDescription: () => t("general.siteIndexDescription"),
@@ -26,10 +25,6 @@ useHead({
   },
   title: null,
   meta: () => [
-    {
-      property: "og:site_name",
-      content: t("general.siteIndexTitle"),
-    },
     {
       key: "og:image",
       property: "og:image",

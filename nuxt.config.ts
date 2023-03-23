@@ -129,10 +129,6 @@ export default defineNuxtConfig({
       await generateDataFiles()
     },
   },
-  vite: {
-    // https://github.com/nuxt/framework/issues/7794
-    devBundler: "legacy",
-  },
   experimental: {
     reactivityTransform: true,
   },
