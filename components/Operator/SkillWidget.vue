@@ -74,7 +74,7 @@ const isInitSpNotAlwaysZero = computed<boolean>(
         </div>
         <div class="flex gap-2 text-slate-900">
           <div
-            class="bg-primary-main px-2"
+            class="px-2"
             v-if="skill.levels[0].skillType !== 'PASSIVE'"
             :class="{
               'bg-green-400': skill.levels[0].spData.spType === 'AUTO',

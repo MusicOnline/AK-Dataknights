@@ -6,6 +6,7 @@ import { useSeoMeta } from "@unhead/vue"
 
 const { t, locale, locales } = useI18n()
 const isDarkModeEnabled = useIsDarkModeEnabled()
+const theme = ref<string>("mizuki")
 
 useSeoMeta({
   ogSiteName: () => t("general.siteIndexTitle"),
@@ -93,7 +94,7 @@ function transformLocaleCode(locale: string): string {
   <div>
     <Html :lang="locale" prefix="og: https://ogp.me/ns#">
       <Body
-        data-theme="mizuki"
+        :data-theme="theme"
         :data-mode="isDarkModeEnabled ? 'dark' : 'light'"
       />
     </Html>
