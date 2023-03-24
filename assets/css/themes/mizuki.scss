@@ -1,14 +1,22 @@
-@mixin light-mode {
+@mixin core-colors($light-mode: true) {
   --color-primary-main: 96, 165, 250;
   --color-primary-alt: 30, 64, 175;
   --color-secondary-main: 224, 142, 214;
   --color-secondary-alt: 100, 78, 204;
   --color-tertiary-main: 241, 255, 122;
+}
 
-  // Brand
-  --color-brand-icon: var(--color-primary-main);
-  --color-brand-text: var(--tw-slate-900);
+@mixin brand-colors($light-mode: true) {
+  @if $light-mode {
+    --color-brand-icon: var(--color-primary-main);
+    --color-brand-text: var(--tw-slate-900);
+  } @else {
+    --color-brand-icon: var(--color-primary-main);
+    --color-brand-text: var(--tw-slate-50);
+  }
+}
 
+@mixin rarity-colors($light-mode: true) {
   // Rarity: 1 star
   --color-rarity-1-card: var(--tw-gray-400);
   --color-rarity-1-item: var(--tw-gray-200);
@@ -38,69 +46,97 @@
   --color-rarity-6-card: var(--tw-orange-400);
   --color-rarity-6-item: var(--tw-orange-200);
   --color-rarity-6-item-focus: var(--tw-orange-300);
+}
 
-  // Navigation bar
-  --color-bg-navbar: var(--tw-slate-50);
-  --color-fg-navbar-inactive: var(--tw-slate-700);
-  --color-fg-navbar-active: var(--color-primary-main);
-  --color-fg-navbar-focus: var(--tw-slate-900);
+@mixin body-colors($light-mode: true) {
+  @if $light-mode {
+    --color-bg-body: var(--tw-slate-50);
+    --color-fg-body: var(--tw-slate-900);
+  } @else {
+    --color-bg-body: var(--tw-slate-800);
+    --color-fg-body: var(--tw-slate-50);
+  }
+}
 
-  // Body
-  --color-bg-body: var(--tw-slate-50);
-  --color-fg-body: var(--tw-slate-900);
+@mixin navbar-colors($light-mode: true) {
+  @if $light-mode {
+    --color-bg-navbar: var(--tw-slate-50);
+    --color-fg-navbar-inactive: var(--tw-slate-700);
+    --color-fg-navbar-active: var(--color-primary-main);
+    --color-fg-navbar-focus: var(--tw-slate-900);
+  } @else {
+    --color-bg-navbar: var(--tw-slate-900);
+    --color-fg-navbar-inactive: var(--tw-slate-300);
+    --color-fg-navbar-active: var(--color-primary-main);
+    --color-fg-navbar-focus: var(--tw-slate-50);
+  }
+}
 
-  // Primary container
+@mixin primary-color-container-colors($light-mode: true) {
   --color-bg-primary: var(--color-primary-main);
   --color-fg-primary: var(--tw-slate-50);
+}
 
-  // Input
-  --color-bg-input: var(--tw-slate-50);
-  --color-bg-input-focus: var(--tw-slate-50);
-  --color-fg-input: var(--tw-slate-900);
-  --color-fg-input-placeholder: var(--tw-slate-400);
+@mixin input-colors($light-mode: true) {
+  @if $light-mode {
+    --color-bg-input: var(--tw-slate-50);
+    --color-bg-input-focus: var(--tw-slate-50);
+    --color-fg-input: var(--tw-slate-900);
+    --color-fg-input-placeholder: var(--tw-slate-400);
+  } @else {
+    --color-bg-input: var(--tw-slate-800);
+    --color-bg-input-focus: var(--tw-slate-700);
+    --color-fg-input: var(--tw-slate-50);
+    --color-fg-input-placeholder: var(--tw-slate-400);
+  }
+}
 
-  // Container 1
-  --color-bg-container-1: var(--tw-slate-200);
-  --color-bg-container-1-focus: var(--tw-slate-300);
-  --color-fg-container-1: var(--tw-slate-700);
+@mixin container-1-colors($light-mode: true) {
+  @if $light-mode {
+    --color-bg-container-1: var(--tw-slate-200);
+    --color-bg-container-1-focus: var(--tw-slate-300);
+    --color-fg-container-1: var(--tw-slate-700);
+  } @else {
+    --color-bg-container-1: var(--tw-slate-700);
+    --color-bg-container-1-focus: var(--tw-slate-600);
+    --color-fg-container-1: var(--tw-slate-300);
+  }
 }
 
 @mixin dark-mode-override {
-  // Brand
-  --color-brand-icon: var(--color-primary-main);
-  --color-brand-text: var(--tw-slate-50);
-
-  // Navigation bar
-  --color-bg-navbar: var(--tw-slate-900);
-  --color-fg-navbar-inactive: var(--tw-slate-300);
-  --color-fg-navbar-active: var(--color-primary-main);
-  --color-fg-navbar-focus: var(--tw-slate-50);
-
-  // Body
-  --color-bg-body: var(--tw-slate-800);
-  --color-fg-body: var(--tw-slate-50);
-
-  // Input
-  --color-bg-input: var(--tw-slate-800);
-  --color-bg-input-focus: var(--tw-slate-700);
-  --color-fg-input: var(--tw-slate-50);
-  --color-fg-input-placeholder: var(--tw-slate-400);
-
-  // Container 1
-  --color-bg-container-1: var(--tw-slate-700);
-  --color-bg-container-1-focus: var(--tw-slate-600);
-  --color-fg-container-1: var(--tw-slate-300);
+  @include core-colors($light-mode: false);
+  @include brand-colors($light-mode: false);
+  @include rarity-colors($light-mode: false);
+  @include body-colors($light-mode: false);
+  @include navbar-colors($light-mode: false);
+  @include primary-color-container-colors($light-mode: false);
+  @include input-colors($light-mode: false);
+  @include container-1-colors($light-mode: false);
 }
 
 :root,
 [data-theme="mizuki"] {
-  @include light-mode;
+  @include core-colors;
+  @include brand-colors;
+  @include rarity-colors;
+  @include body-colors;
+  @include navbar-colors;
+  @include primary-color-container-colors;
+  @include input-colors;
+  @include container-1-colors;
 
   &[data-mode="dark"] {
     @include dark-mode-override;
   }
 
+  // Due to prerendering, pages are initially in light mode before hydration
+  // Color mode is handled by JS to set data-mode
+  // A loading screen is shown using prefers-color-scheme before JS can run
   @media (prefers-color-scheme: dark) {
-    @include light-mode;
+    // Before hydration, prefers-color-scheme is respected for the loading screen
+    // After hydration, data-mode should be respected only
+    &[data-is-mounted="false"] {
+      @include dark-mode-override;
+    }
   }
 }
