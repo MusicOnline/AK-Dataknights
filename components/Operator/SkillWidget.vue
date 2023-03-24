@@ -53,7 +53,7 @@ const isInitSpNotAlwaysZero = computed<boolean>(
 </script>
 
 <template>
-  <div class="flex flex-col gap-2 overflow-x-auto">
+  <div class="flex flex-col gap-4 overflow-x-auto">
     <!-- Name, SP recovery type, activation type -->
     <div class="flex gap-2">
       <img
@@ -92,7 +92,7 @@ const isInitSpNotAlwaysZero = computed<boolean>(
     </div>
     <!-- Level data table -->
     <table class="mr-auto table-fixed border-hidden">
-      <thead>
+      <thead class="text-center">
         <tr>
           <th class="w-8 sm:w-16">{{ t("operator.ui.level") }}</th>
           <template v-if="skill.levels[0].skillType !== 'PASSIVE'">

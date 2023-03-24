@@ -188,7 +188,7 @@
       "attributes": "屬性",
       "moduleDescription": "强化描述",
       "stage": "等級",
-      "moduleSelected": "選中模組",
+      "moduleSelected": "當前模組",
       "selectModule": "選擇模組"
     },
     "meta": {

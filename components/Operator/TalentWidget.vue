@@ -262,7 +262,7 @@ const talentsAndBestAndNextCandidate = computed<
           class="h-8 w-8 flex-shrink-0 p-0.5"
           v-for="potential in talentPotentialNumbers"
           :class="{
-            'bg-slate-500 hover:bg-slate-600':
+            'bg-slate-400 hover:bg-slate-500':
               talentState.potential !== potential,
             'bg-slate-900': talentState.potential === potential,
           }"

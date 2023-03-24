@@ -192,15 +192,17 @@ watch(
       80rem + 2 * (18rem + 0.5rem)
     -->
     <main
-      class="flex w-full flex-col gap-2 md:ml-56 lg:ml-[clamp(0rem,calc((117rem-100vw)/2),18rem)]"
+      class="flex w-full flex-col gap-8 md:ml-56 lg:ml-[clamp(0rem,calc((117rem-100vw)/2),18rem)]"
     >
       <!-- <Breadcrumbs class="text-sm" /> -->
       <!-- General information -->
-      <div class="anchor-ghost" id="introduction" />
-      <OperatorIntroductionCard
-        :operator="operator"
-        :operator-state="operatorState"
-      />
+      <div>
+        <div class="anchor-ghost" id="introduction" />
+        <OperatorIntroductionCard
+          :operator="operator"
+          :operator-state="operatorState"
+        />
+      </div>
       <!-- Sticky level select -->
       <OperatorLevelSelectWidget
         class="bg-bg-container-1-normal text-fg-container-1 sticky top-12 z-10 p-2 shadow"
@@ -210,38 +212,32 @@ watch(
         :operator="operator"
       />
       <!-- Range, stats, potentials, trust -->
-      <div class="anchor-ghost" id="stats" />
-      <div
-        class="outline-bg-container-1-normal flex flex-wrap justify-center gap-1 p-2 outline outline-1 sm:flex-nowrap sm:justify-start lg:gap-8"
-      >
-        <div class="grid w-full p-2 sm:max-w-[8rem]">
-          <OperatorRangeGrid
-            class="m-auto"
-            v-if="currentPhase.range"
-            :range="currentPhase.range"
+      <div>
+        <div class="anchor-ghost" id="stats" />
+        <div
+          class="outline-bg-container-1-normal flex flex-wrap justify-center gap-1 p-2 outline outline-1 sm:flex-nowrap sm:justify-start lg:gap-8"
+        >
+          <div class="grid w-full p-2 sm:max-w-[8rem]">
+            <OperatorRangeGrid
+              class="m-auto"
+              v-if="currentPhase.range"
+              :range="currentPhase.range"
+            />
+          </div>
+          <OperatorAttributesTable
+            class="max-w-xl flex-1"
+            :operator="operator"
+            :operator-state="operatorState"
+          />
+          <OperatorPotentialTrustList
+            v-model:potential="operatorState.potential"
+            v-model:is-max-trust-included="operatorState.isMaxTrustIncluded"
+            :operator="operator"
           />
         </div>
-        <OperatorAttributesTable
-          class="max-w-xl flex-1"
-          :operator="operator"
-          :operator-state="operatorState"
-        />
-        <OperatorPotentialTrustList
-          v-model:potential="operatorState.potential"
-          v-model:is-max-trust-included="operatorState.isMaxTrustIncluded"
-          :operator="operator"
-        />
       </div>
-      <DevOnly>
-        <div class="outline-bg-container-1-normal p-1 outline outline-1">
-          {{ operatorState }}
-        </div>
-        <div class="outline-bg-container-1-normal p-1 outline outline-1">
-          {{ talentState }}
-        </div>
-      </DevOnly>
       <!-- Talents -->
-      <template v-if="operator.talents?.length">
+      <div v-if="operator.talents?.length">
         <div class="anchor-ghost" id="talents" />
         <h1 class="heading">
           {{ t("operator.ui.talents") }}
@@ -253,56 +249,60 @@ watch(
           v-model:potential="talentState.potential"
           :operator="operator"
         />
-      </template>
+      </div>
       <!-- Skills -->
-      <template v-if="operator.skills.length">
+      <div v-if="operator.skills.length">
         <div class="anchor-ghost" id="skills" />
         <h1 class="heading">
           {{ t("operator.ui.skills") }}
         </h1>
-        <template v-for="(skill, index) in operator.skills" :key="skill.id">
-          <div class="anchor-ghost" :id="`skill-${index + 1}`" />
-          <OperatorSkillWidget
-            class="outline-bg-container-1-normal p-2 outline outline-1"
-            :operator="operator"
-            :skill="skill"
-          />
-        </template>
-      </template>
+        <ul class="flex flex-col gap-8">
+          <li v-for="(skill, index) in operator.skills" :key="skill.id">
+            <div class="anchor-ghost" :id="`skill-${index + 1}`" />
+            <OperatorSkillWidget
+              class="outline-bg-container-1-normal p-2 outline outline-1"
+              :operator="operator"
+              :skill="skill"
+            />
+          </li>
+        </ul>
+      </div>
       <!-- Modules -->
-      <template v-if="operator.modules?.length">
+      <div v-if="operator.modules?.length">
         <div class="anchor-ghost" id="modules" />
         <h1 class="heading">
           {{ t("operator.ui.modules") }}
         </h1>
-        <template v-for="mod in operator.modules" :key="mod.id">
-          <div
-            class="anchor-ghost"
-            :id="`module-${getCombinedModuleTypeName(mod)}`"
-          />
-          <OperatorModuleWidget
-            class="outline-bg-container-1-normal p-2 outline outline-1"
-            v-model:module-id="operatorState.moduleId"
-            v-model:module-stage="operatorState.moduleStage"
-            :potential="operatorState.potential"
-            :operator="operator"
-            :module="mod"
-          />
-        </template>
-      </template>
+        <ul class="flex flex-col gap-8">
+          <li v-for="mod in operator.modules" :key="mod.id">
+            <div
+              class="anchor-ghost"
+              :id="`module-${getCombinedModuleTypeName(mod)}`"
+            />
+            <OperatorModuleWidget
+              class="outline-bg-container-1-normal p-2 outline outline-1"
+              v-model:module-id="operatorState.moduleId"
+              v-model:module-stage="operatorState.moduleStage"
+              :potential="operatorState.potential"
+              :operator="operator"
+              :module="mod"
+            />
+          </li>
+        </ul>
+      </div>
     </main>
   </div>
 </template>
 
 <style scoped lang="scss">
 .heading {
-  @apply text-3xl;
+  @apply mb-4 text-3xl;
 
   font-weight: bold;
 }
 
 .anchor-ghost {
-  @apply -top-24 -mb-2;
+  @apply -top-24;
 
   position: relative;
 }

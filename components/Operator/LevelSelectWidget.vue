@@ -56,10 +56,10 @@ function limitOperatorLevel(event: Event) {
         ]"
       >
         <button
-          class="w-8 p-0.5 hover:bg-slate-600"
+          class="w-8 p-0.5"
           :class="{
             'bg-slate-800': elite === eliteChoice,
-            'bg-slate-500': elite !== eliteChoice,
+            'bg-slate-400 hover:bg-slate-500': elite !== eliteChoice,
           }"
           @click="changeElite(eliteChoice)"
         >
@@ -123,8 +123,7 @@ function limitOperatorLevel(event: Event) {
         <OSwitch
           v-model="operatorState.areBonusesIncluded"
           :rounded="false"
-          check-class="bg-slate-500 outline outline-1 outline-slate-600 transition-colors"
-          check-checked-class="bg-green-400 outline-green-500"
+          check-class="outline outline-1 transition-colors"
           check-switch-class="bg-slate-50 transition-transform"
           label-class="ml-1"
           @update:modelValue="
@@ -145,3 +144,30 @@ function limitOperatorLevel(event: Event) {
     </ClientOnly>
   </div>
 </template>
+
+<style scoped lang="scss">
+/* stylelint-disable-next-line selector-class-pattern */
+:deep(.o-switch) {
+  /* stylelint-disable-next-line selector-class-pattern */
+  .o-switch__check {
+    @apply bg-slate-400 outline-slate-500;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .o-switch__check--checked {
+    @apply bg-green-400 outline-green-500;
+  }
+
+  &:hover {
+    /* stylelint-disable-next-line selector-class-pattern */
+    .o-switch__check {
+      @apply bg-slate-500 outline-slate-600;
+    }
+
+    /* stylelint-disable-next-line selector-class-pattern */
+    .o-switch__check--checked {
+      @apply bg-green-500 outline-green-600;
+    }
+  }
+}
+</style>

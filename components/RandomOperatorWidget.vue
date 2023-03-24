@@ -25,17 +25,13 @@ function getPortraitUrl(elite: number): string | null {
     <Body class="overflow-hidden" />
     <template v-if="operator">
       <div
-        class="right-full-image pointer-events-none absolute top-[30vh] right-0 aspect-square w-screen bg-contain bg-no-repeat sm:top-[20vh] md:top-[max(3rem,20vh)] md:w-[70vw] lg:w-[60vw] xl:top-[max(3rem,5vh)] xl:w-[50vw]"
+        class="right-full-image pointer-events-none absolute top-[30vh] right-0 aspect-square w-screen bg-contain bg-no-repeat sm:top-[20vh] md:top-[max(3rem,20vh)] md:w-[70vw] lg:w-[60vw] xl:-top-1 xl:w-[50vw]"
         v-if="getPortraitUrl(2)"
         :style="{ backgroundImage: `url('${getPortraitUrl(2)}')` }"
       />
       <div
-        class="full-image pointer-events-none absolute top-[30vh] aspect-square w-screen bg-contain bg-no-repeat sm:top-[20vh] md:top-[max(3rem,20vh)] md:w-[70vw] lg:w-[60vw] xl:top-[max(3rem,5vh)] xl:w-[50vw]"
-        v-if="getPortraitUrl(0)"
-        :class="{
-          'left-full-image left-0 hidden md:block': getPortraitUrl(2),
-          'right-full-image right-0': !getPortraitUrl(2),
-        }"
+        class="right-full-image pointer-events-none absolute top-[30vh] right-0 aspect-square w-screen bg-contain bg-no-repeat sm:top-[20vh] md:top-[max(3rem,20vh)] md:w-[70vw] lg:w-[60vw] xl:top-[max(3rem,5vh)] xl:w-[50vw]"
+        v-else-if="getPortraitUrl(0)"
         :style="{ backgroundImage: `url('${getPortraitUrl(0)}')` }"
       />
     </template>
@@ -43,23 +39,13 @@ function getPortraitUrl(elite: number): string | null {
 </template>
 
 <style scoped lang="scss">
-.left-full-image {
-  background-position: center;
-  @screen md {
-    background-position: calc(100% - 25vw) 50%;
-  }
-  @screen lg {
-    background-position: calc(100% - 15vw) 50%;
-  }
-}
-
 .right-full-image {
   background-position: center;
   @screen md {
-    background-position: calc(100% + 20vw) 50%;
+    background-position-x: 20vw;
   }
   @screen lg {
-    background-position: calc(100% + 10vw) 50%;
+    background-position-x: 10vw;
   }
 }
 </style>

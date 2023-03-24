@@ -53,8 +53,8 @@ watch(
 </script>
 
 <template>
-  <div class="flex flex-col gap-2 overflow-x-auto">
-    <div class="flex gap-2">
+  <div class="flex flex-col gap-4 overflow-x-auto">
+    <div class="flex flex-wrap gap-2">
       <!-- Icon and name -->
       <div class="flex gap-2">
         <div
@@ -86,7 +86,7 @@ watch(
           class="h-8 w-8 flex-shrink-0 p-0.5"
           v-for="potential in modulePotentialNumbers"
           :class="{
-            'bg-slate-500 hover:bg-slate-600':
+            'bg-slate-400 hover:bg-slate-500':
               moduleState.potential !== potential,
             'bg-slate-900': moduleState.potential === potential,
           }"
@@ -102,7 +102,7 @@ watch(
       <!-- Select module -->
       <div class="ml-auto">
         <button
-          class="bg-bg-container-1-normal text-fg-container-1 flex gap-1 p-1"
+          class="bg-bg-container-1-normal text-fg-container-1 hover:bg-bg-container-1-focus focus:bg-bg-container-1-focus flex gap-1 p-1"
           @click="
             () => {
               $emit('update:moduleId', module.id)
@@ -115,7 +115,7 @@ watch(
           "
         >
           <div
-            class="h-6 w-6 text-slate-50"
+            class="h-6 w-6 flex-shrink-0 text-slate-50"
             :class="{
               'bg-green-400': moduleId === module.id,
               'bg-slate-50': moduleId !== module.id,
@@ -134,7 +134,7 @@ watch(
       </div>
     </div>
     <table class="mr-auto table-fixed border-hidden" v-if="module.stages">
-      <thead>
+      <thead class="text-center">
         <tr class="bg-bg-primary text-fg-primary">
           <th class="w-8 sm:w-16">{{ t("operator.module.stage") }}</th>
           <th class="sm:w-32">{{ t("operator.module.attributes") }}</th>
@@ -161,7 +161,7 @@ watch(
           <td
             class="text-center font-bold text-slate-50"
             :class="{
-              'bg-slate-500':
+              'bg-slate-400':
                 module.id !== moduleId || stage.stage !== moduleStage,
               'bg-slate-900':
                 module.id === moduleId && stage.stage === moduleStage,
@@ -251,12 +251,12 @@ tbody td:not(:first-child) {
 }
 
 tbody tr:hover {
-  td:first-child {
-    @apply bg-slate-900;
-  }
-
   td:not(:first-child) {
     @apply bg-bg-container-1-focus;
+  }
+
+  &:not(.active) td:first-child {
+    @apply bg-slate-500;
   }
 }
 

@@ -1,4 +1,11 @@
 export default {
+  /**
+   * In Vue SFC <style scoped>, dark: utility classes will be transformed into
+   * [data-v-component-unqiue-identifier][data-mode="dark"] even with :deep().
+   *
+   * Even the default .dark class behavior will be transformed the same and not checked
+   * at the <html> element.
+   */
   darkMode: ["class", '[data-mode="dark"]'],
   safelist: [
     {

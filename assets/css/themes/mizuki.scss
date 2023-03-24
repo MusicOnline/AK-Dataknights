@@ -16,37 +16,54 @@
   }
 }
 
+/* stylelint-disable custom-property-empty-line-before */
 @mixin rarity-colors($light-mode: true) {
-  // Rarity: 1 star
   --color-rarity-1-card: var(--tw-gray-400);
-  --color-rarity-1-item: var(--tw-gray-200);
-  --color-rarity-1-item-focus: var(--tw-gray-300);
-
-  // Rarity: 2 star
   --color-rarity-2-card: var(--tw-lime-400);
-  --color-rarity-2-item: var(--tw-lime-200);
-  --color-rarity-2-item-focus: var(--tw-lime-300);
-
-  // Rarity: 3 star
   --color-rarity-3-card: var(--tw-sky-400);
-  --color-rarity-3-item: var(--tw-sky-200);
-  --color-rarity-3-item-focus: var(--tw-sky-300);
-
-  // Rarity: 4 star
   --color-rarity-4-card: var(--tw-indigo-400);
-  --color-rarity-4-item: var(--tw-indigo-200);
-  --color-rarity-4-item-focus: var(--tw-indigo-300);
-
-  // Rarity: 5 star
   --color-rarity-5-card: var(--tw-yellow-400);
-  --color-rarity-5-item: var(--tw-yellow-200);
-  --color-rarity-5-item-focus: var(--tw-yellow-300);
-
-  // Rarity: 6 star
   --color-rarity-6-card: var(--tw-orange-400);
-  --color-rarity-6-item: var(--tw-orange-200);
-  --color-rarity-6-item-focus: var(--tw-orange-300);
+
+  @if $light-mode {
+    --color-rarity-1-item: var(--tw-gray-200);
+    --color-rarity-1-item-focus: var(--tw-gray-300);
+
+    --color-rarity-2-item: var(--tw-lime-200);
+    --color-rarity-2-item-focus: var(--tw-lime-300);
+
+    --color-rarity-3-item: var(--tw-sky-200);
+    --color-rarity-3-item-focus: var(--tw-sky-300);
+
+    --color-rarity-4-item: var(--tw-indigo-200);
+    --color-rarity-4-item-focus: var(--tw-indigo-300);
+
+    --color-rarity-5-item: var(--tw-yellow-200);
+    --color-rarity-5-item-focus: var(--tw-yellow-300);
+
+    --color-rarity-6-item: var(--tw-orange-200);
+    --color-rarity-6-item-focus: var(--tw-orange-300);
+  } @else {
+    --color-rarity-1-item: var(--tw-gray-300);
+    --color-rarity-1-item-focus: var(--tw-gray-400);
+
+    --color-rarity-2-item: var(--tw-lime-300);
+    --color-rarity-2-item-focus: var(--tw-lime-400);
+
+    --color-rarity-3-item: var(--tw-sky-300);
+    --color-rarity-3-item-focus: var(--tw-sky-400);
+
+    --color-rarity-4-item: var(--tw-indigo-300);
+    --color-rarity-4-item-focus: var(--tw-indigo-400);
+
+    --color-rarity-5-item: var(--tw-yellow-300);
+    --color-rarity-5-item-focus: var(--tw-yellow-400);
+
+    --color-rarity-6-item: var(--tw-orange-300);
+    --color-rarity-6-item-focus: var(--tw-orange-400);
+  }
 }
+/* stylelint-enable custom-property-empty-line-before */
 
 @mixin body-colors($light-mode: true) {
   @if $light-mode {
