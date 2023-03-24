@@ -25,12 +25,12 @@ function getPortraitUrl(elite: number): string | null {
     <Body class="overflow-hidden" />
     <template v-if="operator">
       <div
-        class="right-full-image pointer-events-none absolute top-[30vh] right-0 aspect-square w-screen bg-contain bg-no-repeat sm:top-[20vh] md:top-[max(3rem,20vh)] md:w-[70vw] lg:w-[60vw] xl:-top-1 xl:w-[50vw]"
+        class="right-full-image pointer-events-none absolute top-[30vh] right-0 aspect-square w-screen bg-contain bg-no-repeat sm:top-[20vh] md:top-[max(3rem,20vh)] md:w-[70vw] lg:w-[60vw] xl:-top-20"
         v-if="getPortraitUrl(2)"
         :style="{ backgroundImage: `url('${getPortraitUrl(2)}')` }"
       />
       <div
-        class="right-full-image pointer-events-none absolute top-[30vh] right-0 aspect-square w-screen bg-contain bg-no-repeat sm:top-[20vh] md:top-[max(3rem,20vh)] md:w-[70vw] lg:w-[60vw] xl:top-[max(3rem,5vh)] xl:w-[50vw]"
+        class="right-full-image pointer-events-none absolute top-[30vh] right-0 aspect-square w-screen bg-contain bg-no-repeat sm:top-[20vh] md:top-[max(3rem,20vh)] md:w-[70vw] lg:w-[50vw] xl:top-0"
         v-else-if="getPortraitUrl(0)"
         :style="{ backgroundImage: `url('${getPortraitUrl(0)}')` }"
       />
