@@ -13,7 +13,7 @@ const { large = false } = defineProps<{
 <template>
   <li>
     <NuxtLink
-      class="flex h-full gap-2 text-slate-900 shadow-sm transition-all duration-75 hover:shadow"
+      class="group flex h-full items-center gap-2 text-slate-900 drop-shadow-sm transition-all duration-75 hover:drop-shadow"
       :to="localePath(`/operators/${operator.key}`)"
       :class="[
         { 'px-3 py-2': large, 'p-0.5': !large },
@@ -30,13 +30,35 @@ const { large = false } = defineProps<{
       <div class="my-auto">
         {{ t(`${operator.key}.name`) }}
       </div>
+      <ClientOnly>
+        <VTooltip class="ml-auto h-8 w-8 flex-shrink-0">
+          <img
+            class="class-icon h-full w-full bg-slate-700 object-contain p-0.5 group-hover:bg-slate-900"
+            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_${operator.class.toLowerCase()}.png`"
+          />
+          <template #popper>
+            {{ t(`operator.class.${operator.class}`) }}
+          </template>
+        </VTooltip>
+      </ClientOnly>
+      <ClientOnly>
+        <VTooltip class="h-8 w-8 flex-shrink-0">
+          <img
+            class="class-icon h-full w-full bg-slate-700 object-contain p-0.5 group-hover:bg-slate-900"
+            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/subclass/sub_${operator.classBranch}_icon.png`"
+          />
+          <template #popper>
+            {{ t(`operator.classBranch.${operator.classBranch}`) }}
+          </template>
+        </VTooltip>
+      </ClientOnly>
     </NuxtLink>
   </li>
 </template>
 
 <style scoped lang="scss">
 .router-link-active {
-  @apply shadow;
+  @apply drop-shadow;
 
   &.bg-rarity-1-item-normal {
     @apply bg-rarity-1-card;
@@ -60,6 +82,10 @@ const { large = false } = defineProps<{
 
   &.bg-rarity-6-item-normal {
     @apply bg-rarity-6-card;
+  }
+
+  .class-icon {
+    @apply bg-slate-900;
   }
 }
 </style>

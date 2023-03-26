@@ -107,7 +107,7 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
 </script>
 
 <template>
-  <div class="flex flex-col" :class="{ 'gap-2': !overlayResults }">
+  <div class="flex flex-col" :class="{ 'gap-2 ': !overlayResults }">
     <div
       class="bg-bg-input-normal focus-within:bg-bg-input-focus text-fg-input-normal outline-fg-input-placeholder flex items-center gap-2 p-2 outline outline-1"
     >
@@ -120,10 +120,13 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
       />
     </div>
     <div class="relative z-10" v-if="operatorSearchResults.length">
+      <!-- 
+        TODO: Search suggestion enter, up, down
+       -->
       <OperatorSearchList
         :operators="operatorSearchResults"
         :class="{
-          'bg-bg-input-focus outline-fg-input-placeholder absolute top-0 left-0 w-full p-2 shadow-2xl outline outline-1':
+          'bg-bg-input-focus outline-fg-input-placeholder absolute top-0 left-0 w-full p-2 outline outline-1 drop-shadow-2xl':
             overlayResults,
         }"
         :large="large"

@@ -24,8 +24,10 @@ function getPortraitUrl(elite: number): string | null {
   <div class="absolute left-0 top-12 w-screen">
     <Body class="overflow-hidden" />
     <template v-if="operator">
+      <!-- TODO: Preload image and transition translate into view
+      Refer to HSR -->
       <div
-        class="right-full-image pointer-events-none absolute top-[30vh] right-0 aspect-square w-screen bg-contain bg-no-repeat sm:top-[20vh] md:top-[max(3rem,20vh)] md:w-[70vw] lg:w-[60vw] xl:-top-20"
+        class="right-full-image pointer-events-none absolute top-[30vh] right-0 aspect-square w-screen bg-contain bg-no-repeat sm:top-[20vh] md:top-[max(3rem,20vh)] md:w-[70vw] lg:top-[-5vh] lg:w-[60vw]"
         v-if="getPortraitUrl(2)"
         :style="{ backgroundImage: `url('${getPortraitUrl(2)}')` }"
       />

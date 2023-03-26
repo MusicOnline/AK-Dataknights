@@ -59,7 +59,8 @@ function limitOperatorLevel(event: Event) {
           class="w-8 p-0.5"
           :class="{
             'bg-slate-800': elite === eliteChoice,
-            'bg-slate-400 hover:bg-slate-500': elite !== eliteChoice,
+            'bg-slate-400 hover:bg-slate-500 focus:bg-slate-500':
+              elite !== eliteChoice,
           }"
           @click="changeElite(eliteChoice)"
         >
@@ -166,6 +167,19 @@ function limitOperatorLevel(event: Event) {
 
     /* stylelint-disable-next-line selector-class-pattern */
     .o-switch__check--checked {
+      @apply bg-green-500 outline-green-600;
+    }
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .o-switch__input:focus {
+    /* stylelint-disable-next-line selector-class-pattern */
+    + .o-switch__check {
+      @apply bg-slate-500 outline-slate-600;
+    }
+
+    /* stylelint-disable-next-line selector-class-pattern */
+    + .o-switch__check--checked {
       @apply bg-green-500 outline-green-600;
     }
   }

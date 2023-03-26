@@ -33,7 +33,7 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
     <ul class="flex flex-col gap-1 text-sm">
       <li>
         <button
-          class="hover:bg-bg-input-focus flex w-full gap-0.5 text-left"
+          class="hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal flex w-full gap-0.5 text-left"
           @click="$emit('update:potential', (operatorState.potential = 1))"
         >
           <div class="block h-6 w-6 flex-shrink-0 bg-slate-900 p-0.5">
@@ -49,7 +49,7 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
         :key="potentialNumber"
       >
         <button
-          class="hover:bg-bg-input-focus flex w-full gap-0.5 text-left"
+          class="hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal group flex w-full gap-0.5 text-left"
           @click="
             $emit(
               'update:potential',
@@ -60,7 +60,8 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
           <div
             class="block h-6 w-6 flex-shrink-0 p-0.5"
             :class="{
-              'bg-slate-500': operatorState.potential < potentialNumber,
+              'bg-slate-400 group-hover:bg-slate-500 group-focus:bg-slate-500':
+                operatorState.potential < potentialNumber,
               'bg-slate-900': operatorState.potential >= potentialNumber,
             }"
           >
@@ -78,7 +79,7 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
       </li>
     </ul>
     <button
-      class="hover:bg-bg-input-focus flex gap-0.5 text-left text-sm"
+      class="hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal group flex gap-0.5 text-left text-sm"
       v-if="trustStats"
       @click="
         $emit(
@@ -90,7 +91,8 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
       <div
         class="flex h-6 w-6 flex-shrink-0 p-0.5"
         :class="{
-          'bg-slate-500 text-orange-300': !operatorState.isMaxTrustIncluded,
+          'bg-slate-400 text-orange-300 group-hover:bg-slate-500 group-focus:bg-slate-500':
+            !operatorState.isMaxTrustIncluded,
           'bg-slate-900 text-orange-400': operatorState.isMaxTrustIncluded,
         }"
       >
