@@ -1,39 +1,75 @@
 <script setup lang="ts">
+const { withLabel = false } = defineProps<{
+  withLabel?: boolean
+}>()
+
+const { t } = useI18n()
 const isDarkModeEnabled = useIsDarkModeEnabled()
 </script>
 
 <template>
   <OSwitch
+    class="dark-mode-switch"
     v-model="isDarkModeEnabled"
     :rounded="false"
-    check-class="outline outline-1 outline-slate-400 transition-colors"
-    check-checked-class="outline-indigo-700"
+    check-class="outline outline-1 transition-colors"
     check-switch-class="transition-transform switch-icon"
-    label-class="ml-1"
-  />
+  >
+    <span class="flex items-center" v-if="withLabel">
+      <span> {{ t("settings.enableDarkMode.title") }} </span>
+    </span>
+  </OSwitch>
 </template>
 
 <style scoped lang="scss">
-:deep(.switch-icon) {
-  background: url("https://api.iconify.design/heroicons/sun.svg") no-repeat
-      center center / contain,
-    white;
-}
+.dark-mode-switch {
+  /* stylelint-disable-next-line selector-class-pattern */
+  :deep(.switch-icon) {
+    background: url("https://api.iconify.design/heroicons/sun.svg?color=%230f172a")
+        no-repeat center center / contain,
+      rgb(var(--tw-slate-50));
+  }
 
-/* stylelint-disable-next-line selector-class-pattern */
-:deep(.o-switch__check--checked .switch-icon) {
-  background: url("https://api.iconify.design/heroicons/moon.svg") no-repeat
-      center center / contain,
-    white;
-}
+  /* stylelint-disable-next-line selector-class-pattern */
+  :deep(.o-switch__check--checked .switch-icon) {
+    background: url("https://api.iconify.design/heroicons/moon.svg?color=%230f172a")
+        no-repeat center center / contain,
+      rgb(var(--tw-slate-50));
+  }
 
-/* stylelint-disable-next-line selector-class-pattern */
-:deep(.o-switch__check) {
-  @apply bg-slate-300;
-}
+  /* stylelint-disable-next-line selector-class-pattern */
+  :deep(.o-switch__check) {
+    @apply bg-slate-400 outline-slate-500;
+  }
 
-/* stylelint-disable-next-line selector-class-pattern */
-:deep(.o-switch__check--checked) {
-  @apply bg-indigo-600;
+  /* stylelint-disable-next-line selector-class-pattern */
+  :deep(.o-switch__check--checked) {
+    @apply bg-indigo-500 outline-indigo-600;
+  }
+
+  &:hover {
+    /* stylelint-disable-next-line selector-class-pattern */
+    :deep(.o-switch__check) {
+      @apply bg-slate-500 outline-slate-600;
+    }
+
+    /* stylelint-disable-next-line selector-class-pattern */
+    :deep(.o-switch__check--checked) {
+      @apply bg-indigo-600 outline-indigo-700;
+    }
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  :deep(.o-switch__input):focus {
+    /* stylelint-disable-next-line selector-class-pattern */
+    + .o-switch__check {
+      @apply bg-slate-500 outline-slate-600;
+    }
+
+    /* stylelint-disable-next-line selector-class-pattern */
+    + .o-switch__check--checked {
+      @apply bg-indigo-600 outline-indigo-700;
+    }
+  }
 }
 </style>

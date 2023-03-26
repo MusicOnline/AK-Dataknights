@@ -171,7 +171,7 @@
       "modules": "模組",
       "includeBonuses": {
         "title": "包括加成",
-        "description": "啓用後，屬性計算將包括來自滿信賴、所選潛能及所選模組等級的加成"
+        "description": "開啟後，屬性計算將包括來自滿信賴、所選潛能及所選模組等級的加成"
       },
       "trait": "特性",
       "specificBranchTrait": "{branch}特性",
@@ -182,7 +182,8 @@
       "introduction": "介紹",
       "searchOperator": "按代號搜索幹員……",
       "viewDetails": "查看詳情",
-      "randomOperator": "隨機"
+      "randomOperator": "隨機",
+      "enableAdvancedViewForMore": "在設置中開啟詳細展示以顯示詳細數據。"
     },
     "module": {
       "attributes": "屬性",
@@ -200,7 +201,14 @@
   },
   "settings": {
     "language": "顯示語言",
-    "title": "設置"
+    "title": "設置",
+    "enableAdvancedView": {
+      "title": "詳細展示",
+      "description": "開啟後，顯示技能的詳細數據，例如atk_scale"
+    },
+    "enableDarkMode": {
+      "title": "深色模式"
+    }
   },
   "general": {
     "siteIndexTitle": "數據方舟",

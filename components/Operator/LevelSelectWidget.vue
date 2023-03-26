@@ -131,12 +131,12 @@ function limitOperatorLevel(event: Event) {
             $emit('update:areBonusesIncluded', operatorState.areBonusesIncluded)
           "
         >
-          <a class="flex items-center gap-0.5">
-            <span class="hidden whitespace-nowrap sm:inline">{{
-              t("operator.ui.includeBonuses.title")
-            }}</span>
+          <span class="flex items-center gap-0.5">
+            <span class="hidden whitespace-nowrap sm:inline">
+              {{ t("operator.ui.includeBonuses.title") }}
+            </span>
             <Icon class="text-xl" name="heroicons:question-mark-circle-solid" />
-          </a>
+          </span>
         </OSwitch>
         <template #popper>
           {{ t("operator.ui.includeBonuses.description") }}

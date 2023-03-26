@@ -16,7 +16,7 @@ const { large = false } = defineProps<{
       class="group flex h-full items-center gap-2 text-slate-900 drop-shadow-sm transition-all duration-75 hover:drop-shadow"
       :to="localePath(`/operators/${operator.key}`)"
       :class="[
-        { 'px-3 py-2': large, 'p-0.5': !large },
+        { 'px-3 py-1': large, 'p-0.5': !large },
         `bg-rarity-${operator.rarity}-item-normal focus:bg-rarity-${operator.rarity}-item-focus hover:bg-rarity-${operator.rarity}-item-focus`,
       ]"
     >
@@ -27,31 +27,33 @@ const { large = false } = defineProps<{
         )}.png`"
         loading="lazy"
       />
-      <div class="my-auto">
+      <div class="my-auto" :class="{ 'text-sm': !large }">
         {{ t(`${operator.key}.name`) }}
       </div>
-      <ClientOnly>
-        <VTooltip class="ml-auto h-8 w-8 flex-shrink-0">
-          <img
-            class="class-icon h-full w-full bg-slate-700 object-contain p-0.5 group-hover:bg-slate-900"
-            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_${operator.class.toLowerCase()}.png`"
-          />
-          <template #popper>
-            {{ t(`operator.class.${operator.class}`) }}
-          </template>
-        </VTooltip>
-      </ClientOnly>
-      <ClientOnly>
-        <VTooltip class="h-8 w-8 flex-shrink-0">
-          <img
-            class="class-icon h-full w-full bg-slate-700 object-contain p-0.5 group-hover:bg-slate-900"
-            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/subclass/sub_${operator.classBranch}_icon.png`"
-          />
-          <template #popper>
-            {{ t(`operator.classBranch.${operator.classBranch}`) }}
-          </template>
-        </VTooltip>
-      </ClientOnly>
+      <div class="ml-auto flex flex-shrink-0 items-center gap-1">
+        <ClientOnly>
+          <VTooltip class="h-8 w-8 flex-shrink-0">
+            <img
+              class="class-icon h-full w-full bg-slate-700 object-contain p-0.5 group-hover:bg-slate-900"
+              :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_${operator.class.toLowerCase()}.png`"
+            />
+            <template #popper>
+              {{ t(`operator.class.${operator.class}`) }}
+            </template>
+          </VTooltip>
+        </ClientOnly>
+        <ClientOnly>
+          <VTooltip class="h-8 w-8 flex-shrink-0">
+            <img
+              class="class-icon h-full w-full bg-slate-700 object-contain p-0.5 group-hover:bg-slate-900"
+              :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/subclass/sub_${operator.classBranch}_icon.png`"
+            />
+            <template #popper>
+              {{ t(`operator.classBranch.${operator.classBranch}`) }}
+            </template>
+          </VTooltip>
+        </ClientOnly>
+      </div>
     </NuxtLink>
   </li>
 </template>

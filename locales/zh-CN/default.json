@@ -171,7 +171,7 @@
       "modules": "模组",
       "includeBonuses": {
         "title": "包括加成",
-        "description": "启用后，属性计算将包括来自满信赖、所选潜能及所选模组等级的加成"
+        "description": "开启后，属性计算将包括来自满信赖、所选潜能及所选模组等级的加成"
       },
       "trait": "特性",
       "specificBranchTrait": "{branch}特性",
@@ -182,7 +182,8 @@
       "introduction": "介绍",
       "searchOperator": "按代号搜索干员……",
       "viewDetails": "查看详情",
-      "randomOperator": "随机"
+      "randomOperator": "随机",
+      "enableAdvancedViewForMore": "在设置中开启详细展示以显示详细数据。"
     },
     "module": {
       "attributes": "属性",
@@ -200,7 +201,14 @@
   },
   "settings": {
     "language": "显示语言",
-    "title": "设置"
+    "title": "设置",
+    "enableAdvancedView": {
+      "title": "详细展示",
+      "description": "开启后，显示技能的详细数据，例如atk_scale"
+    },
+    "enableDarkMode": {
+      "title": "深色模式"
+    }
   },
   "general": {
     "siteIndexTitle": "数据方舟",

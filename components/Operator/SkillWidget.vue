@@ -50,6 +50,22 @@ const isInitSpNotAlwaysZero = computed<boolean>(
     skill.levels[0].spData.initSp !== 0 ||
     initSpRowSpanValues.value[0] !== initSpRowSpanValues.value.length
 )
+
+const variableKeys = computed<string[]>(() =>
+  skill.levels.slice(-1)[0].variables.map(({ key }) => key)
+)
+
+const variableRowSpanValues = computed<number[][]>(() =>
+  variableKeys.value.map((keyName) =>
+    getRowSpanValuesForEqualValues(
+      skill.levels.map(
+        ({ variables }) => variables.find(({ key }) => key === keyName)?.value
+      )
+    )
+  )
+)
+
+const isAdvancedViewEnabled = useIsAdvancedViewEnabled()
 </script>
 
 <template>
@@ -104,6 +120,15 @@ const isInitSpNotAlwaysZero = computed<boolean>(
           <th class="sm:w-20" v-if="skill.levels[0].duration > 0">
             {{ t("operator.skill.duration") }}
           </th>
+          <template v-if="isAdvancedViewEnabled">
+            <th
+              class="bg-primary-alt w-16 min-w-[3rem] text-xs font-normal [overflow-wrap:anywhere]"
+              v-for="key in variableKeys"
+              :key="key"
+            >
+              {{ key }}
+            </th>
+          </template>
           <th>{{ t("operator.skill.skillDescription") }}</th>
           <th v-if="isRangeExistent">
             {{ t("operator.attribute.attackRange") }}
@@ -155,8 +180,19 @@ const isInitSpNotAlwaysZero = computed<boolean>(
               })
             }}
           </td>
+          <template v-if="isAdvancedViewEnabled">
+            <template v-for="(keyName, index) in variableKeys" :key="keyName">
+              <td
+                class="text-center"
+                v-if="variableRowSpanValues[index][level.level - 1] !== 0"
+                :rowspan="variableRowSpanValues[index][level.level - 1]"
+              >
+                {{ level.variables.find(({ key }) => key === keyName)?.value }}
+              </td>
+            </template>
+          </template>
           <td
-            class="description"
+            class="description text-sm"
             v-html="
               convertRichText(
                 t(

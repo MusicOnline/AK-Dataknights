@@ -252,8 +252,9 @@ const talentsAndBestAndNextCandidate = computed<
               'opacity-90':
                 talentState.elite !== elite || talentState.level !== level,
             }"
-            >{{ level }}</span
           >
+            {{ level }}
+          </span>
         </button>
       </div>
       <!-- Potential -->
@@ -340,7 +341,6 @@ const talentsAndBestAndNextCandidate = computed<
                   nextCandidate.unlockConditions
                 )
               }}
-              Unlocks at Elite {{ nextCandidate.unlockConditions.elite }}.
             </div>
             <div v-else>
               {{

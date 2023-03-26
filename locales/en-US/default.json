@@ -32,7 +32,14 @@
   },
   "settings": {
     "title": "Settings",
-    "language": "Display Language"
+    "language": "Display Language",
+    "enableAdvancedView": {
+      "title": "Advanced view",
+      "description": "When enabled, displays detailed data for skills such as atk_scale"
+    },
+    "enableDarkMode": {
+      "title": "Dark mode"
+    }
   },
   "operator": {
     "meta": {
@@ -60,7 +67,8 @@
       "unlocksAtSpecificElite": "Unlocks at Elite {elite}",
       "unlocksAtSpecificEliteAndLevel": "Unlocks at Elite {elite} Lv. {level}",
       "viewDetails": "View Details",
-      "randomOperator": "Random"
+      "randomOperator": "Random",
+      "enableAdvancedViewForMore": "Enable advanced view in settings to display detailed data."
     },
     "rarityName": {
       "TOP_OPERATOR": "Top Operator",

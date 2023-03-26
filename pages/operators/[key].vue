@@ -186,10 +186,10 @@ watch(
     />
     <!-- Main content -->
     <!--
-      Page:     max-w-7xl = 80rem (from app.vue NuxtPage)
-      Sidebar:  lg:w-72   = 18rem 
-      Gap:      p-2       = 0.5rem (from app.vue NuxtPage's parent)
-      80rem + 2 * (18rem + 0.5rem)
+      Page:     max-w-7xl  = 80rem (from app.vue NuxtPage)
+      Sidebar:  lg:w-72    = 18rem 
+      Gap:      p-2        = 0.5rem (from app.vue NuxtPage's parent)
+      Main lg:ml should be = 80rem + 2 * (18rem + 0.5rem)
     -->
     <main
       class="flex w-full flex-col gap-8 md:ml-56 lg:ml-[clamp(0rem,calc((117rem-100vw)/2),18rem)]"
@@ -256,6 +256,9 @@ watch(
         <h1 class="heading">
           {{ t("operator.ui.skills") }}
         </h1>
+        <div class="my-2 text-sm">
+          {{ t("operator.ui.enableAdvancedViewForMore") }}
+        </div>
         <ul class="flex flex-col gap-8">
           <li v-for="(skill, index) in operator.skills" :key="skill.id">
             <div class="anchor-ghost" :id="`skill-${index + 1}`" />

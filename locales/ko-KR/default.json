@@ -197,7 +197,13 @@
   },
   "settings": {
     "language": "표시 언어",
-    "title": "설정"
+    "title": "설정",
+    "enableAdvancedView": {
+      "title": "상세 전시"
+    },
+    "enableDarkMode": {
+      "title": "다크 모드"
+    }
   },
   "general": {
     "siteIndexTitle": "자료방주",

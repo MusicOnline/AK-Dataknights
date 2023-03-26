@@ -182,7 +182,8 @@
       "introduction": "紹介",
       "searchOperator": "コードネームでオペレーターを検索…",
       "viewDetails": "詳細確認",
-      "randomOperator": "ランダム"
+      "randomOperator": "ランダム",
+      "enableAdvancedViewForMore": "設定で詳細一覧を有効にして、詳細データが表示されます。"
     },
     "module": {
       "attributes": "ステータス",
@@ -200,7 +201,14 @@
   },
   "settings": {
     "language": "表示言語",
-    "title": "設定"
+    "title": "設定",
+    "enableAdvancedView": {
+      "title": "詳細一覧",
+      "description": "有効にすると、atk_scaleなどのスキルの詳細データが表示されます"
+    },
+    "enableDarkMode": {
+      "title": "ダークモード"
+    }
   },
   "general": {
     "siteIndexTitle": "データナイツ",
