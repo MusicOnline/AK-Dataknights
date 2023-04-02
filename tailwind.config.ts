@@ -10,7 +10,7 @@ export default {
   safelist: [
     {
       pattern: /bg-rarity-\d/,
-      variants: ["hover", "focus"],
+      variants: ["hover", "focus", "focus-visible"],
     },
   ],
   theme: {
