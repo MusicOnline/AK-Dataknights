@@ -1,14 +1,15 @@
 import * as constants from "../constants"
-import { Localizable, LocalizationString } from "../utils"
+import { Localizable, LocalizationString, toPhaseNumber } from "../utils"
 import { GeneratedRangeData, Range } from "./range"
 import {
   Blackboard,
   CharacterTableData,
+  PhaseEnum,
   Talent as RawTalent,
   TalentCandidate as RawTalentCandidate,
 } from "./raw"
 
-export interface GeneratedTalentCandidateData {
+export type GeneratedTalentCandidateData = {
   key: string
   unlockConditions: {
     elite: number
@@ -34,7 +35,7 @@ export class TalentCandidate implements Localizable {
   public constructor(talentNumber: number, data: RawTalentCandidate) {
     this.talentNumber = talentNumber
     this.unlockConditions = {
-      elite: data.unlockCondition.phase,
+      elite: toPhaseNumber(data.unlockCondition.phase),
       level: data.unlockCondition.level,
       potential: data.requiredPotentialRank + 1, // 0 = Potential 1 (Base operator)
     }
@@ -54,7 +55,7 @@ export class TalentCandidate implements Localizable {
   }
 
   public addLocale(
-    locale: typeof constants.GAME_LOCALES[number],
+    locale: (typeof constants.GAME_LOCALES)[number],
     data: RawTalentCandidate
   ) {
     this.name?.addLocale(locale, data.name)
@@ -62,7 +63,7 @@ export class TalentCandidate implements Localizable {
   }
 
   public addLocaleTL(
-    locale: typeof constants.TRANSLATED_LOCALES[number],
+    locale: (typeof constants.TRANSLATED_LOCALES)[number],
     data: any
   ) {
     const candidate = data?.talents?.[this.talentNumber]?.[this.key]
@@ -70,7 +71,7 @@ export class TalentCandidate implements Localizable {
     this.description?.addLocaleTL(locale, candidate?.description)
   }
 
-  public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
     return {
       name: this.name?.toLocaleData(locale),
       description: this.description?.toLocaleData(locale),
@@ -82,7 +83,7 @@ export class TalentCandidate implements Localizable {
   }
 }
 
-export interface GeneratedTalentData {
+export type GeneratedTalentData = {
   talentNumber: number
   candidates: GeneratedTalentCandidateData[]
 }
@@ -114,7 +115,7 @@ export class Talent implements Localizable {
   }
 
   public addLocale(
-    locale: typeof constants.GAME_LOCALES[number],
+    locale: (typeof constants.GAME_LOCALES)[number],
     data: CharacterTableData
   ): void {
     const rawTalent = data.talents!.filter(({ candidates }) => candidates)[
@@ -122,27 +123,28 @@ export class Talent implements Localizable {
     ]
     if (!rawTalent) return // Magallan's Soaring Dragon summons have different number of talents between locales
     this.candidates.forEach((candidate) => {
-      const rawCandidate = rawTalent.candidates!.find(
-        (rawCandidate) =>
-          rawCandidate.unlockCondition.phase ===
+      const rawCandidate = rawTalent.candidates!.find((rawCandidate) => {
+        return (
+          toPhaseNumber(rawCandidate.unlockCondition.phase) ===
             candidate.unlockConditions.elite &&
           rawCandidate.unlockCondition.level ===
             candidate.unlockConditions.level &&
           rawCandidate.requiredPotentialRank ===
             candidate.unlockConditions.potential - 1
-      )
+        )
+      })
       candidate.addLocale(locale, rawCandidate!)
     })
   }
 
   public addLocaleTL(
-    locale: typeof constants.TRANSLATED_LOCALES[number],
+    locale: (typeof constants.TRANSLATED_LOCALES)[number],
     data: any
   ): void {
     this.candidates.forEach((candidate) => candidate.addLocaleTL(locale, data))
   }
 
-  public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
     return this.candidates.reduce(
       (accumulator: { [key: string]: any }, candidate) => {
         accumulator[candidate.key] = candidate.toLocaleData(locale)

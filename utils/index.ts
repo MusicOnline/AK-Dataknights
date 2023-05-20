@@ -1,4 +1,4 @@
-export interface OperatorState {
+export type OperatorState = {
   elite: number
   level: number
   potential: number
@@ -8,12 +8,19 @@ export interface OperatorState {
   areBonusesIncluded: boolean
 }
 
-export interface TalentState {
+export type TalentState = {
   elite: number
   level: number
   potential: number
 }
 
-export interface ModuleState {
+export type ModuleState = {
   potential: number
+}
+
+export function isKeyOfObject<T extends object>(
+  key: string | number | symbol,
+  obj: T
+): key is keyof T {
+  return obj.hasOwnProperty(key)
 }

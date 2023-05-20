@@ -1,5 +1,5 @@
 import * as constants from "../constants"
-import { Localizable, LocalizationString } from "../utils"
+import { Localizable, LocalizationString, toPhaseNumber } from "../utils"
 import { GeneratedRangeData, Range } from "./range"
 import { Blackboard, CharacterTableData, Skill as RawSkill } from "./raw"
 
@@ -10,20 +10,20 @@ export enum SkillActivationType {
 }
 
 export enum DurationType {
-  Normal = 0,
-  Unknown1 = 1, // CN only
-  Unknown2 = 2, // CN only
+  PASSIVE = 0,
+  INSTANT = 1,
+  LIMITED = 2,
 }
 
 export enum SpRecoveryType {
-  AUTO = 1,
-  OFFENSIVE = 2,
-  DEFENSIVE = 4,
+  INCREASE_WITH_TIME = 1,
+  INCREASE_WHEN_ATTACK = 2,
+  INCREASE_WHEN_TAKEN_DAMAGE = 4,
   ON_DEPLOY = 8, // Executors, technically no recovery
 }
 
-export interface SpData {
-  spType: SpRecoveryType
+export type SpData = {
+  spType: keyof typeof SpRecoveryType | SpRecoveryType // CN 2.0 vs EJK (CN has mixed string enum and number 8)
   levelUpCost: null
   maxChargeTime: number // Affected by charges & Charged effect
   spCost: number
@@ -31,32 +31,32 @@ export interface SpData {
   increment: number
 }
 
-export interface SkillTableData {
+export type SkillTableData = {
   skillId: string
   iconId: string | null
   hidden: boolean
   levels: SkillTableDataLevel[]
 }
 
-export interface SkillTableDataLevel {
+export type SkillTableDataLevel = {
   name: string
   rangeId: string | null
   description: string | null
-  skillType: SkillActivationType
-  durationType: DurationType
+  skillType: keyof typeof SkillActivationType | SkillActivationType // CN 2.0 vs EJK
+  durationType: keyof typeof DurationType | DurationType // CN 2.0 vs EJK
   spData: SpData
   prefabId: string | null
   duration: number // -1.0 = Infinite
   blackboard: Blackboard[]
 }
 
-export interface GeneratedSkillLevelSpData {
+export type GeneratedSkillLevelSpData = {
   spType: keyof typeof SpRecoveryType
   spCost: number
   initSp: number
 }
 
-export interface GeneratedSkillLevelData {
+export type GeneratedSkillLevelData = {
   level: number
   range?: GeneratedRangeData
   variables: Blackboard[]
@@ -65,7 +65,7 @@ export interface GeneratedSkillLevelData {
   spData: GeneratedSkillLevelSpData
 }
 
-export interface GeneratedSkillData {
+export type GeneratedSkillData = {
   id: string
   iconId: string | null
   unlockConditions: { elite: number; level: number }
@@ -88,12 +88,13 @@ export class SkillLevel implements Localizable {
     this.description = LocalizationString.fromDataOrNull(data.description)
     this.range = data.rangeId ? new Range(data.rangeId) : null
     this.variables = data.blackboard
-    this.skillType = <keyof typeof SkillActivationType>(
-      SkillActivationType[data.skillType]
-    )
+    this.skillType = <keyof typeof SkillActivationType>data.skillType
     this.duration = data.duration
     this.spData = {
-      spType: <keyof typeof SpRecoveryType>SpRecoveryType[data.spData.spType],
+      spType:
+        typeof data.spData.spType === "number"
+          ? <keyof typeof SpRecoveryType>SpRecoveryType[data.spData.spType]
+          : data.spData.spType,
       spCost: data.spData.spCost,
       initSp: data.spData.initSp,
     }
@@ -111,7 +112,7 @@ export class SkillLevel implements Localizable {
   }
 
   public addLocale(
-    locale: typeof constants.GAME_LOCALES[number],
+    locale: (typeof constants.GAME_LOCALES)[number],
     skillId: string
   ): void {
     const rawSkillLevelData =
@@ -121,7 +122,7 @@ export class SkillLevel implements Localizable {
   }
 
   public addLocaleTL(
-    locale: typeof constants.TRANSLATED_LOCALES[number],
+    locale: (typeof constants.TRANSLATED_LOCALES)[number],
     skillId: string,
     data: any
   ): void {
@@ -130,7 +131,7 @@ export class SkillLevel implements Localizable {
     this.description?.addLocaleTL(locale, skill?.description)
   }
 
-  public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
     return {
       name: this.name.toLocaleData(locale),
       description: this.description?.toLocaleData(locale),
@@ -154,7 +155,7 @@ export class Skill implements Localizable {
     this.id = data.skillId
     this.iconId = moreData.iconId
     this.unlockConditions = {
-      elite: data.unlockCond.phase,
+      elite: toPhaseNumber(data.unlockCond.phase),
       level: data.unlockCond.level,
     }
     this.levels = moreData.levels.map(
@@ -178,18 +179,18 @@ export class Skill implements Localizable {
     }
   }
 
-  public addLocale(locale: typeof constants.GAME_LOCALES[number]): void {
+  public addLocale(locale: (typeof constants.GAME_LOCALES)[number]): void {
     this.levels.forEach((level) => level.addLocale(locale, this.id))
   }
 
   public addLocaleTL(
-    locale: typeof constants.TRANSLATED_LOCALES[number],
+    locale: (typeof constants.TRANSLATED_LOCALES)[number],
     data: any
   ): void {
     this.levels.forEach((level) => level.addLocaleTL(locale, this.id, data))
   }
 
-  public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
     return this.levels.reduce((accumulator, level) => {
       accumulator[level.level] = level.toLocaleData(locale)
       return accumulator

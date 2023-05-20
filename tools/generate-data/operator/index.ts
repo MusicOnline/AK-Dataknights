@@ -1,6 +1,6 @@
 import OPERATOR_KEY_OVERRIDE from "../../../data/custom/operator-key-override.json"
+import { isKeyOfObject } from "../../../utils"
 import * as constants from "../constants"
-import { Outfit } from "../outfit"
 import {
   Localizable,
   LocalizationString,
@@ -18,12 +18,12 @@ import { GeneratedSkillData, Skill } from "./skill"
 import { GeneratedTalentData, Talent } from "./talent"
 import { GeneratedTraitCandidateData, TraitCandidate } from "./trait"
 
-export interface GeneratedOperatorData {
+export type GeneratedOperatorData = {
   key: string
   id: string
   displayNumber: string | null
   rarity: number
-  class: typeof raw.ACTUAL_OPERATOR_CLASSES[keyof typeof raw.ACTUAL_OPERATOR_CLASSES]
+  class: (typeof raw.OPERATOR_CLASS_NAMES)[keyof typeof raw.OPERATOR_CLASS_NAMES]
   classBranch: raw.SubProfessionId
   position: raw.Position
   tagList: string[]
@@ -43,12 +43,12 @@ export interface GeneratedOperatorData {
   modules: GeneratedModuleData[] | null
 }
 
-export interface GeneratedOperatorIndexData {
+export type GeneratedOperatorIndexData = {
   key: string
   id: string
   displayNumber: string | null
   rarity: number
-  class: typeof raw.ACTUAL_OPERATOR_CLASSES[keyof typeof raw.ACTUAL_OPERATOR_CLASSES]
+  class: (typeof raw.OPERATOR_CLASS_NAMES)[keyof typeof raw.OPERATOR_CLASS_NAMES]
   classBranch: raw.SubProfessionId
   position: raw.Position
   tagList: string[]
@@ -81,10 +81,10 @@ export class Operator implements Localizable {
   displayNumber: string | null
   tokenKey: string | null // Token summon character id
   position: raw.Position
-  tagList: (keyof typeof raw.CHINESE_TO_ENGLISH_TAGS)[] | null
+  tagList: raw.Tag[] | null
   isNotObtainable: boolean // true if Integrated Strategies operators
   rarity: number // Number of stars in-game
-  class: typeof raw.ACTUAL_OPERATOR_CLASSES[keyof typeof raw.ACTUAL_OPERATOR_CLASSES]
+  class: (typeof raw.OPERATOR_CLASS_NAMES)[keyof typeof raw.OPERATOR_CLASS_NAMES]
   classBranch: raw.SubProfessionId
 
   // Additional attributes
@@ -104,13 +104,13 @@ export class Operator implements Localizable {
     this.appellation = new LocalizationString(data.appellation)
     const description = LocalizationString.fromDataOrNull(data.description)
     this.description = description
-    this.rarity = data.rarity + 1
-    this.class = raw.ACTUAL_OPERATOR_CLASSES[data.profession]
+    this.rarity = raw.Rarity[data.rarity]
+    this.class = raw.OPERATOR_CLASS_NAMES[data.profession]
     this.classBranch = data.subProfessionId
     this.position = data.position
-    this.tagList = <(keyof typeof raw.CHINESE_TO_ENGLISH_TAGS)[] | null>(
-      data.tagList
-    )
+    this.tagList = data.tagList
+      ? Operator.normalizeTagList(<(keyof typeof raw.Tag)[]>data.tagList)
+      : null
     this.nationId = data.nationId
     this.groupId = data.groupId
     this.teamId = data.teamId
@@ -139,7 +139,7 @@ export class Operator implements Localizable {
       class: this.class,
       classBranch: this.classBranch,
       position: this.position,
-      tagList: this.normalizedTagList,
+      tagList: <string[]>this.tagList,
       nationId: this.nationId,
       groupId: this.groupId,
       teamId: this.teamId,
@@ -168,7 +168,7 @@ export class Operator implements Localizable {
       class: this.class,
       classBranch: this.classBranch,
       position: this.position,
-      tagList: this.normalizedTagList,
+      tagList: <string[]>this.tagList,
       nationId: this.nationId,
       groupId: this.groupId,
       teamId: this.teamId,
@@ -177,7 +177,7 @@ export class Operator implements Localizable {
     }
   }
 
-  public addLocale(locale: typeof constants.GAME_LOCALES[number], data: any) {
+  public addLocale(locale: (typeof constants.GAME_LOCALES)[number], data: any) {
     Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) =>
       this[attribute]?.addLocale(locale, data[attribute])
     )
@@ -191,7 +191,7 @@ export class Operator implements Localizable {
   }
 
   public addLocaleTL(
-    locale: typeof constants.TRANSLATED_LOCALES[number],
+    locale: (typeof constants.TRANSLATED_LOCALES)[number],
     data: any
   ) {
     Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) =>
@@ -206,7 +206,7 @@ export class Operator implements Localizable {
     if (locale === "en-TL" && data.name) this._unnormalizedKey = data.name
   }
 
-  public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
     const commonAttributes = Operator.LOCALIZATION_STRING_ATTRIBUTES.reduce(
       (accumulator, current) => {
         if (locale === "en-TL" && current === "name") {
@@ -258,8 +258,8 @@ export class Operator implements Localizable {
   }
 
   public get key(): string {
-    // @ts-ignore
-    if (OPERATOR_KEY_OVERRIDE[this.id]) return OPERATOR_KEY_OVERRIDE[this.id]
+    if (isKeyOfObject(this.id, OPERATOR_KEY_OVERRIDE))
+      return OPERATOR_KEY_OVERRIDE[this.id]
     return this._unnormalizedKey
       .trim()
       .toLowerCase()
@@ -267,19 +267,21 @@ export class Operator implements Localizable {
       .replace(/[-\s]+/g, "-")
   }
 
-  public get normalizedTagList(): string[] {
-    return (this.tagList ?? []).map((chineseTag) => {
-      const tag: string | undefined = raw.CHINESE_TO_ENGLISH_TAGS[chineseTag]
-      if (!tag) throw new Error(`No english tag implemented for ${chineseTag}`)
-      return tag
-    })
-  }
-
   public get isActualOperator() {
     return (
       !["TRAP", "TOKEN"].includes(this.class) &&
       !constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(this.id)
     )
+  }
+
+  private static normalizeTagList(
+    tagList: (keyof typeof raw.Tag)[]
+  ): raw.Tag[] {
+    return tagList.map((chineseTag) => {
+      const tag: raw.Tag | undefined = raw.Tag[chineseTag]
+      if (!tag) throw new Error(`No english tag implemented for ${chineseTag}`)
+      return tag
+    })
   }
 
   get potentialItem() {

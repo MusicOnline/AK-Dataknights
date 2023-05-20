@@ -1,12 +1,13 @@
 import * as constants from "./constants"
+import { PhaseEnum } from "./operator/raw"
 
 export interface Localizable {
-  addLocale(locale: typeof constants.GAME_LOCALES[number], ...data: any): void
+  addLocale(locale: (typeof constants.GAME_LOCALES)[number], ...data: any): void
   addLocaleTL(
-    locale: typeof constants.TRANSLATED_LOCALES[number],
+    locale: (typeof constants.TRANSLATED_LOCALES)[number],
     ...data: any
   ): void
-  toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]): any
+  toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]): any
 }
 
 export class LocalizationString implements Localizable {
@@ -29,7 +30,7 @@ export class LocalizationString implements Localizable {
   }
 
   private addLocaleCommon(
-    locale: typeof constants.OUTPUT_LOCALES[number],
+    locale: (typeof constants.OUTPUT_LOCALES)[number],
     translation?: string | null
   ) {
     const transformedLocale = locale.replace("-", "_")
@@ -38,20 +39,20 @@ export class LocalizationString implements Localizable {
   }
 
   public addLocale(
-    locale: typeof constants.GAME_LOCALES[number],
+    locale: (typeof constants.GAME_LOCALES)[number],
     translation?: string | null
   ) {
     this.addLocaleCommon(locale, translation)
   }
 
   public addLocaleTL(
-    locale: typeof constants.TRANSLATED_LOCALES[number],
+    locale: (typeof constants.TRANSLATED_LOCALES)[number],
     translation?: string | null
   ) {
     this.addLocaleCommon(locale, translation)
   }
 
-  public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
     const transformedLocale = locale.replace("-", "_")
     // @ts-ignore
     return normalizeForLocaleFile(this[transformedLocale] ?? null)
@@ -79,4 +80,10 @@ export function normalizeForLocaleFile(original: string | null): string | null {
       // {variable:0%} to <#>variable:0{'%'}</#>
       .replace(/(@|\$|%|\|)/g, "{'$1'}")
   )
+}
+
+export function toPhaseNumber(
+  phase: keyof typeof PhaseEnum | PhaseEnum
+): PhaseEnum {
+  return typeof phase === "number" ? phase : PhaseEnum[phase]
 }

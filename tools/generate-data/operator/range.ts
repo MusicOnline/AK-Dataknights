@@ -1,18 +1,18 @@
 import { RANGE_TABLE } from "../constants"
 import { RangeTable } from "../tables"
 
-export interface RangeTableData {
+export type RangeTableData = {
   id: string
   direction: number
   grids: Grid[]
 }
 
-export interface Grid {
+export type Grid = {
   row: number
   col: number
 }
 
-export interface GeneratedRangeData {
+export type GeneratedRangeData = {
   id: keyof RangeTable
   grids: Grid[]
 }

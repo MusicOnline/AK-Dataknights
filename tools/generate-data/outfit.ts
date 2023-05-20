@@ -1,9 +1,9 @@
-export interface BattleSkin {
+export type BattleSkin = {
   overwritePrefab: boolean
   skinOrPrefabId: string | null
 }
 
-export interface DisplaySkin {
+export type DisplaySkin = {
   skinName: string | null
   colorList: string[] | null
   titleList: string[] | null
@@ -24,7 +24,7 @@ export interface DisplaySkin {
   onPeriod: number
 }
 
-export interface TokenSkinMap {
+export type TokenSkinMap = {
   tokenId: string
   tokenSkinId: string
 }
@@ -35,7 +35,7 @@ export enum VoiceType {
   None = "NONE",
 }
 
-export interface SkinTableCharSkinData {
+export type SkinTableCharSkinData = {
   // skin-table.json
   skinId: string
   charId: string
@@ -55,7 +55,7 @@ export interface SkinTableCharSkinData {
   displaySkin: DisplaySkin
 }
 
-export interface GeneratedOutfitData {
+export type GeneratedOutfitData = {
   id: string
   dynIllustId: string | null
   avatarId: string
@@ -63,7 +63,7 @@ export interface GeneratedOutfitData {
   voiceId: string | null
   voiceType: VoiceType
 }
-export interface GeneratedOutfitIndexData {
+export type GeneratedOutfitIndexData = {
   id: string
   avatarId: string
   portraitId: string | null

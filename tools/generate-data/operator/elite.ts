@@ -7,7 +7,7 @@ import {
 import { GeneratedRangeData, Range } from "./range"
 import { CharacterTableData, KeyFrame } from "./raw"
 
-export interface GeneratedElitePhaseData {
+export type GeneratedElitePhaseData = {
   elite: number
   maxLevel: number
   outfit?: GeneratedOutfitData
@@ -15,7 +15,7 @@ export interface GeneratedElitePhaseData {
   range?: GeneratedRangeData
 }
 
-export interface GeneratedElitePhaseIndexData {
+export type GeneratedElitePhaseIndexData = {
   outfit: GeneratedOutfitIndexData | null
 }
 
@@ -32,8 +32,8 @@ export class ElitePhase {
     this.maxLevel = phase.maxLevel
 
     const skinTable = constants.OUTFIT_TABLES[constants.ORIGINAL_LOCALE]
-    // @ts-ignore
-    const skinId: string | undefined = skinTable.buildinEvolveMap[id][elite]
+    const skinId: string | undefined =
+      skinTable.buildinEvolveMap[id][<0 | 1 | 2>elite]
     this.outfit = skinId ? new Outfit(skinTable.charSkins[skinId]) : null
 
     this.attributeKeyFrames = phase.attributesKeyFrames

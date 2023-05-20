@@ -154,9 +154,9 @@
       },
       "spCost": "消耗技力",
       "spType": {
-        "AUTO": "自動回復",
-        "OFFENSIVE": "攻擊回復",
-        "DEFENSIVE": "受擊回復",
+        "INCREASE_WITH_TIME": "自動回復",
+        "INCREASE_WHEN_ATTACK": "攻擊回復",
+        "INCREASE_WHEN_TAKEN_DAMAGE": "受擊回復",
         "ON_DEPLOY": "不需技力"
       }
     },

@@ -154,9 +154,9 @@
       },
       "spCost": "必要SP",
       "spType": {
-        "AUTO": "自動回復",
-        "OFFENSIVE": "攻撃回復",
-        "DEFENSIVE": "被撃回復",
+        "INCREASE_WITH_TIME": "自動回復",
+        "INCREASE_WHEN_ATTACK": "攻撃回復",
+        "INCREASE_WHEN_TAKEN_DAMAGE": "被撃回復",
         "ON_DEPLOY": "SP不要"
       }
     },

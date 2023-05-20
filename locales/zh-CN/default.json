@@ -154,9 +154,9 @@
       },
       "spCost": "消耗技力",
       "spType": {
-        "AUTO": "自动回复",
-        "OFFENSIVE": "攻击回复",
-        "DEFENSIVE": "受击回复",
+        "INCREASE_WITH_TIME": "自动回复",
+        "INCREASE_WHEN_ATTACK": "攻击回复",
+        "INCREASE_WHEN_TAKEN_DAMAGE": "受击回复",
         "ON_DEPLOY": "不需技力"
       }
     },

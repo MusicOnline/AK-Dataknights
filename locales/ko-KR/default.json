@@ -153,9 +153,9 @@
       },
       "spCost": "소모 SP",
       "spType": {
-        "AUTO": "자동 회복",
-        "OFFENSIVE": "공격 회복",
-        "DEFENSIVE": "피격 회복",
+        "INCREASE_WITH_TIME": "자동 회복",
+        "INCREASE_WHEN_ATTACK": "공격 회복",
+        "INCREASE_WHEN_TAKEN_DAMAGE": "피격 회복",
         "ON_DEPLOY": "SP 불필요"
       }
     },

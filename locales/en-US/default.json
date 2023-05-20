@@ -202,9 +202,9 @@
         "AUTO": "Auto Activation"
       },
       "spType": {
-        "AUTO": "Auto Recovery",
-        "OFFENSIVE": "Offensive Recovery",
-        "DEFENSIVE": "Defensive Recovery",
+        "INCREASE_WITH_TIME": "Auto Recovery",
+        "INCREASE_WHEN_ATTACK": "Offensive Recovery",
+        "INCREASE_WHEN_TAKEN_DAMAGE": "Defensive Recovery",
         "ON_DEPLOY": "Does not require SP"
       }
     },

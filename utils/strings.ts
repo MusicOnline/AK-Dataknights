@@ -61,7 +61,7 @@ export const ENGLISH_CLASS_TO_RICH_TEXT_REGEX = Object.entries(
   {}
 )
 
-export interface ConvertRichTextOptions {
+export type ConvertRichTextOptions = {
   html?: boolean
   replace?:
     | {

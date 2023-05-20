@@ -1,13 +1,13 @@
 import * as constants from "../constants"
-import { Localizable, LocalizationString } from "../utils"
+import { Localizable, LocalizationString, toPhaseNumber } from "../utils"
 import { Blackboard, UnlockCond } from "./raw"
 
-export interface BattleEquipTableData {
+export type BattleEquipTableData = {
   id: string
   phases: BattleEquipTableDataPhase[]
 }
 
-export interface BattleEquipTableDataPhase {
+export type BattleEquipTableDataPhase = {
   equipLevel: number
   parts: Part[]
   attributeBlackboard: Blackboard[]
@@ -32,7 +32,7 @@ export interface BattleEquipTableDataPhase {
  * - TALENT_DATA_ONLY (Talent 2 multipliers+)
  * - TALENT (New Talent 2 effect: Recover HP)
  */
-export interface Part {
+export type Part = {
   resKey: null | string
   target: Target
   isToken: boolean
@@ -40,12 +40,12 @@ export interface Part {
   overrideTraitDataBundle: OverrideTraitDataBundle
 }
 
-export interface AddOrOverrideTalentDataBundle {
+export type AddOrOverrideTalentDataBundle = {
   // For different potential levels
   candidates: AddOrOverrideTalentDataBundleCandidate[] | null
 }
 
-export interface AddOrOverrideTalentDataBundleCandidate {
+export type AddOrOverrideTalentDataBundleCandidate = {
   displayRangeId: boolean
   upgradeDescription: string
   talentIndex: number
@@ -58,13 +58,13 @@ export interface AddOrOverrideTalentDataBundleCandidate {
   blackboard: Blackboard[]
 }
 
-export interface OverrideTraitDataBundle {
+export type OverrideTraitDataBundle = {
   // For different potential levels
   // No examples of length > 1 as of now (unaffected by potential)
   candidates: OverrideTraitDataBundleCandidate[] | null
 }
 
-export interface OverrideTraitDataBundleCandidate {
+export type OverrideTraitDataBundleCandidate = {
   additionalDescription: null | string
   unlockCondition: UnlockCond
   requiredPotentialRank: number
@@ -90,7 +90,7 @@ export enum Target {
   TraitDataOnly = "TRAIT_DATA_ONLY",
 }
 
-export interface UniEquipTableEquipDictData {
+export type UniEquipTableEquipDictData = {
   uniEquipId: string
   uniEquipName: string
   uniEquipIcon: string
@@ -113,23 +113,23 @@ export interface UniEquipTableEquipDictData {
   charEquipOrder: number
 }
 
-export interface ItemCost {
+export type ItemCost = {
   id: string
   count: number
   type: "GOLD" | "MATERIAL"
 }
 
-export interface UniEquipTableEquipTrackDictData {
+export type UniEquipTableEquipTrackDictData = {
   timeStamp: number
   trackList: TrackList[]
 }
 
-export interface TrackList {
+export type TrackList = {
   charId: string
   equipId: string
 }
 
-export interface UniEquipTableMissionListData {
+export type UniEquipTableMissionListData = {
   template: string
   desc: string
   paramList: string[]
@@ -139,13 +139,13 @@ export interface UniEquipTableMissionListData {
   jumpStageId: null | string
 }
 
-export interface UniEquipTableSubProfDictData {
+export type UniEquipTableSubProfDictData = {
   subProfessionId: string
   subProfessionName: string
   subProfessionCatagory: number
 }
 
-export interface GeneratedModuleData {
+export type GeneratedModuleData = {
   id: string
   icon: string
   typeIcon: string
@@ -162,7 +162,7 @@ export interface GeneratedModuleData {
   stages: GeneratedModuleStageData[] | null
 }
 
-export interface GeneratedModuleStageData {
+export type GeneratedModuleStageData = {
   stage: number
   attributes: Blackboard[]
   tokenAttributes: { [key: string]: Blackboard[] }
@@ -170,18 +170,18 @@ export interface GeneratedModuleStageData {
   talentUpgrades: GeneratedModuleStageTalentUpgradeData[]
 }
 
-export interface GeneratedModuleStageTraitUpgradeData {
+export type GeneratedModuleStageTraitUpgradeData = {
   variables: Blackboard[]
 }
 
-export interface GeneratedModuleStageTalentUpgradeData {
+export type GeneratedModuleStageTalentUpgradeData = {
   index: number // for Localization ID tracking
   isToken: boolean
   isHidden: boolean
   candidates: GeneratedModuleStageTalentUpgradeCandidateData[]
 }
 
-export interface GeneratedModuleStageTalentUpgradeCandidateData {
+export type GeneratedModuleStageTalentUpgradeCandidateData = {
   unlockCondition: {
     elite: number
     level: number
@@ -259,7 +259,7 @@ export class Module implements Localizable {
     }
   }
 
-  public addLocale(locale: typeof constants.GAME_LOCALES[number]): void {
+  public addLocale(locale: (typeof constants.GAME_LOCALES)[number]): void {
     // zh-TW does not have modules yet (stale data)
     const uniEquipData = <UniEquipTableEquipDictData | undefined>(
       constants.UNI_EQUIP_TABLES[locale]?.equipDict[this.id]
@@ -277,7 +277,7 @@ export class Module implements Localizable {
   }
 
   public addLocaleTL(
-    locale: typeof constants.TRANSLATED_LOCALES[number],
+    locale: (typeof constants.TRANSLATED_LOCALES)[number],
     data: any
   ): void {
     this.name.addLocaleTL(locale, data?.modules?.[this.id]?.name)
@@ -287,7 +287,7 @@ export class Module implements Localizable {
     )
   }
 
-  public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
     return {
       name: this.name.toLocaleData(locale),
       description: this.description.toLocaleData(locale),
@@ -362,7 +362,7 @@ export class ModuleStage implements Localizable {
   }
 
   public addLocale(
-    locale: typeof constants.GAME_LOCALES[number],
+    locale: (typeof constants.GAME_LOCALES)[number],
     data: BattleEquipTableData
   ): void {
     let traitDescription: string
@@ -400,7 +400,7 @@ export class ModuleStage implements Localizable {
   }
 
   public addLocaleTL(
-    locale: typeof constants.TRANSLATED_LOCALES[number],
+    locale: (typeof constants.TRANSLATED_LOCALES)[number],
     data: any
   ): void {
     this.traitUpgrade.addLocaleTL(locale, data?.traitUpgrade)
@@ -409,7 +409,7 @@ export class ModuleStage implements Localizable {
     )
   }
 
-  public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
     return {
       traitUpgrade: this.traitUpgrade.toLocaleData(locale),
       talentUpgrades: this.talentUpgrades.reduce((accumulator, current) => {
@@ -436,20 +436,20 @@ export class TraitUpgrade implements Localizable {
   }
 
   public addLocale(
-    locale: typeof constants.GAME_LOCALES[number],
+    locale: (typeof constants.GAME_LOCALES)[number],
     description: string
   ): void {
     this.description.addLocale(locale, description)
   }
 
   public addLocaleTL(
-    locale: typeof constants.TRANSLATED_LOCALES[number],
+    locale: (typeof constants.TRANSLATED_LOCALES)[number],
     data: any
   ): void {
     this.description.addLocaleTL(locale, data?.description)
   }
 
-  public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
     return { description: this.description.toLocaleData(locale) }
   }
 }
@@ -486,7 +486,7 @@ export class TalentUpgrade implements Localizable {
   }
 
   public addLocale(
-    locale: typeof constants.GAME_LOCALES[number],
+    locale: (typeof constants.GAME_LOCALES)[number],
     candidates: AddOrOverrideTalentDataBundleCandidate[]
   ): void {
     this.candidates.forEach((candidate, index) => {
@@ -496,7 +496,7 @@ export class TalentUpgrade implements Localizable {
   }
 
   public addLocaleTL(
-    locale: typeof constants.TRANSLATED_LOCALES[number],
+    locale: (typeof constants.TRANSLATED_LOCALES)[number],
     data: any
   ): void {
     this.candidates.forEach((candidate, index) => {
@@ -504,7 +504,7 @@ export class TalentUpgrade implements Localizable {
     })
   }
 
-  public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
     return {
       candidates: this.candidates.reduce((accumulator, current) => {
         accumulator[current.key] = current.toLocaleData(locale)
@@ -530,7 +530,7 @@ export class TalentUpgradeCandidate implements Localizable {
       data.upgradeDescription
     )
     this.unlockCondition = {
-      elite: data.unlockCondition.phase,
+      elite: toPhaseNumber(data.unlockCondition.phase),
       level: data.unlockCondition.level,
       potential: data.requiredPotentialRank + 1,
     }
@@ -553,7 +553,7 @@ export class TalentUpgradeCandidate implements Localizable {
   }
 
   public addLocale(
-    locale: typeof constants.GAME_LOCALES[number],
+    locale: (typeof constants.GAME_LOCALES)[number],
     candidate: AddOrOverrideTalentDataBundleCandidate
   ): void {
     this.name?.addLocale(locale, candidate.name)
@@ -561,14 +561,14 @@ export class TalentUpgradeCandidate implements Localizable {
   }
 
   public addLocaleTL(
-    locale: typeof constants.TRANSLATED_LOCALES[number],
+    locale: (typeof constants.TRANSLATED_LOCALES)[number],
     data: any
   ): void {
     this.name?.addLocaleTL(locale, data?.name)
     this.description?.addLocaleTL(locale, data?.description)
   }
 
-  public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
     if (this.isHidden) return {}
     return {
       name: this.name!.toLocaleData(locale),

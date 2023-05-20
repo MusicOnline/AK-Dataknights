@@ -12,7 +12,7 @@ import { SkinTableCharSkinData } from "./outfit"
 
 export type CharacterTable = { [id: string]: CharacterTableData }
 
-export interface SkinTable {
+export type SkinTable = {
   charSkins: { [id: string]: SkinTableCharSkinData }
   buildinEvolveMap: {
     [characterId: string]: {

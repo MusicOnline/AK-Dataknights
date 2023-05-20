@@ -4,7 +4,7 @@ import { AttributeType, CharacterTableData, PotentialRank } from "./raw"
 
 const POTENTIAL_NUMBER_OFFSET_FROM_ZERO_INDEX = 2
 
-export interface GeneratedPotentialData {
+export type GeneratedPotentialData = {
   potentialNumber: number
   attribute?: {
     key: keyof typeof AttributeType
@@ -30,7 +30,7 @@ export class Potential implements Localizable {
         )
       const modifier = data.buff.attributes.attributeModifiers[0]
       this.attribute = {
-        key: <keyof typeof AttributeType>AttributeType[modifier.attributeType],
+        key: <keyof typeof AttributeType>modifier.attributeType,
         value: modifier.value,
       }
     }
@@ -53,7 +53,7 @@ export class Potential implements Localizable {
   }
 
   public addLocale(
-    locale: typeof constants.GAME_LOCALES[number],
+    locale: (typeof constants.GAME_LOCALES)[number],
     data: CharacterTableData
   ) {
     this.description.addLocale(
@@ -65,7 +65,7 @@ export class Potential implements Localizable {
   }
 
   public addLocaleTL(
-    locale: typeof constants.TRANSLATED_LOCALES[number],
+    locale: (typeof constants.TRANSLATED_LOCALES)[number],
     data: any
   ) {
     this.description.addLocaleTL(
@@ -74,7 +74,7 @@ export class Potential implements Localizable {
     )
   }
 
-  public toLocaleData(locale: typeof constants.OUTPUT_LOCALES[number]) {
+  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
     return {
       description: this.description.toLocaleData(locale),
     }

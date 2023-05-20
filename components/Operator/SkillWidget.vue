@@ -54,9 +54,13 @@ const numberOfMasteryLevels = computed<number>(() => skill.levels.length - 7)
               class="px-2"
               v-if="skill.levels[0].skillType !== 'PASSIVE'"
               :class="{
-                'bg-green-400': skill.levels[0].spData.spType === 'AUTO',
-                'bg-orange-400': skill.levels[0].spData.spType === 'OFFENSIVE',
-                'bg-yellow-400': skill.levels[0].spData.spType === 'DEFENSIVE',
+                'bg-green-400':
+                  skill.levels[0].spData.spType === 'INCREASE_WITH_TIME',
+                'bg-orange-400':
+                  skill.levels[0].spData.spType === 'INCREASE_WHEN_ATTACK',
+                'bg-yellow-400':
+                  skill.levels[0].spData.spType ===
+                  'INCREASE_WHEN_TAKEN_DAMAGE',
               }"
             >
               {{ t(`operator.skill.spType.${skill.levels[0].spData.spType}`) }}

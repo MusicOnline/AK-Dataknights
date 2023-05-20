@@ -1,48 +1,54 @@
-export const CHINESE_TO_ENGLISH_TAGS = {
-  新手: "STARTER",
-  位移: "SHIFT",
-  减速: "SLOW",
-  削弱: "DEBUFF",
-  召唤: "SUMMON",
-  快速复活: "FAST_REDEPLOY",
-  控场: "CROWD_CONTROL",
-  支援: "SUPPORT",
-  治疗: "HEALING",
-  爆发: "NUKE",
-  生存: "SURVIVAL",
-  群攻: "AOE",
-  费用回复: "DP_RECOVERY",
-  输出: "DPS",
-  防护: "DEFENSE",
-  支援机械: "ROBOT",
-} as const
+export enum Tag {
+  位移 = "SHIFT",
+  减速 = "SLOW",
+  削弱 = "DEBUFF",
+  召唤 = "SUMMON",
+  快速复活 = "FAST_REDEPLOY",
+  控场 = "CROWD_CONTROL",
+  支援 = "SUPPORT",
+  支援机械 = "ROBOT",
+  新手 = "STARTER",
+  治疗 = "HEALING",
+  爆发 = "NUKE",
+  生存 = "SURVIVAL",
+  群攻 = "AOE",
+  费用回复 = "DP_RECOVERY",
+  输出 = "DPS",
+  防护 = "DEFENSE",
+}
 
-export interface AllSkillLvlup {
+export enum PhaseEnum {
+  PHASE_0 = 0,
+  PHASE_1 = 1,
+  PHASE_2 = 2,
+}
+
+export type AllSkillLvlup = {
   unlockCond: UnlockCond
   lvlUpCost: Cost[] | null
 }
 
-export interface UnlockCond {
-  phase: number
+export type UnlockCond = {
+  phase: keyof typeof PhaseEnum | PhaseEnum // CN 2.0 vs EJK
   level: number
 }
 
-export interface Cost {
+export type Cost = {
   id: string
   count: number
-  type: Type
+  type: CostType
 }
 
-export enum Type {
+export enum CostType {
   Material = "MATERIAL",
 }
 
-export interface KeyFrame {
+export type KeyFrame = {
   level: number
   data: KeyFrameData
 }
 
-export interface KeyFrameData {
+export type KeyFrameData = {
   maxHp: number
   atk: number
   def: number
@@ -67,7 +73,7 @@ export interface KeyFrameData {
   levitateImmune: boolean
 }
 
-export interface Phase {
+export type Phase = {
   characterPrefabKey: string
   rangeId: string | null
   maxLevel: number
@@ -82,18 +88,23 @@ export enum Position {
   Ranged = "RANGED",
 }
 
-export interface PotentialRank {
-  type: number
+export enum PotentialRankType {
+  BUFF = 0,
+  CUSTOM = 1,
+}
+
+export type PotentialRank = {
+  type: keyof typeof PotentialRankType | PotentialRankType // CN 2.0 vs EJK
   description: string
   buff: Buff | null
   equivalentCost: null
 }
 
-export interface Buff {
+export type Buff = {
   attributes: Attributes
 }
 
-export interface Attributes {
+export type Attributes = {
   abnormalFlags: null
   abnormalImmunes: null
   abnormalAntis: null
@@ -103,24 +114,29 @@ export interface Attributes {
 }
 
 export enum AttributeType {
-  maxHp = 0,
-  atk = 1,
-  def = 2,
-  magicResistance = 3,
-  cost = 4,
-  attackSpeed = 7,
-  respawnTime = 21,
+  MAX_HP = 0,
+  ATK = 1,
+  DEF = 2,
+  MAGIC_RESISTANCE = 3,
+  COST = 4,
+  ATTACK_SPEED = 7,
+  RESPAWN_TIME = 21,
 }
 
-export interface AttributeModifier {
-  attributeType: AttributeType
-  formulaItem: number
+export enum FormulaItem {
+  ADDITION = 0,
+}
+
+export type AttributeModifier = {
+  attributeType: keyof typeof AttributeType | AttributeType // CN 2.0 vs EJK
+  formulaItem: keyof typeof FormulaItem | FormulaItem // CN 2.0 vs EJK
   value: number
   loadFromBlackboard: boolean
   fetchBaseValueFromSourceEntity: boolean
 }
 
-export const ACTUAL_OPERATOR_CLASSES = {
+// Used for key iteration, cannot be turned into a native string enum
+export const OPERATOR_CLASS_NAMES = {
   CASTER: "CASTER",
   TANK: "DEFENDER",
   WARRIOR: "GUARD",
@@ -133,7 +149,9 @@ export const ACTUAL_OPERATOR_CLASSES = {
   TRAP: "TRAP", // Trapmaster summons
 } as const
 
-export interface Skill {
+export type Profession = keyof typeof OPERATOR_CLASS_NAMES
+
+export type Skill = {
   skillId: string | null
   overridePrefabKey: string | null
   overrideTokenKey: string | null
@@ -141,17 +159,17 @@ export interface Skill {
   unlockCond: UnlockCond
 }
 
-export interface LevelUpCostCond {
+export type LevelUpCostCond = {
   unlockCond: UnlockCond
   lvlUpTime: number
   levelUpCost: Cost[] | null
 }
 
-export interface Talent {
+export type Talent = {
   candidates: TalentCandidate[] | null
 }
 
-export interface TalentCandidate {
+export type TalentCandidate = {
   unlockCondition: UnlockCond
   requiredPotentialRank: number
   prefabKey: string
@@ -161,16 +179,17 @@ export interface TalentCandidate {
   blackboard: Blackboard[]
 }
 
-export interface Blackboard {
+export type Blackboard = {
   key: string
   value: number
+  valueStr?: string | null // CN 2.0 vs EJK
 }
 
-export interface Trait {
+export type Trait = {
   candidates: TraitCandidate[]
 }
 
-export interface TraitCandidate {
+export type TraitCandidate = {
   unlockCondition: UnlockCond
   requiredPotentialRank: number
   blackboard: Blackboard[]
@@ -252,8 +271,17 @@ export enum SubProfessionId {
   None2 = "none2",
 }
 
+export enum Rarity {
+  TIER_1 = 1,
+  TIER_2 = 2,
+  TIER_3 = 3,
+  TIER_4 = 4,
+  TIER_5 = 5,
+  TIER_6 = 6,
+}
+
 /** character_table.json array element */
-export interface CharacterTableData {
+export type CharacterTableData = {
   name: string
   appellation: string
   /**
@@ -265,22 +293,25 @@ export interface CharacterTableData {
    */
   description: string | null
   canUseGeneralPotentialItem: boolean
+  canUseActvityPotentialItem: boolean
   potentialItemId: string
+  actvityPotentialItemId: string
+  classicPotentialItemId: string
   nationId: string | null
   groupId: string | null
   teamId: string | null
   displayNumber: string | null
   tokenKey: string | null // Token summon character id
   position: Position
-  tagList: string[] | null
+  tagList: (keyof typeof Tag)[] | string[] | null
   itemUsage: string | null
   itemDesc: string | null
   itemObtainApproach: string | null
   isNotObtainable: boolean // true if Integrated Strategies operators
   isSpChar: boolean
   maxPotentialLevel: number
-  rarity: number // Number of stars in-game, minus one
-  profession: keyof typeof ACTUAL_OPERATOR_CLASSES
+  rarity: keyof typeof Rarity // Number of stars in-game, minus one
+  profession: Profession
   subProfessionId: SubProfessionId
   trait: Trait | null
   phases: Phase[]
