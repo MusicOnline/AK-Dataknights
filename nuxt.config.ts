@@ -129,7 +129,11 @@ export default defineNuxtConfig({
       await generateDataFiles()
     },
   },
-  experimental: {
-    reactivityTransform: true,
+  vite: {
+    vue: {
+      script: {
+        propsDestructure: true,
+      },
+    },
   },
 })
