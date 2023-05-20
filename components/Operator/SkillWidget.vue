@@ -10,7 +10,7 @@ const { skill } = defineProps<{
 const { t } = useI18n()
 const isAdvancedViewEnabled = useIsAdvancedViewEnabled()
 
-const skillLevel = ref<number>(1)
+const skillLevel = ref<number>(skill.levels.length)
 const visualSkillLevel = computed<number>({
   get() {
     if (skillLevel.value > 7) return 7

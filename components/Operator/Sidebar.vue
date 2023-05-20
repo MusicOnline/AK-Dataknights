@@ -28,6 +28,29 @@ defineEmits(["update:isSidebarExpanded"])
     <OperatorTableOfContentsList :operator="operator" />
     <ClientOnly>
       <OperatorSearchWidget :operator="operator" />
+      <template #fallback>
+        <div class="flex flex-col gap-2">
+          <OSkeleton height="2.5rem" :animated="true" />
+          <OSkeleton
+            class="gap-1"
+            height="2.75rem"
+            :count="10"
+            :animated="true"
+          />
+        </div>
+      </template>
     </ClientOnly>
   </div>
 </template>
+
+<style scoped lang="scss">
+/* stylelint-disable-next-line selector-class-pattern */
+:deep(.o-sklt__item) {
+  background-image: linear-gradient(
+    90deg,
+    rgb(var(--color-bg-container-1)) 25%,
+    rgb(var(--color-bg-container-1-focus)) 50%,
+    rgb(var(--color-bg-container-1)) 75%
+  );
+}
+</style>

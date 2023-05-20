@@ -142,6 +142,9 @@ function limitOperatorLevel(event: Event) {
           {{ t("operator.ui.includeBonuses.description") }}
         </template>
       </VTooltip>
+      <template #fallback>
+        <OSkeleton class="ml-auto h-full w-56" :animated="true" height="100%" />
+      </template>
     </ClientOnly>
   </div>
 </template>
@@ -183,5 +186,15 @@ function limitOperatorLevel(event: Event) {
       @apply bg-green-500 outline-green-600;
     }
   }
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+:deep(.o-sklt__item) {
+  background-image: linear-gradient(
+    90deg,
+    rgb(var(--color-bg-container-1)) 25%,
+    rgb(var(--color-bg-container-1-focus)) 50%,
+    rgb(var(--color-bg-container-1)) 75%
+  );
 }
 </style>

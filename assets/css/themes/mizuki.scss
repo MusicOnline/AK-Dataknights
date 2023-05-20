@@ -146,13 +146,8 @@
     @include dark-mode-override;
   }
 
-  // Due to prerendering, pages are initially in light mode before hydration
-  // Color mode is handled by JS to set data-mode
-  // A loading screen is shown using prefers-color-scheme before JS can run
   @media (prefers-color-scheme: dark) {
-    // Before hydration, prefers-color-scheme is respected for the loading screen
-    // After hydration, data-mode should be respected only
-    &[data-is-mounted="false"] {
+    &:not([data-mode="light"]) {
       @include dark-mode-override;
     }
   }

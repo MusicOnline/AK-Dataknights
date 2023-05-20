@@ -5,7 +5,7 @@ import type { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables"
 import { useSeoMeta } from "@unhead/vue"
 
 const { t, locale, locales } = useI18n()
-const isDarkModeEnabled = useIsDarkModeEnabled()
+const colorMode = useColorMode()
 const theme = ref<string>("mizuki")
 
 useSeoMeta({
@@ -57,11 +57,8 @@ useHead({
   ],
 })
 
-const isMounted = ref<boolean>(false)
-
 onMounted(() => {
   updateColorMode()
-  isMounted.value = true
 })
 
 watch(getIsDarkModeSystemPreference, updateColorMode)
@@ -70,8 +67,12 @@ function getIsDarkModeSystemPreference(): boolean {
   return window?.matchMedia("(prefers-color-scheme: dark)").matches || false
 }
 
-function updateColorMode() {
-  isDarkModeEnabled.value = getIsDarkModeSystemPreference()
+function updateColorMode(): void {
+  if (getIsDarkModeSystemPreference()) {
+    colorMode.value = "dark"
+  } else {
+    colorMode.value = "light"
+  }
 }
 
 function transformLocaleCode(locale: string): string {
@@ -93,13 +94,8 @@ function transformLocaleCode(locale: string): string {
 <template>
   <div>
     <Html :lang="locale" prefix="og: https://ogp.me/ns#">
-      <Body
-        :data-theme="theme"
-        :data-mode="isDarkModeEnabled ? 'dark' : 'light'"
-        :data-is-mounted="isMounted"
-      />
+      <Body :data-theme="theme" :data-mode="colorMode" />
     </Html>
-    <PreColorModeLoadingScreen :is-mounted="isMounted" />
     <NavigationBar />
     <div class="p-2">
       <NuxtPage class="mx-auto max-w-7xl" />
@@ -125,6 +121,10 @@ function transformLocaleCode(locale: string): string {
   svg {
     user-select: none;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .ba-keyword {

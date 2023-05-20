@@ -4,7 +4,19 @@ const { withLabel = false } = defineProps<{
 }>()
 
 const { t } = useI18n()
-const isDarkModeEnabled = useIsDarkModeEnabled()
+const colorMode = useColorMode()
+const isDarkModeEnabled = computed<boolean>({
+  get() {
+    return colorMode.value === "dark"
+  },
+  set(newValue) {
+    if (newValue) {
+      colorMode.value = "dark"
+    } else {
+      colorMode.value = "light"
+    }
+  },
+})
 </script>
 
 <template>

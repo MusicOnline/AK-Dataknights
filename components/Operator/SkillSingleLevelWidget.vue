@@ -98,8 +98,13 @@ function getComparisonColorClass(
         class="bg-bg-container-1-focus flex"
         v-if="levelData.skillType !== 'PASSIVE' && isInitSpNotAlwaysZero"
       >
-        <div class="bg-bg-primary text-fg-primary p-1">
-          {{ t("operator.skill.initSp") }}
+        <div
+          class="bg-bg-primary text-fg-primary flex items-center gap-0.5 p-1"
+        >
+          <Icon name="heroicons:forward-solid" />
+          <span>
+            {{ t("operator.skill.initSp") }}
+          </span>
         </div>
         <div class="bg-bg-container-1-normal flex items-center gap-0.5 p-1">
           <span>
@@ -113,8 +118,13 @@ function getComparisonColorClass(
         </div>
       </div>
       <div class="flex" v-if="levelData.skillType !== 'PASSIVE'">
-        <div class="bg-bg-primary text-fg-primary p-1">
-          {{ t("operator.skill.spCost") }}
+        <div
+          class="bg-bg-primary text-fg-primary flex items-center gap-0.5 p-1"
+        >
+          <Icon name="heroicons:bolt-solid" />
+          <span>
+            {{ t("operator.skill.spCost") }}
+          </span>
         </div>
         <div class="bg-bg-container-1-normal flex items-center gap-0.5 p-1">
           <span>
@@ -128,8 +138,13 @@ function getComparisonColorClass(
         </div>
       </div>
       <div class="flex" v-if="levelData.duration > 0">
-        <div class="bg-bg-primary text-fg-primary p-1">
-          {{ t("operator.skill.duration") }}
+        <div
+          class="bg-bg-primary text-fg-primary flex items-center gap-0.5 p-1"
+        >
+          <Icon name="heroicons:clock-solid" />
+          <span>
+            {{ t("operator.skill.duration") }}
+          </span>
         </div>
         <div class="bg-bg-container-1-normal flex items-center gap-0.5 p-1">
           <span>
