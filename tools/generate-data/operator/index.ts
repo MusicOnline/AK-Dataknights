@@ -177,7 +177,7 @@ export class Operator implements Localizable {
     }
   }
 
-  public addLocale(locale: (typeof constants.GAME_LOCALES)[number], data: any) {
+  public addLocale(locale: constants.GameLocale, data: any) {
     Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) =>
       this[attribute]?.addLocale(locale, data[attribute])
     )
@@ -190,10 +190,7 @@ export class Operator implements Localizable {
     if (locale === "en-US") this._unnormalizedKey = data.name
   }
 
-  public addLocaleTL(
-    locale: (typeof constants.TRANSLATED_LOCALES)[number],
-    data: any
-  ) {
+  public addLocaleTL(locale: constants.TranslatedLocale, data: any) {
     Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) =>
       this[attribute]?.addLocaleTL(locale, data[attribute])
     )
@@ -206,7 +203,7 @@ export class Operator implements Localizable {
     if (locale === "en-TL" && data.name) this._unnormalizedKey = data.name
   }
 
-  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
+  public toLocaleData(locale: constants.OutputLocale) {
     const commonAttributes = Operator.LOCALIZATION_STRING_ATTRIBUTES.reduce(
       (accumulator, current) => {
         if (locale === "en-TL" && current === "name") {

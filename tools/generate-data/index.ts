@@ -3,9 +3,18 @@ import * as fs from "fs/promises"
 import OPERATOR_RELEASE_ORDER from "../../data/custom/operator-release.json"
 import * as constants from "./constants"
 import { Operator } from "./operator"
-import { CharacterTable } from "./tables"
+import { CharacterTable } from "./raw/tables"
+import * as tables from "./tables"
+
+async function readGameTables() {
+  if (globalThis.GAME_TABLES) return
+
+  globalThis.GAME_TABLES = await tables.requireAllGameTablesAsync()
+}
 
 async function generateOperatorFiles() {
+  const readPromise = readGameTables()
+
   const translatedLocaleData: any = {}
   for (const locale of constants.TRANSLATED_LOCALES) {
     try {
@@ -16,35 +25,32 @@ async function generateOperatorFiles() {
         .then((data) => JSON.parse(data))
     } catch {}
   }
-  await Promise.all(Object.values(translatedLocaleData))
+  await Promise.all([...Object.values(translatedLocaleData), readPromise])
 
   const operatorIdReleaseOrder = [
     ...OPERATOR_RELEASE_ORDER,
-    ...Object.keys(constants.OPERATOR_TABLES[constants.ORIGINAL_LOCALE]).filter(
-      (id) => !OPERATOR_RELEASE_ORDER.includes(id)
-    ),
+    ...Object.keys(
+      globalThis.GAME_TABLES!.Operator[constants.ORIGINAL_LOCALE]
+    ).filter((id) => !OPERATOR_RELEASE_ORDER.includes(id)),
   ]
   const operators = operatorIdReleaseOrder.flatMap((id) => {
-    const data = constants.OPERATOR_TABLES[constants.ORIGINAL_LOCALE][id]
+    const data = globalThis.GAME_TABLES!.Operator[constants.ORIGINAL_LOCALE][id]
     if (
       ["TRAP", "TOKEN"].includes(data.profession) ||
       constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(id)
     )
       return []
     const operator = new Operator(id, data)
-    Object.entries(constants.OPERATOR_TABLES).forEach(
+    Object.entries(globalThis.GAME_TABLES!.Operator).forEach(
       // @ts-ignore
-      ([locale, table]: [
-        typeof constants.GAME_LOCALES[number],
-        CharacterTable
-      ]) => {
+      ([locale, table]: [constants.GameLocale, CharacterTable]) => {
         if (locale === constants.ORIGINAL_LOCALE) return
         if (table[id]) operator.addLocale(locale, table[id])
       }
     )
     Object.entries(translatedLocaleData).forEach(
       // @ts-ignore
-      ([locale, table]: [typeof constants.TRANSLATED_LOCALES[number], any]) => {
+      ([locale, table]: [constants.TranslatedLocale, any]) => {
         if (table[operator.key])
           operator.addLocaleTL(locale, table[operator.key])
       }

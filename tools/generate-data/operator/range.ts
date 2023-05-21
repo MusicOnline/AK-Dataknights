@@ -1,5 +1,4 @@
-import { RANGE_TABLE } from "../constants"
-import { RangeTable } from "../tables"
+import { RangeTable } from "../raw/tables"
 
 export type RangeTableData = {
   id: string
@@ -22,7 +21,7 @@ export class Range {
   grids: Grid[]
 
   public constructor(id: keyof RangeTable) {
-    const range = RANGE_TABLE[id]
+    const range = globalThis.GAME_TABLES!.Range[id]
     this.id = id
     this.grids = range.grids
   }

@@ -78,10 +78,7 @@ export class TraitCandidate implements Localizable {
     }
   }
 
-  public addLocale(
-    locale: (typeof constants.GAME_LOCALES)[number],
-    data: CharacterTableData
-  ) {
+  public addLocale(locale: constants.GameLocale, data: CharacterTableData) {
     if (!data.trait) {
       this.description.addLocale(locale, data.description)
       return
@@ -102,17 +99,14 @@ export class TraitCandidate implements Localizable {
     this.description.addLocale(locale, description)
   }
 
-  public addLocaleTL(
-    locale: (typeof constants.TRANSLATED_LOCALES)[number],
-    data: any
-  ) {
+  public addLocaleTL(locale: constants.TranslatedLocale, data: any) {
     this.description.addLocaleTL(
       locale,
       data?.traitCandidates?.[this.key]?.description
     )
   }
 
-  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
+  public toLocaleData(locale: constants.OutputLocale) {
     return {
       description: this.description.toLocaleData(locale),
     }

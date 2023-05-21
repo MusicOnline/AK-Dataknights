@@ -54,24 +54,18 @@ export class TalentCandidate implements Localizable {
     }
   }
 
-  public addLocale(
-    locale: (typeof constants.GAME_LOCALES)[number],
-    data: RawTalentCandidate
-  ) {
+  public addLocale(locale: constants.GameLocale, data: RawTalentCandidate) {
     this.name?.addLocale(locale, data.name)
     this.description?.addLocale(locale, data.description)
   }
 
-  public addLocaleTL(
-    locale: (typeof constants.TRANSLATED_LOCALES)[number],
-    data: any
-  ) {
+  public addLocaleTL(locale: constants.TranslatedLocale, data: any) {
     const candidate = data?.talents?.[this.talentNumber]?.[this.key]
     this.name?.addLocaleTL(locale, candidate?.name)
     this.description?.addLocaleTL(locale, candidate?.description)
   }
 
-  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
+  public toLocaleData(locale: constants.OutputLocale) {
     return {
       name: this.name?.toLocaleData(locale),
       description: this.description?.toLocaleData(locale),
@@ -115,7 +109,7 @@ export class Talent implements Localizable {
   }
 
   public addLocale(
-    locale: (typeof constants.GAME_LOCALES)[number],
+    locale: constants.GameLocale,
     data: CharacterTableData
   ): void {
     const rawTalent = data.talents!.filter(({ candidates }) => candidates)[
@@ -137,14 +131,11 @@ export class Talent implements Localizable {
     })
   }
 
-  public addLocaleTL(
-    locale: (typeof constants.TRANSLATED_LOCALES)[number],
-    data: any
-  ): void {
+  public addLocaleTL(locale: constants.TranslatedLocale, data: any): void {
     this.candidates.forEach((candidate) => candidate.addLocaleTL(locale, data))
   }
 
-  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
+  public toLocaleData(locale: constants.OutputLocale) {
     return this.candidates.reduce(
       (accumulator: { [key: string]: any }, candidate) => {
         accumulator[candidate.key] = candidate.toLocaleData(locale)

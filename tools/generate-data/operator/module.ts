@@ -210,9 +210,11 @@ export class Module implements Localizable {
 
   public constructor(moduleId: string) {
     const uniEquipData =
-      constants.UNI_EQUIP_TABLES[constants.ORIGINAL_LOCALE].equipDict[moduleId]
+      globalThis.GAME_TABLES!.UniEquip[constants.ORIGINAL_LOCALE].equipDict[
+        moduleId
+      ]
     const battleEquipData = <BattleEquipTableData | undefined>(
-      constants.BATTLE_EQUIP_TABLES[constants.ORIGINAL_LOCALE][moduleId]
+      globalThis.GAME_TABLES!.BattleEquip[constants.ORIGINAL_LOCALE][moduleId]
     )
 
     this.id = moduleId
@@ -238,7 +240,7 @@ export class Module implements Localizable {
 
   public static getAllFromData(operatorId: string): Module[] | null {
     return (
-      constants.UNI_EQUIP_TABLES[constants.ORIGINAL_LOCALE].charEquip[
+      globalThis.GAME_TABLES!.UniEquip[constants.ORIGINAL_LOCALE].charEquip[
         operatorId
       ]?.map((moduleId) => new Module(moduleId)) ?? null
     )
@@ -259,10 +261,10 @@ export class Module implements Localizable {
     }
   }
 
-  public addLocale(locale: (typeof constants.GAME_LOCALES)[number]): void {
+  public addLocale(locale: constants.GameLocale): void {
     // zh-TW does not have modules yet (stale data)
     const uniEquipData = <UniEquipTableEquipDictData | undefined>(
-      constants.UNI_EQUIP_TABLES[locale]?.equipDict[this.id]
+      globalThis.GAME_TABLES!.UniEquip[locale]?.equipDict[this.id]
     )
     if (!uniEquipData) return
 
@@ -270,16 +272,13 @@ export class Module implements Localizable {
     this.description.addLocale(locale, uniEquipData.uniEquipDesc)
 
     const battleEquipData = <BattleEquipTableData | undefined>(
-      constants.BATTLE_EQUIP_TABLES[locale]?.[this.id]
+      globalThis.GAME_TABLES!.BattleEquip[locale]?.[this.id]
     )
     if (!battleEquipData) return
     this.stages?.forEach((stage) => stage.addLocale(locale, battleEquipData))
   }
 
-  public addLocaleTL(
-    locale: (typeof constants.TRANSLATED_LOCALES)[number],
-    data: any
-  ): void {
+  public addLocaleTL(locale: constants.TranslatedLocale, data: any): void {
     this.name.addLocaleTL(locale, data?.modules?.[this.id]?.name)
     this.description.addLocaleTL(locale, data?.modules?.[this.id]?.description)
     this.stages?.forEach((stage, index) =>
@@ -287,7 +286,7 @@ export class Module implements Localizable {
     )
   }
 
-  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
+  public toLocaleData(locale: constants.OutputLocale) {
     return {
       name: this.name.toLocaleData(locale),
       description: this.description.toLocaleData(locale),
@@ -362,7 +361,7 @@ export class ModuleStage implements Localizable {
   }
 
   public addLocale(
-    locale: (typeof constants.GAME_LOCALES)[number],
+    locale: constants.GameLocale,
     data: BattleEquipTableData
   ): void {
     let traitDescription: string
@@ -399,17 +398,14 @@ export class ModuleStage implements Localizable {
     this.traitUpgrade.addLocale(locale, traitDescription!)
   }
 
-  public addLocaleTL(
-    locale: (typeof constants.TRANSLATED_LOCALES)[number],
-    data: any
-  ): void {
+  public addLocaleTL(locale: constants.TranslatedLocale, data: any): void {
     this.traitUpgrade.addLocaleTL(locale, data?.traitUpgrade)
     this.talentUpgrades.forEach((upgrade) =>
       upgrade.addLocaleTL(locale, data?.talentUpgrades?.[upgrade.index])
     )
   }
 
-  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
+  public toLocaleData(locale: constants.OutputLocale) {
     return {
       traitUpgrade: this.traitUpgrade.toLocaleData(locale),
       talentUpgrades: this.talentUpgrades.reduce((accumulator, current) => {
@@ -435,21 +431,15 @@ export class TraitUpgrade implements Localizable {
     return { variables: this.variables }
   }
 
-  public addLocale(
-    locale: (typeof constants.GAME_LOCALES)[number],
-    description: string
-  ): void {
+  public addLocale(locale: constants.GameLocale, description: string): void {
     this.description.addLocale(locale, description)
   }
 
-  public addLocaleTL(
-    locale: (typeof constants.TRANSLATED_LOCALES)[number],
-    data: any
-  ): void {
+  public addLocaleTL(locale: constants.TranslatedLocale, data: any): void {
     this.description.addLocaleTL(locale, data?.description)
   }
 
-  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
+  public toLocaleData(locale: constants.OutputLocale) {
     return { description: this.description.toLocaleData(locale) }
   }
 }
@@ -486,7 +476,7 @@ export class TalentUpgrade implements Localizable {
   }
 
   public addLocale(
-    locale: (typeof constants.GAME_LOCALES)[number],
+    locale: constants.GameLocale,
     candidates: AddOrOverrideTalentDataBundleCandidate[]
   ): void {
     this.candidates.forEach((candidate, index) => {
@@ -495,16 +485,13 @@ export class TalentUpgrade implements Localizable {
     })
   }
 
-  public addLocaleTL(
-    locale: (typeof constants.TRANSLATED_LOCALES)[number],
-    data: any
-  ): void {
+  public addLocaleTL(locale: constants.TranslatedLocale, data: any): void {
     this.candidates.forEach((candidate, index) => {
       candidate.addLocaleTL(locale, data?.candidates?.[index])
     })
   }
 
-  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
+  public toLocaleData(locale: constants.OutputLocale) {
     return {
       candidates: this.candidates.reduce((accumulator, current) => {
         accumulator[current.key] = current.toLocaleData(locale)
@@ -553,22 +540,19 @@ export class TalentUpgradeCandidate implements Localizable {
   }
 
   public addLocale(
-    locale: (typeof constants.GAME_LOCALES)[number],
+    locale: constants.GameLocale,
     candidate: AddOrOverrideTalentDataBundleCandidate
   ): void {
     this.name?.addLocale(locale, candidate.name)
     this.description?.addLocale(locale, candidate.upgradeDescription)
   }
 
-  public addLocaleTL(
-    locale: (typeof constants.TRANSLATED_LOCALES)[number],
-    data: any
-  ): void {
+  public addLocaleTL(locale: constants.TranslatedLocale, data: any): void {
     this.name?.addLocaleTL(locale, data?.name)
     this.description?.addLocaleTL(locale, data?.description)
   }
 
-  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
+  public toLocaleData(locale: constants.OutputLocale) {
     if (this.isHidden) return {}
     return {
       name: this.name!.toLocaleData(locale),

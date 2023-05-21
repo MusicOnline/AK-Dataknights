@@ -52,10 +52,7 @@ export class Potential implements Localizable {
     return { potentialNumber: this.potentialNumber, attribute: this.attribute }
   }
 
-  public addLocale(
-    locale: (typeof constants.GAME_LOCALES)[number],
-    data: CharacterTableData
-  ) {
+  public addLocale(locale: constants.GameLocale, data: CharacterTableData) {
     this.description.addLocale(
       locale,
       data.potentialRanks[
@@ -64,17 +61,14 @@ export class Potential implements Localizable {
     )
   }
 
-  public addLocaleTL(
-    locale: (typeof constants.TRANSLATED_LOCALES)[number],
-    data: any
-  ) {
+  public addLocaleTL(locale: constants.TranslatedLocale, data: any) {
     this.description.addLocaleTL(
       locale,
       data?.potentials?.[this.potentialNumber]?.description ?? null
     )
   }
 
-  public toLocaleData(locale: (typeof constants.OUTPUT_LOCALES)[number]) {
+  public toLocaleData(locale: constants.OutputLocale) {
     return {
       description: this.description.toLocaleData(locale),
     }
