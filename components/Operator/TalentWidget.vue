@@ -218,7 +218,7 @@ const talentsAndBestAndNextCandidate = computed<
 <template>
   <div class="flex flex-col">
     <!-- Elite & potential buttons -->
-    <div class="bg-bg-container-1-normal flex gap-1">
+    <div class="flex gap-1 bg-bg-container-1-normal">
       <!-- Elites -->
       <div class="flex gap-1">
         <button
@@ -290,7 +290,7 @@ const talentsAndBestAndNextCandidate = computed<
         :key="talent.talentNumber"
       >
         <template v-if="bestCandidate">
-          <div class="bg-bg-primary text-fg-primary w-fit px-1 py-0.5 text-xs">
+          <div class="w-fit bg-bg-primary px-1 py-0.5 text-xs text-fg-primary">
             {{
               t(
                 `${operator.key}.talents.${talent.talentNumber}.${bestCandidate.key}.name`
@@ -362,4 +362,3 @@ const talentsAndBestAndNextCandidate = computed<
 <i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
 <i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>
-<i18n locale="zh-TW" src="~/locales/zh-TW/operators-data.json"></i18n>

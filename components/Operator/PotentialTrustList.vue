@@ -33,7 +33,7 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
     <ul class="flex flex-col gap-1 text-sm">
       <li>
         <button
-          class="hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal flex w-full gap-0.5 text-left"
+          class="flex w-full gap-0.5 text-left hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal"
           @click="$emit('update:potential', (operatorState.potential = 1))"
         >
           <div class="block h-6 w-6 flex-shrink-0 bg-slate-900 p-0.5">
@@ -49,7 +49,7 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
         :key="potentialNumber"
       >
         <button
-          class="hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal group flex w-full gap-0.5 text-left"
+          class="group flex w-full gap-0.5 text-left hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal"
           @click="
             $emit(
               'update:potential',
@@ -79,7 +79,7 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
       </li>
     </ul>
     <button
-      class="hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal group flex gap-0.5 text-left text-sm"
+      class="group flex gap-0.5 text-left text-sm hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal"
       v-if="trustStats"
       @click="
         $emit(
@@ -118,4 +118,3 @@ const trustStats = computed<{ [key: string]: number } | null>(() => {
 <i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
 <i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>
-<i18n locale="zh-TW" src="~/locales/zh-TW/operators-data.json"></i18n>

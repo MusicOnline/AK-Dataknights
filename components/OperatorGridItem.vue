@@ -36,7 +36,7 @@ const localePath = useLocalePath()
               OPERATOR_NAME_LENGTH_SIZE_FIRST_CUTOFF &&
             t(`${operator.key}.name`).length <
               OPERATOR_NAME_LENGTH_SIZE_SECOND_CUTOFF,
-          'text-operator-name-3xs pt-0.5':
+          'pt-0.5 text-operator-name-3xs':
             t(`${operator.key}.name`).length >=
             OPERATOR_NAME_LENGTH_SIZE_SECOND_CUTOFF,
         }"
@@ -52,4 +52,3 @@ const localePath = useLocalePath()
 <i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
 <i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>
-<i18n locale="zh-TW" src="~/locales/zh-TW/operators-data.json"></i18n>

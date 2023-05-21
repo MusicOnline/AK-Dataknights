@@ -8,8 +8,6 @@
 
 Work-in-progress Arknights database made with [Nuxt](https://nuxt.com) for educational purposes. Features Mainland Chinese, English, Japanese and Korean game data and technical support for custom translations (English only for now).
 
-_Note: Taiwanese translations are outdated due to unavailable up-to-date data. This project currently does not datamine its own data._
-
 All Arknights content is the copyright of Hypergryph Network Technology Co. Ltd.
 
 ## Development

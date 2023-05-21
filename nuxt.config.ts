@@ -2,7 +2,6 @@ import ENGLISH_DEFAULT from "./locales/en-US/default.json"
 import JAPANESE_DEFAULT from "./locales/ja-JP/default.json"
 import KOREAN_DEFAULT from "./locales/ko-KR/default.json"
 import CHINESE_DEFAULT from "./locales/zh-CN/default.json"
-import TRADITIONAL_CHINESE_DEFAULT from "./locales/zh-TW/default.json"
 import { generateDataFiles } from "./tools/generate-data"
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
@@ -96,8 +95,7 @@ export default defineNuxtConfig({
       { code: "en", name: "English" },
       { code: "ja", name: "日本語" },
       { code: "ko", name: "한국어" },
-      { code: "zh", name: "简体中文" },
-      { code: "zh-TW", name: "繁體中文" },
+      { code: "zh", name: "中文" },
     ],
     strategy: "prefix_and_default",
     defaultLocale: "en",
@@ -109,10 +107,9 @@ export default defineNuxtConfig({
       fallbackLocale: {
         // Issue: en falls back to en-US before en-TL
         en: ["en-TL", "en-US", "zh-CN"],
-        zh: ["zh-CN", "zh-TW"],
+        zh: ["zh-CN"],
         ja: ["ja-JP", "zh-CN"],
         ko: ["ko-KR", "zh-CN"],
-        "zh-TW": ["zh-TW", "zh-CN"],
         default: ["en-TL", "en-US", "zh-CN"],
       },
       messages: {
@@ -120,7 +117,6 @@ export default defineNuxtConfig({
         "ja-JP": JAPANESE_DEFAULT,
         "ko-KR": KOREAN_DEFAULT,
         "zh-CN": CHINESE_DEFAULT,
-        "zh-TW": TRADITIONAL_CHINESE_DEFAULT,
       },
     },
   },

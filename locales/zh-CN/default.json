@@ -13,12 +13,8 @@
       "inNativeLanguage": "한국어"
     },
     "zh-CN": {
-      "inCurrentLanguage": "简体中文",
-      "inNativeLanguage": "简体中文"
-    },
-    "zh-TW": {
-      "inCurrentLanguage": "繁体中文",
-      "inNativeLanguage": "繁體中文"
+      "inCurrentLanguage": "中文",
+      "inNativeLanguage": "中文"
     }
   },
   "operator": {

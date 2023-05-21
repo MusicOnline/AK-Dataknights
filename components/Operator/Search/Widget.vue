@@ -109,11 +109,11 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
 <template>
   <div class="flex flex-col" :class="{ 'gap-2 ': !overlayResults }">
     <div
-      class="bg-bg-input-normal focus-within:bg-bg-input-focus text-fg-input-normal outline-fg-input-placeholder flex items-center gap-2 p-2 outline outline-1"
+      class="flex items-center gap-2 bg-bg-input-normal p-2 text-fg-input-normal outline outline-1 outline-fg-input-placeholder focus-within:bg-bg-input-focus"
     >
       <Icon name="heroicons:magnifying-glass" />
       <input
-        class="placeholder:text-fg-input-placeholder min-w-0 flex-grow bg-transparent outline-none"
+        class="min-w-0 flex-grow bg-transparent outline-none placeholder:text-fg-input-placeholder"
         v-model.trim="nameInput"
         type="text"
         :placeholder="t('operator.ui.searchOperator')"
@@ -126,7 +126,7 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
       <OperatorSearchList
         :operators="operatorSearchResults"
         :class="{
-          'bg-bg-input-focus outline-fg-input-placeholder absolute top-0 left-0 w-full p-2 outline outline-1 drop-shadow-2xl':
+          'absolute left-0 top-0 w-full bg-bg-input-focus p-2 outline outline-1 outline-fg-input-placeholder drop-shadow-2xl':
             overlayResults,
         }"
         :large="large"
@@ -140,4 +140,3 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
 <i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
 <i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>
-<i18n locale="zh-TW" src="~/locales/zh-TW/operators-data.json"></i18n>

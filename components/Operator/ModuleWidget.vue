@@ -102,7 +102,7 @@ watch(
       <!-- Select module -->
       <div class="ml-auto">
         <button
-          class="bg-bg-container-1-normal text-fg-container-1 hover:bg-bg-container-1-focus focus:bg-bg-container-1-focus flex gap-1 p-1"
+          class="flex gap-1 bg-bg-container-1-normal p-1 text-fg-container-1 hover:bg-bg-container-1-focus focus:bg-bg-container-1-focus"
           @click="
             () => {
               $emit('update:moduleId', module.id)
@@ -187,7 +187,7 @@ watch(
             <!-- Trait upgrade stage -->
             <template v-if="stage.stage === 1">
               <div
-                class="bg-bg-primary text-fg-primary w-fit px-1 py-0.5 text-xs"
+                class="w-fit bg-bg-primary px-1 py-0.5 text-xs text-fg-primary"
               >
                 {{
                   t("operator.ui.specificBranchTrait", {
@@ -214,7 +214,7 @@ watch(
             >
               <template v-if="!upgrade.isHidden">
                 <div
-                  class="bg-bg-primary text-fg-primary w-fit px-1 py-0.5 text-xs"
+                  class="w-fit bg-bg-primary px-1 py-0.5 text-xs text-fg-primary"
                 >
                   {{
                     t(
@@ -243,7 +243,7 @@ watch(
 <style scoped lang="scss">
 thead th,
 tbody td {
-  @apply border-bg-body border-2;
+  @apply border-2 border-bg-body;
 }
 
 tbody td:not(:first-child) {
@@ -274,4 +274,3 @@ tbody tr:nth-child(odd):not(:hover) td:not(:first-child) {
 <i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
 <i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>
-<i18n locale="zh-TW" src="~/locales/zh-TW/operators-data.json"></i18n>

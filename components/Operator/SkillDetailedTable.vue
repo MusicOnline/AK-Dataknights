@@ -78,7 +78,7 @@ function getRowSpanValuesForEqualValues(values: any[]): number[] {
           {{ t("operator.skill.duration") }}
         </th>
         <th
-          class="bg-primary-alt w-16 min-w-[3rem] text-xs font-normal [overflow-wrap:anywhere]"
+          class="w-16 min-w-[3rem] bg-primary-alt text-xs font-normal [overflow-wrap:anywhere]"
           v-for="key in variableKeys"
           :key="key"
         >
@@ -171,7 +171,7 @@ function getRowSpanValuesForEqualValues(values: any[]): number[] {
 <style scoped lang="scss">
 thead th,
 tbody td {
-  @apply border-bg-body border-2;
+  @apply border-2 border-bg-body;
 }
 
 thead tr {
@@ -201,4 +201,3 @@ tbody tr:nth-child(odd) .description {
 <i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
 <i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>
-<i18n locale="zh-TW" src="~/locales/zh-TW/operators-data.json"></i18n>

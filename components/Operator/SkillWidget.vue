@@ -76,7 +76,7 @@ const numberOfMasteryLevels = computed<number>(() => skill.levels.length - 7)
         v-if="!isAdvancedViewEnabled"
       >
         <label
-          class="border-primary-main flex h-10 items-center gap-1 p-1 font-bold text-slate-50"
+          class="flex h-10 items-center gap-1 border-primary-main p-1 font-bold text-slate-50"
           :class="{
             'border-b-2 bg-slate-900': skillLevel <= 7,
             'bg-slate-600 focus-within:bg-slate-700 hover:bg-slate-700':
@@ -93,7 +93,7 @@ const numberOfMasteryLevels = computed<number>(() => skill.levels.length - 7)
           />
         </label>
         <button
-          class="border-primary-main w-12 p-0.5 drop-shadow"
+          class="w-12 border-primary-main p-0.5 drop-shadow"
           v-for="masteryNumber in [...Array(numberOfMasteryLevels + 1).keys()]"
           :class="{
             'border-b-2 bg-slate-900': skillLevel - 7 === masteryNumber,
@@ -132,4 +132,3 @@ const numberOfMasteryLevels = computed<number>(() => skill.levels.length - 7)
 <i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
 <i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>
-<i18n locale="zh-TW" src="~/locales/zh-TW/operators-data.json"></i18n>

@@ -14,7 +14,6 @@ export type UnderscoreOutputLocale =
   | "en_US"
   | "ja_JP"
   | "ko_KR"
-  | "zh_TW"
   | "en_TL"
   | "ja_TL"
   | "ko_TL"
@@ -24,7 +23,6 @@ export class LocalizationString implements Localizable {
   en_US: string | null = null
   ja_JP: string | null = null
   ko_KR: string | null = null
-  zh_TW: string | null = null
   en_TL: string | null = null
   ja_TL: string | null = null
   ko_TL: string | null = null

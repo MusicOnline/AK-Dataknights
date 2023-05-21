@@ -4,40 +4,32 @@ const { locale } = useI18n()
 
 <template>
   <div class="serif flex w-max items-center font-bold uppercase leading-none">
-    <template v-if="locale.startsWith('zh-TW') || locale.startsWith('zh-Hant')">
-      <div class="text-brand-text italic">數據</div>
+    <template v-if="locale.startsWith('zh')">
+      <div class="italic text-brand-text">数据</div>
       <Icon
-        class="text-brand-icon rotate-[12deg]"
+        class="rotate-[12deg] text-brand-icon"
         name="game-icons:tower-fall"
       />
-      <div class="text-brand-text ml-[-0.2em] italic">方舟</div>
-    </template>
-    <template v-else-if="locale.startsWith('zh')">
-      <div class="text-brand-text italic">数据</div>
-      <Icon
-        class="text-brand-icon rotate-[12deg]"
-        name="game-icons:tower-fall"
-      />
-      <div class="text-brand-text ml-[-0.2em] italic">方舟</div>
+      <div class="ml-[-0.2em] italic text-brand-text">方舟</div>
     </template>
     <template v-else-if="locale.startsWith('ja')">
-      <div class="text-brand-text italic">データ</div>
+      <div class="italic text-brand-text">データ</div>
       <Icon
-        class="text-brand-icon rotate-[15deg]"
+        class="rotate-[15deg] text-brand-icon"
         name="game-icons:tower-fall"
       />
-      <div class="text-brand-text ml-[-0.2em] italic">ナイツ</div>
+      <div class="ml-[-0.2em] italic text-brand-text">ナイツ</div>
     </template>
     <template v-else-if="locale.startsWith('ko')">
-      <div class="text-brand-text italic">자료</div>
+      <div class="italic text-brand-text">자료</div>
       <Icon
-        class="text-brand-icon rotate-[10deg]"
+        class="rotate-[10deg] text-brand-icon"
         name="game-icons:tower-fall"
       />
-      <div class="text-brand-text ml-[-0.2em] italic">방주</div>
+      <div class="ml-[-0.2em] italic text-brand-text">방주</div>
     </template>
     <template v-else>
-      <div class="text-brand-text mr-[-0.1em]">Data</div>
+      <div class="mr-[-0.1em] text-brand-text">Data</div>
       <Icon class="text-brand-icon" name="game-icons:tower-fall" />
       <div class="text-brand-text">knights</div>
     </template>

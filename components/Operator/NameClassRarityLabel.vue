@@ -80,7 +80,7 @@ function getLocalizedNameWithTL(
         <h1 class="text-2xl font-bold">
           {{ t(`${operator.key}.name`) }}
         </h1>
-        <div class="flex h-fit py-0.5 px-1 text-lg text-slate-50">
+        <div class="flex h-fit px-1 py-0.5 text-lg text-slate-50">
           <Icon
             class="-mx-0.5 rotate-12 drop-shadow"
             v-for="i in [...Array(operator.rarity).keys()]"
@@ -106,4 +106,3 @@ function getLocalizedNameWithTL(
 <i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
 <i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>
-<i18n locale="zh-TW" src="~/locales/zh-TW/operators-data.json"></i18n>

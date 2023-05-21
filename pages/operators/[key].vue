@@ -177,7 +177,7 @@ watch(
 <template>
   <div class="relative flex">
     <OperatorSidebar
-      class="mt-12 h-[calc(100vh-7rem)] w-56 md:ml-0 md:mb-0 md:h-[calc(100vh-3rem)] lg:w-72"
+      class="md:h-[calc(100vh-3rem)] mt-12 h-[calc(100vh-7rem)] w-56 md:mb-0 md:ml-0 lg:w-72"
       v-model:is-sidebar-expanded="isSidebarExpanded"
       :class="{
         '-ml-56': !isSidebarExpanded,
@@ -192,7 +192,7 @@ watch(
       Main lg:ml should be = 80rem + 2 * (18rem + 0.5rem)
     -->
     <main
-      class="flex w-full flex-col gap-8 md:ml-56 lg:ml-[clamp(0rem,calc((117rem-100vw)/2),18rem)]"
+      class="lg:ml-[clamp(0rem,calc((117rem-100vw)/2),18rem)] flex w-full flex-col gap-8 md:ml-56"
     >
       <!-- <Breadcrumbs class="text-sm" /> -->
       <!-- General information -->
@@ -205,7 +205,7 @@ watch(
       </div>
       <!-- Sticky level select -->
       <OperatorLevelSelectWidget
-        class="bg-bg-container-1-normal text-fg-container-1 sticky top-12 z-10 p-2 shadow"
+        class="sticky top-12 z-10 bg-bg-container-1-normal p-2 text-fg-container-1 shadow"
         v-model:elite="operatorState.elite"
         v-model:level="operatorState.level"
         v-model:are-bonuses-included="operatorState.areBonusesIncluded"
@@ -215,9 +215,9 @@ watch(
       <div>
         <div class="anchor-ghost" id="stats" />
         <div
-          class="outline-bg-container-1-normal flex flex-wrap justify-center gap-1 p-2 outline outline-1 sm:flex-nowrap sm:justify-start lg:gap-8"
+          class="flex flex-wrap justify-center gap-1 p-2 outline outline-1 outline-bg-container-1-normal sm:flex-nowrap sm:justify-start lg:gap-8"
         >
-          <div class="grid w-full p-2 sm:max-w-[8rem]">
+          <div class="sm:max-w-[8rem] grid w-full p-2">
             <OperatorRangeGrid
               class="m-auto"
               v-if="currentPhase.range"
@@ -243,7 +243,7 @@ watch(
           {{ t("operator.ui.talents") }}
         </h1>
         <OperatorTalentWidget
-          class="outline-bg-container-1-normal outline outline-1"
+          class="outline outline-1 outline-bg-container-1-normal"
           v-model:elite="talentState.elite"
           v-model:level="talentState.level"
           v-model:potential="talentState.potential"
@@ -263,7 +263,7 @@ watch(
           <li v-for="(skill, index) in operator.skills" :key="skill.id">
             <div class="anchor-ghost" :id="`skill-${index + 1}`" />
             <OperatorSkillWidget
-              class="outline-bg-container-1-normal p-2 outline outline-1"
+              class="p-2 outline outline-1 outline-bg-container-1-normal"
               :operator="operator"
               :skill="skill"
             />
@@ -283,7 +283,7 @@ watch(
               :id="`module-${getCombinedModuleTypeName(mod)}`"
             />
             <OperatorModuleWidget
-              class="outline-bg-container-1-normal p-2 outline outline-1"
+              class="p-2 outline outline-1 outline-bg-container-1-normal"
               v-model:module-id="operatorState.moduleId"
               v-model:module-stage="operatorState.moduleStage"
               :potential="operatorState.potential"
@@ -316,4 +316,3 @@ watch(
 <i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
 <i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>
-<i18n locale="zh-TW" src="~/locales/zh-TW/operators-data.json"></i18n>

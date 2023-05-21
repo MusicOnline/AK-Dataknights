@@ -95,18 +95,18 @@ function getComparisonColorClass(
   <div class="flex flex-col gap-2">
     <div class="flex flex-wrap items-center gap-2 font-bold">
       <div
-        class="bg-bg-container-1-focus flex"
+        class="flex bg-bg-container-1-focus"
         v-if="levelData.skillType !== 'PASSIVE' && isInitSpNotAlwaysZero"
       >
         <div
-          class="bg-bg-primary text-fg-primary flex items-center gap-0.5 p-1"
+          class="flex items-center gap-0.5 bg-bg-primary p-1 text-fg-primary"
         >
           <Icon name="heroicons:forward-solid" />
           <span>
             {{ t("operator.skill.initSp") }}
           </span>
         </div>
-        <div class="bg-bg-container-1-normal flex items-center gap-0.5 p-1">
+        <div class="flex items-center gap-0.5 bg-bg-container-1-normal p-1">
           <span>
             {{ levelData.spData.initSp }}
           </span>
@@ -119,14 +119,14 @@ function getComparisonColorClass(
       </div>
       <div class="flex" v-if="levelData.skillType !== 'PASSIVE'">
         <div
-          class="bg-bg-primary text-fg-primary flex items-center gap-0.5 p-1"
+          class="flex items-center gap-0.5 bg-bg-primary p-1 text-fg-primary"
         >
           <Icon name="heroicons:bolt-solid" />
           <span>
             {{ t("operator.skill.spCost") }}
           </span>
         </div>
-        <div class="bg-bg-container-1-normal flex items-center gap-0.5 p-1">
+        <div class="flex items-center gap-0.5 bg-bg-container-1-normal p-1">
           <span>
             {{ levelData.spData.spCost }}
           </span>
@@ -139,14 +139,14 @@ function getComparisonColorClass(
       </div>
       <div class="flex" v-if="levelData.duration > 0">
         <div
-          class="bg-bg-primary text-fg-primary flex items-center gap-0.5 p-1"
+          class="flex items-center gap-0.5 bg-bg-primary p-1 text-fg-primary"
         >
           <Icon name="heroicons:clock-solid" />
           <span>
             {{ t("operator.skill.duration") }}
           </span>
         </div>
-        <div class="bg-bg-container-1-normal flex items-center gap-0.5 p-1">
+        <div class="flex items-center gap-0.5 bg-bg-container-1-normal p-1">
           <span>
             {{
               levelData.duration.toLocaleString(locale, {
@@ -177,12 +177,12 @@ function getComparisonColorClass(
     />
     <div class="flex flex-wrap items-start gap-2 text-xs">
       <div
-        class="text-fg-container-1 flex"
+        class="flex text-fg-container-1"
         v-for="keyName in variableKeys"
         :key="keyName"
       >
         <div class="bg-bg-container-1-focus p-1">{{ keyName }}</div>
-        <div class="bg-bg-container-1-normal flex items-center gap-0.5 p-1">
+        <div class="flex items-center gap-0.5 bg-bg-container-1-normal p-1">
           <span>
             {{ levelData.variables.find(({ key }) => key === keyName)?.value }}
           </span>
@@ -205,4 +205,3 @@ function getComparisonColorClass(
 <i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
 <i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>
-<i18n locale="zh-TW" src="~/locales/zh-TW/operators-data.json"></i18n>

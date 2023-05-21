@@ -262,9 +262,8 @@ export class Module implements Localizable {
   }
 
   public addLocale(locale: constants.GameLocale): void {
-    // zh-TW does not have modules yet (stale data)
     const uniEquipData = <UniEquipTableEquipDictData | undefined>(
-      globalThis.GAME_TABLES!.UniEquip[locale]?.equipDict[this.id]
+      globalThis.GAME_TABLES!.UniEquip[locale].equipDict[this.id]
     )
     if (!uniEquipData) return
 
