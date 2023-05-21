@@ -1,15 +1,4 @@
-import { RangeTable } from "../raw/tables"
-
-export type RangeTableData = {
-  id: string
-  direction: number
-  grids: Grid[]
-}
-
-export type Grid = {
-  row: number
-  col: number
-}
+import { Grid, RangeTable } from "../raw/range"
 
 export type GeneratedRangeData = {
   id: keyof RangeTable

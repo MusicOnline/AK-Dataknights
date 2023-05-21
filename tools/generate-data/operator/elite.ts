@@ -32,8 +32,7 @@ export class ElitePhase {
     this.maxLevel = phase.maxLevel
 
     const skinTable = globalThis.GAME_TABLES!.Outfit[constants.ORIGINAL_LOCALE]
-    const skinId: string | undefined =
-      skinTable.buildinEvolveMap[id][<0 | 1 | 2>elite]
+    const skinId = skinTable.buildinEvolveMap[id][<0 | 1 | 2>elite]
     this.outfit = skinId ? new Outfit(skinTable.charSkins[skinId]) : null
 
     this.attributeKeyFrames = phase.attributesKeyFrames

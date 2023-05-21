@@ -29,7 +29,7 @@ export const SpTypeEnum = z.nativeEnum(SpType)
 export type SpTypeEnum = z.infer<typeof SpTypeEnum>
 
 export const SpDataSchema = z.object({
-  spType: makeEnumStringSchema(SpTypeEnum),
+  spType: makeEnumStringSchema(SpTypeEnum), // CN 2.0 vs EJK
   levelUpCost: z.null(),
   maxChargeTime: z.number(),
   spCost: z.number(),
@@ -42,8 +42,8 @@ export const SkillLevelSchema = z.object({
   name: z.string(),
   rangeId: z.string().nullable(),
   description: z.string().nullable(),
-  skillType: makeEnumStringSchema(SkillTypeEnum),
-  durationType: makeEnumStringSchema(DurationTypeEnum),
+  skillType: makeEnumStringSchema(SkillTypeEnum), // CN 2.0 vs EJK
+  durationType: makeEnumStringSchema(DurationTypeEnum), // CN 2.0 vs EJK
   spData: SpDataSchema,
   prefabId: z.string().nullable(),
   duration: z.number(),
