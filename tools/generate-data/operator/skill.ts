@@ -1,6 +1,7 @@
 import * as z from "zod"
 
 import * as constants from "../constants"
+import { Blackboard } from "../raw/common"
 import { DurationType, SkillType, SpTypeEnum } from "../raw/skill"
 import {
   Localizable,
@@ -9,7 +10,7 @@ import {
   toPhaseNumber,
 } from "../utils"
 import { GeneratedRangeData, Range } from "./range"
-import { Blackboard, CharacterTableData, Skill as RawSkill } from "./raw"
+import { CharacterTableData, Skill as RawSkill } from "./raw"
 
 export const SpDataSchema = z.object({
   spType: makeEnumStringSchema(SpTypeEnum),

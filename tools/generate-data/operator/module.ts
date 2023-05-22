@@ -5,73 +5,9 @@ import {
   Phase,
   Target,
 } from "../raw/battle-equip"
+import { Blackboard } from "../raw/common"
+import { EquipDict, EquipDictType } from "../raw/uni-equip"
 import { Localizable, LocalizationString, toPhaseNumber } from "../utils"
-import { Blackboard, UnlockCond } from "./raw"
-
-export type OverrideTraitDataBundleCandidate = {
-  additionalDescription: null | string
-  unlockCondition: UnlockCond
-  requiredPotentialRank: number
-  blackboard: Blackboard[]
-  overrideDescripton: null | string
-  prefabKey: null | string
-  rangeId: string | null
-}
-
-export type UniEquipTableEquipDictData = {
-  uniEquipId: string
-  uniEquipName: string
-  uniEquipIcon: string
-  uniEquipDesc: string
-  typeIcon: string
-  typeName1: string
-  typeName2: string | null
-  equipShiningColor: string
-  showEvolvePhase: number
-  unlockEvolvePhase: number
-  charId: string
-  tmplId: null
-  showLevel: number
-  unlockLevel: number
-  unlockFavorPoint: number
-  missionList: string[]
-  itemCost: { [key: string]: ItemCost[] } | null
-  type: "INITIAL" | "ADVANCED"
-  uniEquipGetTime: number
-  charEquipOrder: number
-}
-
-export type ItemCost = {
-  id: string
-  count: number
-  type: "GOLD" | "MATERIAL"
-}
-
-export type UniEquipTableEquipTrackDictData = {
-  timeStamp: number
-  trackList: TrackList[]
-}
-
-export type TrackList = {
-  charId: string
-  equipId: string
-}
-
-export type UniEquipTableMissionListData = {
-  template: string
-  desc: string
-  paramList: string[]
-  uniEquipMissionId: string
-  uniEquipMissionSort: number
-  uniEquipId: string
-  jumpStageId: null | string
-}
-
-export type UniEquipTableSubProfDictData = {
-  subProfessionId: string
-  subProfessionName: string
-  subProfessionCatagory: number
-}
 
 export type GeneratedModuleData = {
   id: string
@@ -85,7 +21,7 @@ export type GeneratedModuleData = {
     level: number
     trust: number
   }
-  type: "INITIAL" | "ADVANCED"
+  type: EquipDictType
   sortOrder: number
   stages: GeneratedModuleStageData[] | null
 }
@@ -191,7 +127,7 @@ export class Module implements Localizable {
   }
 
   public addLocale(locale: constants.GameLocale): void {
-    const uniEquipData = <UniEquipTableEquipDictData | undefined>(
+    const uniEquipData = <EquipDict | undefined>(
       globalThis.GAME_TABLES!.UniEquip[locale].equipDict[this.id]
     )
     if (!uniEquipData) return

@@ -1,6 +1,7 @@
 import * as constants from "../constants"
+import { Blackboard } from "../raw/common"
 import { Localizable, LocalizationString, toPhaseNumber } from "../utils"
-import { Blackboard, CharacterTableData } from "./raw"
+import { CharacterTableData } from "./raw"
 
 export type GeneratedTraitCandidateData = {
   unlockConditions: { elite: number; level: number }

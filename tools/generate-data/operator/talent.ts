@@ -1,10 +1,9 @@
 import * as constants from "../constants"
+import { Blackboard } from "../raw/common"
 import { Localizable, LocalizationString, toPhaseNumber } from "../utils"
 import { GeneratedRangeData, Range } from "./range"
 import {
-  Blackboard,
   CharacterTableData,
-  PhaseEnum,
   Talent as RawTalent,
   TalentCandidate as RawTalentCandidate,
 } from "./raw"
