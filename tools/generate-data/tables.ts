@@ -5,10 +5,11 @@ import path from "path"
 import * as z from "zod"
 
 import { GAME_LOCALES, GameLocale, ORIGINAL_LOCALE } from "./constants"
+import { BattleEquipTable, BattleEquipTableSchema } from "./raw/battle-equip"
 import { RangeTable, RangeTableSchema } from "./raw/range"
 import { SkillTable, SkillTableSchema } from "./raw/skill"
 import { SkinTable, SkinTableSchema } from "./raw/skin"
-import { BattleEquipTable, CharacterTable, UniEquipTable } from "./raw/tables"
+import { CharacterTable, UniEquipTable } from "./raw/tables"
 
 export const OPERATOR_TABLE_PATH = "gamedata/excel/character_table.json"
 export const MODULE_TABLE_PATH = "gamedata/excel/uniequip_table.json"
@@ -101,7 +102,10 @@ export function requireAllGameTablesSync(): GameTableMap {
     ),
     Skill: requireAllLocaleTablesSync(SKILL_TABLE_PATH, SkillTableSchema),
     UniEquip: requireAllLocaleTablesSync(UNI_EQUIP_TABLE_PATH),
-    BattleEquip: requireAllLocaleTablesSync(BATTLE_EQUIP_TABLE_PATH),
+    BattleEquip: requireAllLocaleTablesSync(
+      BATTLE_EQUIP_TABLE_PATH,
+      BattleEquipTableSchema
+    ),
   }
 }
 
@@ -124,7 +128,8 @@ export async function requireAllGameTablesAsync(): Promise<GameTableMap> {
     ),
     UniEquip: requireAllLocaleTablesAsync<UniEquipTable>(UNI_EQUIP_TABLE_PATH),
     BattleEquip: requireAllLocaleTablesAsync<BattleEquipTable>(
-      BATTLE_EQUIP_TABLE_PATH
+      BATTLE_EQUIP_TABLE_PATH,
+      BattleEquipTableSchema
     ),
   }
   await Promise.all(Object.values(map))

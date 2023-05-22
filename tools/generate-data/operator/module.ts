@@ -1,68 +1,12 @@
 import * as constants from "../constants"
+import {
+  AddOrOverrideTalentDataBundleCandidate,
+  BattleEquip,
+  Phase,
+  Target,
+} from "../raw/battle-equip"
 import { Localizable, LocalizationString, toPhaseNumber } from "../utils"
 import { Blackboard, UnlockCond } from "./raw"
-
-export type BattleEquipTableData = {
-  id: string
-  phases: BattleEquipTableDataPhase[]
-}
-
-export type BattleEquipTableDataPhase = {
-  equipLevel: number
-  parts: Part[]
-  attributeBlackboard: Blackboard[]
-  tokenAttributeBlackboard: { [key: string]: Blackboard[] }
-}
-
-/**
- * Mizuki Module X:
- * Stage 1:
- * - DISPLAY (Update Trait description)
- * - TALENT (New Trait effect: Enemy MSPD-)
- * Stage 2, 3:
- * - DISPLAY (Update Trait description)
- * - TALENT_DATA_ONLY (Talent 1 multipliers+)
- * - TALENT (New Trait effect: Enemy MSPD-)
- *
- * Mizuki Module Y:
- * Stage 1:
- * - TRAIT_DATA_ONLY (Trait multipliers+)
- * Stage 2, 3:
- * - TRAIT_DATA_ONLY (Trait multipliers+)
- * - TALENT_DATA_ONLY (Talent 2 multipliers+)
- * - TALENT (New Talent 2 effect: Recover HP)
- */
-export type Part = {
-  resKey: null | string
-  target: Target
-  isToken: boolean
-  addOrOverrideTalentDataBundle: AddOrOverrideTalentDataBundle
-  overrideTraitDataBundle: OverrideTraitDataBundle
-}
-
-export type AddOrOverrideTalentDataBundle = {
-  // For different potential levels
-  candidates: AddOrOverrideTalentDataBundleCandidate[] | null
-}
-
-export type AddOrOverrideTalentDataBundleCandidate = {
-  displayRangeId: boolean
-  upgradeDescription: string
-  talentIndex: number
-  unlockCondition: UnlockCond
-  requiredPotentialRank: number
-  prefabKey: string
-  name: null | string
-  description: null
-  rangeId: string | null
-  blackboard: Blackboard[]
-}
-
-export type OverrideTraitDataBundle = {
-  // For different potential levels
-  // No examples of length > 1 as of now (unaffected by potential)
-  candidates: OverrideTraitDataBundleCandidate[] | null
-}
 
 export type OverrideTraitDataBundleCandidate = {
   additionalDescription: null | string
@@ -72,22 +16,6 @@ export type OverrideTraitDataBundleCandidate = {
   overrideDescripton: null | string
   prefabKey: null | string
   rangeId: string | null
-}
-
-export enum Target {
-  // If a new function is added to trait (e.g., new Shelter effect),
-  // this *MAY* be used to show the Trait description change
-  // and a new "TALENT" with no description is added.
-  Display = "DISPLAY",
-  // Used to add a new talent
-  Talent = "TALENT",
-  // Used to update existing talent attributes, no new attributes
-  TalentDataOnly = "TALENT_DATA_ONLY",
-  // If the Operator previously had a trait that was just flavor text (e.g. High-precision shot)
-  // this is used to add a trait with actual attributes.
-  Trait = "TRAIT",
-  // Used to update existing trait attributes, no new attributes
-  TraitDataOnly = "TRAIT_DATA_ONLY",
 }
 
 export type UniEquipTableEquipDictData = {
@@ -213,7 +141,8 @@ export class Module implements Localizable {
       globalThis.GAME_TABLES!.UniEquip[constants.ORIGINAL_LOCALE].equipDict[
         moduleId
       ]
-    const battleEquipData = <BattleEquipTableData | undefined>(
+    // Default modules do not have BattleEquip data
+    const battleEquipData = <BattleEquip | undefined>(
       globalThis.GAME_TABLES!.BattleEquip[constants.ORIGINAL_LOCALE][moduleId]
     )
 
@@ -270,7 +199,7 @@ export class Module implements Localizable {
     this.name.addLocale(locale, uniEquipData.uniEquipName)
     this.description.addLocale(locale, uniEquipData.uniEquipDesc)
 
-    const battleEquipData = <BattleEquipTableData | undefined>(
+    const battleEquipData = <BattleEquip | undefined>(
       globalThis.GAME_TABLES!.BattleEquip[locale]?.[this.id]
     )
     if (!battleEquipData) return
@@ -305,7 +234,7 @@ export class ModuleStage implements Localizable {
   traitUpgrade: TraitUpgrade
   talentUpgrades: TalentUpgrade[]
 
-  public constructor(moduleId: string, data: BattleEquipTableDataPhase) {
+  public constructor(moduleId: string, data: Phase) {
     this.moduleId = moduleId
     this.stage = data.equipLevel
     this.attributes = data.attributeBlackboard
@@ -318,9 +247,9 @@ export class ModuleStage implements Localizable {
 
     data.parts.forEach((part, index) => {
       switch (part.target) {
-        case Target.Display:
-        case Target.Trait:
-        case Target.TraitDataOnly:
+        case Target.enum.DISPLAY:
+        case Target.enum.TRAIT:
+        case Target.enum.TRAIT_DATA_ONLY:
           const traitCandidate = part.overrideTraitDataBundle.candidates?.[0]
           if (
             traitCandidate?.overrideDescripton ||
@@ -332,8 +261,8 @@ export class ModuleStage implements Localizable {
           if (traitCandidate?.blackboard)
             traitUpgradeAttributes.variables = traitCandidate.blackboard
           break
-        case Target.Talent:
-        case Target.TalentDataOnly:
+        case Target.enum.TALENT:
+        case Target.enum.TALENT_DATA_ONLY:
           const talentCandidates = part.addOrOverrideTalentDataBundle.candidates
           if (talentCandidates)
             this.talentUpgrades.push(
@@ -359,16 +288,13 @@ export class ModuleStage implements Localizable {
     }
   }
 
-  public addLocale(
-    locale: constants.GameLocale,
-    data: BattleEquipTableData
-  ): void {
+  public addLocale(locale: constants.GameLocale, data: BattleEquip): void {
     let traitDescription: string
     data.phases[this.stage - 1].parts.forEach((part, index) => {
       switch (part.target) {
-        case Target.Display:
-        case Target.Trait:
-        case Target.TraitDataOnly:
+        case Target.enum.DISPLAY:
+        case Target.enum.TRAIT:
+        case Target.enum.TRAIT_DATA_ONLY:
           const traitCandidate = part.overrideTraitDataBundle.candidates?.[0]
           if (
             traitCandidate?.overrideDescripton ||
@@ -377,8 +303,8 @@ export class ModuleStage implements Localizable {
             traitDescription = (traitCandidate?.overrideDescripton ||
               traitCandidate?.additionalDescription)!
           break
-        case Target.Talent:
-        case Target.TalentDataOnly:
+        case Target.enum.TALENT:
+        case Target.enum.TALENT_DATA_ONLY:
           const talentCandidates = part.addOrOverrideTalentDataBundle.candidates
           if (talentCandidates) {
             const sameUpgrade = this.talentUpgrades.find(

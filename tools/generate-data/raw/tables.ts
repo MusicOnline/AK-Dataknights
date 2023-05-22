@@ -1,5 +1,4 @@
 import {
-  BattleEquipTableData,
   UniEquipTableEquipDictData,
   UniEquipTableEquipTrackDictData,
   UniEquipTableMissionListData,
@@ -8,8 +7,6 @@ import {
 import { CharacterTableData } from "../operator/raw"
 
 export type CharacterTable = { [id: string]: CharacterTableData }
-
-export type BattleEquipTable = { [id: string]: BattleEquipTableData }
 
 export type UniEquipTable = {
   equipDict: { [key: string]: UniEquipTableEquipDictData }
