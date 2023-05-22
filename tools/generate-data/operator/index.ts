@@ -2,6 +2,15 @@ import OPERATOR_KEY_OVERRIDE from "../../../data/custom/operator-key-override.js
 import { isKeyOfObject } from "../../../utils"
 import * as constants from "../constants"
 import {
+  Character,
+  KeyFrame,
+  Position,
+  ProfessionEnum,
+  SubProfessionEnum,
+  Tag,
+  TagEnum,
+} from "../raw/character"
+import {
   Localizable,
   LocalizationString,
   normalizeForLocaleFile,
@@ -13,7 +22,6 @@ import {
 } from "./elite"
 import { GeneratedModuleData, Module } from "./module"
 import { GeneratedPotentialData, Potential } from "./potential"
-import * as raw from "./raw"
 import { GeneratedSkillData, Skill } from "./skill"
 import { GeneratedTalentData, Talent } from "./talent"
 import { GeneratedTraitCandidateData, TraitCandidate } from "./trait"
@@ -23,10 +31,10 @@ export type GeneratedOperatorData = {
   id: string
   displayNumber: string | null
   rarity: number
-  class: (typeof raw.OPERATOR_CLASS_NAMES)[keyof typeof raw.OPERATOR_CLASS_NAMES]
-  classBranch: raw.SubProfessionId
-  position: raw.Position
-  tagList: string[]
+  class: ProfessionEnum
+  classBranch: SubProfessionEnum
+  position: Position
+  tagList: Tag[]
   nationId: string | null
   groupId: string | null
   teamId: string | null
@@ -35,7 +43,7 @@ export type GeneratedOperatorData = {
   tokenSummon: null
   isNotObtainable: boolean
   phases: GeneratedElitePhaseData[]
-  trustKeyFrames: raw.KeyFrame[] | null
+  trustKeyFrames: KeyFrame[] | null
   potentials: GeneratedPotentialData[]
   talents: GeneratedTalentData[] | null
   skills: GeneratedSkillData[]
@@ -48,10 +56,10 @@ export type GeneratedOperatorIndexData = {
   id: string
   displayNumber: string | null
   rarity: number
-  class: (typeof raw.OPERATOR_CLASS_NAMES)[keyof typeof raw.OPERATOR_CLASS_NAMES]
-  classBranch: raw.SubProfessionId
-  position: raw.Position
-  tagList: string[]
+  class: ProfessionEnum
+  classBranch: SubProfessionEnum
+  position: Position
+  tagList: Tag[]
   nationId: string | null
   groupId: string | null
   teamId: string | null
@@ -74,22 +82,22 @@ export class Operator implements Localizable {
   appellation: LocalizationString
   description: LocalizationString | null
   canUseGeneralPotentialItem: boolean
-  potentialItemId: string
+  potentialItemId: string | null
   nationId: string | null
   groupId: string | null
   teamId: string | null
   displayNumber: string | null
   tokenKey: string | null // Token summon character id
-  position: raw.Position
-  tagList: raw.Tag[] | null
+  position: Position
+  tagList: Tag[]
   isNotObtainable: boolean // true if Integrated Strategies operators
   rarity: number // Number of stars in-game
-  class: (typeof raw.OPERATOR_CLASS_NAMES)[keyof typeof raw.OPERATOR_CLASS_NAMES]
-  classBranch: raw.SubProfessionId
+  class: ProfessionEnum
+  classBranch: SubProfessionEnum
 
   // Additional attributes
   phases: ElitePhase[]
-  trustKeyFrames: raw.KeyFrame[] | null
+  trustKeyFrames: KeyFrame[] | null
   potentials: Potential[]
   talents: Talent[] | null
   skills: Skill[]
@@ -97,20 +105,27 @@ export class Operator implements Localizable {
   modules: Module[] | null
 
   // Accepts zh-CN data only
-  public constructor(id: string, data: raw.CharacterTableData) {
+  public constructor(id: string, data: Character) {
     this.id = id
     this.displayNumber = data.displayNumber
     this.name = new LocalizationString(data.name)
     this.appellation = new LocalizationString(data.appellation)
     const description = LocalizationString.fromDataOrNull(data.description)
     this.description = description
-    this.rarity = raw.Rarity[data.rarity]
-    this.class = raw.OPERATOR_CLASS_NAMES[data.profession]
-    this.classBranch = data.subProfessionId
+    this.rarity = data.rarity
+    this.class = data.profession
+    const safeParseSubProfession = SubProfessionEnum.safeParse(
+      data.subProfessionId
+    )
+    if (safeParseSubProfession.success) {
+      this.classBranch = safeParseSubProfession.data
+    } else {
+      console.warn(`New sub-profession found: ${data.subProfessionId}`)
+      // @ts-ignore Only warning needed for localization
+      this.classBranch = data.subProfessionId
+    }
     this.position = data.position
-    this.tagList = data.tagList
-      ? Operator.normalizeTagList(<(keyof typeof raw.Tag)[]>data.tagList)
-      : null
+    this.tagList = data.tagList ? Operator.normalizeTagList(data.tagList) : []
     this.nationId = data.nationId
     this.groupId = data.groupId
     this.teamId = data.teamId
@@ -139,7 +154,7 @@ export class Operator implements Localizable {
       class: this.class,
       classBranch: this.classBranch,
       position: this.position,
-      tagList: <string[]>this.tagList,
+      tagList: this.tagList,
       nationId: this.nationId,
       groupId: this.groupId,
       teamId: this.teamId,
@@ -168,7 +183,7 @@ export class Operator implements Localizable {
       class: this.class,
       classBranch: this.classBranch,
       position: this.position,
-      tagList: <string[]>this.tagList,
+      tagList: this.tagList,
       nationId: this.nationId,
       groupId: this.groupId,
       teamId: this.teamId,
@@ -271,13 +286,13 @@ export class Operator implements Localizable {
     )
   }
 
-  private static normalizeTagList(
-    tagList: (keyof typeof raw.Tag)[]
-  ): raw.Tag[] {
+  private static normalizeTagList(tagList: string[]): Tag[] {
+    // @ts-ignore Only warning needed for localization
     return tagList.map((chineseTag) => {
-      const tag: raw.Tag | undefined = raw.Tag[chineseTag]
-      if (!tag) throw new Error(`No english tag implemented for ${chineseTag}`)
-      return tag
+      if (Tag.hasOwnProperty(chineseTag))
+        return Tag[<keyof typeof Tag>chineseTag]
+      console.warn(`New tag detected: ${chineseTag}`)
+      return chineseTag
     })
   }
 

@@ -1,7 +1,7 @@
 import * as constants from "../constants"
+import { Character } from "../raw/character"
 import { Blackboard } from "../raw/common"
-import { Localizable, LocalizationString, toPhaseNumber } from "../utils"
-import { CharacterTableData } from "./raw"
+import { Localizable, LocalizationString } from "../utils"
 
 export type GeneratedTraitCandidateData = {
   unlockConditions: { elite: number; level: number }
@@ -29,7 +29,7 @@ export class TraitCandidate implements Localizable {
     this.variables = variables
   }
 
-  public static getAllFromData(data: CharacterTableData): TraitCandidate[] {
+  public static getAllFromData(data: Character): TraitCandidate[] {
     if (data.description === null) return []
     if (data.trait === null)
       return [new TraitCandidate(data.description, { elite: 0, level: 1 })]
@@ -55,7 +55,7 @@ export class TraitCandidate implements Localizable {
               candidates.slice(-1)[0]?.description.zh_CN ||
               data.description!,
             {
-              elite: toPhaseNumber(candidate.unlockCondition.phase),
+              elite: candidate.unlockCondition.phase,
               level: candidate.unlockCondition.level,
             },
             candidate.blackboard
@@ -79,7 +79,7 @@ export class TraitCandidate implements Localizable {
     }
   }
 
-  public addLocale(locale: constants.GameLocale, data: CharacterTableData) {
+  public addLocale(locale: constants.GameLocale, data: Character) {
     if (!data.trait) {
       this.description.addLocale(locale, data.description)
       return

@@ -1,19 +1,14 @@
 import * as z from "zod"
 
 import * as constants from "../constants"
+import { Character, Skill as RawSkill } from "../raw/character"
 import { Blackboard } from "../raw/common"
 import { DurationType, SkillType, SpTypeEnum } from "../raw/skill"
-import {
-  Localizable,
-  LocalizationString,
-  makeEnumStringSchema,
-  toPhaseNumber,
-} from "../utils"
+import { CoerceEnumKeyOf, Localizable, LocalizationString } from "../utils"
 import { GeneratedRangeData, Range } from "./range"
-import { CharacterTableData, Skill as RawSkill } from "./raw"
 
 export const SpDataSchema = z.object({
-  spType: makeEnumStringSchema(SpTypeEnum),
+  spType: CoerceEnumKeyOf(SpTypeEnum),
   // levelUpCost: z.null(),
   // maxChargeTime: z.number(),
   spCost: z.number(),
@@ -130,7 +125,7 @@ export class Skill implements Localizable {
     this.id = data.skillId
     this.iconId = moreData.iconId
     this.unlockConditions = {
-      elite: toPhaseNumber(data.unlockCond.phase),
+      elite: data.unlockCond.phase,
       level: data.unlockCond.level,
     }
     this.levels = moreData.levels.map(
@@ -138,7 +133,7 @@ export class Skill implements Localizable {
     )
   }
 
-  public static getAllFromData(data: CharacterTableData): Skill[] {
+  public static getAllFromData(data: Character): Skill[] {
     return data.skills.flatMap((skillData) => {
       if (!skillData.skillId) return []
       return new Skill(skillData)

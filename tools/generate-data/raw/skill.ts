@@ -1,6 +1,6 @@
 import * as z from "zod"
 
-import { makeEnumStringSchema } from "../utils"
+import { CoerceEnumKeyOf } from "../utils"
 import { BlackboardSchema } from "./common"
 
 export enum DurationType {
@@ -29,7 +29,7 @@ export const SpTypeEnum = z.nativeEnum(SpType)
 export type SpTypeEnum = z.infer<typeof SpTypeEnum>
 
 export const SpDataSchema = z.object({
-  spType: makeEnumStringSchema(SpTypeEnum), // CN 2.0 vs EJK
+  spType: CoerceEnumKeyOf(SpTypeEnum), // CN 2.0 vs EJK
   levelUpCost: z.null(),
   maxChargeTime: z.number(),
   spCost: z.number(),
@@ -42,8 +42,8 @@ export const SkillLevelSchema = z.object({
   name: z.string(),
   rangeId: z.string().nullable(),
   description: z.string().nullable(),
-  skillType: makeEnumStringSchema(SkillTypeEnum), // CN 2.0 vs EJK
-  durationType: makeEnumStringSchema(DurationTypeEnum), // CN 2.0 vs EJK
+  skillType: CoerceEnumKeyOf(SkillTypeEnum), // CN 2.0 vs EJK
+  durationType: CoerceEnumKeyOf(DurationTypeEnum), // CN 2.0 vs EJK
   spData: SpDataSchema,
   prefabId: z.string().nullable(),
   duration: z.number(),

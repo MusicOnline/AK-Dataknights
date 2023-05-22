@@ -6,10 +6,10 @@ import * as z from "zod"
 
 import { GAME_LOCALES, GameLocale, ORIGINAL_LOCALE } from "./constants"
 import { BattleEquipTable, BattleEquipTableSchema } from "./raw/battle-equip"
+import { CharacterTable, CharacterTableSchema } from "./raw/character"
 import { RangeTable, RangeTableSchema } from "./raw/range"
 import { SkillTable, SkillTableSchema } from "./raw/skill"
 import { SkinTable, SkinTableSchema } from "./raw/skin"
-import { CharacterTable } from "./raw/tables"
 import { UniEquipTable, UniEquipTableSchema } from "./raw/uni-equip"
 
 export const OPERATOR_TABLE_PATH = "gamedata/excel/character_table.json"
@@ -95,14 +95,20 @@ async function requireAllLocaleTablesAsync<T>(
 
 export function requireAllGameTablesSync(): GameTableMap {
   return {
-    Operator: requireAllLocaleTablesSync(OPERATOR_TABLE_PATH),
+    Operator: requireAllLocaleTablesSync(
+      OPERATOR_TABLE_PATH,
+      CharacterTableSchema
+    ),
     Outfit: requireAllLocaleTablesSync(OUTFIT_TABLE_PATH, SkinTableSchema),
     Range: requireByReadFileSync(
       getFilePath(ORIGINAL_LOCALE, RANGE_TABLE_PATH),
       RangeTableSchema
     ),
     Skill: requireAllLocaleTablesSync(SKILL_TABLE_PATH, SkillTableSchema),
-    UniEquip: requireAllLocaleTablesSync(UNI_EQUIP_TABLE_PATH, UniEquipTableSchema),
+    UniEquip: requireAllLocaleTablesSync(
+      UNI_EQUIP_TABLE_PATH,
+      UniEquipTableSchema
+    ),
     BattleEquip: requireAllLocaleTablesSync(
       BATTLE_EQUIP_TABLE_PATH,
       BattleEquipTableSchema
@@ -112,7 +118,10 @@ export function requireAllGameTablesSync(): GameTableMap {
 
 export async function requireAllGameTablesAsync(): Promise<GameTableMap> {
   const map = {
-    Operator: requireAllLocaleTablesAsync<CharacterTable>(OPERATOR_TABLE_PATH),
+    Operator: requireAllLocaleTablesAsync<CharacterTable>(
+      OPERATOR_TABLE_PATH,
+      CharacterTableSchema
+    ),
     Outfit: requireAllLocaleTablesAsync<SkinTable>(
       OUTFIT_TABLE_PATH,
       SkinTableSchema
@@ -127,7 +136,10 @@ export async function requireAllGameTablesAsync(): Promise<GameTableMap> {
       SKILL_TABLE_PATH,
       SkillTableSchema
     ),
-    UniEquip: requireAllLocaleTablesAsync<UniEquipTable>(UNI_EQUIP_TABLE_PATH, UniEquipTableSchema),
+    UniEquip: requireAllLocaleTablesAsync<UniEquipTable>(
+      UNI_EQUIP_TABLE_PATH,
+      UniEquipTableSchema
+    ),
     BattleEquip: requireAllLocaleTablesAsync<BattleEquipTable>(
       BATTLE_EQUIP_TABLE_PATH,
       BattleEquipTableSchema

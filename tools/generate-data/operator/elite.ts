@@ -4,8 +4,8 @@ import {
   GeneratedOutfitIndexData,
   Outfit,
 } from "../outfit"
+import { Character, KeyFrame } from "../raw/character"
 import { GeneratedRangeData, Range } from "./range"
-import { CharacterTableData, KeyFrame } from "./raw"
 
 export type GeneratedElitePhaseData = {
   elite: number
@@ -26,7 +26,7 @@ export class ElitePhase {
   attributeKeyFrames: KeyFrame[]
   range: Range | null
 
-  public constructor(id: string, elite: number, data: CharacterTableData) {
+  public constructor(id: string, elite: number, data: Character) {
     const phase = data.phases[elite]
     this.elite = elite
     this.maxLevel = phase.maxLevel
@@ -39,10 +39,7 @@ export class ElitePhase {
     this.range = phase.rangeId ? new Range(phase.rangeId) : null
   }
 
-  public static getAllFromData(
-    id: string,
-    data: CharacterTableData
-  ): ElitePhase[] {
+  public static getAllFromData(id: string, data: Character): ElitePhase[] {
     return data.phases.map((phase, index) => new ElitePhase(id, index, data))
   }
 

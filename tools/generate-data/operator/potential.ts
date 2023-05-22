@@ -1,6 +1,6 @@
 import * as constants from "../constants"
+import { AttributeType, Character, PotentialRank } from "../raw/character"
 import { Localizable, LocalizationString } from "../utils"
-import { AttributeType, CharacterTableData, PotentialRank } from "./raw"
 
 const POTENTIAL_NUMBER_OFFSET_FROM_ZERO_INDEX = 2
 
@@ -36,7 +36,7 @@ export class Potential implements Localizable {
     }
   }
 
-  public static getAllFromData(data: CharacterTableData): Potential[] {
+  public static getAllFromData(data: Character): Potential[] {
     // Potential 1: Base Operator
     // Potential 2: First PotentialRank
     return data.potentialRanks.map(
@@ -52,7 +52,7 @@ export class Potential implements Localizable {
     return { potentialNumber: this.potentialNumber, attribute: this.attribute }
   }
 
-  public addLocale(locale: constants.GameLocale, data: CharacterTableData) {
+  public addLocale(locale: constants.GameLocale, data: Character) {
     this.description.addLocale(
       locale,
       data.potentialRanks[

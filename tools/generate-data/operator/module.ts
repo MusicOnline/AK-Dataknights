@@ -7,7 +7,7 @@ import {
 } from "../raw/battle-equip"
 import { Blackboard } from "../raw/common"
 import { EquipDict, EquipDictType } from "../raw/uni-equip"
-import { Localizable, LocalizationString, toPhaseNumber } from "../utils"
+import { Localizable, LocalizationString } from "../utils"
 
 export type GeneratedModuleData = {
   id: string
@@ -378,7 +378,7 @@ export class TalentUpgradeCandidate implements Localizable {
       data.upgradeDescription
     )
     this.unlockCondition = {
-      elite: toPhaseNumber(data.unlockCondition.phase),
+      elite: data.unlockCondition.phase,
       level: data.unlockCondition.level,
       potential: data.requiredPotentialRank + 1,
     }

@@ -1,7 +1,6 @@
 import * as z from "zod"
 
 import * as constants from "./constants"
-import { PhaseEnum } from "./operator/raw"
 
 export interface Localizable {
   addLocale(locale: constants.GameLocale, ...data: any): void
@@ -93,13 +92,12 @@ export function normalizeForLocaleFile(original: string | null): string | null {
   )
 }
 
-export function toPhaseNumber(
-  phase: keyof typeof PhaseEnum | PhaseEnum
-): PhaseEnum {
-  return typeof phase === "number" ? phase : PhaseEnum[phase]
-}
-
-export function makeEnumStringSchema<T extends z.EnumLike>(
+/**
+ * Note: Cannot coerce string enum values to enum keys
+ * @param zNativeEnum A Zod native enum schema
+ * @returns A Zod schema that validates/transforms to the enum key
+ */
+export function CoerceEnumKeyOf<T extends z.EnumLike>(
   zNativeEnum: z.ZodNativeEnum<T>
 ): z.ZodUnion<
   [
@@ -108,8 +106,36 @@ export function makeEnumStringSchema<T extends z.EnumLike>(
   ]
 > {
   return z.union([
-    z.string().refine((val) => Object.values(zNativeEnum.enum).includes(val)),
+    // Validate string is enum key
+    z.string().refine((val) => Object.keys(zNativeEnum.enum).includes(val)),
+    // Transform enum value to enum key
     zNativeEnum.transform((val) => zNativeEnum.enum[val]),
+  ])
+}
+
+/**
+ * @param zNativeEnum A Zod native enum schema
+ * @returns A Zod schema that validates/transforms to the enum key
+ */
+export function CoerceEnumValueOf<T extends z.EnumLike>(
+  zNativeEnum: z.ZodNativeEnum<T>
+): z.ZodUnion<
+  [z.ZodNativeEnum<T>, z.ZodEffects<z.ZodString, T[keyof T], string>]
+> {
+  return z.union([
+    // Validate enum value
+    zNativeEnum,
+    // Transform enum key to enum value
+    z.string().transform((val, ctx) => {
+      if (!Object.keys(zNativeEnum.enum).includes(val)) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: "Not an enum key, cannot transform to enum value",
+        })
+        return z.NEVER
+      }
+      return <T[keyof T]>zNativeEnum.enum[val]
+    }),
   ])
 }
 

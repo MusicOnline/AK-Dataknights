@@ -1,12 +1,12 @@
 import * as constants from "../constants"
-import { Blackboard } from "../raw/common"
-import { Localizable, LocalizationString, toPhaseNumber } from "../utils"
-import { GeneratedRangeData, Range } from "./range"
 import {
-  CharacterTableData,
+  Character,
   Talent as RawTalent,
   TalentCandidate as RawTalentCandidate,
-} from "./raw"
+} from "../raw/character"
+import { Blackboard } from "../raw/common"
+import { Localizable, LocalizationString } from "../utils"
+import { GeneratedRangeData, Range } from "./range"
 
 export type GeneratedTalentCandidateData = {
   key: string
@@ -34,7 +34,7 @@ export class TalentCandidate implements Localizable {
   public constructor(talentNumber: number, data: RawTalentCandidate) {
     this.talentNumber = talentNumber
     this.unlockConditions = {
-      elite: toPhaseNumber(data.unlockCondition.phase),
+      elite: data.unlockCondition.phase,
       level: data.unlockCondition.level,
       potential: data.requiredPotentialRank + 1, // 0 = Potential 1 (Base operator)
     }
@@ -93,7 +93,7 @@ export class Talent implements Localizable {
     )
   }
 
-  public static getAllFromData(data: CharacterTableData): Talent[] | null {
+  public static getAllFromData(data: Character): Talent[] | null {
     const talents = data.talents
       ?.filter(({ candidates }) => candidates)
       .map((talentData, index) => new Talent(index + 1, talentData))
@@ -107,10 +107,7 @@ export class Talent implements Localizable {
     }
   }
 
-  public addLocale(
-    locale: constants.GameLocale,
-    data: CharacterTableData
-  ): void {
+  public addLocale(locale: constants.GameLocale, data: Character): void {
     const rawTalent = data.talents!.filter(({ candidates }) => candidates)[
       this.talentNumber - 1
     ]
@@ -118,7 +115,7 @@ export class Talent implements Localizable {
     this.candidates.forEach((candidate) => {
       const rawCandidate = rawTalent.candidates!.find((rawCandidate) => {
         return (
-          toPhaseNumber(rawCandidate.unlockCondition.phase) ===
+          rawCandidate.unlockCondition.phase ===
             candidate.unlockConditions.elite &&
           rawCandidate.unlockCondition.level ===
             candidate.unlockConditions.level &&
