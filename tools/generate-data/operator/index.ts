@@ -10,11 +10,7 @@ import {
   Tag,
   TagEnum,
 } from "../raw/character"
-import {
-  Localizable,
-  LocalizationString,
-  normalizeForLocaleFile,
-} from "../utils"
+import { LocaleString, Localizable, normalizeForLocaleFile } from "../utils"
 import {
   ElitePhase,
   GeneratedElitePhaseData,
@@ -78,9 +74,9 @@ export class Operator implements Localizable {
 
   // Original attributes
   id: string // Key in character_table
-  name: LocalizationString
-  appellation: LocalizationString
-  description: LocalizationString | null
+  name: LocaleString
+  appellation: LocaleString
+  description: LocaleString | null
   canUseGeneralPotentialItem: boolean
   potentialItemId: string | null
   nationId: string | null
@@ -108,9 +104,9 @@ export class Operator implements Localizable {
   public constructor(id: string, data: Character) {
     this.id = id
     this.displayNumber = data.displayNumber
-    this.name = new LocalizationString(data.name)
-    this.appellation = new LocalizationString(data.appellation)
-    const description = LocalizationString.fromDataOrNull(data.description)
+    this.name = new LocaleString(data.name)
+    this.appellation = new LocaleString(data.appellation)
+    const description = LocaleString.fromDataOrNull(data.description)
     this.description = description
     this.rarity = data.rarity
     this.class = data.profession

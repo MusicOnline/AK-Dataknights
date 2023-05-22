@@ -4,7 +4,7 @@ import * as constants from "../constants"
 import { Character, Skill as RawSkill } from "../raw/character"
 import { Blackboard } from "../raw/common"
 import { DurationType, SkillType, SpTypeEnum } from "../raw/skill"
-import { CoerceEnumKeyOf, Localizable, LocalizationString } from "../utils"
+import { CoerceEnumKeyOf, LocaleString, Localizable } from "../utils"
 import { GeneratedRangeData, Range } from "./range"
 
 export const SpDataSchema = z.object({
@@ -54,8 +54,8 @@ export type GeneratedSkillData = {
 
 export class SkillLevel implements Localizable {
   level: number
-  name: LocalizationString
-  description: LocalizationString | null
+  name: LocaleString
+  description: LocaleString | null
   range: Range | null
   variables: Blackboard[]
   skillType: keyof typeof SkillType
@@ -64,8 +64,8 @@ export class SkillLevel implements Localizable {
 
   public constructor(level: number, data: SkillTableDataLevel) {
     this.level = level
-    this.name = new LocalizationString(data.name)
-    this.description = LocalizationString.fromDataOrNull(data.description)
+    this.name = new LocaleString(data.name)
+    this.description = LocaleString.fromDataOrNull(data.description)
     this.range = data.rangeId ? new Range(data.rangeId) : null
     this.variables = data.blackboard
     this.skillType = <keyof typeof SkillType>data.skillType

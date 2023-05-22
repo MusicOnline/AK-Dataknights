@@ -1,7 +1,7 @@
 import * as constants from "../constants"
 import { Character } from "../raw/character"
 import { Blackboard } from "../raw/common"
-import { Localizable, LocalizationString } from "../utils"
+import { LocaleString, Localizable } from "../utils"
 
 export type GeneratedTraitCandidateData = {
   unlockConditions: { elite: number; level: number }
@@ -9,7 +9,7 @@ export type GeneratedTraitCandidateData = {
 }
 
 export class TraitCandidate implements Localizable {
-  description: LocalizationString
+  description: LocaleString
   unlockConditions: {
     elite: number
     level: number
@@ -24,7 +24,7 @@ export class TraitCandidate implements Localizable {
     },
     variables: Blackboard[] = []
   ) {
-    this.description = new LocalizationString(description)
+    this.description = new LocaleString(description)
     this.unlockConditions = unlockConditions
     this.variables = variables
   }

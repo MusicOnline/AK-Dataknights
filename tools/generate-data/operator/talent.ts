@@ -5,7 +5,7 @@ import {
   TalentCandidate as RawTalentCandidate,
 } from "../raw/character"
 import { Blackboard } from "../raw/common"
-import { Localizable, LocalizationString } from "../utils"
+import { LocaleString, Localizable } from "../utils"
 import { GeneratedRangeData, Range } from "./range"
 
 export type GeneratedTalentCandidateData = {
@@ -26,8 +26,8 @@ export class TalentCandidate implements Localizable {
     level: number
     potential: number
   }
-  name: LocalizationString | null
-  description: LocalizationString | null
+  name: LocaleString | null
+  description: LocaleString | null
   range: Range | null
   variables: Blackboard[]
 
@@ -38,8 +38,8 @@ export class TalentCandidate implements Localizable {
       level: data.unlockCondition.level,
       potential: data.requiredPotentialRank + 1, // 0 = Potential 1 (Base operator)
     }
-    this.name = LocalizationString.fromDataOrNull(data.name)
-    this.description = LocalizationString.fromDataOrNull(data.description)
+    this.name = LocaleString.fromDataOrNull(data.name)
+    this.description = LocaleString.fromDataOrNull(data.description)
     this.range = data.rangeId ? new Range(data.rangeId) : null
     this.variables = data.blackboard
   }

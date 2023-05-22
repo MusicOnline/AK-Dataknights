@@ -17,7 +17,7 @@ export type UnderscoreOutputLocale =
   | "ja_TL"
   | "ko_TL"
 
-export class LocalizationString implements Localizable {
+export class LocaleString implements Localizable {
   zh_CN: string
   en_US: string | null = null
   ja_JP: string | null = null
@@ -30,11 +30,9 @@ export class LocalizationString implements Localizable {
     this.zh_CN = zh_CN.trim()
   }
 
-  public static fromDataOrNull(
-    zh_CN?: string | null
-  ): LocalizationString | null {
+  public static fromDataOrNull(zh_CN?: string | null): LocaleString | null {
     if (zh_CN === null || zh_CN === undefined) return null
-    return new LocalizationString(zh_CN)
+    return new LocaleString(zh_CN)
   }
 
   private addLocaleCommon(

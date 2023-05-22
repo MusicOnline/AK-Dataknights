@@ -7,7 +7,7 @@ import {
 } from "../raw/battle-equip"
 import { Blackboard } from "../raw/common"
 import { EquipDict, EquipDictType } from "../raw/uni-equip"
-import { Localizable, LocalizationString } from "../utils"
+import { LocaleString, Localizable } from "../utils"
 
 export type GeneratedModuleData = {
   id: string
@@ -56,9 +56,9 @@ export type GeneratedModuleStageTalentUpgradeCandidateData = {
 
 export class Module implements Localizable {
   id: string
-  name: LocalizationString
+  name: LocaleString
   icon: string
-  description: LocalizationString
+  description: LocaleString
   typeIcon: string
   typeName1: string
   typeName2: string | null
@@ -83,9 +83,9 @@ export class Module implements Localizable {
     )
 
     this.id = moduleId
-    this.name = new LocalizationString(uniEquipData.uniEquipName)
+    this.name = new LocaleString(uniEquipData.uniEquipName)
     this.icon = uniEquipData.uniEquipIcon
-    this.description = new LocalizationString(uniEquipData.uniEquipDesc)
+    this.description = new LocaleString(uniEquipData.uniEquipDesc)
     this.typeIcon = uniEquipData.typeIcon
     this.typeName1 = uniEquipData.typeName1
     this.typeName2 = uniEquipData.typeName2
@@ -280,11 +280,11 @@ export class ModuleStage implements Localizable {
 export class TraitUpgrade implements Localizable {
   // target: DISPLAY, TRAIT, TRAIT DATA ONLY
   // Variables may be in a separate TALENT
-  description: LocalizationString
+  description: LocaleString
   variables: Blackboard[]
 
   public constructor(description: string, variables: Blackboard[]) {
-    this.description = new LocalizationString(description)
+    this.description = new LocaleString(description)
     this.variables = variables
   }
 
@@ -363,8 +363,8 @@ export class TalentUpgrade implements Localizable {
 }
 
 export class TalentUpgradeCandidate implements Localizable {
-  name: LocalizationString | null
-  description: LocalizationString | null
+  name: LocaleString | null
+  description: LocaleString | null
   unlockCondition: {
     elite: number
     level: number
@@ -373,10 +373,8 @@ export class TalentUpgradeCandidate implements Localizable {
   variables: Blackboard[]
 
   public constructor(data: AddOrOverrideTalentDataBundleCandidate) {
-    this.name = LocalizationString.fromDataOrNull(data.name)
-    this.description = LocalizationString.fromDataOrNull(
-      data.upgradeDescription
-    )
+    this.name = LocaleString.fromDataOrNull(data.name)
+    this.description = LocaleString.fromDataOrNull(data.upgradeDescription)
     this.unlockCondition = {
       elite: data.unlockCondition.phase,
       level: data.unlockCondition.level,

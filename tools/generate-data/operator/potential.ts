@@ -1,6 +1,6 @@
 import * as constants from "../constants"
 import { AttributeType, Character, PotentialRank } from "../raw/character"
-import { Localizable, LocalizationString } from "../utils"
+import { LocaleString, Localizable } from "../utils"
 
 const POTENTIAL_NUMBER_OFFSET_FROM_ZERO_INDEX = 2
 
@@ -14,7 +14,7 @@ export type GeneratedPotentialData = {
 
 export class Potential implements Localizable {
   potentialNumber: number
-  description: LocalizationString
+  description: LocaleString
   attribute?: {
     key: keyof typeof AttributeType
     value: number
@@ -22,7 +22,7 @@ export class Potential implements Localizable {
 
   public constructor(potentialNumber: number, data: PotentialRank) {
     this.potentialNumber = potentialNumber
-    this.description = new LocalizationString(data.description)
+    this.description = new LocaleString(data.description)
     if (data.buff) {
       if (data.buff.attributes.attributeModifiers.length !== 1)
         throw new Error(
