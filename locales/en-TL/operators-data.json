@@ -44910,7 +44910,7 @@
     }
   },
   "highmore": {
-    "name": "Highmore",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -45053,7 +45053,7 @@
     }
   },
   "tulip": {
-    "name": "Tulip",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {},
@@ -45790,7 +45790,7 @@
     }
   },
   "penance": {
-    "name": "Penance",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -45983,7 +45983,7 @@
     }
   },
   "texas-the-omertosa": {
-    "name": "Texas the Omertosa",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -46208,7 +46208,7 @@
     }
   },
   "vigil": {
-    "name": "Vigil",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -46389,7 +46389,7 @@
     }
   },
   "lunacub": {
-    "name": "Lunacub",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -46562,7 +46562,7 @@
     }
   },
   "qanipalaat": {
-    "name": "Qanipalaat",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -46751,7 +46751,7 @@
     }
   },
   "quartz": {
-    "name": "Quartz",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -50496,6 +50496,62 @@
             }
           }
         }
+      }
+    }
+  },
+  "friston-3": {
+    "name": "Friston-3",
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E0-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E0-L1-P2": {
+          "name": null,
+          "description": null
+        },
+        "E0-L1-P3": {
+          "name": null,
+          "description": null
+        },
+        "E0-L1-P4": {
+          "name": null,
+          "description": null
+        },
+        "E0-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E0-L1-P6": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {},
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
       }
     }
   }
