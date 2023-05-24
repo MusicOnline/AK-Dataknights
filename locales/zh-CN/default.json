@@ -211,5 +211,10 @@
     "sitePageTitle": "{0} {'|'} 数据方舟",
     "siteIndexMetaTitle": "数据方舟：明日方舟数据库",
     "siteIndexDescription": "《数据方舟》是鹰角网络开发、上海悠星海外代理手机游戏《明日方舟》的数据库网站。目前包括各服务器的干员资料。"
+  },
+  "ui": {
+    "credits": "鸣谢",
+    "madeWithTechnologiesPrefix": "开发科技",
+    "viewRepositoryPrefix": "关注开发"
   }
 }

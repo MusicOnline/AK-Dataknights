@@ -8,10 +8,12 @@ const NUMBER_OF_SEARCH_RESULTS = 11
 
 const {
   operator,
+  resultsCount = NUMBER_OF_SEARCH_RESULTS,
   overlayResults = false,
   large = false,
 } = defineProps<{
   operator?: GeneratedOperatorData
+  resultsCount?: number
   overlayResults?: boolean
   large?: boolean
 }>()
@@ -29,9 +31,9 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
 
     const lowerBoundIndex: number = Math.max(
       0,
-      index - Math.trunc(NUMBER_OF_SEARCH_RESULTS / 2)
+      index - Math.trunc(resultsCount / 2)
     )
-    const upperBoundIndex: number = lowerBoundIndex + NUMBER_OF_SEARCH_RESULTS
+    const upperBoundIndex: number = lowerBoundIndex + resultsCount
 
     return operators.slice(lowerBoundIndex, upperBoundIndex)
   }
@@ -41,7 +43,7 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
 
   console.time(`searchResults (${input})`)
   for (const otherOperator of operators) {
-    if (searchResults.length >= NUMBER_OF_SEARCH_RESULTS) break
+    if (searchResults.length >= resultsCount) break
     if (
       otherOperator.key.length >= input.length &&
       otherOperator.key.toLowerCase().includes(input)
@@ -107,9 +109,9 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
 </script>
 
 <template>
-  <div class="flex flex-col" :class="{ 'gap-2 ': !overlayResults }">
+  <div class="relative flex flex-col" :class="{ 'gap-2 ': !overlayResults }">
     <div
-      class="flex items-center gap-2 bg-bg-input-normal p-2 text-fg-input-normal outline outline-1 outline-fg-input-placeholder focus-within:bg-bg-input-focus"
+      class="sticky left-0 top-0 z-20 flex items-center gap-2 bg-bg-input-normal p-2 text-fg-input-normal outline outline-1 outline-fg-input-placeholder focus-within:bg-bg-input-focus"
     >
       <Icon name="heroicons:magnifying-glass" />
       <input

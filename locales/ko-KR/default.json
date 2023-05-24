@@ -206,5 +206,10 @@
     "siteIndexTitle": "자료방주",
     "sitePageTitle": "{0} {'|'} 자료방주",
     "siteIndexMetaTitle": "자료방주: 명일방주 데이터베이스"
+  },
+  "ui": {
+    "credits": "크레디트",
+    "madeWithTechnologiesPrefix": "개발 기술",
+    "viewRepositoryPrefix": "개발 팔로우"
   }
 }

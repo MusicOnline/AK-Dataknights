@@ -175,12 +175,13 @@ watch(
 </script>
 
 <template>
-  <div class="relative flex">
+  <div class="relative flex gap-2">
     <OperatorSidebar
-      class="md:h-[calc(100vh-3rem)] mt-12 h-[calc(100vh-7rem)] w-56 md:mb-0 md:ml-0 lg:w-72"
+      class="sticky top-12 z-20 -mt-2 ml-[-14.5rem] h-[calc(100vh-7rem)] w-56 md:left-0 md:right-auto md:-ml-2 md:mb-0 md:h-[calc(100vh-3rem)] lg:w-72"
       v-model:is-sidebar-expanded="isSidebarExpanded"
       :class="{
-        '-ml-56': !isSidebarExpanded,
+        'left-0': isSidebarExpanded,
+        'left-auto right-0': !isSidebarExpanded,
       }"
       :operator="operator"
     />
@@ -191,9 +192,7 @@ watch(
       Gap:      p-2        = 0.5rem (from app.vue NuxtPage's parent)
       Main lg:ml should be = 80rem + 2 * (18rem + 0.5rem)
     -->
-    <main
-      class="lg:ml-[clamp(0rem,calc((117rem-100vw)/2),18rem)] flex w-full flex-col gap-8 md:ml-56"
-    >
+    <main class="flex w-full flex-col gap-8">
       <!-- <Breadcrumbs class="text-sm" /> -->
       <!-- General information -->
       <div>
@@ -217,7 +216,7 @@ watch(
         <div
           class="flex flex-wrap justify-center gap-1 p-2 outline outline-1 outline-bg-container-1-normal sm:flex-nowrap sm:justify-start lg:gap-8"
         >
-          <div class="sm:max-w-[8rem] grid w-full p-2">
+          <div class="grid w-full p-2 sm:max-w-[8rem]">
             <OperatorRangeGrid
               class="m-auto"
               v-if="currentPhase.range"

@@ -26,6 +26,11 @@
   "navigation": {
     "operators": "Operators"
   },
+  "ui": {
+    "credits": "Credits",
+    "madeWithTechnologiesPrefix": "Made with",
+    "viewRepositoryPrefix": "Watch development on"
+  },
   "settings": {
     "title": "Settings",
     "language": "Display Language",

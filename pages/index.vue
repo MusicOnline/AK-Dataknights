@@ -54,7 +54,7 @@ onMounted(() => {
 
 <style scoped lang="scss">
 .button {
-  @apply bg-bg-container-1-normal text-fg-container-1 hover:bg-bg-container-1-focus focus:bg-bg-container-1-focus w-36 p-2 shadow;
+  @apply w-36 bg-bg-container-1-normal p-2 text-fg-container-1 shadow hover:bg-bg-container-1-focus focus:bg-bg-container-1-focus;
 
   text-align: center;
 }

@@ -97,10 +97,19 @@ function transformLocaleCode(locale: string): string {
       <Body :data-theme="theme" :data-mode="colorMode" />
     </Html>
     <NavigationBar />
-    <div class="p-2">
-      <NuxtPage class="mx-auto max-w-7xl" />
+    <div
+      class="flex min-h-[calc(100vh-7rem)] flex-col justify-between md:min-h-[calc(100vh-3rem)]"
+    >
+      <div class="p-2">
+        <NuxtPage class="mx-auto max-w-7xl" />
+      </div>
+      <div
+        class="relative z-20 w-full bg-bg-body bg-opacity-60 pt-4 backdrop-blur"
+      >
+        <hr class="mx-auto w-full max-w-7xl border-t-2 border-fg-container-1" />
+        <Footer class="mx-auto w-full max-w-7xl px-2 py-4 md:py-8" />
+      </div>
     </div>
-    <!-- <footer>Made with <Icon name="logos:nuxt-icon" /></footer> -->
   </div>
 </template>
 
@@ -115,7 +124,7 @@ function transformLocaleCode(locale: string): string {
 
 @layer base {
   body {
-    @apply bg-bg-body text-fg-body mt-12 mb-16 md:mb-0;
+    @apply mb-16 mt-12 bg-bg-body text-fg-body md:mb-0;
   }
 
   svg {

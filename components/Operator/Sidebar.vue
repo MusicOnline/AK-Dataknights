@@ -11,11 +11,11 @@ defineEmits(["update:isSidebarExpanded"])
 
 <template>
   <div
-    class="bg-bg-container-1-normal text-fg-container-1 fixed top-0 left-0 z-20 flex flex-col gap-2 bg-opacity-90 p-2 shadow backdrop-blur transition-all"
+    class="flex flex-col gap-2 bg-bg-container-1-normal bg-opacity-90 p-2 text-fg-container-1 shadow backdrop-blur transition-all"
   >
     <!-- Mobile pull out button -->
     <button
-      class="bg-bg-primary text-fg-primary absolute left-full bottom-20 flex items-center p-0.5 text-2xl shadow md:hidden"
+      class="absolute bottom-20 left-full flex items-center bg-bg-primary p-0.5 text-2xl text-fg-primary shadow md:hidden"
       @click="$emit('update:isSidebarExpanded', !isSidebarExpanded)"
     >
       <Icon name="heroicons:list-bullet" />
@@ -27,14 +27,18 @@ defineEmits(["update:isSidebarExpanded"])
     </button>
     <OperatorTableOfContentsList :operator="operator" />
     <ClientOnly>
-      <OperatorSearchWidget :operator="operator" />
+      <OperatorSearchWidget
+        class="overflow-y-auto"
+        :operator="operator"
+        :results-count="11"
+      />
       <template #fallback>
         <div class="flex flex-col gap-2">
           <OSkeleton height="2.5rem" :animated="true" />
           <OSkeleton
             class="gap-1"
             height="2.75rem"
-            :count="10"
+            :count="11"
             :animated="true"
           />
         </div>
