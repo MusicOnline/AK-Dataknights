@@ -119,7 +119,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "lancet-2": {
     "name": null,
@@ -175,7 +176,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "castle-3": {
     "name": null,
@@ -231,7 +233,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "yato": {
     "name": null,
@@ -267,7 +270,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "durin": {
     "name": null,
@@ -303,7 +307,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "12f": {
     "name": null,
@@ -339,7 +344,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "rangers": {
     "name": null,
@@ -375,7 +381,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "noir-corne": {
     "name": null,
@@ -411,7 +418,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "fang": {
     "name": null,
@@ -478,7 +486,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "vanilla": {
     "name": null,
@@ -549,7 +558,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "plume": {
     "name": null,
@@ -620,7 +630,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "hibiscus": {
     "name": null,
@@ -691,7 +702,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "ansel": {
     "name": null,
@@ -770,7 +782,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "lava": {
     "name": null,
@@ -849,7 +862,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "steward": {
     "name": null,
@@ -920,7 +934,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "kroos": {
     "name": null,
@@ -999,7 +1014,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "adnachiel": {
     "name": null,
@@ -1070,7 +1086,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "orchid": {
     "name": null,
@@ -1141,7 +1158,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "melantha": {
     "name": null,
@@ -1212,7 +1230,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "beagle": {
     "name": null,
@@ -1283,7 +1302,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "cardigan": {
     "name": null,
@@ -1354,7 +1374,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "courier": {
     "name": null,
@@ -1543,7 +1564,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "scavenger": {
     "name": null,
@@ -1732,7 +1754,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "vigna": {
     "name": null,
@@ -1937,7 +1960,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "myrrh": {
     "name": null,
@@ -2126,7 +2150,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "gavial": {
     "name": null,
@@ -2315,7 +2340,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "perfumer": {
     "name": null,
@@ -2520,7 +2546,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "haze": {
     "name": null,
@@ -2709,7 +2736,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "gitano": {
     "name": null,
@@ -2914,7 +2942,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "gravel": {
     "name": null,
@@ -3091,7 +3120,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "rope": {
     "name": null,
@@ -3280,7 +3310,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "shaw": {
     "name": null,
@@ -3453,7 +3484,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "shirayuki": {
     "name": null,
@@ -3622,7 +3654,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "meteor": {
     "name": null,
@@ -3811,7 +3844,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "jessica": {
     "name": null,
@@ -4000,7 +4034,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "deepcolor": {
     "name": null,
@@ -4187,6 +4222,29 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10001_deepcl_tentac": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {},
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "earthspirit": {
@@ -4368,7 +4426,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "dobermann": {
     "name": null,
@@ -4565,7 +4624,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "estelle": {
     "name": null,
@@ -4698,7 +4758,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "beehunter": {
     "name": null,
@@ -4831,7 +4892,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "mousse": {
     "name": null,
@@ -4964,7 +5026,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "frostleaf": {
     "name": null,
@@ -5085,7 +5148,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "matoimaru": {
     "name": null,
@@ -5266,7 +5330,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "cuora": {
     "name": null,
@@ -5439,7 +5504,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "gummy": {
     "name": null,
@@ -5628,7 +5694,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "matterhorn": {
     "name": null,
@@ -5801,7 +5868,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "texas": {
     "name": null,
@@ -5990,7 +6058,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "zima": {
     "name": null,
@@ -6163,7 +6232,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "ptilopsis": {
     "name": null,
@@ -6352,7 +6422,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "silence": {
     "name": null,
@@ -6541,6 +6612,23 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10000_silent_healrb": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "skills": {
+          "skcom_withdraw": {
+            "1": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "warfarin": {
@@ -6714,7 +6802,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "amiya": {
     "name": null,
@@ -6941,7 +7030,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "nightmare": {
     "name": null,
@@ -7146,7 +7236,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "skyfire": {
     "name": null,
@@ -7335,7 +7426,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "projekt-red": {
     "name": null,
@@ -7524,7 +7616,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "manticore": {
     "name": null,
@@ -7729,7 +7822,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "cliffheart": {
     "name": null,
@@ -7918,7 +8012,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "feater": {
     "name": null,
@@ -8107,7 +8202,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "provence": {
     "name": null,
@@ -8296,7 +8392,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "blue-poison": {
     "name": null,
@@ -8501,7 +8598,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "firewatch": {
     "name": null,
@@ -8690,7 +8788,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "meteorite": {
     "name": null,
@@ -8863,7 +8962,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "platinum": {
     "name": null,
@@ -9052,7 +9152,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "pramanix": {
     "name": null,
@@ -9239,7 +9340,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "istina": {
     "name": null,
@@ -9420,7 +9522,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "mayer": {
     "name": null,
@@ -9607,6 +9710,114 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10004_otter_motter": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_motter_1": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_motter_2": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "sora": {
@@ -9732,7 +9943,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "franka": {
     "name": null,
@@ -9905,7 +10117,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "specter": {
     "name": null,
@@ -10038,7 +10251,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "indra": {
     "name": null,
@@ -10171,7 +10385,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "chen": {
     "name": null,
@@ -10401,7 +10616,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "lappland": {
     "name": null,
@@ -10534,7 +10750,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "nearl": {
     "name": null,
@@ -10723,7 +10940,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "liskarm": {
     "name": null,
@@ -10854,7 +11072,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "vulcan": {
     "name": null,
@@ -10987,7 +11206,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "croissant": {
     "name": null,
@@ -11176,7 +11396,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "siege": {
     "name": null,
@@ -11481,7 +11702,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "shining": {
     "name": null,
@@ -11790,7 +12012,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "nightingale": {
     "name": null,
@@ -12051,6 +12274,23 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10003_cgbird_bird": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {},
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "ifrit": {
@@ -12300,7 +12540,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "eyjafjalla": {
     "name": null,
@@ -12541,7 +12782,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "exusiai": {
     "name": null,
@@ -12782,7 +13024,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "angelina": {
     "name": null,
@@ -13089,7 +13332,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "silverash": {
     "name": null,
@@ -13270,7 +13514,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "hoshiguma": {
     "name": null,
@@ -13573,7 +13818,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "saria": {
     "name": null,
@@ -13852,7 +14098,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "catapult": {
     "name": null,
@@ -13919,7 +14166,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "midnight": {
     "name": null,
@@ -13998,7 +14246,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "grani": {
     "name": null,
@@ -14203,7 +14452,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "skadi": {
     "name": null,
@@ -14482,7 +14732,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "popukar": {
     "name": null,
@@ -14561,7 +14812,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "swire": {
     "name": null,
@@ -14750,7 +15002,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "spot": {
     "name": null,
@@ -14829,7 +15082,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "greyy": {
     "name": null,
@@ -15002,7 +15256,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "schwarz": {
     "name": null,
@@ -15297,7 +15552,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "glaucus": {
     "name": null,
@@ -15502,7 +15758,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "ceylon": {
     "name": null,
@@ -15691,7 +15948,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "sussurro": {
     "name": null,
@@ -15880,7 +16138,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "myrtle": {
     "name": null,
@@ -16005,7 +16264,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "astesia": {
     "name": null,
@@ -16130,7 +16390,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "hellagur": {
     "name": null,
@@ -16381,7 +16642,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "dur-nar": {
     "name": null,
@@ -16506,7 +16768,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "vermeil": {
     "name": null,
@@ -16679,7 +16942,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "magallan": {
     "name": null,
@@ -17000,6 +17264,254 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10005_mgllan_drone1": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          },
+          "2": {
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P5": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P5": {
+              "description": null
+            }
+          },
+          "3": {
+            "E2-L1-P1": {},
+            "E2-L1-P5": {}
+          }
+        },
+        "skills": {
+          "sktok_mgllan_drone1": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      },
+      "token_10005_mgllan_drone2": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          },
+          "2": {
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P5": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P5": {
+              "description": null
+            }
+          },
+          "3": {
+            "E2-L1-P1": {},
+            "E2-L1-P5": {}
+          }
+        },
+        "skills": {
+          "sktok_mgllan_drone2": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      },
+      "token_10005_mgllan_drone3": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          },
+          "2": {
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P5": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P5": {
+              "description": null
+            }
+          },
+          "3": {
+            "E2-L1-P1": {},
+            "E2-L1-P5": {}
+          }
+        },
+        "skills": {
+          "sktok_mgllan_drone3": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "flamebringer": {
@@ -17189,7 +17701,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "executor": {
     "name": null,
@@ -17322,7 +17835,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "ethan": {
     "name": null,
@@ -17511,7 +18025,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "breeze": {
     "name": null,
@@ -17700,7 +18215,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "waai-fu": {
     "name": null,
@@ -17881,7 +18397,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "mostima": {
     "name": null,
@@ -18114,7 +18631,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "may": {
     "name": null,
@@ -18303,7 +18821,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "bison": {
     "name": null,
@@ -18492,7 +19011,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "reed": {
     "name": null,
@@ -18681,7 +19201,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "broca": {
     "name": null,
@@ -18814,7 +19335,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "ambriel": {
     "name": null,
@@ -18995,7 +19517,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "greythroat": {
     "name": null,
@@ -19184,7 +19707,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "blaze": {
     "name": null,
@@ -19369,7 +19893,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "snowsant": {
     "name": null,
@@ -19558,7 +20083,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "aak": {
     "name": null,
@@ -19739,7 +20265,72 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "modules": {
+      "uniequip_001_haak": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_haak": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {}
   },
   "hung": {
     "name": null,
@@ -19928,7 +20519,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "nian": {
     "name": null,
@@ -20207,7 +20799,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "ceobe": {
     "name": null,
@@ -20486,7 +21079,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "leizi": {
     "name": null,
@@ -20688,7 +21282,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "purestream": {
     "name": null,
@@ -20861,7 +21456,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "bagpipe": {
     "name": null,
@@ -21118,7 +21714,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "bibeak": {
     "name": null,
@@ -21319,7 +21916,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "sesa": {
     "name": null,
@@ -21508,7 +22106,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "utage": {
     "name": null,
@@ -21707,7 +22306,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "conviction": {
     "name": null,
@@ -21864,7 +22464,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "phantom": {
     "name": null,
@@ -22095,6 +22696,158 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10007_phatom_twin": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          },
+          "2": {
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_phatom_1": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_phatom_2": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_phatom_3": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "shamare": {
@@ -22283,6 +23036,59 @@
             }
           }
         }
+      }
+    },
+    "tokenSummons": {
+      "token_10006_vodfox_doll": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "skills": {
+          "sktok_vodfox_token": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
       }
     }
   },
@@ -22473,7 +23279,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "sideroca": {
     "name": null,
@@ -22598,7 +23405,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "thrm-ex": {
     "name": null,
@@ -22654,7 +23462,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "w": {
     "name": null,
@@ -22951,6 +23760,66 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10008_cqbw_box": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_cqbw_token": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "weedy": {
@@ -23192,6 +24061,74 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10009_weedy_cannon": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          },
+          "2": {
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_weedy_token": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "elysium": {
@@ -23325,7 +24262,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "asbestos": {
     "name": null,
@@ -23450,7 +24388,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "tsukinogi": {
     "name": null,
@@ -23583,7 +24522,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "podenco": {
     "name": null,
@@ -23788,7 +24728,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "absinthe": {
     "name": null,
@@ -23977,7 +24918,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "leonhardt": {
     "name": null,
@@ -24182,7 +25124,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "rosa": {
     "name": null,
@@ -24423,7 +25366,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "click": {
     "name": null,
@@ -24548,7 +25492,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "ayerscarpe": {
     "name": null,
@@ -24681,7 +25626,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "folinic": {
     "name": null,
@@ -24866,7 +25812,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "suzuran": {
     "name": null,
@@ -25107,7 +26054,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "beeswax": {
     "name": null,
@@ -25279,6 +26227,66 @@
             }
           }
         }
+      }
+    },
+    "tokenSummons": {
+      "token_10011_beewax_oblisk": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E1-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_beewax": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
       }
     }
   },
@@ -25485,7 +26493,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "scene": {
     "name": null,
@@ -25671,6 +26680,72 @@
             }
           }
         }
+      }
+    },
+    "tokenSummons": {
+      "token_10010_folivo_car": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_folivo_2": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
       }
     }
   },
@@ -25861,7 +26936,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "andreana": {
     "name": null,
@@ -26050,7 +27126,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "thorns": {
     "name": null,
@@ -26235,7 +27312,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "eunectes": {
     "name": null,
@@ -26514,7 +27592,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "tomimi": {
     "name": null,
@@ -26711,7 +27790,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "flint": {
     "name": null,
@@ -26844,7 +27924,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "aciddrop": {
     "name": null,
@@ -27017,7 +28098,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "pith": {
     "name": null,
@@ -27084,7 +28166,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "sharp": {
     "name": null,
@@ -27151,7 +28234,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "touch": {
     "name": null,
@@ -27218,7 +28302,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "stormeye": {
     "name": null,
@@ -27285,7 +28370,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "reserve-operator-melee": {
     "name": null,
@@ -27297,7 +28383,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "reserve-operator-sniper": {
     "name": null,
@@ -27309,7 +28396,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "reserve-operator-logistics": {
     "name": null,
@@ -27321,7 +28409,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "reserve-operator-caster": {
     "name": null,
@@ -27333,7 +28422,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "surtr": {
     "name": null,
@@ -27526,7 +28616,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "arene": {
     "name": null,
@@ -27663,7 +28754,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "mint": {
     "name": null,
@@ -27852,7 +28944,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "april": {
     "name": null,
@@ -28041,7 +29134,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "blemishine": {
     "name": null,
@@ -28269,8 +29363,69 @@
             }
           }
         }
+      },
+      "uniequip_003_blemsh": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "aosta": {
     "name": null,
@@ -28403,7 +29558,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "whislash": {
     "name": null,
@@ -28592,7 +29748,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "bubble": {
     "name": null,
@@ -28765,7 +29922,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "rosmontis": {
     "name": null,
@@ -29002,6 +30160,71 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10012_rosmon_shield": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_rosmon": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {}
+      }
     }
   },
   "mudrock": {
@@ -29191,7 +30414,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "whisperain": {
     "name": null,
@@ -29380,7 +30604,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "jackie": {
     "name": null,
@@ -29513,7 +30738,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "mountain": {
     "name": null,
@@ -29694,7 +30920,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "kafka": {
     "name": null,
@@ -29887,7 +31114,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "robin": {
     "name": null,
@@ -30076,6 +31304,101 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10013_robin_mine": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "skills": {
+          "sktok_robin_1": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_robin_2": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "pinecone": {
@@ -30209,7 +31532,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "archetto": {
     "name": null,
@@ -30510,7 +31834,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "iris": {
     "name": null,
@@ -30699,7 +32024,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "beanstalk": {
     "name": null,
@@ -30827,6 +32153,29 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "tokenSummons": {
+      "token_10014_bstalk_crab": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {},
+        "traitCandidates": {},
+        "tokenSummons": {}
       }
     }
   },
@@ -31017,7 +32366,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "lava-the-purgatory": {
     "name": null,
@@ -31222,7 +32572,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "dusk": {
     "name": null,
@@ -31527,6 +32878,31 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10015_dusk_drgn": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E2-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P5": {
+              "description": null
+            }
+          }
+        },
+        "skills": {},
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {}
+      }
     }
   },
   "saga": {
@@ -31776,7 +33152,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "mr-nothing": {
     "name": null,
@@ -31965,7 +33342,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "ash": {
     "name": null,
@@ -32214,7 +33592,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "frost": {
     "name": null,
@@ -32421,6 +33800,101 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10016_rfrost_mine": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "skills": {
+          "sktok_rfrost_1": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_rfrost_2": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "blitz": {
@@ -32560,7 +34034,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "tachanka": {
     "name": null,
@@ -32753,7 +34228,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "passenger": {
     "name": null,
@@ -33047,7 +34523,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "toddifons": {
     "name": null,
@@ -33252,7 +34729,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "heavyrain": {
     "name": null,
@@ -33441,7 +34919,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "skadi-the-corrupting-heart": {
     "name": null,
@@ -33617,6 +35096,166 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "tokenSummons": {
+      "token_10017_skadi2_dedant": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          },
+          "2": {
+            "E2-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P5": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_skadi2_1": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_skadi2_2": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_skadi2_3": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {}
       }
     }
   },
@@ -33843,7 +35482,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "kaltsit": {
     "name": null,
@@ -34146,6 +35786,26 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10002_kalts_mon3tr": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E2-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P5": {
+              "description": null
+            }
+          }
+        },
+        "skills": {},
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "akafuyu": {
@@ -34345,7 +36005,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "carnelian": {
     "name": null,
@@ -34582,7 +36243,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "kirara": {
     "name": null,
@@ -34787,7 +36449,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "bena": {
     "name": null,
@@ -34980,7 +36643,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "indigo": {
     "name": null,
@@ -35169,7 +36833,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "pallas": {
     "name": null,
@@ -35460,7 +37125,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "chen-the-holungday": {
     "name": null,
@@ -35641,7 +37307,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "mizuki": {
     "name": null,
@@ -35946,7 +37613,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "la-pluma": {
     "name": null,
@@ -36075,7 +37743,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "tequila": {
     "name": null,
@@ -36208,7 +37877,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "saileach": {
     "name": null,
@@ -36389,7 +38059,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "mulberry": {
     "name": null,
@@ -36522,7 +38193,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "roberta": {
     "name": null,
@@ -36662,6 +38334,124 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_robrta": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_robrta": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {},
+                  "5": {}
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {},
+                  "5": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {
+      "token_10018_robrta_mach": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E0-L1-P5": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P5": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P5": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_robrta": {
+            "1": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          },
+          "E1-L1": {
+            "description": null
+          },
+          "E2-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {}
       }
     }
   },
@@ -36950,7 +38740,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "ashlock": {
     "name": null,
@@ -37083,7 +38874,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "nearl-the-radiant-knight": {
     "name": null,
@@ -37315,6 +39107,71 @@
             }
           }
         }
+      }
+    },
+    "tokenSummons": {
+      "token_10019_nearl2_sword": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_nearl2_3": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {}
       }
     }
   },
@@ -37556,8 +39413,69 @@
             }
           }
         }
+      },
+      "uniequip_003_flamtl": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "corroserum": {
     "name": null,
@@ -37746,7 +39664,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "honeyberry": {
     "name": null,
@@ -37879,7 +39798,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "wild-mane": {
     "name": null,
@@ -38068,7 +39988,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "pudding": {
     "name": null,
@@ -38244,7 +40165,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "justice-knight": {
     "name": null,
@@ -38300,7 +40222,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "gnosis": {
     "name": null,
@@ -38537,7 +40460,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "aurora": {
     "name": null,
@@ -38726,7 +40650,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "kjera": {
     "name": null,
@@ -38859,7 +40784,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "shalem": {
     "name": null,
@@ -38998,7 +40924,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "nine-colored-deer": {
     "name": null,
@@ -39111,7 +41038,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "ling": {
     "name": null,
@@ -39358,6 +41286,211 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10020_ling_soul1": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_ling_soul1": {
+            "1": {
+              "name": null
+            },
+            "2": {
+              "name": null
+            },
+            "3": {
+              "name": null
+            },
+            "4": {
+              "name": null
+            },
+            "5": {
+              "name": null
+            },
+            "6": {
+              "name": null
+            },
+            "7": {
+              "name": null
+            },
+            "8": {
+              "name": null
+            },
+            "9": {
+              "name": null
+            },
+            "10": {
+              "name": null
+            }
+          }
+        },
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {}
+      },
+      "token_10020_ling_soul2": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          },
+          "2": {
+            "E1-L1-P1": {}
+          }
+        },
+        "skills": {
+          "sktok_ling_soul2": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {}
+      },
+      "token_10020_ling_soul3": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          },
+          "2": {
+            "E2-L1-P1": {}
+          }
+        },
+        "skills": {
+          "sktok_ling_soul3": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {}
+      }
     }
   },
   "lee": {
@@ -39587,7 +41720,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "blacknight": {
     "name": null,
@@ -39715,6 +41849,42 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "tokenSummons": {
+      "token_10021_blkngt_hypnos": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_blkngt_hypnos_s_1": {
+            "1": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_blkngt_hypnos_s_2": {
+            "1": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
       }
     }
   },
@@ -39905,7 +42075,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "goldenglow": {
     "name": null,
@@ -40090,7 +42261,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "quercus": {
     "name": null,
@@ -40223,7 +42395,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "fiammetta": {
     "name": null,
@@ -40460,7 +42633,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "enforcer": {
     "name": null,
@@ -40649,7 +42823,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "kazemaru": {
     "name": null,
@@ -40846,6 +43021,38 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10022_kazema_shadow": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E0-L1-P5": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P5": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P5": {
+              "description": null
+            }
+          }
+        },
+        "skills": {},
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "horn": {
@@ -41031,7 +43238,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "rockrock": {
     "name": null,
@@ -41164,7 +43372,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "heidi": {
     "name": null,
@@ -41303,7 +43512,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "chestnut": {
     "name": null,
@@ -41436,7 +43646,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "irene": {
     "name": null,
@@ -41669,7 +43880,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "specter-the-unchained": {
     "name": null,
@@ -41964,7 +44176,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "lumen": {
     "name": null,
@@ -42239,7 +44452,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "windflit": {
     "name": null,
@@ -42379,6 +44593,202 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_windft": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_windft": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {},
+                  "5": {}
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {},
+                  "5": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {
+      "token_10023_windft_wrench": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E0-L1-P5": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P5": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P5": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_windft_wrench_1": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_windft_wrench_2": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          },
+          "E1-L1": {
+            "description": null
+          },
+          "E2-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {}
       }
     }
   },
@@ -42573,7 +44983,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "ebenholz": {
     "name": null,
@@ -42864,6 +45275,66 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10024_ebnhlz_rcube": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_ebnhlz_token": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "czerny": {
@@ -42997,7 +45468,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "hibiscus-the-purifier": {
     "name": null,
@@ -43130,7 +45602,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "dorothy": {
     "name": null,
@@ -43379,6 +45852,143 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10025_doroth_recttp": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "skills": {
+          "sktok_doroth_1": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_doroth_2": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_doroth_3": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "astgenne": {
@@ -43555,7 +46165,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "greyy-the-lightningbearer": {
     "name": null,
@@ -43728,7 +46339,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "gavial-the-invincible": {
     "name": null,
@@ -43913,7 +46525,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "pozemka": {
     "name": null,
@@ -44142,6 +46755,136 @@
           }
         }
       }
+    },
+    "tokenSummons": {
+      "token_10026_bgsnow_subbow": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          },
+          "2": {
+            "E2-L1-P1": {
+              "name": null,
+              "description": null
+            },
+            "E2-L1-P5": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_bgsnow_1": {
+            "1": {
+              "name": null
+            },
+            "2": {
+              "name": null
+            },
+            "3": {
+              "name": null
+            },
+            "4": {
+              "name": null
+            },
+            "5": {
+              "name": null
+            },
+            "6": {
+              "name": null
+            },
+            "7": {
+              "name": null
+            },
+            "8": {
+              "name": null
+            },
+            "9": {
+              "name": null
+            },
+            "10": {
+              "name": null
+            }
+          },
+          "sktok_bgsnow_2": {
+            "1": {
+              "name": null
+            },
+            "2": {
+              "name": null
+            },
+            "3": {
+              "name": null
+            },
+            "4": {
+              "name": null
+            },
+            "5": {
+              "name": null
+            },
+            "6": {
+              "name": null
+            },
+            "7": {
+              "name": null
+            },
+            "8": {
+              "name": null
+            },
+            "9": {
+              "name": null
+            },
+            "10": {
+              "name": null
+            }
+          },
+          "sktok_bgsnow_3": {
+            "1": {
+              "name": null
+            },
+            "2": {
+              "name": null
+            },
+            "3": {
+              "name": null
+            },
+            "4": {
+              "name": null
+            },
+            "5": {
+              "name": null
+            },
+            "6": {
+              "name": null
+            },
+            "7": {
+              "name": null
+            },
+            "8": {
+              "name": null
+            },
+            "9": {
+              "name": null
+            },
+            "10": {
+              "name": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "cantabile": {
@@ -44275,7 +47018,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "minimalist": {
     "name": null,
@@ -44408,7 +47152,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "mlynar": {
     "name": null,
@@ -44593,7 +47338,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "proviso": {
     "name": null,
@@ -44798,7 +47544,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "luo-xiaohei": {
     "name": null,
@@ -44907,7 +47654,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "highmore": {
     "name": null,
@@ -45050,7 +47798,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "tulip": {
     "name": null,
@@ -45117,7 +47866,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "reserve-operator-defender": {
     "name": null,
@@ -45129,7 +47879,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "stainless": {
     "name": null,
@@ -45310,6 +48061,269 @@
       "E0-L1": {
         "description": null
       }
+    },
+    "modules": {
+      "uniequip_001_ironmn": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_ironmn": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {
+      "token_10027_ironmn_pile1": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "name": null,
+              "description": null
+            }
+          },
+          "2": {
+            "E0-L1-P1": {},
+            "E1-L1-P1": {},
+            "E2-L1-P1": {}
+          }
+        },
+        "skills": {
+          "sktok_ironmn_pile1": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      },
+      "token_10027_ironmn_pile2": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "name": null,
+              "description": null
+            }
+          },
+          "2": {
+            "E0-L1-P1": {},
+            "E1-L1-P1": {},
+            "E2-L1-P1": {}
+          },
+          "3": {
+            "E0-L1-P1": {}
+          }
+        },
+        "skills": {
+          "sktok_ironmn_pile2": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      },
+      "token_10027_ironmn_pile3": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "name": null,
+              "description": null
+            }
+          },
+          "2": {
+            "E0-L1-P1": {},
+            "E1-L1-P1": {},
+            "E2-L1-P1": {}
+          }
+        },
+        "skills": {
+          "sktok_ironmn_pile3": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "dagda": {
@@ -45441,7 +48455,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "paprika": {
     "name": null,
@@ -45574,7 +48589,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "totter": {
     "name": null,
@@ -45787,7 +48803,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "penance": {
     "name": null,
@@ -45980,7 +48997,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "texas-the-omertosa": {
     "name": null,
@@ -46205,7 +49223,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "vigil": {
     "name": null,
@@ -46386,6 +49405,80 @@
       "E0-L1": {
         "description": null
       }
+    },
+    "tokenSummons": {
+      "token_10028_vigil_wolf": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          },
+          "2": {
+            "E2-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P5": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_vigil_wolf_1": {
+            "1": {
+              "name": null
+            }
+          },
+          "sktok_vigil_wolf_2": {
+            "1": {
+              "name": null
+            }
+          },
+          "sktok_vigil_wolf_3": {
+            "1": {
+              "name": null
+            },
+            "2": {
+              "name": null
+            },
+            "3": {
+              "name": null
+            },
+            "4": {
+              "name": null
+            },
+            "5": {
+              "name": null
+            },
+            "6": {
+              "name": null
+            },
+            "7": {
+              "name": null
+            },
+            "8": {
+              "name": null
+            },
+            "9": {
+              "name": null
+            },
+            "10": {
+              "name": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
     }
   },
   "lunacub": {
@@ -46559,7 +49652,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "qanipalaat": {
     "name": null,
@@ -46748,7 +49842,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "quartz": {
     "name": null,
@@ -46881,7 +49976,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "reed-the-flame-shadow": {
     "name": "Reed The Flame Shadow",
@@ -47066,7 +50162,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "harmonie": {
     "name": "Harmonie",
@@ -47255,7 +50352,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "puzzle": {
     "name": "Puzzle",
@@ -47388,7 +50486,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "lin": {
     "name": "Lin",
@@ -47629,7 +50728,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "chongyue": {
     "name": "Chongyue",
@@ -47810,7 +50910,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "firewhistle": {
     "name": "Firewhistle",
@@ -47943,7 +51044,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "jieyun": {
     "name": "Jieyun",
@@ -48132,7 +51234,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "qiubai": {
     "name": "Qiubai",
@@ -48317,7 +51420,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "wind-chimes": {
     "name": "Wind Chimes",
@@ -48450,7 +51554,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "kirin-x-yato": {
     "name": "Kirin X Yato",
@@ -48687,7 +51792,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "rathalos-s-noir-corne": {
     "name": "Rathalos S Noir Corne",
@@ -48900,7 +52006,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "terra-research-commission": {
     "name": "Terra Research Commission",
@@ -48956,7 +52063,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "ines": {
     "name": "Ines",
@@ -49140,7 +52248,8 @@
       "E2-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "cement": {
     "name": "Cement",
@@ -49329,7 +52438,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "morgan": {
     "name": "Morgan",
@@ -49524,7 +52634,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "humus": {
     "name": "Humus",
@@ -49657,7 +52768,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "u-official": {
     "name": "U-Official",
@@ -49713,7 +52825,8 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "silence-the-paradigmatic": {
     "name": "Silence the Paradigmatic",
@@ -49889,6 +53002,69 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "tokenSummons": {
+      "token_10029_slent2_protrb": {
+        "name": "Night Banisher",
+        "appellation": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_slent2_protrb": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
       }
     }
   },
@@ -50070,6 +53246,56 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "tokenSummons": {
+      "token_10030_mlyss_wtrman": {
+        "name": "Flowing Shape",
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          },
+          "2": {
+            "E0-L1-P1": {}
+          }
+        },
+        "skills": {
+          "sktok_mlyss_wtrman_1": {
+            "1": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_mlyss_wtrman_2": {
+            "1": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_mlyss_wtrman_3": {
+            "1": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {}
       }
     }
   },
@@ -50308,7 +53534,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "melanite": {
     "name": "Melanite",
@@ -50497,7 +53724,8 @@
           }
         }
       }
-    }
+    },
+    "tokenSummons": {}
   },
   "friston-3": {
     "name": "Friston-3",
@@ -50553,6 +53781,557 @@
       "E0-L1": {
         "description": null
       }
-    }
+    },
+    "tokenSummons": {}
+  },
+  "executor-the-ex-foedere": {
+    "name": "Executor the Ex Foedere",
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_excu2_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_excu2_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_excu2_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "tokenSummons": {}
+  },
+  "spuria": {
+    "name": "Spuria",
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E0-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_spuria_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_spuria_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_spuria": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_spuria": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {}
+  },
+  "insider": {
+    "name": "Insider",
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_inside_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_inside_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_inside": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_inside": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {}
   }
 }
