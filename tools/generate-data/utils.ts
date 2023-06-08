@@ -138,9 +138,9 @@ export function CoerceEnumValueOf<T extends z.EnumLike>(
 }
 
 export type LocaleObject = {
-  [key: string]: LocaleObject | string | undefined
+  [key: string]: LocaleObject | string | null | undefined
 }
 
 const LocaleObjectSchema: z.ZodType<LocaleObject> = z.record(
-  z.lazy(() => z.string().or(LocaleObjectSchema))
+  z.lazy(() => LocaleObjectSchema)
 )

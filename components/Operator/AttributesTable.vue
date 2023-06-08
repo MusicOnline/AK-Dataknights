@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
-import type { KeyFrameData } from "~/tools/generate-data/operator/raw"
+import type { KeyFrameData } from "~/tools/generate-data/raw/character"
 import type { OperatorState } from "~/utils"
 
 const CALCULATED_ATTRIBUTES = [
@@ -31,21 +31,20 @@ const { operator, operatorState } = defineProps<{
   operatorState: OperatorState
 }>()
 
-// @ts-ignore Unreliable Array.reduce inference
 const operatorAttributes = computed<KeyFrameData>(() => {
   const startKeyFrame =
     operator.phases[operatorState.elite].attributeKeyFrames[0]
   const endKeyFrame = operator.phases[operatorState.elite].attributeKeyFrames[1]
-  return Object.entries(startKeyFrame.data).reduce(
-    // @ts-ignore
-    (
-      accumulator: Record<keyof KeyFrameData, number | boolean>,
-      [name, startValue]: [keyof KeyFrameData, number | boolean]
-    ) => {
+  return <KeyFrameData>Object.keys(startKeyFrame.data).reduce(
+    (accumulator, current) => {
+      const name = <keyof KeyFrameData>current
+      const startValue = startKeyFrame.data[name]
+
       if (
         !CALCULATED_ATTRIBUTES.includes(name) ||
         typeof startValue === "boolean"
       ) {
+        // @ts-ignore
         accumulator[name] = startValue
         return accumulator
       }
@@ -67,13 +66,15 @@ const operatorAttributes = computed<KeyFrameData>(() => {
       if (name === "baseAttackTime") {
         accumulator[name] = calculateFinalAttackTime(totalBaseAttribute)
       } else if (ROUNDED_ATTRIBTUES.includes(name)) {
+        // @ts-ignore
         accumulator[name] = Math.round(totalBaseAttribute)
       } else {
+        // @ts-ignore
         accumulator[name] = totalBaseAttribute
       }
       return accumulator
     },
-    {}
+    <Partial<KeyFrameData>>{}
   )
 })
 
@@ -103,7 +104,12 @@ function getPotentialBonus(attribute: keyof KeyFrameData): number {
 }
 
 function getModuleBonus(attribute: keyof KeyFrameData): number {
-  if (!operatorState.areBonusesIncluded || !operatorState.moduleId) return 0
+  if (
+    !operatorState.areBonusesIncluded ||
+    !operatorState.moduleId ||
+    !operator.modules?.length
+  )
+    return 0
 
   let moduleBonus: number = 0
   const module = operator.modules!.find(
@@ -117,10 +123,13 @@ function getModuleBonus(attribute: keyof KeyFrameData): number {
     const attributeObject = module.stages?.[
       (operatorState.moduleStage || 1) - 1
     ].attributes.find(({ key }) => {
-      const compatibleKey: string =
-        // @ts-ignore
-        ALTERNATE_ATTRIBUTE_NAMES[key.toLowerCase()] || key
-      return compatibleKey === attribute
+      if (ALTERNATE_ATTRIBUTE_NAMES.hasOwnProperty(key.toLowerCase()))
+        return (
+          ALTERNATE_ATTRIBUTE_NAMES[
+            <keyof typeof ALTERNATE_ATTRIBUTE_NAMES>key.toLowerCase()
+          ] === attribute
+        )
+      return key === attribute
     })
     if (attributeObject) moduleBonus = attributeObject.value
   }
@@ -151,11 +160,11 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
 
 <template>
   <div
-    class="bg-bg-container-1-normal grid grid-flow-col-dense grid-rows-4 gap-0.5 sm:grid-rows-2 md:grid-rows-4 lg:grid-rows-2"
+    class="grid grid-flow-col-dense grid-rows-4 gap-0.5 bg-bg-container-1-normal sm:grid-rows-2 md:grid-rows-4 lg:grid-rows-2"
   >
     <!-- Row 1 -->
     <div
-      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-1 md:order-1 lg:order-1"
+      class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-1 md:order-1 lg:order-1"
     >
       <div class="flex gap-1 text-emerald-500">
         <Icon class="mt-1 flex-shrink-0" name="bx:plus-medical" />
@@ -164,7 +173,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       <div>{{ operatorAttributes.maxHp }}</div>
     </div>
     <div
-      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-3 md:order-2 lg:order-3"
+      class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-3 md:order-2 lg:order-3"
     >
       <div class="flex gap-1 text-red-500">
         <Icon class="mt-1 flex-shrink-0" name="mdi:sword-cross" />
@@ -173,7 +182,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       <div>{{ operatorAttributes.atk }}</div>
     </div>
     <div
-      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-5 md:order-3 lg:order-5"
+      class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-5 md:order-3 lg:order-5"
     >
       <div class="flex gap-1 text-sky-500">
         <Icon class="mt-1 flex-shrink-0" name="mdi:shield" />
@@ -182,7 +191,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       <div>{{ operatorAttributes.def }}</div>
     </div>
     <div
-      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-7 md:order-4 lg:order-7"
+      class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-7 md:order-4 lg:order-7"
     >
       <div class="flex gap-1 text-violet-500">
         <Icon
@@ -196,7 +205,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
 
     <!-- Row 2 -->
     <div
-      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-2 md:order-5 lg:order-2"
+      class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-2 md:order-5 lg:order-2"
     >
       <div class="flex gap-1 text-lime-500">
         <Icon class="mt-1 flex-shrink-0" name="mdi:alpha-c-circle" />
@@ -205,7 +214,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       <div>{{ operatorAttributes.cost }}</div>
     </div>
     <div
-      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-4 md:order-6 lg:order-4"
+      class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-4 md:order-6 lg:order-4"
     >
       <div class="flex gap-1 text-rose-500">
         <Icon class="mt-1 flex-shrink-0" name="game-icons:spinning-sword" />
@@ -221,7 +230,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       </div>
     </div>
     <div
-      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-6 md:order-7 lg:order-6"
+      class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-6 md:order-7 lg:order-6"
     >
       <div class="flex gap-1 text-blue-500">
         <Icon class="mt-1 flex-shrink-0" name="mdi:shield-account" />
@@ -230,7 +239,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       <div>{{ operatorAttributes.blockCnt }}</div>
     </div>
     <div
-      class="bg-bg-body flex flex-col px-2 py-0.5 sm:order-8 md:order-8 lg:order-8"
+      class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-8 md:order-8 lg:order-8"
     >
       <div class="flex gap-1 text-pink-500">
         <Icon

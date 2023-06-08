@@ -154,7 +154,8 @@
         "INCREASE_WHEN_ATTACK": "攻击回复",
         "INCREASE_WHEN_TAKEN_DAMAGE": "受击回复",
         "ON_DEPLOY": "不需技力"
-      }
+      },
+      "ammoAmount": "弹药"
     },
     "ui": {
       "attributes": "属性",

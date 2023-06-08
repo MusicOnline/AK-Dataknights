@@ -153,7 +153,8 @@
         "INCREASE_WHEN_ATTACK": "공격 회복",
         "INCREASE_WHEN_TAKEN_DAMAGE": "피격 회복",
         "ON_DEPLOY": "SP 불필요"
-      }
+      },
+      "ammoAmount": "탄약"
     },
     "ui": {
       "attributes": "스탯",

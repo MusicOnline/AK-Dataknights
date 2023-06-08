@@ -257,7 +257,7 @@ export const PotentialRankSchema = z.object({
 })
 export type PotentialRank = z.infer<typeof PotentialRankSchema>
 
-export const DataSchema = z.object({
+export const KeyFrameDataSchema = z.object({
   maxHp: z.number(),
   atk: z.number(),
   def: z.number(),
@@ -281,11 +281,11 @@ export const DataSchema = z.object({
   frozenImmune: z.boolean(),
   levitateImmune: z.boolean(),
 })
-export type Data = z.infer<typeof DataSchema>
+export type KeyFrameData = z.infer<typeof KeyFrameDataSchema>
 
 export const KeyFrameSchema = z.object({
   level: z.number(),
-  data: DataSchema,
+  data: KeyFrameDataSchema,
 })
 export type KeyFrame = z.infer<typeof KeyFrameSchema>
 

@@ -207,7 +207,8 @@
         "INCREASE_WHEN_ATTACK": "Offensive Recovery",
         "INCREASE_WHEN_TAKEN_DAMAGE": "Defensive Recovery",
         "ON_DEPLOY": "Does not require SP"
-      }
+      },
+      "ammoAmount": "Ammo"
     },
     "module": {
       "selectModule": "Select Module",

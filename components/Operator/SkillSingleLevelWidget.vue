@@ -28,6 +28,12 @@ const previousLevelData = computed<GeneratedSkillLevelData | undefined>(
 const isInitSpNotAlwaysZero = computed<boolean>(() =>
   skill.levels.some(({ spData: { initSp } }) => initSp !== 0)
 )
+const isAmmoSkill = computed<boolean>(() =>
+  Boolean(
+    skill.levels[0].durationType === "AMMO" &&
+      skill.levels[0].variables.find(({ key }) => key === "attack@trigger_time")
+  )
+)
 
 function accessDeepestAttribute(
   item: any,
@@ -159,6 +165,40 @@ function getComparisonColorClass(
             v-if="previousLevelData"
             :name="getComparisonIconName(['duration'])"
             :class="getComparisonColorClass(['duration'])"
+          />
+        </div>
+      </div>
+      <div class="flex" v-else-if="isAmmoSkill">
+        <div
+          class="flex items-center gap-0.5 bg-bg-primary p-1 text-fg-primary"
+        >
+          <Icon name="mdi:ammunition" />
+          <span>
+            {{ t("operator.skill.ammoAmount") }}
+          </span>
+        </div>
+        <div class="flex items-center gap-0.5 bg-bg-container-1-normal p-1">
+          <span>
+            {{
+              levelData.variables.find(
+                ({ key }) => key === "attack@trigger_time"
+              )?.value
+            }}
+          </span>
+          <Icon
+            v-if="previousLevelData"
+            :name="
+              getComparisonIconName([
+                'variables',
+                { key: 'attack@trigger_time' },
+              ])
+            "
+            :class="
+              getComparisonColorClass([
+                'variables',
+                { key: 'attack@trigger_time' },
+              ])
+            "
           />
         </div>
       </div>

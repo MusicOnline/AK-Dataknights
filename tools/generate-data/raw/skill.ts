@@ -3,12 +3,7 @@ import * as z from "zod"
 import { CoerceEnumKeyOf } from "../utils"
 import { BlackboardSchema } from "./common"
 
-export enum DurationType {
-  PASSIVE = 0,
-  INSTANT = 1,
-  LIMITED = 2,
-}
-export const DurationTypeEnum = z.nativeEnum(DurationType)
+export const DurationTypeEnum = z.enum(["NONE", "AMMO"])
 export type DurationTypeEnum = z.infer<typeof DurationTypeEnum>
 
 export enum SkillType {
@@ -43,7 +38,7 @@ export const SkillLevelSchema = z.object({
   rangeId: z.string().nullable(),
   description: z.string().nullable(),
   skillType: CoerceEnumKeyOf(SkillTypeEnum), // CN 2.0 vs EJK
-  durationType: CoerceEnumKeyOf(DurationTypeEnum), // CN 2.0 vs EJK
+  durationType: z.union([DurationTypeEnum, z.number()]), // CN 2.0 vs EJK
   spData: SpDataSchema,
   prefabId: z.string().nullable(),
   duration: z.number(),

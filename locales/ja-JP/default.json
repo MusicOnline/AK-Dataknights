@@ -154,7 +154,8 @@
         "INCREASE_WHEN_ATTACK": "攻撃回復",
         "INCREASE_WHEN_TAKEN_DAMAGE": "被撃回復",
         "ON_DEPLOY": "SP不要"
-      }
+      },
+      "ammoAmount": "弾薬"
     },
     "ui": {
       "attributes": "ステータス",

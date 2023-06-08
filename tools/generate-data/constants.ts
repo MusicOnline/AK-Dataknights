@@ -1,3 +1,5 @@
+import { ProfessionEnum } from "./raw/character"
+
 export const ORIGINAL_LOCALE = "zh-CN"
 export type OriginalLocale = typeof ORIGINAL_LOCALE
 
@@ -16,3 +18,8 @@ export const OUTPUT_LOCALES = [...GAME_LOCALES, ...TRANSLATED_LOCALES] as const
 export type OutputLocale = (typeof OUTPUT_LOCALES)[number]
 
 export const FALSE_POSITIVE_ACTUAL_OPERATORS = ["char_512_aprot"]
+
+export const NON_OPERATOR_CLASSES: ProfessionEnum[] = [
+  ProfessionEnum.enum.TRAP,
+  ProfessionEnum.enum.TOKEN,
+]

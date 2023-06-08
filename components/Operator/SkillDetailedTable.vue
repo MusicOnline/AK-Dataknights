@@ -22,6 +22,16 @@ const spCostRowSpanValues = computed<number[]>(() =>
 const durationRowSpanValues = computed<number[]>(() =>
   getRowSpanValuesForEqualValues(skill.levels.map(({ duration }) => duration))
 )
+const ammoRowSpanValues = computed<number[]>(() =>
+  isAmmoSkill.value
+    ? getRowSpanValuesForEqualValues(
+        skill.levels.map(
+          ({ variables }) =>
+            variables.find(({ key }) => key === "attack@trigger_time")?.value
+        )
+      )
+    : []
+)
 const rangeRowSpanValues = computed<number[]>(() =>
   getRowSpanValuesForEqualValues(skill.levels.map(({ range }) => range?.id))
 )
@@ -34,7 +44,10 @@ const isInitSpNotAlwaysZero = computed<boolean>(
     initSpRowSpanValues.value[0] !== initSpRowSpanValues.value.length
 )
 const variableKeys = computed<string[]>(() =>
-  skill.levels.slice(-1)[0].variables.map(({ key }) => key)
+  skill.levels.slice(-1)[0].variables.flatMap(({ key }) => {
+    if (key === "attack@trigger_time") return []
+    return key
+  })
 )
 const variableRowSpanValues = computed<number[][]>(() =>
   variableKeys.value.map((keyName) =>
@@ -43,6 +56,12 @@ const variableRowSpanValues = computed<number[][]>(() =>
         ({ variables }) => variables.find(({ key }) => key === keyName)?.value
       )
     )
+  )
+)
+const isAmmoSkill = computed<boolean>(() =>
+  Boolean(
+    skill.levels[0].durationType === "AMMO" &&
+      skill.levels[0].variables.find(({ key }) => key === "attack@trigger_time")
   )
 )
 
@@ -76,6 +95,9 @@ function getRowSpanValuesForEqualValues(values: any[]): number[] {
         </template>
         <th class="sm:w-20" v-if="skill.levels[0].duration > 0">
           {{ t("operator.skill.duration") }}
+        </th>
+        <th class="sm:w-20" v-if="ammoRowSpanValues.length">
+          {{ t("operator.skill.ammoAmount") }}
         </th>
         <th
           class="w-16 min-w-[3rem] bg-primary-alt text-xs font-normal [overflow-wrap:anywhere]"
@@ -133,6 +155,18 @@ function getRowSpanValuesForEqualValues(values: any[]): number[] {
               style: "unit",
               unit: "second",
             })
+          }}
+        </td>
+        <td
+          class="text-center"
+          v-if="
+            ammoRowSpanValues.length && ammoRowSpanValues[level.level - 1] !== 0
+          "
+          :rowspan="ammoRowSpanValues[level.level - 1]"
+        >
+          {{
+            level.variables.find(({ key }) => key === "attack@trigger_time")
+              ?.value
           }}
         </td>
         <template v-for="(keyName, index) in variableKeys" :key="keyName">
