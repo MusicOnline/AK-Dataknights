@@ -30,9 +30,10 @@ export class TraitCandidate implements Localizable {
   }
 
   public static getAllFromData(data: Character): TraitCandidate[] {
-    if (data.description === null) return []
-    if (data.trait === null)
+    if (data.trait === null) {
+      if (data.description === null) return []
       return [new TraitCandidate(data.description, { elite: 0, level: 1 })]
+    }
     const candidates: TraitCandidate[] = []
     let isFirstCandidateAdded = false
     data.trait.candidates.forEach((candidate) => {
@@ -63,7 +64,7 @@ export class TraitCandidate implements Localizable {
         )
       }
     })
-    if (!isFirstCandidateAdded)
+    if (!isFirstCandidateAdded && data.description !== null)
       candidates.splice(
         0,
         0,

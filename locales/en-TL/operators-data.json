@@ -48321,7 +48321,11 @@
             }
           }
         },
-        "traitCandidates": {},
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
         "tokenSummons": {}
       }
     }
@@ -49476,7 +49480,11 @@
             }
           }
         },
-        "traitCandidates": {},
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
         "tokenSummons": {}
       }
     }

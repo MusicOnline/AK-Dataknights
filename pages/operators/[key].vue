@@ -265,6 +265,7 @@ watch(
               class="p-2 outline outline-1 outline-bg-container-1-normal"
               :operator="operator"
               :skill="skill"
+              :operator-state="operatorState"
             />
           </li>
         </ul>

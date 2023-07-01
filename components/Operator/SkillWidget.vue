@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
-import type { GeneratedSkillData } from "~~/tools/generate-data/operator/skill"
+import type { GeneratedSkillData } from "~/tools/generate-data/operator/skill"
+import type { OperatorState } from "~/utils"
 
-const { skill } = defineProps<{
+const { operator, skill } = defineProps<{
   operator: GeneratedOperatorData
   skill: GeneratedSkillData
+  operatorState: OperatorState
 }>()
 
 const { t } = useI18n()
@@ -26,6 +28,12 @@ const visualSkillLevel = computed<number>({
   },
 })
 const numberOfMasteryLevels = computed<number>(() => skill.levels.length - 7)
+
+const tokenSummon = computed<GeneratedOperatorData | null>(() => {
+  const key = skill.overrideTokenKey || operator.tokenKey
+  if (!key) return null
+  return operator.tokenSummons[key]
+})
 </script>
 
 <template>
@@ -123,6 +131,12 @@ const numberOfMasteryLevels = computed<number>(() => skill.levels.length - 7)
       :operator="operator"
       :skill="skill"
       :levelNumber="skillLevel"
+    />
+    <OperatorTokenSummonWidget
+      v-if="tokenSummon"
+      :operator="operator"
+      :token-summon="tokenSummon"
+      :operator-state="operatorState"
     />
   </div>
 </template>

@@ -3,22 +3,16 @@ import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait"
 import type { OperatorState } from "~/utils"
 
-const { t, locale } = useI18n()
+const { t } = useI18n()
 
 const { operator, operatorState } = defineProps<{
   operator: GeneratedOperatorData
   operatorState: OperatorState
 }>()
 
-const currentAvatarUrl = computed<string>(() => {
-  let phase = operator.phases[operatorState.elite]
-  while (!phase.outfit?.avatarId && phase.elite !== 0)
-    phase = operator.phases[phase.elite - 1]
-
-  return `https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${encodeURI(
-    phase.outfit!.avatarId
-  )}.png`
-})
+const currentAvatarUrl = computed<string>(() =>
+  getAvatarUrl(operator, operatorState)
+)
 
 const currentTraitCandidate = computed<GeneratedTraitCandidateData>(() => {
   let currentCandidate: GeneratedTraitCandidateData | null = null
