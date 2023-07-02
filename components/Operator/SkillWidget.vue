@@ -38,47 +38,10 @@ const tokenSummon = computed<GeneratedOperatorData | null>(() => {
 
 <template>
   <div class="flex flex-col gap-4 overflow-x-auto">
-    <!-- Name, SP recovery type, activation type -->
     <div class="flex flex-wrap gap-2">
-      <div class="flex gap-2">
-        <img
-          class="h-16 w-16"
-          :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/skills/skill_icon_${
-            skill.iconId || skill.id
-          }.png`"
-        />
-        <div class="flex flex-col gap-1">
-          <div class="text-2xl font-bold">
-            {{
-              t(
-                `${operator.key}.skills.${skill.id
-                  .replace(/\[/g, "<")
-                  .replace(/\]/g, ">")}.1.name`
-              )
-            }}
-          </div>
-          <div class="flex gap-2 text-slate-900">
-            <div
-              class="px-2"
-              v-if="skill.levels[0].skillType !== 'PASSIVE'"
-              :class="{
-                'bg-green-400':
-                  skill.levels[0].spData.spType === 'INCREASE_WITH_TIME',
-                'bg-orange-400':
-                  skill.levels[0].spData.spType === 'INCREASE_WHEN_ATTACK',
-                'bg-yellow-400':
-                  skill.levels[0].spData.spType ===
-                  'INCREASE_WHEN_TAKEN_DAMAGE',
-              }"
-            >
-              {{ t(`operator.skill.spType.${skill.levels[0].spData.spType}`) }}
-            </div>
-            <div class="bg-slate-300 px-2">
-              {{ t(`operator.skill.skillType.${skill.levels[0].skillType}`) }}
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Name, SP recovery type, activation type -->
+      <OperatorSkillIntroductionCard :operator="operator" :skill="skill" />
+      <!-- Skill level selector -->
       <div
         class="ml-auto flex items-center gap-2"
         v-if="!isAdvancedViewEnabled"
@@ -137,6 +100,7 @@ const tokenSummon = computed<GeneratedOperatorData | null>(() => {
       :operator="operator"
       :token-summon="tokenSummon"
       :operator-state="operatorState"
+      :levelNumber="skillLevel"
     />
   </div>
 </template>

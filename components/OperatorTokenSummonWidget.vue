@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { GeneratedElitePhaseData } from "~/tools/generate-data/operator/elite"
+import type { GeneratedSkillData } from "~/tools/generate-data/operator/skill"
 import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait"
 import type { OperatorState } from "~/utils"
 
@@ -8,6 +9,7 @@ const { operator, tokenSummon, operatorState } = defineProps<{
   operator: GeneratedOperatorData
   tokenSummon: GeneratedOperatorData
   operatorState: OperatorState
+  levelNumber: number
 }>()
 
 const { t } = useI18n()
@@ -55,6 +57,33 @@ const currentTraitCandidate = computed<GeneratedTraitCandidateData | null>(
     return currentCandidate
   }
 )
+
+const currentSkill = computed<GeneratedSkillData | null>(() => {
+  let currentSkill: GeneratedSkillData | null = null
+  tokenSummon.skills.forEach((skill) => {
+    if (
+      // Insufficient elite promotion
+      skill.unlockConditions.elite > operatorState.elite ||
+      // Same elite but insufficient level
+      (skill.unlockConditions.elite === operatorState.elite &&
+        skill.unlockConditions.level > operatorState.level)
+    )
+      return
+    if (!currentSkill) {
+      currentSkill = skill
+      return
+    }
+    if (
+      skill.unlockConditions.elite > currentSkill.unlockConditions.elite ||
+      (skill.unlockConditions.elite === currentSkill.unlockConditions.elite &&
+        skill.unlockConditions.level > currentSkill.unlockConditions.level)
+    ) {
+      currentSkill = skill
+    }
+  })
+  if (!currentSkill) return null
+  return currentSkill
+})
 </script>
 
 <template>
@@ -81,6 +110,7 @@ const currentTraitCandidate = computed<GeneratedTraitCandidateData | null>(
         />
       </div>
     </div>
+    <!-- Talents -->
     <div
       class="flex flex-wrap justify-center gap-1 sm:flex-nowrap sm:justify-start lg:gap-8"
     >
@@ -91,13 +121,28 @@ const currentTraitCandidate = computed<GeneratedTraitCandidateData | null>(
           :range="currentPhase.range"
         />
       </div>
-
       <OperatorAttributesTable
         class="max-w-xl flex-1"
         :operator="tokenSummon"
         :operator-state="operatorState"
       />
     </div>
+    <!-- Skills -->
+    <template v-if="currentSkill">
+      <OperatorSkillIntroductionCard
+        :operator="tokenSummon"
+        :override-operator-key="tokenSummonKey"
+        :skill="currentSkill"
+        :small="true"
+      />
+      <OperatorSkillSingleLevelWidget
+        class="text-sm"
+        :operator="tokenSummon"
+        :override-operator-key="tokenSummonKey"
+        :skill="currentSkill"
+        :levelNumber="levelNumber"
+      />
+    </template>
   </div>
 </template>
 

@@ -9,11 +9,14 @@ const EQUAL_ICON_NAME = "ph:equals-bold"
 const INCREASE_ICON_NAME = "ph:caret-double-up-fill"
 const DECREASE_ICON_NAME = "ph:caret-double-down-fill"
 
-const { skill, levelNumber } = defineProps<{
+const { operator, skill, levelNumber, overrideOperatorKey } = defineProps<{
   operator: GeneratedOperatorData
   skill: GeneratedSkillData
   levelNumber: number
+  overrideOperatorKey?: string
 }>()
+
+const operatorKey = computed<string>(() => overrideOperatorKey ?? operator.key)
 
 const { t, locale } = useI18n()
 const variableKeys = computed<string[]>(() =>
@@ -207,7 +210,7 @@ function getComparisonColorClass(
       v-html="
         convertRichText(
           t(
-            `${operator.key}.skills.${skill.id
+            `${operatorKey}.skills.${skill.id
               .replace(/\[/g, '<')
               .replace(/\]/g, '>')}.${levelNumber}.description`
           ),
