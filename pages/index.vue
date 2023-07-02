@@ -19,7 +19,7 @@ onMounted(() => {
       class="relative top-32 z-10 my-auto flex w-full flex-col gap-4 lg:top-56"
     >
       <SiteBrand class="mx-auto text-3xl transition-colors md:text-5xl" />
-      <OperatorSearchWidget
+      <OperatorSearchBar
         class="mx-auto w-full md:max-w-xl lg:max-w-2xl xl:max-w-4xl"
         :overlay-results="true"
         :large="true"

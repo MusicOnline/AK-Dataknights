@@ -27,7 +27,7 @@ defineEmits(["update:isSidebarExpanded"])
     </button>
     <OperatorTableOfContentsList :operator="operator" />
     <ClientOnly>
-      <OperatorSearchWidget
+      <OperatorSearchBar
         class="overflow-y-auto"
         :operator="operator"
         :results-count="11"

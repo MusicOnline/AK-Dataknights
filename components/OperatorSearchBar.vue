@@ -125,7 +125,7 @@ const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
       <!-- 
         TODO: Search suggestion enter, up, down
        -->
-      <OperatorSearchList
+      <OperatorSearchBarList
         :operators="operatorSearchResults"
         :class="{
           'absolute left-0 top-0 w-full bg-bg-input-focus p-2 outline outline-1 outline-fg-input-placeholder drop-shadow-2xl':

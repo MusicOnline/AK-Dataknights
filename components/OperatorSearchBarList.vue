@@ -9,7 +9,7 @@ const { large = false } = defineProps<{
 
 <template>
   <ul class="flex flex-col gap-1">
-    <OperatorSearchListItem
+    <OperatorSearchBarListItem
       v-for="operator in operators"
       :key="operator.key"
       :operator="operator"
