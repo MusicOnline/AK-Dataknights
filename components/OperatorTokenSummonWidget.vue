@@ -13,6 +13,7 @@ import { getBestTalentCandidate, getNextTalentCandidate } from "~/utils/talents"
 const { operator, tokenSummon, operatorState } = defineProps<{
   operator: GeneratedOperatorData
   tokenSummon: GeneratedOperatorData
+  skill: GeneratedSkillData | null
   operatorState: OperatorState
   levelNumber: number
 }>()
@@ -62,33 +63,6 @@ const currentTraitCandidate = computed<GeneratedTraitCandidateData | null>(
     return currentCandidate
   }
 )
-
-const currentSkill = computed<GeneratedSkillData | null>(() => {
-  let currentSkill: GeneratedSkillData | null = null
-  tokenSummon.skills.forEach((skill) => {
-    if (
-      // Insufficient elite promotion
-      skill.unlockConditions.elite > operatorState.elite ||
-      // Same elite but insufficient level
-      (skill.unlockConditions.elite === operatorState.elite &&
-        skill.unlockConditions.level > operatorState.level)
-    )
-      return
-    if (!currentSkill) {
-      currentSkill = skill
-      return
-    }
-    if (
-      skill.unlockConditions.elite > currentSkill.unlockConditions.elite ||
-      (skill.unlockConditions.elite === currentSkill.unlockConditions.elite &&
-        skill.unlockConditions.level > currentSkill.unlockConditions.level)
-    ) {
-      currentSkill = skill
-    }
-  })
-  if (!currentSkill) return null
-  return currentSkill
-})
 
 const currentTalentsAndCandidates = computed<
   [
@@ -215,19 +189,21 @@ const currentTalentsAndCandidates = computed<
       </li>
     </ul>
     <!-- Skills -->
-    <template v-if="currentSkill">
+    <template v-if="skill">
       <OperatorSkillWidgetIntroductionCard
         :operator="tokenSummon"
         :override-operator-key="tokenSummonKey"
-        :skill="currentSkill"
+        :skill="skill"
         :small="true"
       />
       <OperatorSkillWidgetSingleLevelWidget
         class="text-sm"
         :operator="tokenSummon"
         :override-operator-key="tokenSummonKey"
-        :skill="currentSkill"
-        :levelNumber="levelNumber"
+        :skill="skill"
+        :levelNumber="
+          levelNumber <= skill.levels.length ? levelNumber : skill.levels.length
+        "
       />
     </template>
   </div>

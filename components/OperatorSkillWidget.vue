@@ -7,6 +7,7 @@ const { operator, skill } = defineProps<{
   operator: GeneratedOperatorData
   skill: GeneratedSkillData
   operatorState: OperatorState
+  skillNumber: number
 }>()
 
 const { t } = useI18n()
@@ -102,6 +103,7 @@ const tokenSummon = computed<GeneratedOperatorData | null>(() => {
       v-if="tokenSummon"
       :operator="operator"
       :token-summon="tokenSummon"
+      :skill="tokenSummon.skills[skillNumber - 1]"
       :operator-state="operatorState"
       :levelNumber="skillLevel"
     />

@@ -45,22 +45,24 @@ function getCombinedModuleTypeName(module: GeneratedModuleData): string {
             {{ t("operator.ui.talents") }}
           </a>
         </li>
-        <li v-if="operator.skills.length">
+        <li v-if="operator.skills.filter((skill) => skill).length">
           <a class="item-primary-text" href="#skills">{{
             t("operator.ui.skills")
           }}</a>
           <ul class="item-secondary">
-            <li v-for="(skill, index) in operator.skills" :key="skill.id">
-              <a class="item-secondary-text" :href="`#skill-${index + 1}`">
-                {{
-                  t(
-                    `${operator.key}.skills.${skill.id
-                      .replace(/\[/g, "<")
-                      .replace(/\]/g, ">")}.1.name`
-                  )
-                }}
-              </a>
-            </li>
+            <template v-for="(skill, index) in operator.skills" :key="skill.id">
+              <li v-if="skill">
+                <a class="item-secondary-text" :href="`#skill-${index + 1}`">
+                  {{
+                    t(
+                      `${operator.key}.skills.${skill.id
+                        .replace(/\[/g, "<")
+                        .replace(/\]/g, ">")}.1.name`
+                    )
+                  }}
+                </a>
+              </li>
+            </template>
           </ul>
         </li>
         <li v-if="operator.modules?.length">

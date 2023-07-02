@@ -250,7 +250,7 @@ watch(
         />
       </div>
       <!-- Skills -->
-      <div v-if="operator.skills.length">
+      <div v-if="operator.skills.filter((skill) => skill).length">
         <div class="anchor-ghost" id="skills" />
         <h1 class="heading">
           {{ t("operator.ui.skills") }}
@@ -259,15 +259,18 @@ watch(
           {{ t("operator.ui.enableAdvancedViewForMore") }}
         </div>
         <ul class="flex flex-col gap-8">
-          <li v-for="(skill, index) in operator.skills" :key="skill.id">
-            <div class="anchor-ghost" :id="`skill-${index + 1}`" />
-            <OperatorSkillWidget
-              class="p-2 outline outline-1 outline-bg-container-1-normal"
-              :operator="operator"
-              :skill="skill"
-              :operator-state="operatorState"
-            />
-          </li>
+          <template v-for="(skill, index) in operator.skills" :key="skill.id">
+            <li v-if="skill">
+              <div class="anchor-ghost" :id="`skill-${index + 1}`" />
+              <OperatorSkillWidget
+                class="p-2 outline outline-1 outline-bg-container-1-normal"
+                :operator="operator"
+                :skill="skill"
+                :operator-state="operatorState"
+                :skill-number="index + 1"
+              />
+            </li>
+          </template>
         </ul>
       </div>
       <!-- Modules -->

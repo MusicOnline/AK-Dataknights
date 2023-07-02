@@ -125,11 +125,10 @@ export class Skill implements Localizable {
     )
   }
 
-  public static getAllFromData(data: Character): Skill[] {
-    return data.skills.flatMap((skillData) => {
-      if (!skillData.skillId) return []
-      return new Skill(skillData)
-    })
+  public static getAllFromData(data: Character): (Skill | null)[] {
+    return data.skills.map((skillData) =>
+      skillData.skillId ? new Skill(skillData) : null
+    )
   }
 
   public toData(): GeneratedSkillData {

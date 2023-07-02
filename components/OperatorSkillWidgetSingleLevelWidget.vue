@@ -35,7 +35,10 @@ const isInitialSpShown = computed<boolean>(
   () => levelData.value.skillType !== "PASSIVE" && isInitSpNotAlwaysZero.value
 )
 const isSpCostShown = computed<boolean>(
-  () => levelData.value.skillType !== "PASSIVE"
+  () =>
+    levelData.value.skillType !== "PASSIVE" &&
+    skill.levels[0].spData.spType !== "ON_DEPLOY" &&
+    !skill.levels.every(({ spData: { spCost } }) => spCost === 0)
 )
 const isDurationShown = computed<boolean>(() => levelData.value.duration > 0)
 const isAmmoSkill = computed<boolean>(() =>

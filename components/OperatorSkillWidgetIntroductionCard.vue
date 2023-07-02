@@ -39,7 +39,10 @@ const { t } = useI18n()
       <div class="flex gap-2 text-slate-900">
         <div
           class="px-2"
-          v-if="skill.levels[0].skillType !== 'PASSIVE'"
+          v-if="
+            skill.levels[0].skillType !== 'PASSIVE' &&
+            skill.levels[0].spData.spType !== 'ON_DEPLOY'
+          "
           :class="{
             'bg-green-400':
               skill.levels[0].spData.spType === 'INCREASE_WITH_TIME',

@@ -47,7 +47,7 @@ export type GeneratedOperatorData = {
   trustKeyFrames: KeyFrame[] | null
   potentials: GeneratedPotentialData[]
   talents: GeneratedTalentData[] | null
-  skills: GeneratedSkillData[]
+  skills: (GeneratedSkillData | null)[]
   traitCandidates: GeneratedTraitCandidateData[]
   modules: GeneratedModuleData[] | null
   tokenSummons: Record<string, GeneratedOperatorData>
@@ -102,7 +102,7 @@ export class Operator implements Localizable {
   trustKeyFrames: KeyFrame[] | null
   potentials: Potential[]
   talents: Talent[] | null
-  skills: Skill[]
+  skills: (Skill | null)[] // Token summons inherit summoner selected skill index
   traitCandidates: TraitCandidate[]
   modules: Module[] | null
   tokenSummons: Operator[]
@@ -158,7 +158,7 @@ export class Operator implements Localizable {
 
     this.skills.forEach((skill) => {
       if (
-        !skill.overrideTokenKey ||
+        !skill?.overrideTokenKey ||
         this.tokenSummons.find(({ id }) => id === skill.overrideTokenKey)
       )
         return
@@ -188,7 +188,7 @@ export class Operator implements Localizable {
       trustKeyFrames: this.trustKeyFrames,
       potentials: this.potentials.map((potential) => potential.toData()),
       talents: this.talents?.map((talent) => talent.toData()) ?? null,
-      skills: this.skills.map((skill) => skill.toData()),
+      skills: this.skills.map((skill) => skill?.toData() ?? null),
       traitCandidates: this.traitCandidates.map((candidate) =>
         candidate.toData()
       ),
@@ -227,7 +227,7 @@ export class Operator implements Localizable {
     )
     this.potentials.forEach((potential) => potential.addLocale(locale, data))
     this.talents?.forEach((talent) => talent.addLocale(locale, data))
-    this.skills.forEach((skill) => skill.addLocale(locale))
+    this.skills.forEach((skill) => skill?.addLocale(locale))
     this.traitCandidates.forEach((trait) => trait.addLocale(locale, data))
     this.modules?.forEach((module) => module.addLocale(locale))
     this.tokenSummons.forEach((summon) => summon.addLocale(locale, table))
@@ -244,7 +244,7 @@ export class Operator implements Localizable {
     )
     this.potentials.forEach((potential) => potential.addLocaleTL(locale, data))
     this.talents?.forEach((talent) => talent.addLocaleTL(locale, data))
-    this.skills.forEach((skill) => skill.addLocaleTL(locale, data))
+    this.skills.forEach((skill) => skill?.addLocaleTL(locale, data))
     this.traitCandidates.forEach((trait) => trait.addLocaleTL(locale, data))
     this.modules?.forEach((module) => module.addLocaleTL(locale, data))
     this.tokenSummons.forEach((summon) =>
@@ -280,6 +280,7 @@ export class Operator implements Localizable {
       return accumulator
     }, <{ [talentNumber: number]: any }>{})
     const skills = this.skills.reduce((accumulator, skill) => {
+      if (!skill) return accumulator
       // @nuxtjs/i18n key does not work with [] in it
       const escapedId = skill.id.replace(/\[/g, "<").replace(/\]/g, ">")
       accumulator[escapedId] = skill.toLocaleData(locale)
