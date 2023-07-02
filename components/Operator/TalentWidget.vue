@@ -5,6 +5,7 @@ import type {
   GeneratedTalentData,
 } from "~/tools/generate-data/operator/talent"
 import type { TalentState } from "~/utils"
+import { getBestTalentCandidate, getNextTalentCandidate } from "~/utils/talents"
 
 const { operator, elite, level, potential } = defineProps<{
   operator: GeneratedOperatorData
@@ -75,130 +76,6 @@ watch(
   }
 )
 
-type EliteAndLevel = {
-  elite: number
-  level: number
-}
-
-function isHigherLevel(a: EliteAndLevel, b: EliteAndLevel): boolean {
-  return a.elite > b.elite || (a.elite === b.elite && a.level > b.level)
-}
-
-function isLowerLevel(a: EliteAndLevel, b: EliteAndLevel): boolean {
-  return isHigherLevel(b, a)
-}
-
-function getBestTalentCandidate(
-  talent: GeneratedTalentData
-): GeneratedTalentCandidateData | null {
-  let bestCandidate: GeneratedTalentCandidateData | null = null
-  talent.candidates.forEach((candidate) => {
-    if (
-      // Insufficient level
-      isHigherLevel(candidate.unlockConditions, talentState.value) ||
-      // Insufficient potential
-      candidate.unlockConditions.potential > talentState.value.potential
-    )
-      return
-    if (!bestCandidate) {
-      bestCandidate = candidate
-      return
-    }
-    const attributes = ["elite", "level", "potential"] as const
-    if (
-      attributes.some(
-        (attribute) =>
-          candidate.unlockConditions[attribute] >
-          bestCandidate!.unlockConditions[attribute]
-      )
-    )
-      bestCandidate = candidate
-  })
-  return bestCandidate
-}
-
-function getNextTalentCandidate(
-  talent: GeneratedTalentData
-): GeneratedTalentCandidateData | null {
-  const bestCandidate = getBestTalentCandidate(talent)
-  let nextCandidate: GeneratedTalentCandidateData | null = null
-
-  talent.candidates.forEach((candidate) => {
-    /**
-     * Case 1: No best cand, no next cand yet
-     * Procedure: Assign any cand to next cand
-     */
-    if (!bestCandidate && !nextCandidate) {
-      nextCandidate = candidate
-      return
-    }
-    /**
-     * Case 2: No best cand, but next cand exists
-     * Procedure:
-     * Assign to next cand if lower level, higher pot than next cand,
-     * but cand pot still lower than or equal to current pot state.
-     */
-    if (
-      !bestCandidate &&
-      nextCandidate &&
-      isLowerLevel(
-        candidate.unlockConditions,
-        nextCandidate.unlockConditions
-      ) &&
-      candidate.unlockConditions.potential <= talentState.value.potential &&
-      candidate.unlockConditions.potential >=
-        nextCandidate.unlockConditions.potential
-    ) {
-      nextCandidate = candidate
-      return
-    }
-    /**
-     * Case 3: Best cand exists, but no next cand (may or may not exist)
-     * Procedure:
-     * Assign to next cand if higher level than and same pot as best cand.
-     */
-    if (
-      bestCandidate &&
-      !nextCandidate &&
-      isHigherLevel(
-        candidate.unlockConditions,
-        bestCandidate.unlockConditions
-      ) &&
-      candidate.unlockConditions.potential ===
-        bestCandidate.unlockConditions.potential
-    ) {
-      nextCandidate = candidate
-      return
-    }
-    /**
-     * Case 4: Best cand and next cand exists
-     * Procedure:
-     * Assign to next cand if higher level than best cand,
-     * lower level than and same pot as next cand.
-     * No need to check pot equality with best cand due to Case 3 procedure.
-     */
-    if (
-      bestCandidate &&
-      nextCandidate &&
-      isHigherLevel(
-        candidate.unlockConditions,
-        bestCandidate.unlockConditions
-      ) &&
-      isLowerLevel(
-        candidate.unlockConditions,
-        nextCandidate.unlockConditions
-      ) &&
-      candidate.unlockConditions.potential ===
-        nextCandidate.unlockConditions.potential
-    ) {
-      nextCandidate = candidate
-      return
-    }
-  })
-
-  return nextCandidate
-}
-
 const talentsAndBestAndNextCandidate = computed<
   [
     GeneratedTalentData,
@@ -207,11 +84,17 @@ const talentsAndBestAndNextCandidate = computed<
   ][]
 >(
   () =>
-    operator.talents?.map((talent) => [
-      talent,
-      getBestTalentCandidate(talent),
-      getNextTalentCandidate(talent),
-    ]) || []
+    operator.talents?.flatMap((talent) =>
+      talent.hasName
+        ? [
+            [
+              talent,
+              getBestTalentCandidate(talent, talentState.value),
+              getNextTalentCandidate(talent, talentState.value),
+            ],
+          ]
+        : []
+    ) || []
 )
 </script>
 

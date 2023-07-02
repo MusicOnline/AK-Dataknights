@@ -2,8 +2,13 @@
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { GeneratedElitePhaseData } from "~/tools/generate-data/operator/elite"
 import type { GeneratedSkillData } from "~/tools/generate-data/operator/skill"
+import type {
+  GeneratedTalentCandidateData,
+  GeneratedTalentData,
+} from "~/tools/generate-data/operator/talent"
 import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait"
 import type { OperatorState } from "~/utils"
+import { getBestTalentCandidate, getNextTalentCandidate } from "~/utils/talents"
 
 const { operator, tokenSummon, operatorState } = defineProps<{
   operator: GeneratedOperatorData
@@ -84,10 +89,32 @@ const currentSkill = computed<GeneratedSkillData | null>(() => {
   if (!currentSkill) return null
   return currentSkill
 })
+
+const currentTalentsAndCandidates = computed<
+  [
+    GeneratedTalentData,
+    GeneratedTalentCandidateData | null,
+    GeneratedTalentCandidateData | null
+  ][]
+>(
+  () =>
+    tokenSummon.talents?.flatMap((talent) =>
+      talent.hasName
+        ? [
+            [
+              talent,
+              getBestTalentCandidate(talent, operatorState),
+              getNextTalentCandidate(talent, operatorState),
+            ],
+          ]
+        : []
+    ) || []
+)
 </script>
 
 <template>
   <div class="flex flex-col gap-2">
+    <!-- Icon & trait -->
     <div class="flex w-fit flex-wrap justify-center gap-2 sm:flex-nowrap">
       <img
         class="m-auto h-16 w-16 bg-slate-900 object-contain p-0.5 sm:m-0 sm:h-fit"
@@ -110,7 +137,7 @@ const currentSkill = computed<GeneratedSkillData | null>(() => {
         />
       </div>
     </div>
-    <!-- Talents -->
+    <!-- Range & attributes -->
     <div
       class="flex flex-wrap justify-center gap-1 sm:flex-nowrap sm:justify-start lg:gap-8"
     >
@@ -127,6 +154,66 @@ const currentSkill = computed<GeneratedSkillData | null>(() => {
         :operator-state="operatorState"
       />
     </div>
+    <!-- Talents -->
+    <ul class="flex flex-col gap-2" v-if="currentTalentsAndCandidates.length">
+      <li
+        v-for="[
+          talent,
+          bestCandidate,
+          nextCandidate,
+        ] in currentTalentsAndCandidates"
+        :key="talent.talentNumber"
+      >
+        <template v-if="bestCandidate">
+          <div class="w-fit bg-bg-primary px-1 py-0.5 text-xs text-fg-primary">
+            {{
+              t(
+                `${tokenSummonKey}.talents.${talent.talentNumber}.${bestCandidate.key}.name`
+              )
+            }}
+          </div>
+          <div>
+            <span
+              v-html="
+                convertRichText(
+                  t(
+                    `${tokenSummonKey}.talents.${talent.talentNumber}.${bestCandidate.key}.description`
+                  )
+                )
+              "
+            />
+          </div>
+        </template>
+        <template class="block" v-else-if="nextCandidate">
+          <div class="w-fit bg-slate-500 px-1 py-0.5 text-xs text-slate-50">
+            {{
+              t(
+                `${operator.key}.talents.${talent.talentNumber}.${nextCandidate.key}.name`
+              )
+            }}
+          </div>
+          <div class="flex items-center gap-1">
+            <Icon name="heroicons:lock-closed-solid" />
+            <div v-if="nextCandidate.unlockConditions.level === 1">
+              {{
+                t(
+                  "operator.ui.unlocksAtSpecificElite",
+                  nextCandidate.unlockConditions
+                )
+              }}
+            </div>
+            <div v-else>
+              {{
+                t(
+                  "operator.ui.unlocksAtSpecificEliteAndLevel",
+                  nextCandidate.unlockConditions
+                )
+              }}
+            </div>
+          </div>
+        </template>
+      </li>
+    </ul>
     <!-- Skills -->
     <template v-if="currentSkill">
       <OperatorSkillWidgetIntroductionCard

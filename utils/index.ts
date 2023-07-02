@@ -1,4 +1,4 @@
-import { GeneratedOperatorData } from "~/tools/generate-data/operator"
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 
 export type OperatorState = {
   elite: number

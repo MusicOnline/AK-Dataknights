@@ -79,6 +79,7 @@ export class TalentCandidate implements Localizable {
 export type GeneratedTalentData = {
   talentNumber: number
   candidates: GeneratedTalentCandidateData[]
+  hasName: boolean
 }
 
 export class Talent implements Localizable {
@@ -104,6 +105,7 @@ export class Talent implements Localizable {
     return {
       talentNumber: this.talentNumber,
       candidates: this.candidates.map((candidate) => candidate.toData()),
+      hasName: this.candidates.some((candidate) => candidate.name),
     }
   }
 
