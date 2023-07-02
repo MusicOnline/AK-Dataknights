@@ -27,6 +27,7 @@ export type GeneratedSkillLevelData = {
   duration: number
   durationType: DurationTypeEnum
   spData: GeneratedSpData
+  hasDescription: boolean
 }
 
 export type GeneratedSkillData = {
@@ -69,6 +70,7 @@ export class SkillLevel implements Localizable {
       duration: this.duration,
       durationType: this.durationType,
       spData: this.spData,
+      hasDescription: Boolean(this.description),
     }
   }
 

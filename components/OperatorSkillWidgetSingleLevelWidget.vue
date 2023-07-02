@@ -31,11 +31,26 @@ const previousLevelData = computed<GeneratedSkillLevelData | undefined>(
 const isInitSpNotAlwaysZero = computed<boolean>(() =>
   skill.levels.some(({ spData: { initSp } }) => initSp !== 0)
 )
+const isInitialSpShown = computed<boolean>(
+  () => levelData.value.skillType !== "PASSIVE" && isInitSpNotAlwaysZero.value
+)
+const isSpCostShown = computed<boolean>(
+  () => levelData.value.skillType !== "PASSIVE"
+)
+const isDurationShown = computed<boolean>(() => levelData.value.duration > 0)
 const isAmmoSkill = computed<boolean>(() =>
   Boolean(
     skill.levels[0].durationType === "AMMO" &&
       skill.levels[0].variables.find(({ key }) => key === "attack@trigger_time")
   )
+)
+const isSpDurationAmmoRowUsed = computed<boolean>(() =>
+  [
+    isInitialSpShown.value,
+    isSpCostShown.value,
+    isDurationShown.value,
+    isAmmoSkill.value,
+  ].some((val) => val)
 )
 
 function accessDeepestAttribute(
@@ -102,11 +117,11 @@ function getComparisonColorClass(
 
 <template>
   <div class="flex flex-col gap-2">
-    <div class="flex flex-wrap items-center gap-2 font-bold">
-      <div
-        class="flex bg-bg-container-1-focus"
-        v-if="levelData.skillType !== 'PASSIVE' && isInitSpNotAlwaysZero"
-      >
+    <div
+      class="flex flex-wrap items-center gap-2 font-bold"
+      v-if="isSpDurationAmmoRowUsed"
+    >
+      <div class="flex bg-bg-container-1-focus" v-if="isInitialSpShown">
         <div
           class="flex items-center gap-0.5 bg-bg-primary p-1 text-fg-primary"
         >
@@ -126,7 +141,7 @@ function getComparisonColorClass(
           />
         </div>
       </div>
-      <div class="flex" v-if="levelData.skillType !== 'PASSIVE'">
+      <div class="flex" v-if="isSpCostShown">
         <div
           class="flex items-center gap-0.5 bg-bg-primary p-1 text-fg-primary"
         >
@@ -146,7 +161,7 @@ function getComparisonColorClass(
           />
         </div>
       </div>
-      <div class="flex" v-if="levelData.duration > 0">
+      <div class="flex" v-if="isDurationShown">
         <div
           class="flex items-center gap-0.5 bg-bg-primary p-1 text-fg-primary"
         >
@@ -207,6 +222,7 @@ function getComparisonColorClass(
       </div>
     </div>
     <div
+      v-if="levelData.hasDescription"
       v-html="
         convertRichText(
           t(

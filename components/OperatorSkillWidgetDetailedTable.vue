@@ -9,6 +9,10 @@ const { skill } = defineProps<{
 
 const { t, locale } = useI18n()
 
+const hasDescription = computed<boolean>(() =>
+  skill.levels.some((level) => level.hasDescription)
+)
+
 const initSpRowSpanValues = computed<number[]>(() =>
   getRowSpanValuesForEqualValues(
     skill.levels.map(({ spData: { initSp } }) => initSp)
@@ -106,7 +110,9 @@ function getRowSpanValuesForEqualValues(values: any[]): number[] {
         >
           {{ key }}
         </th>
-        <th>{{ t("operator.skill.skillDescription") }}</th>
+        <th v-if="hasDescription">
+          {{ t("operator.skill.skillDescription") }}
+        </th>
         <th v-if="hasRange">
           {{ t("operator.attribute.attackRange") }}
         </th>
@@ -181,14 +187,16 @@ function getRowSpanValuesForEqualValues(values: any[]): number[] {
         <td
           class="description text-sm"
           v-html="
-            convertRichText(
-              t(
-                `${operator.key}.skills.${skill.id
-                  .replace(/\[/g, '<')
-                  .replace(/\]/g, '>')}.${level.level}.description`
-              ),
-              { replace: level.variables }
-            )
+            hasDescription
+              ? convertRichText(
+                  t(
+                    `${operator.key}.skills.${skill.id
+                      .replace(/\[/g, '<')
+                      .replace(/\]/g, '>')}.${level.level}.description`
+                  ),
+                  { replace: level.variables }
+                )
+              : '-'
           "
         />
         <td

@@ -40,7 +40,10 @@ const tokenSummon = computed<GeneratedOperatorData | null>(() => {
   <div class="flex flex-col gap-4 overflow-x-auto">
     <div class="flex flex-wrap gap-2">
       <!-- Name, SP recovery type, activation type -->
-      <OperatorSkillIntroductionCard :operator="operator" :skill="skill" />
+      <OperatorSkillWidgetIntroductionCard
+        :operator="operator"
+        :skill="skill"
+      />
       <!-- Skill level selector -->
       <div
         class="ml-auto flex items-center gap-2"
@@ -83,13 +86,13 @@ const tokenSummon = computed<GeneratedOperatorData | null>(() => {
         </button>
       </div>
     </div>
-    <OperatorSkillDetailedTable
+    <OperatorSkillWidgetDetailedTable
       class="mr-auto"
       v-if="isAdvancedViewEnabled"
       :operator="operator"
       :skill="skill"
     />
-    <OperatorSkillSingleLevelWidget
+    <OperatorSkillWidgetSingleLevelWidget
       v-else
       :operator="operator"
       :skill="skill"

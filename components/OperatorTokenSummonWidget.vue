@@ -129,13 +129,13 @@ const currentSkill = computed<GeneratedSkillData | null>(() => {
     </div>
     <!-- Skills -->
     <template v-if="currentSkill">
-      <OperatorSkillIntroductionCard
+      <OperatorSkillWidgetIntroductionCard
         :operator="tokenSummon"
         :override-operator-key="tokenSummonKey"
         :skill="currentSkill"
         :small="true"
       />
-      <OperatorSkillSingleLevelWidget
+      <OperatorSkillWidgetSingleLevelWidget
         class="text-sm"
         :operator="tokenSummon"
         :override-operator-key="tokenSummonKey"
