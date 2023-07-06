@@ -1,18 +1,10 @@
 import * as z from "zod"
 
 import { CoerceEnumKeyOf, CoerceEnumValueOf } from "../utils"
-import { BlackboardSchema } from "./common"
+import { BlackboardSchema, PhaseEnum } from "./common"
 
 export const LvlUpCostType = z.enum(["MATERIAL"])
 export type LvlUpCostType = z.infer<typeof LvlUpCostType>
-
-export enum PhaseNumber {
-  PHASE_0 = 0,
-  PHASE_1 = 1,
-  PHASE_2 = 2,
-}
-export const PhaseEnum = z.nativeEnum(PhaseNumber)
-export type PhaseEnum = z.infer<typeof PhaseEnum>
 
 export const PositionSchema = z.enum(["ALL", "MELEE", "NONE", "RANGED"])
 export type Position = z.infer<typeof PositionSchema>

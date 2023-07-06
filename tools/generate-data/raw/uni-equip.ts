@@ -1,5 +1,8 @@
 import * as z from "zod"
 
+import { CoerceEnumValueOf } from "../utils"
+import { PhaseEnum } from "./common"
+
 export const EquipShiningColorSchema = z.enum([
   "blue",
   "green",
@@ -34,8 +37,8 @@ export const EquipDictSchema = z.object({
   typeName1: z.string(),
   typeName2: TypeName2Schema.nullable(),
   equipShiningColor: EquipShiningColorSchema,
-  showEvolvePhase: z.number(),
-  unlockEvolvePhase: z.number(),
+  showEvolvePhase: CoerceEnumValueOf(PhaseEnum),
+  unlockEvolvePhase: CoerceEnumValueOf(PhaseEnum),
   charId: z.string(),
   tmplId: z.null(),
   showLevel: z.number(),
