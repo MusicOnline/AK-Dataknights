@@ -16,7 +16,7 @@
     "@types/node": "^18.8.0",
     "floating-vue": "^2.0.0-beta.20",
     "import-sort-style-module": "^6.0.0",
-    "nuxt": "^3.5.1",
+    "nuxt": "^3.6.2",
     "nuxt-icon": "^0.1.7",
     "nuxt-lodash": "^2.4.1",
     "postcss": "^8.4.19",
