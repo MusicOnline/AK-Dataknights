@@ -54624,196 +54624,6 @@
     },
     "tokenSummons": {}
   },
-  "santalla": {
-    "name": "Santalla",
-    "appellation": null,
-    "description": null,
-    "potentials": {
-      "2": {
-        "description": null
-      },
-      "3": {
-        "description": null
-      },
-      "4": {
-        "description": null
-      },
-      "5": {
-        "description": null
-      },
-      "6": {
-        "description": null
-      }
-    },
-    "talents": {
-      "1": {
-        "E1-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E1-L1-P5": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P5": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "skills": {
-      "skcom_quickattack<3>": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      },
-      "skchr_sntlla_2": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "traitCandidates": {
-      "E0-L1": {
-        "description": null
-      }
-    },
-    "modules": {
-      "uniequip_001_sntlla": {
-        "name": null,
-        "description": null
-      },
-      "uniequip_002_sntlla": {
-        "name": null,
-        "description": null,
-        "stages": {
-          "1": {
-            "traitUpgrade": {
-              "description": null
-            },
-            "talentUpgrades": {}
-          },
-          "2": {
-            "traitUpgrade": {
-              "description": null
-            },
-            "talentUpgrades": {
-              "1": {
-                "candidates": {
-                  "1": {
-                    "name": null,
-                    "description": null
-                  },
-                  "5": {
-                    "name": null,
-                    "description": null
-                  }
-                }
-              }
-            }
-          },
-          "3": {
-            "traitUpgrade": {
-              "description": null
-            },
-            "talentUpgrades": {
-              "1": {
-                "candidates": {
-                  "1": {
-                    "name": null,
-                    "description": null
-                  },
-                  "5": {
-                    "name": null,
-                    "description": null
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "tokenSummons": {}
-  },
   "typhon": {
     "name": "Typhon",
     "appellation": null,
@@ -55047,6 +54857,196 @@
               "2": {
                 "candidates": {
                   "1": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {}
+  },
+  "santalla": {
+    "name": "Santalla",
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skcom_quickattack<3>": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_sntlla_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_sntlla": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_sntlla": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "description": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
                 }
               }
             }
