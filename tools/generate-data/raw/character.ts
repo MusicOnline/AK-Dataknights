@@ -107,6 +107,7 @@ export enum SubProfession {
   Abjurer = "blessing",
   Summoner = "summoner",
   Artificer = "craftsman",
+  Ritualist = "ritualist",
   // Specialist
   Executor = "executor",
   PushStroker = "pusher",
@@ -153,6 +154,7 @@ export enum Tag {
   费用回复 = "DP_RECOVERY",
   输出 = "DPS",
   防护 = "DEFENSE",
+  元素 = "ELEMENTAL",
 }
 export const TagEnum = z.nativeEnum(Tag)
 export type TagEnum = z.infer<typeof TagEnum>

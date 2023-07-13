@@ -52,7 +52,8 @@
       "FAST_REDEPLOY": "쾌속부활",
       "SHIFT": "강제이동",
       "SUMMON": "소환",
-      "ROBOT": "로봇"
+      "ROBOT": "로봇",
+      "ELEMENTAL": "원소"
     },
     "gender": {
       "MALE": "남성",

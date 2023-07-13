@@ -105,7 +105,8 @@
       "FAST_REDEPLOY": "Fast-Redeploy",
       "SHIFT": "Shift",
       "SUMMON": "Summon",
-      "ROBOT": "Robot"
+      "ROBOT": "Robot",
+      "ELEMENTAL": "Elemental"
     },
     "gender": {
       "MALE": "Male",
@@ -172,7 +173,8 @@
       "agent": "Agent",
       "shotprotector": "Sentinel Protector",
       "chainhealer": "Chain Medic",
-      "crusher": "Crusher"
+      "crusher": "Crusher",
+      "ritualist": "Ritualist"
     },
     "attribute": {
       "maxHp": "HP",

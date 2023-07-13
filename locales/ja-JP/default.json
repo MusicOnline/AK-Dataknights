@@ -52,7 +52,8 @@
       "FAST_REDEPLOY": "高速再配置",
       "SHIFT": "強制移動",
       "SUMMON": "召喚",
-      "ROBOT": "ロボット"
+      "ROBOT": "ロボット",
+      "ELEMENTAL": "元素"
     },
     "gender": {
       "MALE": "男性",

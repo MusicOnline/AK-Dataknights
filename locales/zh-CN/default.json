@@ -52,7 +52,8 @@
       "FAST_REDEPLOY": "快速复活",
       "SHIFT": "位移",
       "SUMMON": "召唤",
-      "ROBOT": "支援机械"
+      "ROBOT": "支援机械",
+      "ELEMENTAL": "元素"
     },
     "gender": {
       "MALE": "男性",
@@ -119,7 +120,8 @@
       "agent": "情报官",
       "shotprotector": "哨戒铁卫",
       "chainhealer": "链愈师",
-      "crusher": "重剑手"
+      "crusher": "重剑手",
+      "ritualist": "巫役"
     },
     "attribute": {
       "atk": "攻击力",
