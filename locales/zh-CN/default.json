@@ -189,7 +189,8 @@
       "moduleDescription": "强化描述",
       "stage": "等级",
       "selectModule": "选择模组",
-      "moduleSelected": "当前模组"
+      "moduleSelected": "当前模组",
+      "originalModuleName": "{name}证章"
     },
     "meta": {
       "title": "{name} — {rarity}★ {class} ({branch})"

@@ -8,6 +8,7 @@ import {
 import { Blackboard } from "../raw/common"
 import { EquipDict, EquipDictType } from "../raw/uni-equip"
 import { LocaleString, Localizable } from "../utils"
+import { Talent } from "./talent"
 
 export type GeneratedModuleData = {
   id: string
@@ -142,11 +143,19 @@ export class Module implements Localizable {
     this.stages?.forEach((stage) => stage.addLocale(locale, battleEquipData))
   }
 
-  public addLocaleTL(locale: constants.TranslatedLocale, data: any): void {
+  public addLocaleTL(
+    locale: constants.TranslatedLocale,
+    data: any,
+    talents?: Talent[] | null
+  ): void {
     this.name.addLocaleTL(locale, data?.modules?.[this.id]?.name)
     this.description.addLocaleTL(locale, data?.modules?.[this.id]?.description)
     this.stages?.forEach((stage, index) =>
-      stage.addLocaleTL(locale, data?.modules?.[this.id]?.stages?.[index])
+      stage.addLocaleTL(
+        locale,
+        data?.modules?.[this.id]?.stages?.[index],
+        talents
+      )
     )
   }
 
@@ -259,10 +268,18 @@ export class ModuleStage implements Localizable {
     this.traitUpgrade.addLocale(locale, traitDescription!)
   }
 
-  public addLocaleTL(locale: constants.TranslatedLocale, data: any): void {
+  public addLocaleTL(
+    locale: constants.TranslatedLocale,
+    data: any,
+    talents?: Talent[] | null
+  ): void {
     this.traitUpgrade.addLocaleTL(locale, data?.traitUpgrade)
     this.talentUpgrades.forEach((upgrade) =>
-      upgrade.addLocaleTL(locale, data?.talentUpgrades?.[upgrade.index])
+      upgrade.addLocaleTL(
+        locale,
+        data?.talentUpgrades?.[upgrade.index],
+        talents
+      )
     )
   }
 
@@ -346,9 +363,13 @@ export class TalentUpgrade implements Localizable {
     })
   }
 
-  public addLocaleTL(locale: constants.TranslatedLocale, data: any): void {
+  public addLocaleTL(
+    locale: constants.TranslatedLocale,
+    data: any,
+    talents?: Talent[] | null
+  ): void {
     this.candidates.forEach((candidate, index) => {
-      candidate.addLocaleTL(locale, data?.candidates?.[index])
+      candidate.addLocaleTL(locale, data?.candidates?.[index], talents)
     })
   }
 
@@ -406,8 +427,33 @@ export class TalentUpgradeCandidate implements Localizable {
     this.description?.addLocale(locale, candidate.upgradeDescription)
   }
 
-  public addLocaleTL(locale: constants.TranslatedLocale, data: any): void {
-    this.name?.addLocaleTL(locale, data?.name)
+  public addLocaleTL(
+    locale: constants.TranslatedLocale,
+    data: any,
+    talents?: Talent[] | null
+  ): void {
+    const gameLocale = constants.TRANSLATED_TO_GAME_LOCALE[locale]
+    // Auto translate if no official localization yet
+    let translatedName = data?.name
+    if (
+      !translatedName &&
+      this.name?.zh_CN &&
+      !this.name.getString(gameLocale) &&
+      talents
+    ) {
+      for (const talent of talents) {
+        for (const candidate of talent.candidates) {
+          if (candidate.name?.zh_CN === this.name.zh_CN) {
+            translatedName =
+              candidate.name.getString(locale) ??
+              candidate.name.getString(gameLocale)
+            break
+          }
+        }
+        if (translatedName) break
+      }
+    }
+    this.name?.addLocaleTL(locale, translatedName)
     this.description?.addLocaleTL(locale, data?.description)
   }
 

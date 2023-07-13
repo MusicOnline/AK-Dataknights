@@ -15,8 +15,9 @@ dist
 !data/.game-data-sha
 !data/custom
 
-# Generated locales from game data, does not need to be in repository (unlike en-TL)
-locales/en-US/*-data.json
-locales/ja-JP/*-data.json
-locales/ko-KR/*-data.json
-locales/zh-CN/*-data.json
+# Generated locales from game data, does not need to be in repository
+# Unless for translation memory in localization tools
+# locales/en-US/*-data.json
+# locales/ja-JP/*-data.json
+# locales/ko-KR/*-data.json
+# locales/zh-CN/*-data.json

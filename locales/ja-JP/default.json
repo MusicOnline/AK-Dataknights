@@ -188,7 +188,8 @@
       "moduleDescription": "強化説明",
       "stage": "STAGE",
       "selectModule": "モジュールを選択",
-      "moduleSelected": "選択済み"
+      "moduleSelected": "選択済み",
+      "originalModuleName": "{name}の記章"
     },
     "meta": {
       "title": "{name} — ★{rarity} {class}（{branch}）"

@@ -217,7 +217,8 @@
       "moduleSelected": "Module Selected",
       "stage": "Stage",
       "attributes": "Stats",
-      "moduleDescription": "Upgrade Description"
+      "moduleDescription": "Upgrade Description",
+      "originalModuleName": "{name}'s Badge"
     }
   }
 }

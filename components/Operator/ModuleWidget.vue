@@ -3,7 +3,7 @@ import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { GeneratedModuleData } from "~/tools/generate-data/operator/module"
 import type { ModuleState } from "~/utils"
 
-const { module, potential } = defineProps<{
+const { operator, module, potential } = defineProps<{
   operator: GeneratedOperatorData
   module: GeneratedModuleData
   potential: number // ModuleState, affected by OperatorState
@@ -44,6 +44,14 @@ const combinedModuleTypeName = computed<string>(() => {
   return `${module.typeName1}-${module.typeName2}`
 })
 
+const moduleName = computed<string>(() =>
+  combinedModuleTypeName.value === "ORIGINAL"
+    ? t(`operator.module.originalModuleName`, {
+        name: t(`${operator.key}.name`),
+      })
+    : t(`${operator.key}.modules.${module.id}.name`)
+)
+
 watch(
   () => potential,
   () => {
@@ -73,7 +81,7 @@ watch(
         <div class="flex flex-col">
           <div class="text-sm font-bold">{{ combinedModuleTypeName }}</div>
           <div>
-            {{ t(`${operator.key}.modules.${module.id}.name`) }}
+            {{ moduleName }}
           </div>
         </div>
       </div>
@@ -272,5 +280,7 @@ tbody tr:nth-child(odd):not(:hover) td:not(:first-child) {
 <i18n locale="en-US" src="~/locales/en-US/operators-data.json"></i18n>
 <i18n locale="en-TL" src="~/locales/en-TL/operators-data.json"></i18n>
 <i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
+<i18n locale="ja-TL" src="~/locales/ja-TL/operators-data.json"></i18n>
 <i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
+<i18n locale="ko-TL" src="~/locales/ko-TL/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>

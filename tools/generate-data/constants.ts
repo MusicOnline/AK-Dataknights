@@ -11,8 +11,14 @@ export const GAME_LOCALES = [
 ] as const
 export type GameLocale = (typeof GAME_LOCALES)[number]
 
-export const TRANSLATED_LOCALES = ["en-TL"] as const
+export const TRANSLATED_LOCALES = ["en-TL", "ja-TL", "ko-TL"] as const
 export type TranslatedLocale = (typeof TRANSLATED_LOCALES)[number]
+
+export const TRANSLATED_TO_GAME_LOCALE: Record<TranslatedLocale, GameLocale> = {
+  "en-TL": "en-US",
+  "ja-TL": "ja-JP",
+  "ko-TL": "ko-KR",
+} as const
 
 export const OUTPUT_LOCALES = [...GAME_LOCALES, ...TRANSLATED_LOCALES] as const
 export type OutputLocale = (typeof OUTPUT_LOCALES)[number]

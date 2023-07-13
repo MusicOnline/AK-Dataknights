@@ -185,7 +185,8 @@
       "stage": "레벨",
       "selectModule": "모듈 선택",
       "moduleSelected": "선택된 모듈",
-      "attributes": "스탯"
+      "attributes": "스탯",
+      "originalModuleName": "{name}의 배지"
     },
     "meta": {
       "title": "{name} — {rarity}★ {class} ({branch})"

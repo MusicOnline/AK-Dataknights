@@ -236,8 +236,7 @@ export class Operator implements Localizable {
   }
 
   public addLocaleTL(locale: constants.TranslatedLocale, table: LocaleObject) {
-    const data: LocaleObject | undefined = <LocaleObject>table[this.key]
-    if (!data) return
+    const data: LocaleObject = <LocaleObject>table[this.key] ?? {}
 
     Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) =>
       this[attribute]?.addLocaleTL(locale, <string>data[attribute])
@@ -246,7 +245,9 @@ export class Operator implements Localizable {
     this.talents?.forEach((talent) => talent.addLocaleTL(locale, data))
     this.skills.forEach((skill) => skill?.addLocaleTL(locale, data))
     this.traitCandidates.forEach((trait) => trait.addLocaleTL(locale, data))
-    this.modules?.forEach((module) => module.addLocaleTL(locale, data))
+    this.modules?.forEach((module) =>
+      module.addLocaleTL(locale, data, this.talents)
+    )
     this.tokenSummons.forEach((summon) =>
       summon.addLocaleTL(locale, <LocaleObject>data.tokenSummons ?? {})
     )

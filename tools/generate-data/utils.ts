@@ -56,6 +56,12 @@ export class LocaleString implements Localizable {
     this.addLocaleCommon(locale, translation)
   }
 
+  public getString(
+    locale: constants.OutputLocale | UnderscoreOutputLocale
+  ): string | null {
+    return this[this.underscorifyLocale(locale)]
+  }
+
   public toLocaleData(locale: constants.OutputLocale | UnderscoreOutputLocale) {
     return normalizeForLocaleFile(this[this.underscorifyLocale(locale)] ?? null)
   }

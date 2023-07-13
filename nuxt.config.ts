@@ -108,8 +108,8 @@ export default defineNuxtConfig({
         // Issue: en falls back to en-US before en-TL
         en: ["en-TL", "en-US", "zh-CN"],
         zh: ["zh-CN"],
-        ja: ["ja-JP", "zh-CN"],
-        ko: ["ko-KR", "zh-CN"],
+        ja: ["ja-TL", "ja-JP", "zh-CN"],
+        ko: ["ko-TL", "ko-KR", "zh-CN"],
         default: ["en-TL", "en-US", "zh-CN"],
       },
       messages: {

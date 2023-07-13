@@ -243,5 +243,7 @@ const talentsAndBestAndNextCandidate = computed<
 <i18n locale="en-US" src="~/locales/en-US/operators-data.json"></i18n>
 <i18n locale="en-TL" src="~/locales/en-TL/operators-data.json"></i18n>
 <i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
+<i18n locale="ja-TL" src="~/locales/ja-TL/operators-data.json"></i18n>
 <i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
+<i18n locale="ko-TL" src="~/locales/ko-TL/operators-data.json"></i18n>
 <i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>

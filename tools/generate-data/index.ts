@@ -25,6 +25,7 @@ async function generateOperatorFiles() {
         encoding: "utf-8",
       })
       .then((data) => (translatedLocaleData[locale] = JSON.parse(data)))
+      .catch(() => (translatedLocaleData[locale] = {}))
     promises.push(promise)
   }
   await Promise.all(promises)
