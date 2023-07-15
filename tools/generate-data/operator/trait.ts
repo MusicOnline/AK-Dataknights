@@ -102,10 +102,21 @@ export class TraitCandidate implements Localizable {
   }
 
   public addLocaleTL(locale: constants.TranslatedLocale, data: any) {
-    this.description.addLocaleTL(
-      locale,
-      data?.traitCandidates?.[this.key]?.description
-    )
+    if (
+      typeof this.description?.getString(
+        constants.TRANSLATED_TO_GAME_LOCALE[locale]
+      ) !== "string"
+    ) {
+      this.description?.addLocaleTL(
+        locale,
+        globalThis.TRAIT_LOCALES![locale][this.description.zh_CN]
+      )
+    } else {
+      this.description.addLocaleTL(
+        locale,
+        data?.traitCandidates?.[this.key]?.description
+      )
+    }
   }
 
   public toLocaleData(locale: constants.OutputLocale) {

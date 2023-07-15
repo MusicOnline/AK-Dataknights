@@ -238,9 +238,19 @@ export class Operator implements Localizable {
   public addLocaleTL(locale: constants.TranslatedLocale, table: LocaleObject) {
     const data: LocaleObject = <LocaleObject>table[this.key] ?? {}
 
-    Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) =>
-      this[attribute]?.addLocaleTL(locale, <string>data[attribute])
+    if (
+      typeof this.description?.getString(
+        constants.TRANSLATED_TO_GAME_LOCALE[locale]
+      ) !== "string"
     )
+      this.description?.addLocaleTL(
+        locale,
+        globalThis.TRAIT_LOCALES![locale][this.description.zh_CN]
+      )
+    Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach((attribute) => {
+      if (attribute === "description") return
+      this[attribute]?.addLocaleTL(locale, <string>data[attribute])
+    })
     this.potentials.forEach((potential) => potential.addLocaleTL(locale, data))
     this.talents?.forEach((talent) => talent.addLocaleTL(locale, data))
     this.skills.forEach((skill) => skill?.addLocaleTL(locale, data))

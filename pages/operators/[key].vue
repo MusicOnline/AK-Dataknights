@@ -292,6 +292,7 @@ watch(
               :potential="operatorState.potential"
               :operator="operator"
               :module="mod"
+              :operator-state="operatorState"
             />
           </li>
         </ul>

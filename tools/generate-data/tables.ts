@@ -4,13 +4,20 @@ import path from "path"
 
 import * as z from "zod"
 
-import { GAME_LOCALES, GameLocale, ORIGINAL_LOCALE } from "./constants"
+import {
+  GAME_LOCALES,
+  GameLocale,
+  ORIGINAL_LOCALE,
+  TRANSLATED_LOCALES,
+  TranslatedLocale,
+} from "./constants"
 import { BattleEquipTable, BattleEquipTableSchema } from "./raw/battle-equip"
 import { CharacterTable, CharacterTableSchema } from "./raw/character"
 import { RangeTable, RangeTableSchema } from "./raw/range"
 import { SkillTable, SkillTableSchema } from "./raw/skill"
 import { SkinTable, SkinTableSchema } from "./raw/skin"
 import { UniEquipTable, UniEquipTableSchema } from "./raw/uni-equip"
+import { normalizeForLocaleFile } from "./utils"
 
 export const OPERATOR_TABLE_PATH = "gamedata/excel/character_table.json"
 export const MODULE_TABLE_PATH = "gamedata/excel/uniequip_table.json"
@@ -31,11 +38,15 @@ export type GameTableMap = {
   BattleEquip: LocaleTableMap<BattleEquipTable>
 }
 
+export type TraitLocalesMap = Record<TranslatedLocale, Record<string, string>>
+
 declare global {
   var GAME_TABLES: GameTableMap | null
+  var TRAIT_LOCALES: TraitLocalesMap | null
 }
 
 if (!globalThis.GAME_TABLES) globalThis.GAME_TABLES = null
+if (!globalThis.TRAIT_LOCALES) globalThis.TRAIT_LOCALES = null
 
 function getFilePath(locale: GameLocale, location: string): string {
   return path.join(
@@ -153,5 +164,36 @@ export async function requireAllGameTablesAsync(): Promise<GameTableMap> {
     Skill: await map.Skill,
     UniEquip: await map.UniEquip,
     BattleEquip: await map.BattleEquip,
+  }
+}
+
+export function requireTraitLocalesSync(): TraitLocalesMap {
+  return <TraitLocalesMap>TRANSLATED_LOCALES.reduce((accumulator, current) => {
+    try {
+      accumulator[current] = requireByReadFileSync(
+        path.join("locales", current, "traits.json")
+      )
+    } catch {
+      accumulator[current] = {}
+    }
+    return accumulator
+  }, <Partial<TraitLocalesMap>>{})
+}
+
+export async function requireTraitLocalesAsync(): Promise<TraitLocalesMap> {
+  const map = <Record<TranslatedLocale, Promise<any>>>TRANSLATED_LOCALES.reduce(
+    (accumulator, current) => {
+      accumulator[current] = requireByReadFileAsync(
+        path.join("locales", current, "traits.json")
+      )
+      return accumulator
+    },
+    <Partial<Record<TranslatedLocale, Promise<any>>>>{}
+  )
+  await Promise.all(Object.values(map))
+  return {
+    "en-TL": await map["en-TL"],
+    "ja-TL": await map["ja-TL"],
+    "ko-TL": await map["ko-TL"],
   }
 }

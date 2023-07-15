@@ -37,6 +37,8 @@ export type GeneratedModuleStageData = {
 
 export type GeneratedModuleStageTraitUpgradeData = {
   variables: Blackboard[]
+  hasAdditionalDescription: boolean
+  hasOverrideDescription: boolean
 }
 
 export type GeneratedModuleStageTalentUpgradeData = {
@@ -186,9 +188,10 @@ export class ModuleStage implements Localizable {
     this.tokenAttributes = data.tokenAttributeBlackboard
     this.talentUpgrades = []
     const traitUpgradeAttributes: {
-      description?: string
+      additionalDescription: string | null
+      overrideDescription: string | null
       variables?: Blackboard[]
-    } = {}
+    } = { additionalDescription: null, overrideDescription: null }
 
     data.parts.forEach((part, index) => {
       switch (part.target) {
@@ -196,13 +199,12 @@ export class ModuleStage implements Localizable {
         case Target.enum.TRAIT:
         case Target.enum.TRAIT_DATA_ONLY:
           const traitCandidate = part.overrideTraitDataBundle.candidates?.[0]
-          if (
-            traitCandidate?.overrideDescripton ||
-            traitCandidate?.additionalDescription
-          )
-            traitUpgradeAttributes.description =
-              (traitCandidate?.overrideDescripton ||
-                traitCandidate?.additionalDescription)!
+          if (traitCandidate?.additionalDescription)
+            traitUpgradeAttributes.additionalDescription =
+              traitCandidate.additionalDescription
+          if (traitCandidate?.overrideDescripton)
+            traitUpgradeAttributes.overrideDescription =
+              traitCandidate.overrideDescripton
           if (traitCandidate?.blackboard)
             traitUpgradeAttributes.variables = traitCandidate.blackboard
           break
@@ -218,7 +220,8 @@ export class ModuleStage implements Localizable {
     })
 
     this.traitUpgrade = new TraitUpgrade(
-      traitUpgradeAttributes.description!,
+      traitUpgradeAttributes.additionalDescription,
+      traitUpgradeAttributes.overrideDescription,
       traitUpgradeAttributes.variables!
     )
   }
@@ -234,19 +237,18 @@ export class ModuleStage implements Localizable {
   }
 
   public addLocale(locale: constants.GameLocale, data: BattleEquip): void {
-    let traitDescription: string
+    let additionalDescription: string | null = null
+    let overrideDescription: string | null = null
     data.phases[this.stage - 1].parts.forEach((part, index) => {
       switch (part.target) {
         case Target.enum.DISPLAY:
         case Target.enum.TRAIT:
         case Target.enum.TRAIT_DATA_ONLY:
           const traitCandidate = part.overrideTraitDataBundle.candidates?.[0]
-          if (
-            traitCandidate?.overrideDescripton ||
-            traitCandidate?.additionalDescription
-          )
-            traitDescription = (traitCandidate?.overrideDescripton ||
-              traitCandidate?.additionalDescription)!
+          if (traitCandidate?.additionalDescription)
+            additionalDescription = traitCandidate.additionalDescription
+          if (traitCandidate?.overrideDescripton)
+            overrideDescription = traitCandidate.overrideDescripton
           break
         case Target.enum.TALENT:
         case Target.enum.TALENT_DATA_ONLY:
@@ -265,7 +267,11 @@ export class ModuleStage implements Localizable {
           break
       }
     })
-    this.traitUpgrade.addLocale(locale, traitDescription!)
+    this.traitUpgrade.addLocale(
+      locale,
+      additionalDescription,
+      overrideDescription
+    )
   }
 
   public addLocaleTL(
@@ -297,28 +303,74 @@ export class ModuleStage implements Localizable {
 export class TraitUpgrade implements Localizable {
   // target: DISPLAY, TRAIT, TRAIT DATA ONLY
   // Variables may be in a separate TALENT
-  description: LocaleString
+  additionalDescription: LocaleString | null // Concatenated to current trait
+  overrideDescription: LocaleString | null // Replaces current trait
   variables: Blackboard[]
 
-  public constructor(description: string, variables: Blackboard[]) {
-    this.description = new LocaleString(description)
+  public constructor(
+    additionalDescription: string | null,
+    overrideDescription: string | null,
+    variables: Blackboard[]
+  ) {
+    this.additionalDescription = LocaleString.fromDataOrNull(
+      additionalDescription
+    )
+    this.overrideDescription = LocaleString.fromDataOrNull(overrideDescription)
     this.variables = variables
   }
 
   public toData(): GeneratedModuleStageTraitUpgradeData {
-    return { variables: this.variables }
+    return {
+      variables: this.variables,
+      hasAdditionalDescription: Boolean(this.additionalDescription),
+      hasOverrideDescription: Boolean(this.overrideDescription),
+    }
   }
 
-  public addLocale(locale: constants.GameLocale, description: string): void {
-    this.description.addLocale(locale, description)
+  public addLocale(
+    locale: constants.GameLocale,
+    additionalDescription: string | null,
+    overrideDescription: string | null
+  ): void {
+    this.additionalDescription?.addLocale(locale, additionalDescription)
+    this.overrideDescription?.addLocale(locale, overrideDescription)
   }
 
   public addLocaleTL(locale: constants.TranslatedLocale, data: any): void {
-    this.description.addLocaleTL(locale, data?.description)
+    if (
+      typeof this.additionalDescription?.getString(
+        constants.TRANSLATED_TO_GAME_LOCALE[locale]
+      ) !== "string"
+    ) {
+      this.additionalDescription?.addLocaleTL(
+        locale,
+        globalThis.TRAIT_LOCALES![locale][this.additionalDescription.zh_CN]
+      )
+    } else {
+      this.additionalDescription?.addLocaleTL(
+        locale,
+        data?.additionalDescription
+      )
+    }
+    if (
+      typeof this.overrideDescription?.getString(
+        constants.TRANSLATED_TO_GAME_LOCALE[locale]
+      ) !== "string"
+    ) {
+      this.overrideDescription?.addLocaleTL(
+        locale,
+        globalThis.TRAIT_LOCALES![locale][this.overrideDescription.zh_CN]
+      )
+    } else {
+      this.overrideDescription?.addLocaleTL(locale, data?.overrideDescription)
+    }
   }
 
   public toLocaleData(locale: constants.OutputLocale) {
-    return { description: this.description.toLocaleData(locale) }
+    return {
+      additionalDescription: this.additionalDescription?.toLocaleData(locale),
+      overrideDescription: this.overrideDescription?.toLocaleData(locale),
+    }
   }
 }
 

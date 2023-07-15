@@ -39,10 +39,12 @@ export class LocaleString implements Localizable {
     locale: constants.OutputLocale | UnderscoreOutputLocale,
     translation?: string | null
   ) {
-    const normalisedLocale = this.underscorifyLocale(locale)
-    if (normalisedLocale === "zh_CN" && !translation) return
-    this[<Exclude<UnderscoreOutputLocale, "zh_CN">>normalisedLocale] =
-      translation?.trim() ?? null
+    if (translation === null || translation === undefined) return
+
+    const normalisedLocale: UnderscoreOutputLocale =
+      this.underscorifyLocale(locale)
+    if (normalisedLocale === "zh_CN") return
+    this[normalisedLocale] = translation.trim()
   }
 
   public addLocale(locale: constants.GameLocale, translation?: string | null) {

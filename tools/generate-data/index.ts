@@ -5,16 +5,17 @@ import * as constants from "./constants"
 import { Operator } from "./operator"
 import { CharacterTable } from "./raw/character"
 import * as tables from "./tables"
-import { LocaleObject } from "./utils"
+import { LocaleObject, LocaleString } from "./utils"
 
-async function readGameTables() {
-  if (globalThis.GAME_TABLES) return
-
-  globalThis.GAME_TABLES = await tables.requireAllGameTablesAsync()
+async function readData() {
+  if (!globalThis.GAME_TABLES)
+    globalThis.GAME_TABLES = await tables.requireAllGameTablesAsync()
+  if (!globalThis.TRAIT_LOCALES)
+    globalThis.TRAIT_LOCALES = await tables.requireTraitLocalesAsync()
 }
 
-async function generateOperatorFiles() {
-  const promises = [readGameTables()]
+async function getOperators(): Promise<Operator[]> {
+  const promises = [readData()]
 
   const translatedLocaleData: {
     [key in constants.TranslatedLocale]?: LocaleObject
@@ -40,7 +41,7 @@ async function generateOperatorFiles() {
     ),
   ]
 
-  const operators: Operator[] = operatorIdReleaseOrder.flatMap((id) => {
+  return operatorIdReleaseOrder.flatMap((id) => {
     // Get original data
     const data = characterTable[id]
 
@@ -69,12 +70,108 @@ async function generateOperatorFiles() {
 
     return operator
   })
+}
+
+function getLocaleStringNumberOfTranslations(
+  localeString: LocaleString
+): number {
+  return constants.GAME_LOCALES.reduce((accumulator, current) => {
+    if (localeString.getString(current)) accumulator++
+    return accumulator
+  }, 0)
+}
+
+async function generateTraitLocales(operators?: Operator[]) {
+  if (!operators) operators = await getOperators()
+  let localeStrings: Record<string, LocaleString> = {}
+
+  const promises = []
+
+  const currentTranslationsByLang: {
+    [key in constants.GameLocale]?: Record<string, string | null>
+  } = {}
+  for (const locale of constants.GAME_LOCALES) {
+    if (locale === constants.ORIGINAL_LOCALE) continue
+    const promise = fs
+      .readFile(`locales/${locale.substring(0, 2)}-TL/traits.json`, {
+        encoding: "utf-8",
+      })
+      .then((data) => (currentTranslationsByLang[locale] = JSON.parse(data)))
+      .catch(() => (currentTranslationsByLang[locale] = {}))
+    promises.push(promise)
+  }
+  await Promise.all(promises)
+
+  function addTranslation(localeString: LocaleString) {
+    if (!localeStrings.hasOwnProperty(localeString.zh_CN)) {
+      localeStrings[localeString.zh_CN] = localeString
+      return
+    }
+    const newNumber = getLocaleStringNumberOfTranslations(localeString)
+    const oldNumber = getLocaleStringNumberOfTranslations(
+      localeStrings[localeString.zh_CN]
+    )
+    if (newNumber > oldNumber) localeStrings[localeString.zh_CN] = localeString
+  }
+
+  for (const operator of operators) {
+    if (operator.description) addTranslation(operator.description)
+    operator.traitCandidates.forEach(({ description }) => {
+      if (description) addTranslation(description)
+    })
+    operator.modules?.forEach(({ stages }) => {
+      if (!stages) return
+      const firstStage = stages.find((stage) => stage.stage === 1)
+      if (firstStage?.traitUpgrade.additionalDescription)
+        addTranslation(firstStage.traitUpgrade.additionalDescription)
+      if (firstStage?.traitUpgrade.overrideDescription)
+        addTranslation(firstStage.traitUpgrade.overrideDescription)
+    })
+  }
+
+  localeStrings = Object.keys(localeStrings)
+    .sort()
+    .reduce((accumulator, current) => {
+      accumulator[current] = localeStrings[current]
+      return accumulator
+    }, <Record<string, LocaleString>>{})
+
+  return Promise.all(
+    constants.GAME_LOCALES.flatMap((locale) => {
+      if (locale === constants.ORIGINAL_LOCALE) return []
+      return fs.writeFile(
+        `locales/${locale.substring(0, 2)}-TL/traits.json`,
+        JSON.stringify(
+          Object.values(localeStrings).reduce((accumulator, current) => {
+            accumulator[current.zh_CN] =
+              current.getString(locale) ??
+              (<Record<string, string | null>>(
+                currentTranslationsByLang[locale]
+              ))[current.zh_CN] ??
+              null
+            return accumulator
+          }, <Record<string, string | null>>{}),
+          null,
+          2
+        ),
+        {
+          encoding: "utf-8",
+        }
+      )
+    })
+  )
+}
+
+async function generateOperatorFiles(operators?: Operator[]) {
+  if (!operators) operators = await getOperators()
+  const generateTraitLocalesPromise = generateTraitLocales(operators)
 
   const indexFileObject = operators.map((operator) => operator.toIndexData())
 
   await fs.mkdir("data/operators", { recursive: true })
 
   return Promise.all([
+    generateTraitLocalesPromise,
     ...operators.map((operator) =>
       fs.writeFile(
         `data/operators/${operator.key}.json`,
@@ -89,7 +186,7 @@ async function generateOperatorFiles() {
     ),
     ...constants.OUTPUT_LOCALES.map((locale) => {
       const localeFileData: any = {}
-      operators.forEach(
+      ;(<Operator[]>operators).forEach(
         (operator) =>
           (localeFileData[operator.key] = operator.toLocaleData(locale))
       )

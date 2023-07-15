@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { GeneratedModuleData } from "~/tools/generate-data/operator/module"
-import type { ModuleState } from "~/utils"
+import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait"
+import type { ModuleState, OperatorState } from "~/utils"
+import { getCurrentTraitCandidate } from "~/utils/traits"
 
-const { operator, module, potential } = defineProps<{
+const { operator, module, operatorState, potential } = defineProps<{
   operator: GeneratedOperatorData
   module: GeneratedModuleData
+  operatorState: OperatorState
   potential: number // ModuleState, affected by OperatorState
   moduleId: string | null // OperatorState
   moduleStage: number | null // OperatorState
@@ -50,6 +53,10 @@ const moduleName = computed<string>(() =>
         name: t(`${operator.key}.name`),
       })
     : t(`${operator.key}.modules.${module.id}.name`)
+)
+
+const currentTraitCandidate = computed<GeneratedTraitCandidateData>(() =>
+  getCurrentTraitCandidate(operator, { ...operatorState, elite: 2, level: 60 })
 )
 
 watch(
@@ -203,11 +210,38 @@ watch(
                   })
                 }}
               </div>
+              <template v-if="stage.traitUpgrade.hasAdditionalDescription">
+                <div
+                  class="opacity-60"
+                  v-html="
+                    convertRichText(
+                      t(
+                        `${operator.key}.traitCandidates.E${currentTraitCandidate.unlockConditions.elite}-L${currentTraitCandidate.unlockConditions.level}.description`
+                      ),
+                      { replace: currentTraitCandidate.variables }
+                    )
+                  "
+                />
+                <div class="flex items-center gap-1">
+                  <Icon class="text-green-500" name="fa-solid:plus" />
+                  <span
+                    v-html="
+                      convertRichText(
+                        t(
+                          `${operator.key}.modules.${module.id}.stages.${stage.stage}.traitUpgrade.additionalDescription`
+                        ),
+                        { replace: stage.traitUpgrade.variables }
+                      )
+                    "
+                  />
+                </div>
+              </template>
               <span
+                v-else-if="stage.traitUpgrade.hasOverrideDescription"
                 v-html="
                   convertRichText(
                     t(
-                      `${operator.key}.modules.${module.id}.stages.${stage.stage}.traitUpgrade.description`
+                      `${operator.key}.modules.${module.id}.stages.${stage.stage}.traitUpgrade.overrideDescription`
                     ),
                     { replace: stage.traitUpgrade.variables }
                   )
