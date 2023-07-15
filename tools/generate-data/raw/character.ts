@@ -159,6 +159,16 @@ export enum Tag {
 export const TagEnum = z.nativeEnum(Tag)
 export type TagEnum = z.infer<typeof TagEnum>
 
+export enum TalentImprovePotential {
+  天赋效果增强 = "IMPROVE_TALENT",
+  第一天赋效果增强 = "IMPROVE_TALENT_ONE",
+  第二天赋效果增强 = "IMPROVE_TALENT_TWO",
+}
+export const TalentImprovePotentialEnum = z.nativeEnum(TalentImprovePotential)
+export type TalentImprovePotentialEnum = z.infer<
+  typeof TalentImprovePotentialEnum
+>
+
 export const UnlockCondSchema = z.object({
   phase: CoerceEnumValueOf(PhaseEnum), // CN 2.0 vs EJK
   level: z.number().int().min(1).max(90),

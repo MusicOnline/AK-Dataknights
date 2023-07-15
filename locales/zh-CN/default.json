@@ -194,6 +194,18 @@
     },
     "meta": {
       "title": "{name} — {rarity}★ {class} ({branch})"
+    },
+    "potential": {
+      "IMPROVE_TALENT": "天赋效果增强",
+      "IMPROVE_TALENT_ONE": "第一@:operator.potential.IMPROVE_TALENT",
+      "IMPROVE_TALENT_TWO": "第二@:operator.potential.IMPROVE_TALENT",
+      "MAX_HP": "生命上限{value}",
+      "ATK": "@:operator.attribute.atk{value}",
+      "DEF": "@:operator.attribute.def{value}",
+      "MAGIC_RESISTANCE": "@:operator.attribute.magicResistance{value}",
+      "COST": "@:operator.attribute.cost{value}",
+      "ATTACK_SPEED": "@:operator.attribute.attackSpeed{value}",
+      "RESPAWN_TIME": "@:operator.attribute.respawnTime{value}"
     }
   },
   "navigation": {

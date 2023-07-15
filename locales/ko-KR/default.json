@@ -190,6 +190,18 @@
     },
     "meta": {
       "title": "{name} — {rarity}★ {class} ({branch})"
+    },
+    "potential": {
+      "IMPROVE_TALENT": "재능 강화",
+      "IMPROVE_TALENT_ONE": "제1@:operator.potential.IMPROVE_TALENT",
+      "IMPROVE_TALENT_TWO": "제2@:operator.potential.IMPROVE_TALENT",
+      "MAX_HP": "최대 HP {value}",
+      "ATK": "@:operator.attribute.atk {value}",
+      "DEF": "@:operator.attribute.def {value}",
+      "MAGIC_RESISTANCE": "@:operator.attribute.magicResistance {value}",
+      "COST": "@:operator.attribute.cost {value}",
+      "ATTACK_SPEED": "@:operator.attribute.attackSpeed {value}",
+      "RESPAWN_TIME": "@:operator.attribute.respawnTime {value}"
     }
   },
   "navigation": {

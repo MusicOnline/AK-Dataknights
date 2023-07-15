@@ -1,5 +1,14 @@
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 
+export const ALTERNATE_ATTRIBUTE_NAMES = {
+  max_hp: "maxHp",
+  magic_resistance: "magicResistance",
+  base_attack_time: "baseAttackTime",
+  block_cnt: "blockCnt",
+  respawn_time: "respawnTime",
+  attack_speed: "attackSpeed",
+} as const
+
 export type OperatorState = {
   elite: number
   level: number

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { KeyFrameData } from "~/tools/generate-data/raw/character"
-import type { OperatorState } from "~/utils"
+import { ALTERNATE_ATTRIBUTE_NAMES, OperatorState } from "~/utils"
 
 const CALCULATED_ATTRIBUTES = [
   "maxHp",
@@ -15,14 +15,6 @@ const CALCULATED_ATTRIBUTES = [
 ]
 
 const ROUNDED_ATTRIBTUES = ["maxHp", "atk", "def", "magicResistance"]
-const ALTERNATE_ATTRIBUTE_NAMES = {
-  max_hp: "maxHp",
-  magic_resistance: "magicResistance",
-  base_attack_time: "baseAttackTime",
-  block_cnt: "blockCnt",
-  respawn_time: "respawnTime",
-  attack_speed: "attackSpeed",
-}
 
 const { t, locale } = useI18n()
 

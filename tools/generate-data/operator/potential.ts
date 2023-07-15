@@ -1,29 +1,37 @@
 import * as constants from "../constants"
-import { AttributeType, Character, PotentialRank } from "../raw/character"
+import {
+  AttributeType,
+  Character,
+  PotentialRank,
+  TalentImprovePotential,
+} from "../raw/character"
 import { LocaleString, Localizable } from "../utils"
 
 const POTENTIAL_NUMBER_OFFSET_FROM_ZERO_INDEX = 2
 
 export type GeneratedPotentialData = {
   potentialNumber: number
-  attribute?: {
+  type: TalentImprovePotential | null
+  attribute: {
     key: keyof typeof AttributeType
     value: number
-  }
+  } | null
 }
 
 export class Potential implements Localizable {
   potentialNumber: number
   description: LocaleString
-  attribute?: {
+  type: TalentImprovePotential | null = null
+  attribute: {
     key: keyof typeof AttributeType
     value: number
-  }
+  } | null = null
 
   public constructor(potentialNumber: number, data: PotentialRank) {
     this.potentialNumber = potentialNumber
     this.description = new LocaleString(data.description)
-    if (data.buff) {
+
+    if (data.type === "BUFF" && data.buff) {
       if (data.buff.attributes.attributeModifiers.length !== 1)
         throw new Error(
           "Unexpected more than one attribute modifier in potential buff"
@@ -33,6 +41,13 @@ export class Potential implements Localizable {
         key: <keyof typeof AttributeType>modifier.attributeType,
         value: modifier.value,
       }
+    } else if (data.type === "CUSTOM") {
+      this.type =
+        TalentImprovePotential[
+          <keyof typeof TalentImprovePotential>data.description
+        ] ?? null
+    } else {
+      console.warn(`Potential without BUFF properties found`)
     }
   }
 
@@ -49,7 +64,11 @@ export class Potential implements Localizable {
   }
 
   public toData(): GeneratedPotentialData {
-    return { potentialNumber: this.potentialNumber, attribute: this.attribute }
+    return {
+      potentialNumber: this.potentialNumber,
+      type: this.type,
+      attribute: this.attribute,
+    }
   }
 
   public addLocale(locale: constants.GameLocale, data: Character) {

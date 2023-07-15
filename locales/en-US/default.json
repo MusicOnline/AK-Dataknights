@@ -194,6 +194,18 @@
       "block_cnt": "@:operator.attribute.blockCnt",
       "respawn_time": "@:operator.attribute.respawnTime"
     },
+    "potential": {
+      "IMPROVE_TALENT": "Improves Talent",
+      "IMPROVE_TALENT_ONE": "Improves First Talent",
+      "IMPROVE_TALENT_TWO": "Improves Second Talent",
+      "MAX_HP": "Max HP {value}",
+      "ATK": "@:operator.attribute.atk {value}",
+      "DEF": "@:operator.attribute.def {value}",
+      "MAGIC_RESISTANCE": "@:operator.attribute.magicResistance {value}",
+      "COST": "DP Cost {value}",
+      "ATTACK_SPEED": "@:operator.attribute.attackSpeed {value}",
+      "RESPAWN_TIME": "Redeployment Time {value}"
+    },
     "skill": {
       "initSp": "Initial SP",
       "spCost": "SP Cost",
