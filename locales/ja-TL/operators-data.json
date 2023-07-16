@@ -2692,13 +2692,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {
               "1": {
@@ -2717,7 +2717,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {
               "1": {
@@ -3451,13 +3451,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃、敵を2体以上ブロック時、自身の力加減が1ランク上昇\n遠距離マスにも配置可能"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃、敵を2体以上ブロック時、自身の力加減が1ランク上昇\n遠距離マスにも配置可能"
             },
             "talentUpgrades": {
               "1": {
@@ -3472,7 +3472,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃、敵を2体以上ブロック時、自身の力加減が1ランク上昇\n遠距離マスにも配置可能"
             },
             "talentUpgrades": {
               "1": {
@@ -6992,13 +6992,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
             },
             "talentUpgrades": {
               "1": {
@@ -7017,7 +7017,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
             },
             "talentUpgrades": {
               "1": {
@@ -7182,7 +7182,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>1</>回復する"
             },
             "talentUpgrades": {
               "1": {
@@ -7194,7 +7194,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>1</>回復する"
             },
             "talentUpgrades": {
               "1": {
@@ -7218,7 +7218,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>1</>回復する"
             },
             "talentUpgrades": {
               "1": {
@@ -8167,13 +8167,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃、敵を2体以上ブロック時、自身の力加減が1ランク上昇\n遠距離マスにも配置可能"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃、敵を2体以上ブロック時、自身の力加減が1ランク上昇\n遠距離マスにも配置可能"
             },
             "talentUpgrades": {
               "1": {
@@ -8192,7 +8192,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃、敵を2体以上ブロック時、自身の力加減が1ランク上昇\n遠距離マスにも配置可能"
             },
             "talentUpgrades": {
               "1": {
@@ -9316,13 +9316,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象に10{'%'}の<?ba.weaken>虚弱</>状態を2秒間付与"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象に10{'%'}の<?ba.weaken>虚弱</>状態を2秒間付与"
             },
             "talentUpgrades": {
               "1": {
@@ -9337,7 +9337,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象に10{'%'}の<?ba.weaken>虚弱</>状態を2秒間付与"
             },
             "talentUpgrades": {
               "1": {
@@ -12508,13 +12508,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える、遠いほどダメージが上昇、最大<#ba.kw>110{'%'}</>まで上昇"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える、遠いほどダメージが上昇、最大<#ba.kw>110{'%'}</>まで上昇"
             },
             "talentUpgrades": {
               "1": {
@@ -12533,7 +12533,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える、遠いほどダメージが上昇、最大<#ba.kw>110{'%'}</>まで上昇"
             },
             "talentUpgrades": {
               "1": {
@@ -12750,13 +12750,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {
               "1": {
@@ -12775,7 +12775,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {
               "1": {
@@ -16291,13 +16291,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "スキル発動中、ブロック数が0になる、自身前方のオペレーター一名のブロック数<#ba.kw>+1</>"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "スキル発動中、ブロック数が0になる、自身前方のオペレーター一名のブロック数<#ba.kw>+1</>"
             },
             "talentUpgrades": {
               "1": {
@@ -16316,7 +16316,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "スキル発動中、ブロック数が0になる、自身前方のオペレーター一名のブロック数<#ba.kw>+1</>"
             },
             "talentUpgrades": {
               "1": {
@@ -16719,13 +16719,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "致命的なダメージを受けても撤退せず、HPが<#ba.kw>{'{'}hp_ratio:0{'%'}{'}'}</>回復（1回の配置につき、1回のみ発動可能）"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "致命的なダメージを受けても撤退せず、HPが<#ba.kw>{'{'}hp_ratio:0{'%'}{'}'}</>回復（1回の配置につき、1回のみ発動可能）"
             },
             "talentUpgrades": {
               "1": {
@@ -16750,7 +16750,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "致命的なダメージを受けても撤退せず、HPが<#ba.kw>{'{'}hp_ratio:0{'%'}{'}'}</>回復（1回の配置につき、1回のみ発動可能）"
             },
             "talentUpgrades": {
               "1": {
@@ -20413,7 +20413,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "HPが最大値の80％以上時、SP自然回復速度+0.25/秒"
             },
             "talentUpgrades": {
               "1": {
@@ -20425,7 +20425,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "HPが最大値の80％以上時、SP自然回復速度+0.25/秒"
             },
             "talentUpgrades": {
               "1": {
@@ -20445,7 +20445,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "HPが最大値の80％以上時、SP自然回復速度+0.25/秒"
             },
             "talentUpgrades": {
               "1": {
@@ -21129,13 +21129,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {
               "1": {
@@ -21154,7 +21154,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {
               "1": {
@@ -21179,13 +21179,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
             },
             "talentUpgrades": {
               "1": {
@@ -21200,7 +21200,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
             },
             "talentUpgrades": {
               "1": {
@@ -23192,13 +23192,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象に10{'%'}の<?ba.weaken>虚弱</>状態を2秒間付与"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象に10{'%'}の<?ba.weaken>虚弱</>状態を2秒間付与"
             },
             "talentUpgrades": {
               "1": {
@@ -23213,7 +23213,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象に10{'%'}の<?ba.weaken>虚弱</>状態を2秒間付与"
             },
             "talentUpgrades": {
               "1": {
@@ -24202,13 +24202,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能、今回の配置時のコストを半分返却"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能、今回の配置時のコストを半分返却"
             },
             "talentUpgrades": {
               "1": {
@@ -24233,7 +24233,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能、今回の配置時のコストを半分返却"
             },
             "talentUpgrades": {
               "1": {
@@ -24471,13 +24471,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "スキル発動中、ブロック数が0になる、自身前方のオペレーター一名のブロック数<#ba.kw>+1</>"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "スキル発動中、ブロック数が0になる、自身前方のオペレーター一名のブロック数<#ba.kw>+1</>"
             },
             "talentUpgrades": {
               "1": {
@@ -24496,7 +24496,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "スキル発動中、ブロック数が0になる、自身前方のオペレーター一名のブロック数<#ba.kw>+1</>"
             },
             "talentUpgrades": {
               "1": {
@@ -25127,13 +25127,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {
               "1": {
@@ -25152,7 +25152,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {
               "1": {
@@ -26448,13 +26448,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性より大幅<#ba.kw>上昇</>\nスキル発動中、効果を一部保留し、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性より大幅<#ba.kw>上昇</>\nスキル発動中、効果を一部保留し、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える"
             },
             "talentUpgrades": {
               "1": {
@@ -26469,7 +26469,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性より大幅<#ba.kw>上昇</>\nスキル発動中、効果を一部保留し、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える"
             },
             "talentUpgrades": {
               "1": {
@@ -28002,13 +28002,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
             },
             "talentUpgrades": {
               "1": {
@@ -28027,7 +28027,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
             },
             "talentUpgrades": {
               "1": {
@@ -29156,13 +29156,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性より大幅<#ba.kw>上昇</>\nスキル発動中、効果を一部保留し、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性より大幅<#ba.kw>上昇</>\nスキル発動中、効果を一部保留し、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える"
             },
             "talentUpgrades": {
               "1": {
@@ -29181,7 +29181,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性より大幅<#ba.kw>上昇</>\nスキル発動中、効果を一部保留し、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える"
             },
             "talentUpgrades": {
               "1": {
@@ -30372,13 +30372,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>3回</>の範囲物理ダメージを与える（後の2回は余震、攻撃力の半分でダメージを計算する）"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>3回</>の範囲物理ダメージを与える（後の2回は余震、攻撃力の半分でダメージを計算する）"
             },
             "talentUpgrades": {
               "1": {
@@ -30397,7 +30397,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>3回</>の範囲物理ダメージを与える（後の2回は余震、攻撃力の半分でダメージを計算する）"
             },
             "talentUpgrades": {
               "1": {
@@ -31524,13 +31524,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "20{'%'}の確率でダメージ2倍を与える罠を配置する"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "20{'%'}の確率でダメージ2倍を与える罠を配置する"
             },
             "talentUpgrades": {
               "1": {
@@ -31545,7 +31545,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "20{'%'}の確率でダメージ2倍を与える罠を配置する"
             },
             "talentUpgrades": {
               "1": {
@@ -34011,13 +34011,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "20{'%'}の確率でダメージ2倍を与える罠を配置する"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "20{'%'}の確率でダメージ2倍を与える罠を配置する"
             },
             "talentUpgrades": {
               "1": {
@@ -34041,7 +34041,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "20{'%'}の確率でダメージ2倍を与える罠を配置する"
             },
             "talentUpgrades": {
               "1": {
@@ -36464,13 +36464,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性より大幅<#ba.kw>上昇</>\nスキル発動中、効果を一部保留し、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性より大幅<#ba.kw>上昇</>\nスキル発動中、効果を一部保留し、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える"
             },
             "talentUpgrades": {
               "1": {
@@ -36489,7 +36489,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性より大幅<#ba.kw>上昇</>\nスキル発動中、効果を一部保留し、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える"
             },
             "talentUpgrades": {
               "1": {
@@ -38336,13 +38336,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "スキル発動中、ブロック数が0になる、自身前方のオペレーター一名のブロック数<#ba.kw>+1</>"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "スキル発動中、ブロック数が0になる、自身前方のオペレーター一名のブロック数<#ba.kw>+1</>"
             },
             "talentUpgrades": {
               "1": {
@@ -38361,7 +38361,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "スキル発動中、ブロック数が0になる、自身前方のオペレーター一名のブロック数<#ba.kw>+1</>"
             },
             "talentUpgrades": {
               "1": {
@@ -38668,13 +38668,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "<<支援装置>>最大所持数<#ba.kw>+{'{'}cnt{'}'}</>、配置コスト<#ba.kw>減少</>"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "<<支援装置>>最大所持数<#ba.kw>+{'{'}cnt{'}'}</>、配置コスト<#ba.kw>減少</>"
             },
             "talentUpgrades": {
               "1": {
@@ -38699,7 +38699,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "<<支援装置>>最大所持数<#ba.kw>+{'{'}cnt{'}'}</>、配置コスト<#ba.kw>減少</>"
             },
             "talentUpgrades": {
               "1": {
@@ -39941,13 +39941,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える、遠いほどダメージが上昇、最大<#ba.kw>110{'%'}</>まで上昇"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える、遠いほどダメージが上昇、最大<#ba.kw>110{'%'}</>まで上昇"
             },
             "talentUpgrades": {
               "1": {
@@ -39966,7 +39966,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える、遠いほどダメージが上昇、最大<#ba.kw>110{'%'}</>まで上昇"
             },
             "talentUpgrades": {
               "1": {
@@ -40737,13 +40737,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象に10{'%'}の<?ba.weaken>虚弱</>状態を2秒間付与"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象に10{'%'}の<?ba.weaken>虚弱</>状態を2秒間付与"
             },
             "talentUpgrades": {
               "1": {
@@ -40762,7 +40762,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象に10{'%'}の<?ba.weaken>虚弱</>状態を2秒間付与"
             },
             "talentUpgrades": {
               "1": {
@@ -43103,13 +43103,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能、今回の配置時のコストを半分返却"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能、今回の配置時のコストを半分返却"
             },
             "talentUpgrades": {
               "1": {
@@ -43128,7 +43128,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能、今回の配置時のコストを半分返却"
             },
             "talentUpgrades": {
               "1": {
@@ -44930,13 +44930,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "<<支援装置>>最大所持数<#ba.kw>+{'{'}cnt{'}'}</>、配置コスト<#ba.kw>減少</>"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "<<支援装置>>最大所持数<#ba.kw>+{'{'}cnt{'}'}</>、配置コスト<#ba.kw>減少</>"
             },
             "talentUpgrades": {
               "1": {
@@ -44961,7 +44961,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "<<支援装置>>最大所持数<#ba.kw>+{'{'}cnt{'}'}</>、配置コスト<#ba.kw>減少</>"
             },
             "talentUpgrades": {
               "1": {
@@ -46132,13 +46132,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "20{'%'}の確率でダメージ2倍を与える罠を配置する"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "20{'%'}の確率でダメージ2倍を与える罠を配置する"
             },
             "talentUpgrades": {
               "1": {
@@ -46157,7 +46157,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "20{'%'}の確率でダメージ2倍を与える罠を配置する"
             },
             "talentUpgrades": {
               "1": {
@@ -46627,13 +46627,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>3回</>の範囲物理ダメージを与える（後の2回は余震、攻撃力の半分でダメージを計算する）"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>3回</>の範囲物理ダメージを与える（後の2回は余震、攻撃力の半分でダメージを計算する）"
             },
             "talentUpgrades": {
               "1": {
@@ -46648,7 +46648,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>3回</>の範囲物理ダメージを与える（後の2回は余震、攻撃力の半分でダメージを計算する）"
             },
             "talentUpgrades": {
               "1": {
@@ -48397,13 +48397,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "<<支援装置>>最大所持数<#ba.kw>+{'{'}cnt{'}'}</>、配置コスト<#ba.kw>減少</>"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "<<支援装置>>最大所持数<#ba.kw>+{'{'}cnt{'}'}</>、配置コスト<#ba.kw>減少</>"
             },
             "talentUpgrades": {
               "1": {
@@ -48427,7 +48427,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "<<支援装置>>最大所持数<#ba.kw>+{'{'}cnt{'}'}</>、配置コスト<#ba.kw>減少</>"
             },
             "talentUpgrades": {
               "1": {
@@ -50130,13 +50130,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
             },
             "talentUpgrades": {
               "1": {
@@ -50155,7 +50155,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
             },
             "talentUpgrades": {
               "1": {
@@ -51016,13 +51016,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性より大幅<#ba.kw>上昇</>\nスキル発動中、効果を一部保留し、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性より大幅<#ba.kw>上昇</>\nスキル発動中、効果を一部保留し、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える"
             },
             "talentUpgrades": {
               "1": {
@@ -51041,7 +51041,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性より大幅<#ba.kw>上昇</>\nスキル発動中、効果を一部保留し、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える"
             },
             "talentUpgrades": {
               "1": {
@@ -52347,7 +52347,7 @@
   "terra-research-commission": {
     "name": null,
     "appellation": null,
-    "description": null,
+    "description": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>2回</>の範囲物理ダメージを与える（2回目は余震、攻撃力の半分でダメージを計算する）\n<#ba.kw>配属可能数</>にカウントされない\n再配置までの時間が極めて長い",
     "potentials": {
       "2": {
         "description": null
@@ -52396,7 +52396,7 @@
     "skills": {},
     "traitCandidates": {
       "E0-L1": {
-        "description": null
+        "description": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>2回</>の範囲物理ダメージを与える（2回目は余震、攻撃力の半分でダメージを計算する）\n<#ba.kw>配属可能数</>にカウントされない\n再配置までの時間が極めて長い"
       }
     },
     "tokenSummons": {}
@@ -53109,7 +53109,7 @@
   "u-official": {
     "name": null,
     "appellation": null,
-    "description": null,
+    "description": "攻撃しない\n攻撃範囲内の味方全員の<#ba.kw>HP</>を継続回復(1秒ごとに攻撃力の10{'%'}回復)\n自身は<?ba.inspire>鼓舞</>状態の効果を受けない\n<#ba.kw>配属可能数</>にカウントされない\n再配置までの時間が極めて長い",
     "potentials": {
       "2": {
         "description": null
@@ -53158,7 +53158,7 @@
     "skills": {},
     "traitCandidates": {
       "E0-L1": {
-        "description": null
+        "description": "攻撃しない\n攻撃範囲内の味方全員の<#ba.kw>HP</>を継続回復(1秒ごとに攻撃力の10{'%'}回復)\n自身は<?ba.inspire>鼓舞</>状態の効果を受けない\n<#ba.kw>配属可能数</>にカウントされない\n再配置までの時間が極めて長い"
       }
     },
     "tokenSummons": {}
@@ -53825,13 +53825,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {
               "1": {
@@ -53850,7 +53850,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
             },
             "talentUpgrades": {
               "1": {
@@ -54065,7 +54065,7 @@
   "friston-3": {
     "name": null,
     "appellation": null,
-    "description": null,
+    "description": "敵を3体までブロック\n<#ba.kw>配置可能数</>にカウントされない\n再配置までの時間が極めて長い",
     "potentials": {
       "2": {
         "description": null
@@ -54114,7 +54114,7 @@
     "skills": {},
     "traitCandidates": {
       "E0-L1": {
-        "description": null
+        "description": "敵を3体までブロック\n<#ba.kw>配置可能数</>にカウントされない\n再配置までの時間が極めて長い"
       }
     },
     "tokenSummons": {}
@@ -54440,7 +54440,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "HPが最大値の80％以上時、SP自然回復速度+0.25/秒"
             },
             "talentUpgrades": {
               "1": {
@@ -54452,7 +54452,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "HPが最大値の80％以上時、SP自然回復速度+0.25/秒"
             },
             "talentUpgrades": {
               "1": {
@@ -54472,7 +54472,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "HPが最大値の80％以上時、SP自然回復速度+0.25/秒"
             },
             "talentUpgrades": {
               "1": {
@@ -55107,7 +55107,7 @@
   "valarqvin": {
     "name": null,
     "appellation": null,
-    "description": null,
+    "description": "敵に<#ba.kw>術ダメージ</>を与える、<#ba.kw>元素損傷</>を付与可能",
     "potentials": {
       "2": {
         "description": null
@@ -55235,7 +55235,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": null
+        "description": "敵に<#ba.kw>術ダメージ</>を与える、<#ba.kw>元素損傷</>を付与可能"
       }
     },
     "tokenSummons": {}
