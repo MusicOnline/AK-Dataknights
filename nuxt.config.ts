@@ -83,6 +83,9 @@ export default defineNuxtConfig({
       ],
     },
   },
+  experimental: {
+    payloadExtraction: true, // Fix missing _payload.json files
+  },
   sourcemap: process.env.NODE_ENV !== "production",
   ssr: process.env.ENABLE_SSR?.toLowerCase() === "true",
   modules: ["nuxt-lodash", "@nuxtjs/i18n", "@nuxtjs/tailwindcss", "nuxt-icon"],

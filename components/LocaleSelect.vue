@@ -31,7 +31,7 @@ const currentLocaleObject = computed<LocaleObject>(
     :triggers="['click', 'hover', 'focus']"
     menu-class="bg-bg-container-1-normal w-max sm:w-full shadow p-1"
     aria-role="list"
-    @update:modelValue="setLocale(<string>currentLocale)"
+    @update:modelValue="setLocale(currentLocale)"
   >
     <template #trigger="{ active }">
       <OButton
@@ -44,7 +44,7 @@ const currentLocaleObject = computed<LocaleObject>(
     </template>
 
     <ODropdownItem
-      class="bg-bg-container-1-normal hover:bg-bg-container-1-focus p-1"
+      class="bg-bg-container-1-normal p-1 hover:bg-bg-container-1-focus"
       v-for="locale in availableLocales"
       :key="locale.code"
       :value="locale.code"
