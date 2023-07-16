@@ -6,9 +6,14 @@ const {
   locales,
   setLocale,
 } = useI18n({ useScope: "global" })
+const switchLocalePath = useSwitchLocalePath()
+
+function setLocaleByNavigation(locale: string) {
+  return navigateTo({ path: switchLocalePath(locale) })
+}
 
 const availableLocales = computed<LocaleObject[]>(() => {
-  return locales.value.map((locale) => {
+  return (<LocaleObject[] | string[]>locales.value).map((locale) => {
     if (typeof locale === "object") return locale
     return {
       code: locale,
@@ -31,7 +36,7 @@ const currentLocaleObject = computed<LocaleObject>(
     :triggers="['click', 'hover', 'focus']"
     menu-class="bg-bg-container-1-normal w-max sm:w-full shadow p-1"
     aria-role="list"
-    @update:modelValue="setLocale(currentLocale)"
+    @update:modelValue="setLocaleByNavigation(currentLocale)"
   >
     <template #trigger="{ active }">
       <OButton
