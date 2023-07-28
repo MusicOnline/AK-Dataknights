@@ -2704,11 +2704,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "블랙 미스트",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "블랙 미스트",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -2723,7 +2723,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "블랙 미스트",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -7004,11 +7004,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "감정 흡수",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "감정 흡수",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -7023,7 +7023,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "감정 흡수",
+                    "name": null,
                     "description": null
                   },
                   "6": {
@@ -7205,11 +7205,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "이중인격",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "이중인격",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -7229,7 +7229,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "이중인격",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -12762,11 +12762,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "플레임 브레스",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "플레임 브레스",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -12781,7 +12781,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "플레임 브레스",
+                    "name": null,
                     "description": null
                   },
                   "6": {
@@ -14066,7 +14066,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "피격 대미지 <#ba.kw>-15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -14078,11 +14078,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "라인 에너지 충전 방호복",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "라인 에너지 충전 방호복",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -14097,7 +14097,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "라인 에너지 충전 방호복",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -21141,11 +21141,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "껍질 벗기기",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "껍질 벗기기",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -21160,7 +21160,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "껍질 벗기기",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -21179,13 +21179,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "일반 공격이 정예 또는 리더 적 명중 시 SP +<#ba.kw>{'{'}sp{'}'}</>"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "일반 공격이 정예 또는 리더 적 명중 시 SP +<#ba.kw>{'{'}sp{'}'}</>"
             },
             "talentUpgrades": {
               "1": {
@@ -21200,7 +21200,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "일반 공격이 정예 또는 리더 적 명중 시 SP +<#ba.kw>{'{'}sp{'}'}</>"
             },
             "talentUpgrades": {
               "1": {
@@ -25139,11 +25139,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "집행자",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "집행자",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -25158,7 +25158,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "집행자",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -28014,11 +28014,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "황야의 마법",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "황야의 마법",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -28033,7 +28033,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "황야의 마법",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -44732,7 +44732,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "치료 범위가 넓고, 치료 대상이 멀리 있어도 치료 효과가 <#ba.kw>감소하지 않음</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
@@ -44744,11 +44744,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "응급 처치",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "응급 처치",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -44763,7 +44763,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "응급 처치",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -50142,11 +50142,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "빙원 생존",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "빙원 생존",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -50161,7 +50161,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "빙원 생존",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -50824,7 +50824,7 @@
   "lin": {
     "name": null,
     "appellation": null,
-    "description": "평소엔 <#ba.kw>공격을 하지 않고</> 방어력과 마법 저항이 대폭 <#ba.kw>상승</>,  스킬 발동 시 공격 범위 내의 모든 적에게 <#ba.kw>광역 마법 대미지</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -51028,11 +51028,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "감춰버린 빛",
                     "description": null
                   },
                   "3": {
-                    "name": null,
+                    "name": "감춰버린 빛",
                     "description": null
                   }
                 }
@@ -51047,11 +51047,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "감춰버린 빛",
                     "description": null
                   },
                   "3": {
-                    "name": null,
+                    "name": "감춰버린 빛",
                     "description": null
                   }
                 }
@@ -51066,7 +51066,7 @@
   "chongyue": {
     "name": null,
     "appellation": null,
-    "description": "적 1명 저지 가능",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -51248,7 +51248,7 @@
   "firewhistle": {
     "name": null,
     "appellation": null,
-    "description": "적을 저지하지 않을 때, 원거리 광역 물리 공격 시전",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -51382,7 +51382,7 @@
   "jieyun": {
     "name": null,
     "appellation": null,
-    "description": "적에게 <#ba.kw>광역 물리 대미지</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -51522,8 +51522,8 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "적의 방어력 <#ba.vup>{'{'}def_penetrate_fixed{'}'}</> 무시",
-              "overrideDescription": "적에게 <#ba.kw>광역 물리 대미지</>"
+              "additionalDescription": null,
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
@@ -53825,13 +53825,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "목표의 마법 저항 <#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</> 무시"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "목표의 마법 저항 <#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</> 무시"
             },
             "talentUpgrades": {
               "1": {
@@ -53850,7 +53850,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "목표의 마법 저항 <#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</> 무시"
             },
             "talentUpgrades": {
               "1": {

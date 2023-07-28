@@ -2692,7 +2692,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Ignores <#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</> RES"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -2704,11 +2704,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Black Mist",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Black Mist",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -2723,7 +2723,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Black Mist",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -6992,7 +6992,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "When normal attacks hit elite or boss enemies, gain <#ba.kw>{'{'}sp{'}'}</> SP"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -7004,11 +7004,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Emotional Absorption",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "Emotional Absorption",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -7023,7 +7023,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Emotional Absorption",
+                    "name": null,
                     "description": null
                   },
                   "6": {
@@ -7182,7 +7182,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "When normal attacks hit elite or boss enemies, gain <#ba.kw>1</> SP"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -7205,11 +7205,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Dual Personality",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Dual Personality",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -7229,7 +7229,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Dual Personality",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -12750,7 +12750,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Ignores <#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</> RES"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -12762,11 +12762,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Pyrobreath",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "Pyrobreath",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -12781,7 +12781,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Pyrobreath",
+                    "name": null,
                     "description": null
                   },
                   "6": {
@@ -14066,7 +14066,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Reduces damage taken by <#ba.kw>15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -14078,11 +14078,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Rhine Charged Suit",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Rhine Charged Suit",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -14097,7 +14097,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Rhine Charged Suit",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -21129,7 +21129,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Ignores <#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</> RES"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -21141,11 +21141,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Thresher",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Thresher",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -21160,7 +21160,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Thresher",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -21179,13 +21179,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "When normal attacks hit elite or boss enemies, gain <#ba.kw>{'{'}sp{'}'}</> SP"
+              "additionalDescription": "Gain <#ba.kw>{'{'}sp{'}'}</> SP when normal attacks hit an elite or leader enemy."
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "When normal attacks hit elite or boss enemies, gain <#ba.kw>{'{'}sp{'}'}</> SP"
+              "additionalDescription": "Gain <#ba.kw>{'{'}sp{'}'}</> SP when normal attacks hit an elite or leader enemy."
             },
             "talentUpgrades": {
               "1": {
@@ -21200,7 +21200,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "When normal attacks hit elite or boss enemies, gain <#ba.kw>{'{'}sp{'}'}</> SP"
+              "additionalDescription": "Gain <#ba.kw>{'{'}sp{'}'}</> SP when normal attacks hit an elite or leader enemy."
             },
             "talentUpgrades": {
               "1": {
@@ -25127,7 +25127,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Ignores <#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</> RES"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -25139,11 +25139,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Enforcer",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Enforcer",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -25158,7 +25158,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Enforcer",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -28002,7 +28002,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "When normal attacks hit elite or boss enemies, gain <#ba.kw>{'{'}sp{'}'}</> SP"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -28014,11 +28014,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Arts of the Wild",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Arts of the Wild",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -28033,7 +28033,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Arts of the Wild",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -44732,7 +44732,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Has a large healing range and healing is <#ba.kw>no longer reduced</> for distant targets"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
@@ -44744,11 +44744,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Quick Fix",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Quick Fix",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -44763,7 +44763,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Quick Fix",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -50130,7 +50130,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "When normal attacks hit elite or boss enemies, gain <#ba.kw>{'{'}sp{'}'}</> SP"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -50142,11 +50142,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Tundra Survival",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Tundra Survival",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -50161,7 +50161,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Tundra Survival",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -50824,7 +50824,7 @@
   "lin": {
     "name": "Lin",
     "appellation": null,
-    "description": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>greatly increased</> DEF and RES; When skill is active, attacks deal <#ba.kw>AoE Arts damage</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -51028,11 +51028,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "Shrouded Strength",
                     "description": null
                   },
                   "3": {
-                    "name": null,
+                    "name": "Shrouded Strength",
                     "description": null
                   }
                 }
@@ -51047,11 +51047,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "Shrouded Strength",
                     "description": null
                   },
                   "3": {
-                    "name": null,
+                    "name": "Shrouded Strength",
                     "description": null
                   }
                 }
@@ -51066,7 +51066,7 @@
   "chongyue": {
     "name": "Chongyue",
     "appellation": null,
-    "description": "Blocks 1 enemy",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -51248,7 +51248,7 @@
   "firewhistle": {
     "name": "Firewhistle",
     "appellation": null,
-    "description": "When not blocking enemies, prioritizes dealing <#ba.kw>ranged AoE</> Physical damage",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -51382,7 +51382,7 @@
   "jieyun": {
     "name": "Jieyun",
     "appellation": null,
-    "description": "Deals <#ba.kw>AOE Physical damage</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -51522,8 +51522,8 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks ignore <#ba.vup>{'{'}def_penetrate_fixed{'}'}</> DEF",
-              "overrideDescription": "Deals <#ba.kw>AOE Physical damage</>"
+              "additionalDescription": null,
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
@@ -53825,13 +53825,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Ignores <#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</> RES"
+              "additionalDescription": "Ignore <#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</> of target's RES"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Ignores <#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</> RES"
+              "additionalDescription": "Ignore <#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</> of target's RES"
             },
             "talentUpgrades": {
               "1": {
@@ -53850,7 +53850,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Ignores <#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</> RES"
+              "additionalDescription": "Ignore <#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</> of target's RES"
             },
             "talentUpgrades": {
               "1": {

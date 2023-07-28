@@ -17,7 +17,6 @@ import { RangeTable, RangeTableSchema } from "./raw/range"
 import { SkillTable, SkillTableSchema } from "./raw/skill"
 import { SkinTable, SkinTableSchema } from "./raw/skin"
 import { UniEquipTable, UniEquipTableSchema } from "./raw/uni-equip"
-import { normalizeForLocaleFile } from "./utils"
 
 export const OPERATOR_TABLE_PATH = "gamedata/excel/character_table.json"
 export const MODULE_TABLE_PATH = "gamedata/excel/uniequip_table.json"

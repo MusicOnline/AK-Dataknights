@@ -86,15 +86,15 @@ export function normalizeForLocaleFile(original: string | null): string | null {
   return (
     original
       // "{a}" -> "{'{'}a{'}'}"
-      .replace(/\{(.*?)\}/g, "{'{'}$1{'}'}")
+      .replace(/\{(?!')(.*?)\}/g, "{'{'}$1{'}'}")
       // <Substitute> -> <<Substitute>>
-      .replace(/(?<!<)<(?!<|@|\$|\/)(.+?)(?<!>)>(?!>)/g, "<<$1>>")
+      .replace(/(?<!<)<(?!<|@|\$|\/|#|\?)(.+?)(?<!>)>(?!>)/g, "<<$1>>")
       // <@tag.sub>text</> to <#tag.sub>text</> (Formatting only)
       .replace(/<@(?<tag>[^<]+?)>(?<text>.+?)<\/>/g, "<#$<tag>>$<text></>")
       // <$tag.sub>text</> to <?tag.sub>text</> (With tooltip explanation)
       .replace(/<\$(?<tag>[^<]+?)>(?<text>.+?)<\/>/g, "<?$<tag>>$<text></>")
       // {variable:0%} to <#>variable:0{'%'}</#>
-      .replace(/(@|\$|%|\|)/g, "{'$1'}")
+      .replace(/(?<!{')(@|\$|%|\|)(?!'})/g, "{'$1'}")
   )
 }
 

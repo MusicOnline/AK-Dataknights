@@ -85,22 +85,16 @@ async function generateTraitLocales(operators?: Operator[]) {
   if (!operators) operators = await getOperators()
   let localeStrings: Record<string, LocaleString> = {}
 
-  const promises = []
-
   const currentTranslationsByLang: {
     [key in constants.GameLocale]?: Record<string, string | null>
   } = {}
   for (const locale of constants.GAME_LOCALES) {
     if (locale === constants.ORIGINAL_LOCALE) continue
-    const promise = fs
-      .readFile(`locales/${locale.substring(0, 2)}-TL/traits.json`, {
-        encoding: "utf-8",
-      })
-      .then((data) => (currentTranslationsByLang[locale] = JSON.parse(data)))
-      .catch(() => (currentTranslationsByLang[locale] = {}))
-    promises.push(promise)
+    currentTranslationsByLang[locale] =
+      globalThis.TRAIT_LOCALES![
+        <keyof tables.TraitLocalesMap>`${locale.substring(0, 2)}-TL`
+      ]
   }
-  await Promise.all(promises)
 
   function addTranslation(localeString: LocaleString) {
     if (!localeStrings.hasOwnProperty(localeString.zh_CN)) {

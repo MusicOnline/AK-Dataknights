@@ -2692,7 +2692,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -2704,11 +2704,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "黒い霧",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "黒い霧",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -2723,7 +2723,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "黒い霧",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -6992,7 +6992,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -7004,11 +7004,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "アブソープション",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "アブソープション",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -7023,7 +7023,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "アブソープション",
+                    "name": null,
                     "description": null
                   },
                   "6": {
@@ -7182,7 +7182,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>1</>回復する"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -7205,11 +7205,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "二重人格",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "二重人格",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -7229,7 +7229,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "二重人格",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -12750,7 +12750,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -12762,11 +12762,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "フレイムブレス",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "フレイムブレス",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -12781,7 +12781,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "フレイムブレス",
+                    "name": null,
                     "description": null
                   },
                   "6": {
@@ -14066,7 +14066,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "被ダメージ<#ba.kw>-15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -14078,11 +14078,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "ライン製防護服",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "ライン製防護服",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -14097,7 +14097,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "ライン製防護服",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -21129,7 +21129,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -21141,11 +21141,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "そぎおとし",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "そぎおとし",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -21160,7 +21160,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "そぎおとし",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -21179,13 +21179,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
+              "additionalDescription": "通常攻撃が敵【エリート】または【ボス】に命中するたびにSPが<#ba.kw>{'{'}sp{'}'}</>回復"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
+              "additionalDescription": "通常攻撃が敵【エリート】または【ボス】に命中するたびにSPが<#ba.kw>{'{'}sp{'}'}</>回復"
             },
             "talentUpgrades": {
               "1": {
@@ -21200,7 +21200,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
+              "additionalDescription": "通常攻撃が敵【エリート】または【ボス】に命中するたびにSPが<#ba.kw>{'{'}sp{'}'}</>回復"
             },
             "talentUpgrades": {
               "1": {
@@ -25127,7 +25127,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "対象の術耐性を<#ba.kw>{'{'}magic_resist_penetrate_fixed{'}'}</>無視"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -25139,11 +25139,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "法の執行者",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "法の執行者",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -25158,7 +25158,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "法の執行者",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -28002,7 +28002,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -28014,11 +28014,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "荒野術師流戦法",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "荒野術師流戦法",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -28033,7 +28033,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "荒野術師流戦法",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -44732,7 +44732,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "治療範囲が広く、遠く離れた味方を治療時もHP治療効果が<#ba.kw>減少しない</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
@@ -44744,11 +44744,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "応急処置",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "応急処置",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -44763,7 +44763,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "応急処置",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -50130,7 +50130,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "通常攻撃が【エリート】または【ボス】に命中時SPを<#ba.kw>{'{'}sp{'}'}</>回復する"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
@@ -50142,11 +50142,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "氷原生存術",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "氷原生存術",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -50161,7 +50161,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "氷原生存術",
+                    "name": null,
                     "description": null
                   },
                   "5": {
@@ -50824,7 +50824,7 @@
   "lin": {
     "name": null,
     "appellation": null,
-    "description": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性大幅<#ba.kw>上昇</>\nスキル発動中、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -51028,11 +51028,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "韜晦",
                     "description": null
                   },
                   "3": {
-                    "name": null,
+                    "name": "韜晦",
                     "description": null
                   }
                 }
@@ -51047,11 +51047,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "韜晦",
                     "description": null
                   },
                   "3": {
-                    "name": null,
+                    "name": "韜晦",
                     "description": null
                   }
                 }
@@ -51066,7 +51066,7 @@
   "chongyue": {
     "name": null,
     "appellation": null,
-    "description": "敵を1体までブロック",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -51248,7 +51248,7 @@
   "firewhistle": {
     "name": null,
     "appellation": null,
-    "description": "敵をブロックしていない時<#ba.kw>遠距離範囲</>物理攻撃を行う",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -51382,7 +51382,7 @@
   "jieyun": {
     "name": null,
     "appellation": null,
-    "description": "敵に<#ba.kw>範囲物理ダメージ</>を与える",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -51522,8 +51522,8 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "攻撃時、敵の防御力を<#ba.vup>{'{'}def_penetrate_fixed{'}'}</>無視",
-              "overrideDescription": "敵に<#ba.kw>範囲物理ダメージ</>を与える"
+              "additionalDescription": null,
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
