@@ -41,7 +41,7 @@ export type GeneratedOperatorData = {
   groupId: string | null
   teamId: string | null
   canUseGeneralPotentialItem: boolean
-  tokenKey: string | null
+  tokenKeys: string[]
   isNotObtainable: boolean
   phases: GeneratedElitePhaseData[]
   trustKeyFrames: KeyFrame[] | null
@@ -89,13 +89,13 @@ export class Operator implements Localizable {
   groupId: string | null
   teamId: string | null
   displayNumber: string | null
-  tokenKey: string | null // Token summon character id
   position: Position
   tagList: Tag[]
   isNotObtainable: boolean // true if Integrated Strategies operators
   rarity: number // Number of stars in-game
   class: ProfessionEnum
   classBranch: SubProfessionEnum
+  tokenKeys: string[]
 
   // Additional attributes
   phases: ElitePhase[]
@@ -133,8 +133,12 @@ export class Operator implements Localizable {
     this.teamId = data.teamId
     this.canUseGeneralPotentialItem = data.canUseGeneralPotentialItem
     this.potentialItemId = data.potentialItemId
-    this.tokenKey = data.tokenKey
     this.isNotObtainable = data.isNotObtainable
+    this.tokenKeys = data.displayTokenDict
+      ? Object.keys(data.displayTokenDict).filter(
+          (key) => data.displayTokenDict![key]
+        )
+      : []
 
     this._unnormalizedKey = data.appellation
 
@@ -150,11 +154,11 @@ export class Operator implements Localizable {
 
   public addTokenInformation(table: CharacterTable) {
     if (constants.NON_OPERATOR_CLASSES.includes(this.class)) return
-    if (this.tokenKey) {
-      const tokenData: Character | undefined = table[this.tokenKey]
-      if (tokenData)
-        this.tokenSummons.push(new Operator(this.tokenKey, tokenData))
-    }
+
+    this.tokenKeys.forEach((tokenKey) => {
+      const tokenData: Character | undefined = table[tokenKey]
+      if (tokenData) this.tokenSummons.push(new Operator(tokenKey, tokenData))
+    })
 
     this.skills.forEach((skill) => {
       if (
@@ -182,7 +186,7 @@ export class Operator implements Localizable {
       groupId: this.groupId,
       teamId: this.teamId,
       canUseGeneralPotentialItem: this.canUseGeneralPotentialItem,
-      tokenKey: this.tokenKey,
+      tokenKeys: this.tokenKeys,
       isNotObtainable: this.isNotObtainable,
       phases: this.phases.map((phase) => phase.toData()),
       trustKeyFrames: this.trustKeyFrames,

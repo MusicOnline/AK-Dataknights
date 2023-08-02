@@ -109,6 +109,7 @@ async function generateTraitLocales(operators?: Operator[]) {
   }
 
   for (const operator of operators) {
+    // TODO: Consider trait of token summons
     if (operator.description) addTranslation(operator.description)
     operator.traitCandidates.forEach(({ description }) => {
       if (description) addTranslation(description)

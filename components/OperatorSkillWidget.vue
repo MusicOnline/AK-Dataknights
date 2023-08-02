@@ -31,7 +31,7 @@ const visualSkillLevel = computed<number>({
 const numberOfMasteryLevels = computed<number>(() => skill.levels.length - 7)
 
 const tokenSummon = computed<GeneratedOperatorData | null>(() => {
-  const key = skill.overrideTokenKey || operator.tokenKey
+  const key = skill.overrideTokenKey || operator.tokenKeys[0]
   if (!key) return null
   return operator.tokenSummons[key]
 })

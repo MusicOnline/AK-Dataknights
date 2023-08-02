@@ -125,6 +125,7 @@ export class Talent implements Localizable {
             candidate.unlockConditions.potential - 1
         )
       })
+      if (!rawCandidate) return
       candidate.addLocale(locale, rawCandidate!)
     })
   }

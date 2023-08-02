@@ -66,13 +66,26 @@ export const BuildinEvolveMapSchema = z.object({
 })
 export type BuildinEvolveMap = z.infer<typeof BuildinEvolveMapSchema>
 
+export const GroupListSchema = z.object({
+  skinGroupId: z.string(),
+  publishTime: z.number(),
+})
+export type GroupList = z.infer<typeof GroupListSchema>
+
+export const KvImgIdListSchema = z.object({
+  kvImgId: z.string(),
+  linkedSkinGroupId: z.string(),
+})
+export type KvImgIdList = z.infer<typeof KvImgIdListSchema>
+
 export const BrandListSchema = z.object({
   brandId: z.string(),
-  groupList: z.array(z.string()),
-  kvImgIdList: z.array(z.string()),
+  groupList: z.array(z.union([GroupListSchema, z.string()])), // CN vs EJK
+  kvImgIdList: z.array(z.union([KvImgIdListSchema, z.string()])), // CN vs EJK
   brandName: z.string(),
   brandCapitalName: z.string(),
   description: z.string(),
+  publishTime: z.number().optional(),
   sortId: z.number(),
 })
 export type BrandList = z.infer<typeof BrandListSchema>

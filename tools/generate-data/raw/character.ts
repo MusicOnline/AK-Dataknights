@@ -198,6 +198,7 @@ export const TalentCandidateSchema = z.object({
   description: z.string().nullable(),
   rangeId: z.string().nullable(),
   blackboard: z.array(BlackboardSchema),
+  tokenKey: z.string().nullish(), // CN vs EJK
 })
 export type TalentCandidate = z.infer<typeof TalentCandidateSchema>
 
@@ -308,6 +309,8 @@ export const AllSkillLvlupSchema = z.object({
 })
 export type AllSkillLvlup = z.infer<typeof AllSkillLvlupSchema>
 
+export const DisplayTokenDictSchema = z.record(z.boolean())
+
 export const CharacterSchema = z.object({
   name: z.string(),
   description: z.string().nullable(),
@@ -320,7 +323,6 @@ export const CharacterSchema = z.object({
   groupId: z.string().nullable(),
   teamId: z.string().nullable(),
   displayNumber: z.string().nullable(),
-  tokenKey: z.string().nullable(),
   appellation: z.string(),
   position: PositionSchema,
   tagList: z.array(z.string()).nullable(),
@@ -348,6 +350,7 @@ export const CharacterSchema = z.object({
   potentialRanks: z.array(PotentialRankSchema),
   favorKeyFrames: z.array(KeyFrameSchema).nullable(),
   allSkillLvlup: z.array(AllSkillLvlupSchema),
+  displayTokenDict: DisplayTokenDictSchema.nullish(), // CN vs EJK
 })
 export type Character = z.infer<typeof CharacterSchema>
 
