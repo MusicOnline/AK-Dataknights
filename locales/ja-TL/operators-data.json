@@ -56027,6 +56027,482 @@
     },
     "tokenSummons": {}
   },
+  "eyjafjalla-the-hvit-aska": {
+    "name": null,
+    "appellation": null,
+    "description": "味方のHPを回復し、同時に対象に蓄積された<#ba.dt.element>元素ダメージ</>を自身の攻撃力の50％の値分治療する（HP最大の味方も<#ba.dt.element>元素ダメージ</>の治療対象となる）",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_agoat2_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_agoat2_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_agoat2_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "味方のHPを回復し、同時に対象に蓄積された<?ba.dt.element>元素ダメージ</>を自身の攻撃力の<#ba.kw>{'{'}ep_heal_ratio:0{'%'}{'}'}</>の値分治療する（HP最大の味方も<?ba.dt.element>元素ダメージ</>の治療対象となる）"
+      }
+    },
+    "tokenSummons": {}
+  },
+  "swire-the-elegant-wit": {
+    "name": null,
+    "appellation": null,
+    "description": "再配置までの時間が<#ba.kw>短い</>\n撤退時に<#ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを3<#ba.kw>消費</>（コスト不足時自動に撤退）",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E0-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P3": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_swire2_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_swire2_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_swire2_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "再配置までの時間が<#ba.kw>短い</>\n撤退時に<#ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを3<#ba.kw>消費</>（コスト不足時自動に撤退）"
+      }
+    },
+    "modules": {
+      "uniequip_001_swire2": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_swire2": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "再配置までの時間が<#ba.kw>短い</>\n撤退時に<#ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを<#ba.kw>2</>消費（コスト不足時自動に撤退）"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "再配置までの時間が<#ba.kw>短い</>\n撤退時に<#ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを<#ba.kw>2</>消費（コスト不足時自動に撤退）"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "再配置までの時間が<#ba.kw>短い</>\n撤退時に<#ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを<#ba.kw>2</>消費（コスト不足時自動に撤退）"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {
+      "token_10031_swire2_gdtrap": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "skills": {
+          "sktok_swire2_gdtrap": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
+    }
+  },
   "poncirus": {
     "name": null,
     "appellation": null,
@@ -56411,482 +56887,6 @@
             }
           }
         }
-      }
-    },
-    "tokenSummons": {}
-  },
-  "swire-the-elegant-wit": {
-    "name": null,
-    "appellation": null,
-    "description": "再配置までの時間が<#ba.kw>短い</>\n撤退時に<#ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを3<#ba.kw>消費</>（コスト不足時自動に撤退）",
-    "potentials": {
-      "2": {
-        "description": null
-      },
-      "3": {
-        "description": null
-      },
-      "4": {
-        "description": null
-      },
-      "5": {
-        "description": null
-      },
-      "6": {
-        "description": null
-      }
-    },
-    "talents": {
-      "1": {
-        "E0-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E1-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E1-L1-P5": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P5": {
-          "name": null,
-          "description": null
-        }
-      },
-      "2": {
-        "E2-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P3": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "skills": {
-      "skchr_swire2_1": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      },
-      "skchr_swire2_2": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      },
-      "skchr_swire2_3": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "traitCandidates": {
-      "E0-L1": {
-        "description": "再配置までの時間が<#ba.kw>短い</>\n撤退時に<#ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを3<#ba.kw>消費</>（コスト不足時自動に撤退）"
-      }
-    },
-    "modules": {
-      "uniequip_001_swire2": {
-        "name": null,
-        "description": null
-      },
-      "uniequip_002_swire2": {
-        "name": null,
-        "description": null,
-        "stages": {
-          "1": {
-            "traitUpgrade": {
-              "overrideDescription": "再配置までの時間が<#ba.kw>短い</>\n撤退時に<#ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを<#ba.kw>2</>消費（コスト不足時自動に撤退）"
-            },
-            "talentUpgrades": {}
-          },
-          "2": {
-            "traitUpgrade": {
-              "overrideDescription": "再配置までの時間が<#ba.kw>短い</>\n撤退時に<#ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを<#ba.kw>2</>消費（コスト不足時自動に撤退）"
-            },
-            "talentUpgrades": {
-              "1": {
-                "candidates": {
-                  "1": {
-                    "name": null,
-                    "description": null
-                  },
-                  "5": {
-                    "name": null,
-                    "description": null
-                  }
-                }
-              }
-            }
-          },
-          "3": {
-            "traitUpgrade": {
-              "overrideDescription": "再配置までの時間が<#ba.kw>短い</>\n撤退時に<#ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを<#ba.kw>2</>消費（コスト不足時自動に撤退）"
-            },
-            "talentUpgrades": {
-              "1": {
-                "candidates": {
-                  "1": {
-                    "name": null,
-                    "description": null
-                  },
-                  "5": {
-                    "name": null,
-                    "description": null
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "tokenSummons": {
-      "token_10031_swire2_gdtrap": {
-        "name": null,
-        "appellation": null,
-        "potentials": {},
-        "skills": {
-          "sktok_swire2_gdtrap": {
-            "1": {
-              "name": null,
-              "description": null
-            },
-            "2": {
-              "name": null,
-              "description": null
-            },
-            "3": {
-              "name": null,
-              "description": null
-            },
-            "4": {
-              "name": null,
-              "description": null
-            },
-            "5": {
-              "name": null,
-              "description": null
-            },
-            "6": {
-              "name": null,
-              "description": null
-            },
-            "7": {
-              "name": null,
-              "description": null
-            },
-            "8": {
-              "name": null,
-              "description": null
-            },
-            "9": {
-              "name": null,
-              "description": null
-            },
-            "10": {
-              "name": null,
-              "description": null
-            }
-          }
-        },
-        "traitCandidates": {},
-        "tokenSummons": {}
-      }
-    }
-  },
-  "eyjafjalla-the-hvit-aska": {
-    "name": null,
-    "appellation": null,
-    "description": "味方のHPを回復し、同時に対象に蓄積された<#ba.dt.element>元素ダメージ</>を自身の攻撃力の50％の値分治療する（HP最大の味方も<#ba.dt.element>元素ダメージ</>の治療対象となる）",
-    "potentials": {
-      "2": {
-        "description": null
-      },
-      "3": {
-        "description": null
-      },
-      "4": {
-        "description": null
-      },
-      "5": {
-        "description": null
-      },
-      "6": {
-        "description": null
-      }
-    },
-    "talents": {
-      "1": {
-        "E1-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P1": {
-          "name": null,
-          "description": null
-        }
-      },
-      "2": {
-        "E2-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P5": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "skills": {
-      "skchr_agoat2_1": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      },
-      "skchr_agoat2_2": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      },
-      "skchr_agoat2_3": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "traitCandidates": {
-      "E0-L1": {
-        "description": "味方のHPを回復し、同時に対象に蓄積された<?ba.dt.element>元素ダメージ</>を自身の攻撃力の<#ba.kw>{'{'}ep_heal_ratio:0{'%'}{'}'}</>の値分治療する（HP最大の味方も<?ba.dt.element>元素ダメージ</>の治療対象となる）"
       }
     },
     "tokenSummons": {}

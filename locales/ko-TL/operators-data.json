@@ -56027,6 +56027,482 @@
     },
     "tokenSummons": {}
   },
+  "eyjafjalla-the-hvit-aska": {
+    "name": null,
+    "appellation": null,
+    "description": "아군 유닛의 HP 회복, 동시에 공격력의 50{'%'}에 해당하는 <#ba.dt.element>원소 피해</> 회복 (부상이 없는 아군 유닛의 <#ba.dt.element>원소 피해</>도 회복 가능)",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_agoat2_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_agoat2_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_agoat2_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "아군 유닛의 HP 회복, 동시에 공격력의 <#ba.kw>{'{'}ep_heal_ratio:0{'%'}{'}'}</>에 해당하는 <?ba.dt.element>원소 피해</> 회복 (부상이 없는 아군 유닛의 <?ba.dt.element>원소 피해</>도 회복 가능)"
+      }
+    },
+    "tokenSummons": {}
+  },
+  "swire-the-elegant-wit": {
+    "name": null,
+    "appellation": null,
+    "description": "재배치 시간 <#ba.kw>감소</>, 퇴각 시 <#ba.kw>배치 코스트</>를 반환하지 않고, 전장에서 3초마다 배치 코스트를 3 <#ba.kw>소모</> (코스트 부족 시 자동 퇴각)",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E0-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P3": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_swire2_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_swire2_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_swire2_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "재배치 시간 <#ba.kw>감소</>, 퇴각 시 <#ba.kw>배치 코스트</>를 반환하지 않고, 전장에서 3초마다 배치 코스트를 3 <#ba.kw>소모</> (코스트 부족 시 자동 퇴각)"
+      }
+    },
+    "modules": {
+      "uniequip_001_swire2": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_swire2": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "재배치 시간 <#ba.kw>감소</>, 퇴각 시 <#ba.kw>배치 코스트</>를 반환하지 않으며, 3초마다 배치 코스트 <#ba.kw>2</> 소모 (부족 시 자동 퇴각)"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "재배치 시간 <#ba.kw>감소</>, 퇴각 시 <#ba.kw>배치 코스트</>를 반환하지 않으며, 3초마다 배치 코스트 <#ba.kw>2</> 소모 (부족 시 자동 퇴각)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "재배치 시간 <#ba.kw>감소</>, 퇴각 시 <#ba.kw>배치 코스트</>를 반환하지 않으며, 3초마다 배치 코스트 <#ba.kw>2</> 소모 (부족 시 자동 퇴각)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {
+      "token_10031_swire2_gdtrap": {
+        "name": null,
+        "appellation": null,
+        "potentials": {},
+        "skills": {
+          "sktok_swire2_gdtrap": {
+            "1": {
+              "name": null,
+              "description": null
+            },
+            "2": {
+              "name": null,
+              "description": null
+            },
+            "3": {
+              "name": null,
+              "description": null
+            },
+            "4": {
+              "name": null,
+              "description": null
+            },
+            "5": {
+              "name": null,
+              "description": null
+            },
+            "6": {
+              "name": null,
+              "description": null
+            },
+            "7": {
+              "name": null,
+              "description": null
+            },
+            "8": {
+              "name": null,
+              "description": null
+            },
+            "9": {
+              "name": null,
+              "description": null
+            },
+            "10": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {},
+        "tokenSummons": {}
+      }
+    }
+  },
   "poncirus": {
     "name": null,
     "appellation": null,
@@ -56411,482 +56887,6 @@
             }
           }
         }
-      }
-    },
-    "tokenSummons": {}
-  },
-  "swire-the-elegant-wit": {
-    "name": null,
-    "appellation": null,
-    "description": "재배치 시간 <#ba.kw>감소</>, 퇴각 시 <#ba.kw>배치 코스트</>를 반환하지 않고, 전장에서 3초마다 배치 코스트를 3 <#ba.kw>소모</> (코스트 부족 시 자동 퇴각)",
-    "potentials": {
-      "2": {
-        "description": null
-      },
-      "3": {
-        "description": null
-      },
-      "4": {
-        "description": null
-      },
-      "5": {
-        "description": null
-      },
-      "6": {
-        "description": null
-      }
-    },
-    "talents": {
-      "1": {
-        "E0-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E1-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E1-L1-P5": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P5": {
-          "name": null,
-          "description": null
-        }
-      },
-      "2": {
-        "E2-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P3": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "skills": {
-      "skchr_swire2_1": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      },
-      "skchr_swire2_2": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      },
-      "skchr_swire2_3": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "traitCandidates": {
-      "E0-L1": {
-        "description": "재배치 시간 <#ba.kw>감소</>, 퇴각 시 <#ba.kw>배치 코스트</>를 반환하지 않고, 전장에서 3초마다 배치 코스트를 3 <#ba.kw>소모</> (코스트 부족 시 자동 퇴각)"
-      }
-    },
-    "modules": {
-      "uniequip_001_swire2": {
-        "name": null,
-        "description": null
-      },
-      "uniequip_002_swire2": {
-        "name": null,
-        "description": null,
-        "stages": {
-          "1": {
-            "traitUpgrade": {
-              "overrideDescription": "재배치 시간 <#ba.kw>감소</>, 퇴각 시 <#ba.kw>배치 코스트</>를 반환하지 않으며, 3초마다 배치 코스트 <#ba.kw>2</> 소모 (부족 시 자동 퇴각)"
-            },
-            "talentUpgrades": {}
-          },
-          "2": {
-            "traitUpgrade": {
-              "overrideDescription": "재배치 시간 <#ba.kw>감소</>, 퇴각 시 <#ba.kw>배치 코스트</>를 반환하지 않으며, 3초마다 배치 코스트 <#ba.kw>2</> 소모 (부족 시 자동 퇴각)"
-            },
-            "talentUpgrades": {
-              "1": {
-                "candidates": {
-                  "1": {
-                    "name": null,
-                    "description": null
-                  },
-                  "5": {
-                    "name": null,
-                    "description": null
-                  }
-                }
-              }
-            }
-          },
-          "3": {
-            "traitUpgrade": {
-              "overrideDescription": "재배치 시간 <#ba.kw>감소</>, 퇴각 시 <#ba.kw>배치 코스트</>를 반환하지 않으며, 3초마다 배치 코스트 <#ba.kw>2</> 소모 (부족 시 자동 퇴각)"
-            },
-            "talentUpgrades": {
-              "1": {
-                "candidates": {
-                  "1": {
-                    "name": null,
-                    "description": null
-                  },
-                  "5": {
-                    "name": null,
-                    "description": null
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "tokenSummons": {
-      "token_10031_swire2_gdtrap": {
-        "name": null,
-        "appellation": null,
-        "potentials": {},
-        "skills": {
-          "sktok_swire2_gdtrap": {
-            "1": {
-              "name": null,
-              "description": null
-            },
-            "2": {
-              "name": null,
-              "description": null
-            },
-            "3": {
-              "name": null,
-              "description": null
-            },
-            "4": {
-              "name": null,
-              "description": null
-            },
-            "5": {
-              "name": null,
-              "description": null
-            },
-            "6": {
-              "name": null,
-              "description": null
-            },
-            "7": {
-              "name": null,
-              "description": null
-            },
-            "8": {
-              "name": null,
-              "description": null
-            },
-            "9": {
-              "name": null,
-              "description": null
-            },
-            "10": {
-              "name": null,
-              "description": null
-            }
-          }
-        },
-        "traitCandidates": {},
-        "tokenSummons": {}
-      }
-    }
-  },
-  "eyjafjalla-the-hvit-aska": {
-    "name": null,
-    "appellation": null,
-    "description": "아군 유닛의 HP 회복, 동시에 공격력의 50{'%'}에 해당하는 <#ba.dt.element>원소 피해</> 회복 (부상이 없는 아군 유닛의 <#ba.dt.element>원소 피해</>도 회복 가능)",
-    "potentials": {
-      "2": {
-        "description": null
-      },
-      "3": {
-        "description": null
-      },
-      "4": {
-        "description": null
-      },
-      "5": {
-        "description": null
-      },
-      "6": {
-        "description": null
-      }
-    },
-    "talents": {
-      "1": {
-        "E1-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P1": {
-          "name": null,
-          "description": null
-        }
-      },
-      "2": {
-        "E2-L1-P1": {
-          "name": null,
-          "description": null
-        },
-        "E2-L1-P5": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "skills": {
-      "skchr_agoat2_1": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      },
-      "skchr_agoat2_2": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      },
-      "skchr_agoat2_3": {
-        "1": {
-          "name": null,
-          "description": null
-        },
-        "2": {
-          "name": null,
-          "description": null
-        },
-        "3": {
-          "name": null,
-          "description": null
-        },
-        "4": {
-          "name": null,
-          "description": null
-        },
-        "5": {
-          "name": null,
-          "description": null
-        },
-        "6": {
-          "name": null,
-          "description": null
-        },
-        "7": {
-          "name": null,
-          "description": null
-        },
-        "8": {
-          "name": null,
-          "description": null
-        },
-        "9": {
-          "name": null,
-          "description": null
-        },
-        "10": {
-          "name": null,
-          "description": null
-        }
-      }
-    },
-    "traitCandidates": {
-      "E0-L1": {
-        "description": "아군 유닛의 HP 회복, 동시에 공격력의 <#ba.kw>{'{'}ep_heal_ratio:0{'%'}{'}'}</>에 해당하는 <?ba.dt.element>원소 피해</> 회복 (부상이 없는 아군 유닛의 <?ba.dt.element>원소 피해</>도 회복 가능)"
       }
     },
     "tokenSummons": {}
