@@ -21,6 +21,7 @@ const { t } = useI18n()
 <template>
   <div class="flex gap-2" :class="{ 'text-sm': small }">
     <img
+      v-if="skill.levels[0].hasDescription"
       :class="{ 'h-14 w-14': small, 'h-16 w-16': !small }"
       :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/skills/skill_icon_${
         skill.iconId || skill.id
