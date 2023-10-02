@@ -85,6 +85,7 @@ export enum SubProfession {
   Spreadshooter = "reaperrange",
   Besieger = "siegesniper",
   Flinger = "bombarder",
+  Hunter = "hunter",
   // Caster
   CoreCaster = "corecaster",
   SplashCaster = "splashcaster",

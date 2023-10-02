@@ -121,7 +121,8 @@
       "shotprotector": "哨戒铁卫",
       "chainhealer": "链愈师",
       "crusher": "重剑手",
-      "ritualist": "巫役"
+      "ritualist": "巫役",
+      "hunter": "猎手"
     },
     "attribute": {
       "atk": "攻击力",

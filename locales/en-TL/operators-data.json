@@ -3499,19 +3499,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Can attack <#ba.kw>all blocked enemies</>. When blocking 2 or more enemies, push strength is increased by one level\nCan be deployed on Ranged Tiles"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Can attack <#ba.kw>all blocked enemies</>. When blocking 2 or more enemies, push strength is increased by one level\nCan be deployed on Ranged Tiles"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Fireproof Suit",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -3520,13 +3520,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Can attack <#ba.kw>all blocked enemies</>. When blocking 2 or more enemies, push strength is increased by one level\nCan be deployed on Ranged Tiles"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Fireproof Suit",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -8281,23 +8281,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Can attack <#ba.kw>all blocked enemies</>. When blocking 2 or more enemies, push strength is increased by one level\nCan be deployed on Ranged Tiles"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Can attack <#ba.kw>all blocked enemies</>. When blocking 2 or more enemies, push strength is increased by one level\nCan be deployed on Ranged Tiles"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Kung Fu",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Kung Fu",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -8306,17 +8306,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Can attack <#ba.kw>all blocked enemies</>. When blocking 2 or more enemies, push strength is increased by one level\nCan be deployed on Ranged Tiles"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Kung Fu",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Kung Fu",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -10803,6 +10803,56 @@
             }
           }
         }
+      },
+      "uniequip_003_chen": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "Attacks ignore <#ba.vup>{'{'}def_penetrate_fixed{'}'}</> DEF"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "Attacks ignore <#ba.vup>{'{'}def_penetrate_fixed{'}'}</> DEF"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Blade Art",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Blade Art",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "Attacks ignore <#ba.vup>{'{'}def_penetrate_fixed{'}'}</> DEF"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Blade Art",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Blade Art",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {}
@@ -11828,7 +11878,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "The first Deployment Cost -4"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -11840,7 +11890,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "The first Deployment Cost -4"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -11851,7 +11901,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Crushing",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -11865,7 +11915,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "The first Deployment Cost -4"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -11876,7 +11926,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Crushing",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -12146,23 +12196,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "When healing allied units with less than 50{'%'} HP, increases heal amount by <#ba.kw>15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "When healing allied units with less than 50{'%'} HP, increases heal amount by <#ba.kw>15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Code of Law",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Code of Law",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -12176,17 +12226,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "When healing allied units with less than 50{'%'} HP, increases heal amount by <#ba.kw>15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Code of Law",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Code of Law",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -12690,23 +12740,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Deals <#ba.kw>AOE Arts damage in a long line</>. The further away the enemy, the higher the damage dealt, up to <#ba.kw>110{'%'}</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Deals <#ba.kw>AOE Arts damage in a long line</>. The further away the enemy, the higher the damage dealt, up to <#ba.kw>110{'%'}</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Rhine Loop",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "Rhine Loop",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -12715,17 +12765,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Deals <#ba.kw>AOE Arts damage in a long line</>. The further away the enemy, the higher the damage dealt, up to <#ba.kw>110{'%'}</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Rhine Loop",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "Rhine Loop",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -24552,13 +24602,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Can attack <#ba.kw>all blocked enemies</>\nCan be deployed on Ranged Tiles, and refunds half of the current DP Cost"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Can attack <#ba.kw>all blocked enemies</>\nCan be deployed on Ranged Tiles, and refunds half of the current DP Cost"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -24577,7 +24627,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Upgraded Water Cannon",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -24586,7 +24636,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Can attack <#ba.kw>all blocked enemies</>\nCan be deployed on Ranged Tiles, and refunds half of the current DP Cost"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -24605,7 +24655,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Upgraded Water Cannon",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -25138,6 +25188,72 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_tknogi": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_tknogi": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "Blessing",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Blessing",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "Blessing",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Blessing",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {}
@@ -33803,6 +33919,58 @@
             }
           }
         }
+      },
+      "uniequip_003_saga": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Blocks 2 enemies; Gains +8{'%'} ATK and DEF while blocking enemies"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Blocks 2 enemies; Gains +8{'%'} ATK and DEF while blocking enemies"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "Preaching",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Blocks 2 enemies; Gains +8{'%'} ATK and DEF while blocking enemies"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "Preaching",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {}
@@ -40441,23 +40609,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Deals <#ba.kw>AOE Arts damage in a long line</>. The further away the enemy, the higher the damage dealt, up to <#ba.kw>110{'%'}</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Deals <#ba.kw>AOE Arts damage in a long line</>. The further away the enemy, the higher the damage dealt, up to <#ba.kw>110{'%'}</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Tactical Readjustment",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Tactical Readjustment",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -40466,17 +40634,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Deals <#ba.kw>AOE Arts damage in a long line</>. The further away the enemy, the higher the damage dealt, up to <#ba.kw>110{'%'}</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Tactical Readjustment",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Tactical Readjustment",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -41860,6 +42028,54 @@
         "description": null
       }
     },
+    "modules": {
+      "uniequip_001_ncdeer": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_ncdeer": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Ethereal Iridescent Clouds",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Ethereal Iridescent Clouds",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {}
   },
   "ling": {
@@ -43225,6 +43441,62 @@
         "description": null
       }
     },
+    "modules": {
+      "uniequip_001_quercu": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_quercu": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Forest Sanctuary",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Forest Sanctuary",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Forest Sanctuary",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Forest Sanctuary",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {}
   },
   "fiammetta": {
@@ -43611,23 +43883,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Can attack <#ba.kw>all blocked enemies</>\nCan be deployed on Ranged Tiles, and refunds half of the current DP Cost"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Can attack <#ba.kw>all blocked enemies</>\nCan be deployed on Ranged Tiles, and refunds half of the current DP Cost"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Precise Aim",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Precise Aim",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -43636,17 +43908,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Can attack <#ba.kw>all blocked enemies</>\nCan be deployed on Ranged Tiles, and refunds half of the current DP Cost"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Precise Aim",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Precise Aim",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -52245,7 +52517,7 @@
   "qiubai": {
     "name": "Qiubai",
     "appellation": null,
-    "description": "Can launch <#ba.kw>Ranged Attacks</> that deal 80{'%'} of normal ATK",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -52431,7 +52703,7 @@
   "wind-chimes": {
     "name": "Wind Chimes",
     "appellation": null,
-    "description": "Attacks <#ba.kw>all blocked enemies</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -52562,10 +52834,10 @@
     },
     "tokenSummons": {}
   },
-  "kirin-x-yato": {
-    "name": "Kirin X Yato",
+  "kirin-r-yato": {
+    "name": null,
     "appellation": null,
-    "description": "Significantly <#ba.kw>reduced</> Redeployment Time",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -52739,7 +53011,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "Significantly <#ba.kw>reduced</> Redeployment Time"
+        "description": null
       }
     },
     "modules": {
@@ -52753,13 +53025,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Refunds <#ba.kw>a large portion</> of the current DP Cost when retreated"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Refunds <#ba.kw>a large portion</> of the current DP Cost when retreated"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -52778,7 +53050,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Refunds <#ba.kw>a large portion</> of the current DP Cost when retreated"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -52803,7 +53075,7 @@
   "rathalos-s-noir-corne": {
     "name": "Rathalos S Noir Corne",
     "appellation": null,
-    "description": "Can't be healed by other units. Recovers <#ba.kw>{'{'}value{'}'}</> self HP every time this operator attacks an enemy",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -52959,7 +53231,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Gain 25{'%'} <?ba.protect>Sanctuary</> when HP is below 50{'%'}"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -52971,7 +53243,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Gain 25{'%'} <?ba.protect>Sanctuary</> when HP is below 50{'%'}"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -52991,7 +53263,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Gain 25{'%'} <?ba.protect>Sanctuary</> when HP is below 50{'%'}"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -53017,7 +53289,7 @@
   "terra-research-commission": {
     "name": "Terra Research Commission",
     "appellation": null,
-    "description": "Attacks deal <#ba.kw>two instances</> of Physical damage to <#ba.kw>ground</> enemies in a small area (The second instance is a shockwave that has half the normal ATK). Ignores the <#ba.kw>Deployment Limit</>, but has a long Redeployment Time",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -54063,6 +54335,72 @@
     "traitCandidates": {
       "E0-L1": {
         "description": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+      }
+    },
+    "modules": {
+      "uniequip_001_slent2": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_slent2": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {
@@ -56887,6 +57225,557 @@
             }
           }
         }
+      }
+    },
+    "tokenSummons": {}
+  },
+  "jessica-the-liberated": {
+    "name": "Jessica the Liberated",
+    "appellation": null,
+    "description": "Blocks 3 enemies and attacks from long range.",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E0-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E0-L1-P3": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P3": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P3": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_jesca2_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_jesca2_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_jesca2_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "Blocks 3 enemies and attacks from long range."
+      }
+    },
+    "tokenSummons": {
+      "token_10032_jesca2_jckshd": {
+        "name": "Mobile personnel shield",
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {},
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {}
+      }
+    }
+  },
+  "almond": {
+    "name": "Almond",
+    "appellation": null,
+    "description": "Can <#ba.kw>Shift</> enemies by using skills\nCan be deployed on Ranged Tiles",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_almond_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_almond_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "Can <#ba.kw>Shift</> enemies by using skills\nCan be deployed on Ranged Tiles"
+      }
+    },
+    "modules": {
+      "uniequip_001_almond": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_almond": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "While being pulled, enemies take Arts damage proportional to the distance traveled"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "While being pulled, enemies take Arts damage proportional to the distance traveled"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "While being pulled, enemies take Arts damage proportional to the distance traveled"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {}
+  },
+  "coldshot": {
+    "name": "Coldshot",
+    "appellation": null,
+    "description": "Attacks require ammo and ATK increases to <#ba.kw>120{'%'}</>; Reloads ammo gradually when not attacking (up to 8 ammo)",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skcom_atk_up<3>": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_coldst_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "Attacks require ammo and ATK increases to <#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</>; Reloads ammo gradually when not attacking (up to {'{'}value{'}'} ammo, upgraded after reaching Elite 1)"
+      },
+      "E1-L1": {
+        "description": "Attacks require ammo and ATK increases to <#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</>; Reloads ammo gradually when not attacking (up to {'{'}value{'}'} ammo, upgraded after reaching Elite 2)"
+      },
+      "E2-L1": {
+        "description": "Attacks require ammo and ATK increases to <#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</>; Reloads ammo gradually when not attacking (up to {'{'}value{'}'} ammo)"
       }
     },
     "tokenSummons": {}

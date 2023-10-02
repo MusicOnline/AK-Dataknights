@@ -174,7 +174,8 @@
       "shotprotector": "Sentinel Protector",
       "chainhealer": "Chain Medic",
       "crusher": "Crusher",
-      "ritualist": "Ritualist"
+      "ritualist": "Ritualist",
+      "hunter": "Hunter"
     },
     "attribute": {
       "maxHp": "HP",

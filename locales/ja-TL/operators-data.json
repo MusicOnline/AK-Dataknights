@@ -3499,19 +3499,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃、敵を2体以上ブロック時、自身の力加減が1ランク上昇\n遠距離マスにも配置可能"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃、敵を2体以上ブロック時、自身の力加減が1ランク上昇\n遠距離マスにも配置可能"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "防火服",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -3520,13 +3520,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃、敵を2体以上ブロック時、自身の力加減が1ランク上昇\n遠距離マスにも配置可能"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "防火服",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -8281,23 +8281,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃、敵を2体以上ブロック時、自身の力加減が1ランク上昇\n遠距離マスにも配置可能"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃、敵を2体以上ブロック時、自身の力加減が1ランク上昇\n遠距離マスにも配置可能"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "功夫",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "功夫",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -8306,17 +8306,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃、敵を2体以上ブロック時、自身の力加減が1ランク上昇\n遠距離マスにも配置可能"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "功夫",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "功夫",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -10803,6 +10803,56 @@
             }
           }
         }
+      },
+      "uniequip_003_chen": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "攻撃時、敵の防御力を<#ba.vup>{'{'}def_penetrate_fixed{'}'}</>無視"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "攻撃時、敵の防御力を<#ba.vup>{'{'}def_penetrate_fixed{'}'}</>無視"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "帯刀格闘術",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "帯刀格闘術",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "攻撃時、敵の防御力を<#ba.vup>{'{'}def_penetrate_fixed{'}'}</>無視"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "帯刀格闘術",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "帯刀格闘術",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {}
@@ -11828,7 +11878,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "初回配置時、自身の配置コスト-4"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -11840,7 +11890,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "初回配置時、自身の配置コスト-4"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -11851,7 +11901,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "粉砕",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -11865,7 +11915,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "初回配置時、自身の配置コスト-4"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -11876,7 +11926,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "粉砕",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -12146,23 +12196,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "HPが50{'%'}未満の味方を治療時、HP治療効果<#ba.kw>+15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "HPが50{'%'}未満の味方を治療時、HP治療効果<#ba.kw>+15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "法典",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "法典",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -12176,17 +12226,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "HPが50{'%'}未満の味方を治療時、HP治療効果<#ba.kw>+15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "法典",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "法典",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -12690,23 +12740,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える、遠いほどダメージが上昇、最大<#ba.kw>110{'%'}</>まで上昇"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える、遠いほどダメージが上昇、最大<#ba.kw>110{'%'}</>まで上昇"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "ライン回路",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "ライン回路",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -12715,17 +12765,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える、遠いほどダメージが上昇、最大<#ba.kw>110{'%'}</>まで上昇"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "ライン回路",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "ライン回路",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -24552,13 +24602,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能、今回の配置時のコストを半分返却"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能、今回の配置時のコストを半分返却"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -24577,7 +24627,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "蓄水砲強化",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -24586,7 +24636,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能、今回の配置時のコストを半分返却"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -24605,7 +24655,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "蓄水砲強化",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -25138,6 +25188,72 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_tknogi": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_tknogi": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の<#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</>）"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の<#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</>）"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "祝",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "祝",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の<#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</>）"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "祝",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "祝",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {}
@@ -33803,6 +33919,58 @@
             }
           }
         }
+      },
+      "uniequip_003_saga": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "敵を2体までブロック\n敵をブロックしている時、攻撃力と防御力+8{'%'}"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "敵を2体までブロック\n敵をブロックしている時、攻撃力と防御力+8{'%'}"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "勧善",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "敵を2体までブロック\n敵をブロックしている時、攻撃力と防御力+8{'%'}"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "勧善",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {}
@@ -40441,23 +40609,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える、遠いほどダメージが上昇、最大<#ba.kw>110{'%'}</>まで上昇"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える、遠いほどダメージが上昇、最大<#ba.kw>110{'%'}</>まで上昇"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "戦術的調整",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "戦術的調整",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -40466,17 +40634,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える、遠いほどダメージが上昇、最大<#ba.kw>110{'%'}</>まで上昇"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "戦術的調整",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "戦術的調整",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -41860,6 +42028,54 @@
         "description": null
       }
     },
+    "modules": {
+      "uniequip_001_ncdeer": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_ncdeer": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の<#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</>）"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の<#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</>）"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "縹渺彩雲",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の<#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</>）"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "縹渺彩雲",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {}
   },
   "ling": {
@@ -43225,6 +43441,62 @@
         "description": null
       }
     },
+    "modules": {
+      "uniequip_001_quercu": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_quercu": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の<#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</>）"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の<#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</>）"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "森林の庇護",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "森林の庇護",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の<#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</>）"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "森林の庇護",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "森林の庇護",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {}
   },
   "fiammetta": {
@@ -43611,23 +43883,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能、今回の配置時のコストを半分返却"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能、今回の配置時のコストを半分返却"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "テクニカルショット",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "テクニカルショット",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -43636,17 +43908,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能、今回の配置時のコストを半分返却"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "テクニカルショット",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "テクニカルショット",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -52245,7 +52517,7 @@
   "qiubai": {
     "name": null,
     "appellation": null,
-    "description": "80％の攻撃力で<#ba.kw>遠距離攻撃</>も行える",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -52431,7 +52703,7 @@
   "wind-chimes": {
     "name": null,
     "appellation": null,
-    "description": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -52562,10 +52834,10 @@
     },
     "tokenSummons": {}
   },
-  "kirin-x-yato": {
+  "kirin-r-yato": {
     "name": null,
     "appellation": null,
-    "description": "再配置までの時間が極めて<#ba.kw>短い</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -52739,7 +53011,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "再配置までの時間が極めて<#ba.kw>短い</>"
+        "description": null
       }
     },
     "modules": {
@@ -52753,13 +53025,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "撤退時に今回の配置時のコストを<#ba.kw>大量に</>返却"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "撤退時に今回の配置時のコストを<#ba.kw>大量に</>返却"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -52778,7 +53050,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "撤退時に今回の配置時のコストを<#ba.kw>大量に</>返却"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -52803,7 +53075,7 @@
   "rathalos-s-noir-corne": {
     "name": null,
     "appellation": null,
-    "description": "味方の治療対象にならない\n敵を攻撃する度自身のHPを<#ba.kw>{'{'}value{'}'}</>回復",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -52959,7 +53231,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "HPが50％未満の時、25％の<?ba.protect>加護</>状態を獲得"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -52971,7 +53243,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "HPが50％未満の時、25％の<?ba.protect>加護</>状態を獲得"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -52991,7 +53263,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "HPが50％未満の時、25％の<?ba.protect>加護</>状態を獲得"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -53017,7 +53289,7 @@
   "terra-research-commission": {
     "name": null,
     "appellation": null,
-    "description": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>2回</>の範囲物理ダメージを与える（2回目は余震、攻撃力の半分でダメージを計算する）\n<#ba.kw>配属可能数</>にカウントされない\n再配置までの時間が極めて長い",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -54065,6 +54337,72 @@
         "description": "敵に<#ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の<#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</>）"
       }
     },
+    "modules": {
+      "uniequip_001_slent2": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_slent2": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の<#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</>）"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の<#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</>）"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の<#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</>）"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {
       "token_10029_slent2_protrb": {
         "name": null,
@@ -54137,7 +54475,7 @@
   "muelsyse": {
     "name": null,
     "appellation": null,
-    "description": "攻撃範囲内で戦術召集点を指定し援軍を召喚できる\n援軍がブロック中の敵を自身が攻撃する時、攻撃力が150％まで上昇",
+    "description": "攻撃範囲内で<#ba.kw>戦術召集点</>を指定し援軍を召喚できる\n援軍がブロック中の敵を自身が攻撃する時、攻撃力が150％まで上昇",
     "potentials": {
       "2": {
         "description": null
@@ -54311,7 +54649,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "攻撃範囲内で戦術召集点を指定し援軍を召喚できる\n援軍がブロック中の敵を自身が攻撃する時、攻撃力が150％まで上昇"
+        "description": "攻撃範囲内で<#ba.kw>戦術召集点</>を指定し援軍を召喚できる\n援軍がブロック中の敵を自身が攻撃する時、攻撃力が150％まで上昇"
       }
     },
     "tokenSummons": {
@@ -56887,6 +57225,557 @@
             }
           }
         }
+      }
+    },
+    "tokenSummons": {}
+  },
+  "jessica-the-liberated": {
+    "name": null,
+    "appellation": null,
+    "description": "敵を3体までブロック、遠距離攻撃も行える",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E0-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E0-L1-P3": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P3": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P3": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_jesca2_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_jesca2_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_jesca2_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "敵を3体までブロック、遠距離攻撃も行える"
+      }
+    },
+    "tokenSummons": {
+      "token_10032_jesca2_jckshd": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {},
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {}
+      }
+    }
+  },
+  "almond": {
+    "name": null,
+    "appellation": null,
+    "description": "<#ba.kw>強制移動</>スキルを所持\n遠距離マスにも配置可能",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_almond_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_almond_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "<#ba.kw>強制移動</>スキルを所持\n遠距離マスにも配置可能"
+      }
+    },
+    "modules": {
+      "uniequip_001_almond": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_almond": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "敵を引き寄せる時、対象の強制移動距離に応じた術ダメージを与える"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "敵を引き寄せる時、対象の強制移動距離に応じた術ダメージを与える"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "敵を引き寄せる時、対象の強制移動距離に応じた術ダメージを与える"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {}
+  },
+  "coldshot": {
+    "name": null,
+    "appellation": null,
+    "description": "攻撃時に弾薬を消費し、攻撃力が<#ba.kw>120{'%'}</>まで上昇。攻撃していない時はゆっくりと弾薬を装填する（最大8発）",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skcom_atk_up<3>": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_coldst_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "攻撃時に弾薬を消費し、攻撃力が<#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</>まで上昇。攻撃していない時はゆっくりと弾薬を装填する（最大{'{'}value{'}'}発、昇進1で最大数増加）"
+      },
+      "E1-L1": {
+        "description": "攻撃時に弾薬を消費し、攻撃力が<#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</>まで上昇。攻撃していない時はゆっくりと弾薬を装填する（最大{'{'}value{'}'}発、昇進2で最大数増加）"
+      },
+      "E2-L1": {
+        "description": "攻撃時に弾薬を消費し、攻撃力が<#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</>まで上昇。攻撃していない時はゆっくりと弾薬を装填する（最大{'{'}value{'}'}発）"
       }
     },
     "tokenSummons": {}

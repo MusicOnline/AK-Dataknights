@@ -3490,29 +3490,29 @@
     },
     "modules": {
       "uniequip_001_sqrrel": {
-        "name": null,
-        "description": null
+        "name": "Shaw's Badge",
+        "description": "Operator Shaw has demonstrated a remarkable aptitude for physically distancing the enemy via applied force so as to preserve the front.\nThe Field Operations Department has thus passed the following resolution:\nThis operator shall be appointed a Specialist Operator during field operations to exercise Push Stroker responsibilities.\nIn witness whereof,\nThis badge is hereby conferred upon the above named."
       },
       "uniequip_002_sqrrel": {
-        "name": null,
-        "description": null,
+        "name": "Customized Firefighting Suit",
+        "description": "'...highly customized protective module, for a fireproof experience that can't be beat!'\nCatching the commercial coming from the shop, two people in the Lungmen Fire Department gear slow their pace as they pass the display window.\n'Annoyed because your not-so-ordinary horns puncture your protective layers? Worried because you just can't figure out how to stuff that fluffy tail inside your suit?\n'You can trust the OF-6D Multifunction Protective Suit, the professional's first choice!\n'Sharp tapers, towering ears, soft plumage—thanks to the OF-6D's adjustable helmet, you'll always have a comfortable, perfect fit! Special protective horn sheaths designed for Forte, Caprinae, Elafia and more races besides will keep your beloved horns insulated while looking and feeling as good as ever!\n'Whether running rescues or escapes at the scene of a fire, we know the tail is another big concern, but have no fear! With the highly customized tail module, your tail has all the room it needs to flex inside your suit, while still coming out as shiny and fluffy as it went in! Hate squashing it up to your skin and pulling out a felt mat? No more!\n......\n'What, ad got you hooked?'\n'A little.'\n'But you're an Ægir.'\n'Shut it. I'm thinking of Shaw.'\nThey come to a complete stop outside the emporium door.\n'How did Shaw handle her tail again? I think her height only fit our smallest size, but her tail needs the biggest one, if I remember right.'\n'For ordinary jobs, she leaves it hanging out of her suit. For heading into fires, she always wears a size up and wraps her tail around her waist.'\n'Right, right, that's what I mean. I was busy somewhere else when that fire hit a few days ago, but the reports said there was a gap on the scene so narrow only someone short as Shaw could fit through.'\n'Don't bring that up. Coiling your tail bloats the suit too much. Shaw went straight in with her tail out because there wasn't enough time. We rescued the people, but her tail...'\n'Wasn't she uninjured?'\n'You telling me curled hair is an injury?'\n'Sorry. I used to be totally clueless about how you saw your horns and tails and all those parts.'\n'Well, now she's applied for leave. Put two and two together.'\n'I thought she just wanted to chill out for a few days while there were less fires.'\n'Dude!'\nAfter a moment of silence, the two share a glance, and enter the shop in coincidental unison.",
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>; When blocking 2 or more enemies, increases shift level by 1\nCan be deployed on ranged tiles"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>; When blocking 2 or more enemies, increases shift level by 1\nCan be deployed on ranged tiles"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Fireproof Suit",
+                    "description": "RES +20"
                   }
                 }
               }
@@ -3520,14 +3520,14 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>; When blocking 2 or more enemies, increases shift level by 1\nCan be deployed on ranged tiles"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Fireproof Suit",
+                    "description": "RES +23"
                   }
                 }
               }
@@ -8272,33 +8272,33 @@
     },
     "modules": {
       "uniequip_001_panda": {
-        "name": null,
-        "description": null
+        "name": "FEater's Badge",
+        "description": "Operator FEater has demonstrated a remarkable aptitude for physically distancing the enemy via applied force so as to preserve the front.\nThe Field Operations Department has thus passed the following resolution:\nThis operator shall be appointed a Specialist Operator during field operations to exercise Push Stroker responsibilities.\nIn witness whereof,\nThis badge is hereby conferred upon the above named."
       },
       "uniequip_002_panda": {
-        "name": null,
-        "description": null,
+        "name": "Shangshu-Style Homemade Chili Sauce",
+        "description": "'Ah-choo... ah-choo...'\nOutside the kitchen door, everyone is wiping their noses, sneezing one after another like there's no tomorrow, even their eyes sealed shut.\nThe culprit: a pungent, choking aroma wafting from a crack in the door, inflaming everyone's nostrils, tickling their throats.\n'Ah-choo... ah-choo...'\nDespite how unbearable it is, nobody's willing to take even one step away. People are still flowing <<i>>into</i> the cafeteria, in fact.\n'Is—Is it ready? Is FEater still inside?'\n'*cough* *cough*... Yeah, you can hear the banging. She's probably still chopping chilis.'\n'So spicy... I—I'm almost at my limit... ah-choo!'\n'Then you'd better get out of here... *cough* *cough*...'\n'No way am I letting you jump my spot... ah-choo!'\nWith a 'crrrk,' the kitchen door swings open, and in an instant, the entire room is filled with a scent rich and stimulating. Right behind it comes FEater carrying a plate, her smile brimming with satisfaction.\n'It's done! Step on up and try it, guys. I've even added my hometown chili paste for a special touch.'\nSeeing the brilliant red pepper slices and vividly shining chili oil, the crowd craning to steal a look just a moment before is now hush-silent. They share looks of alarm at each other, each sporting their own unique expression.\n'Don't let it scare you! Sit down and try!'\n'I assume... it's going to be very spicy, FEater?'\n'Nope, not spicy at all. I just tasted it.'\n'Then I suppose I will.'\nNo sooner do the words come out than the crowd parts perfectly into two, and under the admiring attention of all, one lone operator walks up to the table, rubs her hands, and picks up a pair of chopsticks with a tremble.\n'Come on, try!'\nAs if unable to withstand FEater's expectant gaze, the operator's chopsticks chatter like teeth, with a sharp clack-clack-clack-clack. Finally, after circling above the plate a few times, they descend, carefully picking up a piece of meat not totally stuffed with peppers.\nShe lifts the chopsticks high and gives them a shake, then two, hoping the chili seeds and peppercorns will fall out of the roll of meat, and right away senses it still won't be enough, leading her to wipe it a few times against the edge of the plate. Only once it's wiped bare of all excess oil does she finally take a deep breath, and prepare to put it in her mouth.\n'Wait, give it a rinse in your glass!'\nThe prompting voice from the crowd enters her ears, and she sees the light. Her chopsticks make an about face and dunk the meat in her drinking glass, and instantly, what was clear warm water is now scarlet throughout, beads of oil floating about within.\nThe sight of the meat's original, fair color greets her. The operator sighs with palpable relief, and scarfs it down in one clean go.\n'How is it? Good?' asks FEater with a wink.\n'*cough* *cough* *cough* *cough*... Wh—Where's my water? *cough* *cough*—'\n'*glug* *glug*...'\n'Hey, isn't that the water she just...'\n'Pppffffhh—!'",
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>; When blocking 2 or more enemies, increases shift level by 1\nCan be deployed on ranged tiles"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>; When blocking 2 or more enemies, increases shift level by 1\nCan be deployed on ranged tiles"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Kung Fu",
+                    "description": "Obtains 47{'%'} Physical Dodge"
                   },
                   "5": {
-                    "name": null,
-                    "description": null
+                    "name": "Kung Fu",
+                    "description": "Obtains 50{'%'} <#ba.talpu>(+3{'%'})</> Physical Dodge"
                   }
                 }
               }
@@ -8306,18 +8306,18 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>; When blocking 2 or more enemies, increases shift level by 1\nCan be deployed on ranged tiles"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Kung Fu",
+                    "description": "Obtains 52{'%'} Physical Dodge"
                   },
                   "5": {
-                    "name": null,
-                    "description": null
+                    "name": "Kung Fu",
+                    "description": "Obtains 55{'%'} <#ba.talpu>(+3{'%'})</> Physical Dodge"
                   }
                 }
               }
@@ -8859,7 +8859,7 @@
     "modules": {
       "uniequip_001_milu": {
         "name": "Firewatch's Badge",
-        "description": "Operator Firewatch has demonstrated a remarkable aptitude for defeating enemies from long range. \nThe Field Operations Department has thus passed the following resolution: \nThis operator shall be appointed a Sniper Operator during field operations to exercise Deadeye responsibilities. \nIn witness whereof, \nThis badge is hereby conferred upon the above named."
+        "description": "Operator Firewatch has demonstrated a remarkable aptitude for defeating enemies from long range.\nThe Field Operations Department has thus passed the following resolution:\nThis operator shall be appointed a Sniper Operator during field operations to exercise Deadeye responsibilities.\nIn witness whereof,\nThis badge is hereby conferred upon the above named."
       },
       "uniequip_002_milu": {
         "name": "Field Sniper Equipment",
@@ -10803,6 +10803,56 @@
             }
           }
         }
+      },
+      "uniequip_003_chen": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {}
@@ -11823,12 +11873,12 @@
         }
       },
       "uniequip_003_siege": {
-        "name": null,
-        "description": null,
+        "name": "'Thy First Vow'",
+        "description": "Gawain ambles through the city. He's spent so much time in this manner, yet still can't say he's used to seeing what he sees. Londinium's clouds are hanging low as ever—when did that start happening? He strains to recall, but can't come up with a definite answer. As if the last time he looked to the sky, the gloomy haze was never even there.\nAlexandrina Vina Victoria lies sleeping on the counter in the pub. Yesterday, she and her companions made an all-too-tough escape from the beat. It strikes Gawain that she especially resembles her grandmother in these moments—or was it her great-grandmother? The one named Mathilda, the girl with a head of gold curls, how exactly was she related to Vina here? Face after face flashes by, going from young to old, ultimately scattering with the sand on the wind. Some of those faces might not even actually exist, being simply products of vaguer parts of the mind. Gawain has to admit, his time spent by this family's side may be longer than he was anticipating at first. Far longer already.\nHe doesn't make a habit of appearing before people. The interpretations of him as a symbol of power disgust him, and hardly fall in line with his original agreement. Still, their ups and downs have kept Gawain watching with interest all the same. There'll be times he can't help but reflect on history. Moments where shadows of similarity loom over them.\nVina once asked him why her teacher would always be by her side, and at the time his answer was silence. Yes, he learned long ago not to meddle anymore, because farewell would always come eventually. He still dimly remembers how, once, he and Lugalszargus bounded about that battlefield they call the foehn hotlands these days. He carried that mettlesome man atop his back, and with the Nightzmoran Khagan by their side, they charged for the sandstorms of afar. Everyone died there—and that was the news he brought back to Lugalszargus's daughter. He remembers the feeling of his mane wet with tears. Those times proved... to pass in the twinkling of an eye. Humanity is far frailer than a master of the beasts, and the years have taught him that fact again and again.\nSome bygones aren't worth dredging up so often, and Gawain only recalls those periods very, very occasionally in his dreams. A meeting so old that history had not yet been written, a reckless boy upon the barrens who never feared him one bit. Their travels together, cheers and tears, song and wine, and then—his age, his death. That was the first time, not as a sovereign, but as a friend, that Gawain witnessed death. Warmth fading from flesh, breath stilling from mouth and nose. Before that, Gawain had never imagined that to witness death would be such torment.\nIt was then that Gawain promised him, that he would aid his descendants in their continued survival, until they no longer needed him.\nThe golden creature stops in his step, and narrows his eyes. He, that friend, that boy... what was his name?\nGawain sighs. Fortunately, he still hasn't abandoned his vow.",
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "The first Deployment Cost -4"
             },
             "talentUpgrades": {
               "1": {
@@ -11840,7 +11890,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "The first Deployment Cost -4"
             },
             "talentUpgrades": {
               "1": {
@@ -11851,8 +11901,8 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Crushing",
+                    "description": "Gains 2 SP and additionally grants 1 SP to another random Vanguard Operator on the battlefield whenever an enemy is defeated in the adjacent 4 tiles"
                   }
                 }
               },
@@ -11865,7 +11915,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "The first Deployment Cost -4"
             },
             "talentUpgrades": {
               "1": {
@@ -11876,8 +11926,8 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Crushing",
+                    "description": "Gains 3 SP and additionally grants 1 SP to another random Vanguard Operator on the battlefield whenever an enemy is defeated in the adjacent 4 tiles"
                   }
                 }
               },
@@ -12141,29 +12191,29 @@
         }
       },
       "uniequip_003_shining": {
-        "name": null,
-        "description": null,
+        "name": "'Followers'",
+        "description": "At the interval where evening crosses into night, more fall. These people flee for their lives from the battlefield, but sickness has captured them partway, with death shortly to follow.\nA dying boy has lost the strength to struggle. His mother kneels at his side, but all she can do is hold him close, like one would their newborn. Sensing how the body in her embrace holds warmth no longer, a noise rises from her throat. It is more a cry than a shout.\nSeeming to heed her voice, the boy's weak chest gives a light flutter. Then, another. The movements from the body's deepest parts grow distinct, as if what lifeforce has passed now returns again.\nPractically leaping to her feet, the mother clutches tight the hands of the strangers who arrived here before them at some point. At a glance, she recognizes the two as Sarkaz, but whether they are the gospels of life or the emissaries of death, she can do little but beg.\nThe white-robed Sarkaz places her hand to the chest of the ailing. The black-cowled, instead, lowers her gaze down at them. What remainders of sunlight still strain past night's shade sink now into the pallid eyes of the dying. Gaze meets gaze again, between he and his mother. From their start to their end, the memories which engrave each passage of a person's life, and the emotions held therein, seep out from their selves, circling them together with the faint light of the setting sun. It is a light of no warmth, and ceases now to flow... simply, its journey is from the eyes of the dead to the eyes of the living. A teardrop falls from the mother's dried face, whereupon this instant elapses, and night finally enshrouds one and all as equals.\nShining silently watches the last wisp of twilight pale into the night.\n'Legend holds that once, in ancient Kazdel, was a white-horned King of Sarkaz.' A cold voice from behind her. 'It's said they possessed the ability to weave sunlight. They made the evening their thread, and wove the Sarkaz's past, present, and future glory into the sky. Each soldier fighting upon the battlefield needed only to lift their head, and they would see eternity in a mirror. It led them to forget thoughts of life or death, and under the King of Sarkaz's command, they conquered all.'\n'Legends of the sort are plentiful in Kazdel,' comes the white-horned physician's response.\n'Placing the living in touch with the boundary between life and death both spurs their courage to rush into death, and leads them to perceive life as something not devoid of meaning. Thus, they bid a better farewell to their loved ones,' Kal'tsit recounts factually. 'Through your and Nightingale's treatment, the patient's final Oripathy flare-up has been suppressed in his terminal hours. The rapid growth of Originium crystals in his body has temporarily been pacified. You have not only aided him in his peaceful passing, but saved his mother too.'\n'Hence why you haven't given the assassin staring at me a single opportunity.'\n'When we first met yesterday, I noticed the look in your eyes as you saw Amiya. You knew who she was from the first moment, and had no intention of imparting your secrets to us, yet you did not hide that flicker of emotion.'\n'What emotion?'\n'Compassion.' Kal'tsit closely watches over Shining's eyes. 'Identical to what you showed here and now. It is a physician's gaze.'",
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "When healing allied units with less than 50{'%'} HP, increases heal amount by <#ba.kw>15{'%'}</>"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "When healing allied units with less than 50{'%'} HP, increases heal amount by <#ba.kw>15{'%'}</>"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Code of Law",
+                    "description": "ASPD +15; +15{'%'} ATK while Skill 2 is equipped, +0.45 SP/s while Skill 3 is equipped"
                   },
                   "3": {
-                    "name": null,
-                    "description": null
+                    "name": "Code of Law",
+                    "description": "ASPD +18 <#ba.talpu>(+3)</>; +15{'%'} ATK while Skill 2 is equipped, +0.45 SP/s while Skill 3 is equipped"
                   }
                 }
               },
@@ -12176,18 +12226,18 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "When healing allied units with less than 50{'%'} HP, increases heal amount by <#ba.kw>15{'%'}</>"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Code of Law",
+                    "description": "ASPD +15; +25{'%'} ATK while Skill 2 is equipped, +0.6 SP/s while Skill 3 is equipped"
                   },
                   "3": {
-                    "name": null,
-                    "description": null
+                    "name": "Code of Law",
+                    "description": "ASPD +18 <#ba.talpu>(+3)</>; +25{'%'} ATK while Skill 2 is equipped, +0.6 SP/s while Skill 3 is equipped"
                   }
                 }
               },
@@ -12681,33 +12731,33 @@
     },
     "modules": {
       "uniequip_001_ifrit": {
-        "name": null,
-        "description": null
+        "name": "Ifrit's Badge",
+        "description": "Operator Ifrit has demonstrated a remarkable aptitude for inflicting exceptionally long-range Arts casualties with a directional aspect.\nThe Field Operations Department has thus passed the following resolution:\nThis operator shall be appointed a Caster Operator during field operations to exercise Blast Caster responsibilities.\nIn witness whereof,\nThis badge is hereby conferred upon the above named."
       },
       "uniequip_002_ifrit": {
-        "name": null,
-        "description": null,
+        "name": "'Syntexis'",
+        "description": "Ifrit hadn't heard that dumb tub of lard's voice in her head for the longest time.\nErrant names that leaked past the door are entangled throughout her memories of the past. Pain mixed with anger, an anger that took her to fantasyland, a friendly-looking old Caprinae putting her on a sickbed, her hand trying to reach out and hold something, searching through a ruin and a blaze-scorched black, and something that feels like feathers, but in an instant it's gone, and nobody ever pulls her out.\n'Little friend, you've caught fire again.\n'You know, raging and screaming won't lessen your pain, nor will it ever solve anything.'\nCan it. All you do is talk in my brain and make my head hurt. You don't know anything!\n'But I can feel those pinpricks in your arms.\n'I've been able to feel them treat you as a monster since long ago. Even you yourself believed it, once.'\nThat was all that stupid goat's fault! He turned me into this, he...!\n'You resent Silence. You know she knows your past, yet she won't let you flame-roast that 'stupid goat' yourself.'\nShe... Silence isn't wrong for that! What do you know? I'd never blame her—\n'But your emotions still boil with wrath.\n'Didn't you decide? That you could sneak away, now that no one here binds you to a table anymore? And once you find the old goat, you'll beat his face to a pulp, burn his whole laboratory down, and then—'\n...I'm not gonna do that. I don't need Silence to tell me not to, 'cause I know that would be wrong. It's not that I wanna... kill him.\n...I <<i>>don't</i> know! Still, he...! Why can't I?! I've got fire, I'll burn it all—\n'You're shaking. You're recalling the days that inflicted so much pain upon you...\n'So stop.'\nNo... once I can control this fatso for real, I'll get to protect everyone, and Silence won't be like this anymore, and she won't fight with Saria either!\nAnd Darya can...\n'...You're crying.'\n...Shut up!\n'It's not your fault, little friend.'\n...Then whose fault is it?\nWho am I supposed to blame? I'm not supposed to burn that stupid goat up, so who do I blame...?\nThe voice dies down. No one responds anymore, and even the headache flags somewhat.\n'I still don't know.\n'Maybe, someday, you'll be able to separate the rights from the wrongs. Your experiences will tell you how to decide your own standards. You'll want to abide by them. And then, you'll do the right thing.'\n...Urk—my head hurts, my...\n'Shaw hid your charcoal grill in a corner of the depot under the stairs. Mint has some books she'd like to share with you. Beeswax has a bottle of fragrant perfume, and if you visit her, she'll be all too willing to coat your horns.\n'You know how mighty they all are. You want to protect them. So too do they want to protect you.\n'So what about that big fat talking balloon? It still worries you.'\n...I'm scared.\n'Fear can't limit you, Ifrit.'\nThe pain brought about by that voice is fading far away. She looks across an expanse of white. Who is responding to her?\n......\n'Sleep, Ifrit. No longer can those flames burn in our dreamlands, you and I. We will find peace.'\nAnd slowly, slowly, the flames go out.\nThe gargantuan being that occupied her dreamscape begins to wane, its fires fading crystal clear. Atop sleeps the unconscious Ifrit, who feels pain no longer. The fire blends into her. The fire, she has accepted.",
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Attacks deal <#ba.kw>extremely long-ranged AoE Arts damage</>; damage dealt increases with distance, up to <#ba.kw>110{'%'}</>"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Attacks deal <#ba.kw>extremely long-ranged AoE Arts damage</>; damage dealt increases with distance, up to <#ba.kw>110{'%'}</>"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Rhine Loop",
+                    "description": "Restores 2 SP every 6 seconds, with a 20{'%'} chance to restore an additional 5 SP."
                   },
                   "6": {
-                    "name": null,
-                    "description": null
+                    "name": "Rhine Loop",
+                    "description": "Restores 2 SP every 5.5 <#ba.talpu>(-0.5)</> seconds, with a 20{'%'} chance to restore an additional 5 SP."
                   }
                 }
               }
@@ -12715,18 +12765,18 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Attacks deal <#ba.kw>extremely long-ranged AoE Arts damage</>; damage dealt increases with distance, up to <#ba.kw>110{'%'}</>"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Rhine Loop",
+                    "description": "Restores 2 SP every 6 seconds, with a 30{'%'} chance to restore an additional 5 SP."
                   },
                   "6": {
-                    "name": null,
-                    "description": null
+                    "name": "Rhine Loop",
+                    "description": "Restores 2 SP every 5.5 <#ba.talpu>(-0.5)</> seconds, with a 30{'%'} chance to restore an additional 5 SP."
                   }
                 }
               }
@@ -13360,43 +13410,43 @@
       "skchr_aglina_3": {
         "1": {
           "name": "Arcane Staff - Anti-Gravity Mode",
-          "description": "All enemies' weight <#ba.vup>reduces by one level</>; Range <#ba.vup>expands</>; ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>; Can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use Normal Attack when the skill is not activated</>"
+          "description": "Applies <?ba.weightless>Weightless</> to all enemies on the battlefield, <#ba.vup>expands</> Attack Range, <#ba.vup>+{'{'}atk:0{'%'}{'}'}</> ATK, and can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use normal attacks while skill is inactive</>"
         },
         "2": {
           "name": "Arcane Staff - Anti-Gravity Mode",
-          "description": "All enemies' weight <#ba.vup>reduces by one level</>; Range <#ba.vup>expands</>; ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>; Can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use Normal Attack when the skill is not activated</>"
+          "description": "Applies <?ba.weightless>Weightless</> to all enemies on the battlefield, <#ba.vup>expands</> Attack Range, <#ba.vup>+{'{'}atk:0{'%'}{'}'}</> ATK, and can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use normal attacks while skill is inactive</>"
         },
         "3": {
           "name": "Arcane Staff - Anti-Gravity Mode",
-          "description": "All enemies' weight <#ba.vup>reduces by one level</>; Range <#ba.vup>expands</>; ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>; Can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use Normal Attack when the skill is not activated</>"
+          "description": "Applies <?ba.weightless>Weightless</> to all enemies on the battlefield, <#ba.vup>expands</> Attack Range, <#ba.vup>+{'{'}atk:0{'%'}{'}'}</> ATK, and can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use normal attacks while skill is inactive</>"
         },
         "4": {
           "name": "Arcane Staff - Anti-Gravity Mode",
-          "description": "All enemies' weight <#ba.vup>reduces by one level</>; Range <#ba.vup>expands</>; ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>; Can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use Normal Attack when the skill is not activated</>"
+          "description": "Applies <?ba.weightless>Weightless</> to all enemies on the battlefield, <#ba.vup>expands</> Attack Range, <#ba.vup>+{'{'}atk:0{'%'}{'}'}</> ATK, and can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use normal attacks while skill is inactive</>"
         },
         "5": {
           "name": "Arcane Staff - Anti-Gravity Mode",
-          "description": "All enemies' weight <#ba.vup>reduces by one level</>; Range <#ba.vup>expands</>; ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>; Can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use Normal Attack when the skill is not activated</>"
+          "description": "Applies <?ba.weightless>Weightless</> to all enemies on the battlefield, <#ba.vup>expands</> Attack Range, <#ba.vup>+{'{'}atk:0{'%'}{'}'}</> ATK, and can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use normal attacks while skill is inactive</>"
         },
         "6": {
           "name": "Arcane Staff - Anti-Gravity Mode",
-          "description": "All enemies' weight <#ba.vup>reduces by one level</>; Range <#ba.vup>expands</>; ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>; Can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use Normal Attack when the skill is not activated</>"
+          "description": "Applies <?ba.weightless>Weightless</> to all enemies on the battlefield, <#ba.vup>expands</> Attack Range, <#ba.vup>+{'{'}atk:0{'%'}{'}'}</> ATK, and can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use normal attacks while skill is inactive</>"
         },
         "7": {
           "name": "Arcane Staff - Anti-Gravity Mode",
-          "description": "All enemies' weight <#ba.vup>reduces by one level</>; Range <#ba.vup>expands</>; ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>; Can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use Normal Attack when the skill is not activated</>"
+          "description": "Applies <?ba.weightless>Weightless</> to all enemies on the battlefield, <#ba.vup>expands</> Attack Range, <#ba.vup>+{'{'}atk:0{'%'}{'}'}</> ATK, and can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use normal attacks while skill is inactive</>"
         },
         "8": {
           "name": "Arcane Staff - Anti-Gravity Mode",
-          "description": "All enemies' weight <#ba.vup>reduces by one level</>; Range <#ba.vup>expands</>; ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>; Can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use Normal Attack when the skill is not activated</>"
+          "description": "Applies <?ba.weightless>Weightless</> to all enemies on the battlefield, <#ba.vup>expands</> Attack Range, <#ba.vup>+{'{'}atk:0{'%'}{'}'}</> ATK, and can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use normal attacks while skill is inactive</>"
         },
         "9": {
           "name": "Arcane Staff - Anti-Gravity Mode",
-          "description": "All enemies' weight <#ba.vup>reduces by one level</>; Range <#ba.vup>expands</>; ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>; Can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use Normal Attack when the skill is not activated</>"
+          "description": "Applies <?ba.weightless>Weightless</> to all enemies on the battlefield, <#ba.vup>expands</> Attack Range, <#ba.vup>+{'{'}atk:0{'%'}{'}'}</> ATK, and can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use normal attacks while skill is inactive</>"
         },
         "10": {
           "name": "Arcane Staff - Anti-Gravity Mode",
-          "description": "All enemies' weight <#ba.vup>reduces by one level</>; Range <#ba.vup>expands</>; ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>; Can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use Normal Attack when the skill is not activated</>"
+          "description": "Applies <?ba.weightless>Weightless</> to all enemies on the battlefield, <#ba.vup>expands</> Attack Range, <#ba.vup>+{'{'}atk:0{'%'}{'}'}</> ATK, and can attack <#ba.vup>{'{'}attack{'@'}max_target{'}'}</> enemies\n<#ba.rem>Cannot use normal attacks while skill is inactive</>"
         }
       }
     },
@@ -17451,7 +17501,7 @@
     "modules": {
       "uniequip_001_mgllan": {
         "name": "Magallan's Badge",
-        "description": "'Operator Magallan has demonstrated a remarkable aptitude in combat with the deployment and control of her self-developed drones.\nThe Field Operations Department has thus passed the following resolution:\nThis operator shall be appointed a Supporter Operator during field operations to exercise Summoner responsibilities.\nIn witness whereof,\nThis badge is hereby conferred upon the above named.'"
+        "description": "Operator Magallan has demonstrated a remarkable aptitude in combat with the deployment and control of her self-developed drones.\nThe Field Operations Department has thus passed the following resolution:\nThis operator shall be appointed a Supporter Operator during field operations to exercise Summoner responsibilities.\nIn witness whereof,\nThis badge is hereby conferred upon the above named."
       },
       "uniequip_002_mgllan": {
         "name": "Drone Control Module.P",
@@ -20940,7 +20990,7 @@
       },
       "uniequip_002_hmau": {
         "name": "Popular Sitcom Tapes",
-        "description": "Every day at half past six, Hung turns on the TV and begins to prep the day's dinner to the tune of a wuxia drama's deathblows and battlecries. There were tremendous lines at the hypermarket today, and it's already past seven by the time he gets back, with the wuxia on TV long since over. But he leaves it on out of habit anyway, and shuffles over to the kitchen to cook.\nThe meat's red and tender; Hung decides he'll mince it and mix in fresh spring onion, planning to fill two tiers of buns. With the meat neatly stacked on the cutting board, Hung picks up a kitchen cleaver in each hand and assumes the Meat-Chopping Stance, when suddenly a mournful wail comes from the living room TV.\n'You've fallen into my hands, Zhong Dafa! You know your blood debt. It's time you finally repaid me!'\nThe cleaver drops with a bang, not into the meat, but straight into the cutting board. Hung shakes his ears—he only hears intermittent gasps and sobs. With no clue about what's going on, he continues the work at hand. A short while later, he tosses the filling into a bowl, and is just about to pour in a few drops of sesame oil when—\n'Stop, Dacai! You can't kill him! The truth is, he's your brother!'\n'Huh?' Hung abruptly lifts his head in disbelief, face blanketed with confusion, beginning to suspect he just heard wrong. More voices immediately follow. \n'Ma, how can that be? I don't believe you!'\n'When I divorced your ba, we each took a child. We never thought it would lead to a mess like this.'\nHung wrinkles his brows, screws the lid of the bottle of sesame oil tight, only to let way too much of the oil out, adding to the bowl of mincemeat the smell of high heaven of sesame. He heaves a sigh and lays the rolled-out pieces of dough in his hand to wrap the buns, all while his ears stand attentively pricked, as if hoping to catch whatever audible clues the television might make next.\n'Hmph. No need to hesitate, Zhou Dacai. Just do it.'\n'Ma, what do I—what do I do...'\nThe buns he is pleating shut are incredibly lopsided, and he finally stops what he's doing and devotes his full attention to the ensuing conversation. Unfortunately, however, someone seems to have changed the channel, and the TV is now playing video game noises, with Waai Fu and Aak's clamorous voices reaching Hung's ears soon after, followed shortly by the sound of Lee coming in. Hung shakes his head and smiles, and places the uniquely shaped buns inside the already-boiling steamers.\nThe clock's hour hand has been on eight for a while now, and Hung gently uncovers the steamers, the clouds of billowing steam revealing the plump white meat buns before him, as the filling's scallion scent slyly wafts from the kitchen and spreads through the living room, subconsciously luring the people towards it and the table.\nThere'll always be people who say eight o'clock in Lungmen is for the eight o'clock sitcoms, but Hung knows what eight o'clock is truly for—the little round dining table, with his folks sat huddled in a circle.",
+        "description": "Every day at half past six, Hung turns on the TV and begins to prep the day's dinner to the tune of a wuxia drama's deathblows and battlecries. There were tremendous lines at the hypermarket today, and it's already past seven by the time he gets back, with the wuxia on TV long since over. But he leaves it on out of habit anyway, and shuffles over to the kitchen to cook.\nThe meat's red and tender; Hung decides he'll mince it and mix in fresh spring onion, planning to fill two tiers of buns. With the meat neatly stacked on the cutting board, Hung picks up a kitchen cleaver in each hand and assumes the Meat-Chopping Stance, when suddenly a mournful wail comes from the living room TV.\n'You've fallen into my hands, Zhong Dafa! You know your blood debt. It's time you finally repaid me!'\nThe cleaver drops with a bang, not into the meat, but straight into the cutting board. Hung shakes his ears—he only hears intermittent gasps and sobs. With no clue about what's going on, he continues the work at hand. A short while later, he tosses the filling into a bowl, and is just about to pour in a few drops of sesame oil when—\n'Stop, Dacai! You can't kill him! The truth is, he's your brother!'\n'Huh?' Hung abruptly lifts his head in disbelief, face blanketed with confusion, beginning to suspect he just heard wrong. More voices immediately follow.\n'Ma, how can that be? I don't believe you!'\n'When I divorced your ba, we each took a child. We never thought it would lead to a mess like this.'\nHung wrinkles his brows, squeezes the bottle of sesame oil, and barely gives it a single shake, only for way too much to pour out, and the bowl of mincemeat to smell to high heaven of sesame. He heaves a sigh and lays the rolled-out pieces of dough in his hand to wrap the buns, all while his ears stand attentively pricked, as if hoping to catch whatever audible clues the television might make next.\n'Hmph. No need to hesitate, Zhou Dacai. Just do it.'\n'Ma, what do I—what do I do...'\nThe buns he is pleating shut are incredibly lopsided, and he finally stops what he's doing and devotes his full attention to the ensuing conversation. Unfortunately, however, someone seems to have changed the channel, and the TV is now playing video game noises, with Waai Fu and Aak's clamorous voices reaching Hung's ears soon after, followed shortly by the sound of Lee coming in. Hung shakes his head and smiles, and places the uniquely shaped buns inside the already-boiling steamers.\nThe clock's hour hand has been on eight for a while now, and Hung gently uncovers the steamers, the clouds of billowing steam revealing the plump white meat buns before him, as the filling's scallion scent slyly wafts from the kitchen and spreads through the living room, subconsciously luring the people towards it and the table.\nThere'll always be people who say eight o'clock in Lungmen is for the eight o'clock sitcoms, but Hung knows what eight o'clock is truly for—the little round dining table, with his folks sat huddled in a circle.",
         "stages": {
           "1": {
             "traitUpgrade": {
@@ -24543,22 +24593,22 @@
     },
     "modules": {
       "uniequip_001_weedy": {
-        "name": null,
-        "description": null
+        "name": "Weedy's Badge",
+        "description": "Operator Weedy has demonstrated a remarkable aptitude for physically distancing the enemy via applied force so as to preserve the front.\nThe Field Operations Department has thus passed the following resolution:\nThis operator shall be appointed a Specialist Operator during field operations to exercise Push Stroker responsibilities.\nIn witness whereof,\nThis badge is hereby conferred upon the above named."
       },
       "uniequip_002_weedy": {
-        "name": null,
-        "description": null,
+        "name": "Custom Bionic Seadragon",
+        "description": "Bionic Seadragon Development Log 02\nResearch lab is carrying out reaction tests on new biomaterial. Data collection is still ETA five hours. In the meantime, I'm attempting to remodel the Bionic Seadragon—strengthen connectivity between the internal conductor unit and water cannon lock-on system. In future battles, with support from Leaf and her friends, the water cannon's going to be much more accurate.\n\nBionic Seadragon Development Log 04\nBeen asked by an operator about the names again. It really is just for differentiating. Fundamentally, using '-1' or '-X' or '-β' on their serials would be fine, but using names like Leaf makes things a little more convenient... I don't really get what everyone's so curious about.\n\nBionic Seadragon Development Log 06\nTwo Bionic Seadragon core components damaged, can't be reused. Seems I'll have to iterate on their entirety. Closure wants to take the opportunity to customize them, and I refused. Lancet-2 and Castle-3 are very cute, and Operator Mayer's Meeboos have very fun interaction patterns, but I can't picture Leaf and her friends fitted with voice modules. They're doing fine as is.\n\nBionic Seadragon Development Log 09\nI've had contact with new onboards Operator Irene and Operator Lumen, so roughly got the picture of what's happened and what's happening in Iberia. The locked drawers are opened wide. As the forbidden zones start to expand, any 'secrets' will automatically reveal themselves to the people, and cause either a crisis that'll take everyone's collective effort to deal with, or a nightmare no one could escape... Sealing it away is meaningless now. No one can stand forever on the shore.\nOperator Irene took note of Leaf—not for her functionality, obviously. She's sharp for a young Inquisitor. The Bionic Seadragon was indeed created referencing designs handed down within my family. I've conjectured how those designs were formed, what they represent, what special meaning they hold, what information they hide. Perhaps I should say, what they were modeling... Of course, since leaving Iberia, they haven't been very meaningful conjectures, or very concrete. What if they do have something to do with my family, and Iberia, and the ocean's past? More importantly, with the tide surging onto the land, is there any possibility it could concern the future?\n......\nMaybe I should go have another talk with Irene. Maybe I should add a few new items to the Bionic Seadragon research project.",
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>\nCan be deployed on ranged tiles, and refunds half the DP cost of this deployment"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>\nCan be deployed on ranged tiles, and refunds half the DP cost of this deployment"
             },
             "talentUpgrades": {
               "1": {
@@ -24570,15 +24620,15 @@
                 "candidates": {
                   "1": {
                     "name": null,
-                    "description": null
+                    "description": ""
                   }
                 }
               },
               "3": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Upgraded Water Cannon",
+                    "description": "Increases the shift level of the Water Cannon's normal attacks and skills by 1; Weedy gains +15{'%'} ATK and restores 1 SP per 2.5 seconds if the Water Cannon is located within 4 tiles of her"
                   }
                 }
               }
@@ -24586,7 +24636,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>\nCan be deployed on ranged tiles, and refunds half the DP cost of this deployment"
             },
             "talentUpgrades": {
               "1": {
@@ -24598,15 +24648,15 @@
                 "candidates": {
                   "1": {
                     "name": null,
-                    "description": null
+                    "description": ""
                   }
                 }
               },
               "3": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Upgraded Water Cannon",
+                    "description": "Increases the shift level of the Water Cannon's normal attacks and skills by 1; Weedy gains +20{'%'} ATK and restores 1 SP per 2 seconds if the Water Cannon is located within 4 tiles of her"
                   }
                 }
               }
@@ -25138,6 +25188,72 @@
     "traitCandidates": {
       "E0-L1": {
         "description": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
+      }
+    },
+    "modules": {
+      "uniequip_001_tknogi": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_tknogi": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {}
@@ -33803,6 +33919,58 @@
             }
           }
         }
+      },
+      "uniequip_003_saga": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {}
@@ -37715,11 +37883,11 @@
     "modules": {
       "uniequip_001_pallas": {
         "name": "Pallas's Badge",
-        "description": "'Operator Pallas has demonstrated a remarkable aptitude for rallying her fellow Minoan operators.\nThe Field Operations Department has thus passed the following resolution:\nThis operator shall be appointed a Guard Operator during field operations to exercise Instructor responsibilities.\nIn witness whereof,\nThis badge is hereby conferred upon the above named.'"
+        "description": "Operator Pallas has demonstrated a remarkable aptitude for rallying her fellow Minoan operators.\nThe Field Operations Department has thus passed the following resolution:\nThis operator shall be appointed a Guard Operator during field operations to exercise Instructor responsibilities.\nIn witness whereof,\nThis badge is hereby conferred upon the above named."
       },
       "uniequip_002_pallas": {
         "name": "'Ούρος'",
-        "description": "'Because of these black rocks on my body, I had no choice but to leave my homeland, the place where my ancestors defended generations after generations.\nIt may have caused lots of pain and suffering, but, looking back, I cannot help but smile.\nThat said, how am I supposed to live when I have to cut all my ties with Minos and abandon my roots?\nI would yet like another taste of the herb cakes from Athenius.\nI wish to enjoy the fine wine from Lachedamon.\n I want to be able to bring home souvenirs from the Corinia markets again.\nI hope I'll yet be able to lay my heart bare to the scholars, spar with the warriors, and negotiate with the merchants there.\nI wonder when I will get to enjoy my life so once again?\nMountains of Minos, please allow me to continue my ramblings.\nO Almighty Athos, do you nurture your faithful children of Minos still?\nI but wish that those faithful believers who drink your springwater yet give to you their praises and offerings.\nHymnoi, my most respected teacher. Are there still those who seek the meaning of life from your embrace?\nI know you keep to yourself, but if those who seek your help are true to heart, I ask you to please guide them to the right path.\nO Heria, respected and majestic Heria. Are there yet simpletons who attempt to make their way to your summit merely for fame?\nPlease, let them return home safely after your punishments. They are young and immature. Please do not take away their future for your brief moments of fury.\nThe lands of Minos. Words cannot describe how beautiful you are, and nothing comes close to your magnificence.\nYet I must say these words and mark them down for prosperity.\nThese are only words that a Forte, far away from home, still has for comfort. Should these words go unsaid, these woes deep in my heart will endanger even my life.\nPlease forgive me for resorting to such shallow methods to compose myself.\nI will yet wander outside your domain.\nIt may take several years, perhaps decades.\nBut I promise you this.\nIt matters not how long.\nI will once again return to your embrace.\nThis is the truest, most sincere oath that a Minoan can take.\nI am certain you can hear me.\nThis rock, mined in Aegean, yet remains affixed to my hammer.\nWith it, I will make it through all obstacles in life.\nIt will bear witness to my faith, hear my odes, and execute these great deeds with me.\nAfter countless trials and tribulations, the melodies of my return shall be sounded.\nAt that moment in time, it will recant to you these writings of mine at the temple.\nI will ever hold out hope that this day will be soon.\n—Excerpts from some disorganized scribblings written by Pallas.'",
+        "description": "Because of these black rocks on my body, I had no choice but to leave my homeland, the place where my ancestors defended generations after generations.\nIt may have caused lots of pain and suffering, but, looking back, I cannot help but smile.\nThat said, how am I supposed to live when I have to cut all my ties with Minos and abandon my roots?\nI would yet like another taste of the herb cakes from Athenius.\nI wish to enjoy the fine wine from Lachedamon.\nI want to be able to bring home souvenirs from the Lachedamon markets again.\nI hope I'll yet be able to lay my heart bare to the scholars, spar with the warriors, and negotiate with the merchants there.\nI wonder when I will get to enjoy my life so once again?\nMountains of Minos, please allow me to continue my ramblings.\nO Almighty Athos, do you nurture your faithful children of Minos still?\nI but wish that those faithful believers who drink your springwater yet give to you their praises and offerings.\nHymnoi, my most respected teacher. Are there still those who seek the meaning of life from your embrace?\nI know you keep to yourself, but if those who seek your help are true to heart, I ask you to please guide them to the right path.\nO Helia, respected and majestic Helia. Are there yet simpletons who attempt to make their way to your summit merely for fame?\nPlease, let them return home safely after your punishments. They are young and immature. Please do not take away their future for your brief moments of fury.\nThe lands of Minos. Words cannot describe how beautiful you are, and nothing comes close to your magnificence.\nYet I must say these words and mark them down for prosperity.\nThese are only words that a Forte, far away from home, still has for comfort. Should these words go unsaid, these woes deep in my heart will endanger even my life.\nPlease forgive me for resorting to such shallow methods to compose myself.\nI will yet wander outside your domain.\nIt may take several years, perhaps decades.\nBut I promise you this.\nIt matters not how long.\nI will once again return to your embrace.\nThis is the truest, most sincere oath that a Minoan can take.\nI am certain you can hear me.\nThis rock, mined in Aegean, yet remains affixed to my hammer.\nWith it, I will make it through all obstacles in life.\nIt will bear witness to my faith, hear my odes, and execute these great deeds with me.\nAfter countless trials and tribulations, the melodies of my return shall be sounded.\nAt that moment in time, it will recant to you these writings of mine at the temple.\nI will ever hold out hope that this day will be soon.\n—Excerpts from some disorganized scribblings written by Pallas.",
         "stages": {
           "1": {
             "traitUpgrade": {
@@ -40432,33 +40600,33 @@
     },
     "modules": {
       "uniequip_001_serum": {
-        "name": null,
-        "description": null
+        "name": "Corroserum's Badge",
+        "description": "Operator Corroserum has demonstrated a remarkable aptitude for inflicting exceptionally long-range Arts casualties with a directional aspect.\nThe Field Operations Department has thus passed the following resolution:\nThis operator shall be appointed a Caster Operator during field operations to exercise Blast Caster responsibilities.\nIn witness whereof,\nThis badge is hereby conferred upon the above named."
       },
       "uniequip_002_serum": {
-        "name": null,
-        "description": null,
+        "name": "Unerasable",
+        "description": "Let me tell you a very boring story.\nThere are countless middle-class Columbian children living plainly favorable lives, who still attempt to assert their own individuality via what rebelliousness they've learned from others. Our hero for today is one such case.\nThe kids downtown never seem to exhaust their creativity or energy. Their skate tricks, graffiti art, and street rap hold a certain peculiar charm. No need for any means of intercity communication; it flourishes naturally in any urban center. Even the private school kids are captivated by this downtown 'ruff 'n' tuff stuff,' but discipline from their parents or teachers usually keeps them steering clear. They don't go out and experience the cool stuff for themselves.\nSo, our hero? His parents weren't for or against, they just didn't care, because our hero was a step ahead of the rest of his year. In whatever time was his own, he'd run off to hang out with those kids, but never actually joined in any of their activities. Maybe he was scared his classmates would mock him? Maybe he was scared that doing anything alongside the Infected would bring him trouble? Maybe he knew he wasn't like those kids, and in his heart raged all manner of emotions with nowhere to pour them? Who knows. All we know is that after the city passed a few new regulations quite unfriendly to the Infected, he put his self-taught knowledge to use and provided those kids some special new graffiti paints. If you ever tried to use water or any ordinary solvent to clean those walls, fresh anti-City Hall obscenities would show up over the works to disappoint you.\nYou think this story's actually veering on being interesting? Heh. Wait until I'm done. Yes, there's still more.\nYears later, those downtown kids are grown-ups now, saddled with what City Hall gave them, including the 'necessities for life' bundled along with their experimental weapons. They're on Pioneer Teams. I hear the forces they're part of took down a group of wicked barbarians like they were spraypainting across a map, opening up an ideal site for Columbia to build a nomadic city. The street culture they once also pioneered hasn't vanished since their departure, either. You could even say it's popular among all the youth of the city now, as a form of recreation.\nAnd what of our hero, you ask? He left the city, and never again encountered any graffiti from the throes of the heart, or skateboards in hand-painted livery. He found a job, and spends day in and day out either making more efficient weapons for his customers, or researching how to more efficiently destroy them.",
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Attacks deal <#ba.kw>extremely long-ranged AoE Arts damage</>; damage dealt increases with distance, up to <#ba.kw>110{'%'}</>"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Attacks deal <#ba.kw>extremely long-ranged AoE Arts damage</>; damage dealt increases with distance, up to <#ba.kw>110{'%'}</>"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Tactical Readjustment",
+                    "description": "After not attacking for 4 seconds, own SP recovery rate +0.6/second"
                   },
                   "5": {
-                    "name": null,
-                    "description": null
+                    "name": "Tactical Readjustment",
+                    "description": "After not attacking for 4 seconds, own SP recovery rate +0.65 <#ba.talpu>(+0.05)</>/second"
                   }
                 }
               }
@@ -40466,18 +40634,18 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Attacks deal <#ba.kw>extremely long-ranged AoE Arts damage</>; damage dealt increases with distance, up to <#ba.kw>110{'%'}</>"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Tactical Readjustment",
+                    "description": "After not attacking for 4 seconds, own SP recovery rate +0.65/second"
                   },
                   "5": {
-                    "name": null,
-                    "description": null
+                    "name": "Tactical Readjustment",
+                    "description": "After not attacking for 4 seconds, own SP recovery rate +0.7 <#ba.talpu>(+0.05)</>/second"
                   }
                 }
               }
@@ -41860,6 +42028,54 @@
         "description": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
       }
     },
+    "modules": {
+      "uniequip_001_ncdeer": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_ncdeer": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {}
   },
   "ling": {
@@ -42357,7 +42573,7 @@
       "2": {
         "E2-L1-P1": {
           "name": "Preparedness Averts Peril",
-          "description": "When DP is consumed by Lee's Trait, if there is sufficient DP, consumes 5 DP instead to block the next <?ba.stun>Stun</>/<?ba.frozen>Frozen</> effect inflicted on Lee and Stun the attacker for 3 seconds"
+          "description": "When DP is consumed by this unit's Trait, if there is sufficient DP, consumes 5 DP instead to block the next <?ba.stun>Stun</>/<?ba.frozen>Freeze</> effect inflicted on this unit, and stuns the attacker for 3 seconds"
         }
       }
     },
@@ -42518,7 +42734,7 @@
                 "candidates": {
                   "1": {
                     "name": "Preparedness Averts Peril",
-                    "description": "When DP is consumed by Lee's Trait, if there is sufficient DP, consumes 5 DP instead to block the next <?ba.stun>Stun</>/<?ba.frozen>Freeze</> effect inflicted on Lee and Stun the attacker for 4 seconds"
+                    "description": "When DP is consumed by this unit's Trait, if there is sufficient DP, consumes 5 DP instead to block the next <?ba.stun>Stun</>/<?ba.frozen>Freeze</> effect inflicted on this unit, and stuns the attacker for 4 seconds"
                   }
                 }
               }
@@ -42533,7 +42749,7 @@
                 "candidates": {
                   "1": {
                     "name": "Preparedness Averts Peril",
-                    "description": "When DP is consumed by Lee's Trait, if there is sufficient DP, consumes 4 DP instead to block the next <?ba.stun>Stun</>/<?ba.frozen>Freeze</> effect inflicted on Lee and Stun the attacker for 4 seconds"
+                    "description": "When DP is consumed by this unit's Trait, if there is sufficient DP, consumes 4 DP instead to block the next <?ba.stun>Stun</>/<?ba.frozen>Freeze</> effect inflicted on this unit, and stuns the attacker for 4 seconds"
                   }
                 }
               }
@@ -43225,6 +43441,62 @@
         "description": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <#ba.kw>{'{'}heal_scale:0{'%'}{'}'}</> of ATK)"
       }
     },
+    "modules": {
+      "uniequip_001_quercu": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_quercu": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {}
   },
   "fiammetta": {
@@ -43602,33 +43874,33 @@
     },
     "modules": {
       "uniequip_001_forcer": {
-        "name": null,
-        "description": null
+        "name": "Enforcer's Badge",
+        "description": "Operator Enforcer has demonstrated a remarkable aptitude for physically distancing the enemy via applied force so as to preserve the front.\nThe Field Operations Department has thus passed the following resolution:\nThis operator shall be appointed a Specialist Operator during field operations to exercise Push Stroker responsibilities.\nIn witness whereof,\nThis badge is hereby conferred upon the above named."
       },
       "uniequip_002_forcer": {
-        "name": null,
-        "description": null,
+        "name": "Heaven, Here, Now",
+        "description": "'You want to work at my patisserie? A Notarial Hall executor?!'\n'Yes.'\n......\nNo matter the reason Ezell gives, the patisserie owner finds it hard to comprehend why an executor wants to do this of all things. Still, Laterano's Sankta are famed for doing as they please, and he has no reason to refuse, so the patisserie is where he lets Ezell be.\nAt first, Ezell's work is rough around the edges, clearly too stiff in copying what he sees. He unfailingly takes down all the necessary ingredients, amounts, ratios, and methods in his notebook.\nSome, of course, are floored to recognize what Ezell is. There's even speculation that some major case is developing—why else would a Notarial Hall executor go into hiding here, like this? Still, the week ends without anything of note. And just like at the Notarial Hall, Ezell is never late. But no matter how busy the shop is, he never works overtime, always punctual to clock out.\n'Cecelia, I'm home. Here, cookies.'\n'Thanks, Mister Ezell!'\n'They're really good! Mister Ezell, did you make them?'\n'Mm-hm. In a few more days, once I've made the preparations, we'll head out to see your papà.'\n'Okay!'\n......\n'What? You're quitting, right now? *sigh* You've put so much effort into learning patisserie, you know. Even taught you my secret recipe, hahaha.'\n'I'm sorry.'\n......\n'Ezell, the intel you need's all here.'\n'Thank you, Richele.'\n'Once you're checked in at Rhodes Island, got an idea of where you're going next?'\n'Hmm... based on our present intel, I think I do, roughly.\n'Let's go, Cecelia.'\n......\nIf you took a look through the notebook Ezell carries, you'd find it crammed full of things you'd expect from someone like him. Notes on his work, timetables, coffee brewing instructions, etc.\nBut on one page, in immature handwriting, is 'I want to eat Lateran sweets,' contrasted by a dessert recipe below in Ezell's script.\n'They'd be hard to find in any stores after leaving Laterano, and would spoil on the way if prepared in bulk beforehand, so the best plan was to learn to make them myself.'\n'I know how implausible leaving Laterano to find a Sarkaz is, given the current circumstances. I have enough faith to stay by Cecelia's side the whole way, but I know that for her, the journey to come will reveal itself to be an ordeal like nothing else.'\n'So I've told her that whenever she wants to do something, she can write in this book. No matter how unrealistic, I'll earnestly plan it out, execute it, and achieve it. So that on this journey, Cecelia's heart remains ever filled with hope.'\nThus explains Ezell.\n'Ah! Cecelia, wait!'\n'That's black coffee! You won't grow big if you drink that!'",
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>\nCan be deployed on ranged tiles, and refunds half the DP cost of this deployment"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>\nCan be deployed on ranged tiles, and refunds half the DP cost of this deployment"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Precise Aim",
+                    "description": "Ignores 250 DEF when attacking enemies with weight greater than or equal to 3"
                   },
                   "5": {
-                    "name": null,
-                    "description": null
+                    "name": "Precise Aim",
+                    "description": "Ignores 270 <#ba.talpu>(+20)</> DEF when attacking enemies with weight greater than or equal to 3"
                   }
                 }
               }
@@ -43636,18 +43908,18 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": null
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>\nCan be deployed on ranged tiles, and refunds half the DP cost of this deployment"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Precise Aim",
+                    "description": "Ignores 280 DEF when attacking enemies with weight greater than or equal to 3"
                   },
                   "5": {
-                    "name": null,
-                    "description": null
+                    "name": "Precise Aim",
+                    "description": "Ignores 300 <#ba.talpu>(+20)</> DEF when attacking enemies with weight greater than or equal to 3"
                   }
                 }
               }
@@ -51191,19 +51463,19 @@
     "talents": {
       "1": {
         "E1-L1-P1": {
-          "name": "Unexpected Arrive",
+          "name": "A Surprise Visitor",
           "description": "Deal 12{'%'} more damage when attacking blocked enemies"
         },
         "E1-L1-P5": {
-          "name": "Unexpected Arrive",
+          "name": "A Surprise Visitor",
           "description": "Deal 15{'%'} <#ba.talpu>(+3{'%'})</> more damage when attacking blocked enemies"
         },
         "E2-L1-P1": {
-          "name": "Unexpected Arrive",
+          "name": "A Surprise Visitor",
           "description": "Deal 17{'%'} more damage when attacking blocked enemies"
         },
         "E2-L1-P5": {
-          "name": "Unexpected Arrive",
+          "name": "A Surprise Visitor",
           "description": "Deal 20{'%'} <#ba.talpu>(+3{'%'})</> more damage when attacking blocked enemies"
         }
       }
@@ -51322,11 +51594,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Unexpected Arrive",
+                    "name": "A Surprise Visitor",
                     "description": "Deal 20{'%'} more damage when attacking blocked enemies"
                   },
                   "5": {
-                    "name": "Unexpected Arrive",
+                    "name": "A Surprise Visitor",
                     "description": "Deal 23{'%'} <#ba.talpu>(+3{'%'})</> more damage when attacking blocked enemies"
                   }
                 }
@@ -51341,11 +51613,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Unexpected Arrive",
+                    "name": "A Surprise Visitor",
                     "description": "Deal 22{'%'} more damage when attacking blocked enemies"
                   },
                   "5": {
-                    "name": "Unexpected Arrive",
+                    "name": "A Surprise Visitor",
                     "description": "Deal 25{'%'} <#ba.talpu>(+3{'%'})</> more damage when attacking blocked enemies"
                   }
                 }
@@ -52243,534 +52515,534 @@
     "tokenSummons": {}
   },
   "qiubai": {
-    "name": null,
-    "appellation": null,
-    "description": null,
+    "name": "Qiubai",
+    "appellation": "",
+    "description": "Can launch <#ba.kw>Ranged Attacks</> that deal 80{'%'} of normal ATK",
     "potentials": {
       "2": {
-        "description": null
+        "description": "DP Cost -1"
       },
       "3": {
-        "description": null
+        "description": "Improves Second Talent"
       },
       "4": {
-        "description": null
+        "description": "ATK +26"
       },
       "5": {
-        "description": null
+        "description": "Improves First Talent"
       },
       "6": {
-        "description": null
+        "description": "DP Cost -1"
       }
     },
     "talents": {
       "1": {
         "E1-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Find an Opening",
+          "description": "Deal an additional 25{'%'} of ATK as Arts damage when attacking enemies affected by <?ba.sluggish>Slow</> or <?ba.root>Bind</>"
         },
         "E1-L1-P5": {
-          "name": null,
-          "description": null
+          "name": "Find an Opening",
+          "description": "Deal an additional 28{'%'}<#ba.talpu> (+3{'%'})</> of ATK as Arts damage when attacking enemies affected by <?ba.sluggish>Slow</> or <?ba.root>Bind</>"
         },
         "E2-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Find an Opening",
+          "description": "Deal an additional 40{'%'} of ATK as Arts damage when attacking enemies affected by <?ba.sluggish>Slow</> or <?ba.root>Bind</>"
         },
         "E2-L1-P5": {
-          "name": null,
-          "description": null
+          "name": "Find an Opening",
+          "description": "Deal an additional 43{'%'}<#ba.talpu> (+3{'%'})</> of ATK as Arts damage when attacking enemies affected by <?ba.sluggish>Slow</> or <?ba.root>Bind</>"
         }
       },
       "2": {
         "E2-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Falling Petals",
+          "description": "Attacks have a 20{'%'} chance to <?ba.root>Bind</> the target for 1.5s"
         },
         "E2-L1-P3": {
-          "name": null,
-          "description": null
+          "name": "Falling Petals",
+          "description": "Attacks have a 23{'%'}<#ba.talpu> (+3{'%'})</> chance to <?ba.root>Bind</> the target for 1.5s"
         }
       }
     },
     "skills": {
       "skchr_qiubai_1": {
         "1": {
-          "name": null,
-          "description": null
+          "name": "Halting Feather",
+          "description": "Next attack <?ba.root>binds the target for </><#ba.vup>{'{'}duration{'}'}</>s. When <?ba.root>Bind</> expires, deals <#ba.vup>{'{'}aoe_scale:0{'%'}{'}'}</> of ATK as Arts damage to target and all nearby enemies."
         },
         "2": {
-          "name": null,
-          "description": null
+          "name": "Halting Feather",
+          "description": "Next attack <?ba.root>binds the target for </><#ba.vup>{'{'}duration{'}'}</>s. When <?ba.root>Bind</> expires, deals <#ba.vup>{'{'}aoe_scale:0{'%'}{'}'}</> of ATK as Arts damage to target and all nearby enemies."
         },
         "3": {
-          "name": null,
-          "description": null
+          "name": "Halting Feather",
+          "description": "Next attack <?ba.root>binds the target for </><#ba.vup>{'{'}duration{'}'}</>s. When <?ba.root>Bind</> expires, deals <#ba.vup>{'{'}aoe_scale:0{'%'}{'}'}</> of ATK as Arts damage to target and all nearby enemies."
         },
         "4": {
-          "name": null,
-          "description": null
+          "name": "Halting Feather",
+          "description": "Next attack <?ba.root>binds the target for </><#ba.vup>{'{'}duration{'}'}</>s. When <?ba.root>Bind</> expires, deals <#ba.vup>{'{'}aoe_scale:0{'%'}{'}'}</> of ATK as Arts damage to target and all nearby enemies."
         },
         "5": {
-          "name": null,
-          "description": null
+          "name": "Halting Feather",
+          "description": "Next attack <?ba.root>binds the target for </><#ba.vup>{'{'}duration{'}'}</>s. When <?ba.root>Bind</> expires, deals <#ba.vup>{'{'}aoe_scale:0{'%'}{'}'}</> of ATK as Arts damage to target and all nearby enemies."
         },
         "6": {
-          "name": null,
-          "description": null
+          "name": "Halting Feather",
+          "description": "Next attack <?ba.root>binds the target for </><#ba.vup>{'{'}duration{'}'}</>s. When <?ba.root>Bind</> expires, deals <#ba.vup>{'{'}aoe_scale:0{'%'}{'}'}</> of ATK as Arts damage to target and all nearby enemies."
         },
         "7": {
-          "name": null,
-          "description": null
+          "name": "Halting Feather",
+          "description": "Next attack <?ba.root>binds the target for </><#ba.vup>{'{'}duration{'}'}</>s. When <?ba.root>Bind</> expires, deals <#ba.vup>{'{'}aoe_scale:0{'%'}{'}'}</> of ATK as Arts damage to target and all nearby enemies."
         },
         "8": {
-          "name": null,
-          "description": null
+          "name": "Halting Feather",
+          "description": "Next attack <?ba.root>binds the target for </><#ba.vup>{'{'}duration{'}'}</>s. When <?ba.root>Bind</> expires, deals <#ba.vup>{'{'}aoe_scale:0{'%'}{'}'}</> of ATK as Arts damage to target and all nearby enemies."
         },
         "9": {
-          "name": null,
-          "description": null
+          "name": "Halting Feather",
+          "description": "Next attack <?ba.root>binds the target for </><#ba.vup>{'{'}duration{'}'}</>s. When <?ba.root>Bind</> expires, deals <#ba.vup>{'{'}aoe_scale:0{'%'}{'}'}</> of ATK as Arts damage to target and all nearby enemies."
         },
         "10": {
-          "name": null,
-          "description": null
+          "name": "Halting Feather",
+          "description": "Next attack <?ba.root>binds the target for </><#ba.vup>{'{'}duration{'}'}</>s. When <?ba.root>Bind</> expires, deals <#ba.vup>{'{'}aoe_scale:0{'%'}{'}'}</> of ATK as Arts damage to target and all nearby enemies."
         }
       },
       "skchr_qiubai_2": {
         "1": {
-          "name": null,
-          "description": null
+          "name": "Holding Shadow",
+          "description": "Deals <#ba.vup>{'{'}sword_begin_atk_scale:0{'%'}{'}'}</> of ATK as Arts damage to ground enemies ahead, attack range <#ba.vup>changes</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, ground enemies within attack range are <?ba.sluggish>slowed</>; when skill expires, deals <#ba.vup>{'{'}sword_end_atk_scale:0{'%'}{'}'}</> ATK as Physical damage to ground enemies in range."
         },
         "2": {
-          "name": null,
-          "description": null
+          "name": "Holding Shadow",
+          "description": "Deals <#ba.vup>{'{'}sword_begin_atk_scale:0{'%'}{'}'}</> of ATK as Arts damage to ground enemies ahead, attack range <#ba.vup>changes</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, ground enemies within attack range are <?ba.sluggish>slowed</>; when skill expires, deals <#ba.vup>{'{'}sword_end_atk_scale:0{'%'}{'}'}</> ATK as Physical damage to ground enemies in range."
         },
         "3": {
-          "name": null,
-          "description": null
+          "name": "Holding Shadow",
+          "description": "Deals <#ba.vup>{'{'}sword_begin_atk_scale:0{'%'}{'}'}</> of ATK as Arts damage to ground enemies ahead, attack range <#ba.vup>changes</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, ground enemies within attack range are <?ba.sluggish>slowed</>; when skill expires, deals <#ba.vup>{'{'}sword_end_atk_scale:0{'%'}{'}'}</> ATK as Physical damage to ground enemies in range."
         },
         "4": {
-          "name": null,
-          "description": null
+          "name": "Holding Shadow",
+          "description": "Deals <#ba.vup>{'{'}sword_begin_atk_scale:0{'%'}{'}'}</> of ATK as Arts damage to ground enemies ahead, attack range <#ba.vup>changes</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, ground enemies within attack range are <?ba.sluggish>slowed</>; when skill expires, deals <#ba.vup>{'{'}sword_end_atk_scale:0{'%'}{'}'}</> ATK as Physical damage to ground enemies in range."
         },
         "5": {
-          "name": null,
-          "description": null
+          "name": "Holding Shadow",
+          "description": "Deals <#ba.vup>{'{'}sword_begin_atk_scale:0{'%'}{'}'}</> of ATK as Arts damage to ground enemies ahead, attack range <#ba.vup>changes</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, ground enemies within attack range are <?ba.sluggish>slowed</>; when skill expires, deals <#ba.vup>{'{'}sword_end_atk_scale:0{'%'}{'}'}</> ATK as Physical damage to ground enemies in range."
         },
         "6": {
-          "name": null,
-          "description": null
+          "name": "Holding Shadow",
+          "description": "Deals <#ba.vup>{'{'}sword_begin_atk_scale:0{'%'}{'}'}</> of ATK as Arts damage to ground enemies ahead, attack range <#ba.vup>changes</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, ground enemies within attack range are <?ba.sluggish>slowed</>; when skill expires, deals <#ba.vup>{'{'}sword_end_atk_scale:0{'%'}{'}'}</> ATK as Physical damage to ground enemies in range."
         },
         "7": {
-          "name": null,
-          "description": null
+          "name": "Holding Shadow",
+          "description": "Deals <#ba.vup>{'{'}sword_begin_atk_scale:0{'%'}{'}'}</> of ATK as Arts damage to ground enemies ahead, attack range <#ba.vup>changes</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, ground enemies within attack range are <?ba.sluggish>slowed</>; when skill expires, deals <#ba.vup>{'{'}sword_end_atk_scale:0{'%'}{'}'}</> ATK as Physical damage to ground enemies in range."
         },
         "8": {
-          "name": null,
-          "description": null
+          "name": "Holding Shadow",
+          "description": "Deals <#ba.vup>{'{'}sword_begin_atk_scale:0{'%'}{'}'}</> of ATK as Arts damage to ground enemies ahead, attack range <#ba.vup>changes</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, ground enemies within attack range are <?ba.sluggish>slowed</>; when skill expires, deals <#ba.vup>{'{'}sword_end_atk_scale:0{'%'}{'}'}</> ATK as Physical damage to ground enemies in range."
         },
         "9": {
-          "name": null,
-          "description": null
+          "name": "Holding Shadow",
+          "description": "Deals <#ba.vup>{'{'}sword_begin_atk_scale:0{'%'}{'}'}</> of ATK as Arts damage to ground enemies ahead, attack range <#ba.vup>changes</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, ground enemies within attack range are <?ba.sluggish>slowed</>; when skill expires, deals <#ba.vup>{'{'}sword_end_atk_scale:0{'%'}{'}'}</> ATK as Physical damage to ground enemies in range."
         },
         "10": {
-          "name": null,
-          "description": null
+          "name": "Holding Shadow",
+          "description": "Deals <#ba.vup>{'{'}sword_begin_atk_scale:0{'%'}{'}'}</> of ATK as Arts damage to ground enemies ahead, attack range <#ba.vup>changes</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, ground enemies within attack range are <?ba.sluggish>slowed</>; when skill expires, deals <#ba.vup>{'{'}sword_end_atk_scale:0{'%'}{'}'}</> ATK as Physical damage to ground enemies in range."
         }
       },
       "skchr_qiubai_3": {
         "1": {
-          "name": null,
-          "description": null
+          "name": "Questioning Snow",
+          "description": "Attack range <#ba.vup>expands</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, damage type changed to Arts, attacks 2 extra targets, ranged attacks no longer have reduced damage, each attack grants <#ba.vup>+{'{'}attack_speed{'}'}</> ASPD (stacking up to <#ba.vup>{'{'}max_stack_cnt{'}'}</> times)."
         },
         "2": {
-          "name": null,
-          "description": null
+          "name": "Questioning Snow",
+          "description": "Attack range <#ba.vup>expands</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, damage type changed to Arts, attacks 2 extra targets, ranged attacks no longer have reduced damage, each attack grants <#ba.vup>+{'{'}attack_speed{'}'}</> ASPD (stacking up to <#ba.vup>{'{'}max_stack_cnt{'}'}</> times)."
         },
         "3": {
-          "name": null,
-          "description": null
+          "name": "Questioning Snow",
+          "description": "Attack range <#ba.vup>expands</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, damage type changed to Arts, attacks 2 extra targets, ranged attacks no longer have reduced damage, each attack grants <#ba.vup>+{'{'}attack_speed{'}'}</> ASPD (stacking up to <#ba.vup>{'{'}max_stack_cnt{'}'}</> times)."
         },
         "4": {
-          "name": null,
-          "description": null
+          "name": "Questioning Snow",
+          "description": "Attack range <#ba.vup>expands</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, damage type changed to Arts, attacks 2 extra targets, ranged attacks no longer have reduced damage, each attack grants <#ba.vup>+{'{'}attack_speed{'}'}</> ASPD (stacking up to <#ba.vup>{'{'}max_stack_cnt{'}'}</> times)."
         },
         "5": {
-          "name": null,
-          "description": null
+          "name": "Questioning Snow",
+          "description": "Attack range <#ba.vup>expands</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, damage type changed to Arts, attacks 2 extra targets, ranged attacks no longer have reduced damage, each attack grants <#ba.vup>+{'{'}attack_speed{'}'}</> ASPD (stacking up to <#ba.vup>{'{'}max_stack_cnt{'}'}</> times)."
         },
         "6": {
-          "name": null,
-          "description": null
+          "name": "Questioning Snow",
+          "description": "Attack range <#ba.vup>expands</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, damage type changed to Arts, attacks 2 extra targets, ranged attacks no longer have reduced damage, each attack grants <#ba.vup>+{'{'}attack_speed{'}'}</> ASPD (stacking up to <#ba.vup>{'{'}max_stack_cnt{'}'}</> times)."
         },
         "7": {
-          "name": null,
-          "description": null
+          "name": "Questioning Snow",
+          "description": "Attack range <#ba.vup>expands</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, damage type changed to Arts, attacks 2 extra targets, ranged attacks no longer have reduced damage, each attack grants <#ba.vup>+{'{'}attack_speed{'}'}</> ASPD (stacking up to <#ba.vup>{'{'}max_stack_cnt{'}'}</> times)."
         },
         "8": {
-          "name": null,
-          "description": null
+          "name": "Questioning Snow",
+          "description": "Attack range <#ba.vup>expands</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, damage type changed to Arts, attacks 2 extra targets, Talent 1 damage increased to <#ba.vup>{'{'}talent_scale{'}'}</>x, ranged attacks no longer have reduced damage, each attack grants <#ba.vup>+{'{'}attack_speed{'}'}</> ASPD (stacking up to <#ba.vup>{'{'}max_stack_cnt{'}'}</> times)."
         },
         "9": {
-          "name": null,
-          "description": null
+          "name": "Questioning Snow",
+          "description": "Attack range <#ba.vup>expands</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, damage type changed to Arts, attacks 2 extra targets, Talent 1 damage increased to <#ba.vup>{'{'}talent_scale{'}'}</>x, ranged attacks no longer have reduced damage, each attack grants <#ba.vup>+{'{'}attack_speed{'}'}</> ASPD (stacking up to <#ba.vup>{'{'}max_stack_cnt{'}'}</> times)."
         },
         "10": {
-          "name": null,
-          "description": null
+          "name": "Questioning Snow",
+          "description": "Attack range <#ba.vup>expands</>, ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, damage type changed to Arts, attacks 2 extra targets, Talent 1 damage increased to <#ba.vup>{'{'}talent_scale{'}'}</>x, ranged attacks no longer have reduced damage, each attack grants <#ba.vup>+{'{'}attack_speed{'}'}</> ASPD (stacking up to <#ba.vup>{'{'}max_stack_cnt{'}'}</> times)."
         }
       }
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": null
+        "description": "Can launch <#ba.kw>Ranged Attacks</> that deal 80{'%'} of normal ATK"
       }
     },
     "tokenSummons": {}
   },
   "wind-chimes": {
-    "name": null,
-    "appellation": null,
-    "description": null,
+    "name": "Wind Chimes",
+    "appellation": "",
+    "description": "Attacks <#ba.kw>all blocked enemies</>",
     "potentials": {
       "2": {
-        "description": null
+        "description": "DP Cost -1"
       },
       "3": {
-        "description": null
+        "description": "Redeployment Time -4 sec"
       },
       "4": {
-        "description": null
+        "description": "ATK +40"
       },
       "5": {
-        "description": null
+        "description": "Improves Talent"
       },
       "6": {
-        "description": null
+        "description": "DP Cost -1"
       }
     },
     "talents": {
       "1": {
         "E1-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Mountain Traveler",
+          "description": "Max HP +5{'%'}, gain <?ba.strong>Vigor</> effect of +15{'%'} ATK when HP is above 50{'%'}"
         },
         "E1-L1-P5": {
-          "name": null,
-          "description": null
+          "name": "Mountain Traveler",
+          "description": "Max HP +5{'%'}, gain <?ba.strong>Vigor</> effect of +17{'%'} <#ba.talpu>(+2{'%'})</>ATK when HP is above 50{'%'}"
         },
         "E2-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Mountain Traveler",
+          "description": "Max HP +5{'%'}, gain <?ba.strong>Vigor</> effect of +20{'%'} ATK when HP is above 50{'%'}"
         },
         "E2-L1-P5": {
-          "name": null,
-          "description": null
+          "name": "Mountain Traveler",
+          "description": "Max HP +5{'%'}, gain <?ba.strong>Vigor</> effect of +22{'%'} <#ba.talpu>(+2{'%'})</>ATK when HP is above 50{'%'}"
         }
       }
     },
     "skills": {
       "skcom_atk_up<3>": {
         "1": {
-          "name": null,
-          "description": null
+          "name": "ATK Up γ",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>"
         },
         "2": {
-          "name": null,
-          "description": null
+          "name": "ATK Up γ",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>"
         },
         "3": {
-          "name": null,
-          "description": null
+          "name": "ATK Up γ",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>"
         },
         "4": {
-          "name": null,
-          "description": null
+          "name": "ATK Up γ",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>"
         },
         "5": {
-          "name": null,
-          "description": null
+          "name": "ATK Up γ",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>"
         },
         "6": {
-          "name": null,
-          "description": null
+          "name": "ATK Up γ",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>"
         },
         "7": {
-          "name": null,
-          "description": null
+          "name": "ATK Up γ",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>"
         },
         "8": {
-          "name": null,
-          "description": null
+          "name": "ATK Up γ",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>"
         },
         "9": {
-          "name": null,
-          "description": null
+          "name": "ATK Up γ",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>"
         },
         "10": {
-          "name": null,
-          "description": null
+          "name": "ATK Up γ",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>"
         }
       },
       "skchr_chimes_2": {
         "1": {
-          "name": null,
-          "description": null
+          "name": "Longing for Home",
+          "description": "Stops attacking, gains <#ba.vup>{'{'}damage_resistance:0{'%'}{'}'}</> <?ba.protect>Sanctuary</>, ATK gradually increases to <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>. When skill expires, deals <#ba.vup>{'{'}attack{'@'}atk_scale:0{'%'}{'}'}</> ATK as Physical damage to all ground enemies in front and <?ba.stun>stuns</> them for <#ba.vup>{'{'}attack{'@'}stun{'}'}</> sec. \n<#ba.rem>Can manually deactivate skill (skill can be interrupted at any time)</>"
         },
         "2": {
-          "name": null,
-          "description": null
+          "name": "Longing for Home",
+          "description": "Stops attacking, gains <#ba.vup>{'{'}damage_resistance:0{'%'}{'}'}</> <?ba.protect>Sanctuary</>, ATK gradually increases to <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>. When skill expires, deals <#ba.vup>{'{'}attack{'@'}atk_scale:0{'%'}{'}'}</> ATK as Physical damage to all ground enemies in front and <?ba.stun>stuns</> them for <#ba.vup>{'{'}attack{'@'}stun{'}'}</> sec. \n<#ba.rem>Can manually deactivate skill (skill can be interrupted at any time)</>"
         },
         "3": {
-          "name": null,
-          "description": null
+          "name": "Longing for Home",
+          "description": "Stops attacking, gains <#ba.vup>{'{'}damage_resistance:0{'%'}{'}'}</> <?ba.protect>Sanctuary</>, ATK gradually increases to <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>. When skill expires, deals <#ba.vup>{'{'}attack{'@'}atk_scale:0{'%'}{'}'}</> ATK as Physical damage to all ground enemies in front and <?ba.stun>stuns</> them for <#ba.vup>{'{'}attack{'@'}stun{'}'}</> sec. \n<#ba.rem>Can manually deactivate skill (skill can be interrupted at any time)</>"
         },
         "4": {
-          "name": null,
-          "description": null
+          "name": "Longing for Home",
+          "description": "Stops attacking, gains <#ba.vup>{'{'}damage_resistance:0{'%'}{'}'}</> <?ba.protect>Sanctuary</>, ATK gradually increases to <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>. When skill expires, deals <#ba.vup>{'{'}attack{'@'}atk_scale:0{'%'}{'}'}</> ATK as Physical damage to all ground enemies in front and <?ba.stun>stuns</> them for <#ba.vup>{'{'}attack{'@'}stun{'}'}</> sec. \n<#ba.rem>Can manually deactivate skill (skill can be interrupted at any time)</>"
         },
         "5": {
-          "name": null,
-          "description": null
+          "name": "Longing for Home",
+          "description": "Stops attacking, gains <#ba.vup>{'{'}damage_resistance:0{'%'}{'}'}</> <?ba.protect>Sanctuary</>, ATK gradually increases to <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>. When skill expires, deals <#ba.vup>{'{'}attack{'@'}atk_scale:0{'%'}{'}'}</> ATK as Physical damage to all ground enemies in front and <?ba.stun>stuns</> them for <#ba.vup>{'{'}attack{'@'}stun{'}'}</> sec. \n<#ba.rem>Can manually deactivate skill (skill can be interrupted at any time)</>"
         },
         "6": {
-          "name": null,
-          "description": null
+          "name": "Longing for Home",
+          "description": "Stops attacking, gains <#ba.vup>{'{'}damage_resistance:0{'%'}{'}'}</> <?ba.protect>Sanctuary</>, ATK gradually increases to <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>. When skill expires, deals <#ba.vup>{'{'}attack{'@'}atk_scale:0{'%'}{'}'}</> ATK as Physical damage to all ground enemies in front and <?ba.stun>stuns</> them for <#ba.vup>{'{'}attack{'@'}stun{'}'}</> sec. \n<#ba.rem>Can manually deactivate skill (skill can be interrupted at any time)</>"
         },
         "7": {
-          "name": null,
-          "description": null
+          "name": "Longing for Home",
+          "description": "Stops attacking, gains <#ba.vup>{'{'}damage_resistance:0{'%'}{'}'}</> <?ba.protect>Sanctuary</>, ATK gradually increases to <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>. When skill expires, deals <#ba.vup>{'{'}attack{'@'}atk_scale:0{'%'}{'}'}</> ATK as Physical damage to all ground enemies in front and <?ba.stun>stuns</> them for <#ba.vup>{'{'}attack{'@'}stun{'}'}</> sec. \n<#ba.rem>Can manually deactivate skill (skill can be interrupted at any time)</>"
         },
         "8": {
-          "name": null,
-          "description": null
+          "name": "Longing for Home",
+          "description": "Stops attacking, gains <#ba.vup>{'{'}damage_resistance:0{'%'}{'}'}</> <?ba.protect>Sanctuary</>, ATK gradually increases to <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>. When skill expires, deals <#ba.vup>{'{'}attack{'@'}atk_scale:0{'%'}{'}'}</> ATK as Physical damage to all ground enemies in front and <?ba.stun>stuns</> them for <#ba.vup>{'{'}attack{'@'}stun{'}'}</> sec. \n<#ba.rem>Can manually deactivate skill (skill can be interrupted at any time)</>"
         },
         "9": {
-          "name": null,
-          "description": null
+          "name": "Longing for Home",
+          "description": "Stops attacking, gains <#ba.vup>{'{'}damage_resistance:0{'%'}{'}'}</> <?ba.protect>Sanctuary</>, ATK gradually increases to <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>. When skill expires, deals <#ba.vup>{'{'}attack{'@'}atk_scale:0{'%'}{'}'}</> ATK as Physical damage to all ground enemies in front and <?ba.stun>stuns</> them for <#ba.vup>{'{'}attack{'@'}stun{'}'}</> sec. \n<#ba.rem>Can manually deactivate skill (skill can be interrupted at any time)</>"
         },
         "10": {
-          "name": null,
-          "description": null
+          "name": "Longing for Home",
+          "description": "Stops attacking, gains <#ba.vup>{'{'}damage_resistance:0{'%'}{'}'}</> <?ba.protect>Sanctuary</>, ATK gradually increases to <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>. When skill expires, deals <#ba.vup>{'{'}attack{'@'}atk_scale:0{'%'}{'}'}</> ATK as Physical damage to all ground enemies in front and <?ba.stun>stuns</> them for <#ba.vup>{'{'}attack{'@'}stun{'}'}</> sec. \n<#ba.rem>Can manually deactivate skill (skill can be interrupted at any time)</>"
         }
       }
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": null
+        "description": "Attacks <#ba.kw>all blocked enemies</>"
       }
     },
     "tokenSummons": {}
   },
-  "kirin-x-yato": {
-    "name": null,
-    "appellation": null,
-    "description": null,
+  "kirin-r-yato": {
+    "name": "Kirin R Yato",
+    "appellation": "",
+    "description": "Significantly <#ba.kw>reduced</> Redeployment Time",
     "potentials": {
       "2": {
-        "description": null
+        "description": "DP Cost -1"
       },
       "3": {
-        "description": null
+        "description": "ATK +22"
       },
       "4": {
-        "description": null
+        "description": "Redeployment Time -2 sec"
       },
       "5": {
-        "description": null
+        "description": "Improves Second Talent"
       },
       "6": {
-        "description": null
+        "description": "DP Cost -1"
       }
     },
     "talents": {
       "1": {
         "E0-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Kirin Bolts",
+          "description": "Attacks deal an additional 6{'%'} ATK as Arts Damage"
         },
         "E1-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Kirin Bolts",
+          "description": "Attacks deal an additional 13{'%'} ATK as Arts Damage"
         },
         "E2-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Kirin Bolts",
+          "description": "Attacks deal an additional 20{'%'} ATK as Arts Damage"
         }
       },
       "2": {
         "E2-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Archdemon Mode",
+          "description": "While skill is active and for 10 seconds after skill ends, ATK +13{'%'}"
         },
         "E2-L1-P5": {
-          "name": null,
-          "description": null
+          "name": "Archdemon Mode",
+          "description": "While skill is active and for 10 seconds after skill ends, ATK +16{'%'} <#ba.talpu>(+3{'%'})</>"
         }
       }
     },
     "skills": {
       "skchr_yato2_1": {
         "1": {
-          "name": null,
-          "description": null
+          "name": "Demon Mode",
+          "description": "ASPD <#ba.vup>+{'{'}attack_speed{'}'}</>, attacks hit <#ba.vup>2 times</>, and every third attack on the same target while the skill is active becomes a <#ba.vup>6-hit combo</>"
         },
         "2": {
-          "name": null,
-          "description": null
+          "name": "Demon Mode",
+          "description": "ASPD <#ba.vup>+{'{'}attack_speed{'}'}</>, attacks hit <#ba.vup>2 times</>, and every third attack on the same target while the skill is active becomes a <#ba.vup>6-hit combo</>"
         },
         "3": {
-          "name": null,
-          "description": null
+          "name": "Demon Mode",
+          "description": "ASPD <#ba.vup>+{'{'}attack_speed{'}'}</>, attacks hit <#ba.vup>2 times</>, and every third attack on the same target while the skill is active becomes a <#ba.vup>6-hit combo</>"
         },
         "4": {
-          "name": null,
-          "description": null
+          "name": "Demon Mode",
+          "description": "ASPD <#ba.vup>+{'{'}attack_speed{'}'}</>, attacks hit <#ba.vup>2 times</>, and every third attack on the same target while the skill is active becomes a <#ba.vup>6-hit combo</>"
         },
         "5": {
-          "name": null,
-          "description": null
+          "name": "Demon Mode",
+          "description": "ASPD <#ba.vup>+{'{'}attack_speed{'}'}</>, attacks hit <#ba.vup>2 times</>, and every third attack on the same target while the skill is active becomes a <#ba.vup>6-hit combo</>"
         },
         "6": {
-          "name": null,
-          "description": null
+          "name": "Demon Mode",
+          "description": "ASPD <#ba.vup>+{'{'}attack_speed{'}'}</>, attacks hit <#ba.vup>2 times</>, and every third attack on the same target while the skill is active becomes a <#ba.vup>6-hit combo</>"
         },
         "7": {
-          "name": null,
-          "description": null
+          "name": "Demon Mode",
+          "description": "ASPD <#ba.vup>+{'{'}attack_speed{'}'}</>, attacks hit <#ba.vup>2 times</>, and every third attack on the same target while the skill is active becomes a <#ba.vup>6-hit combo</>"
         },
         "8": {
-          "name": null,
-          "description": null
+          "name": "Demon Mode",
+          "description": "ASPD <#ba.vup>+{'{'}attack_speed{'}'}</>, attacks hit <#ba.vup>2 times</>, and every third attack on the same target while the skill is active becomes a <#ba.vup>6-hit combo</>"
         },
         "9": {
-          "name": null,
-          "description": null
+          "name": "Demon Mode",
+          "description": "ASPD <#ba.vup>+{'{'}attack_speed{'}'}</>, attacks hit <#ba.vup>2 times</>, and every third attack on the same target while the skill is active becomes a <#ba.vup>6-hit combo</>"
         },
         "10": {
-          "name": null,
-          "description": null
+          "name": "Demon Mode",
+          "description": "ASPD <#ba.vup>+{'{'}attack_speed{'}'}</>, attacks hit <#ba.vup>2 times</>, and every third attack on the same target while the skill is active becomes a <#ba.vup>6-hit combo</>"
         }
       },
       "skchr_yato2_2": {
         "1": {
-          "name": null,
-          "description": null
+          "name": "Blade Dance",
+          "description": "Talent 1 effect increased to <#ba.vup>{'{'}talent_scale_display:0.0{'}'}</>x, ATK increased to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>, and slashes all enemies in the frontal tile 16 times. <#ba.vdown>More likely to be targeted by attacks for the duration</>"
         },
         "2": {
-          "name": null,
-          "description": null
+          "name": "Blade Dance",
+          "description": "Talent 1 effect increased to <#ba.vup>{'{'}talent_scale_display:0.0{'}'}</>x, ATK increased to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>, and slashes all enemies in the frontal tile 16 times. <#ba.vdown>More likely to be targeted by attacks for the duration</>"
         },
         "3": {
-          "name": null,
-          "description": null
+          "name": "Blade Dance",
+          "description": "Talent 1 effect increased to <#ba.vup>{'{'}talent_scale_display:0.0{'}'}</>x, ATK increased to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>, and slashes all enemies in the frontal tile 16 times. <#ba.vdown>More likely to be targeted by attacks for the duration</>"
         },
         "4": {
-          "name": null,
-          "description": null
+          "name": "Blade Dance",
+          "description": "Talent 1 effect increased to <#ba.vup>{'{'}talent_scale_display:0.0{'}'}</>x, ATK increased to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>, and slashes all enemies in the frontal tile 16 times. <#ba.vdown>More likely to be targeted by attacks for the duration</>"
         },
         "5": {
-          "name": null,
-          "description": null
+          "name": "Blade Dance",
+          "description": "Talent 1 effect increased to <#ba.vup>{'{'}talent_scale_display:0.0{'}'}</>x, ATK increased to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>, and slashes all enemies in the frontal tile 16 times. <#ba.vdown>More likely to be targeted by attacks for the duration</>"
         },
         "6": {
-          "name": null,
-          "description": null
+          "name": "Blade Dance",
+          "description": "Talent 1 effect increased to <#ba.vup>{'{'}talent_scale_display:0.0{'}'}</>x, ATK increased to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>, and slashes all enemies in the frontal tile 16 times. <#ba.vdown>More likely to be targeted by attacks for the duration</>"
         },
         "7": {
-          "name": null,
-          "description": null
+          "name": "Blade Dance",
+          "description": "Talent 1 effect increased to <#ba.vup>{'{'}talent_scale_display:0.0{'}'}</>x, ATK increased to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>, and slashes all enemies in the frontal tile 16 times. <#ba.vdown>More likely to be targeted by attacks for the duration</>"
         },
         "8": {
-          "name": null,
-          "description": null
+          "name": "Blade Dance",
+          "description": "Talent 1 effect increased to <#ba.vup>{'{'}talent_scale_display:0.0{'}'}</>x, ATK increased to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>, and slashes all enemies in the frontal tile 16 times. <#ba.vdown>More likely to be targeted by attacks for the duration</>"
         },
         "9": {
-          "name": null,
-          "description": null
+          "name": "Blade Dance",
+          "description": "Talent 1 effect increased to <#ba.vup>{'{'}talent_scale_display:0.0{'}'}</>x, ATK increased to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>, and slashes all enemies in the frontal tile 16 times. <#ba.vdown>More likely to be targeted by attacks for the duration</>"
         },
         "10": {
-          "name": null,
-          "description": null
+          "name": "Blade Dance",
+          "description": "Talent 1 effect increased to <#ba.vup>{'{'}talent_scale_display:0.0{'}'}</>x, ATK increased to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>, and slashes all enemies in the frontal tile 16 times. <#ba.vdown>More likely to be targeted by attacks for the duration</>"
         }
       },
       "skchr_yato2_3": {
         "1": {
-          "name": null,
-          "description": null
+          "name": "Midair Spinning Blade Dance",
+          "description": "Rushes forward 2 tiles, slashing all surrounding enemies for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK for every step moved; every enemy attacked in the process <#ba.vup>extends</> distance of the rush (max. 5 tiles, <#ba.vup>can hit aerial units</>)"
         },
         "2": {
-          "name": null,
-          "description": null
+          "name": "Midair Spinning Blade Dance",
+          "description": "Rushes forward 2 tiles, slashing all surrounding enemies for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK for every step moved; every enemy attacked in the process <#ba.vup>extends</> distance of the rush (max. 5 tiles, <#ba.vup>can hit aerial units</>)"
         },
         "3": {
-          "name": null,
-          "description": null
+          "name": "Midair Spinning Blade Dance",
+          "description": "Rushes forward 2 tiles, slashing all surrounding enemies for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK for every step moved; every enemy attacked in the process <#ba.vup>extends</> distance of the rush (max. 5 tiles, <#ba.vup>can hit aerial units</>)"
         },
         "4": {
-          "name": null,
-          "description": null
+          "name": "Midair Spinning Blade Dance",
+          "description": "Rushes forward 2 tiles, slashing all surrounding enemies for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK for every step moved; every enemy attacked in the process <#ba.vup>extends</> distance of the rush (max. 5 tiles, <#ba.vup>can hit aerial units</>)"
         },
         "5": {
-          "name": null,
-          "description": null
+          "name": "Midair Spinning Blade Dance",
+          "description": "Rushes forward 2 tiles, slashing all surrounding enemies for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK for every step moved; every enemy attacked in the process <#ba.vup>extends</> distance of the rush (max. 5 tiles, <#ba.vup>can hit aerial units</>)"
         },
         "6": {
-          "name": null,
-          "description": null
+          "name": "Midair Spinning Blade Dance",
+          "description": "Rushes forward 2 tiles, slashing all surrounding enemies for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK for every step moved; every enemy attacked in the process <#ba.vup>extends</> distance of the rush (max. 5 tiles, <#ba.vup>can hit aerial units</>)"
         },
         "7": {
-          "name": null,
-          "description": null
+          "name": "Midair Spinning Blade Dance",
+          "description": "Rushes forward 2 tiles, slashing all surrounding enemies for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK for every step moved; every enemy attacked in the process <#ba.vup>extends</> distance of the rush (max. 5 tiles, <#ba.vup>can hit aerial units</>)"
         },
         "8": {
-          "name": null,
-          "description": null
+          "name": "Midair Spinning Blade Dance",
+          "description": "Rushes forward 2 tiles, slashing all surrounding enemies for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK for every step moved; every enemy attacked in the process <#ba.vup>extends</> distance of the rush (max. 5 tiles, <#ba.vup>can hit aerial units</>)"
         },
         "9": {
-          "name": null,
-          "description": null
+          "name": "Midair Spinning Blade Dance",
+          "description": "Rushes forward 2 tiles, slashing all surrounding enemies for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK for every step moved; every enemy attacked in the process <#ba.vup>extends</> distance of the rush (max. 5 tiles, <#ba.vup>can hit aerial units</>)"
         },
         "10": {
-          "name": null,
-          "description": null
+          "name": "Midair Spinning Blade Dance",
+          "description": "Rushes forward 2 tiles, slashing all surrounding enemies for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK for every step moved; every enemy attacked in the process <#ba.vup>extends</> distance of the rush (max. 5 tiles, <#ba.vup>can hit aerial units</>)"
         }
       }
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": null
+        "description": "Significantly <#ba.kw>reduced</> Redeployment Time"
       }
     },
     "modules": {
       "uniequip_001_yato2": {
-        "name": null,
-        "description": null
+        "name": "Kirin R Yato's Badge",
+        "description": "Outfitted with a custom-craft kit, Operator Yato has demonstrated a remarkable aptitude in repeated battlefield penetration.\nThe Field Operations Department has thus passed the following resolution:\nThis operator shall be appointed a Specialist Operator during field operations to exercise Executor responsibilities.\nIn witness whereof,\nThis badge is hereby conferred upon the above named."
       },
       "uniequip_002_yato2": {
-        "name": null,
-        "description": null,
+        "name": "Training Dummy",
+        "description": "I hate the wooden dummy.\nIt's too big, too heavy, doesn't change in any way, and can't move on its own. No matter how you slash at it, it never hits back. As a training prop, it's stupidly ineffective, and doesn't fit most training purposes. They should throw anything with that little practical value straight in a trash bin.\nStop laughing. Believe me, inefficiency sickens me more than anyone else sitting here. Yes, I train on a wooden dummy every day, but I've had enough of even seeing it.\nOn the day I first wielded a katana, my first training target was half of a gigantic wooden dummy, taller than I was, so wide I couldn't pick it up. The grounds were covered in snow. They put the dummy dead center, in conditions where your only option for keeping your body temperature up was to brandish your katana as fiercely as you could. The order they gave me was that I wasn't allowed back inside to warm up by the heater until I cut it in half.\nThat day, I shattered six katanas, and cut through eight dummies.\nSince then, practically every day, I've faced off with my katana against dummy after dummy, throwing in the next once I've cut the last one to pieces. I still have the habit today.\nYou're sharp. Yes, it was 'practically' every day, and that's because I did stop once. Not long after I joined Rhodes Island, after participating in my first field mission.\nJust like you, I was hungry for victory on my first mission, but during it we hit an enormous snag. We were facing off against a highly experienced Caster. He was small, and with others covering for him, he was casting Arts like a ghost. We could barely put up a fight against it, and my katana couldn't threaten him in the slightest.\nIt was a painful defeat we swallowed. I was bitter about it as I came back, blaming my blade's helplessness for our loss. So I abandoned my routine, and spent the whole night reviewing recordings and deriving strategies to deal with the Caster's every move. Once I thought I was ready, I stowed away my katana, and took along a huge collection of new weapons to confront the Caster alone.\nBut in the end, I was defeated. It wasn't because my strategies were flawed, or because those new weapons were ineffective on him. It was because I hadn't spent nearly enough time training those strategies or using those weapons. All I did was assume it'd work, watch the recordings a few times, and head off for battle. Reality proved that hopelessly inefficient, and with a large chance of failure.\nAfter I came back, I restored the wooden dummy and began my routine again. It was just a plain dummy, and though I was sick of it, it was able to support me as I drilled my fundamentals and trained newly imagined moves, and that was enough.\nEveryone sitting here is an excellent operator about to take part in their first field mission. As Op Team A4 Captain, I, Yato, warn you all: never stop polishing your skills. That's the one and only path to high efficiency. Acting on assumptions is undesirable. Anything can happen on a fluke, but luck won't always have your back.\nA wooden dummy, a target, a mannequin, anything... smash it to pieces, and never stop. That's what you should be doing.\nAlright, I'm done... anything else?\nOh? You looked up the mission log? That's right, I did take out that Caster in the end.\nI said I failed—I did fail, with those new weapons. In the end, my final plan to settle things was to pull out my katana again, and with the most fleeting of chances, I slashed like I was slashing a dummy.\nAnd I cut that Caster down. End of story.",
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "Refunds <#ba.kw>a large portion</> of the current DP Cost when retreated"
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "Refunds <#ba.kw>a large portion</> of the current DP Cost when retreated"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Archdemon Mode",
+                    "description": "While skill is active and for 10 seconds after skill ends, ATK +14{'%'}, further increased by 3{'%'} while skill is active"
                   },
                   "5": {
-                    "name": null,
-                    "description": null
+                    "name": "Archdemon Mode",
+                    "description": "While skill is active and for 10 seconds after skill ends, ATK +17{'%'} <#ba.talpu>(+3{'%'})</>, further increased by 3{'%'} while skill is active"
                   }
                 }
               }
@@ -52778,18 +53050,18 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "Refunds <#ba.kw>a large portion</> of the current DP Cost when retreated"
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Archdemon Mode",
+                    "description": "While skill is active and for 10 seconds after skill ends, ATK +15{'%'}, further increased by 5{'%'} while skill is active"
                   },
                   "5": {
-                    "name": null,
-                    "description": null
+                    "name": "Archdemon Mode",
+                    "description": "While skill is active and for 10 seconds after skill ends, ATK +18{'%'} <#ba.talpu>(+3{'%'})</>, further increased by 5{'%'} while skill is active"
                   }
                 }
               }
@@ -52801,165 +53073,165 @@
     "tokenSummons": {}
   },
   "rathalos-s-noir-corne": {
-    "name": null,
-    "appellation": null,
-    "description": null,
+    "name": "Rathalos S Noir Corne",
+    "appellation": "",
+    "description": "Can't be healed by other units. Recovers <#ba.kw>{'{'}value{'}'}</> self HP every time this operator attacks an enemy",
     "potentials": {
       "2": {
-        "description": null
+        "description": "DP Cost -1"
       },
       "3": {
-        "description": null
+        "description": "Redeployment Time -4 sec"
       },
       "4": {
-        "description": null
+        "description": "ASPD +5"
       },
       "5": {
-        "description": null
+        "description": "Redeployment Time -6 sec"
       },
       "6": {
-        "description": null
+        "description": "DP Cost -1"
       }
     },
     "talents": {
       "1": {
         "E0-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Decisive",
+          "description": "Increases ASPD and DEF based on lost HP (Reaches max boost of ASPD +30, DEF +30{'%'} when below 50{'%'} HP)"
         },
         "E1-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Decisive",
+          "description": "Increases ASPD and DEF based on lost HP (Reaches max boost of ASPD +40, DEF +40{'%'} when below 40{'%'} HP)"
         },
         "E2-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Decisive",
+          "description": "Increases ASPD and DEF based on lost HP (Reaches max boost of ASPD +50, DEF +50{'%'} when below 30{'%'} HP)"
         }
       },
       "2": {
         "E0-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Spirit",
+          "description": "Gains +3{'%'} ATK for every 5 attacks made while skill is inactive (stacks up to 3 times)"
         },
         "E1-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Spirit",
+          "description": "Gains +5{'%'} ATK for every 5 attacks made while skill is inactive (stacks up to 3 times)"
         },
         "E2-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Spirit",
+          "description": "Gains +7{'%'} ATK for every 5 attacks made while skill is inactive (stacks up to 3 times)"
         }
       }
     },
     "skills": {
       "skchr_noirc2_1": {
         "1": {
-          "name": null,
-          "description": null
+          "name": "Iai Spirit Slash",
+          "description": "Sheathe and <#ba.vdown>stop</> attacking. When next attacked, <#ba.vup>resist</> that damage, deal <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to a selected enemy in range, and immediately <#ba.vup>activate</> Talent 2 once.\n<{'@'}ba.rem>When an enemy is defeated with this skill, skill activates and sheathes again automatically"
         },
         "2": {
-          "name": null,
-          "description": null
+          "name": "Iai Spirit Slash",
+          "description": "Sheathe and <#ba.vdown>stop</> attacking. When next attacked, <#ba.vup>resist</> that damage, deal <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to a selected enemy in range, and immediately <#ba.vup>activate</> Talent 2 once.\n<{'@'}ba.rem>When an enemy is defeated with this skill, skill activates and sheathes again automatically"
         },
         "3": {
-          "name": null,
-          "description": null
+          "name": "Iai Spirit Slash",
+          "description": "Sheathe and <#ba.vdown>stop</> attacking. When next attacked, <#ba.vup>resist</> that damage, deal <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to a selected enemy in range, and immediately <#ba.vup>activate</> Talent 2 once.\n<{'@'}ba.rem>When an enemy is defeated with this skill, skill activates and sheathes again automatically"
         },
         "4": {
-          "name": null,
-          "description": null
+          "name": "Iai Spirit Slash",
+          "description": "Sheathe and <#ba.vdown>stop</> attacking. When next attacked, <#ba.vup>resist</> that damage, deal <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to a selected enemy in range, and immediately <#ba.vup>activate</> Talent 2 once.\n<{'@'}ba.rem>When an enemy is defeated with this skill, skill activates and sheathes again automatically"
         },
         "5": {
-          "name": null,
-          "description": null
+          "name": "Iai Spirit Slash",
+          "description": "Sheathe and <#ba.vdown>stop</> attacking. When next attacked, <#ba.vup>resist</> that damage, deal <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to a selected enemy in range, and immediately <#ba.vup>activate</> Talent 2 once.\n<{'@'}ba.rem>When an enemy is defeated with this skill, skill activates and sheathes again automatically"
         },
         "6": {
-          "name": null,
-          "description": null
+          "name": "Iai Spirit Slash",
+          "description": "Sheathe and <#ba.vdown>stop</> attacking. When next attacked, <#ba.vup>resist</> that damage, deal <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to a selected enemy in range, and immediately <#ba.vup>activate</> Talent 2 once.\n<{'@'}ba.rem>When an enemy is defeated with this skill, skill activates and sheathes again automatically"
         },
         "7": {
-          "name": null,
-          "description": null
+          "name": "Iai Spirit Slash",
+          "description": "Sheathe and <#ba.vdown>stop</> attacking. When next attacked, <#ba.vup>resist</> that damage, deal <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to a selected enemy in range, and immediately <#ba.vup>activate</> Talent 2 once.\n<{'@'}ba.rem>When an enemy is defeated with this skill, skill activates and sheathes again automatically"
         },
         "8": {
-          "name": null,
-          "description": null
+          "name": "Iai Spirit Slash",
+          "description": "Sheathe and <#ba.vdown>stop</> attacking. When next attacked, <#ba.vup>resist</> that damage, deal <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to a selected enemy in range, and immediately <#ba.vup>activate</> Talent 2 once.\n<{'@'}ba.rem>When an enemy is defeated with this skill, skill activates and sheathes again automatically"
         },
         "9": {
-          "name": null,
-          "description": null
+          "name": "Iai Spirit Slash",
+          "description": "Sheathe and <#ba.vdown>stop</> attacking. When next attacked, <#ba.vup>resist</> that damage, deal <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to a selected enemy in range, and immediately <#ba.vup>activate</> Talent 2 once.\n<{'@'}ba.rem>When an enemy is defeated with this skill, skill activates and sheathes again automatically"
         },
         "10": {
-          "name": null,
-          "description": null
+          "name": "Iai Spirit Slash",
+          "description": "Sheathe and <#ba.vdown>stop</> attacking. When next attacked, <#ba.vup>resist</> that damage, deal <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to a selected enemy in range, and immediately <#ba.vup>activate</> Talent 2 once.\n<{'@'}ba.rem>When an enemy is defeated with this skill, skill activates and sheathes again automatically"
         }
       },
       "skchr_noirc2_2": {
         "1": {
-          "name": null,
-          "description": null
+          "name": "Spirit Helm Breaker",
+          "description": "Deals <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to an enemy in front. \n<#ba.rem>Lose 1 stack of Talent 2 when skill ends. Can store {'{'}cnt{'}'}</> charges"
         },
         "2": {
-          "name": null,
-          "description": null
+          "name": "Spirit Helm Breaker",
+          "description": "Deals <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to an enemy in front. \n<#ba.rem>Lose 1 stack of Talent 2 when skill ends. Can store {'{'}cnt{'}'}</> charges"
         },
         "3": {
-          "name": null,
-          "description": null
+          "name": "Spirit Helm Breaker",
+          "description": "Deals <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to an enemy in front. \n<#ba.rem>Lose 1 stack of Talent 2 when skill ends. Can store {'{'}cnt{'}'}</> charges"
         },
         "4": {
-          "name": null,
-          "description": null
+          "name": "Spirit Helm Breaker",
+          "description": "Deals <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to an enemy in front. \n<#ba.rem>Lose 1 stack of Talent 2 when skill ends. Can store {'{'}cnt{'}'}</> charges"
         },
         "5": {
-          "name": null,
-          "description": null
+          "name": "Spirit Helm Breaker",
+          "description": "Deals <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to an enemy in front. \n<#ba.rem>Lose 1 stack of Talent 2 when skill ends. Can store {'{'}cnt{'}'}</> charges"
         },
         "6": {
-          "name": null,
-          "description": null
+          "name": "Spirit Helm Breaker",
+          "description": "Deals <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to an enemy in front. \n<#ba.rem>Lose 1 stack of Talent 2 when skill ends. Can store {'{'}cnt{'}'}</> charges"
         },
         "7": {
-          "name": null,
-          "description": null
+          "name": "Spirit Helm Breaker",
+          "description": "Deals <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to an enemy in front. \n<#ba.rem>Lose 1 stack of Talent 2 when skill ends. Can store {'{'}cnt{'}'}</> charges"
         },
         "8": {
-          "name": null,
-          "description": null
+          "name": "Spirit Helm Breaker",
+          "description": "Deals <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to an enemy in front. \n<#ba.rem>Lose 1 stack of Talent 2 when skill ends. Can store {'{'}cnt{'}'}</> charges"
         },
         "9": {
-          "name": null,
-          "description": null
+          "name": "Spirit Helm Breaker",
+          "description": "Deals <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to an enemy in front. \n<#ba.rem>Lose 1 stack of Talent 2 when skill ends. Can store {'{'}cnt{'}'}</> charges"
         },
         "10": {
-          "name": null,
-          "description": null
+          "name": "Spirit Helm Breaker",
+          "description": "Deals <#ba.vup>{'{'}multi_atk_scale:0{'%'}{'}'}</> ATK as Physical Damage <#ba.vup>{'{'}multi_times{'}'}</> times to an enemy in front. \n<#ba.rem>Lose 1 stack of Talent 2 when skill ends. Can store {'{'}cnt{'}'}</> charges"
         }
       }
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": null
+        "description": "Can't be healed by other units. Recovers <#ba.kw>{'{'}value{'}'}</> self HP every time this operator attacks an enemy (Upgraded after reaching Elite 1)"
       },
       "E1-L1": {
-        "description": null
+        "description": "Can't be healed by other units. Recovers <#ba.kw>{'{'}value{'}'}</> self HP every time this operator attacks an enemy (Upgraded after reaching Elite 2)"
       },
       "E2-L1": {
-        "description": null
+        "description": "Can't be healed by other units. Recovers <#ba.kw>{'{'}value{'}'}</> self HP every time this operator attacks an enemy"
       }
     },
     "modules": {
       "uniequip_001_noirc2": {
-        "name": null,
-        "description": null
+        "name": "Rathalos S Noir Corne's Badge",
+        "description": "Outfitted with a custom-craft kit, Operator Noir Corne has demonstrated a remarkable aptitude for solo confrontation with the enemy while far removed from support lines.\nThe Field Operations Department has thus passed the following resolution:\nThis operator shall be appointed a Guard Operator during field operations to exercise Musha responsibilities.\nIn witness whereof,\nThis badge is hereby conferred upon the above named."
       },
       "uniequip_002_noirc2": {
-        "name": null,
-        "description": null,
+        "name": "Noir Corne's Personal Notes",
+        "description": "Part 1: Your Map is Made for Looking!\n......\nSection 2: Layout of R.I. Facilities\n(Hand-drawn diagrams. In all the winding lines, you can vaguely make out the distribution of facilities aboard the Island. The Training Room's location has a giant red ring circled around it.)\nAfter Yato finishes training, be sure to check if equipment is broken. Call for repairs ASAP!\n......\nSection 5: Map of Lungmen\n(A map cut out of a newspaper, with Rhodes Island branch office and safehouse positions marked.)\nRemind Yato, go to office FIRST for any problems!\nNote: If we knock and no one answers, don't let Yato kick down the door!\n......\nPart 2: Illustrated Guide to Nasty as Hell Guys\n......\nSection 3: Infused Originium Slugs\n(An extremely blurry photograph.)\nOriginium Slugs with yellow light coming from belly. Trouble at first sight. Blows everywhere after you beat it up, hurts like hell, BE CAREFUL. Remind Yato, don't rush straight in to cut them down!\nWARNING: If she already did, get your shield the hell up!\n......\nSection 27: Metal Crabs\n(Hand-drawn images, remarkably abstract.)\nInfected creature that glows all over. Don't know what part of it's weak. Basically hack away at it until it's done.\nSPECIAL NOTE: Better to just let Yato at this one!\n......\nPart 3: How to Use Your Weapons\n......\nSection 2: Shield\n(An overview cut out from an encyclopedia accompanies this entry.)\nI know this one. Wherever the sound and light comes from, you block in that direction, get your team behind you, and then you don't fall one single step back.\n......\nPart 4: Because You Learn Something New Every Day\n......\nSection 53: How to Give Other People Reminders\nAnyone but Yato: Tell them straight up what to do and you're fine.\nYato: She's pretty hasty, probably won't take it in if you just tell her once. Gotta sit her down first, then walk her through the reasons, and once she understands you're smooth sailing.\n......\nSection 237: Watch Out For Sunlight!\nYato's skin gets damaged VERY easy by sunlight. When changing surroundings, watch for the position of sunlight, block it off for her.\nDoesn't seem to need it anymore with her new equipment. Good stuff.\n......\nSection 561: Yato's Birthday\nMay 14th.\nBuddy, you're just grinding out numbers now! BUT IF there's an accident on a mission and all suddenly you forget a bunch... Yeah, better note this down.\n......\nTitle Page: To Whoever Picked Up This Notebook\nThis is Noir Corne, notebook's owner. If you picked this up but can't find me, then hand this over to Yato from Rhodes Island.\nAlso, please tell her for me, if she runs into any trouble she can take a good flick through these notes. My way of helping her out even when I'm not there by her side.\nThanks.\n—Extracts from Noir Corne's Personal Notes",
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "Gain 25{'%'} <?ba.protect>Sanctuary</> when HP is below 50{'%'}"
             },
             "talentUpgrades": {
               "1": {
@@ -52971,7 +53243,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "Gain 25{'%'} <?ba.protect>Sanctuary</> when HP is below 50{'%'}"
             },
             "talentUpgrades": {
               "1": {
@@ -52982,8 +53254,8 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Spirit",
+                    "description": "Gains +8{'%'} ATK for every 5 attacks made while skill is inactive (stacks up to 3 times)"
                   }
                 }
               }
@@ -52991,7 +53263,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "Gain 25{'%'} <?ba.protect>Sanctuary</> when HP is below 50{'%'}"
             },
             "talentUpgrades": {
               "1": {
@@ -53002,8 +53274,8 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": null,
-                    "description": null
+                    "name": "Spirit",
+                    "description": "Gains +9{'%'} ATK for every 5 attacks made while skill is inactive (stacks up to 3 times)"
                   }
                 }
               }
@@ -53015,58 +53287,58 @@
     "tokenSummons": {}
   },
   "terra-research-commission": {
-    "name": null,
-    "appellation": null,
-    "description": null,
+    "name": "Terra Research Commission",
+    "appellation": "",
+    "description": "Attacks deal Physical Damage <#ba.kw>twice</> to <#ba.kw>ground</> enemies in a small radius (second time is an aftershock dealing half ATK in damage), and ignores the <#ba.kw>Deployment Limit</>, but has a long Redeployment Time",
     "potentials": {
       "2": {
-        "description": null
+        "description": "Improves Talent"
       },
       "3": {
-        "description": null
+        "description": "Improves Talent"
       },
       "4": {
-        "description": null
+        "description": "Improves Talent"
       },
       "5": {
-        "description": null
+        "description": "Improves Talent"
       },
       "6": {
-        "description": null
+        "description": "Improves Talent"
       }
     },
     "talents": {
       "1": {
         "E0-L1-P1": {
-          "name": null,
-          "description": null
+          "name": "Felyne Lottery Bomb I",
+          "description": "Attacks detonate after a delay, with one of the following random effects: Deals 200{'%'} Physical Damage / Puts the target to <?ba.sleep>Sleep</> for 1 second / <?ba.stun>Stuns</> the target for 0.1 seconds / Nothing happens at all! Talent deactivates after triggering Damage effect 3 times"
         },
         "E0-L1-P2": {
-          "name": null,
-          "description": null
+          "name": "Felyne Lottery Bomb II",
+          "description": "Attacks detonate after a delay, with one of the following random effects: Deal 250{'%'} Physical Damage / Puts the target to <?ba.sleep>Sleep</> for 1 second / <?ba.stun>Stuns</> the target for 0.1 seconds / Nothing happens at all! Talent deactivates after triggering Damage effect 3 times"
         },
         "E0-L1-P3": {
-          "name": null,
-          "description": null
+          "name": "Felyne Lottery Bomb III",
+          "description": "Attacks detonate after a delay, with one of the following random effects: Deal 300{'%'} Physical Damage / Puts the target to <?ba.sleep>Sleep</> for 1 second / <?ba.stun>Stuns</> the target for 0.1 seconds / Nothing happens at all! Talent deactivates after triggering Damage effect 3 times"
         },
         "E0-L1-P4": {
-          "name": null,
-          "description": null
+          "name": "Felyne Lottery Bomb IV",
+          "description": "Attacks detonate after a delay, with one of the following random effects: Deal 350{'%'} Physical Damage / Puts the target to <?ba.sleep>Sleep</> for 1 second / <?ba.stun>Stuns</> the target for 0.2 seconds / Nothing happens at all! Talent deactivates after triggering Damage effect 3 times"
         },
         "E0-L1-P5": {
-          "name": null,
-          "description": null
+          "name": "Felyne Lottery Bomb V",
+          "description": "Attacks detonate after a delay, with one of the following random effects: Deal 400{'%'} Physical Damage / Puts the target to <?ba.sleep>Sleep</> for 1 second / <?ba.stun>Stuns</> the target for 0.2 seconds / Nothing happens at all! Talent deactivates after triggering Damage effect 3 times"
         },
         "E0-L1-P6": {
-          "name": null,
-          "description": null
+          "name": "Felyne Lottery Bomb VI",
+          "description": "Attacks detonate after a delay, with one of the following random effects: Deal 450{'%'} Physical Damage / Puts the target to <?ba.sleep>Sleep</> for 1 second / <?ba.stun>Stuns</> the target for 0.2 seconds / Nothing happens at all! Talent deactivates after triggering Damage effect 3 times"
         }
       }
     },
     "skills": {},
     "traitCandidates": {
       "E0-L1": {
-        "description": null
+        "description": "Attacks deal Physical Damage <#ba.kw>twice</> to <#ba.kw>ground</> enemies in a small radius (second time is an aftershock dealing half ATK in damage), and ignores the <#ba.kw>Deployment Limit</>, but has a long Redeployment Time"
       }
     },
     "tokenSummons": {}
@@ -54063,6 +54335,72 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_slent2": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_slent2": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {
@@ -56887,6 +57225,557 @@
             }
           }
         }
+      }
+    },
+    "tokenSummons": {}
+  },
+  "jessica-the-liberated": {
+    "name": null,
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E0-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E0-L1-P3": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P3": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P3": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_jesca2_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_jesca2_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_jesca2_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "tokenSummons": {
+      "token_10032_jesca2_jckshd": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            },
+            "E1-L1-P1": {
+              "description": null
+            },
+            "E2-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {},
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {}
+      }
+    }
+  },
+  "almond": {
+    "name": null,
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_almond_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_almond_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_almond": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_almond": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {}
+  },
+  "coldshot": {
+    "name": null,
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skcom_atk_up<3>": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_coldst_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      },
+      "E1-L1": {
+        "description": null
+      },
+      "E2-L1": {
+        "description": null
       }
     },
     "tokenSummons": {}
