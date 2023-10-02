@@ -10,7 +10,7 @@ export type PhaseEnum = z.infer<typeof PhaseEnum>
 
 export const BlackboardSchema = z.object({
   key: z.string(),
-  value: z.number(),
-  valueStr: z.string().nullish(), // CN 2.0 vs EJK
+  value: z.number().optional(),
+  valueStr: z.string().nullish(),
 })
 export type Blackboard = z.infer<typeof BlackboardSchema>
