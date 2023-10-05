@@ -54,7 +54,6 @@
   "prettier": {
     "pluginSearchDirs": false,
     "plugins": [
-      "prettier-plugin-css-order",
       "prettier-plugin-import-sort",
       "prettier-plugin-organize-attributes",
       "prettier-plugin-tailwindcss"

@@ -1,7 +1,10 @@
 @use "sass:map";
 
+// Prioritize Google Fonts CDN fonts
+// These are fallback fonts
+
 @font-face {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans fallback";
   font-weight: 400;
   font-style: normal;
   src: local("Noto Sans"), local("Noto Sans Regular"),
@@ -9,7 +12,7 @@
 }
 
 @font-face {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans fallback";
   font-weight: 400;
   font-style: italic;
   src: local("Noto Sans Italic"),
@@ -17,7 +20,7 @@
 }
 
 @font-face {
-  font-family: "Noto Serif";
+  font-family: "Noto Serif fallback";
   font-weight: 400;
   font-style: normal;
   src: local("Noto Serif"), local("Noto Serif Regular"),
@@ -25,7 +28,7 @@
 }
 
 @font-face {
-  font-family: "Noto Serif";
+  font-family: "Noto Serif fallback";
   font-weight: 400;
   font-style: italic;
   src: local("Noto Serif Italic"),
@@ -33,7 +36,7 @@
 }
 
 @font-face {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans fallback";
   font-weight: 300;
   font-style: normal;
   src: local("Noto Sans Light"),
@@ -41,7 +44,7 @@
 }
 
 @font-face {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans fallback";
   font-weight: 300;
   font-style: italic;
   src: local("Noto Sans Light Italic"),
@@ -49,7 +52,7 @@
 }
 
 @font-face {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans fallback";
   font-weight: 700;
   font-style: normal;
   src: local("Noto Sans Bold"),
@@ -57,7 +60,7 @@
 }
 
 @font-face {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans fallback";
   font-weight: 700;
   font-style: italic;
   src: local("Noto Sans Bold Italic"),
@@ -65,7 +68,7 @@
 }
 
 @font-face {
-  font-family: "Noto Serif";
+  font-family: "Noto Serif fallback";
   font-weight: 700;
   font-style: normal;
   src: local("Noto Serif Bold"),
@@ -73,7 +76,7 @@
 }
 
 @font-face {
-  font-family: "Noto Serif";
+  font-family: "Noto Serif fallback";
   font-weight: 700;
   font-style: italic;
   src: local("Noto Serif Bold Italic"),
@@ -81,168 +84,168 @@
 }
 
 @font-face {
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC fallback";
   font-weight: 400;
   src: local("Noto Sans SC"), local("Noto Sans SC Regular"),
     url("~/assets/fonts/NotoSansSC-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC fallback";
   font-weight: 300;
   src: local("Noto Sans SC Light"),
     url("~/assets/fonts/NotoSansSC-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC fallback";
   font-weight: 700;
   src: local("Noto Sans SC Bold"),
     url("~/assets/fonts/NotoSansSC-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Serif SC";
+  font-family: "Noto Serif SC fallback";
   font-weight: 400;
   src: local("Noto Serif SC"), local("Noto Serif SC Regular"),
     url("~/assets/fonts/NotoSerifSC-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Serif SC";
+  font-family: "Noto Serif SC fallback";
   font-weight: 300;
   src: local("Noto Serif SC Light"),
     url("~/assets/fonts/NotoSerifSC-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Serif SC";
+  font-family: "Noto Serif SC fallback";
   font-weight: 700;
   src: local("Noto Serif SC Bold"),
     url("~/assets/fonts/NotoSerifSC-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Sans TC";
+  font-family: "Noto Sans TC fallback";
   font-weight: 400;
   src: local("Noto Sans TC"), local("Noto Sans TC Regular"),
     url("~/assets/fonts/NotoSansTC-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Sans TC";
+  font-family: "Noto Sans TC fallback";
   font-weight: 300;
   src: local("Noto Sans TC Light"),
     url("~/assets/fonts/NotoSansTC-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Sans TC";
+  font-family: "Noto Sans TC fallback";
   font-weight: 700;
   src: local("Noto Sans TC Bold"),
     url("~/assets/fonts/NotoSansTC-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Serif TC";
+  font-family: "Noto Serif TC fallback";
   font-weight: 400;
   src: local("Noto Serif TC"), local("Noto Serif TC Regular"),
     url("~/assets/fonts/NotoSerifTC-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Serif TC";
+  font-family: "Noto Serif TC fallback";
   font-weight: 300;
   src: local("Noto Serif TC Light"),
     url("~/assets/fonts/NotoSerifTC-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Serif TC";
+  font-family: "Noto Serif TC fallback";
   font-weight: 700;
   src: local("Noto Serif TC Bold"),
     url("~/assets/fonts/NotoSerifTC-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP fallback";
   font-weight: 400;
   src: local("Noto Sans JP"), local("Noto Sans JP Regular"),
     url("~/assets/fonts/NotoSansJP-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP fallback";
   font-weight: 300;
   src: local("Noto Sans JP Light"),
     url("~/assets/fonts/NotoSansJP-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP fallback";
   font-weight: 700;
   src: local("Noto Sans JP Bold"),
     url("~/assets/fonts/NotoSansJP-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Serif JP";
+  font-family: "Noto Serif JP fallback";
   font-weight: 400;
   src: local("Noto Serif JP"), local("Noto Serif JP Regular"),
     url("~/assets/fonts/NotoSerifJP-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Serif JP";
+  font-family: "Noto Serif JP fallback";
   font-weight: 300;
   src: local("Noto Serif JP Light"),
     url("~/assets/fonts/NotoSerifJP-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Serif JP";
+  font-family: "Noto Serif JP fallback";
   font-weight: 700;
   src: local("Noto Serif JP Bold"),
     url("~/assets/fonts/NotoSerifJP-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Sans KR";
+  font-family: "Noto Sans KR fallback";
   font-weight: 400;
   src: local("Noto Sans KR"), local("Noto Sans KR Regular"),
     url("~/assets/fonts/NotoSansKR-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Sans KR";
+  font-family: "Noto Sans KR fallback";
   font-weight: 300;
   src: local("Noto Sans KR Light"),
     url("~/assets/fonts/NotoSansKR-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Sans KR";
+  font-family: "Noto Sans KR fallback";
   font-weight: 700;
   src: local("Noto Sans KR Bold"),
     url("~/assets/fonts/NotoSansKR-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Serif KR";
+  font-family: "Noto Serif KR fallback";
   font-weight: 400;
   src: local("Noto Serif KR"), local("Noto Serif KR Regular"),
     url("~/assets/fonts/NotoSerifKR-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Serif KR";
+  font-family: "Noto Serif KR fallback";
   font-weight: 300;
   src: local("Noto Serif KR Light"),
     url("~/assets/fonts/NotoSerifKR-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Noto Serif KR";
+  font-family: "Noto Serif KR fallback";
   font-weight: 700;
   src: local("Noto Serif KR Bold"),
     url("~/assets/fonts/NotoSerifKR-Bold.otf") format("opentype");
@@ -251,74 +254,108 @@
 $sans-font-faces: (
   "en": (
     "Noto Sans",
+    "Noto Sans fallback",
     "Noto Sans SC",
+    "Noto Sans SC fallback",
     sans-serif,
   ),
   "zh": (
     "Noto Sans SC",
+    "Noto Sans SC fallback",
     "Noto Sans TC",
+    "Noto Sans TC fallback",
     "Noto Sans",
+    "Noto Sans fallback",
     sans-serif,
   ),
   "zh-CN": (
     "Noto Sans SC",
+    "Noto Sans SC fallback",
     "Noto Sans TC",
+    "Noto Sans TC fallback",
     "Noto Sans",
+    "Noto Sans fallback",
     sans-serif,
   ),
   "zh-Hans": (
     "Noto Sans SC",
+    "Noto Sans SC fallback",
     "Noto Sans TC",
+    "Noto Sans TC fallback",
     "Noto Sans",
+    "Noto Sans fallback",
     sans-serif,
   ),
   "ja": (
     "Noto Sans JP",
+    "Noto Sans JP fallback",
     "Noto Sans SC",
+    "Noto Sans SC fallback",
     "Noto Sans",
+    "Noto Sans fallback",
     sans-serif,
   ),
   "ko": (
     "Noto Sans KR",
+    "Noto Sans KR fallback",
     "Noto Sans SC",
+    "Noto Sans SC fallback",
     "Noto Sans",
+    "Noto Sans fallback",
     sans-serif,
   ),
 );
 $serif-font-faces: (
   "en": (
     "Noto Serif",
+    "Noto Serif fallback",
     "Noto Serif SC",
+    "Noto Serif SC fallback",
     serif,
   ),
   "zh": (
     "Noto Serif SC",
+    "Noto Serif SC fallback",
     "Noto Serif TC",
+    "Noto Serif TC fallback",
     "Noto Serif",
+    "Noto Serif fallback",
     serif,
   ),
   "zh-CN": (
     "Noto Serif SC",
+    "Noto Serif SC fallback",
     "Noto Serif TC",
+    "Noto Serif TC fallback",
     "Noto Serif",
+    "Noto Serif fallback",
     serif,
   ),
   "zh-Herif": (
     "Noto Serif SC",
+    "Noto Serif SC fallback",
     "Noto Serif TC",
+    "Noto Serif TC fallback",
     "Noto Serif",
+    "Noto Serif fallback",
     serif,
   ),
   "ja": (
     "Noto Serif JP",
+    "Noto Serif JP fallback",
     "Noto Serif SC",
+    "Noto Serif SC fallback",
     "Noto Serif",
+    "Noto Serif fallback",
     serif,
   ),
   "ko": (
     "Noto Serif KR",
+    "Noto Serif KR fallback",
     "Noto Serif SC",
+    "Noto Serif SC fallback",
     "Noto Serif",
+    "Noto Serif fallback",
     serif,
   ),
 );
