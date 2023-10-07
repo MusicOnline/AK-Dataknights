@@ -9,7 +9,8 @@
     "generate-linux": "NODE_OPTIONS=--max_old_space_size=8192 nuxt generate",
     "generate-windows": "set NODE_OPTIONS=--max_old_space_size=8192 && nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "get-operator-release": "python tools/get_operator_release.py"
   },
   "devDependencies": {
     "@nuxtjs/i18n": "^8.0.0-rc.5",

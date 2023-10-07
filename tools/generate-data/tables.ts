@@ -25,6 +25,7 @@ export const RANGE_TABLE_PATH = "gamedata/excel/range_table.json"
 export const SKILL_TABLE_PATH = "gamedata/excel/skill_table.json"
 export const UNI_EQUIP_TABLE_PATH = "gamedata/excel/uniequip_table.json"
 export const BATTLE_EQUIP_TABLE_PATH = "gamedata/excel/battle_equip_table.json"
+export const OPERATOR_RELEASE_DATA_PATH = "data/custom/operator-release.json"
 
 export type LocaleTableMap<Table> = Record<GameLocale, Table>
 
@@ -39,13 +40,17 @@ export type GameTableMap = {
 
 export type TraitLocalesMap = Record<TranslatedLocale, Record<string, string>>
 
+export type OperatorReleaseData = Record<string, { cnReleaseTime: number }>
+
 declare global {
   var GAME_TABLES: GameTableMap | null
   var TRAIT_LOCALES: TraitLocalesMap | null
+  var OPERATOR_RELEASE: OperatorReleaseData | null
 }
 
 if (!globalThis.GAME_TABLES) globalThis.GAME_TABLES = null
 if (!globalThis.TRAIT_LOCALES) globalThis.TRAIT_LOCALES = null
+if (!globalThis.OPERATOR_RELEASE) globalThis.OPERATOR_RELEASE = null
 
 function getFilePath(locale: GameLocale, location: string): string {
   return path.join(
@@ -195,4 +200,8 @@ export async function requireTraitLocalesAsync(): Promise<TraitLocalesMap> {
     "ja-TL": await map["ja-TL"],
     "ko-TL": await map["ko-TL"],
   }
+}
+
+export async function requireOperatorRelease(): Promise<OperatorReleaseData> {
+  return await requireByReadFileAsync(OPERATOR_RELEASE_DATA_PATH)
 }

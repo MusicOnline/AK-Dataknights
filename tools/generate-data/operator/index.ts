@@ -40,6 +40,7 @@ export type GeneratedOperatorData = {
   nationId: string | null
   groupId: string | null
   teamId: string | null
+  cnReleaseTime: number | null
   canUseGeneralPotentialItem: boolean
   tokenKeys: string[]
   isNotObtainable: boolean
@@ -65,6 +66,7 @@ export type GeneratedOperatorIndexData = {
   nationId: string | null
   groupId: string | null
   teamId: string | null
+  cnReleaseTime: number | null
   isNotObtainable: boolean
   phases: GeneratedElitePhaseIndexData[]
 }
@@ -185,6 +187,7 @@ export class Operator implements Localizable {
       nationId: this.nationId,
       groupId: this.groupId,
       teamId: this.teamId,
+      cnReleaseTime: this.cnReleaseTime,
       canUseGeneralPotentialItem: this.canUseGeneralPotentialItem,
       tokenKeys: this.tokenKeys,
       isNotObtainable: this.isNotObtainable,
@@ -217,6 +220,7 @@ export class Operator implements Localizable {
       nationId: this.nationId,
       groupId: this.groupId,
       teamId: this.teamId,
+      cnReleaseTime: this.cnReleaseTime,
       isNotObtainable: this.isNotObtainable,
       phases: this.phases.map((phase) => phase.toIndexData()),
     }
@@ -339,11 +343,15 @@ export class Operator implements Localizable {
       .replace(/[-\s]+/g, "-")
   }
 
-  public get isActualOperator() {
+  public get isActualOperator(): boolean {
     return (
       !constants.NON_OPERATOR_CLASSES.includes(this.class) &&
       !constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(this.id)
     )
+  }
+
+  public get cnReleaseTime(): number | null {
+    return globalThis.OPERATOR_RELEASE![this.key]?.cnReleaseTime ?? null
   }
 
   private static normalizeTagList(tagList: string[]): Tag[] {

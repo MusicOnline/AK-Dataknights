@@ -1,307 +1,917 @@
-[
-  "char_230_savage",
-  "char_285_medic2",
-  "char_286_cast3",
-  "char_502_nblade",
-  "char_501_durin",
-  "char_009_12fce",
-  "char_503_rang",
-  "char_500_noirc",
-  "char_123_fang",
-  "char_240_wyvern",
-  "char_192_falco",
-  "char_120_hibisc",
-  "char_212_ansel",
-  "char_121_lava",
-  "char_210_stward",
-  "char_124_kroos",
-  "char_211_adnach",
-  "char_278_orchid",
-  "char_208_melan",
-  "char_122_beagle",
-  "char_209_ardign",
-  "char_198_blackd",
-  "char_149_scave",
-  "char_290_vigna",
-  "char_117_myrrh",
-  "char_187_ccheal",
-  "char_181_flower",
-  "char_141_nights",
-  "char_109_fmout",
-  "char_237_gravel",
-  "char_236_rope",
-  "char_277_sqrrel",
-  "char_118_yuki",
-  "char_126_shotst",
-  "char_235_jesica",
-  "char_110_deepcl",
-  "char_183_skgoat",
-  "char_130_doberm",
-  "char_127_estell",
-  "char_137_brownb",
-  "char_185_frncat",
-  "char_193_frostl",
-  "char_289_gyuki",
-  "char_150_snakek",
-  "char_196_sunbr",
-  "char_199_yak",
-  "char_102_texas",
-  "char_115_headbr",
-  "char_128_plosis",
-  "char_108_silent",
-  "char_171_bldsk",
-  "char_002_amiya",
-  "char_164_nightm",
-  "char_166_skfire",
-  "char_144_red",
-  "char_215_mantic",
-  "char_173_slchan",
-  "char_241_panda",
-  "char_145_prove",
-  "char_129_bluep",
-  "char_158_milu",
-  "char_219_meteo",
-  "char_204_platnm",
-  "char_174_slbell",
-  "char_195_glassb",
-  "char_242_otter",
-  "char_101_sora",
-  "char_106_franka",
-  "char_143_ghost",
-  "char_155_tiger",
-  "char_010_chen",
-  "char_140_whitew",
-  "char_148_nearl",
-  "char_107_liskam",
-  "char_163_hpsts",
-  "char_201_moeshd",
-  "char_112_siege",
-  "char_147_shining",
-  "char_179_cgbird",
-  "char_134_ifrit",
-  "char_180_amgoat",
-  "char_103_angel",
-  "char_291_aglina",
-  "char_172_svrash",
-  "char_136_hsguma",
-  "char_202_demkni",
-  "char_282_catap",
-  "char_283_midn",
-  "char_220_grani",
-  "char_263_skadi",
-  "char_281_popka",
-  "char_308_swire",
-  "char_284_spot",
-  "char_253_greyy",
-  "char_340_shwaz",
-  "char_326_glacus",
-  "char_348_ceylon",
-  "char_298_susuro",
-  "char_151_myrtle",
-  "char_274_astesi",
-  "char_188_helage",
-  "char_260_durnar",
-  "char_190_clour",
-  "char_248_mgllan",
-  "char_131_flameb",
-  "char_279_excu",
-  "char_355_ethan",
-  "char_275_breeze",
-  "char_243_waaifu",
-  "char_213_mostma",
-  "char_133_mm",
-  "char_325_bison",
-  "char_261_sddrag",
-  "char_356_broca",
-  "char_302_glaze",
-  "char_367_swllow",
-  "char_017_huang",
-  "char_383_snsant",
-  "char_225_haak",
-  "char_226_hmau",
-  "char_2014_nian",
-  "char_2013_cerber",
-  "char_306_leizi",
-  "char_385_finlpp",
-  "char_222_bpipe",
-  "char_252_bibeak",
-  "char_379_sesa",
-  "char_337_utage",
-  "char_159_peacok",
-  "char_250_phatom",
-  "char_254_vodfox",
-  "char_301_cutter",
-  "char_333_sidero",
-  "char_376_therex",
-  "char_113_cqbw",
-  "char_400_weedy",
-  "char_401_elysm",
-  "char_378_asbest",
-  "char_343_tknogi",
-  "char_258_podego",
-  "char_405_absin",
-  "char_373_lionhd",
-  "char_197_poca",
-  "char_328_cammou",
-  "char_294_ayer",
-  "char_345_folnic",
-  "char_358_lisa",
-  "char_344_beewax",
-  "char_349_chiave",
-  "char_336_folivo",
-  "char_272_strong",
-  "char_218_cuttle",
-  "char_293_thorns",
-  "char_416_zumama",
-  "char_411_tomimi",
-  "char_415_flint",
-  "char_366_acdrop",
-  "char_509_acast",
-  "char_508_aguard",
-  "char_510_amedic",
-  "char_511_asnipe",
-  "char_504_rguard",
-  "char_507_rsnipe",
-  "char_506_rmedic",
-  "char_505_rcast",
-  "char_350_surtr",
-  "char_271_spikes",
-  "char_388_mint",
-  "char_365_aprl",
-  "char_423_blemsh",
-  "char_346_aosta",
-  "char_265_sophia",
-  "char_381_bubble",
-  "char_391_rosmon",
-  "char_311_mudrok",
-  "char_436_whispr",
-  "char_347_jaksel",
-  "char_264_f12yin",
-  "char_214_kafka",
-  "char_451_robin",
-  "char_440_pinecn",
-  "char_332_archet",
-  "char_338_iris",
-  "char_452_bstalk",
-  "char_402_tuye",
-  "char_1011_lava2",
-  "char_2015_dusk",
-  "char_362_saga",
-  "char_455_nothin",
-  "char_456_ash",
-  "char_458_rfrost",
-  "char_457_blitz",
-  "char_459_tachak",
-  "char_472_pasngr",
-  "char_363_toddi",
-  "char_304_zebra",
-  "char_1012_skadi2",
-  "char_474_glady",
-  "char_003_kalts",
-  "char_475_akafyu",
-  "char_426_billro",
-  "char_478_kirara",
-  "char_369_bena",
-  "char_469_indigo",
-  "char_485_pallas",
-  "char_1013_chen2",
-  "char_437_mizuki",
-  "char_421_crow",
-  "char_486_takila",
-  "char_479_sleach",
-  "char_473_mberry",
-  "char_484_robrta",
-  "char_430_fartth",
-  "char_431_ashlok",
-  "char_1014_nearl2",
-  "char_420_flamtl",
-  "char_489_serum",
-  "char_449_glider",
-  "char_496_wildmn",
-  "char_4004_pudd",
-  "char_4000_jnight",
-  "char_206_gnosis",
-  "char_422_aurora",
-  "char_4013_kjera",
-  "char_4025_aprot2",
-  "char_4019_ncdeer",
-  "char_2023_ling",
-  "char_322_lmlee",
-  "char_476_blkngt",
-  "char_1021_kroos2",
-  "char_377_gdglow",
-  "char_492_quercu",
-  "char_300_phenxi",
-  "char_4036_forcer",
-  "char_4016_kazema",
-  "char_4039_horn",
-  "char_4040_rockr",
-  "char_4045_heidi",
-  "char_4041_chnut",
-  "char_4009_irene",
-  "char_1023_ghost2",
-  "char_4042_lumen",
-  "char_433_windft",
-  "char_4043_erato",
-  "char_4046_ebnhlz",
-  "char_4047_pianst",
-  "char_1024_hbisc2",
-  "char_4048_doroth",
-  "char_135_halo",
-  "char_1027_greyy2",
-  "char_1026_gvial2",
-  "char_4055_bgsnow",
-  "char_497_ctable",
-  "char_4054_malist",
-  "char_4064_mlynar",
-  "char_4032_provs",
-  "char_4067_lolxh",
-  "char_4066_highmo",
-  "char_513_apionr",
-  "char_514_rdfend",
-  "char_4072_ironmn",
-  "char_157_dagda",
-  "char_4071_peper",
-  "char_4062_totter",
-  "char_4065_judge",
-  "char_1028_texas2",
-  "char_427_vigil",
-  "char_4014_lunacu",
-  "char_466_qanik",
-  "char_4063_quartz",
-  "char_1020_reed2",
-  "char_297_hamoni",
-  "char_4017_puzzle",
-  "char_4080_lin",
-  "char_2024_chyue",
-  "char_493_firwhl",
-  "char_4078_bdhkgt",
-  "char_4082_qiubai",
-  "char_4083_chimes",
-  "char_1029_yato2",
-  "char_1030_noirc2",
-  "char_4077_palico",
-  "char_4087_ines",
-  "char_464_cement",
-  "char_154_morgan",
-  "char_491_humus",
-  "char_4091_ulika",
-  "char_1031_slent2",
-  "char_249_mlyss",
-  "char_4027_heyak",
-  "char_4006_melnte",
-  "char_4093_frston",
-  "char_1032_excu2",
-  "char_4015_spuria",
-  "char_498_inside",
-  "char_2012_typhon",
-  "char_341_sntlla",
-  "char_4102_threye",
-  "char_1016_agoat2",
-  "char_1033_swire2",
-  "char_488_buildr",
-  "char_4106_bryota",
-  "char_1034_jesca2",
-  "char_4105_almond",
-  "char_4104_coldst"
-]
+{
+  "lancet-2": {
+    "cnReleaseTime": 1556618400000
+  },
+  "castle-3": {
+    "cnReleaseTime": 1556618400000
+  },
+  "yato": {
+    "cnReleaseTime": 1556618400000
+  },
+  "noir-corne": {
+    "cnReleaseTime": 1556618400000
+  },
+  "rangers": {
+    "cnReleaseTime": 1556618400000
+  },
+  "durin": {
+    "cnReleaseTime": 1556618400000
+  },
+  "12f": {
+    "cnReleaseTime": 1556618400000
+  },
+  "fang": {
+    "cnReleaseTime": 1556618400000
+  },
+  "vanilla": {
+    "cnReleaseTime": 1556618400000
+  },
+  "plume": {
+    "cnReleaseTime": 1556618400000
+  },
+  "melantha": {
+    "cnReleaseTime": 1556618400000
+  },
+  "cardigan": {
+    "cnReleaseTime": 1556618400000
+  },
+  "beagle": {
+    "cnReleaseTime": 1556618400000
+  },
+  "kroos": {
+    "cnReleaseTime": 1556618400000
+  },
+  "adnachiel": {
+    "cnReleaseTime": 1556618400000
+  },
+  "lava": {
+    "cnReleaseTime": 1556618400000
+  },
+  "hibiscus": {
+    "cnReleaseTime": 1556618400000
+  },
+  "ansel": {
+    "cnReleaseTime": 1556618400000
+  },
+  "steward": {
+    "cnReleaseTime": 1556618400000
+  },
+  "orchid": {
+    "cnReleaseTime": 1556618400000
+  },
+  "haze": {
+    "cnReleaseTime": 1556618400000
+  },
+  "gitano": {
+    "cnReleaseTime": 1556618400000
+  },
+  "jessica": {
+    "cnReleaseTime": 1556618400000
+  },
+  "meteor": {
+    "cnReleaseTime": 1556618400000
+  },
+  "shirayuki": {
+    "cnReleaseTime": 1556618400000
+  },
+  "courier": {
+    "cnReleaseTime": 1556618400000
+  },
+  "scavenger": {
+    "cnReleaseTime": 1556618400000
+  },
+  "vigna": {
+    "cnReleaseTime": 1556618400000
+  },
+  "dobermann": {
+    "cnReleaseTime": 1556618400000
+  },
+  "matoimaru": {
+    "cnReleaseTime": 1556618400000
+  },
+  "frostleaf": {
+    "cnReleaseTime": 1556618400000
+  },
+  "estelle": {
+    "cnReleaseTime": 1556618400000
+  },
+  "mousse": {
+    "cnReleaseTime": 1556618400000
+  },
+  "gravel": {
+    "cnReleaseTime": 1556618400000
+  },
+  "rope": {
+    "cnReleaseTime": 1556618400000
+  },
+  "myrrh": {
+    "cnReleaseTime": 1556618400000
+  },
+  "gavial": {
+    "cnReleaseTime": 1556618400000
+  },
+  "perfumer": {
+    "cnReleaseTime": 1556618400000
+  },
+  "matterhorn": {
+    "cnReleaseTime": 1556618400000
+  },
+  "cuora": {
+    "cnReleaseTime": 1556618400000
+  },
+  "gummy": {
+    "cnReleaseTime": 1556618400000
+  },
+  "deepcolor": {
+    "cnReleaseTime": 1556618400000
+  },
+  "earthspirit": {
+    "cnReleaseTime": 1556618400000
+  },
+  "shaw": {
+    "cnReleaseTime": 1556618400000
+  },
+  "ptilopsis": {
+    "cnReleaseTime": 1556618400000
+  },
+  "zima": {
+    "cnReleaseTime": 1556618400000
+  },
+  "texas": {
+    "cnReleaseTime": 1556618400000
+  },
+  "franka": {
+    "cnReleaseTime": 1556618400000
+  },
+  "indra": {
+    "cnReleaseTime": 1556618400000
+  },
+  "lappland": {
+    "cnReleaseTime": 1556618400000
+  },
+  "specter": {
+    "cnReleaseTime": 1556618400000
+  },
+  "blue-poison": {
+    "cnReleaseTime": 1556618400000
+  },
+  "platinum": {
+    "cnReleaseTime": 1556618400000
+  },
+  "meteorite": {
+    "cnReleaseTime": 1556618400000
+  },
+  "amiya": {
+    "cnReleaseTime": 1556618400000
+  },
+  "skyfire": {
+    "cnReleaseTime": 1556618400000
+  },
+  "mayer": {
+    "cnReleaseTime": 1556618400000
+  },
+  "silence": {
+    "cnReleaseTime": 1556618400000
+  },
+  "warfarin": {
+    "cnReleaseTime": 1556618400000
+  },
+  "nearl": {
+    "cnReleaseTime": 1556618400000
+  },
+  "projekt-red": {
+    "cnReleaseTime": 1556618400000
+  },
+  "liskarm": {
+    "cnReleaseTime": 1556618400000
+  },
+  "croissant": {
+    "cnReleaseTime": 1556618400000
+  },
+  "vulcan": {
+    "cnReleaseTime": 1556618400000
+  },
+  "provence": {
+    "cnReleaseTime": 1556618400000
+  },
+  "firewatch": {
+    "cnReleaseTime": 1556618400000
+  },
+  "cliffheart": {
+    "cnReleaseTime": 1556618400000
+  },
+  "pramanix": {
+    "cnReleaseTime": 1556618400000
+  },
+  "istina": {
+    "cnReleaseTime": 1556618400000
+  },
+  "sora": {
+    "cnReleaseTime": 1556618400000
+  },
+  "manticore": {
+    "cnReleaseTime": 1556618400000
+  },
+  "feater": {
+    "cnReleaseTime": 1556618400000
+  },
+  "exusiai": {
+    "cnReleaseTime": 1556618400000
+  },
+  "siege": {
+    "cnReleaseTime": 1556618400000
+  },
+  "ifrit": {
+    "cnReleaseTime": 1556618400000
+  },
+  "eyjafjalla": {
+    "cnReleaseTime": 1556618400000
+  },
+  "angelina": {
+    "cnReleaseTime": 1556618400000
+  },
+  "shining": {
+    "cnReleaseTime": 1556618400000
+  },
+  "nightingale": {
+    "cnReleaseTime": 1556618400000
+  },
+  "hoshiguma": {
+    "cnReleaseTime": 1556618400000
+  },
+  "saria": {
+    "cnReleaseTime": 1556618400000
+  },
+  "silverash": {
+    "cnReleaseTime": 1556618400000
+  },
+  "savage": {
+    "cnReleaseTime": 1556618400000
+  },
+  "catapult": {
+    "cnReleaseTime": 1558605600000
+  },
+  "midnight": {
+    "cnReleaseTime": 1559210400000
+  },
+  "beehunter": {
+    "cnReleaseTime": 1559210400000
+  },
+  "nightmare": {
+    "cnReleaseTime": 1559210400000
+  },
+  "grani": {
+    "cnReleaseTime": 1559210400000
+  },
+  "skadi": {
+    "cnReleaseTime": 1559210400000
+  },
+  "popukar": {
+    "cnReleaseTime": 1562688000000
+  },
+  "spot": {
+    "cnReleaseTime": 1562688000000
+  },
+  "greyy": {
+    "cnReleaseTime": 1562688000000
+  },
+  "swire": {
+    "cnReleaseTime": 1562688000000
+  },
+  "chen": {
+    "cnReleaseTime": 1562688000000
+  },
+  "sussurro": {
+    "cnReleaseTime": 1566921600000
+  },
+  "ceylon": {
+    "cnReleaseTime": 1566921600000
+  },
+  "glaucus": {
+    "cnReleaseTime": 1566921600000
+  },
+  "schwarz": {
+    "cnReleaseTime": 1566921600000
+  },
+  "myrtle": {
+    "cnReleaseTime": 1568131200000
+  },
+  "astesia": {
+    "cnReleaseTime": 1568131200000
+  },
+  "hellagur": {
+    "cnReleaseTime": 1568131200000
+  },
+  "dur-nar": {
+    "cnReleaseTime": 1569902400000
+  },
+  "vermeil": {
+    "cnReleaseTime": 1571155200000
+  },
+  "flamebringer": {
+    "cnReleaseTime": 1571155200000
+  },
+  "executor": {
+    "cnReleaseTime": 1571155200000
+  },
+  "magallan": {
+    "cnReleaseTime": 1571155200000
+  },
+  "ethan": {
+    "cnReleaseTime": 1572580800000
+  },
+  "breeze": {
+    "cnReleaseTime": 1572580800000
+  },
+  "may": {
+    "cnReleaseTime": 1574179200000
+  },
+  "bison": {
+    "cnReleaseTime": 1574179200000
+  },
+  "waai-fu": {
+    "cnReleaseTime": 1574179200000
+  },
+  "mostima": {
+    "cnReleaseTime": 1574179200000
+  },
+  "reed": {
+    "cnReleaseTime": 1575993600000
+  },
+  "broca": {
+    "cnReleaseTime": 1575993600000
+  },
+  "ambriel": {
+    "cnReleaseTime": 1577203200000
+  },
+  "greythroat": {
+    "cnReleaseTime": 1577203200000
+  },
+  "blaze": {
+    "cnReleaseTime": 1577203200000
+  },
+  "snowsant": {
+    "cnReleaseTime": 1578542400000
+  },
+  "hung": {
+    "cnReleaseTime": 1579190400000
+  },
+  "aak": {
+    "cnReleaseTime": 1579190400000
+  },
+  "nian": {
+    "cnReleaseTime": 1579190400000
+  },
+  "leizi": {
+    "cnReleaseTime": 1582646400000
+  },
+  "ceobe": {
+    "cnReleaseTime": 1582646400000
+  },
+  "purestream": {
+    "cnReleaseTime": 1583208000000
+  },
+  "utage": {
+    "cnReleaseTime": 1584460800000
+  },
+  "bibeak": {
+    "cnReleaseTime": 1584460800000
+  },
+  "sesa": {
+    "cnReleaseTime": 1584460800000
+  },
+  "bagpipe": {
+    "cnReleaseTime": 1584460800000
+  },
+  "conviction": {
+    "cnReleaseTime": 1585756800000
+  },
+  "cutter": {
+    "cnReleaseTime": 1587484800000
+  },
+  "sideroca": {
+    "cnReleaseTime": 1587484800000
+  },
+  "shamare": {
+    "cnReleaseTime": 1587484800000
+  },
+  "phantom": {
+    "cnReleaseTime": 1587484800000
+  },
+  "thrm-ex": {
+    "cnReleaseTime": 1588348800000
+  },
+  "elysium": {
+    "cnReleaseTime": 1588348800000
+  },
+  "weedy": {
+    "cnReleaseTime": 1588348800000
+  },
+  "w": {
+    "cnReleaseTime": 1588348800000
+  },
+  "asbestos": {
+    "cnReleaseTime": 1591113600000
+  },
+  "tsukinogi": {
+    "cnReleaseTime": 1591113600000
+  },
+  "podenco": {
+    "cnReleaseTime": 1592496000000
+  },
+  "absinthe": {
+    "cnReleaseTime": 1592496000000
+  },
+  "leonhardt": {
+    "cnReleaseTime": 1592496000000
+  },
+  "rosa": {
+    "cnReleaseTime": 1592496000000
+  },
+  "click": {
+    "cnReleaseTime": 1594310400000
+  },
+  "folinic": {
+    "cnReleaseTime": 1594310400000
+  },
+  "ayerscarpe": {
+    "cnReleaseTime": 1594310400000
+  },
+  "suzuran": {
+    "cnReleaseTime": 1594310400000
+  },
+  "scene": {
+    "cnReleaseTime": 1595952000000
+  },
+  "beeswax": {
+    "cnReleaseTime": 1595952000000
+  },
+  "chiave": {
+    "cnReleaseTime": 1595952000000
+  },
+  "jaye": {
+    "cnReleaseTime": 1597161600000
+  },
+  "andreana": {
+    "cnReleaseTime": 1597161600000
+  },
+  "thorns": {
+    "cnReleaseTime": 1597161600000
+  },
+  "reserve-operator-melee": {
+    "cnReleaseTime": 1598371200000
+  },
+  "reserve-operator-sniper": {
+    "cnReleaseTime": 1598371200000
+  },
+  "reserve-operator-logistics": {
+    "cnReleaseTime": 1598371200000
+  },
+  "reserve-operator-caster": {
+    "cnReleaseTime": 1598371200000
+  },
+  "touch": {
+    "cnReleaseTime": 1598371200000
+  },
+  "pith": {
+    "cnReleaseTime": 1598371200000
+  },
+  "stormeye": {
+    "cnReleaseTime": 1598371200000
+  },
+  "sharp": {
+    "cnReleaseTime": 1598371200000
+  },
+  "aciddrop": {
+    "cnReleaseTime": 1598371200000
+  },
+  "tomimi": {
+    "cnReleaseTime": 1598371200000
+  },
+  "flint": {
+    "cnReleaseTime": 1598371200000
+  },
+  "eunectes": {
+    "cnReleaseTime": 1598371200000
+  },
+  "arene": {
+    "cnReleaseTime": 1600963200000
+  },
+  "mint": {
+    "cnReleaseTime": 1600963200000
+  },
+  "april": {
+    "cnReleaseTime": 1600963200000
+  },
+  "surtr": {
+    "cnReleaseTime": 1600963200000
+  },
+  "bubble": {
+    "cnReleaseTime": 1602777600000
+  },
+  "whislash": {
+    "cnReleaseTime": 1602777600000
+  },
+  "aosta": {
+    "cnReleaseTime": 1602777600000
+  },
+  "blemishine": {
+    "cnReleaseTime": 1602777600000
+  },
+  "jackie": {
+    "cnReleaseTime": 1604246400000
+  },
+  "whisperain": {
+    "cnReleaseTime": 1604246400000
+  },
+  "mudrock": {
+    "cnReleaseTime": 1604246400000
+  },
+  "rosmontis": {
+    "cnReleaseTime": 1604246400000
+  },
+  "pinecone": {
+    "cnReleaseTime": 1608220800000
+  },
+  "robin": {
+    "cnReleaseTime": 1608220800000
+  },
+  "kafka": {
+    "cnReleaseTime": 1608220800000
+  },
+  "mountain": {
+    "cnReleaseTime": 1608220800000
+  },
+  "beanstalk": {
+    "cnReleaseTime": 1609862400000
+  },
+  "iris": {
+    "cnReleaseTime": 1609862400000
+  },
+  "archetto": {
+    "cnReleaseTime": 1609862400000
+  },
+  "tuye": {
+    "cnReleaseTime": 1611072000000
+  },
+  "lava-the-purgatory": {
+    "cnReleaseTime": 1612540800000
+  },
+  "mr-nothing": {
+    "cnReleaseTime": 1612540800000
+  },
+  "saga": {
+    "cnReleaseTime": 1612540800000
+  },
+  "dusk": {
+    "cnReleaseTime": 1612540800000
+  },
+  "tachanka": {
+    "cnReleaseTime": 1615305600000
+  },
+  "blitz": {
+    "cnReleaseTime": 1615305600000
+  },
+  "frost": {
+    "cnReleaseTime": 1615305600000
+  },
+  "ash": {
+    "cnReleaseTime": 1615305600000
+  },
+  "heavyrain": {
+    "cnReleaseTime": 1618502400000
+  },
+  "toddifons": {
+    "cnReleaseTime": 1618502400000
+  },
+  "passenger": {
+    "cnReleaseTime": 1618502400000
+  },
+  "akafuyu": {
+    "cnReleaseTime": 1619884800000
+  },
+  "gladiia": {
+    "cnReleaseTime": 1619884800000
+  },
+  "kaltsit": {
+    "cnReleaseTime": 1619884800000
+  },
+  "skadi-the-corrupting-heart": {
+    "cnReleaseTime": 1619884800000
+  },
+  "indigo": {
+    "cnReleaseTime": 1622563200000
+  },
+  "bena": {
+    "cnReleaseTime": 1622563200000
+  },
+  "kirara": {
+    "cnReleaseTime": 1622563200000
+  },
+  "carnelian": {
+    "cnReleaseTime": 1622563200000
+  },
+  "pallas": {
+    "cnReleaseTime": 1625241600000
+  },
+  "tequila": {
+    "cnReleaseTime": 1628006400000
+  },
+  "la-pluma": {
+    "cnReleaseTime": 1628006400000
+  },
+  "mizuki": {
+    "cnReleaseTime": 1628006400000
+  },
+  "chen-the-holungday": {
+    "cnReleaseTime": 1628006400000
+  },
+  "roberta": {
+    "cnReleaseTime": 1631894400000
+  },
+  "mulberry": {
+    "cnReleaseTime": 1631894400000
+  },
+  "saileach": {
+    "cnReleaseTime": 1631894400000
+  },
+  "ashlock": {
+    "cnReleaseTime": 1634313600000
+  },
+  "fartooth": {
+    "cnReleaseTime": 1634313600000
+  },
+  "justice-knight": {
+    "cnReleaseTime": 1635782400000
+  },
+  "pudding": {
+    "cnReleaseTime": 1635782400000
+  },
+  "honeyberry": {
+    "cnReleaseTime": 1635782400000
+  },
+  "wild-mane": {
+    "cnReleaseTime": 1635782400000
+  },
+  "corroserum": {
+    "cnReleaseTime": 1635782400000
+  },
+  "flametail": {
+    "cnReleaseTime": 1635782400000
+  },
+  "nearl-the-radiant-knight": {
+    "cnReleaseTime": 1635782400000
+  },
+  "kjera": {
+    "cnReleaseTime": 1640102400000
+  },
+  "aurora": {
+    "cnReleaseTime": 1640102400000
+  },
+  "gnosis": {
+    "cnReleaseTime": 1640102400000
+  },
+  "shalem": {
+    "cnReleaseTime": 1641398400000
+  },
+  "nine-colored-deer": {
+    "cnReleaseTime": 1641830400000
+  },
+  "kroos-the-keen-glint": {
+    "cnReleaseTime": 1643126400000
+  },
+  "blacknight": {
+    "cnReleaseTime": 1643126400000
+  },
+  "lee": {
+    "cnReleaseTime": 1643126400000
+  },
+  "ling": {
+    "cnReleaseTime": 1643126400000
+  },
+  "quercus": {
+    "cnReleaseTime": 1644940800000
+  },
+  "goldenglow": {
+    "cnReleaseTime": 1644940800000
+  },
+  "enforcer": {
+    "cnReleaseTime": 1647360000000
+  },
+  "kazemaru": {
+    "cnReleaseTime": 1647360000000
+  },
+  "fiammetta": {
+    "cnReleaseTime": 1647360000000
+  },
+  "chestnut": {
+    "cnReleaseTime": 1649952000000
+  },
+  "heidi": {
+    "cnReleaseTime": 1649952000000
+  },
+  "rockrock": {
+    "cnReleaseTime": 1649952000000
+  },
+  "horn": {
+    "cnReleaseTime": 1649952000000
+  },
+  "windflit": {
+    "cnReleaseTime": 1651420800000
+  },
+  "lumen": {
+    "cnReleaseTime": 1651420800000
+  },
+  "irene": {
+    "cnReleaseTime": 1651420800000
+  },
+  "specter-the-unchained": {
+    "cnReleaseTime": 1651420800000
+  },
+  "erato": {
+    "cnReleaseTime": 1652976000000
+  },
+  "czerny": {
+    "cnReleaseTime": 1654790400000
+  },
+  "hibiscus-the-purifier": {
+    "cnReleaseTime": 1654790400000
+  },
+  "ebenholz": {
+    "cnReleaseTime": 1654790400000
+  },
+  "astgenne": {
+    "cnReleaseTime": 1657036800000
+  },
+  "greyy-the-lightningbearer": {
+    "cnReleaseTime": 1657036800000
+  },
+  "dorothy": {
+    "cnReleaseTime": 1657036800000
+  },
+  "minimalist": {
+    "cnReleaseTime": 1660233600000
+  },
+  "cantabile": {
+    "cnReleaseTime": 1660233600000
+  },
+  "pozemka": {
+    "cnReleaseTime": 1660233600000
+  },
+  "gavial-the-invincible": {
+    "cnReleaseTime": 1660233600000
+  },
+  "proviso": {
+    "cnReleaseTime": 1662652800000
+  },
+  "mlynar": {
+    "cnReleaseTime": 1662652800000
+  },
+  "luo-xiaohei": {
+    "cnReleaseTime": 1663257600000
+  },
+  "reserve-operator-defender": {
+    "cnReleaseTime": 1664294400000
+  },
+  "tulip": {
+    "cnReleaseTime": 1664294400000
+  },
+  "highmore": {
+    "cnReleaseTime": 1664294400000
+  },
+  "totter": {
+    "cnReleaseTime": 1665504000000
+  },
+  "dagda": {
+    "cnReleaseTime": 1665504000000
+  },
+  "paprika": {
+    "cnReleaseTime": 1665504000000
+  },
+  "stainless": {
+    "cnReleaseTime": 1665504000000
+  },
+  "quartz": {
+    "cnReleaseTime": 1667318400000
+  },
+  "qanipalaat": {
+    "cnReleaseTime": 1667318400000
+  },
+  "lunacub": {
+    "cnReleaseTime": 1667318400000
+  },
+  "vigil": {
+    "cnReleaseTime": 1667318400000
+  },
+  "penance": {
+    "cnReleaseTime": 1667318400000
+  },
+  "texas-the-omertosa": {
+    "cnReleaseTime": 1667318400000
+  },
+  "puzzle": {
+    "cnReleaseTime": 1671120000000
+  },
+  "harmonie": {
+    "cnReleaseTime": 1671120000000
+  },
+  "reed-the-flame-shadow": {
+    "cnReleaseTime": 1671120000000
+  },
+  "jieyun": {
+    "cnReleaseTime": 1673971200000
+  },
+  "firewhistle": {
+    "cnReleaseTime": 1673971200000
+  },
+  "lin": {
+    "cnReleaseTime": 1673971200000
+  },
+  "chongyue": {
+    "cnReleaseTime": 1673971200000
+  },
+  "wind-chimes": {
+    "cnReleaseTime": 1676390400000
+  },
+  "qiubai": {
+    "cnReleaseTime": 1676390400000
+  },
+  "terra-research-commission": {
+    "cnReleaseTime": 1678204800000
+  },
+  "rathalos-s-noir-corne": {
+    "cnReleaseTime": 1678204800000
+  },
+  "kirin-r-yato": {
+    "cnReleaseTime": 1678204800000
+  },
+  "u-official": {
+    "cnReleaseTime": 1680364800000
+  },
+  "humus": {
+    "cnReleaseTime": 1680796800000
+  },
+  "morgan": {
+    "cnReleaseTime": 1680796800000
+  },
+  "cement": {
+    "cnReleaseTime": 1680796800000
+  },
+  "ines": {
+    "cnReleaseTime": 1680796800000
+  },
+  "melanite": {
+    "cnReleaseTime": 1682956800000
+  },
+  "silence-the-paradigmatic": {
+    "cnReleaseTime": 1682956800000
+  },
+  "hoolheyak": {
+    "cnReleaseTime": 1682956800000
+  },
+  "muelsyse": {
+    "cnReleaseTime": 1682956800000
+  },
+  "friston-3": {
+    "cnReleaseTime": 1684771200000
+  },
+  "insider": {
+    "cnReleaseTime": 1686240000000
+  },
+  "spuria": {
+    "cnReleaseTime": 1686240000000
+  },
+  "executor-the-ex-foedere": {
+    "cnReleaseTime": 1686240000000
+  },
+  "santalla": {
+    "cnReleaseTime": 1688659200000
+  },
+  "typhon": {
+    "cnReleaseTime": 1688659200000
+  },
+  "valarqvin": {
+    "cnReleaseTime": 1689264000000
+  },
+  "bryophyta": {
+    "cnReleaseTime": 1690905600000
+  },
+  "poncirus": {
+    "cnReleaseTime": 1690905600000
+  },
+  "swire-the-elegant-wit": {
+    "cnReleaseTime": 1690905600000
+  },
+  "eyjafjalla-the-hvit-aska": {
+    "cnReleaseTime": 1690905600000
+  },
+  "coldshot": {
+    "cnReleaseTime": 1693929600000
+  },
+  "almond": {
+    "cnReleaseTime": 1693929600000
+  },
+  "jessica-the-liberated": {
+    "cnReleaseTime": 1693929600000
+  }
+}

@@ -1,6 +1,5 @@
 import * as fs from "fs/promises"
 
-import OPERATOR_RELEASE_ORDER from "../../data/custom/operator-release.json"
 import * as constants from "./constants"
 import { Operator } from "./operator"
 import { CharacterTable } from "./raw/character"
@@ -12,6 +11,8 @@ async function readData() {
     globalThis.GAME_TABLES = await tables.requireAllGameTablesAsync()
   if (!globalThis.TRAIT_LOCALES)
     globalThis.TRAIT_LOCALES = await tables.requireTraitLocalesAsync()
+  if (!globalThis.OPERATOR_RELEASE)
+    globalThis.OPERATOR_RELEASE = await tables.requireOperatorRelease()
 }
 
 async function getOperators(): Promise<Operator[]> {
@@ -34,42 +35,41 @@ async function getOperators(): Promise<Operator[]> {
   const characterTable: CharacterTable =
     globalThis.GAME_TABLES!.Operator[constants.ORIGINAL_LOCALE]
 
-  const operatorIdReleaseOrder: string[] = [
-    ...OPERATOR_RELEASE_ORDER,
-    ...Object.keys(characterTable).filter(
-      (id) => !OPERATOR_RELEASE_ORDER.includes(id)
-    ),
-  ]
+  return Object.keys(characterTable)
+    .flatMap((id) => {
+      // Get original data
+      const data = characterTable[id]
 
-  return operatorIdReleaseOrder.flatMap((id) => {
-    // Get original data
-    const data = characterTable[id]
+      // Ignore certain data
+      if (
+        constants.NON_OPERATOR_CLASSES.includes(data.profession) ||
+        constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(id)
+      )
+        return []
 
-    // Ignore certain data
-    if (
-      constants.NON_OPERATOR_CLASSES.includes(data.profession) ||
-      constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(id)
-    )
-      return []
+      const operator = new Operator(id, data)
+      operator.addTokenInformation(characterTable)
 
-    const operator = new Operator(id, data)
-    operator.addTokenInformation(characterTable)
+      // Add official locales
+      Object.entries(globalThis.GAME_TABLES!.Operator).forEach(
+        ([locale, table]) => {
+          if (locale === constants.ORIGINAL_LOCALE) return
+          operator.addLocale(<constants.GameLocale>locale, table)
+        }
+      )
 
-    // Add official locales
-    Object.entries(globalThis.GAME_TABLES!.Operator).forEach(
-      ([locale, table]) => {
-        if (locale === constants.ORIGINAL_LOCALE) return
-        operator.addLocale(<constants.GameLocale>locale, table)
-      }
-    )
+      // Add custom locales
+      Object.entries(translatedLocaleData).forEach(([locale, table]) =>
+        operator.addLocaleTL(<constants.TranslatedLocale>locale, table)
+      )
 
-    // Add custom locales
-    Object.entries(translatedLocaleData).forEach(([locale, table]) =>
-      operator.addLocaleTL(<constants.TranslatedLocale>locale, table)
-    )
-
-    return operator
-  })
+      return operator
+    })
+    .sort((a, b) => {
+      const aTime = a.cnReleaseTime ?? 9999999999999
+      const bTime = b.cnReleaseTime ?? 9999999999999
+      return aTime - bTime
+    })
 }
 
 function getLocaleStringNumberOfTranslations(
