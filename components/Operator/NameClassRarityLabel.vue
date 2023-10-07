@@ -4,8 +4,6 @@ import type {
   GeneratedOperatorIndexData,
 } from "~/tools/generate-data/operator"
 
-const { t, locale } = useI18n()
-
 const { operator } = defineProps<{
   operator: GeneratedOperatorIndexData | GeneratedOperatorData
 }>()
@@ -29,6 +27,10 @@ function getLocalizedNameWithTL(
   if (officialTranslation) return officialTranslation
   return getLocalizedName(`${lang}-TL`, operator)
 }
+
+const i18n = useI18n()
+const { t, locale } = i18n
+await useOperatorLocale(i18n, operator.key)
 </script>
 
 <template>
@@ -100,11 +102,3 @@ function getLocalizedNameWithTL(
   content: "|\00a0";
 }
 </style>
-
-<i18n locale="en-US" src="~/locales/en-US/operators-data.json"></i18n>
-<i18n locale="en-TL" src="~/locales/en-TL/operators-data.json"></i18n>
-<i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
-<i18n locale="ja-TL" src="~/locales/ja-TL/operators-data.json"></i18n>
-<i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
-<i18n locale="ko-TL" src="~/locales/ko-TL/operators-data.json"></i18n>
-<i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>

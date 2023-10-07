@@ -159,38 +159,51 @@ async function generateTraitLocales(operators?: Operator[]) {
 
 async function generateOperatorFiles(operators?: Operator[]) {
   if (!operators) operators = await getOperators()
-  const generateTraitLocalesPromise = generateTraitLocales(operators)
 
   const indexFileObject = operators.map((operator) => operator.toIndexData())
+
+  const generateTraitLocalesPromise = generateTraitLocales(operators)
+
+  const generateIndividualOperatorDataPromiseList = operators.map((operator) =>
+    fs.writeFile(
+      `data/operators/${operator.key}.json`,
+      JSON.stringify(operator.toData(), null, 2),
+      { encoding: "utf-8" }
+    )
+  )
+
+  const generateOperatorsIndexDataPromise = fs.writeFile(
+    "data/operators/index.json",
+    JSON.stringify(indexFileObject, null, 2),
+    { encoding: "utf-8" }
+  )
+
+  const generateOperatorsLocalesPromiseList = constants.OUTPUT_LOCALES.map(
+    (locale) => {
+      const localeFileData: any = {}
+
+      ;(<Operator[]>operators).forEach(
+        (operator) =>
+          (localeFileData[operator.key] = operator.toLocaleData(locale))
+      )
+
+      const generateFullLocalesPromise = fs.writeFile(
+        `locales/${locale}/operators-data.json`,
+        JSON.stringify(localeFileData, null, 2),
+        { encoding: "utf-8" }
+      )
+
+      return generateFullLocalesPromise
+    }
+  )
 
   await fs.mkdir("data/operators", { recursive: true })
 
   return Promise.all([
     generateTraitLocalesPromise,
-    ...operators.map((operator) =>
-      fs.writeFile(
-        `data/operators/${operator.key}.json`,
-        JSON.stringify(operator.toData(), null, 2),
-        { encoding: "utf-8" }
-      )
-    ),
-    fs.writeFile(
-      "data/operators/index.json",
-      JSON.stringify(indexFileObject, null, 2),
-      { encoding: "utf-8" }
-    ),
-    ...constants.OUTPUT_LOCALES.map((locale) => {
-      const localeFileData: any = {}
-      ;(<Operator[]>operators).forEach(
-        (operator) =>
-          (localeFileData[operator.key] = operator.toLocaleData(locale))
-      )
-      return fs.writeFile(
-        `locales/${locale}/operators-data.json`,
-        JSON.stringify(localeFileData, null, 2),
-        { encoding: "utf-8" }
-      )
-    }),
+    ...generateIndividualOperatorDataPromiseList,
+    generateOperatorsIndexDataPromise,
+    ...generateOperatorsLocalesPromiseList,
   ])
 }
 

@@ -2,16 +2,19 @@
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { GeneratedModuleData } from "~/tools/generate-data/operator/module"
 
-defineProps<{
+const { operator } = defineProps<{
   operator: GeneratedOperatorData
 }>()
 
-const { t } = useI18n()
+const i18n = useI18n()
+const { t } = i18n
 
 function getCombinedModuleTypeName(module: GeneratedModuleData): string {
   if (!module.typeName2) return module.typeName1.toLowerCase()
   return `${module.typeName1}-${module.typeName2}`.toLowerCase()
 }
+
+await useOperatorLocale(i18n, operator.key)
 </script>
 
 <template>
@@ -103,15 +106,7 @@ function getCombinedModuleTypeName(module: GeneratedModuleData): string {
 .item-secondary {
   @apply ml-4;
 
-  list-style-type: circle;
   list-style-position: inside;
+  list-style-type: circle;
 }
 </style>
-
-<i18n locale="en-US" src="~/locales/en-US/operators-data.json"></i18n>
-<i18n locale="en-TL" src="~/locales/en-TL/operators-data.json"></i18n>
-<i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
-<i18n locale="ja-TL" src="~/locales/ja-TL/operators-data.json"></i18n>
-<i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
-<i18n locale="ko-TL" src="~/locales/ko-TL/operators-data.json"></i18n>
-<i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>

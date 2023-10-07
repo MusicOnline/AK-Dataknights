@@ -6,6 +6,7 @@ import CHINESE_DEFAULT from "./locales/zh-CN/default.json"
 export default defineI18nConfig(() => ({
   fallbackWarn: false,
   missingWarn: false,
+  warnHtmlMessage: false,
   legacy: false,
   locale: "en",
   fallbackLocale: {

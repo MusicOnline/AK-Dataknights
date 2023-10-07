@@ -9,10 +9,11 @@ import type { GeneratedElitePhaseData } from "~~/tools/generate-data/operator/el
 const {
   params: { key: operatorKey },
 } = useRoute()
-const { t } = useI18n()
+const i18n = useI18n()
+const { t } = i18n
 
-// Dynamic imports must start with ./ or ../
-// https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#limitations
+const useOperatorLocalePromise = useOperatorLocale(i18n, <string>operatorKey)
+
 const operator: GeneratedOperatorData = await useOperatorData(
   <string>operatorKey
 )
@@ -172,6 +173,8 @@ watch(
     talentState.value.potential = bestPotential!
   }
 )
+
+await useOperatorLocalePromise
 </script>
 
 <template>
@@ -314,11 +317,3 @@ watch(
   position: relative;
 }
 </style>
-
-<i18n locale="en-US" src="~/locales/en-US/operators-data.json"></i18n>
-<i18n locale="en-TL" src="~/locales/en-TL/operators-data.json"></i18n>
-<i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
-<i18n locale="ja-TL" src="~/locales/ja-TL/operators-data.json"></i18n>
-<i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
-<i18n locale="ko-TL" src="~/locales/ko-TL/operators-data.json"></i18n>
-<i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>

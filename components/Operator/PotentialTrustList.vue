@@ -22,8 +22,6 @@ const { operator, potential, isMaxTrustIncluded } = defineProps<{
 
 defineEmits(["update:potential", "update:isMaxTrustIncluded"])
 
-const { t, locale } = useI18n()
-
 const operatorState = ref({
   potential,
   isMaxTrustIncluded,
@@ -79,6 +77,10 @@ function getAttributeBuffDescription(key: string, value: number): string {
   }
   return t(`operator.potential.${key}`, { value: valueStr })
 }
+
+const i18n = useI18n()
+const { t, locale } = i18n
+await useOperatorLocale(i18n, operator.key)
 </script>
 
 <template>
@@ -167,11 +169,3 @@ function getAttributeBuffDescription(key: string, value: number): string {
     </button>
   </div>
 </template>
-
-<i18n locale="en-US" src="~/locales/en-US/operators-data.json"></i18n>
-<i18n locale="en-TL" src="~/locales/en-TL/operators-data.json"></i18n>
-<i18n locale="ja-JP" src="~/locales/ja-JP/operators-data.json"></i18n>
-<i18n locale="ja-TL" src="~/locales/ja-TL/operators-data.json"></i18n>
-<i18n locale="ko-KR" src="~/locales/ko-KR/operators-data.json"></i18n>
-<i18n locale="ko-TL" src="~/locales/ko-TL/operators-data.json"></i18n>
-<i18n locale="zh-CN" src="~/locales/zh-CN/operators-data.json"></i18n>

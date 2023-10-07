@@ -26,24 +26,11 @@ defineEmits(["update:isSidebarExpanded"])
       />
     </button>
     <OperatorTableOfContentsList :operator="operator" />
-    <ClientOnly>
-      <OperatorSearchBar
-        class="overflow-y-auto"
-        :operator="operator"
-        :results-count="11"
-      />
-      <template #fallback>
-        <div class="flex flex-col gap-2">
-          <OSkeleton height="2.5rem" :animated="true" />
-          <OSkeleton
-            class="gap-1"
-            height="2.75rem"
-            :count="11"
-            :animated="true"
-          />
-        </div>
-      </template>
-    </ClientOnly>
+    <OperatorSearchBar
+      class="overflow-y-auto"
+      :operator="operator"
+      :results-count="11"
+    />
   </div>
 </template>
 
