@@ -8,7 +8,7 @@ export type EliteAndLevel = {
   level: number
 }
 
-export type OperatorState = EliteAndLevel & { potential: number }
+type OperatorState = EliteAndLevel & { potential: number }
 
 export function isHigherLevel(a: EliteAndLevel, b: EliteAndLevel): boolean {
   return a.elite > b.elite || (a.elite === b.elite && a.level > b.level)
