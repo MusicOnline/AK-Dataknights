@@ -51944,7 +51944,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "평소엔 <#ba.kw>공격을 하지 않고</> 방어력과 마법 저항이 대폭 <#ba.kw>상승</>,  스킬 발동 시 공격 범위 내의 모든 적에게 <#ba.kw>광역 마법 대미지</>"
+        "description": null
       }
     },
     "modules": {
@@ -52182,7 +52182,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "적 1명 저지 가능"
+        "description": null
       }
     },
     "tokenSummons": {}
@@ -52316,7 +52316,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "적을 저지하지 않을 때, 원거리 광역 물리 공격 시전"
+        "description": null
       }
     },
     "tokenSummons": {}
@@ -52450,7 +52450,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "적에게 <#ba.kw>광역 물리 대미지</>"
+        "description": null
       }
     },
     "modules": {
@@ -52695,7 +52695,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "공격력의 80{'%'}로 <#ba.kw>원거리 공격</> 가능"
+        "description": null
       }
     },
     "tokenSummons": {}
@@ -52829,7 +52829,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "저지 중인 <#ba.kw>모든 적</> 동시 공격"
+        "description": null
       }
     },
     "tokenSummons": {}
@@ -53211,13 +53211,13 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "치료 대상으로 판정되지 않으며, 매 회 공격을 통해 자신의 HP를 <#ba.kw>{'{'}value{'}'}</> 회복한다 (1차 정예화 시 갱신)"
+        "description": null
       },
       "E1-L1": {
-        "description": "치료 대상으로 판정되지 않으며, 매 회 공격을 통해 자신의 HP를 <#ba.kw>{'{'}value{'}'}</> 회복한다 (2차 정예화 시 갱신)"
+        "description": null
       },
       "E2-L1": {
-        "description": "치료 대상으로 판정되지 않으며, 매 회 공격을 통해 자신의 HP를 <#ba.kw>{'{'}value{'}'}</> 회복한다"
+        "description": null
       }
     },
     "modules": {

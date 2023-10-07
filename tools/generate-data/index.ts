@@ -164,6 +164,8 @@ async function generateOperatorFiles(operators?: Operator[]) {
 
   const generateTraitLocalesPromise = generateTraitLocales(operators)
 
+  await fs.mkdir("data/operators", { recursive: true })
+
   const generateIndividualOperatorDataPromiseList = operators.map((operator) =>
     fs.writeFile(
       `data/operators/${operator.key}.json`,
@@ -218,8 +220,6 @@ async function generateOperatorFiles(operators?: Operator[]) {
       return [generateFullLocalesPromise, generateLocalesWithoutNullPromise]
     }
   )
-
-  await fs.mkdir("data/operators", { recursive: true })
 
   return Promise.all([
     generateTraitLocalesPromise,

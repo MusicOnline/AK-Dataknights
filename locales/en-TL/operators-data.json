@@ -51764,7 +51764,7 @@
     "tokenSummons": {}
   },
   "lin": {
-    "name": "Lin",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -51944,7 +51944,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>greatly increased</> DEF and RES; When skill is active, attacks deal <#ba.kw>AoE Arts damage</>"
+        "description": null
       }
     },
     "modules": {
@@ -52006,7 +52006,7 @@
     "tokenSummons": {}
   },
   "chongyue": {
-    "name": "Chongyue",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -52182,13 +52182,13 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "Blocks 1 enemy"
+        "description": null
       }
     },
     "tokenSummons": {}
   },
   "firewhistle": {
-    "name": "Firewhistle",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -52316,13 +52316,13 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "When not blocking enemies, prioritizes dealing <#ba.kw>ranged AoE</> Physical damage"
+        "description": null
       }
     },
     "tokenSummons": {}
   },
   "jieyun": {
-    "name": "Jieyun",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -52450,7 +52450,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "Deals <#ba.kw>AOE Physical damage</>"
+        "description": null
       }
     },
     "modules": {
@@ -52515,7 +52515,7 @@
     "tokenSummons": {}
   },
   "qiubai": {
-    "name": "Qiubai",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -52695,13 +52695,13 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "Can launch <#ba.kw>Ranged Attacks</> that deal 80{'%'} of normal ATK"
+        "description": null
       }
     },
     "tokenSummons": {}
   },
   "wind-chimes": {
-    "name": "Wind Chimes",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -52829,7 +52829,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "Attacks <#ba.kw>all blocked enemies</>"
+        "description": null
       }
     },
     "tokenSummons": {}
@@ -53073,7 +53073,7 @@
     "tokenSummons": {}
   },
   "rathalos-s-noir-corne": {
-    "name": "Rathalos S Noir Corne",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -53211,13 +53211,13 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "Can't be healed by other units. Recovers <#ba.kw>{'{'}value{'}'}</> self HP every time this operator attacks an enemy (Upgraded after reaching Elite 1)"
+        "description": null
       },
       "E1-L1": {
-        "description": "Can't be healed by other units. Recovers <#ba.kw>{'{'}value{'}'}</> self HP every time this operator attacks an enemy (Upgraded after reaching Elite 2)"
+        "description": null
       },
       "E2-L1": {
-        "description": "Can't be healed by other units. Recovers <#ba.kw>{'{'}value{'}'}</> self HP every time this operator attacks an enemy"
+        "description": null
       }
     },
     "modules": {
@@ -53287,7 +53287,7 @@
     "tokenSummons": {}
   },
   "terra-research-commission": {
-    "name": "Terra Research Commission",
+    "name": null,
     "appellation": null,
     "description": null,
     "potentials": {
@@ -53338,7 +53338,7 @@
     "skills": {},
     "traitCandidates": {
       "E0-L1": {
-        "description": "Attacks deal <#ba.kw>two instances</> of Physical damage to <#ba.kw>ground</> enemies in a small area (The second instance is a shockwave that has half the normal ATK). Ignores the <#ba.kw>Deployment Limit</>, but has a long Redeployment Time"
+        "description": null
       }
     },
     "tokenSummons": {}

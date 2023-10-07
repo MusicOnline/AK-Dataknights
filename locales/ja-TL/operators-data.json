@@ -51944,7 +51944,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "通常時<#ba.kw>攻撃しない</>、防御力と術耐性大幅<#ba.kw>上昇</>\nスキル発動中、通常攻撃が攻撃範囲内の敵全員に<#ba.kw>範囲術ダメージ</>を与える"
+        "description": null
       }
     },
     "modules": {
@@ -52182,7 +52182,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "敵を1体までブロック"
+        "description": null
       }
     },
     "tokenSummons": {}
@@ -52316,7 +52316,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "敵をブロックしていない時<#ba.kw>遠距離範囲</>物理攻撃を行う"
+        "description": null
       }
     },
     "tokenSummons": {}
@@ -52450,7 +52450,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "敵に<#ba.kw>範囲物理ダメージ</>を与える"
+        "description": null
       }
     },
     "modules": {
@@ -52695,7 +52695,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "80％の攻撃力で<#ba.kw>遠距離攻撃</>も行える"
+        "description": null
       }
     },
     "tokenSummons": {}
@@ -52829,7 +52829,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃"
+        "description": null
       }
     },
     "tokenSummons": {}
@@ -53211,13 +53211,13 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "味方の治療対象にならない\n敵を攻撃する度自身のHPを<#ba.kw>{'{'}value{'}'}</>回復(昇進1で効果強化)"
+        "description": null
       },
       "E1-L1": {
-        "description": "味方の治療対象にならない\n敵を攻撃する度自身のHPを<#ba.kw>{'{'}value{'}'}</>回復(昇進2で効果強化)"
+        "description": null
       },
       "E2-L1": {
-        "description": "味方の治療対象にならない\n敵を攻撃する度自身のHPを<#ba.kw>{'{'}value{'}'}</>回復"
+        "description": null
       }
     },
     "modules": {
@@ -53338,7 +53338,7 @@
     "skills": {},
     "traitCandidates": {
       "E0-L1": {
-        "description": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>2回</>の範囲物理ダメージを与える（2回目は余震、攻撃力の半分でダメージを計算する）\n<#ba.kw>配属可能数</>にカウントされない\n再配置までの時間が極めて長い"
+        "description": null
       }
     },
     "tokenSummons": {}
