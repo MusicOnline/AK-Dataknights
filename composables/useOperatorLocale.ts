@@ -51,7 +51,7 @@ async function getOperatorLocale(
 ): Promise<LocaleObject> {
   locale = getFullLocaleName(locale)
   return {
-    [key]: (await import(`../locales/${locale}/operators-data.json`)).default[
+    [key]: (await import(`../locales/${locale}/_operators-data.json`)).default[
       key
     ],
   }

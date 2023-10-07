@@ -178,7 +178,7 @@ async function generateOperatorFiles(operators?: Operator[]) {
     { encoding: "utf-8" }
   )
 
-  const generateOperatorsLocalesPromiseList = constants.OUTPUT_LOCALES.map(
+  const generateOperatorsLocalesPromiseList = constants.OUTPUT_LOCALES.flatMap(
     (locale) => {
       const localeFileData: any = {}
 
@@ -193,7 +193,29 @@ async function generateOperatorFiles(operators?: Operator[]) {
         { encoding: "utf-8" }
       )
 
-      return generateFullLocalesPromise
+      function removeNullishValues(item: LocaleObject): LocaleObject<string> {
+        return Object.entries(item).reduce(
+          (accumulator: LocaleObject<string>, [key, value]) => {
+            if (value && typeof value === "object") {
+              const purgedObj = removeNullishValues(value)
+              if (Object.keys(purgedObj).length !== 0)
+                accumulator[key] = removeNullishValues(value)
+            } else if (typeof value === "string") {
+              accumulator[key] = value
+            }
+            return accumulator
+          },
+          {}
+        )
+      }
+
+      const generateLocalesWithoutNullPromise = fs.writeFile(
+        `locales/${locale}/_operators-data.json`,
+        JSON.stringify(removeNullishValues(localeFileData), null, 2),
+        { encoding: "utf-8" }
+      )
+
+      return [generateFullLocalesPromise, generateLocalesWithoutNullPromise]
     }
   )
 

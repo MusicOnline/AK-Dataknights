@@ -145,8 +145,8 @@ export function CoerceEnumValueOf<T extends z.EnumLike>(
   ])
 }
 
-export type LocaleObject = {
-  [key: string]: LocaleObject | string | null | undefined
+export type LocaleObject<Content = string | null | undefined> = {
+  [key: string]: LocaleObject<Content> | Content
 }
 
 const LocaleObjectSchema: z.ZodType<LocaleObject> = z.record(

@@ -29,7 +29,7 @@ function getFullLocaleName(locale: string): string {
 async function getOperatorsIndexLocale(locale: string): Promise<LocaleObject> {
   locale = getFullLocaleName(locale)
   return Object.entries(
-    (await import(`../locales/${locale}/operators-data.json`)).default
+    (await import(`../locales/${locale}/_operators-data.json`)).default
   ).reduce((accumulator: any, [key, value]: [string, any]) => {
     accumulator[key] = { name: value.name }
     return accumulator
