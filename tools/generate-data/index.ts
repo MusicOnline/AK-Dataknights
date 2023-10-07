@@ -5,7 +5,7 @@ import * as constants from "./constants"
 import { Operator } from "./operator"
 import { CharacterTable } from "./raw/character"
 import * as tables from "./tables"
-import { LocaleObject, LocaleString } from "./utils"
+import { LocaleObject, LocaleString, purgeLocaleObject } from "./utils"
 
 async function readData() {
   if (!globalThis.GAME_TABLES)
@@ -164,7 +164,14 @@ async function generateOperatorFiles(operators?: Operator[]) {
 
   const generateTraitLocalesPromise = generateTraitLocales(operators)
 
-  await fs.mkdir("data/operators", { recursive: true })
+  const requiredDirs = [
+    "data/operators",
+    ...constants.OUTPUT_LOCALES.map((locale) => `locales/${locale}/generated`),
+  ]
+
+  await Promise.all(
+    requiredDirs.map((dir) => fs.mkdir(dir, { recursive: true }))
+  )
 
   const generateIndividualOperatorDataPromiseList = operators.map((operator) =>
     fs.writeFile(
@@ -182,42 +189,55 @@ async function generateOperatorFiles(operators?: Operator[]) {
 
   const generateOperatorsLocalesPromiseList = constants.OUTPUT_LOCALES.flatMap(
     (locale) => {
-      const localeFileData: any = {}
+      const fullLocaleObj: LocaleObject = {}
 
       ;(<Operator[]>operators).forEach(
         (operator) =>
-          (localeFileData[operator.key] = operator.toLocaleData(locale))
+          (fullLocaleObj[operator.key] = operator.toLocaleData(locale))
       )
 
       const generateFullLocalesPromise = fs.writeFile(
         `locales/${locale}/operators-data.json`,
-        JSON.stringify(localeFileData, null, 2),
+        JSON.stringify(fullLocaleObj, null, 2),
         { encoding: "utf-8" }
       )
 
-      function removeNullishValues(item: LocaleObject): LocaleObject<string> {
-        return Object.entries(item).reduce(
-          (accumulator: LocaleObject<string>, [key, value]) => {
-            if (value && typeof value === "object") {
-              const purgedObj = removeNullishValues(value)
-              if (Object.keys(purgedObj).length !== 0)
-                accumulator[key] = removeNullishValues(value)
-            } else if (typeof value === "string") {
-              accumulator[key] = value
-            }
-            return accumulator
-          },
-          {}
+      const purgedLocaleObj: LocaleObject<string> = Object.entries(
+        fullLocaleObj
+      ).reduce((accumulator: LocaleObject<string>, [key, value]) => {
+        accumulator[key] = purgeLocaleObject(<LocaleObject>value)
+        return accumulator
+      }, {})
+
+      const indexLocaleObj = Object.entries(purgedLocaleObj).reduce(
+        (accumulator: LocaleObject<string>, [key, value]) => {
+          accumulator[key] = { name: (<{ name: string }>value).name }
+          return accumulator
+        },
+        {}
+      )
+
+      const generateIndexLocalePromise = fs.writeFile(
+        `locales/${locale}/generated/_operators-index.json`,
+        JSON.stringify(indexLocaleObj, null, 2),
+        { encoding: "utf-8" }
+      )
+
+      const generateIndividualOperatorLocalePromiseList = Object.entries(
+        purgedLocaleObj
+      ).map(([key, value]) => {
+        return fs.writeFile(
+          `locales/${locale}/generated/_${key}.json`,
+          JSON.stringify({ [key]: value }, null, 2),
+          { encoding: "utf-8" }
         )
-      }
+      })
 
-      const generateLocalesWithoutNullPromise = fs.writeFile(
-        `locales/${locale}/_operators-data.json`,
-        JSON.stringify(removeNullishValues(localeFileData), null, 2),
-        { encoding: "utf-8" }
-      )
-
-      return [generateFullLocalesPromise, generateLocalesWithoutNullPromise]
+      return [
+        generateFullLocalesPromise,
+        generateIndexLocalePromise,
+        ...generateIndividualOperatorLocalePromiseList,
+      ]
     }
   )
 

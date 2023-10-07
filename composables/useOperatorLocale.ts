@@ -50,11 +50,7 @@ async function getOperatorLocale(
   key: string
 ): Promise<LocaleObject> {
   locale = getFullLocaleName(locale)
-  return {
-    [key]: (await import(`../locales/${locale}/_operators-data.json`)).default[
-      key
-    ],
-  }
+  return (await import(`../locales/${locale}/generated/_${key}.json`)).default
 }
 
 export default async function (i18n: Composer, key: string): Promise<void> {

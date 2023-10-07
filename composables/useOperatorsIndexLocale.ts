@@ -28,12 +28,8 @@ function getFullLocaleName(locale: string): string {
 
 async function getOperatorsIndexLocale(locale: string): Promise<LocaleObject> {
   locale = getFullLocaleName(locale)
-  return Object.entries(
-    (await import(`../locales/${locale}/_operators-data.json`)).default
-  ).reduce((accumulator: any, [key, value]: [string, any]) => {
-    accumulator[key] = { name: value.name }
-    return accumulator
-  }, {})
+  return (await import(`../locales/${locale}/generated/_operators-index.json`))
+    .default
 }
 
 export default async function (i18n: Composer): Promise<void[]> {

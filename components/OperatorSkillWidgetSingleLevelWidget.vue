@@ -9,17 +9,20 @@ const EQUAL_ICON_NAME = "ph:equals-bold"
 const INCREASE_ICON_NAME = "ph:caret-double-up-fill"
 const DECREASE_ICON_NAME = "ph:caret-double-down-fill"
 
-const { operator, skill, levelNumber, overrideOperatorKey } = defineProps<{
+const { operator, skill, levelNumber, ownerOperatorKey } = defineProps<{
   operator: GeneratedOperatorData
   skill: GeneratedSkillData
   levelNumber: number
-  overrideOperatorKey?: string
+  ownerOperatorKey?: string
 }>()
 
 const i18n = useI18n()
 const { t, locale } = i18n
 
-const operatorKey = computed<string>(() => overrideOperatorKey ?? operator.key)
+const tokenSummonKey = computed<string | null>(
+  () => ownerOperatorKey ? `${ownerOperatorKey}.tokenSummons.${operator.key}` : null
+)
+const operatorKey = computed<string>(() => tokenSummonKey.value ?? operator.key)
 
 const variableKeys = computed<string[]>(() =>
   skill.levels.slice(-1)[0].variables.map(({ key }) => key)
@@ -119,7 +122,7 @@ function getComparisonColorClass(
   return "text-red-400"
 }
 
-await useOperatorLocale(i18n, operator.key)
+await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
 </script>
 
 <template>

@@ -195,14 +195,14 @@ await useOperatorLocale(i18n, operator.key)
     <template v-if="skill">
       <OperatorSkillWidgetIntroductionCard
         :operator="tokenSummon"
-        :override-operator-key="tokenSummonKey"
+        :owner-operator-key="operator.key"
         :skill="skill"
         :small="true"
       />
       <OperatorSkillWidgetSingleLevelWidget
         class="text-sm"
         :operator="tokenSummon"
-        :override-operator-key="tokenSummonKey"
+        :owner-operator-key="operator.key"
         :skill="skill"
         :levelNumber="
           levelNumber <= skill.levels.length ? levelNumber : skill.levels.length

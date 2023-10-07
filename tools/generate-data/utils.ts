@@ -152,3 +152,19 @@ export type LocaleObject<Content = string | null | undefined> = {
 const LocaleObjectSchema: z.ZodType<LocaleObject> = z.record(
   z.lazy(() => LocaleObjectSchema)
 )
+
+export function purgeLocaleObject(item: LocaleObject): LocaleObject<string> {
+  return Object.entries(item).reduce(
+    (accumulator: LocaleObject<string>, [key, value]) => {
+      if (value && typeof value === "object") {
+        const purgedObj = purgeLocaleObject(value)
+        if (Object.keys(purgedObj).length !== 0)
+          accumulator[key] = purgeLocaleObject(value)
+      } else if (typeof value === "string") {
+        accumulator[key] = value
+      }
+      return accumulator
+    },
+    {}
+  )
+}

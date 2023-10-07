@@ -9,8 +9,8 @@ node_modules
 
 # Generated
 data/*
+locales/*/generated/*
 dist
-_operators-data.json
 
 # Not generated data
 !data/.game-data-sha

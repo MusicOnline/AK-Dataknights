@@ -4,20 +4,23 @@ import type { GeneratedSkillData } from "~/tools/generate-data/operator/skill"
 
 const {
   operator,
-  overrideOperatorKey,
+  ownerOperatorKey,
   small = false,
 } = defineProps<{
   operator: GeneratedOperatorData
   skill: GeneratedSkillData
-  overrideOperatorKey?: string
+  ownerOperatorKey?: string
   small?: boolean
 }>()
 
-const operatorKey = computed<string>(() => overrideOperatorKey ?? operator.key)
+const tokenSummonKey = computed<string | null>(
+  () => ownerOperatorKey ? `${ownerOperatorKey}.tokenSummons.${operator.key}` : null
+)
+const operatorKey = computed<string>(() => tokenSummonKey.value ?? operator.key)
 
 const i18n = useI18n()
 const { t } = i18n
-await useOperatorLocale(i18n, operator.key)
+await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
 </script>
 
 <template>
