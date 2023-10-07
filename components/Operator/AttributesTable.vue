@@ -88,8 +88,14 @@ function getPotentialBonus(attribute: keyof KeyFrameData): number {
   for (let i = 2; i <= operatorState.potential; i++) {
     // Index 0 = Potential 2
     const potential = operator.potentials[i - 2]
-    if (potential.attribute?.key.toLowerCase() === attribute)
-      potentialBonus += potential.attribute!.value
+    if (!potential.attribute) continue
+    let attributeKey = potential.attribute.key.toLowerCase()
+    if (ALTERNATE_ATTRIBUTE_NAMES.hasOwnProperty(attributeKey))
+      attributeKey =
+        ALTERNATE_ATTRIBUTE_NAMES[
+          <keyof typeof ALTERNATE_ATTRIBUTE_NAMES>attributeKey
+        ]
+    if (attributeKey === attribute) potentialBonus += potential.attribute.value
   }
 
   return potentialBonus
@@ -107,6 +113,7 @@ function getModuleBonus(attribute: keyof KeyFrameData): number {
   const module = operator.modules!.find(
     ({ id }) => id === operatorState.moduleId
   )!
+
   if (
     operatorState.elite > module.unlockConditions.elite ||
     (operatorState.elite === module.unlockConditions.elite &&
@@ -123,7 +130,7 @@ function getModuleBonus(attribute: keyof KeyFrameData): number {
         )
       return key === attribute
     })
-    if (attributeObject) moduleBonus = attributeObject.value
+    if (attributeObject?.value) moduleBonus = attributeObject.value
   }
 
   return moduleBonus
