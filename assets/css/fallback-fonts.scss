@@ -144,54 +144,6 @@ $font-display: auto; // default: auto
 }
 
 @font-face {
-  font-family: "Noto Sans TC fallback";
-  font-weight: 400;
-  font-display: $font-display;
-  src: local("Noto Sans TC"), local("Noto Sans TC Regular"),
-    url("~/assets/fonts/NotoSansTC-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Noto Sans TC fallback";
-  font-weight: 300;
-  font-display: $font-display;
-  src: local("Noto Sans TC Light"),
-    url("~/assets/fonts/NotoSansTC-Light.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Noto Sans TC fallback";
-  font-weight: 700;
-  font-display: $font-display;
-  src: local("Noto Sans TC Bold"),
-    url("~/assets/fonts/NotoSansTC-Bold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Noto Serif TC fallback";
-  font-weight: 400;
-  font-display: $font-display;
-  src: local("Noto Serif TC"), local("Noto Serif TC Regular"),
-    url("~/assets/fonts/NotoSerifTC-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Noto Serif TC fallback";
-  font-weight: 300;
-  font-display: $font-display;
-  src: local("Noto Serif TC Light"),
-    url("~/assets/fonts/NotoSerifTC-Light.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Noto Serif TC fallback";
-  font-weight: 700;
-  font-display: $font-display;
-  src: local("Noto Serif TC Bold"),
-    url("~/assets/fonts/NotoSerifTC-Bold.otf") format("opentype");
-}
-
-@font-face {
   font-family: "Noto Sans JP fallback";
   font-weight: 400;
   font-display: $font-display;
