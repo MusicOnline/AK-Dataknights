@@ -195,7 +195,7 @@ await useOperatorLocalePromise
       Gap:      p-2        = 0.5rem (from app.vue NuxtPage's parent)
       Main lg:ml should be = 80rem + 2 * (18rem + 0.5rem)
     -->
-    <main class="flex w-full flex-col gap-8">
+    <main class="flex w-full flex-col gap-4">
       <!-- <Breadcrumbs class="text-sm" /> -->
       <!-- General information -->
       <div>
@@ -217,7 +217,7 @@ await useOperatorLocalePromise
       <div>
         <div class="anchor-ghost" id="stats" />
         <div
-          class="flex flex-wrap justify-center gap-1 p-2 outline outline-1 outline-bg-container-1-normal sm:flex-nowrap sm:justify-start lg:gap-8"
+          class="flex flex-wrap justify-center gap-1 p-2 outline outline-1 outline-bg-container-1-normal sm:flex-nowrap sm:justify-start lg:gap-4"
         >
           <div class="grid w-full p-2 sm:max-w-[8rem]">
             <OperatorRangeGrid
@@ -261,7 +261,7 @@ await useOperatorLocalePromise
         <div class="my-2 text-sm">
           {{ t("operator.ui.enableAdvancedViewForMore") }}
         </div>
-        <ul class="flex flex-col gap-8">
+        <ul class="flex flex-col gap-4">
           <template v-for="(skill, index) in operator.skills" :key="skill.id">
             <li v-if="skill">
               <div class="anchor-ghost" :id="`skill-${index + 1}`" />
@@ -282,7 +282,7 @@ await useOperatorLocalePromise
         <h1 class="heading">
           {{ t("operator.ui.modules") }}
         </h1>
-        <ul class="flex flex-col gap-8">
+        <ul class="flex flex-col gap-4">
           <li v-for="mod in operator.modules" :key="mod.id">
             <div
               class="anchor-ghost"
@@ -306,7 +306,7 @@ await useOperatorLocalePromise
         <h1 class="heading">
           {{ t("operator.ui.riicBaseSkills") }}
         </h1>
-        <ul class="flex flex-col gap-8">
+        <ul class="flex flex-col gap-4">
           <template
             v-for="(buffData, index) in operator.riicBaseSkills"
             :key="index"
@@ -329,7 +329,7 @@ await useOperatorLocalePromise
 
 <style scoped lang="scss">
 .heading {
-  @apply mb-4 text-3xl;
+  @apply mb-2 text-2xl;
 
   font-weight: bold;
 }
