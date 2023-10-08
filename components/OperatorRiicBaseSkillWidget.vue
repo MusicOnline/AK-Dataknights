@@ -20,8 +20,15 @@ await useOperatorLocale(i18n, operator.key)
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
-    <div class="flex flex-col gap-2" v-for="skill in riicBaseSkillGroup">
+  <div class="flex flex-col gap-2">
+    <div
+      class="flex flex-col gap-1 hover:opacity-100"
+      :class="{
+        'opacity-60': index !== riicBaseSkillGroup.length - 1
+      }"
+      v-for="(skill, index) in riicBaseSkillGroup"
+      :key="skill.id"
+    >
       <div class="flex items-center gap-2">
         <!-- Name, icon -->
         <img
@@ -30,13 +37,21 @@ await useOperatorLocale(i18n, operator.key)
             skill.skillIcon
           )}.png`"
         />
-        <div>{{ t(`${getSkillTranslationPrefix(skill)}.name`) }}</div>
+        <div class="font-bold">{{ t(`${getSkillTranslationPrefix(skill)}.name`) }}</div>
         <div class="flex items-center gap-2">
-          <img
-            class="w-8 object-contain"
-            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/${skill.unlockConditions.elite}.png`"
-          />
-          <div>
+          <div
+            class="w-8 bg-slate-800 p-0.5"
+            v-if="
+              skill.unlockConditions.elite !== 0 ||
+              skill.unlockConditions.level !== 1
+            "
+          >
+            <img
+              class="object-contain"
+              :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/${skill.unlockConditions.elite}.png`"
+            />
+          </div>
+          <div v-if="skill.unlockConditions.level !== 1">
             <span>
               {{ t("operator.ui.level") }}
             </span>

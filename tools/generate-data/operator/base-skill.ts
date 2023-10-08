@@ -60,9 +60,10 @@ export class RiicBaseSkill implements Localizable {
     return (
       globalThis.GAME_TABLES!.BuildingData[constants.ORIGINAL_LOCALE].chars[
         operatorId
-      ]?.buffChar.map(({ buffData }) =>
-        buffData.map((datum) => new RiicBaseSkill(datum))
-      ) ?? []
+      ]?.buffChar.flatMap(({ buffData }) => {
+        if (buffData.length === 0) return []
+        return [buffData.map((datum) => new RiicBaseSkill(datum))]
+      }) ?? []
     )
   }
 
