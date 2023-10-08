@@ -63,6 +63,7 @@
       "skills": "Skills",
       "modules": "Modules",
       "trait": "Trait",
+      "riicBaseSkills": "RIIC Base Skills",
       "searchOperator": "Search Operators by code name...",
       "specificBranchTrait": "{branch} Trait",
       "unlocksAtSpecificElite": "Unlocks at Elite {elite}",

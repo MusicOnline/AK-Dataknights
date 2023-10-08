@@ -12,6 +12,7 @@ import {
   TranslatedLocale,
 } from "./constants"
 import { BattleEquipTable, BattleEquipTableSchema } from "./raw/battle-equip"
+import { BuildingDataTable, BuildingDataTableSchema } from "./raw/building-data"
 import { CharacterTable, CharacterTableSchema } from "./raw/character"
 import { RangeTable, RangeTableSchema } from "./raw/range"
 import { SkillTable, SkillTableSchema } from "./raw/skill"
@@ -25,6 +26,7 @@ export const RANGE_TABLE_PATH = "gamedata/excel/range_table.json"
 export const SKILL_TABLE_PATH = "gamedata/excel/skill_table.json"
 export const UNI_EQUIP_TABLE_PATH = "gamedata/excel/uniequip_table.json"
 export const BATTLE_EQUIP_TABLE_PATH = "gamedata/excel/battle_equip_table.json"
+export const BUILDING_DATA_TABLE_PATH = "gamedata/excel/building_data.json"
 export const OPERATOR_RELEASE_DATA_PATH = "data/custom/operator-release.json"
 
 export type LocaleTableMap<Table> = Record<GameLocale, Table>
@@ -36,6 +38,7 @@ export type GameTableMap = {
   Skill: LocaleTableMap<SkillTable>
   UniEquip: LocaleTableMap<UniEquipTable>
   BattleEquip: LocaleTableMap<BattleEquipTable>
+  BuildingData: LocaleTableMap<BuildingDataTable>
 }
 
 export type TraitLocalesMap = Record<TranslatedLocale, Record<string, string>>
@@ -128,6 +131,10 @@ export function requireAllGameTablesSync(): GameTableMap {
       BATTLE_EQUIP_TABLE_PATH,
       BattleEquipTableSchema
     ),
+    BuildingData: requireAllLocaleTablesSync(
+      BUILDING_DATA_TABLE_PATH,
+      BuildingDataTableSchema
+    ),
   }
 }
 
@@ -159,6 +166,10 @@ export async function requireAllGameTablesAsync(): Promise<GameTableMap> {
       BATTLE_EQUIP_TABLE_PATH,
       BattleEquipTableSchema
     ),
+    BuildingData: requireAllLocaleTablesAsync<BuildingDataTable>(
+      BUILDING_DATA_TABLE_PATH,
+      BuildingDataTableSchema
+    ),
   }
   await Promise.all(Object.values(map))
   return {
@@ -168,6 +179,7 @@ export async function requireAllGameTablesAsync(): Promise<GameTableMap> {
     Skill: await map.Skill,
     UniEquip: await map.UniEquip,
     BattleEquip: await map.BattleEquip,
+    BuildingData: await map.BuildingData,
   }
 }
 

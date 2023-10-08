@@ -1,7 +1,7 @@
 import * as z from "zod"
 
 import { CoerceEnumKeyOf, CoerceEnumValueOf } from "../utils"
-import { BlackboardSchema, PhaseEnum } from "./common"
+import { BlackboardSchema, UnlockConditionSchema } from "./common"
 
 export const LvlUpCostType = z.enum(["MATERIAL"])
 export type LvlUpCostType = z.infer<typeof LvlUpCostType>
@@ -170,14 +170,8 @@ export type TalentImprovePotentialEnum = z.infer<
   typeof TalentImprovePotentialEnum
 >
 
-export const UnlockCondSchema = z.object({
-  phase: CoerceEnumValueOf(PhaseEnum), // CN 2.0 vs EJK
-  level: z.number().int().min(1).max(90),
-})
-export type UnlockCond = z.infer<typeof UnlockCondSchema>
-
 export const TraitCandidateSchema = z.object({
-  unlockCondition: UnlockCondSchema,
+  unlockCondition: UnlockConditionSchema,
   requiredPotentialRank: z.number().int().min(0).max(5),
   blackboard: z.array(BlackboardSchema),
   overrideDescripton: z.string().nullable(),
@@ -192,7 +186,7 @@ export const TraitSchema = z.object({
 export type Trait = z.infer<typeof TraitSchema>
 
 export const TalentCandidateSchema = z.object({
-  unlockCondition: UnlockCondSchema,
+  unlockCondition: UnlockConditionSchema,
   requiredPotentialRank: z.number().int().min(0).max(5),
   prefabKey: z.string(),
   name: z.string().nullable(),
@@ -216,7 +210,7 @@ export const CostSchema = z.object({
 export type Cost = z.infer<typeof CostSchema>
 
 export const LevelUpCostCondSchema = z.object({
-  unlockCond: UnlockCondSchema,
+  unlockCond: UnlockConditionSchema,
   lvlUpTime: z.number(),
   levelUpCost: z.array(CostSchema).nullable(),
 })
@@ -227,7 +221,7 @@ export const SkillSchema = z.object({
   overridePrefabKey: z.string().nullable(),
   overrideTokenKey: z.string().nullable(),
   levelUpCostCond: z.array(LevelUpCostCondSchema),
-  unlockCond: UnlockCondSchema,
+  unlockCond: UnlockConditionSchema,
 })
 export type Skill = z.infer<typeof SkillSchema>
 
@@ -305,7 +299,7 @@ export const PhaseElementSchema = z.object({
 export type PhaseElement = z.infer<typeof PhaseElementSchema>
 
 export const AllSkillLvlupSchema = z.object({
-  unlockCond: UnlockCondSchema,
+  unlockCond: UnlockConditionSchema,
   lvlUpCost: z.array(CostSchema).nullable(),
 })
 export type AllSkillLvlup = z.infer<typeof AllSkillLvlupSchema>

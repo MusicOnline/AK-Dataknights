@@ -18,7 +18,7 @@ export type ItemCostType = z.infer<typeof ItemCostTypeSchema>
 export const EquipDictTypeSchema = z.enum(["ADVANCED", "INITIAL"])
 export type EquipDictType = z.infer<typeof EquipDictTypeSchema>
 
-export const TypeName2Schema = z.enum(["X", "Y"])
+export const TypeName2Schema = z.enum(["X", "Y", "D"])
 export type TypeName2 = z.infer<typeof TypeName2Schema>
 
 export const ItemCostSchema = z.object({

@@ -53,7 +53,7 @@ export const ENGLISH_CLASS_TO_RICH_TEXT_REGEX = Object.entries(
 ).reduce(
   (accumulator: { [key: string]: RegExp }, [richTextTag, englishClass]) => {
     accumulator[englishClass] = new RegExp(
-      `<[#?]ba.${richTextTag.replace(/\./g, "\\.")}>(.+?)</>`,
+      `<[#?](?:ba|cc).${richTextTag.replace(/\./g, "\\.")}>(.+?)</>`,
       "g"
     )
     return accumulator

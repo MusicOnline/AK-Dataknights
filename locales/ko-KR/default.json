@@ -178,7 +178,8 @@
       "introduction": "소개",
       "searchOperator": "코드네임으로 오퍼레이터 검색...",
       "viewDetails": "상세확인",
-      "randomOperator": "랜덤"
+      "randomOperator": "랜덤",
+      "riicBaseSkills": "인프라 스킬을"
     },
     "module": {
       "moduleDescription": "강화 설명",

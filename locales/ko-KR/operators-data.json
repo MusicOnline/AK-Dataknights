@@ -54,7 +54,17 @@
         "description": "아군 HP를 회복할 수 있고, <#ba.kw>배치 인원 수</> 제약을 받지 않으나, 재배치 시간이 매우 길다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": "예비 에너지",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+10{'%'}</>"
+      },
+      "dorm_rec_single<000>": {
+        "name": "의료 서비스",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.65</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "castle-3": {
     "name": "Castle-3",
@@ -111,7 +121,17 @@
         "description": "적 1명 저지 가능. <#ba.kw>배치 인원 수</> 제약을 받지 않으나, 재배치 시간이 매우 길다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": "예비 에너지",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+10{'%'}</>"
+      },
+      "manu_formula_spd<010>": {
+        "name": "작전 지도 비디오",
+        "description": "제조소에 배치 시, <#cc.kw>작전기록</>류에 대한 생산력 <#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "yato": {
     "name": "야토",
@@ -148,7 +168,17 @@
         "description": "적 2명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<001>": {
+        "name": "오더 분배 β",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+30{'%'}</>"
+      },
+      "manu_prod_spd<000>": {
+        "name": "표준화 α",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "noir-corne": {
     "name": "느와르 코르네",
@@ -185,7 +215,17 @@
         "description": "적 3명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit<001>": {
+        "name": "창고 정비 β",
+        "description": "제조소에 배치 시, 창고 용량 상한 <#cc.vup>+10</>, 생산력 <#cc.vup>+10{'%'}</>"
+      },
+      "trade_ord_spd&limit<000>": {
+        "name": "오더 관리 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+10{'%'}</>, 오더 상한 <#cc.vup>+2</>"
+      }
+    }
   },
   "rangers": {
     "name": "레인저",
@@ -222,7 +262,17 @@
         "description": "비행 유닛 우선 공격"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<000>": {
+        "name": "인사관리 α",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+20{'%'}</>"
+      },
+      "workshop_proc_probability<021>": {
+        "name": "노익장",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>60{'%'}</>"
+      }
+    }
   },
   "durin": {
     "name": "두린",
@@ -259,7 +309,17 @@
         "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<000>": {
+        "name": "게으름",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vdown>-0.1</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "dorm_rec_all&oneself<001>": {
+        "name": "기면",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vdown>-0.1</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.25</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "12f": {
     "name": "12F",
@@ -296,7 +356,17 @@
         "description": "일반 공격으로 적에게 <#ba.kw>광역 마법 대미지</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<020>": {
+        "name": "단서 수집 β",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>20{'%'}</> 상승"
+      },
+      "workshop_formula_probability<300>": {
+        "name": "특훈 기록",
+        "description": "가공소에 배치 후 <#cc.kw>칩</> 가공 시, 부산물 산출 확률 <#cc.vup>70{'%'}</> 상승"
+      }
+    }
   },
   "fang": {
     "name": "팽",
@@ -364,7 +434,17 @@
         "description": "적 2명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd_addition<030>": {
+        "name": "급한 성격",
+        "description": "제조소에 배치 시, 첫 시간 생산력<#cc.vup>+20{'%'}</>, 그 이후 시간당 <#cc.vup>+1{'%'}</>, 최대 <#cc.vup>+25{'%'}</>"
+      },
+      "trade_ord_spd<001>": {
+        "name": "오더 분배 β",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "vanilla": {
     "name": "바닐라",
@@ -436,7 +516,17 @@
         "description": "적 2명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<010>": {
+        "name": "표준화 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
+      },
+      "trade_ord_spd<000>": {
+        "name": "오더 분배 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "plume": {
     "name": "플룸",
@@ -508,7 +598,17 @@
         "description": "적 처치 시 배치 코스트 +1, 퇴각 시 초기 배치 코스트 반환"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<010>": {
+        "name": "뱅가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>뱅가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "trade_ord_spd&limit<000>": {
+        "name": "오더 관리 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+10{'%'}</>, 오더 상한 <#cc.vup>+2</>"
+      }
+    }
   },
   "melantha": {
     "name": "멜란사",
@@ -580,7 +680,17 @@
         "description": "적 1명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<010>": {
+        "name": "공급관리",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+25{'%'}</>, 오더 상한 <#cc.vup>+1</>"
+      },
+      "workshop_proc_probability<000>": {
+        "name": "집중 α",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>40{'%'}</>"
+      }
+    }
   },
   "cardigan": {
     "name": "카디건",
@@ -652,7 +762,17 @@
         "description": "적 3명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit<000>": {
+        "name": "창고 정비 α",
+        "description": "제조소에 배치 시, 창고 용량 상한 <#cc.vup>+6</>, 생산력 <#cc.vup>+10{'%'}</>"
+      },
+      "dorm_rec_single&oneself<000>": {
+        "name": "활발",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용); 동시에 자신의 시간당 컨디션 회복 <#cc.vup>+0.4</>"
+      }
+    }
   },
   "beagle": {
     "name": "비글",
@@ -724,7 +844,17 @@
         "description": "적 3명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit<000>": {
+        "name": "창고 정비 α",
+        "description": "제조소에 배치 시, 창고 용량 상한 <#cc.vup>+6</>, 생산력 <#cc.vup>+10{'%'}</>"
+      },
+      "dorm_rec_single&oneself<000>": {
+        "name": "활발",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용); 동시에 자신의 시간당 컨디션 회복 <#cc.vup>+0.4</>"
+      }
+    }
   },
   "kroos": {
     "name": "크루스",
@@ -804,7 +934,17 @@
         "description": "비행 유닛 우선 공격"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd_addition<040>": {
+        "name": "느긋한 성격",
+        "description": "제조소에 배치 시, 첫 시간 생산력<#cc.vup>+15{'%'}</>, 그 이후 시간당 <#cc.vup>+2{'%'}</>, 최대 <#cc.vup>+25{'%'}</>"
+      },
+      "dorm_rec_oneself<000>": {
+        "name": "독거",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.7</>"
+      }
+    }
   },
   "adnachiel": {
     "name": "아드나키엘",
@@ -876,7 +1016,17 @@
         "description": "비행 유닛 우선 공격"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<000>": {
+        "name": "오더 분배 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+20{'%'}</>"
+      },
+      "workshop_proc_probability<010>": {
+        "name": "솜씨좋은 장인",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>50{'%'}</>"
+      }
+    }
   },
   "lava": {
     "name": "라바",
@@ -956,7 +1106,17 @@
         "description": "일반 공격으로 적에게 <#ba.kw>광역 마법 대미지</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<001>": {
+        "name": "열에너지 충전 α",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+10{'%'}</>"
+      },
+      "manu_formula_spd<210>": {
+        "name": "오리지늄공예 β",
+        "description": "제조소에 배치 시, <#cc.kw>오리지늄</>류에 대한 생산력 <#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "hibiscus": {
     "name": "히비스커스",
@@ -1028,7 +1188,17 @@
         "description": "아군 HP 회복"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<010>": {
+        "name": "자상함",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "workshop_formula_probability<100>": {
+        "name": "영양학",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>70{'%'}</> 상승"
+      }
+    }
   },
   "ansel": {
     "name": "안셀",
@@ -1108,7 +1278,17 @@
         "description": "아군 HP 회복"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<010>": {
+        "name": "자상함",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "workshop_formula_probability<110>": {
+        "name": "약리학 α",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>75{'%'}</> 상승"
+      }
+    }
   },
   "steward": {
     "name": "스튜어드",
@@ -1180,7 +1360,17 @@
         "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_limit&cost<000>": {
+        "name": "담판",
+        "description": "무역소에 배치 시, 오더 수주 상한 <#cc.vup>+5</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "manu_prod_spd<010>": {
+        "name": "표준화 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "orchid": {
     "name": "오키드",
@@ -1252,7 +1442,17 @@
         "description": "적에게 <#ba.kw>마법 대미지</>를 입히고 잠시 <?ba.sluggish>정지</> 효과를 준다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<020>": {
+        "name": "심리학",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+40{'%'}</>"
+      },
+      "trade_ord_spd&limit<010>": {
+        "name": "공급관리",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+25{'%'}</>, 오더 상한 <#cc.vup>+1</>"
+      }
+    }
   },
   "haze": {
     "name": "헤이즈",
@@ -1442,7 +1642,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<100>": {
+        "name": "금속공예 α",
+        "description": "제조소에 배치 시, <#cc.kw>귀금속</>류에 대한 생산력 <#cc.vup>+30{'%'}</>"
+      },
+      "trade_ord_spd<001>": {
+        "name": "오더 분배 β",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "gitano": {
     "name": "기타노",
@@ -1651,7 +1861,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<010>": {
+        "name": "공급관리",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+25{'%'}</>, 오더 상한 <#cc.vup>+1</>"
+      },
+      "meet_spd<030>": {
+        "name": "점치기",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>25{'%'}</> 상승"
+      }
+    }
   },
   "jessica": {
     "name": "제시카",
@@ -1841,7 +2061,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<010>": {
+        "name": "표준화 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
+      },
+      "meet_spd&team<030>": {
+        "name": "연락원",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승, <#cc.kw>블랙스틸 월드와이드</> 단서를 더 쉽게 획득 (업무시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "meteor": {
     "name": "메테오",
@@ -2031,7 +2261,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<000>": {
+        "name": "표준화 α",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+15{'%'}</>"
+      },
+      "dorm_rec_single<010>": {
+        "name": "자상함",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "shirayuki": {
     "name": "시라유키",
@@ -2204,7 +2444,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<020>": {
+        "name": "단서 수집 β",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>20{'%'}</> 상승"
+      },
+      "manu_formula_spd<010>": {
+        "name": "작전 지도 비디오",
+        "description": "제조소에 배치 시, <#cc.kw>작전기록</>류에 대한 생산력 <#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "courier": {
     "name": "쿠리어",
@@ -2394,7 +2644,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<020>": {
+        "name": "카란 무역 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+15{'%'}</>, 오더 상한 <#cc.vup>+2</>"
+      },
+      "meet_spd&team<040>": {
+        "name": "배달부",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승, <#cc.kw>카란 무역회사</> 단서를 더 쉽게 획득 (업무시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "scavenger": {
     "name": "스캐빈저",
@@ -2584,7 +2844,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<001>": {
+        "name": "S.W.E.E.P.",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "manu_prod_limit&cost<000>": {
+        "name": "부랑자",
+        "description": "제조소에 배치 시, 창고 용량 상한 <#cc.vup>+8</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      }
+    }
   },
   "vigna": {
     "name": "비그나",
@@ -2790,7 +3060,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<010>": {
+        "name": "작전 지도 비디오",
+        "description": "제조소에 배치 시, <#cc.kw>작전기록</>류에 대한 생산력 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<011>": {
+        "name": "뱅가드 마스터리 β",
+        "description": "훈련실에 배치 시, <#cc.kw>뱅가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "dobermann": {
     "name": "도베르만",
@@ -2988,7 +3268,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<000>": {
+        "name": "오른팔",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "train_spd<000>": {
+        "name": "교관",
+        "description": "훈련실에 배치 시, 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "matoimaru": {
     "name": "마토이마루",
@@ -3170,7 +3460,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<000>": {
+        "name": "스킬 이론",
+        "description": "가공소에 배치 후 <#cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <#cc.vup>70{'%'}</> 상승"
+      },
+      "trade_ord_spd<001>": {
+        "name": "오더 분배 β",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "frostleaf": {
     "name": "프로스트리프",
@@ -3292,7 +3592,17 @@
         "description": "공격력의 80{'%'}로 <#ba.kw>원거리 공격</> 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": "독거",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.7</>"
+      },
+      "manu_formula_spd<010>": {
+        "name": "작전 지도 비디오",
+        "description": "제조소에 배치 시, <#cc.kw>작전기록</>류에 대한 생산력 <#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "estelle": {
     "name": "에스텔",
@@ -3482,7 +3792,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<020>": {
+        "name": "집중 β",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>60{'%'}</>"
+      },
+      "dorm_rec_oneself<000>": {
+        "name": "독거",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.7</>"
+      }
+    }
   },
   "mousse": {
     "name": "무스",
@@ -3616,7 +3936,17 @@
         "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<001>": {
+        "name": "오더 분배 β",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+30{'%'}</>"
+      },
+      "dorm_rec_single&oneself<010>": {
+        "name": "로스팅",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.3</> (동종 효과 중 가장 높은 수치만 적용); 동시에 자신의 시간당 컨디션 회복 <#cc.vup>+0.3</>"
+      }
+    }
   },
   "gravel": {
     "name": "그라벨",
@@ -3794,7 +4124,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<000>": {
+        "name": "집중 α",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>40{'%'}</>"
+      },
+      "manu_formula_spd<110>": {
+        "name": "금속공예 β",
+        "description": "제조소에 배치 시, <#cc.kw>귀금속</>류에 대한 생산력 <#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "rope": {
     "name": "로프",
@@ -3984,7 +4324,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<020>": {
+        "name": "단서 수집 β",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>20{'%'}</> 상승"
+      },
+      "trade_ord_limit&cost<000>": {
+        "name": "담판",
+        "description": "무역소에 배치 시, 오더 수주 상한 <#cc.vup>+5</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      }
+    }
   },
   "myrrh": {
     "name": "미르",
@@ -4174,7 +4524,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<110>": {
+        "name": "약리학 α",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>75{'%'}</> 상승"
+      },
+      "dorm_rec_single<010>": {
+        "name": "자상함",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "gavial": {
     "name": "가비알",
@@ -4364,7 +4724,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<110>": {
+        "name": "약리학 α",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>75{'%'}</> 상승"
+      },
+      "train_spd&profession<070>": {
+        "name": "메딕 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>메딕</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "perfumer": {
     "name": "퍼퓨머",
@@ -4570,7 +4940,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<110>": {
+        "name": "약리학 α",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>75{'%'}</> 상승"
+      },
+      "manu_prod_spd<010>": {
+        "name": "표준화 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "matterhorn": {
     "name": "마터호른",
@@ -4744,7 +5124,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<020>": {
+        "name": "카란 무역 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+15{'%'}</>, 오더 상한 <#cc.vup>+2</>"
+      },
+      "train_spd&profession<031>": {
+        "name": "디펜더 마스터리 β",
+        "description": "훈련실에 배치 시, <#cc.kw>디펜더</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "cuora": {
     "name": "쿠오라",
@@ -4918,7 +5308,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit<001>": {
+        "name": "창고 정비 β",
+        "description": "제조소에 배치 시, 창고 용량 상한 <#cc.vup>+10</>, 생산력 <#cc.vup>+10{'%'}</>"
+      },
+      "trade_ord_spd<000>": {
+        "name": "오더 분배 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "gummy": {
     "name": "굼",
@@ -5108,7 +5508,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&cost<000>": {
+        "name": "교제",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+30{'%'}</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "dorm_rec_single&oneself<011>": {
+        "name": "요리",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.35</> (동종 효과 중 가장 높은 수치만 적용); 동시에 자신의 시간당 컨디션 회복 <#cc.vup>+0.35</>"
+      }
+    }
   },
   "deepcolor": {
     "name": "딥컬러",
@@ -5321,7 +5731,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd<000>": {
+        "name": "오더 분배 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+20{'%'}</>"
+      },
+      "workshop_proc_probability<020>": {
+        "name": "집중 β",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>60{'%'}</>"
       }
     }
   },
@@ -5505,7 +5926,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost<010>": {
+        "name": "재앙정보전달자 α",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "hire_spd_cost<200>": {
+        "name": "정시 퇴근",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+45{'%'}</>, 시간당 컨디션 소모 <#cc.vdown>+2</>"
+      },
+      "manu_formula_spd<211>": {
+        "name": "지질학 β",
+        "description": "제조소에 배치 시, <#cc.kw>오리지늄</>류에 대한 생산력 <#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "shaw": {
     "name": "쇼",
@@ -5679,7 +6114,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<200>": {
+        "name": "공학",
+        "description": "가공소에 배치 후 <#cc.kw>기반시설 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>70{'%'}</> 상승"
+      },
+      "power_rec_spd<010>": {
+        "name": "설비 점검",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "ptilopsis": {
     "name": "프틸롭시스",
@@ -5869,7 +6314,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<001>": {
+        "name": "라인테크 α",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd<011>": {
+        "name": "라인테크 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "zima": {
     "name": "지마",
@@ -6043,7 +6498,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<013>": {
+        "name": "지도자",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "dorm_rec_all<020>": {
+        "name": "동장군",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "texas": {
     "name": "텍사스",
@@ -6233,7 +6698,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&cost_P<000>": {
+        "name": "애증",
+        "description": "<#cc.kw>라플란드</>와 함께 무역소에 배치 시, 시간당 컨디션 소모 <#cc.vdown>+0.3</>, 오더 수주 효율 <#cc.vup>+65{'%'}</>"
+      },
+      "trade_ord_limit&cost_P<010>": {
+        "name": "묵계",
+        "description": "<#cc.kw>엑시아</>와 함께 무역소에 배치 시, 시간당 컨디션 소모 <#cc.vup>-0.3</>"
+      }
+    }
   },
   "franka": {
     "name": "프란카",
@@ -6407,7 +6882,25 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": "가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<021>": {
+        "name": "가드 마스터리 β",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+50{'%'}</>"
+      },
+      "meet_spd&team<000>": {
+        "name": "단서 수집 α",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승"
+      },
+      "meet_spd&team<031>": {
+        "name": "B.P.R.S",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승, <#cc.kw>블랙스틸 월드와이드</> 단서를 더 쉽게 획득 (업무시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "indra": {
     "name": "인드라",
@@ -6541,7 +7034,17 @@
         "description": "적 1명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "단서 수집 α",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승"
+      },
+      "meet_spd&team<070>": {
+        "name": "소환자",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승, <#cc.kw>글래스고</> 단서를 더 쉽게 획득 (업무시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "lappland": {
     "name": "라플란드",
@@ -6675,7 +7178,17 @@
         "description": "공격력의 80{'%'}로 <#ba.kw>원거리 공격</> 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_limit&cost_P<000>": {
+        "name": "속셈 α",
+        "description": "<#cc.kw>텍사스</>와 함께 무역소에 배치 시, 시간당 컨디션 소모 <#cc.vup>-0.1</>, 오더 수주 상한 <#cc.vup>+2</>"
+      },
+      "trade_ord_limit&cost_P<001>": {
+        "name": "속셈 β",
+        "description": "<#cc.kw>텍사스</>와 함께 무역소에 배치 시, 시간당 컨디션 소모 <#cc.vup>-0.1</>, 오더 수주 상한 <#cc.vup>+4</>"
+      }
+    }
   },
   "specter": {
     "name": "스펙터",
@@ -6857,7 +7370,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": "독거",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.7</>"
+      },
+      "dorm_rec_oneself<010>": {
+        "name": "열광",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.85</>"
+      }
+    }
   },
   "blue-poison": {
     "name": "블루포이즌",
@@ -7063,7 +7586,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<111>": {
+        "name": "독리학 α",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>75{'%'}</> 상승"
+      },
+      "workshop_formula_probability<121>": {
+        "name": "독리학 β",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>80{'%'}</> 상승"
+      }
+    }
   },
   "platinum": {
     "name": "플래티넘",
@@ -7253,7 +7786,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<040>": {
+        "name": "스나이퍼 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<041>": {
+        "name": "스나이퍼 마스터리 β",
+        "description": "훈련실에 배치 시, <#cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "meteorite": {
     "name": "메테오라이트",
@@ -7430,7 +7973,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<112>": {
+        "name": "폭발재료학 α",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>75{'%'}</> 상승"
+      },
+      "workshop_formula_probability<122>": {
+        "name": "폭발재료학 β",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>80{'%'}</> 상승"
+      }
+    }
   },
   "amiya": {
     "name": "아미야",
@@ -7658,7 +8211,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_tra_spd<000>": {
+        "name": "협력 협의",
+        "description": "제어 센터에 배치 시, 모든 무역소의 오더 수주 효율 <#cc.vup>+7{'%'}</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "dorm_rec_all<010>": {
+        "name": "바이올린 독주",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "skyfire": {
     "name": "스카이파이어",
@@ -7851,7 +8414,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<050>": {
+        "name": "캐스터 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>캐스터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<051>": {
+        "name": "캐스터 마스터리 β",
+        "description": "훈련실에 배치 시, <#cc.kw>캐스터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "mayer": {
     "name": "메이어",
@@ -8158,7 +8731,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_proc_probability<030>": {
+        "name": "미보(가공형)",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>65{'%'}</>"
+      },
+      "manu_prod_spd<020>": {
+        "name": "미보(제조형)",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+30{'%'}</>"
       }
     }
   },
@@ -8369,7 +8953,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd<001>": {
+        "name": "라인테크 α",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd<011>": {
+        "name": "라인테크 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
       }
     }
   },
@@ -8545,7 +9140,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<070>": {
+        "name": "메딕 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>메딕</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<071>": {
+        "name": "메딕 마스터리 β",
+        "description": "훈련실에 배치 시, <#cc.kw>메딕</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "nearl": {
     "name": "니어",
@@ -8735,7 +9340,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<000>": {
+        "name": "오른팔",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "dorm_rec_single&oneself<030>": {
+        "name": "사도",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.5</> (동종 효과 중 가장 높은 수치만 적용); 동시에 자신의 시간당 컨디션 회복 <#cc.vup>+0.25</>"
+      }
+    }
   },
   "projekt-red": {
     "name": "레드",
@@ -8925,7 +9540,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<001>": {
+        "name": "S.W.E.E.P.",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "meet_spd<031>": {
+        "name": "추적자",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>25{'%'}</> 상승"
+      }
+    }
   },
   "liskarm": {
     "name": "리스캄",
@@ -9057,7 +9682,17 @@
         "description": "적 3명 저지 가능, 원거리 공격 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<014>": {
+        "name": "펄스 아크 α",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+15{'%'}</>"
+      },
+      "power_rec_spd<021>": {
+        "name": "펄스 아크 β",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "croissant": {
     "name": "크루아상",
@@ -9247,7 +9882,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<030>": {
+        "name": "펭귄 로지스 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+20{'%'}</>"
+      },
+      "trade_ord_spd&limit<031>": {
+        "name": "신속배달",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+30{'%'}</>, 오더 상한 <#cc.vup>+1</>"
+      }
+    }
   },
   "vulcan": {
     "name": "벌컨",
@@ -9381,7 +10026,17 @@
         "description": "아군의 치료를 <#ba.kw>받지 못한다</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit&cost<000>": {
+        "name": "장인정신 α",
+        "description": "제조소에 배치 시, 생산력 <#cc.vdown>-5{'%'}</>, 창고 용량 상한 <#cc.vup>+16</>, 시간당 컨디션 소모 <#cc.vup>-0.15</>"
+      },
+      "manu_prod_spd&limit&cost<001>": {
+        "name": "장인정신 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vdown>-5{'%'}</>, 창고 용량 상한 <#cc.vup>+19</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      }
+    }
   },
   "provence": {
     "name": "프로방스",
@@ -9571,7 +10226,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<010>": {
+        "name": "재앙정보전달자 α",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "hire_spd<011>": {
+        "name": "재앙정보전달자 β",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "firewatch": {
     "name": "파이어워치",
@@ -9761,7 +10426,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<000>": {
+        "name": "단서 수집 α",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승"
+      },
+      "meet_spd<020>": {
+        "name": "단서 수집 β",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>20{'%'}</> 상승"
+      }
+    }
   },
   "cliffheart": {
     "name": "클리프하트",
@@ -9951,7 +10626,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single&oneself<001>": {
+        "name": "탐험가의 열정",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.25</> (동종 효과 중 가장 높은 수치만 적용); 동시에 자신의 시간당 컨디션 회복 <#cc.vup>+0.5</>"
+      },
+      "trade_ord_spd&limit<021>": {
+        "name": "카란 무역 β",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+15{'%'}</>, 오더 상한 <#cc.vup>+4</>"
+      }
+    }
   },
   "pramanix": {
     "name": "프라마닉스",
@@ -10139,7 +10824,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single&oneself<021>": {
+        "name": "카란 성녀",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.5</> (동종 효과 중 가장 높은 수치만 적용); 동시에 자신의 시간당 컨디션 회복 <#cc.vup>+0.25</>"
+      },
+      "train_spd&profession<061>": {
+        "name": "서포터 마스터리 β",
+        "description": "훈련실에 배치 시, <#cc.kw>서포터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "istina": {
     "name": "이스티나",
@@ -10321,7 +11016,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<060>": {
+        "name": "서포터 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>서포터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "meet_spd&team<050>": {
+        "name": "참모",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승, <#cc.kw>우르수스 학생자치단</> 단서를 더 쉽게 획득 (업무시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "sora": {
     "name": "소라",
@@ -10447,7 +11152,17 @@
         "description": "공격을 진행하지 않고 공격 범위 내 모든 아군의 <#ba.kw>HP</>를 매초마다 자신의 공격력 <#ba.kw>{'{'}attack{'@'}atk_to_hp_recovery_ratio:0{'%'}{'}'}</> 만큼 회복, 자신은 <?ba.inspire>격려</>의 영향을 받지 않는다."
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<011>": {
+        "name": "아이돌",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "trade_ord_spd<011>": {
+        "name": "펭귄 로지스 β",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "manticore": {
     "name": "맨티코어",
@@ -10653,7 +11368,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<080>": {
+        "name": "스페셜리스트 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>스페셜리스트</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<081>": {
+        "name": "스페셜리스트 마스터리 β",
+        "description": "훈련실에 배치 시, <#cc.kw>스페셜리스트</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "feater": {
     "name": "에프이터",
@@ -10843,7 +11568,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<010>": {
+        "name": "작전 지도 비디오",
+        "description": "제조소에 배치 시, <#cc.kw>작전기록</>류에 대한 생산력 <#cc.vup>+30{'%'}</>"
+      },
+      "manu_formula_spd<020>": {
+        "name": "권술 지도 비디오",
+        "description": "제조소에 배치 시, <#cc.kw>작전기록</>류에 대한 생산력 <#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "exusiai": {
     "name": "엑시아",
@@ -11085,7 +11820,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<010>": {
+        "name": "펭귄 로지스 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+20{'%'}</>"
+      },
+      "trade_ord_spd<020>": {
+        "name": "물류 전문가",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "siege": {
     "name": "시즈",
@@ -11391,7 +12136,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<013>": {
+        "name": "지도자",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "dorm_rec_all<022>": {
+        "name": "라이온킹",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "ifrit": {
     "name": "이프리트",
@@ -11641,7 +12396,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<001>": {
+        "name": "열에너지 충전 α",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+10{'%'}</>"
+      },
+      "power_rec_spd<013>": {
+        "name": "고열충전",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "eyjafjalla": {
     "name": "에이야퍄들라",
@@ -11883,7 +12648,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<213>": {
+        "name": "화산학자",
+        "description": "제조소에 배치 시, <#cc.kw>오리지늄</>류에 대한 생산력 <#cc.vup>+35{'%'}</>"
+      },
+      "hire_spd<011>": {
+        "name": "재앙정보전달자 β",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "angelina": {
     "name": "안젤리나",
@@ -12191,7 +12966,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "단서 수집 α",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승"
+      },
+      "meet_spd&team<060>": {
+        "name": "전달자(로도스)",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승, <#cc.kw>로도스 아일랜드 제약회사</> 단서를 더 쉽게 획득 (업무시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "shining": {
     "name": "샤이닝",
@@ -12501,7 +13286,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<010>": {
+        "name": "자상함",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "dorm_rec_single<020>": {
+        "name": "자비",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.75</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "nightingale": {
     "name": "나이팅게일",
@@ -12783,7 +13578,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "dorm_rec_all<000>": {
+        "name": "격려",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "dorm_rec_all<021>": {
+        "name": "램프를 든 여신",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용)"
       }
     }
   },
@@ -13089,7 +13895,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<030>": {
+        "name": "디펜더 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>디펜더</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<130>": {
+        "name": "반야",
+        "description": "훈련실에 배치 시, <#cc.kw>디펜더</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "saria": {
     "name": "사리아",
@@ -13369,7 +14185,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "단서 수집 α",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승"
+      },
+      "meet_spd&team<010>": {
+        "name": "파수꾼",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승, <#cc.kw>라인 랩</> 단서를 더 쉽게 획득 (업무 시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "silverash": {
     "name": "실버애쉬",
@@ -13551,7 +14377,17 @@
         "description": "공격력의 80{'%'}로 <#ba.kw>원거리 공격</> 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<020>": {
+        "name": "카란 무역 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+15{'%'}</>, 오더 상한 <#cc.vup>+2</>"
+      },
+      "trade_ord_spd&limit<022>": {
+        "name": "카란의 주인",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+20{'%'}</>, 오더 상한 <#cc.vup>+4</>"
+      }
+    }
   },
   "savage": {
     "name": "새비지",
@@ -13722,7 +14558,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<000>": {
+        "name": "스킬 이론",
+        "description": "가공소에 배치 후 <#cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <#cc.vup>70{'%'}</> 상승"
+      },
+      "dorm_rec_single&oneself<011>": {
+        "name": "요리",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.35</> (동종 효과 중 가장 높은 수치만 적용); 동시에 자신의 시간당 컨디션 회복 <#cc.vup>+0.35</>"
+      }
+    }
   },
   "catapult": {
     "name": "캐터펄트",
@@ -13790,7 +14636,17 @@
         "description": "적에게 <#ba.kw>광역 물리 대미지</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&cost<000>": {
+        "name": "교제",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+30{'%'}</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "workshop_formula_probability<122>": {
+        "name": "폭발재료학 β",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>80{'%'}</> 상승"
+      }
+    }
   },
   "midnight": {
     "name": "미드나이트",
@@ -13870,7 +14726,17 @@
         "description": "공격력의 80{'%'}로 <#ba.kw>원거리 공격</> 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&cost<000>": {
+        "name": "교제",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+30{'%'}</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "manu_formula_spd<200>": {
+        "name": "오리지늄공예 α",
+        "description": "제조소에 배치 시, <#cc.kw>오리지늄</>류에 대한 생산력 <#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "beehunter": {
     "name": "비헌터",
@@ -14004,7 +14870,17 @@
         "description": "적 1명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": "가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "workshop_formula_probability<300>": {
+        "name": "특훈 기록",
+        "description": "가공소에 배치 후 <#cc.kw>칩</> 가공 시, 부산물 산출 확률 <#cc.vup>70{'%'}</> 상승"
+      }
+    }
   },
   "nightmare": {
     "name": "나이트메어",
@@ -14210,7 +15086,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<050>": {
+        "name": "캐스터 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>캐스터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "hire_spd<020>": {
+        "name": "심리학",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+40{'%'}</>"
+      }
+    }
   },
   "grani": {
     "name": "그라니",
@@ -14416,7 +15302,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<010>": {
+        "name": "뱅가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>뱅가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<011>": {
+        "name": "뱅가드 마스터리 β",
+        "description": "훈련실에 배치 시, <#cc.kw>뱅가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "skadi": {
     "name": "스카디",
@@ -14696,7 +15592,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": "독거",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.7</>"
+      },
+      "dorm_rec_oneself<020>": {
+        "name": "비가",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+1</>"
+      }
+    }
   },
   "popukar": {
     "name": "포푸카",
@@ -14776,7 +15682,17 @@
         "description": "저지 중인 <#ba.kw>모든 적</> 동시 공격"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit&cost<010>": {
+        "name": "트러블 메이커",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>, 창고 용량 상한 <#cc.vdown>-12</>, 시간당 컨디션 소모 <#cc.vdown>+0.25</>"
+      },
+      "dorm_rec_single&oneself<020>": {
+        "name": "조화",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.4</> (동종 효과 중 가장 높은 수치만 적용); 동시에 자신의 시간당 컨디션 회복 <#cc.vup>+0.2</>"
+      }
+    }
   },
   "spot": {
     "name": "스팟",
@@ -14856,7 +15772,17 @@
         "description": "스킬로 아군 유닛 HP 회복"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<010>": {
+        "name": "솜씨좋은 장인",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>50{'%'}</>"
+      },
+      "manu_formula_spd<100>": {
+        "name": "금속공예 α",
+        "description": "제조소에 배치 시, <#cc.kw>귀금속</>류에 대한 생산력 <#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "greyy": {
     "name": "그레이",
@@ -15033,7 +15959,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<020>": {
+        "name": "정전기장",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+20{'%'}</>"
+      },
+      "workshop_proc_probability<010>": {
+        "name": "솜씨좋은 장인",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>50{'%'}</>"
+      }
+    }
   },
   "swire": {
     "name": "스와이어",
@@ -15223,7 +16159,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_tra_spd<010>": {
+        "name": "아가씨",
+        "description": "제어 센터에 배치 시, 모든 무역소의 오더 수주 효율 <#cc.vup>+7{'%'}</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "train_spd<000>": {
+        "name": "교관",
+        "description": "훈련실에 배치 시, 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "chen": {
     "name": "첸",
@@ -15504,7 +16450,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<000>": {
+        "name": "덕재겸비",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.g.lgd><#cc.kw>용문근위국</></> 오퍼레이터가 1명 증가할 때마다 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "meet_spd&team<100>": {
+        "name": "총경",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>25{'%'}</> 상승"
+      }
+    }
   },
   "sussurro": {
     "name": "수수로",
@@ -15694,7 +16650,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<070>": {
+        "name": "메딕 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>메딕</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "workshop_formula_probability<120>": {
+        "name": "약리학 β",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>80{'%'}</> 상승"
+      }
+    }
   },
   "ceylon": {
     "name": "실론",
@@ -15884,7 +16850,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<129>": {
+        "name": "학자",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>80{'%'}</> 상승"
+      },
+      "manu_formula_spd<212>": {
+        "name": "오리지늄 연구",
+        "description": "제조소에 배치 시, <#cc.kw>오리지늄</>류에 대한 생산력 <#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "glaucus": {
     "name": "글라우쿠스",
@@ -16090,7 +17066,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<003>": {
+        "name": "전자기 충전 α",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+10{'%'}</>"
+      },
+      "power_rec_spd<015>": {
+        "name": "전자기 충전 β",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "schwarz": {
     "name": "슈바르츠",
@@ -16386,7 +17372,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single_P<000>": {
+        "name": "차 우리기",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용), 목표 오퍼레이터가 <#cc.kw>실론</>일 경우 회복 효과가 추가로 <#cc.vup>+0.45</>"
+      },
+      "train_spd&profession<140>": {
+        "name": "검은 화살",
+        "description": "훈련실에 배치 시, <#cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "myrtle": {
     "name": "머틀",
@@ -16568,7 +17564,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_limit&cost<000>": {
+        "name": "담판",
+        "description": "무역소에 배치 시, 오더 수주 상한 <#cc.vup>+5</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "dorm_rec_all<013>": {
+        "name": "지도자",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "astesia": {
     "name": "아스테시아",
@@ -16694,7 +17700,17 @@
         "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "단서 수집 α",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승"
+      },
+      "meet_spd&team<110>": {
+        "name": "점성학",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>25{'%'}</> 상승"
+      }
+    }
   },
   "hellagur": {
     "name": "헬라그",
@@ -17008,7 +18024,25 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<010>": {
+        "name": "초연",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.55</>"
+      },
+      "dorm_rec_all&oneself<011>": {
+        "name": "쟁탈",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 모든 오퍼레이터의 시간당 회복 <#cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "dorm_rec_all&oneself<012>": {
+        "name": "해탈",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.55</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "workshop_formula_probability<010>": {
+        "name": "병자궤도",
+        "description": "가공소에 배치 후 <#cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <#cc.vup>80{'%'}</> 상승"
+      }
+    }
   },
   "dur-nar": {
     "name": "듀나",
@@ -17134,7 +18168,17 @@
         "description": "스킬 발동 시 일반공격이 마법 피해를 준다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<030>": {
+        "name": "디펜더 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>디펜더</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "control_mp_cost<002>": {
+        "name": "간식 네트워크",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      }
+    }
   },
   "vermeil": {
     "name": "버메일",
@@ -17308,7 +18352,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_limit&cost<0000>": {
+        "name": "부랑자",
+        "description": "제조소에 배치 시, 창고 용량 상한 <#cc.vup>+8</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "manu_prod_spd_variable<000>": {
+        "name": "재활용",
+        "description": "제조소에 배치 시, 해당 제조소 내의 오퍼레이터가 늘린 창고 용량당 생산력 <#cc.vup>2{'%'}</> 제공"
+      }
+    }
   },
   "flamebringer": {
     "name": "플레임브링어",
@@ -17498,7 +18552,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<000>": {
+        "name": "스킬 이론",
+        "description": "가공소에 배치 후 <#cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <#cc.vup>70{'%'}</> 상승"
+      },
+      "workshop_formula_probability<020>": {
+        "name": "최고의 경지",
+        "description": "가공소에 배치 후 <#cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <#cc.vup>80{'%'}</> 상승"
+      }
+    }
   },
   "executor": {
     "name": "이그제큐터",
@@ -17632,7 +18696,17 @@
         "description": "공격 범위 내 <#ba.kw>모든 적</>을 공격\n자신의 전방 첫 줄의 적에게 공격력이 150{'%'}까지 상승한다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<040>": {
+        "name": "스나이퍼 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "control_mp_cost<003>": {
+        "name": "처분 협의",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      }
+    }
   },
   "magallan": {
     "name": "마젤란",
@@ -18056,7 +19130,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10005_mgllan_drone2": {
         "name": "드래곤플라이.L",
@@ -18147,7 +19222,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10005_mgllan_drone3": {
         "name": "드래곤플라이.A",
@@ -18238,7 +19314,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_proc_probability<011>": {
+        "name": "다용도 측정기",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>50{'%'}</>"
+      },
+      "workshop_formula_cost<000>": {
+        "name": "드래곤플라이 드론",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 컨디션 소모가 <#cc.kw>4</>이상인 항목의 컨디션 소모 <#cc.vup>-2</>"
       }
     }
   },
@@ -18430,7 +19517,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<030>": {
+        "name": "WRITER",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+40{'%'}</>"
+      },
+      "dorm_rec_oneself<030>": {
+        "name": "은둔의 미식가",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.75</>"
+      }
+    }
   },
   "breeze": {
     "name": "브리즈",
@@ -18620,7 +19717,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "단서 수집 α",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승"
+      },
+      "meet_spd&team<071>": {
+        "name": "몰락한 귀족",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승, <#cc.kw>글래스고</> 단서를 더 쉽게 획득 (업무시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "may": {
     "name": "메이",
@@ -18810,7 +19917,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<0020>": {
+        "name": "단서 수집 β",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>20{'%'}</> 상승"
+      },
+      "meet_team<020>": {
+        "name": "왕실탐정(자칭)",
+        "description": "응접실에 배치 시, <#cc.kw>펭귄 로지스틱스</> 단서를 더 쉽게 획득 (업무 시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "waai-fu": {
     "name": "와이후",
@@ -18992,7 +20109,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_cost_all<000>": {
+        "name": "팀워크",
+        "description": "제조소에 배치 시, 해당 제조소 내의 모든 오퍼레이터 <#cc.kw>본인</>이 컨디션 소모로 인해 받는 영향 <#cc.kw>제거</>"
+      },
+      "manu_prod_spd_variable2<000>": {
+        "name": "협동의식",
+        "description": "제조소에 배치 시, 해당 제조소 내의 오퍼레이터가 제공하는 매 <#cc.vup>5{'%'}</>의 생산력(시설 수량에 따라 제공하는 생산력 미포함)당 <#cc.vup>5{'%'}</>의 생산력을 추가 제공, 최대 <#cc.vup>40{'%'}</>의 생산력 제공"
+      }
+    }
   },
   "bison": {
     "name": "바이슨",
@@ -19182,7 +20309,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<032>": {
+        "name": "마운틴대쉬 로지스",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+20{'%'}</>"
+      },
+      "trade_ord_spd&limit<033>": {
+        "name": "도련님",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+30{'%'}</>, 오더 상한 <#cc.vup>+1</>"
+      }
+    }
   },
   "mostima": {
     "name": "모스티마",
@@ -19419,7 +20556,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "단서 수집 α",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승"
+      },
+      "meet_spd&team<020>": {
+        "name": "전달자(펭귄)",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승, <#cc.kw>펭귄 로지스틱스</> 단서를 더 쉽게 획득 (업무 시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "reed": {
     "name": "리드",
@@ -19609,7 +20756,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": "독거",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.7</>"
+      },
+      "control_mp_cost<004>": {
+        "name": "대리인",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      }
+    }
   },
   "broca": {
     "name": "브로카",
@@ -19799,7 +20956,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": "가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<021>": {
+        "name": "가드 마스터리 β",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "ambriel": {
     "name": "엠브리엘",
@@ -19981,7 +21148,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<000>": {
+        "name": "게으름",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vdown>-0.1</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "trade_ord_spd<001>": {
+        "name": "오더 분배 β",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "greythroat": {
     "name": "그레이스롯",
@@ -20171,7 +21348,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<005>": {
+        "name": "필요책임",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "dorm_rec_oneself<000>": {
+        "name": "독거",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.7</>"
+      }
+    }
   },
   "blaze": {
     "name": "블레이즈",
@@ -20413,7 +21600,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<001>": {
+        "name": "열에너지 충전 α",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+10{'%'}</>"
+      },
+      "workshop_formula_probability<210>": {
+        "name": "참철열강",
+        "description": "가공소에 배치 후 <#cc.kw>기반시설 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>80{'%'}</> 상승"
+      }
+    }
   },
   "snowsant": {
     "name": "스노우상트",
@@ -20603,7 +21800,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd_variable2<000>": {
+        "name": "근면성실 α",
+        "description": "무역소에 배치 시, 해당 무역소 내의 모든 오퍼레이터가 제공한 오더 수주 효율 <#cc.vup>5{'%'}</>당, <#cc.vup>5{'%'}</>효율 추가 제공. 최대 <#cc.vup>25{'%'}</>효율 제공"
+      },
+      "trade_ord_spd_variable2<001>": {
+        "name": "근면성실 β",
+        "description": "무역소에 배치 시, 해당 무역소 내의 모든 오퍼레이터가 제공한 오더 수주 효율 <#cc.vup>5{'%'}</>당, <#cc.vup>5{'%'}</>효율 추가 제공. 최대 <#cc.vup>35{'%'}</>효율 제공"
+      }
+    }
   },
   "hung": {
     "name": "훔",
@@ -20793,7 +22000,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<010>": {
+        "name": "솜씨좋은 장인",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>50{'%'}</>"
+      },
+      "control_mp_cost&faction2<000>": {
+        "name": "굳세지만 유연하게",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.g.lda><#cc.kw>리 탐정사무소</></> 오퍼레이터가 1명 증가할 때마다 해당 소속 오퍼레이터의 <#cc.kw>컨디션 회복량이 추가로 증가</>하고, 1명 증가할 때마다 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.2</>"
+      }
+    }
   },
   "aak": {
     "name": "아",
@@ -21039,7 +22256,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_clue_cost<000>": {
+        "name": "노이로제",
+        "description": "제어 센터에 배치 시, 응접실 내 오퍼레이터의 <#cc.kw>단서 수집 성향 효과</>가 <#cc.kw>상승</>하지만, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 소모 <#cc.vdown>+1.5</>"
+      },
+      "train_spd&profession<170>": {
+        "name": "정확한 수술",
+        "description": "훈련실에 배치 시, <#cc.kw>메딕</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "nian": {
     "name": "니엔",
@@ -21319,7 +22546,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<160>": {
+        "name": "희귀 금속 식별",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>100{'%'}</> 상승"
+      },
+      "workshop_formula_cost<010>": {
+        "name": "내 맘대로",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 대응되는 모든 항목의 컨디션 소모 <#cc.vdown>+2</>"
+      }
+    }
   },
   "leizi": {
     "name": "레이즈",
@@ -21522,7 +22759,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_clue_cost<010>": {
+        "name": "규범대로",
+        "description": "제어 센터에 배치 시, 응접실 내 오퍼레이터의 <#cc.kw>단서 수집 성향 효과</>가 <#cc.kw>소폭 상승</>하지만, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 소모 <#cc.vdown>+0.5</>"
+      },
+      "control_clue_cost<011>": {
+        "name": "정확한 판단",
+        "description": "제어 센터에 배치 시, 응접실 내 오퍼레이터의 <#cc.kw>단서 수집 성향 효과</>가 <#cc.kw>소폭 상승</>"
+      }
+    }
   },
   "ceobe": {
     "name": "케오베",
@@ -21802,7 +23049,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_limit&cost<002>": {
+        "name": "\"다 갖고 와\"",
+        "description": "제조소에 배치 시, 창고 용량 상한 <#cc.vup>+8</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "manu_prod_spd_addition<031>": {
+        "name": "\"못 기다려\"",
+        "description": "제조소에 배치 시, 첫 시간 생산력<#cc.vup>+20{'%'}</>, 그 이후 시간당 <#cc.vup>+1{'%'}</>, 최대 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "purestream": {
     "name": "퓨어스트림",
@@ -21976,7 +23233,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<011>": {
+        "name": "청정에너지",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd&trade<000>": {
+        "name": "재생에너지",
+        "description": "제조소에 배치 시, 각각의 <#cc.kw>무역소</>가 해당 제조소의 <#cc.kw>귀금속</>류 생산력 <#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "utage": {
     "name": "우타게",
@@ -22176,7 +23443,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<020>": {
+        "name": "심리학",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+40{'%'}</>"
+      },
+      "meet_spd<020>": {
+        "name": "단서 수집 β",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>20{'%'}</> 상승"
+      }
+    }
   },
   "bibeak": {
     "name": "바이비크",
@@ -22378,7 +23655,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_wt&cost<000>": {
+        "name": "재봉 α",
+        "description": "무역소에 배치 시, 해당 무역소의 <#cc.kw>고품질 귀금속 오더</>의 출현 확률이 <#cc.kw>소폭 상승</> (확률은 작업 시간의 영향을 받음), 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "trade_ord_wt&cost<010>": {
+        "name": "재봉 β",
+        "description": "무역소에 배치 시, 해당 무역소의 <#cc.kw>고품질 귀금속 오더</>의 출현 확률이 <#cc.kw>상승</> (확률은 작업 시간의 영향을 받음), 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      }
+    }
   },
   "sesa": {
     "name": "세사",
@@ -22571,7 +23858,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<120>": {
+        "name": "미니멀 실용주의",
+        "description": "가공소에 배치 후 컨디션 <#cc.kw>4</> 소모하는 <#cc.kw>정예화 재료</> 가공 시 컨디션 소모 <#cc.vup>-2</>"
+      },
+      "workshop_formula_probability<119>": {
+        "name": "공업디자인",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>75{'%'}</> 상승"
+      }
+    }
   },
   "bagpipe": {
     "name": "백파이프",
@@ -22829,7 +24126,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<021>": {
+        "name": "농요",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.55</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "workshop_formula_probability<310>": {
+        "name": "훈련 만전",
+        "description": "가공소에 배치 후 <#cc.kw>칩</> 가공 시, 부산물 산출 확률 <#cc.vup>80{'%'}</> 상승"
+      }
+    }
   },
   "conviction": {
     "name": "컨빅션",
@@ -22987,7 +24294,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<030>": {
+        "name": "묵시",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.7</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "manu_formula_spd<020>": {
+        "name": "권술 지도 비디오",
+        "description": "제조소에 배치 시, <#cc.kw>작전기록</>류에 대한 생산력 <#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "cutter": {
     "name": "커터",
@@ -23177,7 +24494,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<300>": {
+        "name": "특훈 기록",
+        "description": "가공소에 배치 후 <#cc.kw>칩</> 가공 시, 부산물 산출 확률 <#cc.vup>70{'%'}</> 상승"
+      },
+      "workshop_formula_cost3<300>": {
+        "name": "무념무상",
+        "description": "가공소에 배치 후 컨디션 <#cc.kw>2</> 소모하는 <#cc.kw>칩</> 가공 시 컨디션 소모 <#cc.vup>-1</>"
+      }
+    }
   },
   "sideroca": {
     "name": "시데로카",
@@ -23303,7 +24630,17 @@
         "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<020>": {
+        "name": "가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<320>": {
+        "name": "전심전력",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 마스터리 스킬이 <#cc.vup>3</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "shamare": {
     "name": "샤마르",
@@ -23548,7 +24885,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_wt&cost<000>": {
+        "name": "재봉 α",
+        "description": "무역소에 배치 시, 해당 무역소의 <#cc.kw>고품질 귀금속 오더</>의 출현 확률이 <#cc.kw>소폭 상승</> (확률은 작업 시간의 영향을 받음), 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "trade_ord_vodfox<000>": {
+        "name": "속삭임",
+        "description": "무역소에 배치 시 해당 무역소 내 다른 인원이 제공하는 오더 수주 효율이 <#cc.vdown>전부 0이 되고</>, 각 인원의 오더 수주 효율 <#cc.vup>+45{'%'}</>, 모든 인원의 시간당 컨디션 소모 <#cc.vdown>+0.25</>"
       }
     }
   },
@@ -23995,7 +25343,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession<080>": {
+        "name": "스페셜리스트 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>스페셜리스트</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<180>": {
+        "name": "가면의 유령",
+        "description": "훈련실에 배치 시, <#cc.kw>스페셜리스트</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+60{'%'}</>"
       }
     }
   },
@@ -24054,7 +25413,17 @@
         "description": "공격을 진행하지 않고,  <#ba.kw>배치 인원 수</> 제약을 받지 않으나,  재배치 시간이 매우 길다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": "예비 에너지",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+10{'%'}</>"
+      },
+      "power_rec_spd&cost<000>": {
+        "name": "넘치는 열정",
+        "description": "발전소에 배치 시, 시간당 컨디션 소모 <#cc.vup>-0.52</>"
+      }
+    }
   },
   "elysium": {
     "name": "엘리시움",
@@ -24244,7 +25613,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_team<060>": {
+        "name": "통신원",
+        "description": "응접실에 배치 시, <#cc.kw>로도스 아일랜드 제약회사</> 단서를 더 쉽게 획득 (업무 시간이 확률에 영향을 줌)"
+      },
+      "meet_flag<060>": {
+        "name": "깃발 꽂기",
+        "description": "응접실에 배치 시, 획득한 단서가 <#cc.kw>로도스 아일랜드 제약회사</> 단서가 아닐 때마다, <#cc.kw>로도스 아일랜드 제약회사</> 단서 출현 확률이 추가로 상승 (업무 시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "w": {
     "name": "W",
@@ -24605,7 +25984,22 @@
           }
         },
         "traitCandidates": {},
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession2<040>": {
+        "name": "스나이퍼 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<640>": {
+        "name": "기회주의",
+        "description": "훈련실에 배치 시, <#cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 마스터리 스킬이 <#cc.vup>3</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+65{'%'}</>"
+      },
+      "train_cost&profession<340>": {
+        "name": "따분함",
+        "description": "훈련실에 배치하여 <#cc.kw>스나이퍼</> 훈련 마스터리 스킬이 <#cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <#cc.vdown>+1</>"
       }
     }
   },
@@ -24928,7 +26322,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd&power<010>": {
+        "name": "자동화 β",
+        "description": "제조소에 배치 시, 해당 제조소 내의 오퍼레이터가 제공하는 생산력이 <#cc.vdown>전부 0이 되고</>(시설 수량에 따라 제공하는 생산력 미포함), <#cc.kw>발전소</> 하나당 해당 제조소의 생산력 <#cc.vup>+10{'%'}</>"
+      },
+      "manu_prod_spd&power<020>": {
+        "name": "해마 리프",
+        "description": "제조소에 배치 시, 해당 제조소 내의 오퍼레이터가 제공하는 생산력이 <#cc.vdown>전부 0이 되고</>(시설 수량에 따라 제공하는 생산력 미포함), <#cc.kw>발전소</> 하나당 해당 제조소의 생산력 <#cc.vup>+15{'%'}</>"
       }
     }
   },
@@ -25056,7 +26461,17 @@
         "description": "스킬 발동 시 일반공격이 마법 피해를 준다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit&cost<011>": {
+        "name": "독불장군",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>, 창고 용량 상한 <#cc.vdown>-12</>, 시간당 컨디션 소모 <#cc.vdown>+0.25</>"
+      },
+      "manu_prod_limit&cost<020>": {
+        "name": "탐험가",
+        "description": "제조소에 배치 시, 창고 용량 상한 <#cc.vup>+16</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      }
+    }
   },
   "tsukinogi": {
     "name": "츠키노기",
@@ -25256,7 +26671,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue<010>": {
+        "name": "재앙정보전달자 α",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "hire_spd&clue<100>": {
+        "name": "타인 통찰",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+35{'%'}</>, 모집 인원마다 단서 수집 속도가 추가로 <#cc.vup>+5{'%'}</> (초기 모집 인원은 포함하지 않음)"
+      }
+    }
   },
   "podenco": {
     "name": "포덴코",
@@ -25462,7 +26887,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<010>": {
+        "name": "자상함",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "dorm_rec_single<001>": {
+        "name": "요양",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.65</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "dorm_rec_all<012>": {
+        "name": "훈훈한 감동",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "absinthe": {
     "name": "압생트",
@@ -25652,7 +27091,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_team<050>": {
+        "name": "비밀조사",
+        "description": "응접실에 배치 시, <#cc.kw>우르수스 학생자치단</> 단서를 더 쉽게 획득 (업무 시간이 확률에 영향을 줌)"
+      },
+      "meet_flag<050>": {
+        "name": "선별",
+        "description": "응접실에 배치 시, 획득한 단서가 <#cc.kw>우르수스 학생자치단</> 단서가 아닐 때 마다, <#cc.kw>우르수스 학생자치단</> 단서 출현 확률이 추가로 상승 (업무 시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "leonhardt": {
     "name": "레온하르트",
@@ -25861,7 +27310,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<220>": {
+        "name": "구조역학",
+        "description": "가공소에 배치 후 <#cc.kw>기반시설 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>75{'%'}</> 상승"
+      },
+      "workshop_formula_cost3<220>": {
+        "name": "선광학",
+        "description": "가공소에 배치 후 컨디션 <#cc.kw>4</> 소모하는 <#cc.kw>기반시설 재료</> 가공 시 컨디션 소모 <#cc.vup>-2</>"
+      }
+    }
   },
   "rosa": {
     "name": "로사",
@@ -26103,7 +27562,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<020>": {
+        "name": "학생회 회장",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.g.ussg><#cc.kw>우르수스 학생자치단</></> 오퍼레이터가 1명 증가할 때마다 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "hire_spd&clue2<250>": {
+        "name": "인망",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도<#cc.vup>+20{'%'}</>, 레퍼런스 서칭 <#cc.vup>1</>회 완료 시 마다 <#cc.kw>우르수스 학생자치단</> 단서 획득 확률 증가 (확률은 작업 시간과 모집 인원의 영향을 받음)"
+      }
+    }
   },
   "click": {
     "name": "클릭",
@@ -26229,7 +27698,17 @@
         "description": "<#ba.kw>공중 유닛</>을 조작하여 적에게 <#ba.kw>마법 대미지</>\n공중 유닛은 연속으로 동일한 적을 공격할 시 대미지가 증가한다 (최고 오퍼레이터의 110{'%'} 공격력에 해당하는 대미지)"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_cost<000>": {
+        "name": "Vlog",
+        "description": "제조소에 배치하여 <#cc.kw>작전기록</> 생산 시 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "manu_formula_limit<010>": {
+        "name": "편집 β",
+        "description": "제조소에 배치하여 <#cc.kw>작전기록</> 생산 시 창고 용량 상한 <#cc.vup>+15</>"
+      }
+    }
   },
   "ayerscarpe": {
     "name": "에이어스카르페",
@@ -26363,7 +27842,17 @@
         "description": "공격력의 80{'%'}로 <#ba.kw>원거리 공격</> 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<000>": {
+        "name": "단서 수집 α",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승"
+      },
+      "meet_spd<020>": {
+        "name": "단서 수집 β",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>20{'%'}</> 상승"
+      }
+    }
   },
   "folinic": {
     "name": "폴리닉",
@@ -26549,7 +28038,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<111>": {
+        "name": "독리학 α",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>75{'%'}</> 상승"
+      },
+      "workshop_formula_cost3<100>": {
+        "name": "철두철미",
+        "description": "가공소에 배치 후 컨디션 <#cc.kw>2</> 소모하는 <#cc.kw>정예화 재료</> 가공 시 컨디션 소모 <#cc.vup>-1</>"
+      }
+    }
   },
   "suzuran": {
     "name": "스즈란",
@@ -26791,7 +28290,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<060>": {
+        "name": "서포터 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>서포터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<160>": {
+        "name": "공명",
+        "description": "훈련실에 배치 시, <#cc.kw>서포터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "chiave": {
     "name": "키아베",
@@ -26997,7 +28506,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<110>": {
+        "name": "영감",
+        "description": "가공소에 배치 후 컨디션 <#cc.kw>4</> 소모하는 <#cc.kw>정예화 재료</> 가공 시 컨디션 소모 <#cc.vup>-1</>"
+      },
+      "workshop_formula_device<000>": {
+        "name": "DIY 장치",
+        "description": "가공소에 배치 후 <#cc.kw>장치</>류 재료 가공 시, 부산물 산출 확률 <#cc.vup>90{'%'}</> 상승"
+      }
+    }
   },
   "beeswax": {
     "name": "비즈왁스",
@@ -27233,7 +28752,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession<050>": {
+        "name": "캐스터 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>캐스터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<051>": {
+        "name": "캐스터 마스터리 β",
+        "description": "훈련실에 배치 시, <#cc.kw>캐스터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+50{'%'}</>"
       }
     }
   },
@@ -27491,7 +29021,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd_addition<041>": {
+        "name": "저속 촬영",
+        "description": "제조소에 배치 시, 첫 시간 생산력<#cc.vup>+15{'%'}</>, 그 이후 시간당 <#cc.vup>+2{'%'}</>, 최대 <#cc.vup>+25{'%'}</>"
+      },
+      "manu_formula_limit<0000>": {
+        "name": "편집 α",
+        "description": "제조소에 배치하여 <#cc.kw>작전기록</> 생산 시 창고 용량 상한 <#cc.vup>+12</>"
       }
     }
   },
@@ -27683,7 +29224,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_limit_diff<000>": {
+        "name": "시장경제",
+        "description": "무역소에 배치 시, 현재 오더 수와 오더 수주 상한의 차이 <#cc.vup>1</>당, 오더 수주 효율 <#cc.vup>+4{'%'}</>"
+      },
+      "trade_ord_limit_count<000>": {
+        "name": "상인의 길",
+        "description": "무역소에 배치 시, 현재 무역소 내의 다른 오퍼레이터가 제공하는 오더 수주 효율 <#cc.vup>10{'%'}</>당 오더 수주 상한 <#cc.vdown>-1</>(오더 최소 1개), 오더 개수 <#cc.vup>1</>개당 오더 수주 효율 <#cc.vup>+4{'%'}</> (일부 스킬은 <?cc.t.strong2><#cc.rem>특수 중첩 규칙</></> 적용)"
+      }
+    }
   },
   "andreana": {
     "name": "안드레아나",
@@ -27873,7 +29424,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": "독거",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.7</>"
+      },
+      "dorm_rec_oneself<011>": {
+        "name": "트러블 회피",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.85</>"
+      }
+    }
   },
   "thorns": {
     "name": "쏜즈",
@@ -28059,7 +29620,17 @@
         "description": "공격력의 80{'%'}로 <#ba.kw>원거리 공격</> 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<012>": {
+        "name": "'연금술'",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>50{'%'}</>"
+      },
+      "workshop_formula_recovery<000>": {
+        "name": "'폭발의 예술'",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 미산출 <#cc.vup>2</>회당 <#cc.kw>자신의 컨디션 1회 회복</>. 회복량은 <#cc.kw>재료 가공에 소모되는 컨디션량에 상응.</> (가공 완료 후 합산)"
+      }
+    }
   },
   "reserve-operator-melee": {
     "name": "예비 인원 - 근거리",
@@ -28072,7 +29643,8 @@
         "description": "적 2명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "reserve-operator-sniper": {
     "name": "예비 인원 - 스나이퍼",
@@ -28085,7 +29657,8 @@
         "description": "비행 유닛 우선 공격"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "reserve-operator-logistics": {
     "name": "예비 인원 - 지원",
@@ -28098,7 +29671,8 @@
         "description": "아군 HP 회복"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "reserve-operator-caster": {
     "name": "예비 인원 - 캐스터",
@@ -28111,7 +29685,8 @@
         "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "aciddrop": {
     "name": "애시드드롭",
@@ -28285,7 +29860,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<031>": {
+        "name": "B-girl",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+40{'%'}</>"
+      },
+      "dorm_rec_single&oneself<012>": {
+        "name": "Give me five",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.35</> (동종 효과 중 가장 높은 수치만 적용); 동시에 자신의 시간당 컨디션 회복 <#cc.vup>+0.35</>"
+      }
+    }
   },
   "sharp": {
     "name": "Sharp",
@@ -28353,7 +29938,8 @@
         "description": "적 1명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "flint": {
     "name": "플린트",
@@ -28487,7 +30073,17 @@
         "description": "적 1명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<020>": {
+        "name": "가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<220>": {
+        "name": "고행",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 마스터리 스킬이 <#cc.vup>2</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "stormeye": {
     "name": "Stormeye",
@@ -28555,7 +30151,8 @@
         "description": "비행 유닛 우선 공격"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "tomimi": {
     "name": "토미미",
@@ -28753,7 +30350,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single_P<001>": {
+        "name": "바베큐 마스터",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용), 목표 오퍼레이터가 <#cc.kw><{'@'}cc.gvial>가비알</></>일 경우 회복 효과가 추가로 <#cc.vup>+0.45</>"
+      },
+      "train_spd&profession2<150>": {
+        "name": "수박 겉핥기",
+        "description": "훈련실에 배치 시, <#cc.kw>캐스터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 이번 훈련을 통해 스킬 마스터리가 <#cc.vup>1</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "pith": {
     "name": "Pith",
@@ -28821,7 +30428,8 @@
         "description": "일반 공격으로 적에게 <#ba.kw>광역 마법 대미지</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "touch": {
     "name": "Touch",
@@ -28889,7 +30497,8 @@
         "description": "아군 HP 회복"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "eunectes": {
     "name": "유넥티스",
@@ -29169,7 +30778,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&power<000>": {
+        "name": "자동화 α",
+        "description": "제조소에 배치 시, 해당 제조소 내의 오퍼레이터가 제공하는 생산력이 <#cc.vdown>전부 0이 되고</>(시설 수량에 따라 제공하는 생산력 미포함), <#cc.kw>발전소</> 하나당 해당 제조소의 생산력 <#cc.vup>+5{'%'}</>"
+      },
+      "manu_prod_spd&power<010>": {
+        "name": "자동화 β",
+        "description": "제조소에 배치 시, 해당 제조소 내의 오퍼레이터가 제공하는 생산력이 <#cc.vdown>전부 0이 되고</>(시설 수량에 따라 제공하는 생산력 미포함), <#cc.kw>발전소</> 하나당 해당 제조소의 생산력 <#cc.vup>+10{'%'}</>"
+      },
+      "control_pow_bot<000>": {
+        "name": "괜찮을 거 같은데",
+        "description": "제어 센터에 배치 시, <#cc.kw>Lancet-2</>가 <#cc.kw>발전소</>에 배치된 경우, <#cc.kw>발전소</> <#cc.vup>+2</>개로 간주함 (시설 수량에만 영향을 줌)"
+      }
+    }
   },
   "arene": {
     "name": "아렌",
@@ -29307,7 +30930,21 @@
         "description": "공격력의 80{'%'}로 <#ba.kw>원거리 공격</> 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_dorm<000>": {
+        "name": "“쓸모없는 물건은 없고”",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 숙소 내 컨디션이 <#cc.vup>4</> 이하인 오퍼레이터 <#cc.kw>1</>명당 부산물 산출 확률 <#cc.vup>5{'%'}</> 상승"
+      },
+      "workshop_formula_dorm<001>": {
+        "name": "“쓸모없는 인간은 없다”",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 숙소 내 컨디션이 <#cc.vup>20</> 이하인 오퍼레이터 <#cc.kw>1</>명당 부산물 산출 확률 <#cc.vup>5{'%'}</> 상승"
+      },
+      "dorm_rec_oneself2<000>": {
+        "name": "'독거'",
+        "description": "숙소에 배치 시 자신의 시간당 컨디션 회복 <#cc.vup>+0.7</>, 만약 해당 숙소 내에 다른 오퍼레이터가 있는 경우, 모든 인원의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      }
+    }
   },
   "april": {
     "name": "에이프릴",
@@ -29497,7 +31134,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<000>": {
+        "name": "오더 관리 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+10{'%'}</>, 오더 상한 <#cc.vup>+2</>"
+      },
+      "trade_ord_spd&limit<001>": {
+        "name": "오더 관리 β",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+10{'%'}</>, 오더 상한 <#cc.vup>+4</>"
+      },
+      "dorm_rec_all<000>": {
+        "name": "격려",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "mint": {
     "name": "민트",
@@ -29687,7 +31338,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<050>": {
+        "name": "캐스터 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>캐스터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<250>": {
+        "name": "박학다식",
+        "description": "훈련실에 배치 시, <#cc.kw>캐스터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 이번 훈련을 통해 스킬 마스터리가 <#cc.vup>2</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
+      },
+      "manu_formula_spd<201>": {
+        "name": "지질학 α",
+        "description": "제조소에 배치 시, <#cc.kw>오리지늄</>류에 대한 생산력 <#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "surtr": {
     "name": "수르트",
@@ -29881,7 +31546,17 @@
         "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": "가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<120>": {
+        "name": "기억하는 검술",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "bubble": {
     "name": "버블",
@@ -30055,7 +31730,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_limit&cost<010>": {
+        "name": "수집벽",
+        "description": "제조소에 배치 시, 창고 용량 상한 <#cc.vup>+10</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "manu_prod_spd_variable3<000>": {
+        "name": "큰 게 좋아!",
+        "description": "제조소에 배치 시, 해당 제조소 내의 오퍼레이터가 자신이 상승시킨 창고 용량에 따라 일정 생산력 제공. <#cc.vup>16</>칸 이하일 경우, 창고 용량 1칸당 <#cc.vup>1{'%'}</>의 생산력을 제공하고, <#cc.vup>16</>칸 보다 클 경우 창고 용량 1칸당 <#cc.vup>3{'%'}</>의 생산력 제공. (<?cc.m.var1><#cc.rem>재활용</></> 스킬과 중첩되지 않음. 우선으로 발동됨)"
+      }
+    }
   },
   "whislash": {
     "name": "위슬래시",
@@ -30245,7 +31930,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": "가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd<0000>": {
+        "name": "교관",
+        "description": "훈련실에 배치 시, 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "aosta": {
     "name": "아오스타",
@@ -30379,7 +32074,17 @@
         "description": "공격 범위 내 <#ba.kw>모든 적</>을 공격\n자신의 전방 첫 줄의 적에게 공격력이 150{'%'}까지 상승한다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<110>": {
+        "name": "영감",
+        "description": "가공소에 배치 후 컨디션 <#cc.kw>4</> 소모하는 <#cc.kw>정예화 재료</> 가공 시 컨디션 소모 <#cc.vup>-1</>"
+      },
+      "workshop_formula_device<030>": {
+        "name": "DIY 폴리에스테르",
+        "description": "가공소에 배치 후 <#cc.kw>폴리에스테르</>류 재료 가공 시, 부산물 산출 확률 <#cc.vup>90{'%'}</> 상승"
+      }
+    }
   },
   "blemishine": {
     "name": "블레미샤인",
@@ -30669,7 +32374,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_free<000>": {
+        "name": "알뜰살뜰",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 소모하는 용문폐 절감"
+      },
+      "workshop_formula_cost2<000>": {
+        "name": "의욕 넘치는 수리공",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률이 <#cc.vup>40{'%'}</> 상승하고, 컨디션 소모가 <#cc.kw>8</> 이상인 모든 항목의 컨디션 소모 <#cc.vup>-4</>"
+      }
+    }
   },
   "whisperain": {
     "name": "위스퍼레인",
@@ -30859,7 +32574,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_bd_n1_n1<100>": {
+        "name": "순유",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+20{'%'}</>, 모집 인원마다 <?cc.bd_a1_a1><#cc.rem>기억 조각</></> <#cc.vup>+10</>개 획득 (초기 모집 인원은 포함하지 않음)"
+      },
+      "hire_spd_bd_n1<000>": {
+        "name": "추억 회상",
+        "description": "인사부 사무실에 배치 시, <?cc.bd_a1_a1><#cc.rem>기억 조각</> <#cc.vup>1</>개마다 <?cc.bd_a1><#cc.rem>감지 정보</></> <#cc.vup>1</>점으로 전환, 컨디션 소진 시 모든 <?cc.bd_a1_a1><#cc.rem>기억 조각</></>과 자신이 누적한 <?cc.bd_a1><#cc.rem>감지 정보</></> 초기화"
+      }
+    }
   },
   "rosmontis": {
     "name": "로즈몬티스",
@@ -31159,7 +32884,22 @@
             "description": "저지당하고 있는 유닛의 방어력을 감소시킨다"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd_bd_n1<000>": {
+        "name": "초감각",
+        "description": "제조소에 배치 시, 숙소 내 오퍼레이터 <#cc.kw>1</>명당 <?cc.bd_a1><#cc.rem>감지 정보</></> <#cc.vup>+1</>, 이와 동시에, <?cc.bd_a1><#cc.rem>감지 정보</></> <#cc.vup>1</>점당 <?cc.bd_A><#cc.rem>생각의 사슬</></> <#cc.vup>1</>점으로 전환"
+      },
+      "manu_prod_spd_bd<000>": {
+        "name": "염력",
+        "description": "제조소에 배치 시, <?cc.bd_A><#cc.rem>생각의 사슬</></> <#cc.vup>2</>점당 생산력 <#cc.vup>+1{'%'}</>"
+      },
+      "manu_prod_spd_bd<010>": {
+        "name": "의식의 실체",
+        "description": "제조소에 배치 시, <?cc.bd_A><#cc.rem>생각의 사슬</></> <#cc.vup>1</>점당 생산력 <#cc.vup>+1{'%'}</>"
       }
     }
   },
@@ -31351,7 +33091,17 @@
         "description": "아군의 치료를 <#ba.kw>받지 못한다</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost4<000>": {
+        "name": "집착",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 대응되는 항목의 컨디션 <#cc.vup>2</> 소모"
+      },
+      "workshop_formula_device<050>": {
+        "name": "DIY(원암)",
+        "description": "가공소에 배치 후 <#cc.kw>원암</>류 재료 가공 시, 부산물 산출 확률 <#cc.vup>90{'%'}</> 상승"
+      }
+    }
   },
   "jackie": {
     "name": "재키",
@@ -31485,7 +33235,17 @@
         "description": "적 1명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single&oneself<000>": {
+        "name": "활발",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용); 동시에 자신의 시간당 컨디션 회복 <#cc.vup>+0.4</>"
+      },
+      "meet_spd<0020>": {
+        "name": "단서 수집 β",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>20{'%'}</> 상승"
+      }
+    }
   },
   "pinecone": {
     "name": "파인콘",
@@ -31619,7 +33379,17 @@
         "description": "공격 범위 내 <#ba.kw>모든 적</>을 공격\n자신의 전방 첫 줄의 적에게 공격력이 150{'%'}까지 상승한다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<200>": {
+        "name": "공학",
+        "description": "가공소에 배치 후 <#cc.kw>기반시설 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>70{'%'}</> 상승"
+      },
+      "workshop_formula_cost3<200>": {
+        "name": "휴대용 축전지",
+        "description": "가공소에 배치 후 컨디션 <#cc.kw>2</> 소모하는 <#cc.kw>기반시설 재료</> 가공 시 컨디션 소모 <#cc.vup>-1</>"
+      }
+    }
   },
   "kafka": {
     "name": "카프카",
@@ -31813,7 +33583,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_wt&cost<001>": {
+        "name": "수공예품 α",
+        "description": "무역소에 배치 시, 해당 무역소의 <#cc.kw>고품질 귀금속 오더</>의 출현 확률이 <#cc.kw>소폭 상승</> (확률은 작업 시간의 영향을 받음), 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "trade_ord_wt&cost<011>": {
+        "name": "수공예품 β",
+        "description": "무역소에 배치 시, 해당 무역소의 <#cc.kw>고품질 귀금속 오더</>의 출현 확률이 <#cc.kw>상승</> (확률은 작업 시간의 영향을 받음), 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      }
+    }
   },
   "robin": {
     "name": "로빈",
@@ -32100,7 +33880,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession2<080>": {
+        "name": "스페셜리스트 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>스페셜리스트</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<180>": {
+        "name": "트랩 포커스",
+        "description": "훈련실에 배치 시 <#cc.kw>스페셜리스트</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 이번 훈련을 통해 스킬 마스터리가 <#cc.vup>1</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
       }
     }
   },
@@ -32284,7 +34075,17 @@
         "description": "적 1명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue2<230>": {
+        "name": "내막",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+20{'%'}</>, 레퍼런스 서칭 <#cc.vup>1</>회 완료 시마다 <#cc.kw>블랙스틸 월드와이드</> 단서 획득 확률 증가 (확률은 작업 시간과 모집 인원의 영향을 받음)"
+      },
+      "meet_flag<010>": {
+        "name": "컬럼비아의 역사",
+        "description": "응접실에 배치 시, 획득한 단서가 <#cc.kw>라인 랩</> 단서가 아닐 때마다, <#cc.kw>라인 랩</> 단서 출현 확률이 추가로 상승 (업무 시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "beanstalk": {
     "name": "빈스토크",
@@ -32442,7 +34243,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd<003>": {
+        "name": "메탈 크랩·콩이",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_limit&cost<001>": {
+        "name": "메탈 크랩·판판",
+        "description": "제조소에 배치 시, 창고 용량 상한 <#cc.vup>+8</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
       }
     }
   },
@@ -32634,7 +34446,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_bd_n1_n2<000>": {
+        "name": "자기 전 이야기",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.1</>(동종 효과 중 가장 높은 수치만 적용), 현재 숙소 레벨당 <?cc.bd_a1_a2><#cc.rem>꿈나라</></> <#cc.vup>1</>스택 제공"
+      },
+      "dorm_rec_bd_n1<000>": {
+        "name": "꿈속의 잠꼬대",
+        "description": "숙소에 배치 시, <?cc.bd_a1_a2><#cc.rem>꿈나라</></> <#cc.vup>1</>스택당 <?cc.bd_a1><#cc.rem>감지 정보</></> <#cc.vup>1</>점으로 전환"
+      }
+    }
   },
   "archetto": {
     "name": "아르케토",
@@ -32936,7 +34758,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&dorm&lv<000>": {
+        "name": "경건한 펀딩·α",
+        "description": "무역소에 배치 시, 숙소의 레벨당 오더 수주 효율 <#cc.vup>+1{'%'}</>"
+      },
+      "trade_ord_spd&dorm&lv<010>": {
+        "name": "경건한 펀딩·β",
+        "description": "무역소에 배치 시, 숙소의 레벨당 오더 수주 효율 <#cc.vup>+2{'%'}</>"
+      }
+    }
   },
   "tuye": {
     "name": "투예",
@@ -33126,7 +34958,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&gold<000>": {
+        "name": "물류계획 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+5{'%'}</>, <?cc.t.flow_gold><#cc.kw>순금 생산 라인</></> <#cc.kw>4</>개당 현재 무역소의 오더 수주 효율이 추가로 <#cc.vup>+15{'%'}</>"
+      },
+      "trade_ord_spd&gold<010>": {
+        "name": "물류계획 β",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+5{'%'}</>, <?cc.t.flow_gold><#cc.kw>순금 생산 라인</></> <#cc.kw>2</>개당 현재 무역소의 오더 수주 효율이 추가로 <#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "lava-the-purgatory": {
     "name": "라바 더 퍼거토리",
@@ -33335,7 +35177,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<900>": {
+        "name": "얼터네이트",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.g.sp><#cc.kw>얼터네이트</></> 오퍼레이터가 1명 증가할 때마다 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "power_rec_spd<022>": {
+        "name": "열에너지 충전 γ",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "mr-nothing": {
     "name": "우요우",
@@ -33525,7 +35377,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue<101>": {
+        "name": "호사가",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+35{'%'}</>, 모집 인원마다 단서 수집 속도가 추가로 <#cc.vup>+5{'%'}</> (초기 모집 인원은 포함하지 않음)"
+      },
+      "trade_ord_spd_bd_n2<000>": {
+        "name": "\"원하는 자가 걸려든다\"",
+        "description": "무역소에 배치 시, 숙소 내 오퍼레이터 <#cc.kw>1</>명당 <?cc.bd_b1><#cc.rem>속세의 화식</></> <#cc.vup>+1</>, <?cc.bd_b1><#cc.rem>속세의 불꽃</></> <#cc.vup>1</>점당 오더 수주 효율 <#cc.vup>+1{'%'}</>"
+      }
+    }
   },
   "saga": {
     "name": "사가",
@@ -33827,7 +35689,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<010>": {
+        "name": "뱅가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>뱅가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<110>": {
+        "name": "입세",
+        "description": "훈련실에 배치 시, <#cc.kw>뱅가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "dusk": {
     "name": "시",
@@ -34161,7 +36033,18 @@
             "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "control_mp_cost&bd1<000>": {
+        "name": "\"물건으로 인해 기뻐하지 말고\"",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>. 자신의 컨디션이 <#cc.kw>12</> 미만일 경우, <?cc.bd_b1><#cc.rem>속세의 화식</></> <#cc.vup>+15</>"
+      },
+      "control_mp_cost&bd2<000>": {
+        "name": "\"자신으로 인해 슬퍼하지 말라\"",
+        "description": "제어 센터에 배치 시, 자신의 시간당 컨디션 소모 <#cc.vdown>+0.5</>. 자신의 컨디션이 <#cc.kw>12</> 이상일 경우, <?cc.bd_a1><#cc.rem>감지 정보</></> <#cc.vup>+10</>"
       }
     }
   },
@@ -34357,7 +36240,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<990>": {
+        "name": "레인보우 팀",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.g.R6><#cc.kw>레인보우 팀</></> 오퍼레이터가 1명 증가할 때마다 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "control_mp_bd<010>": {
+        "name": "우르수스 특제 음료",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.g.ussg><#cc.kw>우르수스 학생자치단</> 오퍼레이터가 1명 증가할 때마다 <?cc.bd_tachanka><#cc.rem>우르수스 특제 음료</></> <#cc.vup>+1</>"
+      }
+    }
   },
   "blitz": {
     "name": "Blitz",
@@ -34497,7 +36390,17 @@
         "description": "적 3명 저지 가능, 원거리 공격 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<990>": {
+        "name": "레인보우 팀",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.g.R6><#cc.kw>레인보우 팀</></> 오퍼레이터가 1명 증가할 때마다 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "hire_spd_blitz<000>": {
+        "name": "언어학",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+20{'%'}</>, <?cc.bd_ash><#cc.rem>정보 저장</></> <#cc.vup>1</>점당 누적 속도가 추가로 <#cc.vup>+5{'%'}</>, <?cc.bd_tachanka><#cc.rem>우르수스 특제 음료</></> <#cc.vup>1</>병당 누적 속도가 추가로 <#cc.vup>+5{'%'}</>"
+      }
+    }
   },
   "frost": {
     "name": "Frost",
@@ -34802,7 +36705,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "control_mp_cost&faction<990>": {
+        "name": "레인보우 팀",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.g.R6><#cc.kw>레인보우 팀</></> 오퍼레이터가 1명 증가할 때마다 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "workshop_formula_frost<000>": {
+        "name": "기계 엔지니어링",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>50{'%'}</> 상승, <?cc.bd_ash><#cc.rem>정보 저장</></> <#cc.vup>1</>점당 부산물 산출 확률 <#cc.vup>5{'%'}</> 추가 상승, <?cc.bd_tachanka><#cc.rem>우르수스 특제 음료</></> 수량이 <#cc.vup>4</>병에 도달 시 부산물 산출 확률 <#cc.vup>15{'%'}</> 추가 상승"
       }
     }
   },
@@ -35054,7 +36968,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<990>": {
+        "name": "레인보우 팀",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.g.R6><#cc.kw>레인보우 팀</></> 오퍼레이터가 1명 증가할 때마다 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "control_mp_bd<000>": {
+        "name": "정보 저장",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.g.R6><#cc.kw>레인보우 팀</></> 오퍼레이터가 1명 증가할 때마다 <?cc.bd_ash><#cc.rem>정보 저장</></> <#cc.vup>+1</>"
+      }
+    }
   },
   "heavyrain": {
     "name": "헤비레인",
@@ -35244,7 +37168,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<006>": {
+        "name": "호위",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "train_spd&profession2<030>": {
+        "name": "디펜더 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>디펜더</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<230>": {
+        "name": "진지 경험",
+        "description": "훈련실에 배치 시, <#cc.kw>디펜더</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 이번 훈련을 통해 스킬 마스터리가 <#cc.vup>2</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "toddifons": {
     "name": "토디폰스",
@@ -35450,7 +37388,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<111>": {
+        "name": "주조",
+        "description": "가공소에 배치 후 컨디션 <#cc.kw>4</> 소모하는 <#cc.kw>정예화 재료</> 가공 시 컨디션 소모 <#cc.vup>-1</>"
+      },
+      "workshop_formula_device<020>": {
+        "name": "DIY(이철)",
+        "description": "가공소에 배치 후 <#cc.kw>이철</>류 재료 가공 시, 부산물 산출 확률 <#cc.vup>90{'%'}</> 상승"
+      }
+    }
   },
   "passenger": {
     "name": "패신저",
@@ -35745,7 +37693,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<003>": {
+        "name": "전자기 충전 α",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+10{'%'}</>"
+      },
+      "power_rec_spd<016>": {
+        "name": "에너지 집중",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd&power<000>": {
+        "name": "자동화 α",
+        "description": "제조소에 배치 시, 해당 제조소 내의 오퍼레이터가 제공하는 생산력이 <#cc.vdown>전부 0이 되고</>(시설 수량에 따라 제공하는 생산력 미포함), <#cc.kw>발전소</> 하나당 해당 제조소의 생산력 <#cc.vup>+5{'%'}</>"
+      }
+    }
   },
   "akafuyu": {
     "name": "아카후유",
@@ -35945,7 +37907,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<020>": {
+        "name": "가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<120>": {
+        "name": "노부카게 유파",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 마스터리 스킬이 <#cc.vup>1</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "skadi-the-corrupting-heart": {
     "name": "스카디 더 커럽팅 하트",
@@ -36282,7 +38254,22 @@
             "description": "공격 범위를 스카디 더 커럽팅 하트 공격 범위의 연장선으로 간주한다."
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession2<060>": {
+        "name": "서포터 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>서포터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<660>": {
+        "name": "동화",
+        "description": "훈련실에 배치 시, <#cc.kw>서포터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 이번 훈련을 통해 스킬 마스터리가 <#cc.vup>3</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+65{'%'}</>"
+      },
+      "train_cost&profession<360>": {
+        "name": "변이",
+        "description": "훈련실에 배치 시, <#cc.kw>서포터</> 오퍼레이터의 훈련 마스터리 스킬이 <#cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <#cc.vdown>+1</>"
       }
     }
   },
@@ -36510,7 +38497,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_aegir1<000>": {
+        "name": "조석의 파수꾼",
+        "description": "제어 센터에 배치 시, 숙소를 제외한 시설에 배치한 <?cc.g.abyssal><#cc.kw>어비설 헌터스</></> 오퍼레이터 1명당 자신의 시간당 컨디션 소모 <#cc.vdown>+0.5</>, 반대의 경우 자신의 시간당 컨디션 회복 <#cc.vup>+0.5</>, 숙소 내에 배치한 <?cc.g.abyssal><#cc.kw>어비설 헌터스</></> 오퍼레이터의 컨디션이 최대인 경우 추가로 <#cc.vup>+0.5</>"
+      },
+      "control_mp_aegir2<000>": {
+        "name": "무리 사냥 α",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>, 기반시설 내 <?cc.g.abyssal><#cc.kw>어비설 헌터스</></> 오퍼레이터는 <?cc.c.abyssal2_1><#cc.rem>특수 버프</></> 획득 (일부 스킬은 <?cc.c.abyssal2_3><#cc.rem>특수 중첩 규칙</></> 적용)"
+      },
+      "control_mp_aegir2<010>": {
+        "name": "무리 사냥 β",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>, 기반시설 내 <?cc.g.abyssal><#cc.kw>어비설 헌터스</></> 오퍼레이터는 <?cc.c.abyssal2_2><#cc.rem>특수 버프</></> 획득 (일부 스킬은 <?cc.c.abyssal2_3><#cc.rem>특수 중첩 규칙</></> 적용)"
+      }
+    }
   },
   "kaltsit": {
     "name": "켈시",
@@ -36872,7 +38873,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_proc_probability<040>": {
+        "name": "미지의 기술",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>70{'%'}</>"
+      },
+      "control_prod_spd<000>": {
+        "name": "최고 권한",
+        "description": "제어 센터에 배치 시, 모든 제조소의 생산력 <#cc.vup>+2{'%'}</> (동종 효과 중 가장 높은 수치만 적용)"
       }
     }
   },
@@ -37064,7 +39076,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single_P<002>": {
+        "name": "독약사의 친구",
+        "description": "숙소에 배치 시, 해당 숙소 내 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용), 목표 오퍼레이터가 <#cc.kw>블루포이즌</>일 경우 회복 효과가 추가로 <#cc.vup>+0.45</>"
+      },
+      "power_rec_spd<002>": {
+        "name": "빛 에너지 충전 α",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+10{'%'}</>"
+      },
+      "power_rec_spd<017>": {
+        "name": "등대 에너지 공급 모듈",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "kirara": {
     "name": "키라라",
@@ -37270,7 +39296,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_line_gold<000>": {
+        "name": "주문 흐름 가시화 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+5{'%'}</>, <?cc.t.flow_gold><#cc.kw>순금 생산 라인</></> <#cc.kw>4</>개당 현재 무역소에 <?cc.t.flow_gold><#cc.kw>순금 생산 라인</></>이 추가로 <#cc.vup>+2</>"
+      },
+      "trade_ord_line_gold<010>": {
+        "name": "주문 흐름 가시화 β",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+5{'%'}</>, <?cc.t.flow_gold><#cc.kw>순금 생산 라인</></> <#cc.kw>2</>개당 현재 무역소에 <?cc.t.flow_gold><#cc.kw>순금 생산 라인</></>이 추가로 <#cc.vup>+2</>"
+      }
+    }
   },
   "bena": {
     "name": "베나",
@@ -37464,7 +39500,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit&cost<020>": {
+        "name": "'믿음직한' 조수",
+        "description": "제조소에 배치 시, 생산력 <#cc.vdown>-20{'%'}</>, 창고 용량 상한 <#cc.vup>+17</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "trade_ord_wt&cost<000>": {
+        "name": "재봉 α",
+        "description": "무역소에 배치 시, 해당 무역소의 <#cc.kw>고품질 귀금속 오더</>의 출현 확률이 <#cc.kw>소폭 상승</> (확률은 작업 시간의 영향을 받음), 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      }
+    }
   },
   "carnelian": {
     "name": "카넬리안",
@@ -37702,7 +39748,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<050>": {
+        "name": "캐스터 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>캐스터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<150>": {
+        "name": "전체 장악",
+        "description": "훈련실에 배치 시, <#cc.kw>캐스터</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "pallas": {
     "name": "팔라스",
@@ -37994,7 +40050,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_limit&cost<003>": {
+        "name": "지혜의 경지",
+        "description": "제조소에 배치 시, 창고 용량 상한 <#cc.vup>+8</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "manu_formula_spd<000>": {
+        "name": "승리의 계책",
+        "description": "제조소에 배치 시, <#cc.kw>작전기록</>류에 대한 생산력 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "la-pluma": {
     "name": "라 플루마",
@@ -38172,7 +40238,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<000>": {
+        "name": "비우기",
+        "description": "가공소에 배치 후 컨디션 <#cc.kw>2</> 소모하는 <#cc.kw>스킬개론</> 가공 시 컨디션 소모 <#cc.vup>-1</>"
+      },
+      "workshop_formula_probability<030>": {
+        "name": "적응력",
+        "description": "가공소에 배치 후 <#cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <#cc.vup>75{'%'}</> 상승"
+      }
+    }
   },
   "tequila": {
     "name": "테킬라",
@@ -38306,7 +40382,17 @@
         "description": "평소에는 공격하지 않고 저지 가능 수 0이며, 스킬 미발동 상태에서 <#ba.kw>{'{'}max_stack_cnt{'}'}</>초간 공격력이 최대 <#ba.kw>+{'{'}atk:0{'%'}{'}'}</>까지 점진적으로 상승, 스킬 종료 후 공격력 리셋"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_long<000>": {
+        "name": "투자 α",
+        "description": "무역소에 배치 후, 다음 <#cc.kw>순금 오더</>의 납품 수가 <#cc.kw>3</> 초과할 경우(위약 오더는 순금 오더로 간주하지 않음), 용문폐 수익 <#cc.kw>+250</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "trade_ord_long<010>": {
+        "name": "투자 β",
+        "description": "무역소에 배치 후, 다음 <#cc.kw>순금 오더</>의 납품 수가 <#cc.kw>3</> 초과할 경우(위약 오더는 순금 오더로 간주하지 않음), 용문폐 수익 <#cc.kw>+500</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      }
+    }
   },
   "chen-the-holungday": {
     "name": "첸 더 홀룽데이",
@@ -38488,7 +40574,21 @@
         "description": "공격 범위 내 <#ba.kw>모든 적</>을 공격\n자신의 전방 첫 줄의 적에게 공격력이 150{'%'}까지 상승한다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<040>": {
+        "name": "스나이퍼 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<440>": {
+        "name": "솔선수범",
+        "description": "훈련실에 배치 시, <#cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 마스터리 스킬이 <#cc.vup>1</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+65{'%'}</>"
+      },
+      "train_cost&profession<140>": {
+        "name": "워커홀릭",
+        "description": "훈련실에 배치하여 <#cc.kw>스나이퍼</> 훈련 마스터리 스킬이 <#cc.vup>1</>레벨까지 도달한 경우, 시간당 컨디션 소모 <#cc.vdown>+1</>"
+      }
+    }
   },
   "mizuki": {
     "name": "미즈키",
@@ -38794,7 +40894,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_skill_spd1<000>": {
+        "name": "의식 협의",
+        "description": "제조소에 배치 시, 해당 제조소 내 <?cc.sk.manu1><#cc.kw>표준화류 스킬</></> 1개당 자신의 생산력 <#cc.vup>+5{'%'}</>"
+      },
+      "manu_prod_spd<010>": {
+        "name": "표준화 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "roberta": {
     "name": "로베르타",
@@ -39068,7 +41178,18 @@
             "description": "배치 후 전방 1명의 근거리 유닛에 방호 지원을 제공 (25초간 지속)"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_formula_probability<200>": {
+        "name": "공학",
+        "description": "가공소에 배치 후 <#cc.kw>기반시설 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>70{'%'}</> 상승"
+      },
+      "manu_prod_spd<010>": {
+        "name": "표준화 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
       }
     }
   },
@@ -39204,7 +41325,21 @@
         "description": "아군 유닛의 HP 회복, 동시에 공격력의 <#ba.kw>{'{'}ep_heal_ratio:0{'%'}{'}'}</>에 해당하는 <?ba.dt.element>원소 피해</> 회복 (부상이 없는 아군 유닛의 <?ba.dt.element>원소 피해</>도 회복 가능)"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost<100>": {
+        "name": "구조대: 주산",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스 누적 속도 <#cc.vup>+10{'%'}</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "hire_spd_cost<110>": {
+        "name": "구조대: 자원 집계",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스 누적 속도 <#cc.vup>+20{'%'}</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "hire_spd_bd_n1_n1<200>": {
+        "name": "구조대: 재앙 후 조사",
+        "description": "인사부 사무실에 배치 시, 모집 인원마다 <<?cc.bd_b1><#cc.rem>속세의 화식</></> <#cc.vup>+10</> (초기 모집 인원은 포함하지 않음)"
+      }
+    }
   },
   "saileach": {
     "name": "사일라흐",
@@ -39442,7 +41577,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<031>": {
+        "name": "빅토리아 문학",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.7</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "control_hire_spd<000>": {
+        "name": "감염력",
+        "description": "제어 센터에 배치 시, 인사부 사무실의 인맥 레퍼런스 누적 속도가 <#cc.vup>30{'%'}</> 미만인 경우(기본 누적 속도 5{'%'} 포함), 인맥 레퍼런스 누적 속도 추가로 <#cc.vup>+20{'%'}</> (해당 버프는 전체 효과 중 유일하며, 다른 버프의 영향을 받지 않음)"
+      }
+    }
   },
   "ashlock": {
     "name": "애쉬락",
@@ -39576,7 +41721,73 @@
         "description": "적을 저지하지 않을 때, 원거리 광역 물리 공격 시전"
       }
     },
-    "tokenSummons": {}
+    "modules": {
+      "uniequip_001_ashlok": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_ashlok": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<002>": {
+        "name": "피누스 실베스트리스 기사단 α",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd<012>": {
+        "name": "피누스 실베스트리스 기사단 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "fartooth": {
     "name": "파투스",
@@ -39864,7 +42075,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<042>": {
+        "name": "'귀향'",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.55</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "manu_prod_spd<002>": {
+        "name": "피누스 실베스트리스 기사단 α",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd<012>": {
+        "name": "피누스 실베스트리스 기사단 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "justice-knight": {
     "name": "저스티스 나이트",
@@ -39921,7 +42146,17 @@
         "description": "공중 목표 우선 공격, <#ba.kw>배치 인원수</> 제한을 받지 않지만 재배치 시간이 매우 길다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": "예비 에너지",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+10{'%'}</>"
+      },
+      "power_prod_spd_P<000>": {
+        "name": "'띠띠~, 가동!'",
+        "description": "발전소에 배치 시, <#cc.kw>와일드메인</>이 배치된 제조소의 생산력 <#cc.vup>+5{'%'}</>"
+      }
+    }
   },
   "pudding": {
     "name": "푸딩",
@@ -40098,7 +42333,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<010>": {
+        "name": "설비 점검",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+15{'%'}</>"
+      },
+      "control_token_prod_spd<000>": {
+        "name": "오버클럭",
+        "description": "제어 센터에 배치 시, <#cc.kw>2</>대 이상의 <?cc.tag.op><#cc.kw>작업 플랫폼</></>이 <#cc.kw>발전소</>에 배치된 경우, 모든 제조소의 생산력 <#cc.vup>+2{'%'}</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "wild-mane": {
     "name": "와일드메인",
@@ -40288,7 +42533,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<002>": {
+        "name": "피누스 실베스트리스 기사단 α",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd<012>": {
+        "name": "피누스 실베스트리스 기사단 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "corroserum": {
     "name": "코로세럼",
@@ -40478,7 +42733,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<113>": {
+        "name": "부식 과학 α",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>75{'%'}</> 상승"
+      },
+      "workshop_formula_probability<123>": {
+        "name": "부식 과학 β",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>80{'%'}</> 상승"
+      },
+      "workshop_formula_drop<030>": {
+        "name": "부식 완화 기술",
+        "description": "가공소에 배치 시, <#cc.kw>정예화 재료</>를 가공하여 <#cc.kw>T3</> 등급의 부산물 획득할 경우 <#cc.kw>이철 번들</> 확정 획득"
+      }
+    }
   },
   "honeyberry": {
     "name": "허니베리",
@@ -40612,7 +42881,21 @@
         "description": "아군 유닛의 HP 회복, 동시에 공격력의 <#ba.kw>{'{'}ep_heal_ratio:0{'%'}{'}'}</>에 해당하는 <?ba.dt.element>원소 피해</> 회복 (부상이 없는 아군 유닛의 <?ba.dt.element>원소 피해</>도 회복 가능)"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<114>": {
+        "name": "약초학 α",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>75{'%'}</> 상승"
+      },
+      "workshop_formula_probability<124>": {
+        "name": "약초학 β",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>80{'%'}</> 상승"
+      },
+      "dorm_rec_single<032>": {
+        "name": "카운슬링",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.7</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "flametail": {
     "name": "플레임테일",
@@ -40914,7 +43197,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<007>": {
+        "name": "꼬마 리더",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "control_mp_psk<000>": {
+        "name": "피누스 실베스트리스 기사",
+        "description": "제어 센터에 배치 시, 제조소에 배치한 <?cc.g.psk><#cc.kw>피누스 실베스트리스 기사단</></> 오퍼레이터마다 <#cc.kw>작전 기록</>류에 대한 생산력 <#cc.vup>+10{'%'}</>, <#cc.kw>귀금속</>류 에 대한 생산력 <#cc.vdown>-10{'%'}</>"
+      }
+    }
   },
   "nearl-the-radiant-knight": {
     "name": "니어 더 래디언트 나이트",
@@ -41210,7 +43503,18 @@
             "description": "적 2명 저지 가능"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd_tag<000>": {
+        "name": "기사 훈련",
+        "description": "훈련실에 배치 시, 기반시설(어시스턴트 미포함) 내 배치된 <?cc.tag.knight><#cc.kw>기사</></> 오퍼레이터마다 스킬 훈련 속도 <#cc.vup>+5{'%'}</> (최대 <#cc.kw>5</>명 적용)"
+      },
+      "train_spd_tag<010>": {
+        "name": "숭고한 원칙",
+        "description": "훈련실에 배치 시, 기반시설(어시스턴트 미포함) 내 배치된 <?cc.tag.knight><#cc.kw>기사</></> 오퍼레이터마다 스킬 훈련 속도 <#cc.vup>+5{'%'}</> (최대 <#cc.kw>8</>명 적용)"
       }
     }
   },
@@ -41346,7 +43650,21 @@
         "description": "<#ba.kw>공중 유닛</>을 조작하여 적에게 <#ba.kw>마법 대미지</>\n공중 유닛은 연속으로 동일한 적을 공격할 시 대미지가 증가한다 (최고 오퍼레이터의 110{'%'} 공격력에 해당하는 대미지)"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "단서 수집 α",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승"
+      },
+      "meet_spd&team<041>": {
+        "name": "눈의 수호",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승, <#cc.kw>카란 무역회사</> 단서를 더 쉽게 획득 (업무시간이 확률에 영향을 줌)"
+      },
+      "meet_flag<040>": {
+        "name": "쉐라간드",
+        "description": "응접실에 배치 시, 획득한 단서가 <#cc.kw>카란 무역회사</> 단서가 아닐 때마다, <#cc.kw>카란 무역회사</> 단서 출현 확률이 추가로 상승 (업무 시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "aurora": {
     "name": "오로라",
@@ -41536,7 +43854,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<030>": {
+        "name": "디펜더 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>디펜더</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<130>": {
+        "name": "극지 생존",
+        "description": "훈련실에 배치 시, <#cc.kw>디펜더</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 이번 훈련을 통해 스킬 마스터리가 <#cc.vup>1</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "gnosis": {
     "name": "노시스",
@@ -41774,7 +44102,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<030>": {
+        "name": "배후 지휘자",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.g.karlan><#cc.kw>카란 무역회사</></> 오퍼레이터가 1명 증가할 때마다 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "control_tra_limit&spd<000>": {
+        "name": "정밀 계산",
+        "description": "제어 센터에 배치 시, 무역소 내 <?cc.g.karlan><#cc.kw>카란 무역회사</></> 오퍼레이터가 1명 증가할 때마다 오더 수주 효율 <#cc.vdown>-15{'%'}</>, 오더 상한 <#cc.vup>+6</>"
+      }
+    }
   },
   "shalem": {
     "name": "샬렘",
@@ -41914,7 +44252,17 @@
         "description": "스킬 발동 시 일반공격이 마법 피해를 준다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession3<130>": {
+        "name": "디펜더 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>디펜더</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession3<131>": {
+        "name": "실전 기술: 아츠 프로텍터",
+        "description": "훈련실에 배치 시, <#cc.kw>디펜더</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 대상의 오퍼레이터 세부분류가 <#cc.kw>아츠 프로텍터</>일 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "nine-colored-deer": {
     "name": "나인컬러드 디어",
@@ -42076,7 +44424,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_bonus1<000>": {
+        "name": "인과",
+        "description": "가공소에 배치 시, <?cc.w.ncdeer1><#cc.rem>인과</></>가 <#cc.kw>40</> 누적될 경우 부산물 1회 확정 산출"
+      },
+      "workshop_formula_bonus2<000>": {
+        "name": "업보",
+        "description": "가공소에 배치 시, <?cc.w.ncdeer2><#cc.rem>업보</></>가 <#cc.kw>80</> 누적될 경우 부산물 1회 확정 산출"
+      }
+    }
   },
   "blacknight": {
     "name": "블랙나이트",
@@ -42247,7 +44605,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession2<010>": {
+        "name": "뱅가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>뱅가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<110>": {
+        "name": "전술 연구",
+        "description": "훈련실에 배치 시, <#cc.kw>뱅가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 마스터리 스킬이 <#cc.vup>1</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
       }
     }
   },
@@ -42439,7 +44808,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<900>": {
+        "name": "얼터네이트",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.g.sp><#cc.kw>얼터네이트</></> 오퍼레이터가 1명 증가할 때마다 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "train_spd&profession3<140>": {
+        "name": "실전 기술: 명사수",
+        "description": "훈련실에 배치 시, <#cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 대상의 오퍼레이터 세부 분류가 <#cc.kw>명사수</>일 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "ling": {
     "name": "링",
@@ -42745,7 +45124,8 @@
             "description": "적 1명 저지 가능"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10020_ling_soul2": {
         "name": "'샤오야오'",
@@ -42817,7 +45197,8 @@
             "description": "공격 시 마법 대미지 부여"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10020_ling_soul3": {
         "name": "'시엔징'",
@@ -42889,7 +45270,18 @@
             "description": "저지 중인 모든 적 공격"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "control_facCostReset<000>": {
+        "name": "멈추지 않는 술잔",
+        "description": "제어 센터에 배치 시, 해당 제어 센터 내 모든 <?cc.g.sui><#cc.kw>쉐이</></> 오퍼레이터 <#cc.kw>본인</>의 컨디션 소모로 인해 받는 영향 <#cc.kw>제거</>"
+      },
+      "control_costToBD<000>": {
+        "name": "'광활한 산천'",
+        "description": "제어 센터에 배치 시, 자신의 컨디션이 <#cc.kw>12</> 초과할 경우 <?cc.bd_b1><#cc.rem>속세의 화식</></> <#cc.vup>+15</>, 자신의 컨디션이 <#cc.kw>12</> 이하일 경우 <?cc.bd_a1><#cc.rem>감지 정보</></> <#cc.vup>+10</>"
       }
     }
   },
@@ -43121,7 +45513,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_allCost_condChar<000>": {
+        "name": "한가하고 덧없는 인생",
+        "description": "<#cc.kw>아</>와 함께 제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.25</>"
+      },
+      "control_upMeetingSpeed<000>": {
+        "name": "훤한 세상사",
+        "description": "제어 센터에 배치 시, 응접실의 단서 수집 속도 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "quercus": {
     "name": "퀘르쿠스",
@@ -43311,7 +45713,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_team<070>": {
+        "name": "소식통",
+        "description": "응접실에 배치 시, <#cc.kw>글래스고</> 단서를 더 쉽게 획득 (업무 시간이 확률에 영향을 줌)"
+      },
+      "meet_flag<070>": {
+        "name": "정보 정리",
+        "description": "응접실에 배치 시, 획득한 단서가 <#cc.kw>글래스고</> 단서가 아닐 때마다, <#cc.kw>글래스고</> 단서 출현 확률이 추가로 상승 (업무 시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "goldenglow": {
     "name": "골든글로우",
@@ -43497,7 +45909,17 @@
         "description": "<#ba.kw>공중 유닛</>을 조작하여 적에게 <#ba.kw>마법 대미지</>\n공중 유닛은 연속으로 동일한 적을 공격할 시 대미지가 증가한다 (최고 오퍼레이터의 110{'%'} 공격력에 해당하는 대미지)"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<003>": {
+        "name": "전자기 충전 α",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+10{'%'}</>"
+      },
+      "power_rec_spd<023>": {
+        "name": "전하 방출",
+        "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "enforcer": {
     "name": "인포서",
@@ -43687,7 +46109,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&cost<000>": {
+        "name": "단서 수집 α",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승"
+      },
+      "meet_spd&cost<100>": {
+        "name": "논리적 추리",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>35{'%'}</> 상승, 시간당 컨디션 소모 <#cc.vdown>+2</>"
+      }
+    }
   },
   "kazemaru": {
     "name": "카제마루",
@@ -43919,7 +46351,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "meet_spd<010>": {
+        "name": "그림자화",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>15{'%'}</> 상승"
+      },
+      "meet_spd_condChar<000>": {
+        "name": "자유자재",
+        "description": "응접실에 배치 시, 응접실에서 자신만 업무 중일 때 단서 수집 속도 <#cc.vup>35{'%'}</> 상승"
       }
     }
   },
@@ -44160,9 +46603,61 @@
             }
           }
         }
+      },
+      "uniequip_003_phenxi": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_recExcludeOther<000>": {
+        "name": "자율",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 속도 <#cc.vup>+2</>, 다른 곳에서 제공하는 컨디션 회복 효과 <#cc.vdown>획득 불가</>"
+      },
+      "dorm_exchangeAp<000>": {
+        "name": "생사지교",
+        "description": "숙소에 배치 시, 자신이 <#cc.kw>'기운 충만'</> 상태이면 숙소에 <#cc.kw>마지막으로</> 배치된 오퍼레이터와 서로 컨디션 교환"
+      }
+    }
   },
   "chestnut": {
     "name": "체스트넛",
@@ -44296,7 +46791,17 @@
         "description": "아군 유닛의 HP 회복, 동시에 공격력의 <#ba.kw>{'{'}ep_heal_ratio:0{'%'}{'}'}</>에 해당하는 <?ba.dt.element>원소 피해</> 회복 (부상이 없는 아군 유닛의 <?ba.dt.element>원소 피해</>도 회복 가능)"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<000>": {
+        "name": "표준화 α",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+15{'%'}</>"
+      },
+      "manu_formula_spd<201>": {
+        "name": "지질학 α",
+        "description": "제조소에 배치 시, <#cc.kw>오리지늄</>류에 대한 생산력 <#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "rockrock": {
     "name": "락락",
@@ -44430,7 +46935,17 @@
         "description": "<#ba.kw>공중 유닛</>을 조작하여 적에게 <#ba.kw>마법 대미지</>\n공중 유닛은 연속으로 동일한 적을 공격할 시 대미지가 증가한다 (최고 오퍼레이터의 110{'%'} 공격력에 해당하는 대미지)"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<031>": {
+        "name": "버려진 여분",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>65{'%'}</>"
+      },
+      "workshop_formula_drop<020>": {
+        "name": "쓸모없는 선물",
+        "description": "가공소에 배치 시, <#cc.kw>정예화 재료</>를 가공하여 <#cc.kw>T3</> 등급의 부산물 획득할 경우 <#cc.kw>폴리에스테르 번들</> 확정 획득"
+      }
+    }
   },
   "heidi": {
     "name": "하이디",
@@ -44570,7 +47085,21 @@
         "description": "공격을 진행하지 않고 공격 범위 내 모든 아군의 <#ba.kw>HP</>를 매초마다 자신의 공격력 <#ba.kw>{'{'}attack{'@'}atk_to_hp_recovery_ratio:0{'%'}{'}'}</> 만큼 회복, 자신은 <?ba.inspire>격려</>의 영향을 받지 않는다."
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<000>": {
+        "name": "오더 분배 α",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+20{'%'}</>"
+      },
+      "trade_ord_spd<021>": {
+        "name": "유명 인사 모임",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+35{'%'}</>"
+      },
+      "control_clue_faction<070>": {
+        "name": "'천 통의 편지'",
+        "description": "제어 센터에 배치 시, 응접실에서 <#cc.kw>글래스고</> 단서 더 쉽게 획득 (업무 시간이 확률에 영향을 줌)"
+      }
+    }
   },
   "horn": {
     "name": "혼",
@@ -44756,7 +47285,73 @@
         "description": "적을 저지하지 않을 때, 원거리 광역 물리 공격 시전"
       }
     },
-    "tokenSummons": {}
+    "modules": {
+      "uniequip_001_horn": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_horn": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<112>": {
+        "name": "군사 공학",
+        "description": "가공소에 배치 후 컨디션 <#cc.kw>4</> 소모하는 <#cc.kw>정예화 재료</> 가공 시 컨디션 소모 <#cc.vup>-1</>"
+      },
+      "workshop_formula_device<111>": {
+        "name": "DIY 열합금",
+        "description": "가공소에 배치 후 <#cc.kw>열합금 팩</> 재료 가공 시, 부산물 산출 확률 <#cc.vup>100{'%'}</> 상승"
+      }
+    }
   },
   "windflit": {
     "name": "윈드플릿",
@@ -45109,7 +47704,18 @@
             "description": "배치 후 전방 캐스터 또는 서포터 오퍼레이터의 공격력이 증가 (30초)"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_formula_probability<115>": {
+        "name": "필수 과목",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>75{'%'}</> 상승"
+      },
+      "manu_prod_spd&power<000>": {
+        "name": "자동화 α",
+        "description": "제조소에 배치 시, 해당 제조소 내의 오퍼레이터가 제공하는 생산력이 <#cc.vdown>전부 0이 되고</>(시설 수량에 따라 제공하는 생산력 미포함), <#cc.kw>발전소</> 하나당 해당 제조소의 생산력 <#cc.vup>+5{'%'}</>"
       }
     }
   },
@@ -45407,7 +48013,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<080>": {
+        "name": "스페셜리스트 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>스페셜리스트</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<680>": {
+        "name": "에기르의 전술",
+        "description": "훈련실에 배치 시 <#cc.kw>스페셜리스트</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 이번 훈련을 통해 스킬 마스터리가 <#cc.vup>3</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+65{'%'}</>"
+      },
+      "train_cost&profession<380>": {
+        "name": "투쟁의 갈망",
+        "description": "훈련실에 배치하여 <#cc.kw>스페셜리스트</> 훈련 마스터리 스킬이 <#cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <#cc.vdown>+1</>"
+      }
+    }
   },
   "lumen": {
     "name": "루멘",
@@ -45683,7 +48303,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_powToRecAll<000>": {
+        "name": "부드러운 불빛 α",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터 시간당 컨디션 회복 <#cc.vup>+0.1</>, 발전소가 <#cc.kw>1</>개 늘어날 때마다 회복 효과 추가로 <#cc.vup>+0.05</> (중첩 후의 최종 수치는 동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "dorm_powToRecAll<010>": {
+        "name": "부드러운 불빛 β",
+        "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터 시간당 컨디션 회복 <#cc.vup>+0.15</>, 발전소가 <#cc.kw>1</>개 늘어날 때마다 회복 효과 추가로 <#cc.vup>+0.05</> (중첩 후의 최종 수치는 동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "irene": {
     "name": "아이린",
@@ -45917,7 +48547,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd_doubleProf<000>": {
+        "name": "검과 핸드캐논",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 및 <#cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd_reduceTime<000>": {
+        "name": "정신 단련",
+        "description": "훈련실에 배치 시, 오퍼레이터의 훈련 협조 시간이 <#cc.vup>5</>시간에 도달한 경우, 해당 오퍼레이터의 다음 훈련 시간이 <#cc.vup>-50{'%'}</> (어느 쪽이든 훈련실을 이탈하면 효과가 사라짐)"
+      }
+    }
   },
   "erato": {
     "name": "에라토",
@@ -46111,7 +48751,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<040>": {
+        "name": "스나이퍼 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<240>": {
+        "name": "현 튕기기",
+        "description": "훈련실에 배치 시, <#cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 마스터리 스킬이 <#cc.vup>2</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "hibiscus-the-purifier": {
     "name": "히비스커스 더 퓨리파이어",
@@ -46245,7 +48895,17 @@
         "description": "공격 시 <#ba.kw>마법 대미지</> 부여, 적을 공격할 때마다 공격 범위 내 아군 유닛 1명의 HP를 대미지의 <#ba.kw>{'{'}scale:0{'%'}{'}'}</>만큼 회복"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<900>": {
+        "name": "얼터네이트",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.g.sp><#cc.kw>얼터네이트</></> 오퍼레이터가 1명 증가할 때마다 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "train_spd&profession2<270>": {
+        "name": "간호 마스터리",
+        "description": "훈련실에 배치 시, <#cc.kw>메딕</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 마스터리 스킬이 <#cc.vup>2</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "czerny": {
     "name": "체르니",
@@ -46379,7 +49039,17 @@
         "description": "스킬 발동 시 일반공격이 마법 피해를 준다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_bd_n1_n3<000>": {
+        "name": "완행의 노래",
+        "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 회복 <#cc.vup>+0.65</> (동종 효과 중 가장 높은 수치만 적용), 현재 숙소 레벨당 <?cc.bd_a1_a3><#cc.rem>소절</></> <#cc.vup>1</>스택 제공"
+      },
+      "dorm_rec_bd_n1<100>": {
+        "name": "건반의 만보",
+        "description": "숙소에 배치 시, <?cc.bd_a1_a3><#cc.rem>소절</></> <#cc.vup>1</>스택당 <?cc.bd_a1><#cc.rem>감지 정보</></> <#cc.vup>1</>점으로 전환"
+      }
+    }
   },
   "ebenholz": {
     "name": "에벤홀츠",
@@ -46669,6 +49339,72 @@
             }
           }
         }
+      },
+      "uniequip_004_ebnhlz": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {
@@ -46728,7 +49464,22 @@
           }
         },
         "traitCandidates": {},
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd_bd_n1<000>": {
+        "name": "음감",
+        "description": "무역소에 배치 시, 숙소 내 오퍼레이터 <#cc.kw>1</>명당 <?cc.bd_a1><#cc.rem>감지 정보</></> <#cc.vup>+1</>, 이와 동시에, <?cc.bd_a1><#cc.rem>감지 정보</></> <#cc.vup>1</>점당 <?cc.bd_B><#cc.rem>침묵의 공명</></> <#cc.vup>1</>점으로 전환"
+      },
+      "trade_ord_spd_bd<000>": {
+        "name": "배회하는 멜로디",
+        "description": "무역소에 배치 시, <?cc.bd_B><#cc.rem>침묵의 공명</></> <#cc.vup>4</>점당 오더 수주 효율 <#cc.vup>+1{'%'}</>"
+      },
+      "trade_ord_spd_bd<010>": {
+        "name": "서글픈 하모니",
+        "description": "무역소에 배치 시, <?cc.bd_B><#cc.rem>침묵의 공명</></> <#cc.vup>2</>점당 오더 수주 효율 <#cc.vup>+1{'%'}</>"
       }
     }
   },
@@ -46907,7 +49658,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<001>": {
+        "name": "라인테크 α",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd<011>": {
+        "name": "라인테크 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "greyy-the-lightningbearer": {
     "name": "그레이 더 라이트닝베어러",
@@ -47081,7 +49842,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_drone<000>": {
+        "name": "점검 매뉴얼",
+        "description": "발전소에 배치 시, 드론 상한 <#cc.vup>10</>당 드론 회복 속도 <#cc.vup>+1{'%'}</>"
+      },
+      "power_count<000>": {
+        "name": "아침 햇살",
+        "description": "발전소에 배치 시, 다른 <#cc.kw>발전소</>에 배치된 <?cc.tag.op><#cc.kw>작업 플랫폼</></>이 없을 경우, <#cc.kw>발전소</> <#cc.vup>+1</>개로 간주함 (시설 수량에만 영향을 줌)"
+      }
+    }
   },
   "dorothy": {
     "name": "도로시",
@@ -47470,7 +50241,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_skill_spd1<010>": {
+        "name": "오리지늄 아츠 이론 응용",
+        "description": "제조소에 배치 시, 해당 제조소 내 <?cc.sk.manu2><#cc.kw>라인테크류 스킬</></> 1개당 자신의 생산력 <#cc.vup>+5{'%'}</>"
+      },
+      "manu_prod_spd<011>": {
+        "name": "라인테크 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
       }
     }
   },
@@ -47606,7 +50388,17 @@
         "description": "재배치 시간이 <#ba.kw>감소</>, 원거리 공격 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd_notOwned<000>": {
+        "name": "누락 불허 α",
+        "description": "응접실에 배치 시, 단서 보드 중 미보유 단서를 더 쉽게 획득"
+      },
+      "meet_spd_notOwned<010>": {
+        "name": "누락 불허 β",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승, 단서 보드 중 미보유 단서를 더 쉽게 획득"
+      }
+    }
   },
   "minimalist": {
     "name": "미니멀리스트",
@@ -47740,7 +50532,21 @@
         "description": "<#ba.kw>공중 유닛</>을 조작하여 적에게 <#ba.kw>마법 대미지</>\n공중 유닛은 연속으로 동일한 적을 공격할 시 대미지가 증가한다 (최고 오퍼레이터의 110{'%'} 공격력에 해당하는 대미지)"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_constrLv<000>": {
+        "name": "그래픽 디자인",
+        "description": "제조소에 배치 시, 인프라 내 시설마다 레벨당 <#cc.kw><?cc.bd_malist>공사용 로봇</></> <#cc.vup>+1</>대, 최대 <#cc.vup>64</>대"
+      },
+      "manu_prod_spd_bd<100>": {
+        "name": "로봇 어시스트 α",
+        "description": "제조소에 배치 시, <#cc.kw><?cc.bd_malist>공사용 로봇</></> <#cc.vup>16</>대당 생산력 <#cc.vup>+5{'%'}</>"
+      },
+      "manu_prod_spd_bd<110>": {
+        "name": "로봇 어시스트 β",
+        "description": "제조소에 배치 시, <#cc.kw><?cc.bd_malist>공사용 로봇</></> <#cc.vup>8</>대당 생산력 <#cc.vup>+5{'%'}</>"
+      }
+    }
   },
   "pozemka": {
     "name": "파죰카",
@@ -48102,7 +50908,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd&gold<100>": {
+        "name": "유통망 확보",
+        "description": "무역소에 배치 시, <?cc.t.flow_gold><#cc.kw>순금 생산 라인</></> <#cc.kw>1</>개당, 현재 무역소의 오더 수주 효율이 <#cc.vup>+5{'%'}</>"
+      },
+      "trade_ord_line_durin<010>": {
+        "name": "쎄루에르차 시민",
+        "description": "무역소에 배치 시, 인프라 내 <?cc.tag.durin><#cc.kw>두린족</></> 오퍼레이터 <#cc.kw>1</>명당(최대 <#cc.kw>4</>명) 현재 무역소에 <?cc.t.flow_gold><#cc.kw>순금 생산 라인</></> <#cc.kw>1</>"
       }
     }
   },
@@ -48346,7 +51163,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<020>": {
+        "name": "가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<620>": {
+        "name": "실전 지도",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 마스터리 스킬이 <#cc.vup>3</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+65{'%'}</>"
+      },
+      "train_cost&profession<320>": {
+        "name": "과잉 훈련",
+        "description": "훈련실에 배치하여 <#cc.kw>가드</> 오퍼레이터의 훈련 마스터리 스킬이 <#cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <#cc.vdown>+1</>"
+      }
+    }
   },
   "proviso": {
     "name": "프로바이조",
@@ -48552,7 +51383,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_law<000>": {
+        "name": "계약법",
+        "description": "무역소에 배치 시, 다음 <#cc.kw>순금 오더</>의 납품 수가 <#cc.kw>4</> 미만일 경우, <#cc.kw>위약 오더</>로 간주"
+      },
+      "trade_ord_against<000>": {
+        "name": "위약 배상α",
+        "description": "무역소에 배치 시, 다음 <#cc.kw>순금 오더</>가 <#cc.kw>위약 오더</>인 경우, <#cc.kw>순금</> 납품 수가 추가로 <#cc.vup>+1</>"
+      },
+      "trade_ord_against<010>": {
+        "name": "위약 배상β",
+        "description": "무역소에 배치 시, 다음 <#cc.kw>순금 오더</>가 <#cc.kw>위약 오더</>인 경우, <#cc.kw>순금</> 납품 수가 추가로 <#cc.vup>+2</>"
+      }
+    }
   },
   "mlynar": {
     "name": "무에나",
@@ -48738,7 +51583,17 @@
         "description": "평소에는 공격하지 않고 저지 가능 수 0이며, 스킬 미발동 상태에서 <#ba.kw>{'{'}max_stack_cnt{'}'}</>초간 공격력이 최대 <#ba.kw>+{'{'}atk:0{'%'}{'}'}</>까지 점진적으로 상승, 스킬 종료 후 공격력 리셋"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<008>": {
+        "name": "독선기신",
+        "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      },
+      "control_mp_lonely<000>": {
+        "name": "원칙주의",
+        "description": "제어 센터에 배치 시, <?cc.c.room1><#cc.kw>일부 시설</></>의 작업 중인 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.1</>, 동시에 제어 센터 내 <?cc.c.skill><#cc.kw>일부 스킬</></>이 <?cc.c.room2><#cc.kw>기타 시설</></>에서 작업 중인 오퍼레이터에게 추가로 컨디션 회복 효과 제공"
+      }
+    }
   },
   "luo-xiaohei": {
     "name": "나소흑",
@@ -48848,7 +51703,17 @@
         "description": "공격력의 80{'%'}로 <#ba.kw>원거리 공격</> 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_cost<000>": {
+        "name": "어령술 - 금",
+        "description": "가공소에 배치 후 컨디션 <#cc.kw>8</> 소모하는 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>50{'%'}</> 상승"
+      },
+      "workshop_formula_lolxh<000>": {
+        "name": "고양이화",
+        "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 컨디션 소모가 <#cc.kw>4</> 이상인 항목의 컨디션이 전부 <#cc.vup>4</>로 나누어져 소모"
+      }
+    }
   },
   "reserve-operator-defender": {
     "name": "예비 인원 - 디펜더",
@@ -48861,7 +51726,8 @@
         "description": "적 3명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "tulip": {
     "name": "튤립",
@@ -48929,7 +51795,8 @@
         "description": "적 2명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "highmore": {
     "name": "하이모어",
@@ -49129,7 +51996,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_skill_change<000>": {
+        "name": "의식 호환",
+        "description": "제조소에 배치 시, 해당 제조소 내 모든 <?cc.sk.manu2><#cc.kw>라인테크류</></>, <?cc.sk.manu3><#cc.kw>피누스 실베스트리스류</></> 스킬을 전부 <#cc.kw>표준화류</> 스킬로 간주"
+      },
+      "manu_prod_spd<010>": {
+        "name": "표준화 β",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "totter": {
     "name": "토터",
@@ -49343,7 +52220,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd_reduce<000>": {
+        "name": "흐려진 시야",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+30{'%'}</>, 자신의 <?cc.bd.costdrop><#cc.kw>컨디션 낙차</></> <#cc.kw>4</>당 생산력 <#cc.vdown>-5{'%'}</>"
+      },
+      "manu_prod_spd_addition&cost<000>": {
+        "name": "창밖 눈보라",
+        "description": "제조소에 배치 시, 자신의 <?cc.bd.costdrop><#cc.kw>컨디션 낙차</></>가 <#cc.kw>12</> 이상일 경우, 생산력 <#cc.vup>+10{'%'}</>, 창고 용량 상한 <#cc.vup>+6</>"
+      }
+    }
   },
   "dagda": {
     "name": "다그다",
@@ -49475,7 +52362,17 @@
         "description": "적 1명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession3<150>": {
+        "name": "가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession3<151>": {
+        "name": "실전 기술: 파이터",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 대상의 오퍼레이터 세부분류가 <#cc.kw>파이터</>일 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "paprika": {
     "name": "파프리카",
@@ -49609,7 +52506,21 @@
         "description": "아군 치료, 치료 효과가 <#ba.kw>3</>명의 아군 사이에서 튕기며, 튕길 때마다 치유량 25{'%'} 감소"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_tra_spd<020>": {
+        "name": "생기발랄",
+        "description": "제어 센터에 배치 시, 모든 무역소의 오더 수주 효율 <#cc.vup>+7{'%'}</> (동종 효과 중 가장 높은 수치만 적용)"
+      },
+      "trade_ord_wt&cost<000>": {
+        "name": "재봉 α",
+        "description": "무역소에 배치 시, 해당 무역소의 <#cc.kw>고품질 귀금속 오더</>의 출현 확률이 <#cc.kw>소폭 상승</> (확률은 작업 시간의 영향을 받음), 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "trade_ord_wt&cost<010>": {
+        "name": "재봉 β",
+        "description": "무역소에 배치 시, 해당 무역소의 <#cc.kw>고품질 귀금속 오더</>의 출현 확률이 <#cc.kw>상승</> (확률은 작업 시간의 영향을 받음), 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      }
+    }
   },
   "stainless": {
     "name": "스테인리스",
@@ -49925,7 +52836,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10027_ironmn_pile2": {
         "name": "스테인리스™ 멀티 플랫폼",
@@ -49997,7 +52909,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10027_ironmn_pile3": {
         "name": "글룸핀서호 - 프로토타입",
@@ -50066,7 +52979,18 @@
             "description": "아군의 공격을 받지만 대미지는 입지 않으며, 기능공 오퍼레이터의 공격을 받을 때마다 HP 1{'%'} 회복"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_formula_cost&dorm<000>": {
+        "name": "연결된 마음",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 숙소 내 컨디션이 <#cc.vup>12</> 이하인 오퍼레이터 <#cc.kw>10</>명당 컨디션 <#cc.kw>4</> 소모하는 항목의 컨디션 소모가 전부 <#cc.vup>-1</>"
+      },
+      "workshop_formula_dorm<002>": {
+        "name": "일치한 뜻",
+        "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 숙소 내 컨디션이 <#cc.vup>12</> 이하인 오퍼레이터 <#cc.kw>1</>명당 부산물 산출 확률 <#cc.vup>5{'%'}</> 상승"
       }
     }
   },
@@ -50202,7 +53126,17 @@
         "description": "저지 중인 <#ba.kw>모든 적</> 동시 공격"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<000>": {
+        "name": "표준화 α",
+        "description": "제조소에 배치 시, 생산력 <#cc.vup>+15{'%'}</>"
+      },
+      "trade_ord_spd&formula<000>": {
+        "name": "정확한 스케줄",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+30{'%'}</>, 제조소에서 항목 <#cc.kw>1</>종 가공할 때마다, 해당 무역소의 수주 효율 추가로 <#cc.vup>+2{'%'}</>"
+      }
+    }
   },
   "qanipalaat": {
     "name": "카니팔라트",
@@ -50392,7 +53326,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost&clue<001>": {
+        "name": "구조대: 외부 연락",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "hire_spd_cost&clue<000>": {
+        "name": "구조대: 체력 확보",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+35{'%'}</>, 모집 인원마다 시간당 컨디션 회복이 추가로 <#cc.vup>-0.1</> (초기 모집 인원은 포함하지 않음)"
+      }
+    }
   },
   "lunacub": {
     "name": "루나컵",
@@ -50566,7 +53510,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<001>": {
+        "name": "어린 늑대의 본성",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.7</>"
+      },
+      "workshop_formula_probability<011>": {
+        "name": "황야에서의 생존",
+        "description": "가공소에 배치 후 <#cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <#cc.vup>80{'%'}</> 상승"
+      }
+    }
   },
   "vigil": {
     "name": "비질",
@@ -50829,7 +53783,18 @@
             "description": "'그림자 늑대' 1마리당 저지 가능 수 +1, 공격 시 추가로 1회 공격, 2마리 이상 존재할 경우 치명적인 대미지를 입으면 '그림자 늑대' 1마리가 소멸하는 대신 모든 HP 회복"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "meet_spd<032>": {
+        "name": "두목의 외교",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>25{'%'}</> 상승"
+      },
+      "trade_ord_spd&meet<000>": {
+        "name": "신도시 교역",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+25{'%'}</>, 응접실 레벨이 레벨당 추가로 수주 효율 <#cc.vup>5{'%'}</> 제공, 최대 <#cc.vup>40{'%'}</> 제공"
       }
     }
   },
@@ -51057,7 +54022,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd_doubleProf2<001>": {
+        "name": "침묵이 검",
+        "description": "훈련실에 배치 시, <#cc.kw>스페셜리스트</> 및 <#cc.kw>뱅가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd_doubleProf2<000>": {
+        "name": "질곡 타파",
+        "description": "훈련실에 배치 시, <#cc.kw>스페셜리스트</> 및 <#cc.kw>뱅가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 마스터리 스킬이 <#cc.vup>2</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "penance": {
     "name": "페넌스",
@@ -51251,7 +54226,17 @@
         "description": "아군의 치료를 <#ba.kw>받지 못한다</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost<210>": {
+        "name": "법이 곧 정전",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+50{'%'}</>, 시간당 컨디션 소모 <#cc.vdown>+0.5</>"
+      },
+      "dorm_hireToRecAll<000>": {
+        "name": "동행자 물색",
+        "description": "숙소에 배치 시, 해당 숙소 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.15</>, 모집 인원마다 시간당 컨디션 회복이 추가로 <#cc.vup>+0.05</> (초기 모집 인원은 포함하지 않음)"
+      }
+    }
   },
   "puzzle": {
     "name": "퍼즐",
@@ -51385,7 +54370,17 @@
         "description": "재배치 시간이 <#ba.kw>감소</>, 원거리 공격 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "단서 수집 α",
+        "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승"
+      },
+      "meet_spd_notOwned<001>": {
+        "name": "정보 분석",
+        "description": "응접실에 배치 시, 단서 보드 중 미보유 단서를 더 쉽게 획득"
+      }
+    }
   },
   "harmonie": {
     "name": "아르모니",
@@ -51575,7 +54570,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": "독거",
+        "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.7</>"
+      },
+      "meet_spd&cost_condChar<000>": {
+        "name": "더블 스파이",
+        "description": "응접실에 배치 시, 응접실에서 자신만 업무 중일 때 단서 수집 속도 <#cc.vup>50{'%'}</> 상승, 시간당 컨디션 소모 <#cc.vdown>+2</>"
+      }
+    }
   },
   "reed-the-flame-shadow": {
     "name": "리드 더 플레임 섀도우",
@@ -51761,7 +54766,21 @@
         "description": "공격 시 <#ba.kw>마법 대미지</> 부여, 적을 공격할 때마다 공격 범위 내 아군 유닛 1명의 HP를 대미지의 <#ba.kw>{'{'}scale:0{'%'}{'}'}</>만큼 회복"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd_doubleProf<100>": {
+        "name": "드라코 혈통",
+        "description": "훈련실에 배치 시, <#cc.kw>캐스터</> 및 <#cc.kw>메딕</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd_doubleProf<110>": {
+        "name": "드라코 혈통",
+        "description": "훈련실에 배치 시, <#cc.kw>캐스터</> 및 <#cc.kw>메딕</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+45{'%'}</>"
+      },
+      "control_dorm_rec<000>": {
+        "name": "지도자",
+        "description": "제어 센터에 배치 시, 모든 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "jieyun": {
     "name": "지에윈",
@@ -51954,7 +54973,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_bd_to_bd<000>": {
+        "name": "고대 주술",
+        "description": "제조소에 배치 시, <?cc.bd_b1><#cc.rem>속세의 화식</></> <#cc.vup>5</>점당 <?cc.bd_C><#cc.rem>주술 결정</></> <#cc.vup>1</>점으로 전환"
+      },
+      "manu_prod_spd_bd<200>": {
+        "name": "숲을 따라",
+        "description": "제조소에 배치 시, <?cc.bd_C><#cc.rem>주술 결정</></> <#cc.vup>1</>점당 생산력 <#cc.vup>+1{'%'}</>"
+      },
+      "manu_prod_spd_bd<201>": {
+        "name": "흥망성쇠",
+        "description": "제조소에 배치 시, <?cc.bd_C><#cc.rem>주술 결정</></> <#cc.vup>1</>점당 생산력 <#cc.vup>+2{'%'}</>"
+      }
+    }
   },
   "firewhistle": {
     "name": "파이어휘슬",
@@ -52088,7 +55121,73 @@
         "description": "적을 저지하지 않을 때, 원거리 광역 물리 공격 시전"
       }
     },
-    "tokenSummons": {}
+    "modules": {
+      "uniequip_001_firwhl": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_firwhl": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_cost<000>": {
+        "name": "분위기 업",
+        "description": "무역소에 배치 시, 무역소 내 오퍼레이터의 시간당 컨디션 소모 <#cc.vup>-0.1</>"
+      },
+      "trade_ord_spd&share<000>": {
+        "name": "대신 부탁",
+        "description": "무역소에 배치 시, 무역소 내 자신을 제외한 작업 중인 오퍼레이터 1명당 오더 수주 효율 <#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "lin": {
     "name": "린",
@@ -52330,7 +55429,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost<111>": {
+        "name": "특수 경로",
+        "description": "인사부 사무실에 배치 시, 인맥 레퍼런스 누적 속도 <#cc.vup>+20{'%'}</>, 시간당 컨디션 소모 <#cc.vup>-0.25</>"
+      },
+      "hire_spd_cost&extra<000>": {
+        "name": "적재적소",
+        "description": "인사부 사무실에 배치 시, 모집 인원마다 인맥 레퍼런스의 누적 속도 <#cc.vup>+10{'%'}</> (초기 모집 인원은 포함하지 않음)"
+      }
+    }
   },
   "chongyue": {
     "name": "총웨",
@@ -52512,7 +55621,17 @@
         "description": "적 1명 저지 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&bd_up<000>": {
+        "name": "자신을 아는 자",
+        "description": "제어 센터에 배치 시, 자신의 시간당 컨디션 소모 <#cc.vdown>+0.5</>. 숙소를 제외한 시설에 배치한 <?cc.g.sui><#cc.kw>쉐이</></> 오퍼레이터 1명당 <?cc.bd_b1><#cc.rem>속세의 화식</></><#cc.vup>+5</> (최대 5명)"
+      },
+      "control_mp_bd_cost_expand<000>": {
+        "name": "외로운 빛과 함께",
+        "description": "제어 센터에 배치 시, <?cc.c.room2><#cc.kw>기타 시설</></>의 작업 중인 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>, 동시에 <?cc.bd_b1><#cc.rem>속세의 화식</></> <#cc.vup>20</>당 추가로 <#cc.vup>+0.05</> (제어 센터의 버프와 <?cc.c.sui2_1><#cc.rem>특별 비교 규칙</></> 적용)"
+      }
+    }
   },
   "wind-chimes": {
     "name": "윈드차임스",
@@ -52646,7 +55765,17 @@
         "description": "저지 중인 <#ba.kw>모든 적</> 동시 공격"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_cost&bd2<000>": {
+        "name": "산 넘고 물 건너",
+        "description": "무역소에 배치 시, 무역소 내 오퍼레이터의 시간당 컨디션 소모 <#cc.vup>-0.1</>, 동시에 <?cc.bd_b1><#cc.rem>속세의 화식</></> <#cc.vup>10</>당 추가로 <#cc.vup>-0.01</>"
+      },
+      "trade_cost&bd2<001>": {
+        "name": "만리전서",
+        "description": "무역소에 배치 시, 무역소 내 오퍼레이터의 시간당 컨디션 소모 <#cc.vup>-0.1</>, 동시에 <?cc.bd_b1><#cc.rem>속세의 화식</></> <#cc.vup>10</>당 추가로 <#cc.vup>-0.02</>"
+      }
+    }
   },
   "qiubai": {
     "name": "치우바이",
@@ -52832,7 +55961,17 @@
         "description": "공격력의 80{'%'}로 <#ba.kw>원거리 공격</> 가능"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession3<160>": {
+        "name": "가드 마스터리 α",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession3<161>": {
+        "name": "실전 기술: 로드",
+        "description": "훈련실에 배치 시, <#cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 대상의 오퍼레이터 세부 분류가 <#cc.kw>로드</>일 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "terra-research-commission": {
     "name": "테라 대륙 조사단",
@@ -52889,7 +56028,17 @@
         "description": "작은 범위 내 <#ba.kw>지상</> 적에게 물리 대미지를 <#ba.kw>2회</> 입히며(2회차는 여진으로 공격력이 절반 감소), <#ba.kw>배치 인원 수</> 제약을 받지 않으나, 재배치 시간이 매우 길다"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit&bd<000>": {
+        "name": "귀요미 아이루",
+        "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+5{'%'}</>, 오더 상한 <#cc.vup>+2</>, <?cc.bd_felyne><#cc.rem>아이룰루</></>가 1개 늘어날 때마다 오더 수주 효율 <#cc.vup>+3{'%'}</>"
+      },
+      "manu_prod_spd&limit&bd<000>": {
+        "name": "믿음직한 동반자들",
+        "description": "제조소에 배치 시, 창고 용량 상한 <#cc.vup>+8</>, 생산력 <#cc.vup>+5{'%'}</>, <?cc.bd_felyne><#cc.rem>아이룰루</></>가 1개 늘어날 때마다 생산력 <#cc.vup>+1{'%'}</>"
+      }
+    }
   },
   "rathalos-s-noir-corne": {
     "name": "레우스S 느와르 코르네",
@@ -53103,7 +56252,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_bd2<000>": {
+        "name": "팀워크",
+        "description": "제어 센터에 배치 시, 제어 센터 내 <?cc.tag.mh><#cc.kw>아이루와 유쾌한 친구들</></> 오퍼레이터 1명이 늘어날 때마다 <?cc.bd_felyne><#cc.rem>아이룰루</></> <#cc.vup>+2</>"
+      },
+      "control_token_tra_spd<000>": {
+        "name": "비전 교섭술",
+        "description": "<?cc.tag.mh><#cc.kw>아이루와 유쾌한 친구들</></> 오퍼레이터와 함께 제어 센터에 배치 시, 모든 무역소의 오더 수주 효율 <#cc.vup>+7{'%'}</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "kirin-r-yato": {
     "name": "키린R 야토",
@@ -53341,7 +56500,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&bd2<010>": {
+        "name": "내구력 회복",
+        "description": "제어 센터에 배치 시, 자신의 시간당 컨디션 소모 <#cc.vdown>+0.5</>, <?cc.bd_felyne><#cc.rem>아이룰루</></> <#cc.vup>+8</>"
+      },
+      "control_token_prod_spd2<000>": {
+        "name": "솔선수범",
+        "description": "<?cc.tag.mh><#cc.kw>아이루와 유쾌한 친구들</></> 오퍼레이터와 함께 제어 센터에 배치 시, 모든 제조소의 생산력 <#cc.vup>+2{'%'}</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    }
   },
   "u-official": {
     "name": null,
@@ -53398,7 +56567,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&wt<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd_Owned<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "humus": {
     "name": null,
@@ -53588,7 +56767,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<013>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_rub<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "morgan": {
     "name": null,
@@ -53784,7 +56973,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_toone<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd_par<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "cement": {
     "name": null,
@@ -53974,7 +57173,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_limit&cost<021>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "ines": {
     "name": null,
@@ -54159,7 +57368,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<001>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd_hast<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "melanite": {
     "name": null,
@@ -54349,7 +57568,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<040>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<630>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "muelsyse": {
     "name": null,
@@ -54578,7 +57807,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<022>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_rhine<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -54818,7 +58058,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&cost_condChar<001>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&cost_condChar<011>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&condChar_mustget<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "silence-the-paradigmatic": {
     "name": null,
@@ -55127,7 +58381,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "hire_spd<032>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<021>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -55186,7 +58451,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd_P<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "insider": {
     "name": null,
@@ -55360,7 +58635,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue<110>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single&oneself<040>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "spuria": {
     "name": null,
@@ -55554,7 +58839,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd&addition<000>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd&addition<001>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd&cost<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "executor-the-ex-foedere": {
     "name": null,
@@ -55792,7 +59091,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<030>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<031>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_limit<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "santalla": {
     "name": null,
@@ -55985,7 +59298,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single_power<000>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd_power<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "typhon": {
     "name": null,
@@ -56227,7 +59550,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&sami<000>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession3<170>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "valarqvin": {
     "name": null,
@@ -56363,7 +59696,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&bd<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&bd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "poncirus": {
     "name": null,
@@ -56553,7 +59896,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<221>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_cost3<221>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "bryophyta": {
     "name": null,
@@ -56751,7 +60104,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<100>": {
+        "name": null,
+        "description": null
+      },
+      "manu_skill_spd1<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "swire-the-elegant-wit": {
     "name": null,
@@ -57047,7 +60410,18 @@
           }
         },
         "traitCandidates": {},
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd_variable<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -57227,7 +60601,21 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession3<180>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession3<181>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all&profession<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "coldshot": {
     "name": null,
@@ -57367,7 +60755,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<009>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all&single<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "almond": {
     "name": null,
@@ -57557,7 +60955,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd&cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd&cost_bd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "jessica-the-liberated": {
     "name": null,
@@ -57776,7 +61184,772 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<001>": {
+        "name": null,
+        "description": null
+      },
+      "control_bd_spd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
+  },
+  "verdant": {
+    "name": null,
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_vrdant_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_vrdant_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_vrdant": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_vrdant": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<101>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_device<060>": {
+        "name": null,
+        "description": null
+      }
+    }
+  },
+  "delphine": {
+    "name": null,
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_delphn_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_delphn_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_delphn": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_delphn": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue2<260>": {
+        "name": null,
+        "description": null
+      },
+      "control_tra_limit&spd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
+  },
+  "vendela": {
+    "name": null,
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skcom_magic_rage<3>": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_vendla_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<023>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all&tired<000>": {
+        "name": null,
+        "description": null
+      }
+    }
+  },
+  "hoederer": {
+    "name": null,
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_hodrer_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_hodrer_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_hodrer_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_par&per<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_par&per<001>": {
+        "name": null,
+        "description": null
       }
     }
   }

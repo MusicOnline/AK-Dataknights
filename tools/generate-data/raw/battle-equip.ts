@@ -1,6 +1,6 @@
 import * as z from "zod"
 
-import { BlackboardSchema } from "./common"
+import { BlackboardSchema, UnlockConditionSchema } from "./common"
 
 export const Target = z.enum([
   // If a new function is added to trait (e.g., new Shelter effect),
@@ -18,12 +18,6 @@ export const Target = z.enum([
   "TRAIT_DATA_ONLY",
 ])
 export type Target = z.infer<typeof Target>
-
-export const UnlockConditionSchema = z.object({
-  phase: z.number(),
-  level: z.number(),
-})
-export type UnlockCondition = z.infer<typeof UnlockConditionSchema>
 
 export const OverrideTraitDataBundleCandidateSchema = z.object({
   additionalDescription: z.string().nullable(),

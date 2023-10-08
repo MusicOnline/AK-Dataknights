@@ -300,6 +300,29 @@ await useOperatorLocalePromise
           </li>
         </ul>
       </div>
+      <!-- RIIC Base Skills -->
+      <div v-if="operator.riicBaseSkills.length">
+        <div class="anchor-ghost" id="riic-base-skills" />
+        <h1 class="heading">
+          {{ t("operator.ui.riicBaseSkills") }}
+        </h1>
+        <ul class="flex flex-col gap-8">
+          <template
+            v-for="(buffData, index) in operator.riicBaseSkills"
+            :key="index"
+          >
+            <li>
+              <div class="anchor-ghost" :id="`riic-base-skill-${index + 1}`" />
+              <OperatorRiicBaseSkillWidget
+                class="p-2 outline outline-1 outline-bg-container-1-normal"
+                :key="index"
+                :operator="operator"
+                :riic-base-skill-group="buffData"
+              />
+            </li>
+          </template>
+        </ul>
+      </div>
     </main>
   </div>
 </template>

@@ -54,7 +54,17 @@
         "description": "味方のHPを回復\n<#ba.kw>配置可能数</>にカウントされない\n再配置までの時間が極めて長い"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": "予備電源",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+10{'%'}</>"
+      },
+      "dorm_rec_single<000>": {
+        "name": "医療サービス",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.65</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "castle-3": {
     "name": "Castle-3",
@@ -111,7 +121,17 @@
         "description": "敵を1体までブロック\n<#ba.kw>配置可能数</>にカウントされない\n再配置までの時間が極めて長い"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": "予備電源",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+10{'%'}</>"
+      },
+      "manu_formula_spd<010>": {
+        "name": "作戦記録指導",
+        "description": "製造所配置時、<#cc.kw>作戦記録</>製造の製造効率<#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "yato": {
     "name": "ヤトウ",
@@ -148,7 +168,17 @@
         "description": "敵を2体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<001>": {
+        "name": "注文分配β",
+        "description": "貿易所配置時、受注効率<#cc.vup>+30{'%'}</>"
+      },
+      "manu_prod_spd<000>": {
+        "name": "標準化α",
+        "description": "製造所配置時、製造効率<#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "noir-corne": {
     "name": "ノイルホーン",
@@ -185,7 +215,17 @@
         "description": "敵を3体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit<001>": {
+        "name": "倉庫整備β",
+        "description": "製造所配置時、保管上限<#cc.vup>+10</>、製造効率<#cc.vup>+10{'%'}</>"
+      },
+      "trade_ord_spd&limit<000>": {
+        "name": "注文管理α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+10{'%'}</>、注文上限<#cc.vup>+2</>"
+      }
+    }
   },
   "rangers": {
     "name": "レンジャー",
@@ -222,7 +262,17 @@
         "description": "飛行ユニットを優先して攻撃"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<000>": {
+        "name": "人事管理α",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+20{'%'}</>"
+      },
+      "workshop_proc_probability<021>": {
+        "name": "矍鑠",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "durin": {
     "name": "ドゥリン",
@@ -259,7 +309,17 @@
         "description": "敵に<#ba.kw>術ダメージ</>を与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<000>": {
+        "name": "怠惰",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vdown>-0.1</>。配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
+      },
+      "dorm_rec_all&oneself<001>": {
+        "name": "過眠",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vdown>-0.1</>。配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.25</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "12f": {
     "name": "12F",
@@ -296,7 +356,17 @@
         "description": "敵に<#ba.kw>範囲術ダメージ</>を与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<020>": {
+        "name": "情報収集β",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+20{'%'}</>"
+      },
+      "workshop_formula_probability<300>": {
+        "name": "特訓記録",
+        "description": "加工所で<#cc.kw>SoC</>を加工時、副産物の入手確率<#cc.vup>+70{'%'}</>"
+      }
+    }
   },
   "fang": {
     "name": "フェン",
@@ -364,7 +434,17 @@
         "description": "敵を2体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd_addition<030>": {
+        "name": "せっかち",
+        "description": "製造所配置時、最初の1時間製造効率<#cc.vup>+20{'%'}</>、その後まで1時間ごと更に<#cc.vup>+1{'%'}</>、最終的に<#cc.vup>+25{'%'}</>になる"
+      },
+      "trade_ord_spd<001>": {
+        "name": "注文分配β",
+        "description": "貿易所配置時、受注効率<#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "vanilla": {
     "name": "バニラ",
@@ -436,7 +516,17 @@
         "description": "敵を2体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<010>": {
+        "name": "標準化β",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
+      },
+      "trade_ord_spd<000>": {
+        "name": "注文分配α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "plume": {
     "name": "プリュム",
@@ -508,7 +598,17 @@
         "description": "敵を倒す度所持コスト+1\n撤退時に初期配置時のコストを返却"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<010>": {
+        "name": "先鋒エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>先鋒</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "trade_ord_spd&limit<000>": {
+        "name": "注文管理α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+10{'%'}</>、注文上限<#cc.vup>+2</>"
+      }
+    }
   },
   "melantha": {
     "name": "メランサ",
@@ -580,7 +680,17 @@
         "description": "敵を1体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<010>": {
+        "name": "供給管理",
+        "description": "貿易所配置時、受注効率<#cc.vup>+25{'%'}</>、注文上限<#cc.vup>+1</>"
+      },
+      "workshop_proc_probability<000>": {
+        "name": "集中α",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+40{'%'}</>"
+      }
+    }
   },
   "cardigan": {
     "name": "カーディ",
@@ -652,7 +762,17 @@
         "description": "敵を3体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit<000>": {
+        "name": "倉庫整備α",
+        "description": "製造所配置時、保管上限<#cc.vup>+6</>、製造効率<#cc.vup>+10{'%'}</>"
+      },
+      "dorm_rec_single&oneself<000>": {
+        "name": "活発",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.2</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<#cc.vup>+0.4</>"
+      }
+    }
   },
   "beagle": {
     "name": "ビーグル",
@@ -724,7 +844,17 @@
         "description": "敵を3体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit<000>": {
+        "name": "倉庫整備α",
+        "description": "製造所配置時、保管上限<#cc.vup>+6</>、製造効率<#cc.vup>+10{'%'}</>"
+      },
+      "dorm_rec_single&oneself<000>": {
+        "name": "活発",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.2</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<#cc.vup>+0.4</>"
+      }
+    }
   },
   "kroos": {
     "name": "クルース",
@@ -804,7 +934,17 @@
         "description": "飛行ユニットを優先して攻撃"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd_addition<040>": {
+        "name": "のんびり",
+        "description": "製造所配置時、最初の1時間製造効率<#cc.vup>+15{'%'}</>、その後まで1時間ごと更に<#cc.vup>+2{'%'}</>、最終的に<#cc.vup>+25{'%'}</>になる"
+      },
+      "dorm_rec_oneself<000>": {
+        "name": "一人きり",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.7</>"
+      }
+    }
   },
   "adnachiel": {
     "name": "アドナキエル",
@@ -876,7 +1016,17 @@
         "description": "飛行ユニットを優先して攻撃"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<000>": {
+        "name": "注文分配α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+20{'%'}</>"
+      },
+      "workshop_proc_probability<010>": {
+        "name": "能工巧匠",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "lava": {
     "name": "ラヴァ",
@@ -956,7 +1106,17 @@
         "description": "敵に<#ba.kw>範囲術ダメージ</>を与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<001>": {
+        "name": "火力発電α",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+10{'%'}</>"
+      },
+      "manu_formula_spd<210>": {
+        "name": "源石工芸β",
+        "description": "製造所配置時、<#cc.kw>源石</>製造の製造効率<#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "hibiscus": {
     "name": "ハイビスカス",
@@ -1028,7 +1188,17 @@
         "description": "味方のHPを回復"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<010>": {
+        "name": "思いやり",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.55</>（同種の効果は高いほうのみ適応）"
+      },
+      "workshop_formula_probability<100>": {
+        "name": "栄養学",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+70{'%'}</>"
+      }
+    }
   },
   "ansel": {
     "name": "アンセル",
@@ -1108,7 +1278,17 @@
         "description": "味方のHPを回復"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<010>": {
+        "name": "思いやり",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.55</>（同種の効果は高いほうのみ適応）"
+      },
+      "workshop_formula_probability<110>": {
+        "name": "薬理学α",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+75{'%'}</>"
+      }
+    }
   },
   "steward": {
     "name": "スチュワード",
@@ -1180,7 +1360,17 @@
         "description": "敵に<#ba.kw>術ダメージ</>を与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_limit&cost<000>": {
+        "name": "交渉",
+        "description": "貿易所配置時、注文上限<#cc.vup>+5</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "manu_prod_spd<010>": {
+        "name": "標準化β",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "orchid": {
     "name": "オーキッド",
@@ -1252,7 +1442,17 @@
         "description": "敵に<#ba.kw>術ダメージ</>を与える\n攻撃時、敵を一瞬<?ba.sluggish>足止め</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<020>": {
+        "name": "心理学",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+40{'%'}</>"
+      },
+      "trade_ord_spd&limit<010>": {
+        "name": "供給管理",
+        "description": "貿易所配置時、受注効率<#cc.vup>+25{'%'}</>、注文上限<#cc.vup>+1</>"
+      }
+    }
   },
   "haze": {
     "name": "ヘイズ",
@@ -1442,7 +1642,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<100>": {
+        "name": "金属工芸α",
+        "description": "製造所配置時、<#cc.kw>金属</>製造の製造効率<#cc.vup>+30{'%'}</>"
+      },
+      "trade_ord_spd<001>": {
+        "name": "注文分配β",
+        "description": "貿易所配置時、受注効率<#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "gitano": {
     "name": "ギターノ",
@@ -1651,7 +1861,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<010>": {
+        "name": "供給管理",
+        "description": "貿易所配置時、受注効率<#cc.vup>+25{'%'}</>、注文上限<#cc.vup>+1</>"
+      },
+      "meet_spd<030>": {
+        "name": "占い",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "jessica": {
     "name": "ジェシカ",
@@ -1841,7 +2061,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<010>": {
+        "name": "標準化β",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
+      },
+      "meet_spd&team<030>": {
+        "name": "連絡員",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>、<#cc.kw>BSW</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      }
+    }
   },
   "meteor": {
     "name": "メテオ",
@@ -2031,7 +2261,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<000>": {
+        "name": "標準化α",
+        "description": "製造所配置時、製造効率<#cc.vup>+15{'%'}</>"
+      },
+      "dorm_rec_single<010>": {
+        "name": "思いやり",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.55</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "shirayuki": {
     "name": "シラユキ",
@@ -2204,7 +2444,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<020>": {
+        "name": "情報収集β",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+20{'%'}</>"
+      },
+      "manu_formula_spd<010>": {
+        "name": "作戦記録指導",
+        "description": "製造所配置時、<#cc.kw>作戦記録</>製造の製造効率<#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "courier": {
     "name": "クーリエ",
@@ -2394,7 +2644,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<020>": {
+        "name": "カランド貿易α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+15{'%'}</>、注文上限<#cc.vup>+2</>"
+      },
+      "meet_spd&team<040>": {
+        "name": "クーリエ",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>、<#cc.kw>カランド貿易</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      }
+    }
   },
   "scavenger": {
     "name": "スカベンジャー",
@@ -2584,7 +2844,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<001>": {
+        "name": "S.W.E.E.P.",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "manu_prod_limit&cost<000>": {
+        "name": "ウェストピッカー",
+        "description": "製造所配置時、保管上限<#cc.vup>+8</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      }
+    }
   },
   "vigna": {
     "name": "ヴィグナ",
@@ -2790,7 +3060,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<010>": {
+        "name": "作戦記録指導",
+        "description": "製造所配置時、<#cc.kw>作戦記録</>製造の製造効率<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<011>": {
+        "name": "先鋒エキスパートβ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>先鋒</>の訓練速度<#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "dobermann": {
     "name": "ドーベルマン",
@@ -2988,7 +3268,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<000>": {
+        "name": "腹心",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "train_spd<000>": {
+        "name": "教官",
+        "description": "訓練室で協力者として配置時、訓練速度<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "matoimaru": {
     "name": "マトイマル",
@@ -3170,7 +3460,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<000>": {
+        "name": "アーツ理論",
+        "description": "加工所で<#cc.kw>アーツ学</>を加工時、副産物の入手確率<#cc.vup>+70{'%'}</>"
+      },
+      "trade_ord_spd<001>": {
+        "name": "注文分配β",
+        "description": "貿易所配置時、受注効率<#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "frostleaf": {
     "name": "フロストリーフ",
@@ -3292,7 +3592,17 @@
         "description": "80％の攻撃力で<#ba.kw>遠距離攻撃</>も行える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": "一人きり",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.7</>"
+      },
+      "manu_formula_spd<010>": {
+        "name": "作戦記録指導",
+        "description": "製造所配置時、<#cc.kw>作戦記録</>製造の製造効率<#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "estelle": {
     "name": "エステル",
@@ -3482,7 +3792,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<020>": {
+        "name": "集中β",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+60{'%'}</>"
+      },
+      "dorm_rec_oneself<000>": {
+        "name": "一人きり",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.7</>"
+      }
+    }
   },
   "mousse": {
     "name": "ムース",
@@ -3616,7 +3936,17 @@
         "description": "敵に<#ba.kw>術ダメージ</>を与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<001>": {
+        "name": "注文分配β",
+        "description": "貿易所配置時、受注効率<#cc.vup>+30{'%'}</>"
+      },
+      "dorm_rec_single&oneself<010>": {
+        "name": "ベーキング",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.3</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<#cc.vup>+0.3</>"
+      }
+    }
   },
   "gravel": {
     "name": "グラベル",
@@ -3794,7 +4124,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<000>": {
+        "name": "集中α",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+40{'%'}</>"
+      },
+      "manu_formula_spd<110>": {
+        "name": "金属工芸β",
+        "description": "製造所配置時、<#cc.kw>金属</>製造の製造効率<#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "rope": {
     "name": "ロープ",
@@ -3984,7 +4324,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<020>": {
+        "name": "情報収集β",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+20{'%'}</>"
+      },
+      "trade_ord_limit&cost<000>": {
+        "name": "交渉",
+        "description": "貿易所配置時、注文上限<#cc.vup>+5</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      }
+    }
   },
   "myrrh": {
     "name": "ミルラ",
@@ -4174,7 +4524,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<110>": {
+        "name": "薬理学α",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+75{'%'}</>"
+      },
+      "dorm_rec_single<010>": {
+        "name": "思いやり",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.55</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "gavial": {
     "name": "ガヴィル",
@@ -4364,7 +4724,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<110>": {
+        "name": "薬理学α",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+75{'%'}</>"
+      },
+      "train_spd&profession<070>": {
+        "name": "医療エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>医療</>の訓練速度<#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "perfumer": {
     "name": "パフューマー",
@@ -4570,7 +4940,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<110>": {
+        "name": "薬理学α",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+75{'%'}</>"
+      },
+      "manu_prod_spd<010>": {
+        "name": "標準化β",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "matterhorn": {
     "name": "マッターホルン",
@@ -4744,7 +5124,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<020>": {
+        "name": "カランド貿易α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+15{'%'}</>、注文上限<#cc.vup>+2</>"
+      },
+      "train_spd&profession<031>": {
+        "name": "重装エキスパートβ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>重装</>の訓練速度<#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "cuora": {
     "name": "クオーラ",
@@ -4918,7 +5308,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit<001>": {
+        "name": "倉庫整備β",
+        "description": "製造所配置時、保管上限<#cc.vup>+10</>、製造効率<#cc.vup>+10{'%'}</>"
+      },
+      "trade_ord_spd<000>": {
+        "name": "注文分配α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "gummy": {
     "name": "グム",
@@ -5108,7 +5508,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&cost<000>": {
+        "name": "コミュニケーション",
+        "description": "貿易所配置時、受注効率<#cc.vup>+30{'%'}</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "dorm_rec_single&oneself<011>": {
+        "name": "調理",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.35</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<#cc.vup>+0.35</>"
+      }
+    }
   },
   "deepcolor": {
     "name": "ディピカ",
@@ -5321,7 +5731,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd<000>": {
+        "name": "注文分配α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+20{'%'}</>"
+      },
+      "workshop_proc_probability<020>": {
+        "name": "集中β",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+60{'%'}</>"
       }
     }
   },
@@ -5505,7 +5926,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost<010>": {
+        "name": "天災トランスポーターα",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+30{'%'}</>"
+      },
+      "hire_spd_cost<200>": {
+        "name": "定時退勤",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+45{'%'}</>、1時間ごとの体力消費量<#cc.vdown>+2</>"
+      },
+      "manu_formula_spd<211>": {
+        "name": "地質学β",
+        "description": "製造所配置時、<#cc.kw>源石</>製造の製造効率<#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "shaw": {
     "name": "ショウ",
@@ -5679,7 +6114,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<200>": {
+        "name": "工学",
+        "description": "加工所で<#cc.kw>建築材料</>を加工時、副産物の入手確率<#cc.vup>+70{'%'}</>"
+      },
+      "power_rec_spd<010>": {
+        "name": "メンテナンス",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "ptilopsis": {
     "name": "フィリオプシス",
@@ -5869,7 +6314,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<001>": {
+        "name": "ラインテクα",
+        "description": "製造所配置時、製造効率<#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd<011>": {
+        "name": "ラインテクβ",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "zima": {
     "name": "ズィマー",
@@ -6043,7 +6498,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<013>": {
+        "name": "カリスマ",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      },
+      "dorm_rec_all<020>": {
+        "name": "冬将軍",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "texas": {
     "name": "テキサス",
@@ -6233,7 +6698,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&cost_P<000>": {
+        "name": "因縁",
+        "description": "<#cc.kw>ラップランド</>と同じ貿易所に配置時、1時間ごとの体力消費量<#cc.vdown>+0.3</>、受注効率<#cc.vup>+65{'%'}</>"
+      },
+      "trade_ord_limit&cost_P<010>": {
+        "name": "チームワーク",
+        "description": "<#cc.kw>エクシア</>と同じ貿易所に配置時、1時間ごとの体力消費量<#cc.vup>-0.3</>"
+      }
+    }
   },
   "franka": {
     "name": "フランカ",
@@ -6407,7 +6882,25 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": "前衛エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<021>": {
+        "name": "前衛エキスパートβ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+50{'%'}</>"
+      },
+      "meet_spd&team<000>": {
+        "name": "情報収集α",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>"
+      },
+      "meet_spd&team<031>": {
+        "name": "B.P.R.S",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>、<#cc.kw>BSW</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      }
+    }
   },
   "indra": {
     "name": "インドラ",
@@ -6541,7 +7034,17 @@
         "description": "敵を1体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "情報収集α",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>"
+      },
+      "meet_spd&team<070>": {
+        "name": "メッセンジャー",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>、<#cc.kw>グラスゴー</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      }
+    }
   },
   "lappland": {
     "name": "ラップランド",
@@ -6675,7 +7178,17 @@
         "description": "80％の攻撃力で<#ba.kw>遠距離攻撃</>も行える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_limit&cost_P<000>": {
+        "name": "酔翁の意α",
+        "description": "<#cc.kw>テキサス</>と同じ貿易所に配置時、1時間ごとの体力消費量<#cc.vup>-0.1</>、注文上限<#cc.vup>+2</>"
+      },
+      "trade_ord_limit&cost_P<001>": {
+        "name": "酔翁の意β",
+        "description": "<#cc.kw>テキサス</>と同じ貿易所に配置時、1時間ごとの体力消費量<#cc.vup>-0.1</>、注文上限<#cc.vup>+4</>"
+      }
+    }
   },
   "specter": {
     "name": "スペクター",
@@ -6857,7 +7370,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": "一人きり",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.7</>"
+      },
+      "dorm_rec_oneself<010>": {
+        "name": "狂熱",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.85</>"
+      }
+    }
   },
   "blue-poison": {
     "name": "アズリウス",
@@ -7063,7 +7586,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<111>": {
+        "name": "毒理学α",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+75{'%'}</>"
+      },
+      "workshop_formula_probability<121>": {
+        "name": "毒理学β",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+80{'%'}</>"
+      }
+    }
   },
   "platinum": {
     "name": "プラチナ",
@@ -7253,7 +7786,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<040>": {
+        "name": "狙撃エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>狙撃</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<041>": {
+        "name": "狙撃エキスパートβ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>狙撃</>の訓練速度<#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "meteorite": {
     "name": "メテオリーテ",
@@ -7430,7 +7973,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<112>": {
+        "name": "火薬学α",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+75{'%'}</>"
+      },
+      "workshop_formula_probability<122>": {
+        "name": "火薬学β",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+80{'%'}</>"
+      }
+    }
   },
   "amiya": {
     "name": "アーミヤ",
@@ -7658,7 +8211,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_tra_spd<000>": {
+        "name": "共同作業",
+        "description": "制御中枢配置時、全貿易所の受注効率<#cc.vup>+7{'%'}</>（同種の効果は高いほうのみ適応）"
+      },
+      "dorm_rec_all<010>": {
+        "name": "バイオリン独奏",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "skyfire": {
     "name": "スカイフレア",
@@ -7851,7 +8414,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<050>": {
+        "name": "術師エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>術師</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<051>": {
+        "name": "術師エキスパートβ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>術師</>の訓練速度<#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "mayer": {
     "name": "メイヤー",
@@ -8158,7 +8731,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_proc_probability<030>": {
+        "name": "ミーボ加工型",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+65{'%'}</>"
+      },
+      "manu_prod_spd<020>": {
+        "name": "ミーボ製造型",
+        "description": "製造所配置時、製造効率<#cc.vup>+30{'%'}</>"
       }
     }
   },
@@ -8369,7 +8953,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd<001>": {
+        "name": "ラインテクα",
+        "description": "製造所配置時、製造効率<#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd<011>": {
+        "name": "ラインテクβ",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
       }
     }
   },
@@ -8545,7 +9140,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<070>": {
+        "name": "医療エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>医療</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<071>": {
+        "name": "医療エキスパートβ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>医療</>の訓練速度<#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "nearl": {
     "name": "ニアール",
@@ -8735,7 +9340,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<000>": {
+        "name": "腹心",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "dorm_rec_single&oneself<030>": {
+        "name": "使徒",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.5</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<#cc.vup>+0.25</>"
+      }
+    }
   },
   "projekt-red": {
     "name": "レッド",
@@ -8925,7 +9540,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<001>": {
+        "name": "S.W.E.E.P.",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "meet_spd<031>": {
+        "name": "追跡者",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "liskarm": {
     "name": "リスカム",
@@ -9057,7 +9682,17 @@
         "description": "敵を3体までブロック、遠距離攻撃も行える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<014>": {
+        "name": "電弧放電α",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+15{'%'}</>"
+      },
+      "power_rec_spd<021>": {
+        "name": "電弧放電β",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "croissant": {
     "name": "クロワッサン",
@@ -9247,7 +9882,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<030>": {
+        "name": "ペンギン急便α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+20{'%'}</>"
+      },
+      "trade_ord_spd&limit<031>": {
+        "name": "絶対に、確実に",
+        "description": "貿易所配置時、受注効率<#cc.vup>+30{'%'}</>、注文上限<#cc.vup>+1</>"
+      }
+    }
   },
   "vulcan": {
     "name": "ヴァルカン",
@@ -9381,7 +10026,17 @@
         "description": "味方からの治療効果を<#ba.kw>受けない</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit&cost<000>": {
+        "name": "職人魂α",
+        "description": "製造所配置時、製造効率<#cc.vdown>-5{'%'}</>、保管上限<#cc.vup>+16</>、1時間ごとの体力消費量<#cc.vup>-0.15</>"
+      },
+      "manu_prod_spd&limit&cost<001>": {
+        "name": "職人魂β",
+        "description": "製造所配置時、製造効率<#cc.vdown>-5{'%'}</>、保管上限<#cc.vup>+19</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      }
+    }
   },
   "provence": {
     "name": "プロヴァンス",
@@ -9571,7 +10226,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<010>": {
+        "name": "天災トランスポーターα",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+30{'%'}</>"
+      },
+      "hire_spd<011>": {
+        "name": "天災トランスポーターβ",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "firewatch": {
     "name": "ファイヤーウォッチ",
@@ -9761,7 +10426,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<000>": {
+        "name": "情報収集α",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>"
+      },
+      "meet_spd<020>": {
+        "name": "情報収集β",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "cliffheart": {
     "name": "クリフハート",
@@ -9951,7 +10626,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single&oneself<001>": {
+        "name": "探検家の情熱",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.25</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<#cc.vup>+0.5</>"
+      },
+      "trade_ord_spd&limit<021>": {
+        "name": "カランド貿易β",
+        "description": "貿易所配置時、受注効率<#cc.vup>+15{'%'}</>、注文上限<#cc.vup>+4</>"
+      }
+    }
   },
   "pramanix": {
     "name": "プラマニクス",
@@ -10139,7 +10824,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single&oneself<021>": {
+        "name": "カランドの聖女",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.5</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<#cc.vup>+0.25</>"
+      },
+      "train_spd&profession<061>": {
+        "name": "補助エキスパートβ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>補助</>の訓練速度<#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "istina": {
     "name": "イースチナ",
@@ -10321,7 +11016,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<060>": {
+        "name": "補助エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>補助</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "meet_spd&team<050>": {
+        "name": "参謀",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>、<#cc.kw>ウルサス学生自治団</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      }
+    }
   },
   "sora": {
     "name": "ソラ",
@@ -10447,7 +11152,17 @@
         "description": "攻撃しない\n攻撃範囲内の味方全員の<#ba.kw>HP</>を継続回復(1秒ごとに攻撃力の<#ba.kw>{'{'}attack{'@'}atk_to_hp_recovery_ratio:0{'%'}{'}'}</>回復)\n自身は<?ba.inspire>鼓舞</>状態の効果を受けない"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<011>": {
+        "name": "アイドル",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      },
+      "trade_ord_spd<011>": {
+        "name": "ペンギン急便β",
+        "description": "貿易所配置時、受注効率<#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "manticore": {
     "name": "マンティコア",
@@ -10653,7 +11368,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<080>": {
+        "name": "特殊エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>特殊</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<081>": {
+        "name": "特殊エキスパートβ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>特殊</>の訓練速度<#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "feater": {
     "name": "エフイーター",
@@ -10843,7 +11568,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<010>": {
+        "name": "作戦記録指導",
+        "description": "製造所配置時、<#cc.kw>作戦記録</>製造の製造効率<#cc.vup>+30{'%'}</>"
+      },
+      "manu_formula_spd<020>": {
+        "name": "拳術記録指導",
+        "description": "製造所配置時、<#cc.kw>作戦記録</>製造の製造効率<#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "exusiai": {
     "name": "エクシア",
@@ -11085,7 +11820,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<010>": {
+        "name": "ペンギン急便α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+20{'%'}</>"
+      },
+      "trade_ord_spd<020>": {
+        "name": "物流エキスパート",
+        "description": "貿易所配置時、受注効率<#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "siege": {
     "name": "シージ",
@@ -11391,7 +12136,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<013>": {
+        "name": "カリスマ",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      },
+      "dorm_rec_all<022>": {
+        "name": "ライオンハート",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "ifrit": {
     "name": "イフリータ",
@@ -11641,7 +12396,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<001>": {
+        "name": "火力発電α",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+10{'%'}</>"
+      },
+      "power_rec_spd<013>": {
+        "name": "高火力発電",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "eyjafjalla": {
     "name": "エイヤフィヤトラ",
@@ -11883,7 +12648,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<213>": {
+        "name": "火山学者",
+        "description": "製造所配置時、<#cc.kw>源石</>製造の製造効率<#cc.vup>+35{'%'}</>"
+      },
+      "hire_spd<011>": {
+        "name": "天災トランスポーターβ",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "angelina": {
     "name": "アンジェリーナ",
@@ -12191,7 +12966,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "情報収集α",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>"
+      },
+      "meet_spd&team<060>": {
+        "name": "トランスポーター・ロドス",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>、<#cc.kw>ロドス製薬</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      }
+    }
   },
   "shining": {
     "name": "シャイニング",
@@ -12501,7 +13286,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<010>": {
+        "name": "思いやり",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.55</>（同種の効果は高いほうのみ適応）"
+      },
+      "dorm_rec_single<020>": {
+        "name": "慈悲",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.75</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "nightingale": {
     "name": "ナイチンゲール",
@@ -12783,7 +13578,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "dorm_rec_all<000>": {
+        "name": "鼓舞",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.1</>（同種の効果は高いほうのみ適応）"
+      },
+      "dorm_rec_all<021>": {
+        "name": "ランプの貴婦人",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
       }
     }
   },
@@ -13089,7 +13895,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<030>": {
+        "name": "重装エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>重装</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<130>": {
+        "name": "般若",
+        "description": "訓練室で協力者として配置時、<#cc.kw>重装</>の訓練速度<#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "saria": {
     "name": "サリア",
@@ -13369,7 +14185,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "情報収集α",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>"
+      },
+      "meet_spd&team<010>": {
+        "name": "ウォッチマン",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>、<#cc.kw>ライン生命</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      }
+    }
   },
   "silverash": {
     "name": "シルバーアッシュ",
@@ -13551,7 +14377,17 @@
         "description": "80％の攻撃力で<#ba.kw>遠距離攻撃</>も行える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<020>": {
+        "name": "カランド貿易α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+15{'%'}</>、注文上限<#cc.vup>+2</>"
+      },
+      "trade_ord_spd&limit<022>": {
+        "name": "カランドの主",
+        "description": "貿易所配置時、受注効率<#cc.vup>+20{'%'}</>、注文上限<#cc.vup>+4</>"
+      }
+    }
   },
   "savage": {
     "name": "サベージ",
@@ -13722,7 +14558,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<000>": {
+        "name": "アーツ理論",
+        "description": "加工所で<#cc.kw>アーツ学</>を加工時、副産物の入手確率<#cc.vup>+70{'%'}</>"
+      },
+      "dorm_rec_single&oneself<011>": {
+        "name": "調理",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.35</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<#cc.vup>+0.35</>"
+      }
+    }
   },
   "catapult": {
     "name": "カタパルト",
@@ -13790,7 +14636,17 @@
         "description": "敵に<#ba.kw>範囲物理ダメージ</>を与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&cost<000>": {
+        "name": "コミュニケーション",
+        "description": "貿易所配置時、受注効率<#cc.vup>+30{'%'}</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "workshop_formula_probability<122>": {
+        "name": "火薬学β",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+80{'%'}</>"
+      }
+    }
   },
   "midnight": {
     "name": "ミッドナイト",
@@ -13870,7 +14726,17 @@
         "description": "80％の攻撃力で<#ba.kw>遠距離攻撃</>も行える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&cost<000>": {
+        "name": "コミュニケーション",
+        "description": "貿易所配置時、受注効率<#cc.vup>+30{'%'}</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "manu_formula_spd<200>": {
+        "name": "源石工芸α",
+        "description": "製造所配置時、<#cc.kw>源石</>製造の製造効率<#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "beehunter": {
     "name": "ビーハンター",
@@ -14004,7 +14870,17 @@
         "description": "敵を1体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": "前衛エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "workshop_formula_probability<300>": {
+        "name": "特訓記録",
+        "description": "加工所で<#cc.kw>SoC</>を加工時、副産物の入手確率<#cc.vup>+70{'%'}</>"
+      }
+    }
   },
   "nightmare": {
     "name": "ナイトメア",
@@ -14210,7 +15086,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<050>": {
+        "name": "術師エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>術師</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "hire_spd<020>": {
+        "name": "心理学",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+40{'%'}</>"
+      }
+    }
   },
   "grani": {
     "name": "グラニ",
@@ -14416,7 +15302,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<010>": {
+        "name": "先鋒エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>先鋒</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<011>": {
+        "name": "先鋒エキスパートβ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>先鋒</>の訓練速度<#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "skadi": {
     "name": "スカジ",
@@ -14696,7 +15592,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": "一人きり",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.7</>"
+      },
+      "dorm_rec_oneself<020>": {
+        "name": "悲歌",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+1</>"
+      }
+    }
   },
   "popukar": {
     "name": "ポプカル",
@@ -14776,7 +15682,17 @@
         "description": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit&cost<010>": {
+        "name": "トラブルメーカー",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>、保管上限<#cc.vdown>-12</>、1時間ごとの体力消費量<#cc.vdown>+0.25</>"
+      },
+      "dorm_rec_single&oneself<020>": {
+        "name": "調和",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.4</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<#cc.vup>+0.2</>"
+      }
+    }
   },
   "spot": {
     "name": "スポット",
@@ -14856,7 +15772,17 @@
         "description": "HP回復スキルを所持"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<010>": {
+        "name": "能工巧匠",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+50{'%'}</>"
+      },
+      "manu_formula_spd<100>": {
+        "name": "金属工芸α",
+        "description": "製造所配置時、<#cc.kw>金属</>製造の製造効率<#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "greyy": {
     "name": "グレイ",
@@ -15033,7 +15959,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<020>": {
+        "name": "静電場",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+20{'%'}</>"
+      },
+      "workshop_proc_probability<010>": {
+        "name": "能工巧匠",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "swire": {
     "name": "スワイヤー",
@@ -15223,7 +16159,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_tra_spd<010>": {
+        "name": "お嬢様",
+        "description": "制御中枢配置時、全貿易所の受注効率<#cc.vup>+7{'%'}</>（同種の効果は高いほうのみ適応）"
+      },
+      "train_spd<000>": {
+        "name": "教官",
+        "description": "訓練室で協力者として配置時、訓練速度<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "chen": {
     "name": "チェン",
@@ -15504,7 +16450,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<000>": {
+        "name": "才徳兼備",
+        "description": "制御中枢配置時、制御中枢内の<?cc.g.lgd><#cc.kw>龍門近衛局</></>所属オペレーター1人につき、中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "meet_spd&team<100>": {
+        "name": "警視",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "sussurro": {
     "name": "ススーロ",
@@ -15694,7 +16650,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<070>": {
+        "name": "医療エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>医療</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "workshop_formula_probability<120>": {
+        "name": "薬理学β",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+80{'%'}</>"
+      }
+    }
   },
   "ceylon": {
     "name": "セイロン",
@@ -15884,7 +16850,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<129>": {
+        "name": "学者",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+80{'%'}</>"
+      },
+      "manu_formula_spd<212>": {
+        "name": "源石研究",
+        "description": "製造所配置時、<#cc.kw>源石</>製造の製造効率<#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "glaucus": {
     "name": "グラウコス",
@@ -16090,7 +17066,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<003>": {
+        "name": "電磁充電α",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+10{'%'}</>"
+      },
+      "power_rec_spd<015>": {
+        "name": "電磁充電β",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "schwarz": {
     "name": "シュヴァルツ",
@@ -16386,7 +17372,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single_P<000>": {
+        "name": "ティーサーブ",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.55</>（同種の効果は高いほうのみ適応）。対象が<#cc.kw>セイロン</>の場合、更に<#cc.vup>+0.45</>"
+      },
+      "train_spd&profession<140>": {
+        "name": "黒矢",
+        "description": "訓練室で協力者として配置時、<#cc.kw>狙撃</>の訓練速度<#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "myrtle": {
     "name": "テンニンカ",
@@ -16568,7 +17564,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_limit&cost<000>": {
+        "name": "交渉",
+        "description": "貿易所配置時、注文上限<#cc.vup>+5</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "dorm_rec_all<013>": {
+        "name": "カリスマ",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "astesia": {
     "name": "アステシア",
@@ -16694,7 +17700,17 @@
         "description": "敵に<#ba.kw>術ダメージ</>を与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "情報収集α",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>"
+      },
+      "meet_spd&team<110>": {
+        "name": "占星学",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "hellagur": {
     "name": "ヘラグ",
@@ -17008,7 +18024,25 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<010>": {
+        "name": "超越",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.55</>"
+      },
+      "dorm_rec_all&oneself<011>": {
+        "name": "昇華",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.1</>（同種の効果は高いほうのみ適応）"
+      },
+      "dorm_rec_all&oneself<012>": {
+        "name": "解脱",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.55</>。配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.1</>（同種の効果は高いほうのみ適応）"
+      },
+      "workshop_formula_probability<010>": {
+        "name": "兵は詭道なり",
+        "description": "加工所で<#cc.kw>アーツ学</>を加工時、副産物の入手確率<#cc.vup>+80{'%'}</>"
+      }
+    }
   },
   "dur-nar": {
     "name": "ジュナー",
@@ -17134,7 +18168,17 @@
         "description": "スキル発動中、敵に術ダメージを与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<030>": {
+        "name": "重装エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>重装</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "control_mp_cost<002>": {
+        "name": "おやつネット",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      }
+    }
   },
   "vermeil": {
     "name": "ヴァーミル",
@@ -17308,7 +18352,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_limit&cost<0000>": {
+        "name": "ウェストピッカー",
+        "description": "製造所配置時、保管上限<#cc.vup>+8</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "manu_prod_spd_variable<000>": {
+        "name": "再利用",
+        "description": "製造所配置時、保管上限1上昇につき、製造効率<#cc.vup>+2{'%'}</>"
+      }
+    }
   },
   "flamebringer": {
     "name": "エンカク",
@@ -17498,7 +18552,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<000>": {
+        "name": "アーツ理論",
+        "description": "加工所で<#cc.kw>アーツ学</>を加工時、副産物の入手確率<#cc.vup>+70{'%'}</>"
+      },
+      "workshop_formula_probability<020>": {
+        "name": "剣技の粋",
+        "description": "加工所で<#cc.kw>アーツ学</>を加工時、副産物の入手確率<#cc.vup>+80{'%'}</>"
+      }
+    }
   },
   "executor": {
     "name": "イグゼキュター",
@@ -17632,7 +18696,17 @@
         "description": "攻撃範囲内の<#ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が150{'%'}まで上昇"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<040>": {
+        "name": "狙撃エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>狙撃</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "control_mp_cost<003>": {
+        "name": "執行協定",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      }
+    }
   },
   "magallan": {
     "name": "マゼラン",
@@ -18056,7 +19130,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10005_mgllan_drone2": {
         "name": "DDF・L",
@@ -18147,7 +19222,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10005_mgllan_drone3": {
         "name": "DDF・A",
@@ -18238,7 +19314,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_proc_probability<011>": {
+        "name": "多機能セオドライト",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+50{'%'}</>"
+      },
+      "workshop_formula_cost<000>": {
+        "name": "ドローン・DDF",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、体力消費が<#cc.kw>4</>以上の素材の体力消費<#cc.vup>-2</>"
       }
     }
   },
@@ -18430,7 +19517,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<030>": {
+        "name": "WRITER",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+40{'%'}</>"
+      },
+      "dorm_rec_oneself<030>": {
+        "name": "見えない美食家",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.75</>"
+      }
+    }
   },
   "breeze": {
     "name": "ブリーズ",
@@ -18620,7 +19717,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "情報収集α",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>"
+      },
+      "meet_spd&team<071>": {
+        "name": "没落貴族",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>、<#cc.kw>グラスゴー</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      }
+    }
   },
   "may": {
     "name": "メイ",
@@ -18810,7 +19917,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<0020>": {
+        "name": "情報収集β",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+20{'%'}</>"
+      },
+      "meet_team<020>": {
+        "name": "皇室探偵（自称）",
+        "description": "応接室配置時、<#cc.kw>ペンギン急便</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      }
+    }
   },
   "waai-fu": {
     "name": "ワイフー",
@@ -18992,7 +20109,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_cost_all<000>": {
+        "name": "チームワーク",
+        "description": "製造所配置時、配属オペレーターの<#cc.kw>自身</>に対する体力消費に関する効果が<#cc.kw>無効</>になる"
+      },
+      "manu_prod_spd_variable2<000>": {
+        "name": "コンビネーション",
+        "description": "製造所配置時、配置製造所の製造効率<#cc.vup>5{'%'}</>上昇（施設の数量による製造効率上昇を含めず）につき、製造効率<#cc.vup>+5{'%'}</>、最大<#cc.vup>40{'%'}</>"
+      }
+    }
   },
   "bison": {
     "name": "バイソン",
@@ -19182,7 +20309,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<032>": {
+        "name": "フェンツ運輸",
+        "description": "貿易所配置時、受注効率<#cc.vup>+20{'%'}</>"
+      },
+      "trade_ord_spd&limit<033>": {
+        "name": "御曹司",
+        "description": "貿易所配置時、受注効率<#cc.vup>+30{'%'}</>、注文上限<#cc.vup>+1</>"
+      }
+    }
   },
   "mostima": {
     "name": "モスティマ",
@@ -19419,7 +20556,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "情報収集α",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>"
+      },
+      "meet_spd&team<020>": {
+        "name": "トランスポーター・ペンギン急便",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>、<#cc.kw>ペンギン急便</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      }
+    }
   },
   "reed": {
     "name": "リード",
@@ -19609,7 +20756,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": "一人きり",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.7</>"
+      },
+      "control_mp_cost<004>": {
+        "name": "影武者",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      }
+    }
   },
   "broca": {
     "name": "ブローカ",
@@ -19799,7 +20956,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": "前衛エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<021>": {
+        "name": "前衛エキスパートβ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "ambriel": {
     "name": "アンブリエル",
@@ -19981,7 +21148,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<000>": {
+        "name": "怠惰",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vdown>-0.1</>。配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
+      },
+      "trade_ord_spd<001>": {
+        "name": "注文分配β",
+        "description": "貿易所配置時、受注効率<#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "greythroat": {
     "name": "グレースロート",
@@ -20171,7 +21348,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<005>": {
+        "name": "責任感",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "dorm_rec_oneself<000>": {
+        "name": "一人きり",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.7</>"
+      }
+    }
   },
   "blaze": {
     "name": "ブレイズ",
@@ -20413,7 +21600,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<001>": {
+        "name": "火力発電α",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+10{'%'}</>"
+      },
+      "workshop_formula_probability<210>": {
+        "name": "鉄を切って鋼を断つ",
+        "description": "加工所で<#cc.kw>建築材料</>を加工時、副産物の入手確率<#cc.vup>+80{'%'}</>"
+      }
+    }
   },
   "snowsant": {
     "name": "スノーズント",
@@ -20603,7 +21800,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd_variable2<000>": {
+        "name": "天性の努力家α",
+        "description": "貿易所配置時、配置貿易所の受注効率が<#cc.vup>5{'%'}</>上昇につき、受注効率<#cc.vup>+5{'%'}</>、最大<#cc.vup>25{'%'}</>"
+      },
+      "trade_ord_spd_variable2<001>": {
+        "name": "天性の努力家β",
+        "description": "貿易所配置時、配置貿易所の受注効率が<#cc.vup>5{'%'}</>上昇につき、受注効率<#cc.vup>+5{'%'}</>、最大<#cc.vup>35{'%'}</>"
+      }
+    }
   },
   "hung": {
     "name": "ウン",
@@ -20793,7 +22000,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<010>": {
+        "name": "能工巧匠",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+50{'%'}</>"
+      },
+      "control_mp_cost&faction2<000>": {
+        "name": "温厚篤実",
+        "description": "制御中枢配置時、制御中枢内の<?cc.g.lda><#cc.kw>リー探偵事務所</></>所属オペレーター1人につき、中枢内全員の体力が1時間ごとに<#cc.vup>+0.2</>回復。所属オペレーターは体力回復量が<#cc.kw>更に増加</>"
+      }
+    }
   },
   "aak": {
     "name": "ア",
@@ -21039,7 +22256,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_clue_cost<000>": {
+        "name": "神経質",
+        "description": "制御中枢配置時、応接室配属オペレーターの<#cc.kw>手がかり捜索の傾向</>を<#cc.kw>強める</>。制御中枢内全員の1時間ごとの体力消費量<#cc.vdown>+1.5</>"
+      },
+      "train_spd&profession<170>": {
+        "name": "高精度手術",
+        "description": "訓練室で協力者として配置時、<#cc.kw>医療</>の訓練速度<#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "nian": {
     "name": "ニェン",
@@ -21319,7 +22546,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<160>": {
+        "name": "希有金属鑑定",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+100{'%'}</>"
+      },
+      "workshop_formula_cost<010>": {
+        "name": "やりたい放題",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、対象素材の体力消費<#cc.vdown>+2</>"
+      }
+    }
   },
   "leizi": {
     "name": "レイズ",
@@ -21522,7 +22759,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_clue_cost<010>": {
+        "name": "明察",
+        "description": "制御中枢配置時、応接室配属オペレーターの<#cc.kw>手がかり捜索の傾向</>を<#cc.kw>わずかに強める</>。制御中枢内全員の1時間ごとの体力消費量<#cc.vdown>+0.5</>"
+      },
+      "control_clue_cost<011>": {
+        "name": "明察秋毫",
+        "description": "制御中枢配置時、応接室配属オペレーターの<#cc.kw>手がかり捜索の傾向</>を<#cc.kw>わずかに強める</>。"
+      }
+    }
   },
   "ceobe": {
     "name": "ケオベ",
@@ -21802,7 +23049,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_limit&cost<002>": {
+        "name": "「みんなほしい」",
+        "description": "製造所配置時、保管上限<#cc.vup>+8</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "manu_prod_spd_addition<031>": {
+        "name": "「まてない」",
+        "description": "製造所配置時、最初の1時間製造効率<#cc.vup>+20{'%'}</>、その後まで1時間ごと更に<#cc.vup>+1{'%'}</>、最終的に<#cc.vup>+25{'%'}</>になる"
+      }
+    }
   },
   "purestream": {
     "name": "セイリュウ",
@@ -21976,7 +23233,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<011>": {
+        "name": "クリーンエネルギー",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd&trade<000>": {
+        "name": "再生エネルギー",
+        "description": "製造所配置時、<#cc.kw>貿易所</>1か所につき、配置中の製造所のみ<#cc.kw>金属</>製造の製造効率<#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "utage": {
     "name": "ウタゲ",
@@ -22176,7 +23443,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<020>": {
+        "name": "心理学",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+40{'%'}</>"
+      },
+      "meet_spd<020>": {
+        "name": "情報収集β",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "bibeak": {
     "name": "バイビーク",
@@ -22378,7 +23655,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_wt&cost<000>": {
+        "name": "裁縫α",
+        "description": "貿易所配置時、配置貿易所の<#cc.kw>高価値な金属オーダー</>の獲得率が<#cc.kw>わずかに上昇</>（勤務時間が確率に影響する）、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "trade_ord_wt&cost<010>": {
+        "name": "裁縫β",
+        "description": "貿易所配置時、配置貿易所の<#cc.kw>高価値な金属オーダー</>の獲得率が<#cc.kw>上昇</>（勤務時間が確率に影響する）、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      }
+    }
   },
   "sesa": {
     "name": "シェーシャ",
@@ -22571,7 +23858,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<120>": {
+        "name": "ミニマリスト",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、体力消費が<#cc.kw>4</>の素材の体力消費<#cc.vup>-2</>"
+      },
+      "workshop_formula_probability<119>": {
+        "name": "工業設計",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+75{'%'}</>"
+      }
+    }
   },
   "bagpipe": {
     "name": "バグパイプ",
@@ -22829,7 +24126,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<021>": {
+        "name": "牧歌",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.55</>。配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.1</>（同種の効果は高いほうのみ適応）"
+      },
+      "workshop_formula_probability<310>": {
+        "name": "熟練",
+        "description": "加工所で<#cc.kw>SoC</>を加工時、副産物の入手確率<#cc.vup>+80{'%'}</>"
+      }
+    }
   },
   "conviction": {
     "name": "コンビクション",
@@ -22987,7 +24294,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<030>": {
+        "name": "天啓",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.7</>（同種の効果は高いほうのみ適応）"
+      },
+      "manu_formula_spd<020>": {
+        "name": "拳術記録指導",
+        "description": "製造所配置時、<#cc.kw>作戦記録</>製造の製造効率<#cc.vup>+35{'%'}</>"
+      }
+    }
   },
   "cutter": {
     "name": "カッター",
@@ -23177,7 +24494,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<300>": {
+        "name": "特訓記録",
+        "description": "加工所で<#cc.kw>SoC</>を加工時、副産物の入手確率<#cc.vup>+70{'%'}</>"
+      },
+      "workshop_formula_cost3<300>": {
+        "name": "無心",
+        "description": "加工所で<#cc.kw>SoC</>を加工時、体力消費が<#cc.kw>2</>の素材の体力消費<#cc.vup>-1</>"
+      }
+    }
   },
   "sideroca": {
     "name": "シデロカ",
@@ -23303,7 +24630,17 @@
         "description": "敵に<#ba.kw>術ダメージ</>を与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<020>": {
+        "name": "前衛エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<320>": {
+        "name": "粉骨砕身",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>3</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "shamare": {
     "name": "シャマレ",
@@ -23548,7 +24885,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_wt&cost<000>": {
+        "name": "裁縫α",
+        "description": "貿易所配置時、配置貿易所の<#cc.kw>高価値な金属オーダー</>の獲得率が<#cc.kw>わずかに上昇</>（勤務時間が確率に影響する）、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "trade_ord_vodfox<000>": {
+        "name": "ひそひそ話",
+        "description": "貿易所配置時、自身以外の配属オペレーター全員の受注効率を<#cc.vdown>0にする</>。自身以外の配属オペレーター1人につき、製造効率<#cc.vup>+45{'%'}</>。配属オペレーター全員の体力消費が1時間ごと<#cc.vdown>+0.25</>"
       }
     }
   },
@@ -23995,7 +25343,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession<080>": {
+        "name": "特殊エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>特殊</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<180>": {
+        "name": "マスカレード",
+        "description": "訓練室で協力者として配置時、<#cc.kw>特殊</>の訓練速度<#cc.vup>+60{'%'}</>"
       }
     }
   },
@@ -24054,7 +25413,17 @@
         "description": "攻撃しない\n<#ba.kw>配属可能数</>にカウントされない\n再配置までの時間が極めて長い"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": "予備電源",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+10{'%'}</>"
+      },
+      "power_rec_spd&cost<000>": {
+        "name": "みなぎる情熱",
+        "description": "発電所配置時、1時間ごとの体力消費量<#cc.vup>-0.52</>"
+      }
+    }
   },
   "elysium": {
     "name": "エリジウム",
@@ -24244,7 +25613,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_team<060>": {
+        "name": "通信員",
+        "description": "応接室配置時、<#cc.kw>ロドス製薬</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      },
+      "meet_flag<060>": {
+        "name": "旗印",
+        "description": "応接室配置時、捜索で入手した手がかりが<#cc.kw>ロドス製薬</>でない時、<#cc.kw>ロドス製薬</>の手がかりを入手する確率が更に増加（勤務時間が確率に影響する）"
+      }
+    }
   },
   "w": {
     "name": "W",
@@ -24605,7 +25984,22 @@
           }
         },
         "traitCandidates": {},
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession2<040>": {
+        "name": "狙撃エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>狙撃</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<640>": {
+        "name": "最後の仕上げ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>狙撃</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>3</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+65{'%'}</>"
+      },
+      "train_cost&profession<340>": {
+        "name": "飽きっぽい",
+        "description": "訓練室で<#cc.kw>狙撃</>の特化ランク<#cc.vup>3</>への訓練の協力者として配置時、体力消費が1時間ごと<#cc.vdown>+1</>"
       }
     }
   },
@@ -24928,7 +26322,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd&power<010>": {
+        "name": "自動化β",
+        "description": "製造所配置時、自身以外の配属オペレーター全員の製造効率を<#cc.vdown>０にする</>（施設の数量による製造効率上昇に影響なし）。<#cc.kw>発電所</>1か所につき、製造効率<#cc.vup>+10{'%'}</>"
+      },
+      "manu_prod_spd&power<020>": {
+        "name": "シードラゴン",
+        "description": "製造所配置時、自身以外の配属オペレーター全員の製造効率を<#cc.vdown>０にする</>（施設の数量による製造効率上昇に影響なし）。<#cc.kw>発電所</>1か所につき、製造効率<#cc.vup>+15{'%'}</>"
       }
     }
   },
@@ -25056,7 +26461,17 @@
         "description": "スキル発動中、敵に術ダメージを与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit&cost<011>": {
+        "name": "自主独往",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>、保管上限<#cc.vdown>-12</>、1時間ごとの体力消費量<#cc.vdown>+0.25</>"
+      },
+      "manu_prod_limit&cost<020>": {
+        "name": "探険者",
+        "description": "製造所配置時、保管上限<#cc.vup>+16</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      }
+    }
   },
   "tsukinogi": {
     "name": "ツキノギ",
@@ -25256,7 +26671,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue<010>": {
+        "name": "天災トランスポーターα",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+30{'%'}</>"
+      },
+      "hire_spd&clue<100>": {
+        "name": "人心把握",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+35{'%'}</>。公開求人の最大同時求人可能数が2より1多いごとに、応接室の手がかり捜索速度<#cc.vup>+5{'%'}</>"
+      }
+    }
   },
   "podenco": {
     "name": "ポデンコ",
@@ -25462,7 +26887,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<010>": {
+        "name": "思いやり",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.55</>（同種の効果は高いほうのみ適応）"
+      },
+      "dorm_rec_single<001>": {
+        "name": "セラピー",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.65</>（同種の効果は高いほうのみ適応）"
+      },
+      "dorm_rec_all<012>": {
+        "name": "花の香り",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "absinthe": {
     "name": "アブサント",
@@ -25652,7 +27091,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_team<050>": {
+        "name": "秘密調査",
+        "description": "応接室配置時、<#cc.kw>ウルサス学生自治団</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      },
+      "meet_flag<050>": {
+        "name": "選別",
+        "description": "応接室配置時、捜索で入手した手がかりが<#cc.kw>ウルサス学生自治団</>でない時、<#cc.kw>ウルサス学生自治団</>の手がかりを入手する確率が更に増加（勤務時間が確率に影響する）"
+      }
+    }
   },
   "leonhardt": {
     "name": "レオンハルト",
@@ -25861,7 +27310,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<220>": {
+        "name": "構造力学",
+        "description": "加工所で<#cc.kw>建築材料</>を加工時、副産物の入手確率<#cc.vup>+75{'%'}</>"
+      },
+      "workshop_formula_cost3<220>": {
+        "name": "資源処理工学",
+        "description": "加工所で<#cc.kw>建築材料</>を加工時、体力消費が<#cc.kw>4</>の素材の体力消費<#cc.vup>-2</>"
+      }
+    }
   },
   "rosa": {
     "name": "ロサ",
@@ -26103,7 +27562,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<020>": {
+        "name": "生徒会長",
+        "description": "制御中枢配置時、制御中枢内の<?cc.g.ussg><#cc.kw>ウルサス学生自治団</></>所属オペレーター1人につき、中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "hire_spd&clue2<250>": {
+        "name": "人望",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+20{'%'}</>、連絡回数が<#cc.vup>1</>回増える度に、<#cc.kw>ウルサス学生自治団</>の手がかりを入手する確率が増加（勤務時間と最大同時求人可能数が確率に影響する）"
+      }
+    }
   },
   "click": {
     "name": "カシャ",
@@ -26229,7 +27698,17 @@
         "description": "<#ba.kw>浮遊ユニット</>を操作して敵に<#ba.kw>術ダメージ</>を与える\n浮遊ユニットが連続で同一目標を攻撃時、与ダメージが上昇（最大は攻撃力の110{'%'}まで）"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_cost<000>": {
+        "name": "Vlog",
+        "description": "製造所で<#cc.kw>作戦記録</>を製造時、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "manu_formula_limit<010>": {
+        "name": "映像編集β",
+        "description": "製造所で<#cc.kw>作戦記録</>を製造時、保管上限<#cc.vup>+15</>"
+      }
+    }
   },
   "ayerscarpe": {
     "name": "エアースカーペ",
@@ -26363,7 +27842,17 @@
         "description": "80％の攻撃力で<#ba.kw>遠距離攻撃</>も行える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<000>": {
+        "name": "情報収集α",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>"
+      },
+      "meet_spd<020>": {
+        "name": "情報収集β",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "folinic": {
     "name": "フォリニック",
@@ -26549,7 +28038,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<111>": {
+        "name": "毒理学α",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+75{'%'}</>"
+      },
+      "workshop_formula_cost3<100>": {
+        "name": "一意専心",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、体力消費が<#cc.kw>2</>の素材の体力消費<#cc.vup>-1</>"
+      }
+    }
   },
   "suzuran": {
     "name": "スズラン",
@@ -26791,7 +28290,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<060>": {
+        "name": "補助エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>補助</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<160>": {
+        "name": "共鳴",
+        "description": "訓練室で協力者として配置時、<#cc.kw>補助</>の訓練速度<#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "chiave": {
     "name": "キアーベ",
@@ -26997,7 +28506,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<110>": {
+        "name": "ひらめき",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、体力消費が<#cc.kw>4</>の素材の体力消費<#cc.vup>-1</>"
+      },
+      "workshop_formula_device<000>": {
+        "name": "DIY・装置",
+        "description": "加工所で<#cc.kw>装置</>系素材を加工時、副産物の入手確率<#cc.vup>+90{'%'}</>"
+      }
+    }
   },
   "beeswax": {
     "name": "ビーズワクス",
@@ -27233,7 +28752,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession<050>": {
+        "name": "術師エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>術師</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<051>": {
+        "name": "術師エキスパートβ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>術師</>の訓練速度<#cc.vup>+50{'%'}</>"
       }
     }
   },
@@ -27491,7 +29021,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd_addition<041>": {
+        "name": "タイムラプス",
+        "description": "製造所配置時、最初の1時間製造効率<#cc.vup>+15{'%'}</>、その後まで1時間ごと更に<#cc.vup>+2{'%'}</>、最終的に<#cc.vup>+25{'%'}</>になる"
+      },
+      "manu_formula_limit<0000>": {
+        "name": "映像編集α",
+        "description": "製造所で<#cc.kw>作戦記録</>を製造時、保管上限<#cc.vup>+12</>"
       }
     }
   },
@@ -27683,7 +29224,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_limit_diff<000>": {
+        "name": "露店の魚売り",
+        "description": "貿易所配置時、オーダー数と注文上限数の差が<#cc.vup>1</>につき、受注効率<#cc.vup>+4{'%'}</>"
+      },
+      "trade_ord_limit_count<000>": {
+        "name": "下町の商売人",
+        "description": "貿易所配置時、自身以外の配属オペレーターの受注効率が<#cc.vup>10{'%'}</>につき、注文上限<#cc.vdown>-1</>（上限数最低1）。オーダー数が<#cc.vup>1</>につき、受注効率<#cc.vup>+4{'%'}</>（一部のスキルに対して<?cc.t.strong2><#cc.rem>特殊加算制限</></>がある）"
+      }
+    }
   },
   "andreana": {
     "name": "アンドレアナ",
@@ -27873,7 +29424,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": "一人きり",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.7</>"
+      },
+      "dorm_rec_oneself<011>": {
+        "name": "逃げるが勝ち",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.85</>"
+      }
+    }
   },
   "thorns": {
     "name": "ソーンズ",
@@ -28059,7 +29620,17 @@
         "description": "80％の攻撃力で<#ba.kw>遠距離攻撃</>も行える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<012>": {
+        "name": "「錬金術」",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+50{'%'}</>"
+      },
+      "workshop_formula_recovery<000>": {
+        "name": "「爆発アート」",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、<#cc.vup>2</>回連続で副産物が産出されなかった場合、自身の体力を<#cc.kw>対象素材の必要体力消費分回復</>（加工完成後一括計算）"
+      }
+    }
   },
   "reserve-operator-melee": {
     "name": "予備隊員-近距離",
@@ -28072,7 +29643,8 @@
         "description": "敵を2体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "reserve-operator-sniper": {
     "name": "予備隊員-狙撃",
@@ -28085,7 +29657,8 @@
         "description": "飛行ユニットを優先して攻撃"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "reserve-operator-logistics": {
     "name": "予備隊員-支援",
@@ -28098,7 +29671,8 @@
         "description": "味方のHPを回復"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "reserve-operator-caster": {
     "name": "予備隊員-術師",
@@ -28111,7 +29685,8 @@
         "description": "敵に<#ba.kw>術ダメージ</>を与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "aciddrop": {
     "name": "アシッドドロップ",
@@ -28285,7 +29860,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<031>": {
+        "name": "B-girl",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+40{'%'}</>"
+      },
+      "dorm_rec_single&oneself<012>": {
+        "name": "Give me five",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.35</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<#cc.vup>+0.35</>"
+      }
+    }
   },
   "sharp": {
     "name": "Sharp",
@@ -28353,7 +29938,8 @@
         "description": "敵を1体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "flint": {
     "name": "フリント",
@@ -28487,7 +30073,17 @@
         "description": "敵を1体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<020>": {
+        "name": "前衛エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<220>": {
+        "name": "難行苦行",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>2</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "stormeye": {
     "name": "Stormeye",
@@ -28555,7 +30151,8 @@
         "description": "飛行ユニットを優先して攻撃"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "tomimi": {
     "name": "トミミ",
@@ -28753,7 +30350,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single_P<001>": {
+        "name": "焼肉の達人",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.55</>（同種の効果は高いほうのみ適応）。対象が<#cc.kw><{'@'}cc.gvial>ガヴィル</></>の場合、更に<#cc.vup>+0.45</>"
+      },
+      "train_spd&profession2<150>": {
+        "name": "なまかじり",
+        "description": "訓練室で協力者として配置時、<#cc.kw>術師</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>1</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "pith": {
     "name": "Pith",
@@ -28821,7 +30428,8 @@
         "description": "敵に<#ba.kw>範囲術ダメージ</>を与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "touch": {
     "name": "Touch",
@@ -28889,7 +30497,8 @@
         "description": "味方のHPを回復"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "eunectes": {
     "name": "ユーネクテス",
@@ -29169,7 +30778,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&power<000>": {
+        "name": "自動化α",
+        "description": "製造所配置時、自身以外の配属オペレーター全員の製造効率を<#cc.vdown>０にする</>（施設の数量による製造効率上昇に影響なし）。<#cc.kw>発電所</>1か所につき、製造効率<#cc.vup>+5{'%'}</>"
+      },
+      "manu_prod_spd&power<010>": {
+        "name": "自動化β",
+        "description": "製造所配置時、自身以外の配属オペレーター全員の製造効率を<#cc.vdown>０にする</>（施設の数量による製造効率上昇に影響なし）。<#cc.kw>発電所</>1か所につき、製造効率<#cc.vup>+10{'%'}</>"
+      },
+      "control_pow_bot<000>": {
+        "name": "なんとかなる",
+        "description": "制御中枢配置時、<#cc.kw>Lancet-2</>が<#cc.kw>発電所</>に配置されている場合、追加で<#cc.kw>発電所</>の施設数<#cc.vup>+2</>（施設の数以外に影響なし）"
+      }
+    }
   },
   "arene": {
     "name": "アレーン",
@@ -29307,7 +30930,21 @@
         "description": "80％の攻撃力で<#ba.kw>遠距離攻撃</>も行える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_dorm<000>": {
+        "name": "「無用の用」",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、宿舎で休養中の体力が<#cc.vup>4</>以下のオペレーター<#cc.kw>1</>人につき、副産物の入手確率<#cc.vup>+5{'%'}</>"
+      },
+      "workshop_formula_dorm<001>": {
+        "name": "「適材適所」",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、宿舎で休養中の体力が<#cc.vup>20</>以下のオペレーター<#cc.kw>1</>人につき、副産物の入手確率<#cc.vup>+5{'%'}</>"
+      },
+      "dorm_rec_oneself2<000>": {
+        "name": "「一人きり」",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.7</>。配置宿舎内、他のオペレーター1人につき、自身の1時間ごとの体力回復量が追加で<#cc.vup>+0.05</>"
+      }
+    }
   },
   "april": {
     "name": "エイプリル",
@@ -29497,7 +31134,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<000>": {
+        "name": "注文管理α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+10{'%'}</>、注文上限<#cc.vup>+2</>"
+      },
+      "trade_ord_spd&limit<001>": {
+        "name": "注文管理β",
+        "description": "貿易所配置時、受注効率<#cc.vup>+10{'%'}</>、注文上限<#cc.vup>+4</>"
+      },
+      "dorm_rec_all<000>": {
+        "name": "鼓舞",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.1</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "mint": {
     "name": "ミント",
@@ -29687,7 +31338,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<050>": {
+        "name": "術師エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>術師</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<250>": {
+        "name": "博覧強記",
+        "description": "訓練室で協力者として配置時、<#cc.kw>術師</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>2</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+45{'%'}</>"
+      },
+      "manu_formula_spd<201>": {
+        "name": "地質学α",
+        "description": "製造所配置時、<#cc.kw>源石</>製造の製造効率<#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "surtr": {
     "name": "スルト",
@@ -29881,7 +31546,17 @@
         "description": "敵に<#ba.kw>術ダメージ</>を与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": "前衛エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<120>": {
+        "name": "剣術経験",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "bubble": {
     "name": "バブル",
@@ -30055,7 +31730,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_limit&cost<010>": {
+        "name": "収集癖",
+        "description": "製造所配置時、保管上限<#cc.vup>+10</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "manu_prod_spd_variable3<000>": {
+        "name": "大きい方がいい！",
+        "description": "製造所配置時、配属オペレーター各自の保管上限増加値が<#cc.vup>16</>以下の場合、増加値が1につき、製造効率<#cc.vup>+1{'%'}</>。保管上限増加値が<#cc.vup>16</>を超える場合、増加値1につき、製造効率<#cc.vup>+3{'%'}</>（<?cc.m.var1><#cc.rem>「再利用」</></>の効果より優先適応、重複不可）"
+      }
+    }
   },
   "whislash": {
     "name": "ウィスラッシュ",
@@ -30245,7 +31930,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": "前衛エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd<0000>": {
+        "name": "教官",
+        "description": "訓練室で協力者として配置時、訓練速度<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "aosta": {
     "name": "アオスタ",
@@ -30379,7 +32074,17 @@
         "description": "攻撃範囲内の<#ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が150{'%'}まで上昇"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<110>": {
+        "name": "ひらめき",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、体力消費が<#cc.kw>4</>の素材の体力消費<#cc.vup>-1</>"
+      },
+      "workshop_formula_device<030>": {
+        "name": "DIY・エステル",
+        "description": "加工所で<#cc.kw>エステル</>系素材を加工時、副産物の入手確率<#cc.vup>+90{'%'}</>"
+      }
+    }
   },
   "blemishine": {
     "name": "ブレミシャイン",
@@ -30669,7 +32374,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_free<000>": {
+        "name": "倹約家",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、龍門幣を消費しない"
+      },
+      "workshop_formula_cost2<000>": {
+        "name": "熱心な修理屋",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+40{'%'}</>、体力消費が<#cc.kw>8</>以上の素材の体力消費<#cc.vup>-4</>"
+      }
+    }
   },
   "whisperain": {
     "name": "ウィスパーレイン",
@@ -30859,7 +32574,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_bd_n1_n1<100>": {
+        "name": "放浪の旅路",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+20{'%'}</>、公開求人の最大同時求人可能数が2より1多いごとに、<?cc.bd_a1_a1><#cc.rem>記憶の欠片</></><#cc.vup>+10</>"
+      },
+      "hire_spd_bd_n1<000>": {
+        "name": "追憶",
+        "description": "事務室配置時、<#cc.vup>1</>の<?cc.bd_a1_a1><#cc.rem>記憶の欠片</></>が<#cc.vup>1</>の<?cc.bd_a1><#cc.rem>知覚情報</></>に転化される。体力が０になる時、<?cc.bd_a1_a1><#cc.rem>記憶の欠片</></>と自身が獲得した<?cc.bd_a1><#cc.rem>知覚情報</></>も０になる"
+      }
+    }
   },
   "rosmontis": {
     "name": "ロスモンティス",
@@ -31159,7 +32884,22 @@
             "description": "このユニットにブロックされている敵の防御力が減少"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd_bd_n1<000>": {
+        "name": "超感覚",
+        "description": "製造所配置時、宿舎中のオペレーター<#cc.kw>1</>人につき、<?cc.bd_a1><#cc.rem>知覚情報</></><#cc.vup>+1</>。<#cc.vup>1</>の<?cc.bd_a1><#cc.rem>知覚情報</></>が<#cc.vup>1</>の<?cc.bd_A><#cc.rem>思念連鎖</></>に転化される"
+      },
+      "manu_prod_spd_bd<000>": {
+        "name": "念力",
+        "description": "製造所配置時、<?cc.bd_A><#cc.rem>思念連鎖</></><#cc.vup>2</>につき、製造効率<#cc.vup>+1{'%'}</>"
+      },
+      "manu_prod_spd_bd<010>": {
+        "name": "意識実体",
+        "description": "製造所配置時、<?cc.bd_A><#cc.rem>思念連鎖</></><#cc.vup>1</>につき、製造効率<#cc.vup>+1{'%'}</>"
       }
     }
   },
@@ -31351,7 +33091,17 @@
         "description": "味方からの治療効果を<#ba.kw>受けない</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost4<000>": {
+        "name": "執着",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、対象素材の体力消費が<#cc.vup>2</>になる"
+      },
+      "workshop_formula_device<050>": {
+        "name": "DIY・源岩",
+        "description": "加工所で<#cc.kw>源岩</>系素材を加工時、副産物の入手確率<#cc.vup>+90{'%'}</>"
+      }
+    }
   },
   "jackie": {
     "name": "ジャッキー",
@@ -31485,7 +33235,17 @@
         "description": "敵を1体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single&oneself<000>": {
+        "name": "活発",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.2</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<#cc.vup>+0.4</>"
+      },
+      "meet_spd<0020>": {
+        "name": "情報収集β",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "pinecone": {
     "name": "パインコーン",
@@ -31619,7 +33379,17 @@
         "description": "攻撃範囲内の<#ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が150{'%'}まで上昇"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<200>": {
+        "name": "工学",
+        "description": "加工所で<#cc.kw>建築材料</>を加工時、副産物の入手確率<#cc.vup>+70{'%'}</>"
+      },
+      "workshop_formula_cost3<200>": {
+        "name": "ポータブル蓄電池",
+        "description": "加工所で<#cc.kw>建築材料</>を加工時、体力消費が<#cc.kw>2</>の素材の体力消費<#cc.vup>-1</>"
+      }
+    }
   },
   "kafka": {
     "name": "カフカ",
@@ -31813,7 +33583,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_wt&cost<001>": {
+        "name": "手芸α",
+        "description": "貿易所配置時、配置貿易所の<#cc.kw>高価値な金属オーダー</>の獲得率が<#cc.kw>わずかに上昇</>（勤務時間が確率に影響する）、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "trade_ord_wt&cost<011>": {
+        "name": "手芸β",
+        "description": "貿易所配置時、配置貿易所の<#cc.kw>高価値な金属オーダー</>の獲得率が<#cc.kw>上昇</>（勤務時間が確率に影響する）、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      }
+    }
   },
   "robin": {
     "name": "ロビン",
@@ -32100,7 +33880,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession2<080>": {
+        "name": "特殊エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>特殊</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<180>": {
+        "name": "フォーカストラップ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>特殊</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>1</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+45{'%'}</>"
       }
     }
   },
@@ -32284,7 +34075,17 @@
         "description": "敵を1体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue2<230>": {
+        "name": "裏事情",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+20{'%'}</>、連絡回数が<#cc.vup>1</>回増える度に、<#cc.kw>BSW</>の手がかりを入手する確率が増加（勤務時間と最大同時求人可能数が確率に影響する）"
+      },
+      "meet_flag<010>": {
+        "name": "クルビア史",
+        "description": "応接室配置時、捜索で入手した手がかりが<#cc.kw>ライン生命</>でない時、<#cc.kw>ライン生命</>の手がかりを入手する確率が更に増加（勤務時間が確率に影響する）"
+      }
+    }
   },
   "beanstalk": {
     "name": "ビーンストーク",
@@ -32442,7 +34243,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd<003>": {
+        "name": "ぴーちゃん",
+        "description": "製造所配置時、製造効率<#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_limit&cost<001>": {
+        "name": "トレイちゃん",
+        "description": "製造所配置時、保管上限<#cc.vup>+8</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
       }
     }
   },
@@ -32634,7 +34446,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_bd_n1_n2<000>": {
+        "name": "寝物語",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.1</>（同種の効果は高いほうのみ適応）、配置宿舎のレベル1につき、<?cc.bd_a1_a2><#cc.rem>夢</></><#cc.vup>+1</>"
+      },
+      "dorm_rec_bd_n1<000>": {
+        "name": "夢物語",
+        "description": "宿舎配置時、<#cc.vup>1</>の<?cc.bd_a1_a2><#cc.rem>夢</></>が<#cc.vup>1</>の<?cc.bd_a1><#cc.rem>知覚情報</></>に転化される"
+      }
+    }
   },
   "archetto": {
     "name": "アルケット",
@@ -32936,7 +34758,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&dorm&lv<000>": {
+        "name": "信仰募金α",
+        "description": "貿易所配置時、宿舎の合計レベルが1につき、受注効率<#cc.vup>+1{'%'}</>"
+      },
+      "trade_ord_spd&dorm&lv<010>": {
+        "name": "信仰募金β",
+        "description": "貿易所配置時、宿舎の合計レベルが1につき、受注効率<#cc.vup>+2{'%'}</>"
+      }
+    }
   },
   "tuye": {
     "name": "トゥイエ",
@@ -33126,7 +34958,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&gold<000>": {
+        "name": "物流計画α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+5{'%'}</>、<?cc.t.flow_gold><#cc.kw>純金生産ライン</></>の数<#cc.kw>4</>につき、追加で受注効率<#cc.vup>+15{'%'}</>"
+      },
+      "trade_ord_spd&gold<010>": {
+        "name": "物流計画β",
+        "description": "貿易所配置時、受注効率<#cc.vup>+5{'%'}</>、<?cc.t.flow_gold><#cc.kw>純金生産ライン</></>の数<#cc.kw>2</>につき、追加で受注効率<#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "lava-the-purgatory": {
     "name": "炎獄ラヴァ",
@@ -33335,7 +35177,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<900>": {
+        "name": "異格者",
+        "description": "制御中枢配置時、制御中枢内の<?cc.g.sp><#cc.kw>異格</></>オペレーター1人につき、中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "power_rec_spd<022>": {
+        "name": "火力発電γ",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "mr-nothing": {
     "name": "ウユウ",
@@ -33525,7 +35377,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue<101>": {
+        "name": "好事家",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+35{'%'}</>。公開求人の最大同時求人可能数が2より1多いごとに、応接室の手がかり捜索速度<#cc.vup>+5{'%'}</>"
+      },
+      "trade_ord_spd_bd_n2<000>": {
+        "name": "「和気生財」",
+        "description": "貿易所配置時、宿舎にいるオペレーター<#cc.kw>1</>人につき、<?cc.bd_b1><#cc.rem>俗世之憂</></><#cc.vup>+1</>、<?cc.bd_b1><#cc.rem>俗世之憂</></><#cc.vup>1</>につき、受注効率<#cc.vup>+1{'%'}</>"
+      }
+    }
   },
   "saga": {
     "name": "サガ",
@@ -33827,7 +35689,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<010>": {
+        "name": "先鋒エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>先鋒</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<110>": {
+        "name": "入世",
+        "description": "訓練室で協力者として配置時、<#cc.kw>先鋒</>の訓練速度<#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "dusk": {
     "name": "シー",
@@ -34161,7 +36033,18 @@
             "description": "敵に<#ba.kw>術ダメージ</>を与える"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "control_mp_cost&bd1<000>": {
+        "name": "「物を以て喜ばず」",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復。自身の体力が<#cc.kw>12</>を以下の時、<?cc.bd_b1><#cc.rem>俗世之憂</></><#cc.vup>+15</>"
+      },
+      "control_mp_cost&bd2<000>": {
+        "name": "「己を以て悲しまず」",
+        "description": "制御中枢配置時、自身の1時間ごとの体力消費量<#cc.vdown>+0.5</>。自身の体力が<#cc.kw>12</>を上回る時、<?cc.bd_a1><#cc.rem>知覚情報</></><#cc.vup>+10</>"
       }
     }
   },
@@ -34357,7 +36240,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<990>": {
+        "name": "レインボー小隊",
+        "description": "制御中枢配置時、制御中枢内の<?cc.g.R6><#cc.kw>レインボー小隊</></>所属オペレーター1人につき、中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "control_mp_bd<010>": {
+        "name": "ウルサスドリンク",
+        "description": "制御中枢配置時、制御中枢内の<?cc.g.ussg><#cc.kw>ウルサス学生自治団</></>所属オペレーター1人につき、<?cc.bd_tachanka><#cc.rem>ウルサスドリンク</></><#cc.vup>+1</>本"
+      }
+    }
   },
   "blitz": {
     "name": "Blitz",
@@ -34497,7 +36390,17 @@
         "description": "敵を3体までブロック、遠距離攻撃も行える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<990>": {
+        "name": "レインボー小隊",
+        "description": "制御中枢配置時、制御中枢内の<?cc.g.R6><#cc.kw>レインボー小隊</></>所属オペレーター1人につき、中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "hire_spd_blitz<000>": {
+        "name": "言語学",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+20{'%'}</>、<?cc.bd_ash><#cc.rem>情報備蓄</></><#cc.vup>1</>につき追加で事務連絡速度<#cc.vup>+5{'%'}</>、<?cc.bd_tachanka><#cc.rem>ウルサスドリンク</></><#cc.vup>1</>本につき追加で事務連絡速度<#cc.vup>+5{'%'}</>"
+      }
+    }
   },
   "frost": {
     "name": "Frost",
@@ -34802,7 +36705,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "control_mp_cost&faction<990>": {
+        "name": "レインボー小隊",
+        "description": "制御中枢配置時、制御中枢内の<?cc.g.R6><#cc.kw>レインボー小隊</></>所属オペレーター1人につき、中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "workshop_formula_frost<000>": {
+        "name": "機械工学",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>50{'%'}</>、<?cc.bd_ash><#cc.rem>情報備蓄</></><#cc.vup>1</>につき追加で入手確率<#cc.vup>5{'%'}</>、さらに<?cc.bd_tachanka><#cc.rem>ウルサスドリンク</></>が<#cc.vup>4</>本以上の場合、追加で入手確率<#cc.vup>15{'%'}</>"
       }
     }
   },
@@ -35054,7 +36968,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<990>": {
+        "name": "レインボー小隊",
+        "description": "制御中枢配置時、制御中枢内の<?cc.g.R6><#cc.kw>レインボー小隊</></>所属オペレーター1人につき、中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "control_mp_bd<000>": {
+        "name": "情報備蓄",
+        "description": "制御中枢配置時、制御中枢内の<?cc.g.R6><#cc.kw>レインボー小隊</></>所属オペレーター1人につき、<?cc.bd_ash><#cc.rem>情報備蓄</></><#cc.vup>+1</>"
+      }
+    }
   },
   "heavyrain": {
     "name": "ヘビーレイン",
@@ -35244,7 +37168,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<006>": {
+        "name": "ボディガード",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "train_spd&profession2<030>": {
+        "name": "重装エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>重装</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<230>": {
+        "name": "陣地戦熟練者",
+        "description": "訓練室で協力者として配置時、<#cc.kw>重装</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>2</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "toddifons": {
     "name": "トギフォンス",
@@ -35450,7 +37388,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<111>": {
+        "name": "熔鋳",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、体力消費が<#cc.kw>4</>の素材の体力消費<#cc.vup>-1</>"
+      },
+      "workshop_formula_device<020>": {
+        "name": "DIY・異鉄",
+        "description": "加工所で<#cc.kw>異鉄</>系素材を加工時、副産物の入手確率<#cc.vup>+90{'%'}</>"
+      }
+    }
   },
   "passenger": {
     "name": "パッセンジャー",
@@ -35745,7 +37693,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<003>": {
+        "name": "電磁充電α",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+10{'%'}</>"
+      },
+      "power_rec_spd<016>": {
+        "name": "エネルギー効率化",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd&power<000>": {
+        "name": "自動化α",
+        "description": "製造所配置時、自身以外の配属オペレーター全員の製造効率を<#cc.vdown>０にする</>（施設の数量による製造効率上昇に影響なし）。<#cc.kw>発電所</>1か所につき、製造効率<#cc.vup>+5{'%'}</>"
+      }
+    }
   },
   "akafuyu": {
     "name": "アカフユ",
@@ -35945,7 +37907,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<020>": {
+        "name": "前衛エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<120>": {
+        "name": "信影流",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>1</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "skadi-the-corrupting-heart": {
     "name": "濁心スカジ",
@@ -36282,7 +38254,22 @@
             "description": "攻撃範囲は濁心スカジの追加攻撃範囲と見なす"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession2<060>": {
+        "name": "補助エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>補助</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<660>": {
+        "name": "同化",
+        "description": "訓練室で協力者として配置時、<#cc.kw>補助</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>3</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+65{'%'}</>"
+      },
+      "train_cost&profession<360>": {
+        "name": "変異",
+        "description": "訓練室で<#cc.kw>補助</>の特化ランク<#cc.vup>3</>への訓練の協力者として配置時、体力消費が1時間ごと<#cc.vdown>+1</>"
       }
     }
   },
@@ -36510,7 +38497,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_aegir1<000>": {
+        "name": "潮汐の見張り番",
+        "description": "制御中枢配置時、宿舎以外の施設内の<?cc.g.abyssal><#cc.kw>アビサル</></>所属オペレーター1人につき、自身の1時間ごとの体力消費量が<#cc.vdown>+0.5</>。宿舎内の<?cc.g.abyssal><#cc.kw>アビサル</></>所属オペレーター1人につき、自身の体力が1時間ごとに<#cc.vup>+0.5</>回復、宿舎内の<?cc.g.abyssal><#cc.kw>アビサル</></>所属オペレーターの体力が最大値であれば、体力回復量が追加で<#cc.vup>+0.5</>"
+      },
+      "control_mp_aegir2<000>": {
+        "name": "集団狩猟α",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復。基地内の<?cc.g.abyssal><#cc.kw>アビサル</></>が<?cc.c.abyssal2_1><#cc.rem>特殊効果</></>を得る（一部のスキルに対して<?cc.c.abyssal2_3><#cc.rem>特殊加算制限</></>がある）"
+      },
+      "control_mp_aegir2<010>": {
+        "name": "集団狩猟β",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復。基地内の<?cc.g.abyssal><#cc.kw>アビサル</></>が<?cc.c.abyssal2_2><#cc.rem>特殊効果</></>を得る（一部のスキルに対して<?cc.c.abyssal2_3><#cc.rem>特殊加算制限</></>がある）"
+      }
+    }
   },
   "kaltsit": {
     "name": "ケルシー",
@@ -36872,7 +38873,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_proc_probability<040>": {
+        "name": "未知なる技術",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+70{'%'}</>"
+      },
+      "control_prod_spd<000>": {
+        "name": "最高権限",
+        "description": "制御中枢配置時、全製造所の製造効率<#cc.vup>+2{'%'}</>（同種の効果は高いほうのみ適応）"
       }
     }
   },
@@ -37064,7 +39076,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single_P<002>": {
+        "name": "毒使いの友",
+        "description": "配置宿舎内、オペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.55</>（同種の効果は高いほうのみ適応）。対象が<#cc.kw>アズリウス</>の場合、更に<#cc.vup>+0.45</>"
+      },
+      "power_rec_spd<002>": {
+        "name": "光力発電・α",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+10{'%'}</>"
+      },
+      "power_rec_spd<017>": {
+        "name": "灯台供給モジュール",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "kirara": {
     "name": "キララ",
@@ -37270,7 +39296,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_line_gold<000>": {
+        "name": "注文フロー可視化・α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+5{'%'}</>、<?cc.t.flow_gold><#cc.kw>純金生産ライン</></>の数<#cc.kw>4</>につき、配置貿易所の<?cc.t.flow_gold><#cc.kw>純金生産ライン</></>の数追加で<#cc.vup>+2</>"
+      },
+      "trade_ord_line_gold<010>": {
+        "name": "注文フロー可視化・β",
+        "description": "貿易所配置時、受注効率<#cc.vup>+5{'%'}</>、<?cc.t.flow_gold><#cc.kw>純金生産ライン</></>の数<#cc.kw>2</>につき、配置貿易所の<?cc.t.flow_gold><#cc.kw>純金生産ライン</></>の数追加で<#cc.vup>+2</>"
+      }
+    }
   },
   "bena": {
     "name": "ベナ",
@@ -37464,7 +39500,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit&cost<020>": {
+        "name": "「頼れる」助手",
+        "description": "製造所配置時、製造効率<#cc.vdown>-20{'%'}</>、保管上限<#cc.vup>+17</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "trade_ord_wt&cost<000>": {
+        "name": "裁縫α",
+        "description": "貿易所配置時、配置貿易所の<#cc.kw>高価値な金属オーダー</>の獲得率が<#cc.kw>わずかに上昇</>（勤務時間が確率に影響する）、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      }
+    }
   },
   "carnelian": {
     "name": "カーネリアン",
@@ -37702,7 +39748,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<050>": {
+        "name": "術師エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>術師</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession<150>": {
+        "name": "手中万象",
+        "description": "訓練室で協力者として配置時、<#cc.kw>術師</>の訓練速度<#cc.vup>+60{'%'}</>"
+      }
+    }
   },
   "pallas": {
     "name": "パラス",
@@ -37994,7 +40050,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_limit&cost<003>": {
+        "name": "叡智の境界",
+        "description": "製造所配置時、保管上限<#cc.vup>+8</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "manu_formula_spd<000>": {
+        "name": "制勝の秘策",
+        "description": "製造所配置時、<#cc.kw>作戦記録</>製造の製造効率<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "la-pluma": {
     "name": "ラ・プルマ",
@@ -38172,7 +40238,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<000>": {
+        "name": "ぼんやり",
+        "description": "加工所で<#cc.kw>アーツ学</>を加工時、体力消費が<#cc.kw>2</>の素材の体力消費<#cc.vup>-1</>"
+      },
+      "workshop_formula_probability<030>": {
+        "name": "適応力",
+        "description": "加工所で<#cc.kw>アーツ学</>を加工時、副産物の入手確率<#cc.vup>+75{'%'}</>"
+      }
+    }
   },
   "tequila": {
     "name": "テキーラ",
@@ -38306,7 +40382,17 @@
         "description": "通常時は攻撃せずブロック数が0となり、攻撃力が<#ba.kw>+{'{'}atk:0{'%'}{'}'}</>まで徐々に上昇していく（最大値になるまでの時間は<#ba.kw>{'{'}max_stack_cnt{'}'}</>秒）\nスキル終了時、特性による攻撃力上昇効果をリセットする"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_long<000>": {
+        "name": "資金運用α",
+        "description": "貿易所配置時、次に受注する<#cc.kw>金属オーダー</>の納品数が<#cc.kw>3</>を上回るならば（違約オーダーは金属オーダーと見なされない）、当該オーダーの報酬金額が<#cc.kw>+250</>追加され、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "trade_ord_long<010>": {
+        "name": "資金運用β",
+        "description": "貿易所配置時、次に受注する<#cc.kw>金属オーダー</>の納品数が<#cc.kw>3</>を上回るならば（違約オーダーは金属オーダーと見なされない）、当該オーダーの報酬金額が<#cc.kw>+500</>追加され、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      }
+    }
   },
   "chen-the-holungday": {
     "name": "遊龍チェン",
@@ -38488,7 +40574,21 @@
         "description": "攻撃範囲内の<#ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が150{'%'}まで上昇"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<040>": {
+        "name": "狙撃エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>狙撃</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<440>": {
+        "name": "率先垂範",
+        "description": "訓練室で協力者として配置時、<#cc.kw>狙撃</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>1</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+65{'%'}</>"
+      },
+      "train_cost&profession<140>": {
+        "name": "仕事中毒",
+        "description": "訓練室で<#cc.kw>狙撃</>の特化ランク<#cc.vup>1</>への訓練の協力者として配置時、体力消費が1時間ごと<#cc.vdown>+1</>"
+      }
+    }
   },
   "mizuki": {
     "name": "ミヅキ",
@@ -38794,7 +40894,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_skill_spd1<000>": {
+        "name": "意識連結",
+        "description": "製造所配置時、製造所の<?cc.sk.manu1><#cc.kw>標準化系スキル</></>の発動数1につき、製造効率<#cc.vup>+5{'%'}</>"
+      },
+      "manu_prod_spd<010>": {
+        "name": "標準化β",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "roberta": {
     "name": "ロベルタ",
@@ -39068,7 +41178,18 @@
             "description": "配置後、前方の近距離マスにいる味方ユニットに防御支援効果を付与する（25秒間継続）"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_formula_probability<200>": {
+        "name": "工学",
+        "description": "加工所で<#cc.kw>建築材料</>を加工時、副産物の入手確率<#cc.vup>+70{'%'}</>"
+      },
+      "manu_prod_spd<010>": {
+        "name": "標準化β",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
       }
     }
   },
@@ -39204,7 +41325,21 @@
         "description": "味方のHPを回復し、同時に対象に蓄積された<?ba.dt.element>元素ダメージ</>を自身の攻撃力の<#ba.kw>{'{'}ep_heal_ratio:0{'%'}{'}'}</>の値分治療する（HP最大の味方も<?ba.dt.element>元素ダメージ</>の治療対象となる）"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost<100>": {
+        "name": "救援隊業務・算盤術",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+10{'%'}</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "hire_spd_cost<110>": {
+        "name": "救援隊業務・物資点検",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+20{'%'}</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "hire_spd_bd_n1_n1<200>": {
+        "name": "救援隊業務・災後検診",
+        "description": "事務室配置時、公開求人の最大同時求人可能数が2より1多いごとに、<?cc.bd_b1><#cc.rem>俗世の憂</></><#cc.vup>+10</>"
+      }
+    }
   },
   "saileach": {
     "name": "サイラッハ",
@@ -39442,7 +41577,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<031>": {
+        "name": "ヴィクトリア文学",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.7</>（同種の効果は高いほうのみ適応）"
+      },
+      "control_hire_spd<000>": {
+        "name": "親和力",
+        "description": "制御中枢配置時、事務連絡速度が<#cc.vup>30{'%'}</>(基本連絡速度5％を含む)を下回るとき、連絡速度が<#cc.vup>+20{'%'}</>増加(同類の効果は重複適用しない、他の基地スキルの影響を受けない)"
+      }
+    }
   },
   "ashlock": {
     "name": "アッシュロック",
@@ -39576,7 +41721,73 @@
         "description": "敵をブロックしていない時<#ba.kw>遠距離範囲</>物理攻撃を行う"
       }
     },
-    "tokenSummons": {}
+    "modules": {
+      "uniequip_001_ashlok": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_ashlok": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<002>": {
+        "name": "レッドパインα",
+        "description": "製造所配置時、製造効率<#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd<012>": {
+        "name": "レッドパインβ",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "fartooth": {
     "name": "ファートゥース",
@@ -39864,7 +42075,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<042>": {
+        "name": "「帰郷」",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.55</>。配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.1</>（同種の効果は高いほうのみ適応）"
+      },
+      "manu_prod_spd<002>": {
+        "name": "レッドパインα",
+        "description": "製造所配置時、製造効率<#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd<012>": {
+        "name": "レッドパインβ",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "justice-knight": {
     "name": "ジャスティスナイト",
@@ -39921,7 +42146,17 @@
         "description": "飛行ユニットを優先して攻撃\n<#ba.kw>配置可能数</>にカウントされない\n再配置までの時間が極めて長い"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": "予備電源",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+10{'%'}</>"
+      },
+      "power_prod_spd_P<000>": {
+        "name": "“Di-di、作業開始ー！”",
+        "description": "発電所配置時、<#cc.kw>ワイルドメイン</>の配置された製造所の製造効率<#cc.vup>+5{'%'}</>"
+      }
+    }
   },
   "pudding": {
     "name": "プリン",
@@ -40098,7 +42333,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<010>": {
+        "name": "メンテナンス",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+15{'%'}</>"
+      },
+      "control_token_prod_spd<000>": {
+        "name": "オーバークロック",
+        "description": "制御中枢配置時、<#cc.kw>2</>台以上の<?cc.tag.op><#cc.kw>作業用プラットフォーム</></>が<#cc.kw>発電所</>に配置されている時、全製造所の製造効率<#cc.vup>+2{'%'}</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "wild-mane": {
     "name": "ワイルドメイン",
@@ -40288,7 +42533,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<002>": {
+        "name": "レッドパインα",
+        "description": "製造所配置時、製造効率<#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd<012>": {
+        "name": "レッドパインβ",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "corroserum": {
     "name": "コロセラム",
@@ -40478,7 +42733,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<113>": {
+        "name": "腐蝕科学α",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+75{'%'}</>"
+      },
+      "workshop_formula_probability<123>": {
+        "name": "腐蝕科学β",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+80{'%'}</>"
+      },
+      "workshop_formula_drop<030>": {
+        "name": "腐蝕阻害技術",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、<#cc.kw>T3</>の副産物が入手できるとき、副産物が必ず<#cc.kw>中級異鉄</>となる"
+      }
+    }
   },
   "honeyberry": {
     "name": "ハニーベリー",
@@ -40612,7 +42881,21 @@
         "description": "味方のHPを回復し、同時に対象に蓄積された<?ba.dt.element>元素ダメージ</>を自身の攻撃力の<#ba.kw>{'{'}ep_heal_ratio:0{'%'}{'}'}</>の値分治療する（HP最大の味方も<?ba.dt.element>元素ダメージ</>の治療対象となる）"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<114>": {
+        "name": "薬草学α",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+75{'%'}</>"
+      },
+      "workshop_formula_probability<124>": {
+        "name": "薬草学β",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+80{'%'}</>"
+      },
+      "dorm_rec_single<032>": {
+        "name": "カウンセリング",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.7</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "flametail": {
     "name": "フレイムテイル",
@@ -40914,7 +43197,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<007>": {
+        "name": "小さなリーダー",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "control_mp_psk<000>": {
+        "name": "赤松の騎士",
+        "description": "制御中枢配置時、製造所に配置された<?cc.g.psk><#cc.kw>レッドパイン騎士団</></>オペレーター1人につき、<#cc.kw>作戦記録</>製造の製造効率<#cc.vup>+10{'%'}</>、<#cc.kw>金属</>製造の製造効率<#cc.vdown>-10{'%'}</>"
+      }
+    }
   },
   "nearl-the-radiant-knight": {
     "name": "耀騎士ニアール",
@@ -41210,7 +43503,18 @@
             "description": "敵を2体までブロック"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd_tag<000>": {
+        "name": "騎士訓練",
+        "description": "訓練室で協力者として配置時、基地の<?cc.tag.knight><#cc.kw>騎士</></>オペレーター1人につき、訓練速度<#cc.vup>+5{'%'}</>（最大<#cc.kw>5</>人まで）"
+      },
+      "train_spd_tag<010>": {
+        "name": "グランド・オーダー",
+        "description": "訓練室で協力者として配置時、基地の<?cc.tag.knight><#cc.kw>騎士</></>オペレーター1人につき、訓練速度<#cc.vup>+5{'%'}</>（最大<#cc.kw>8</>人まで）"
       }
     }
   },
@@ -41346,7 +43650,21 @@
         "description": "<#ba.kw>浮遊ユニット</>を操作して敵に<#ba.kw>術ダメージ</>を与える\n浮遊ユニットが連続で同一目標を攻撃時、与ダメージが上昇（最大は攻撃力の110{'%'}まで）"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "情報収集α",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>"
+      },
+      "meet_spd&team<041>": {
+        "name": "雪境の守護者",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>、<#cc.kw>カランド貿易</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      },
+      "meet_flag<040>": {
+        "name": "イェラガンド",
+        "description": "応接室配置時、捜索で入手した手がかりが<#cc.kw>カランド貿易</>でない時、<#cc.kw>カランド貿易</>の手がかりを入手する確率が更に増加（勤務時間が確率に影響する）"
+      }
+    }
   },
   "aurora": {
     "name": "オーロラ",
@@ -41536,7 +43854,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<030>": {
+        "name": "重装エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>重装</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<130>": {
+        "name": "生存術訓練（極寒地）",
+        "description": "訓練室で協力者として配置時、<#cc.kw>重装</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>1</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "gnosis": {
     "name": "ノーシス",
@@ -41774,7 +44102,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<030>": {
+        "name": "暗躍の謀略家",
+        "description": "制御中枢配置時、制御中枢内の<?cc.g.karlan><#cc.kw>カランド貿易</></>所属オペレーター1人につき、中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "control_tra_limit&spd<000>": {
+        "name": "緻密な研究者",
+        "description": "制御中枢配属時、貿易所に配属した<?cc.g.karlan><#cc.kw>カランド貿易</></>所属オペレーターの受注効率<#cc.vdown>-15{'%'}</>、注文上限<#cc.vup>+6</>。"
+      }
+    }
   },
   "shalem": {
     "name": "シャレム",
@@ -41914,7 +44252,17 @@
         "description": "スキル発動中、敵に術ダメージを与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession3<130>": {
+        "name": "重装エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>重装</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession3<131>": {
+        "name": "実戦技術：術技衛士",
+        "description": "訓練室で協力者として配置時、<#cc.kw>重装</>の訓練速度<#cc.vup>+30{'%'}</>。訓練者の職分が<#cc.kw>術技衛士</>であるとき、訓練速度がさらに<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "nine-colored-deer": {
     "name": "九色鹿",
@@ -42076,7 +44424,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_bonus1<000>": {
+        "name": "因果",
+        "description": "加工所に配置時、<?cc.w.ncdeer1><#cc.rem>因果</></>の累積値が<#cc.kw>40</>に達する時必ず副産物を1回獲得する"
+      },
+      "workshop_formula_bonus2<000>": {
+        "name": "応報",
+        "description": "加工所に配置時、<?cc.w.ncdeer2><#cc.rem>応報</></>の累積値が<#cc.kw>80</>に達する時必ず副産物を1回獲得する"
+      }
+    }
   },
   "blacknight": {
     "name": "ブラックナイト",
@@ -42247,7 +44605,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession2<010>": {
+        "name": "先鋒エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>先鋒</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<110>": {
+        "name": "戦術研鑽",
+        "description": "訓練室で協力者として配置時、<#cc.kw>先鋒</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>1</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+45{'%'}</>"
       }
     }
   },
@@ -42439,7 +44808,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<900>": {
+        "name": "異格者",
+        "description": "制御中枢配置時、制御中枢内の<?cc.g.sp><#cc.kw>異格</></>オペレーター1人につき、中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "train_spd&profession3<140>": {
+        "name": "実戦技術：速射手",
+        "description": "訓練室で協力者として配置時、<#cc.kw>狙撃</>の訓練速度<#cc.vup>+30{'%'}</>。訓練者の職分が<#cc.kw>速射手</>であるとき、訓練速度がさらに<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "ling": {
     "name": "リィン",
@@ -42745,7 +45124,8 @@
             "description": "敵を1体までブロック"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10020_ling_soul2": {
         "name": "「逍遥」",
@@ -42817,7 +45197,8 @@
             "description": "敵に術ダメージを与える"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10020_ling_soul3": {
         "name": "「弦驚」",
@@ -42889,7 +45270,18 @@
             "description": "ブロック中の敵全員を同時に攻撃"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "control_facCostReset<000>": {
+        "name": "杯停むること莫れ",
+        "description": "制御中枢配置時、配属された<?cc.g.sui><#cc.kw>歳</></>所属オペレーターの<#cc.kw>自身</>に対する体力消費に関する効果が<#cc.kw>無効</>になる"
+      },
+      "control_costToBD<000>": {
+        "name": "「山河遠闊たり」",
+        "description": "制御中枢配置時、自身の体力が<#cc.kw>12</>を上回る時、<?cc.bd_b1><#cc.rem>俗世之憂</></><#cc.vup>+15</>。自身の体力が<#cc.kw>12</>を下回る時、<?cc.bd_a1><#cc.rem>知覚情報</></><#cc.vup>+10</>"
       }
     }
   },
@@ -43121,7 +45513,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_allCost_condChar<000>": {
+        "name": "忙中有閑",
+        "description": "<#cc.kw>ア</>と共に制御中枢に配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.25</>回復"
+      },
+      "control_upMeetingSpeed<000>": {
+        "name": "八面玲瓏",
+        "description": "制御中枢配置時、応接室の手がかり捜索速度<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "quercus": {
     "name": "クエルクス",
@@ -43311,7 +45713,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_team<070>": {
+        "name": "風の便り",
+        "description": "応接室配置時、<#cc.kw>グラスゴー</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      },
+      "meet_flag<070>": {
+        "name": "情報整理",
+        "description": "応接室配置時、捜索で入手した手がかりが<#cc.kw>グラスゴー</>でない時、<#cc.kw>グラスゴー</>の手がかりを入手する確率が更に増加（勤務時間が確率に影響する）"
+      }
+    }
   },
   "goldenglow": {
     "name": "ゴールデングロー",
@@ -43497,7 +45909,17 @@
         "description": "<#ba.kw>浮遊ユニット</>を操作して敵に<#ba.kw>術ダメージ</>を与える\n浮遊ユニットが連続で同一目標を攻撃時、与ダメージが上昇（最大は攻撃力の110{'%'}まで）"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<003>": {
+        "name": "電磁充電α",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+10{'%'}</>"
+      },
+      "power_rec_spd<023>": {
+        "name": "放電",
+        "description": "発電所配置時、ドローンの回復速度<#cc.vup>+20{'%'}</>"
+      }
+    }
   },
   "enforcer": {
     "name": "エンフォーサー",
@@ -43687,7 +46109,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&cost<000>": {
+        "name": "情報収集α",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>"
+      },
+      "meet_spd&cost<100>": {
+        "name": "ロジックシンキング",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+35{'%'}</>、1時間ごとの体力消費量<#cc.vdown>+2</>"
+      }
+    }
   },
   "kazemaru": {
     "name": "カゼマル",
@@ -43919,7 +46351,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "meet_spd<010>": {
+        "name": "影に潜む",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+15{'%'}</>"
+      },
+      "meet_spd_condChar<000>": {
+        "name": "仕事上手",
+        "description": "応接室配置時、自身だけが仕事中であると、手がかり捜索速度<#cc.vup>35{'%'}</>"
       }
     }
   },
@@ -44160,9 +46603,61 @@
             }
           }
         }
+      },
+      "uniequip_003_phenxi": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_recExcludeOther<000>": {
+        "name": "自律",
+        "description": "宿舎休養時、自身の体力が1時間ごとに<#cc.vup>+2</>回復し、自身以外からの体力回復効果は<#cc.vdown>適用されない</>"
+      },
+      "dorm_exchangeAp<000>": {
+        "name": "一蓮托生",
+        "description": "宿舎休養時、自身の<#cc.kw>体力が最大値</>であれば、同じ宿舎内で<#cc.kw>一つ前に</>配置したオペレーター1人と体力を入れ替わる"
+      }
+    }
   },
   "chestnut": {
     "name": "チェストナット",
@@ -44296,7 +46791,17 @@
         "description": "味方のHPを回復し、同時に対象に蓄積された<?ba.dt.element>元素ダメージ</>を自身の攻撃力の<#ba.kw>{'{'}ep_heal_ratio:0{'%'}{'}'}</>の値分治療する（HP最大の味方も<?ba.dt.element>元素ダメージ</>の治療対象となる）"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<000>": {
+        "name": "標準化α",
+        "description": "製造所配置時、製造効率<#cc.vup>+15{'%'}</>"
+      },
+      "manu_formula_spd<201>": {
+        "name": "地質学α",
+        "description": "製造所配置時、<#cc.kw>源石</>製造の製造効率<#cc.vup>+30{'%'}</>"
+      }
+    }
   },
   "rockrock": {
     "name": "ロックロック",
@@ -44430,7 +46935,17 @@
         "description": "<#ba.kw>浮遊ユニット</>を操作して敵に<#ba.kw>術ダメージ</>を与える\n浮遊ユニットが連続で同一目標を攻撃時、与ダメージが上昇（最大は攻撃力の110{'%'}まで）"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<031>": {
+        "name": "手放すべき剰余",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+65{'%'}</>"
+      },
+      "workshop_formula_drop<020>": {
+        "name": "不要な譲り渡し",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、<#cc.kw>T3</>の副産物が入手できるとき、副産物が必ず<#cc.kw>中級エステル</>となる"
+      }
+    }
   },
   "heidi": {
     "name": "ハイディ",
@@ -44570,7 +47085,21 @@
         "description": "攻撃しない\n攻撃範囲内の味方全員の<#ba.kw>HP</>を継続回復(1秒ごとに攻撃力の<#ba.kw>{'{'}attack{'@'}atk_to_hp_recovery_ratio:0{'%'}{'}'}</>回復)\n自身は<?ba.inspire>鼓舞</>状態の効果を受けない"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<000>": {
+        "name": "注文分配α",
+        "description": "貿易所配置時、受注効率<#cc.vup>+20{'%'}</>"
+      },
+      "trade_ord_spd<021>": {
+        "name": "セレブパーティー",
+        "description": "貿易所配置時、受注効率<#cc.vup>+35{'%'}</>"
+      },
+      "control_clue_faction<070>": {
+        "name": "「千の便り」",
+        "description": "制御中枢配置時、応接室で<#cc.kw>グラスゴー</>の手がかりを入手しやすくなる（勤務時間が確率に影響する）"
+      }
+    }
   },
   "horn": {
     "name": "ホルン",
@@ -44756,7 +47285,73 @@
         "description": "敵をブロックしていない時<#ba.kw>遠距離範囲</>物理攻撃を行う"
       }
     },
-    "tokenSummons": {}
+    "modules": {
+      "uniequip_001_horn": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_horn": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<112>": {
+        "name": "軍事工学",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、体力消費が<#cc.kw>4</>の素材の体力消費<#cc.vup>-1</>"
+      },
+      "workshop_formula_device<111>": {
+        "name": "DIY・熾合金",
+        "description": "加工所で<#cc.kw>上級熾合金</>を加工時、副産物の入手確率<#cc.vup>+100{'%'}</>"
+      }
+    }
   },
   "windflit": {
     "name": "ウインドフリット",
@@ -45109,7 +47704,18 @@
             "description": "配置後、前方1マスにいる【術師】または【補助】に攻撃支援効果を付与する（30秒間継続）"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_formula_probability<115>": {
+        "name": "必修科目",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+75{'%'}</>"
+      },
+      "manu_prod_spd&power<000>": {
+        "name": "自動化α",
+        "description": "製造所配置時、自身以外の配属オペレーター全員の製造効率を<#cc.vdown>０にする</>（施設の数量による製造効率上昇に影響なし）。<#cc.kw>発電所</>1か所につき、製造効率<#cc.vup>+5{'%'}</>"
       }
     }
   },
@@ -45407,7 +48013,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<080>": {
+        "name": "特殊エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>特殊</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<680>": {
+        "name": "エーギルの戦術",
+        "description": "訓練室で協力者として配置時、<#cc.kw>特殊</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>3</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+65{'%'}</>"
+      },
+      "train_cost&profession<380>": {
+        "name": "闘争への渇望",
+        "description": "訓練室で<#cc.kw>特殊</>の特化ランク<#cc.vup>3</>への訓練の協力者として配置時、体力消費が1時間ごと<#cc.vdown>+1</>"
+      }
+    }
   },
   "lumen": {
     "name": "ルーメン",
@@ -45683,7 +48303,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_powToRecAll<000>": {
+        "name": "優しい光α",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.1</>、発電所<#cc.kw>1</>箇所につき、更に<#cc.vup>+0.05</>（重複後の最終値を基に同種の効果は高いほうのみ適応）"
+      },
+      "dorm_powToRecAll<010>": {
+        "name": "優しい光β",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.15</>、発電所<#cc.kw>1</>箇所につき、更に<#cc.vup>+0.05</>（重複後の最終値を基に同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "irene": {
     "name": "アイリーニ",
@@ -45917,7 +48547,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd_doubleProf<000>": {
+        "name": "剣とハンドキャノン",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>と<#cc.kw>狙撃</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd_reduceTime<000>": {
+        "name": "精神鍛錬",
+        "description": "訓練室で協力者として配置し、一度の訓練時間が<#cc.vup>5</>時間に達した時、協力対象の次の訓練に必要な時間が<#cc.vup>-50{'%'}</>（どちらか一方が訓練室を離れると効果が消える）"
+      }
+    }
   },
   "erato": {
     "name": "エラト",
@@ -46111,7 +48751,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<040>": {
+        "name": "狙撃エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>狙撃</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<240>": {
+        "name": "爪弾かれる調べ",
+        "description": "訓練室で協力者として配置時、<#cc.kw>狙撃</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>2</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "hibiscus-the-purifier": {
     "name": "濯塵ハイビスカス",
@@ -46245,7 +48895,17 @@
         "description": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<900>": {
+        "name": "異格者",
+        "description": "制御中枢配置時、制御中枢内の<?cc.g.sp><#cc.kw>異格</></>オペレーター1人につき、中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "train_spd&profession2<270>": {
+        "name": "健康管理",
+        "description": "訓練室で協力者として配置時、<#cc.kw>医療</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>2</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "czerny": {
     "name": "ツェルニー",
@@ -46379,7 +49039,17 @@
         "description": "スキル発動中、敵に術ダメージを与える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_bd_n1_n3<000>": {
+        "name": "アンダンテ",
+        "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.65</>（同種の効果は高いほうのみ適応）、配置宿舎のレベル1につき、<?cc.bd_a1_a3><#cc.rem>小節</></><#cc.vup>+1</>"
+      },
+      "dorm_rec_bd_n1<100>": {
+        "name": "インプロヴィゼーション",
+        "description": "宿舎配置時、<#cc.vup>1</>の<?cc.bd_a1_a3><#cc.rem>小節</></>が<#cc.vup>1</>の<?cc.bd_a1><#cc.rem>知覚情報</></>に転化される"
+      }
+    }
   },
   "ebenholz": {
     "name": "エーベンホルツ",
@@ -46669,6 +49339,72 @@
             }
           }
         }
+      },
+      "uniequip_004_ebnhlz": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {
@@ -46728,7 +49464,22 @@
           }
         },
         "traitCandidates": {},
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd_bd_n1<000>": {
+        "name": "音感",
+        "description": "製造所配置時、宿舎中のオペレーター<#cc.kw>1</>人につき、<?cc.bd_a1><#cc.rem>知覚情報</></><#cc.vup>+1</>。<#cc.vup>1</>の<?cc.bd_a1><#cc.rem>知覚情報</></>が<#cc.vup>1</>の<?cc.bd_B><#cc.rem>静かなる共鳴</></>に転化される"
+      },
+      "trade_ord_spd_bd<000>": {
+        "name": "彷徨う旋律",
+        "description": "貿易所配置時、<?cc.bd_B><#cc.rem>静かなる共鳴</></><#cc.vup>4</>につき、受注効率<#cc.vup>+1{'%'}</>"
+      },
+      "trade_ord_spd_bd<010>": {
+        "name": "茫然たる和声",
+        "description": "貿易所配置時、<?cc.bd_B><#cc.rem>静かなる共鳴</></><#cc.vup>2</>につき、受注効率<#cc.vup>+1{'%'}</>"
       }
     }
   },
@@ -46907,7 +49658,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<001>": {
+        "name": "ラインテクα",
+        "description": "製造所配置時、製造効率<#cc.vup>+15{'%'}</>"
+      },
+      "manu_prod_spd<011>": {
+        "name": "ラインテクβ",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "greyy-the-lightningbearer": {
     "name": "承曦グレイ",
@@ -47081,7 +49842,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_drone<000>": {
+        "name": "配電工事",
+        "description": "発電所配置時、ドローンの上限数<#cc.vup>10</>につき、ドローンの回復速度<#cc.vup>+1{'%'}</>"
+      },
+      "power_count<000>": {
+        "name": "曙光",
+        "description": "発電所配置時、他の<#cc.kw>発電所</>に<?cc.tag.op><#cc.kw>作業用プラットフォーム </></>が配置されていない場合、<#cc.kw>発電所</>の施設数<#cc.vup>+1</>（施設の数以外に影響なし）"
+      }
+    }
   },
   "dorothy": {
     "name": "ドロシー",
@@ -47470,7 +50241,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_skill_spd1<010>": {
+        "name": "アーツ理論応用",
+        "description": "製造所配置時、配置製造所の<?cc.sk.manu2><#cc.kw>ラインテク系スキル</></>の発動数1につき、製造効率<#cc.vup>+5{'%'}</>"
+      },
+      "manu_prod_spd<011>": {
+        "name": "ラインテクβ",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
       }
     }
   },
@@ -47606,7 +50388,17 @@
         "description": "再配置までの時間が<#ba.kw>短い</>、遠距離攻撃も行える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd_notOwned<000>": {
+        "name": "しらみ潰しα",
+        "description": "応接室配置時、ボード上未入手の手がかりを入手しやすい"
+      },
+      "meet_spd_notOwned<010>": {
+        "name": "しらみ潰しβ",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>、ボード上未入手の手がかりを入手しやすい"
+      }
+    }
   },
   "minimalist": {
     "name": "ミニマリスト",
@@ -47740,7 +50532,21 @@
         "description": "<#ba.kw>浮遊ユニット</>を操作して敵に<#ba.kw>術ダメージ</>を与える\n浮遊ユニットが連続で同一目標を攻撃時、与ダメージが上昇（最大は攻撃力の110{'%'}まで）"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_constrLv<000>": {
+        "name": "図面デザイン",
+        "description": "製造所配置時、基地内の施設のレベル合計値1につき、<#cc.kw><?cc.bd_malist>建設ロボット </></><#cc.vup>+1</>、上限数は<#cc.vup>64</>"
+      },
+      "manu_prod_spd_bd<100>": {
+        "name": "サポートロボα",
+        "description": "製造所配置時、<#cc.kw><?cc.bd_malist>建設ロボット</></><#cc.vup>16</>につき、製造効率<#cc.vup>+5{'%'}</>"
+      },
+      "manu_prod_spd_bd<110>": {
+        "name": "サポートロボβ",
+        "description": "製造所配置時、<#cc.kw><?cc.bd_malist>建設ロボット</></><#cc.vup>8</>につき、製造効率<#cc.vup>+5{'%'}</>"
+      }
+    }
   },
   "pozemka": {
     "name": "パゼオンカ",
@@ -48102,7 +50908,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd&gold<100>": {
+        "name": "キャッチコピー",
+        "description": "貿易所配置時、<?cc.t.flow_gold><#cc.kw>純金生産ライン</></>の数<#cc.kw>1</>につき、受注効率<#cc.vup>+5{'%'}</>"
+      },
+      "trade_ord_line_durin<010>": {
+        "name": "地下の住人",
+        "description": "貿易所配置時、基地内に配置中の<?cc.tag.durin><#cc.kw>ドゥリン族</></><#cc.kw>1</>人につき（最大<#cc.kw>4</>人）、配置貿易所の<?cc.t.flow_gold><#cc.kw>純金生産ライン</></>の数<#cc.kw>+1</>"
       }
     }
   },
@@ -48346,7 +51163,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<020>": {
+        "name": "前衛エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession2<620>": {
+        "name": "実戦指導",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>3</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+65{'%'}</>"
+      },
+      "train_cost&profession<320>": {
+        "name": "オーバートレーニング",
+        "description": "訓練室で<#cc.kw>前衛</>の特化ランク<#cc.vup>3</>への訓練の協力者として配置時、体力消費が1時間ごと<#cc.vdown>+1</>"
+      }
+    }
   },
   "proviso": {
     "name": "プロヴァイゾ",
@@ -48552,7 +51383,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_law<000>": {
+        "name": "契約法",
+        "description": "貿易所配置時、次に受注する<#cc.kw>金属オーダー</>の納品数が<#cc.kw>4</>を下回るならば、<#cc.kw>違約オーダー</>と見なす"
+      },
+      "trade_ord_against<000>": {
+        "name": "違約金請求α",
+        "description": "貿易所配置時、次に受注する<#cc.kw>金属オーダー</>が<#cc.kw>違約オーダー</>ならば、<#cc.kw>純金</>の納品数が<#cc.vup>+1</>追加される"
+      },
+      "trade_ord_against<010>": {
+        "name": "違約金請求β",
+        "description": "貿易所配置時、次に受注する<#cc.kw>金属オーダー</>が<#cc.kw>違約オーダー</>ならば、<#cc.kw>純金</>の納品数が<#cc.vup>+2</>追加される"
+      }
+    }
   },
   "mlynar": {
     "name": "ムリナール",
@@ -48738,7 +51583,17 @@
         "description": "通常時は攻撃せずブロック数が0となり、攻撃力が<#ba.kw>+{'{'}atk:0{'%'}{'}'}</>まで徐々に上昇していく（最大値になるまでの時間は<#ba.kw>{'{'}max_stack_cnt{'}'}</>秒）\nスキル終了時、特性による攻撃力上昇効果をリセットする"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<008>": {
+        "name": "社交辞令",
+        "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      },
+      "control_mp_lonely<000>": {
+        "name": "事務仕事",
+        "description": "制御中枢配置時、<?cc.c.room1><#cc.kw>一部の施設</></>内で仕事中のオペレーターの体力が1時間ごとに<#cc.vup>+0.1</>回復し、制御中枢内の<?cc.c.skill><#cc.kw>一部のスキル</></>により、<?cc.c.room2><#cc.kw>他の施設</></>内で仕事中のオペレーターの体力が追加で回復"
+      }
+    }
   },
   "luo-xiaohei": {
     "name": "羅小黒",
@@ -48848,7 +51703,17 @@
         "description": "80％の攻撃力で<#ba.kw>遠距離攻撃</>も行える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_cost<000>": {
+        "name": "金属使い",
+        "description": "加工所で体力消費が<#cc.kw>8</>の<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>50{'%'}</>"
+      },
+      "workshop_formula_lolxh<000>": {
+        "name": "ネコの妖精",
+        "description": "加工所で<#cc.kw>任意の素材</>を加工時、体力消費が<#cc.kw>4</>以上の素材すべての体力消費が<#cc.vup>4</>で割った値になる"
+      }
+    }
   },
   "reserve-operator-defender": {
     "name": "予備隊員-重装",
@@ -48861,7 +51726,8 @@
         "description": "敵を3体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "tulip": {
     "name": "チューリップ",
@@ -48929,7 +51795,8 @@
         "description": "敵を2体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "highmore": {
     "name": "ハイモア",
@@ -49129,7 +51996,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_skill_change<000>": {
+        "name": "意識統一",
+        "description": "製造所配置時、配属オペレーター全員の<?cc.sk.manu2><#cc.kw>ラインテク系</></>、<?cc.sk.manu3><#cc.kw>レッドパイン系</></>スキルがすべて<#cc.kw>標準化系</>スキルと見なされる"
+      },
+      "manu_prod_spd<010>": {
+        "name": "標準化β",
+        "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
+      }
+    }
   },
   "totter": {
     "name": "トター",
@@ -49343,7 +52220,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd_reduce<000>": {
+        "name": "霞む視界",
+        "description": "製造所配置時、製造効率<#cc.vup>+30{'%'}</>、自身の<?cc.bd.costdrop><#cc.kw>体力減少分</></>が<#cc.kw>4</>ごとに、製造効率<#cc.vdown>-5{'%'}</>"
+      },
+      "manu_prod_spd_addition&cost<000>": {
+        "name": "窓外の吹雪",
+        "description": "製造所配置時、自身の<?cc.bd.costdrop><#cc.kw>体力減少分</></>が<#cc.kw>12</>を上回る時、製造効率<#cc.vup>+10{'%'}</>、保管上限<#cc.vup>+6</>"
+      }
+    }
   },
   "dagda": {
     "name": "ダグザ",
@@ -49475,7 +52362,17 @@
         "description": "敵を1体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession3<150>": {
+        "name": "前衛エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession3<151>": {
+        "name": "実戦技術：闘士",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>。訓練者の職分が<#cc.kw>闘士</>であるとき、訓練速度がさらに<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "paprika": {
     "name": "パプリカ",
@@ -49609,7 +52506,21 @@
         "description": "味方のHPを回復する際、<#ba.kw>3</>体目の味方まで回復が跳躍する（回復量は25{'%'}ずつ減衰）"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_tra_spd<020>": {
+        "name": "やる気十分",
+        "description": "制御中枢配置時、全貿易所の受注効率<#cc.vup>+7{'%'}</>（同種の効果は高いほうのみ適応）"
+      },
+      "trade_ord_wt&cost<000>": {
+        "name": "裁縫α",
+        "description": "貿易所配置時、配置貿易所の<#cc.kw>高価値な金属オーダー</>の獲得率が<#cc.kw>わずかに上昇</>（勤務時間が確率に影響する）、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "trade_ord_wt&cost<010>": {
+        "name": "裁縫β",
+        "description": "貿易所配置時、配置貿易所の<#cc.kw>高価値な金属オーダー</>の獲得率が<#cc.kw>上昇</>（勤務時間が確率に影響する）、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      }
+    }
   },
   "stainless": {
     "name": "ステインレス",
@@ -49925,7 +52836,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10027_ironmn_pile2": {
         "name": "ステインレス™多機能プラットフォーム",
@@ -49997,7 +52909,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10027_ironmn_pile3": {
         "name": "鉄鉗号･プロトタイプ",
@@ -50066,7 +52979,18 @@
             "description": "味方の攻撃対象となるが、攻撃によるダメージを受けない\n味方【工匠】の攻撃を受けた場合、自身のHPが最大値の1％回復"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_formula_cost&dorm<000>": {
+        "name": "以心伝心",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、宿舎で休養中の体力が<#cc.vup>12</>以下のオペレーター<#cc.kw>10</>人につき、体力消費が<#cc.kw>4</>の素材の体力消費<#cc.vup>-1</>"
+      },
+      "workshop_formula_dorm<002>": {
+        "name": "意気投合",
+        "description": "加工所で<#cc.kw>昇進素材</>を加工時、宿舎で休養中の体力が<#cc.vup>12</>以下のオペレーター<#cc.kw>1</>人につき、副産物の入手確率<#cc.vup>+5{'%'}</>"
       }
     }
   },
@@ -50202,7 +53126,17 @@
         "description": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<000>": {
+        "name": "標準化α",
+        "description": "製造所配置時、製造効率<#cc.vup>+15{'%'}</>"
+      },
+      "trade_ord_spd&formula<000>": {
+        "name": "分刻みの予定表",
+        "description": "貿易所配置時、受注効率<#cc.vup>+30{'%'}</>、製造所での生産ラインの種類<#cc.kw>1</>につき、受注効率が追加で<#cc.vup>+2{'%'}</>"
+      }
+    }
   },
   "qanipalaat": {
     "name": "カニパラート",
@@ -50392,7 +53326,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost&clue<001>": {
+        "name": "救助隊・連絡要員",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+30{'%'}</>"
+      },
+      "hire_spd_cost&clue<000>": {
+        "name": "救助隊・体力温存",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+35{'%'}</>、公開求人の最大同時求人可能数が2より1多いごとに、1時間ごとの体力消費量<#cc.vup>-0.1</>"
+      }
+    }
   },
   "lunacub": {
     "name": "ルナカブ",
@@ -50566,7 +53510,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<001>": {
+        "name": "幼き狼",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.7</>"
+      },
+      "workshop_formula_probability<011>": {
+        "name": "荒野の技術",
+        "description": "加工所で<#cc.kw>アーツ学</>を加工時、副産物の入手確率<#cc.vup>+80{'%'}</>"
+      }
+    }
   },
   "vigil": {
     "name": "ヴィジェル",
@@ -50829,7 +53783,18 @@
             "description": "「狼の隻影」が1体出現するごとに「狼の群れ」のブロック数+1、ダメージ発生回数+1。群れに「狼の隻影」が2体以上存在する場合、「狼の群れ」が致命的なダメージを受ける時、群れにいる「狼の隻影」が1体消滅し、「狼の群れ」のHPが最大値まで回復"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "meet_spd<032>": {
+        "name": "統率者の外交術",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+25{'%'}</>"
+      },
+      "trade_ord_spd&meet<000>": {
+        "name": "新都市貿易",
+        "description": "貿易所配置時、受注効率<#cc.vup>+25{'%'}</>、応接室のレベル1につき、追加で受注効率<#cc.vup>+5{'%'}</>、最大<#cc.vup>+40{'%'}</>まで"
       }
     }
   },
@@ -51057,7 +54022,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd_doubleProf2<001>": {
+        "name": "沈黙は剣なり",
+        "description": "訓練室で協力者として配置する際、<#cc.kw>特殊</>と<#cc.kw>先鋒</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd_doubleProf2<000>": {
+        "name": "道を拓く刃",
+        "description": "訓練室で協力者として配置する際、<#cc.kw>特殊</>と<#cc.kw>先鋒</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>2</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+50{'%'}</>"
+      }
+    }
   },
   "penance": {
     "name": "ペナンス",
@@ -51251,7 +54226,17 @@
         "description": "味方からの治療効果を<#ba.kw>受けない</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost<210>": {
+        "name": "法の下に",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+50{'%'}</>、1時間ごとの体力消費量<#cc.vdown>+0.5</>"
+      },
+      "dorm_hireToRecAll<000>": {
+        "name": "同志を募る",
+        "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.15</>、公開求人の最大同時求人可能数が2より1多いごとに、体力回復量が追加で<#cc.vup>+0.05</>（重複後の最終値を基に同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "puzzle": {
     "name": "パズル",
@@ -51385,7 +54370,17 @@
         "description": "再配置までの時間が<#ba.kw>短い</>、遠距離攻撃も行える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": "情報収集α",
+        "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>"
+      },
+      "meet_spd_notOwned<001>": {
+        "name": "情報分析",
+        "description": "応接室配置時、ボード上未入手の手がかりを入手しやすい"
+      }
+    }
   },
   "harmonie": {
     "name": "ハーモニー",
@@ -51575,7 +54570,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": "一人きり",
+        "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.7</>"
+      },
+      "meet_spd&cost_condChar<000>": {
+        "name": "二重スパイ",
+        "description": "応接室配置時、自身だけが仕事中であると、手がかり捜索速度<#cc.vup>50{'%'}</>、1時間ごとの体力消費量<#cc.vdown>+2</>"
+      }
+    }
   },
   "reed-the-flame-shadow": {
     "name": "焔影リード",
@@ -51761,7 +54766,21 @@
         "description": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd_doubleProf<100>": {
+        "name": "赤龍の血",
+        "description": "訓練室で協力者として配置時、<#cc.kw>術師</>と<#cc.kw>医療</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd_doubleProf<110>": {
+        "name": "赤龍の血",
+        "description": "訓練室で協力者として配置時、<#cc.kw>術師</>と<#cc.kw>医療</>の訓練速度<#cc.vup>+45{'%'}</>"
+      },
+      "control_dorm_rec<000>": {
+        "name": "カリスマ",
+        "description": "制御中枢配置時、全ての宿舎内のオペレーターの1時間ごとの体力回復量<#cc.vup>+0.05</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "jieyun": {
     "name": "ジエユン",
@@ -51954,7 +54973,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_bd_to_bd<000>": {
+        "name": "古の巫術",
+        "description": "製造所配置時、<#cc.vup>5</>の<?cc.bd_b1><#cc.rem>俗世之憂</></>が<#cc.vup>1</>の<?cc.bd_C><#cc.rem>巫術の結晶</></>に転化される"
+      },
+      "manu_prod_spd_bd<200>": {
+        "name": "浮き草",
+        "description": "製造所配置時、<?cc.bd_C><#cc.rem>巫術の結晶</></><#cc.vup>1</>につき、製造効率<#cc.vup>+1{'%'}</>"
+      },
+      "manu_prod_spd_bd<201>": {
+        "name": "枯栄花",
+        "description": "製造所配置時、<?cc.bd_C><#cc.rem>巫術の結晶</></><#cc.vup>1</>につき、製造効率<#cc.vup>+2{'%'}</>"
+      }
+    }
   },
   "firewhistle": {
     "name": "ファイヤーホイッスル",
@@ -52088,7 +55121,73 @@
         "description": "敵をブロックしていない時<#ba.kw>遠距離範囲</>物理攻撃を行う"
       }
     },
-    "tokenSummons": {}
+    "modules": {
+      "uniequip_001_firwhl": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_firwhl": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_cost<000>": {
+        "name": "ムードメーカー",
+        "description": "貿易所配置時、配属オペレーターの1時間ごとの体力消費量<#cc.vup>-0.1</>"
+      },
+      "trade_ord_spd&share<000>": {
+        "name": "褒め上手",
+        "description": "貿易所配置時、自身を除く仕事に配属されているオペレーター1人につき、受注効率<#cc.vup>+15{'%'}</>"
+      }
+    }
   },
   "lin": {
     "name": "リン",
@@ -52330,7 +55429,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost<111>": {
+        "name": "特別ルート",
+        "description": "事務室配置時、事務連絡速度<#cc.vup>+20{'%'}</>、1時間ごとの体力消費量<#cc.vup>-0.25</>"
+      },
+      "hire_spd_cost&extra<000>": {
+        "name": "唯才是挙",
+        "description": "事務室配置時、公開求人の最大同時求人可能数が2より1多いごとに、事務連絡速度<#cc.vup>+10{'%'}</>"
+      }
+    }
   },
   "chongyue": {
     "name": "チョンユエ",
@@ -52512,7 +55621,17 @@
         "description": "敵を1体までブロック"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&bd_up<000>": {
+        "name": "我を我と知る",
+        "description": "制御中枢配置時、自身の1時間ごとの体力消費量が<#cc.vdown>+0.5</>。宿舎以外の施設内の<?cc.g.sui><#cc.kw>歳</></>所属オペレーター1人につき、<?cc.bd_b1><#cc.rem>俗世之憂</></><#cc.vup>+5</>（最大5人まで）"
+      },
+      "control_mp_bd_cost_expand<000>": {
+        "name": "孤光共に照らす",
+        "description": "制御中枢配置時、<?cc.c.room2><#cc.kw>他の施設</></>内で仕事中のオペレーターの体力が1時間ごとに<#cc.vup>+0.05</>回復し、<?cc.bd_b1><#cc.rem>俗世之憂</></><#cc.vup>20</>につき、体力が追加で<#cc.vup>+0.05</>回復（制御中枢内の他のスキル間とは<?cc.c.sui2_1><#cc.rem>特殊比較方式</></>が適用される）"
+      }
+    }
   },
   "wind-chimes": {
     "name": "ウィンドチャイム",
@@ -52646,7 +55765,17 @@
         "description": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_cost&bd2<000>": {
+        "name": "湖を越え山を越え",
+        "description": "貿易所配置時、配属オペレーターの1時間ごとの体力消費量<#cc.vup>-0.1</>、<?cc.bd_b1><#cc.rem>俗世の憂</></><#cc.vup>10</>につき、体力消費量が追加で<#cc.vup>-0.01</>"
+      },
+      "trade_cost&bd2<001>": {
+        "name": "遠き便りを手に",
+        "description": "貿易所配置時、配属オペレーターの1時間ごとの体力消費量<#cc.vup>-0.1</>、<?cc.bd_b1><#cc.rem>俗世の憂</></><#cc.vup>10</>につき、体力消費量が追加で<#cc.vup>-0.02</>"
+      }
+    }
   },
   "qiubai": {
     "name": "チューバイ",
@@ -52832,7 +55961,17 @@
         "description": "80％の攻撃力で<#ba.kw>遠距離攻撃</>も行える"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession3<160>": {
+        "name": "前衛エキスパートα",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>"
+      },
+      "train_spd&profession3<161>": {
+        "name": "実戦技術：領主",
+        "description": "訓練室で協力者として配置時、<#cc.kw>前衛</>の訓練速度<#cc.vup>+30{'%'}</>。訓練者の職分が<#cc.kw>領主</>であるとき、訓練速度がさらに<#cc.vup>+45{'%'}</>"
+      }
+    }
   },
   "terra-research-commission": {
     "name": "テラ大陸調査団",
@@ -52889,7 +56028,17 @@
         "description": "通常攻撃時<#ba.kw>地上</>にいる敵に範囲物理ダメージを<#ba.kw>2回</>与える（2回目は攻撃力の半分のダメージとなる）。<#ba.kw>配置可能数</>にカウントされず、再配置までの時間が極めて長い"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit&bd<000>": {
+        "name": "愛らしきアイルー",
+        "description": "貿易所配置時、受注効率<#cc.vup>+5{'%'}</>、注文上限<#cc.vup>+2</>、<?cc.bd_felyne><#cc.rem>マタタビ</></>1個につき、受注効率<#cc.vup>+3{'%'}</>"
+      },
+      "manu_prod_spd&limit&bd<000>": {
+        "name": "頼もしきオトモたち",
+        "description": "製造所配置時、保管上限<#cc.vup>+8</>、製造効率<#cc.vup>+5{'%'}</>、<?cc.bd_felyne><#cc.rem>マタタビ</></>1個につき、製造効率<#cc.vup>+1{'%'}</>"
+      }
+    }
   },
   "rathalos-s-noir-corne": {
     "name": "レウスSノイルホーン",
@@ -53103,7 +56252,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_bd2<000>": {
+        "name": "チームワーク",
+        "description": "制御中枢配置時、制御中枢内の<?cc.tag.mh><#cc.kw>アイルーと愉快な仲間たち</></>所属オペレーター1人につき、<?cc.bd_felyne><#cc.rem>マタタビ</></><#cc.vup>+2</>"
+      },
+      "control_token_tra_spd<000>": {
+        "name": "秘伝交渉術",
+        "description": "<?cc.tag.mh><#cc.kw>アイルーと愉快な仲間たち</></>所属オペレーターと共に制御中枢に配置時、全貿易所の受注効率<#cc.vup>+7{'%'}</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "kirin-r-yato": {
     "name": "キリンRヤトウ",
@@ -53341,7 +56500,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&bd2<010>": {
+        "name": "スタミナ回復",
+        "description": "制御中枢配置時、自身の1時間ごとの体力消費量<#cc.vdown>+0.5</>、<?cc.bd_felyne><#cc.rem>マタタビ</></><#cc.vup>+8</>"
+      },
+      "control_token_prod_spd2<000>": {
+        "name": "率先垂範",
+        "description": "<?cc.tag.mh><#cc.kw>アイルーと愉快な仲間たち</></>所属オペレーターと共に制御中枢に配置時、全製造所の製造効率<#cc.vup>+2{'%'}</>（同種の効果は高いほうのみ適応）"
+      }
+    }
   },
   "u-official": {
     "name": null,
@@ -53398,7 +56567,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&wt<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd_Owned<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "humus": {
     "name": null,
@@ -53588,7 +56767,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<013>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_rub<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "morgan": {
     "name": null,
@@ -53784,7 +56973,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_toone<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd_par<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "cement": {
     "name": null,
@@ -53974,7 +57173,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_limit&cost<021>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "ines": {
     "name": null,
@@ -54159,7 +57368,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<001>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd_hast<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "melanite": {
     "name": null,
@@ -54349,7 +57568,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<040>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<630>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "muelsyse": {
     "name": null,
@@ -54578,7 +57807,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<022>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_rhine<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -54818,7 +58058,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&cost_condChar<001>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&cost_condChar<011>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&condChar_mustget<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "silence-the-paradigmatic": {
     "name": null,
@@ -55127,7 +58381,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "hire_spd<032>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<021>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -55186,7 +58451,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd_P<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "insider": {
     "name": null,
@@ -55360,7 +58635,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue<110>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single&oneself<040>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "spuria": {
     "name": null,
@@ -55554,7 +58839,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd&addition<000>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd&addition<001>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd&cost<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "executor-the-ex-foedere": {
     "name": null,
@@ -55792,7 +59091,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<030>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<031>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_limit<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "santalla": {
     "name": null,
@@ -55985,7 +59298,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single_power<000>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd_power<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "typhon": {
     "name": null,
@@ -56227,7 +59550,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&sami<000>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession3<170>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "valarqvin": {
     "name": null,
@@ -56363,7 +59696,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&bd<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&bd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "poncirus": {
     "name": null,
@@ -56553,7 +59896,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<221>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_cost3<221>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "bryophyta": {
     "name": null,
@@ -56751,7 +60104,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<100>": {
+        "name": null,
+        "description": null
+      },
+      "manu_skill_spd1<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "swire-the-elegant-wit": {
     "name": null,
@@ -57047,7 +60410,18 @@
           }
         },
         "traitCandidates": {},
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd_variable<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -57227,7 +60601,21 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession3<180>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession3<181>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all&profession<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "coldshot": {
     "name": null,
@@ -57367,7 +60755,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<009>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all&single<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "almond": {
     "name": null,
@@ -57557,7 +60955,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd&cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd&cost_bd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "jessica-the-liberated": {
     "name": null,
@@ -57776,7 +61184,772 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<001>": {
+        "name": null,
+        "description": null
+      },
+      "control_bd_spd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
+  },
+  "verdant": {
+    "name": null,
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_vrdant_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_vrdant_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_vrdant": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_vrdant": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<101>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_device<060>": {
+        "name": null,
+        "description": null
+      }
+    }
+  },
+  "delphine": {
+    "name": null,
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_delphn_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_delphn_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_delphn": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_delphn": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue2<260>": {
+        "name": null,
+        "description": null
+      },
+      "control_tra_limit&spd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
+  },
+  "vendela": {
+    "name": null,
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skcom_magic_rage<3>": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_vendla_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<023>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all&tired<000>": {
+        "name": null,
+        "description": null
+      }
+    }
+  },
+  "hoederer": {
+    "name": null,
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_hodrer_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_hodrer_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_hodrer_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_par&per<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_par&per<001>": {
+        "name": null,
+        "description": null
       }
     }
   }

@@ -17,6 +17,7 @@ import {
   Localizable,
   normalizeForLocaleFile,
 } from "../utils"
+import { GeneratedRiicBaseSkillData, RiicBaseSkill } from "./base-skill"
 import {
   ElitePhase,
   GeneratedElitePhaseData,
@@ -52,6 +53,7 @@ export type GeneratedOperatorData = {
   traitCandidates: GeneratedTraitCandidateData[]
   modules: GeneratedModuleData[] | null
   tokenSummons: Record<string, GeneratedOperatorData>
+  riicBaseSkills: GeneratedRiicBaseSkillData[][]
 }
 
 export type GeneratedOperatorIndexData = {
@@ -108,6 +110,7 @@ export class Operator implements Localizable {
   traitCandidates: TraitCandidate[]
   modules: Module[] | null
   tokenSummons: Operator[]
+  riicBaseSkills: RiicBaseSkill[][]
 
   // Accepts zh-CN data only
   public constructor(id: string, data: Character) {
@@ -152,6 +155,7 @@ export class Operator implements Localizable {
     this.traitCandidates = TraitCandidate.getAllFromData(data)
     this.modules = Module.getAllFromData(id)
     this.tokenSummons = []
+    this.riicBaseSkills = RiicBaseSkill.getAllFromData(id)
   }
 
   public addTokenInformation(table: CharacterTable) {
@@ -204,6 +208,9 @@ export class Operator implements Localizable {
         accumulator[current.id] = current.toData()
         return accumulator
       }, <Record<string, GeneratedOperatorData>>{}),
+      riicBaseSkills: this.riicBaseSkills.map((buffData) =>
+        buffData.map((datum) => datum.toData())
+      ),
     }
   }
 
@@ -239,6 +246,9 @@ export class Operator implements Localizable {
     this.traitCandidates.forEach((trait) => trait.addLocale(locale, data))
     this.modules?.forEach((module) => module.addLocale(locale))
     this.tokenSummons.forEach((summon) => summon.addLocale(locale, table))
+    this.riicBaseSkills.forEach((buffData) =>
+      buffData.forEach((datum) => datum.addLocale(locale))
+    )
 
     if (locale === "en-US") this._unnormalizedKey = data.name
   }
@@ -268,6 +278,9 @@ export class Operator implements Localizable {
     )
     this.tokenSummons.forEach((summon) =>
       summon.addLocaleTL(locale, <LocaleObject>data.tokenSummons ?? {})
+    )
+    this.riicBaseSkills.forEach((buffData) =>
+      buffData.forEach((datum) => datum.addLocaleTL(locale, data))
     )
 
     if (locale === "en-TL" && data.name)
@@ -320,6 +333,19 @@ export class Operator implements Localizable {
       accumulator[summon.id] = summon.toLocaleData(locale)
       return accumulator
     }, <LocaleObject>{})
+    const riicBaseSkills = this.riicBaseSkills.reduce(
+      (accumulator, buffData) => {
+        buffData.forEach(
+          (datum) => {
+            // @nuxtjs/i18n key does not work with [] in it
+            const escapedId = datum.id.replace(/\[/g, "<").replace(/\]/g, ">")
+            accumulator[escapedId] = datum.toLocaleData(locale)
+          }
+        )
+        return accumulator
+      },
+      <LocaleObject>{}
+    )
 
     return {
       ...commonAttributes,
@@ -329,6 +355,7 @@ export class Operator implements Localizable {
       traitCandidates,
       modules,
       tokenSummons,
+      riicBaseSkills,
     }
   }
 

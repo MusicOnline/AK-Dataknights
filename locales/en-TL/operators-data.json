@@ -54,7 +54,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "castle-3": {
     "name": null,
@@ -111,7 +121,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "yato": {
     "name": null,
@@ -148,7 +168,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<001>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "noir-corne": {
     "name": null,
@@ -185,7 +215,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit<001>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&limit<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "rangers": {
     "name": null,
@@ -222,7 +262,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_proc_probability<021>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "durin": {
     "name": null,
@@ -259,7 +309,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all&oneself<001>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "12f": {
     "name": null,
@@ -296,7 +356,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<020>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<300>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "fang": {
     "name": null,
@@ -364,7 +434,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd_addition<030>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd<001>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "vanilla": {
     "name": null,
@@ -436,7 +516,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<010>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "plume": {
     "name": null,
@@ -508,7 +598,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<010>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&limit<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "melantha": {
     "name": null,
@@ -580,7 +680,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<010>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_proc_probability<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "cardigan": {
     "name": null,
@@ -652,7 +762,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single&oneself<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "beagle": {
     "name": null,
@@ -724,7 +844,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single&oneself<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "kroos": {
     "name": null,
@@ -804,7 +934,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd_addition<040>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_oneself<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "adnachiel": {
     "name": null,
@@ -876,7 +1016,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_proc_probability<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "lava": {
     "name": null,
@@ -956,7 +1106,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<001>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<210>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "hibiscus": {
     "name": null,
@@ -1028,7 +1188,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<010>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<100>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "ansel": {
     "name": null,
@@ -1108,7 +1278,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<010>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<110>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "steward": {
     "name": null,
@@ -1180,7 +1360,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_limit&cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "orchid": {
     "name": null,
@@ -1252,7 +1442,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<020>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&limit<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "haze": {
     "name": null,
@@ -1442,7 +1642,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<100>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd<001>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "gitano": {
     "name": null,
@@ -1651,7 +1861,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<010>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd<030>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "jessica": {
     "name": null,
@@ -1841,7 +2061,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<010>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&team<030>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "meteor": {
     "name": null,
@@ -2031,7 +2261,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "shirayuki": {
     "name": null,
@@ -2204,7 +2444,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<020>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "courier": {
     "name": null,
@@ -2394,7 +2644,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<020>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&team<040>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "scavenger": {
     "name": null,
@@ -2584,7 +2844,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<001>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_limit&cost<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "vigna": {
     "name": null,
@@ -2790,7 +3060,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<010>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<011>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "dobermann": {
     "name": null,
@@ -2988,7 +3268,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "matoimaru": {
     "name": null,
@@ -3170,7 +3460,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd<001>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "frostleaf": {
     "name": null,
@@ -3292,7 +3592,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "estelle": {
     "name": null,
@@ -3482,7 +3792,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<020>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_oneself<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "mousse": {
     "name": null,
@@ -3616,7 +3936,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<001>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single&oneself<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "gravel": {
     "name": null,
@@ -3794,7 +4124,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<110>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "rope": {
     "name": null,
@@ -3984,7 +4324,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<020>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_limit&cost<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "myrrh": {
     "name": null,
@@ -4174,7 +4524,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<110>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "gavial": {
     "name": null,
@@ -4364,7 +4724,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<110>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<070>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "perfumer": {
     "name": null,
@@ -4570,7 +4940,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<110>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "matterhorn": {
     "name": null,
@@ -4744,7 +5124,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<020>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<031>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "cuora": {
     "name": null,
@@ -4918,7 +5308,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit<001>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "gummy": {
     "name": null,
@@ -5108,7 +5508,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single&oneself<011>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "deepcolor": {
     "name": null,
@@ -5321,7 +5731,18 @@
             "description": "Blocks 1 enemy"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_proc_probability<020>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -5505,7 +5926,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost<010>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd_cost<200>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<211>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "shaw": {
     "name": null,
@@ -5679,7 +6114,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<200>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "ptilopsis": {
     "name": null,
@@ -5869,7 +6314,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<001>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<011>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "zima": {
     "name": null,
@@ -6043,7 +6498,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<013>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "texas": {
     "name": null,
@@ -6233,7 +6698,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&cost_P<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_limit&cost_P<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "franka": {
     "name": null,
@@ -6407,7 +6882,25 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<021>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&team<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&team<031>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "indra": {
     "name": null,
@@ -6541,7 +7034,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&team<070>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "lappland": {
     "name": null,
@@ -6675,7 +7178,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_limit&cost_P<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_limit&cost_P<001>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "specter": {
     "name": null,
@@ -6857,7 +7370,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_oneself<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "blue-poison": {
     "name": null,
@@ -7063,7 +7586,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<111>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<121>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "platinum": {
     "name": null,
@@ -7253,7 +7786,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<040>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<041>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "meteorite": {
     "name": null,
@@ -7430,7 +7973,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<112>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<122>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "amiya": {
     "name": null,
@@ -7658,7 +8211,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_tra_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "skyfire": {
     "name": null,
@@ -7851,7 +8414,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<050>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<051>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "mayer": {
     "name": null,
@@ -8158,7 +8731,18 @@
             "description": "Blocks 1 enemy"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_proc_probability<030>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<020>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -8369,7 +8953,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd<001>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<011>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -8545,7 +9140,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<070>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<071>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "nearl": {
     "name": null,
@@ -8735,7 +9340,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single&oneself<030>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "projekt-red": {
     "name": null,
@@ -8925,7 +9540,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<001>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd<031>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "liskarm": {
     "name": null,
@@ -9057,7 +9682,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<014>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd<021>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "croissant": {
     "name": null,
@@ -9247,7 +9882,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<030>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&limit<031>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "vulcan": {
     "name": null,
@@ -9381,7 +10026,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit&cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd&limit&cost<001>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "provence": {
     "name": null,
@@ -9571,7 +10226,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<010>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd<011>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "firewatch": {
     "name": null,
@@ -9761,7 +10426,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "cliffheart": {
     "name": null,
@@ -9951,7 +10626,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single&oneself<001>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&limit<021>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "pramanix": {
     "name": null,
@@ -10139,7 +10824,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single&oneself<021>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<061>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "istina": {
     "name": null,
@@ -10321,7 +11016,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<060>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&team<050>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "sora": {
     "name": null,
@@ -10447,7 +11152,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<011>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd<011>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "manticore": {
     "name": null,
@@ -10653,7 +11368,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<080>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<081>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "feater": {
     "name": null,
@@ -10843,7 +11568,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<010>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "exusiai": {
     "name": null,
@@ -11085,7 +11820,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<010>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "siege": {
     "name": null,
@@ -11391,7 +12136,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<013>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all<022>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "ifrit": {
     "name": null,
@@ -11641,7 +12396,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<001>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd<013>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "eyjafjalla": {
     "name": null,
@@ -11883,7 +12648,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<213>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd<011>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "angelina": {
     "name": null,
@@ -12191,7 +12966,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&team<060>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "shining": {
     "name": null,
@@ -12501,7 +13286,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<010>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "nightingale": {
     "name": null,
@@ -12783,7 +13578,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "dorm_rec_all<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all<021>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -13089,7 +13895,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<030>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<130>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "saria": {
     "name": null,
@@ -13369,7 +14185,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&team<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "silverash": {
     "name": null,
@@ -13551,7 +14377,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<020>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&limit<022>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "savage": {
     "name": null,
@@ -13722,7 +14558,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single&oneself<011>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "catapult": {
     "name": null,
@@ -13790,7 +14636,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<122>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "midnight": {
     "name": null,
@@ -13870,7 +14726,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<200>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "beehunter": {
     "name": null,
@@ -14004,7 +14870,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<300>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "nightmare": {
     "name": null,
@@ -14210,7 +15086,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<050>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "grani": {
     "name": null,
@@ -14416,7 +15302,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<010>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<011>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "skadi": {
     "name": null,
@@ -14696,7 +15592,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_oneself<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "popukar": {
     "name": null,
@@ -14776,7 +15682,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit&cost<010>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single&oneself<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "spot": {
     "name": null,
@@ -14856,7 +15772,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<010>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<100>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "greyy": {
     "name": null,
@@ -15033,7 +15959,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<020>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_proc_probability<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "swire": {
     "name": null,
@@ -15223,7 +16159,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_tra_spd<010>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "chen": {
     "name": null,
@@ -15504,7 +16450,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&team<100>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "sussurro": {
     "name": null,
@@ -15694,7 +16650,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<070>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<120>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "ceylon": {
     "name": null,
@@ -15884,7 +16850,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<129>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<212>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "glaucus": {
     "name": null,
@@ -16090,7 +17066,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<003>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd<015>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "schwarz": {
     "name": null,
@@ -16386,7 +17372,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single_P<000>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<140>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "myrtle": {
     "name": null,
@@ -16568,7 +17564,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_limit&cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all<013>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "astesia": {
     "name": null,
@@ -16694,7 +17700,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&team<110>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "hellagur": {
     "name": null,
@@ -17008,7 +18024,25 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<010>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all&oneself<011>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all&oneself<012>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "dur-nar": {
     "name": null,
@@ -17134,7 +18168,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<030>": {
+        "name": null,
+        "description": null
+      },
+      "control_mp_cost<002>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "vermeil": {
     "name": null,
@@ -17308,7 +18352,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_limit&cost<0000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd_variable<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "flamebringer": {
     "name": null,
@@ -17498,7 +18552,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<000>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "executor": {
     "name": null,
@@ -17632,7 +18696,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<040>": {
+        "name": null,
+        "description": null
+      },
+      "control_mp_cost<003>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "magallan": {
     "name": null,
@@ -18056,7 +19130,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10005_mgllan_drone2": {
         "name": null,
@@ -18147,7 +19222,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10005_mgllan_drone3": {
         "name": null,
@@ -18238,7 +19314,18 @@
             "description": "Deals <#ba.kw>AOE Physical damage</>"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_proc_probability<011>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_cost<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -18430,7 +19517,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<030>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_oneself<030>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "breeze": {
     "name": null,
@@ -18620,7 +19717,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&team<071>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "may": {
     "name": null,
@@ -18810,7 +19917,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<0020>": {
+        "name": null,
+        "description": null
+      },
+      "meet_team<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "waai-fu": {
     "name": null,
@@ -18992,7 +20109,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_cost_all<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd_variable2<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "bison": {
     "name": null,
@@ -19182,7 +20309,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<032>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&limit<033>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "mostima": {
     "name": null,
@@ -19419,7 +20556,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&team<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "reed": {
     "name": null,
@@ -19609,7 +20756,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": null,
+        "description": null
+      },
+      "control_mp_cost<004>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "broca": {
     "name": null,
@@ -19799,7 +20956,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<021>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "ambriel": {
     "name": null,
@@ -19981,7 +21148,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd<001>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "greythroat": {
     "name": null,
@@ -20171,7 +21348,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<005>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_oneself<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "blaze": {
     "name": null,
@@ -20413,7 +21600,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<001>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<210>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "snowsant": {
     "name": null,
@@ -20603,7 +21800,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd_variable2<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd_variable2<001>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "hung": {
     "name": null,
@@ -20793,7 +22000,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<010>": {
+        "name": null,
+        "description": null
+      },
+      "control_mp_cost&faction2<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "aak": {
     "name": null,
@@ -21039,7 +22256,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_clue_cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<170>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "nian": {
     "name": null,
@@ -21319,7 +22546,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<160>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_cost<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "leizi": {
     "name": null,
@@ -21522,7 +22759,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_clue_cost<010>": {
+        "name": null,
+        "description": null
+      },
+      "control_clue_cost<011>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "ceobe": {
     "name": null,
@@ -21802,7 +23049,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_limit&cost<002>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd_addition<031>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "purestream": {
     "name": null,
@@ -21976,7 +23233,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<011>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd&trade<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "utage": {
     "name": null,
@@ -22176,7 +23443,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<020>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "bibeak": {
     "name": null,
@@ -22378,7 +23655,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_wt&cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_wt&cost<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "sesa": {
     "name": null,
@@ -22571,7 +23858,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<120>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<119>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "bagpipe": {
     "name": null,
@@ -22829,7 +24126,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<021>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<310>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "conviction": {
     "name": null,
@@ -22987,7 +24294,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<030>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "cutter": {
     "name": null,
@@ -23177,7 +24494,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<300>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_cost3<300>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "sideroca": {
     "name": null,
@@ -23303,7 +24630,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<020>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<320>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "shamare": {
     "name": null,
@@ -23548,7 +24885,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_wt&cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_vodfox<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -23995,7 +25343,18 @@
             "description": "Blocks 1 enemy"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession<080>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<180>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -24054,7 +25413,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd&cost<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "elysium": {
     "name": null,
@@ -24244,7 +25613,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_team<060>": {
+        "name": null,
+        "description": null
+      },
+      "meet_flag<060>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "w": {
     "name": null,
@@ -24605,7 +25984,22 @@
           }
         },
         "traitCandidates": {},
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession2<040>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<640>": {
+        "name": null,
+        "description": null
+      },
+      "train_cost&profession<340>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -24928,7 +26322,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd&power<010>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd&power<020>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -25056,7 +26461,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit&cost<011>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_limit&cost<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "tsukinogi": {
     "name": null,
@@ -25256,7 +26671,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue<010>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd&clue<100>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "podenco": {
     "name": null,
@@ -25462,7 +26887,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<010>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single<001>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all<012>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "absinthe": {
     "name": null,
@@ -25652,7 +27091,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_team<050>": {
+        "name": null,
+        "description": null
+      },
+      "meet_flag<050>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "leonhardt": {
     "name": null,
@@ -25861,7 +27310,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<220>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_cost3<220>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "rosa": {
     "name": null,
@@ -26103,7 +27562,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<020>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd&clue2<250>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "click": {
     "name": null,
@@ -26229,7 +27698,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_limit<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "ayerscarpe": {
     "name": null,
@@ -26363,7 +27842,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "folinic": {
     "name": null,
@@ -26549,7 +28038,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<111>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_cost3<100>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "suzuran": {
     "name": null,
@@ -26791,7 +28290,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<060>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<160>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "chiave": {
     "name": null,
@@ -26997,7 +28506,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<110>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_device<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "beeswax": {
     "name": null,
@@ -27233,7 +28752,18 @@
             "description": "Blocks 3 enemies"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession<050>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<051>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -27491,7 +29021,18 @@
             "description": "Blocks 1 enemy"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd_addition<041>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_limit<0000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -27683,7 +29224,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_limit_diff<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_limit_count<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "andreana": {
     "name": null,
@@ -27873,7 +29424,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_oneself<011>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "thorns": {
     "name": null,
@@ -28059,7 +29620,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<012>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_recovery<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "reserve-operator-melee": {
     "name": null,
@@ -28072,7 +29643,8 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "reserve-operator-sniper": {
     "name": null,
@@ -28085,7 +29657,8 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "reserve-operator-logistics": {
     "name": null,
@@ -28098,7 +29671,8 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "reserve-operator-caster": {
     "name": null,
@@ -28111,7 +29685,8 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "aciddrop": {
     "name": null,
@@ -28285,7 +29860,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<031>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single&oneself<012>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "sharp": {
     "name": null,
@@ -28353,7 +29938,8 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "flint": {
     "name": null,
@@ -28487,7 +30073,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<020>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<220>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "stormeye": {
     "name": null,
@@ -28555,7 +30151,8 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "tomimi": {
     "name": null,
@@ -28753,7 +30350,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single_P<001>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<150>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "pith": {
     "name": null,
@@ -28821,7 +30428,8 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "touch": {
     "name": null,
@@ -28889,7 +30497,8 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "eunectes": {
     "name": null,
@@ -29169,7 +30778,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&power<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd&power<010>": {
+        "name": null,
+        "description": null
+      },
+      "control_pow_bot<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "arene": {
     "name": null,
@@ -29307,7 +30930,21 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_dorm<000>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_dorm<001>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_oneself2<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "april": {
     "name": null,
@@ -29497,7 +31134,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&limit<001>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "mint": {
     "name": null,
@@ -29687,7 +31338,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<050>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<250>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<201>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "surtr": {
     "name": null,
@@ -29881,7 +31546,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<120>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "bubble": {
     "name": null,
@@ -30055,7 +31730,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_limit&cost<010>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd_variable3<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "whislash": {
     "name": null,
@@ -30245,7 +31930,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd<0000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "aosta": {
     "name": null,
@@ -30379,7 +32074,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<110>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_device<030>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "blemishine": {
     "name": null,
@@ -30669,7 +32374,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_free<000>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_cost2<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "whisperain": {
     "name": null,
@@ -30859,7 +32574,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_bd_n1_n1<100>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd_bd_n1<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "rosmontis": {
     "name": null,
@@ -31159,7 +32884,22 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd_bd_n1<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd_bd<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd_bd<010>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -31351,7 +33091,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost4<000>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_device<050>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "jackie": {
     "name": null,
@@ -31485,7 +33235,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single&oneself<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd<0020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "pinecone": {
     "name": null,
@@ -31619,7 +33379,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<200>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_cost3<200>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "kafka": {
     "name": null,
@@ -31813,7 +33583,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_wt&cost<001>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_wt&cost<011>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "robin": {
     "name": null,
@@ -32100,7 +33880,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession2<080>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<180>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -32284,7 +34075,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue2<230>": {
+        "name": null,
+        "description": null
+      },
+      "meet_flag<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "beanstalk": {
     "name": null,
@@ -32442,7 +34243,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_prod_spd<003>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_limit&cost<001>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -32634,7 +34446,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_bd_n1_n2<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_bd_n1<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "archetto": {
     "name": null,
@@ -32936,7 +34758,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&dorm&lv<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&dorm&lv<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "tuye": {
     "name": null,
@@ -33126,7 +34958,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&gold<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&gold<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "lava-the-purgatory": {
     "name": null,
@@ -33335,7 +35177,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<900>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd<022>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "mr-nothing": {
     "name": null,
@@ -33525,7 +35377,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue<101>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd_bd_n2<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "saga": {
     "name": null,
@@ -33827,7 +35689,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<010>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<110>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "dusk": {
     "name": null,
@@ -34161,7 +36033,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "control_mp_cost&bd1<000>": {
+        "name": null,
+        "description": null
+      },
+      "control_mp_cost&bd2<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -34357,7 +36240,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<990>": {
+        "name": null,
+        "description": null
+      },
+      "control_mp_bd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "blitz": {
     "name": null,
@@ -34497,7 +36390,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<990>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd_blitz<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "frost": {
     "name": null,
@@ -34802,7 +36705,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "control_mp_cost&faction<990>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_frost<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -35054,7 +36968,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<990>": {
+        "name": null,
+        "description": null
+      },
+      "control_mp_bd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "heavyrain": {
     "name": null,
@@ -35244,7 +37168,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<006>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<030>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<230>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "toddifons": {
     "name": null,
@@ -35450,7 +37388,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<111>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_device<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "passenger": {
     "name": null,
@@ -35745,7 +37693,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<003>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd<016>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd&power<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "akafuyu": {
     "name": null,
@@ -35945,7 +37907,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<020>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<120>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "skadi-the-corrupting-heart": {
     "name": null,
@@ -36282,7 +38254,22 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession2<060>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<660>": {
+        "name": null,
+        "description": null
+      },
+      "train_cost&profession<360>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -36510,7 +38497,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_aegir1<000>": {
+        "name": null,
+        "description": null
+      },
+      "control_mp_aegir2<000>": {
+        "name": null,
+        "description": null
+      },
+      "control_mp_aegir2<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "kaltsit": {
     "name": null,
@@ -36872,7 +38873,18 @@
             "description": "Blocks 3 enemies"
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_proc_probability<040>": {
+        "name": null,
+        "description": null
+      },
+      "control_prod_spd<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -37064,7 +39076,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single_P<002>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd<002>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd<017>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "kirara": {
     "name": null,
@@ -37270,7 +39296,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_line_gold<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_line_gold<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "bena": {
     "name": null,
@@ -37464,7 +39500,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd&limit&cost<020>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_wt&cost<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "carnelian": {
     "name": null,
@@ -37702,7 +39748,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<050>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession<150>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "pallas": {
     "name": null,
@@ -37994,7 +40050,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_limit&cost<003>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "la-pluma": {
     "name": null,
@@ -38172,7 +40238,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<000>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<030>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "tequila": {
     "name": null,
@@ -38306,7 +40382,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_long<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_long<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "chen-the-holungday": {
     "name": null,
@@ -38488,7 +40574,21 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<040>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<440>": {
+        "name": null,
+        "description": null
+      },
+      "train_cost&profession<140>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "mizuki": {
     "name": null,
@@ -38794,7 +40894,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_skill_spd1<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "roberta": {
     "name": null,
@@ -39068,7 +41178,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_formula_probability<200>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<010>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -39204,7 +41325,21 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost<100>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd_cost<110>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd_bd_n1_n1<200>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "saileach": {
     "name": null,
@@ -39442,7 +41577,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single<031>": {
+        "name": null,
+        "description": null
+      },
+      "control_hire_spd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "ashlock": {
     "name": null,
@@ -39576,7 +41721,73 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "modules": {
+      "uniequip_001_ashlok": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_ashlok": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Bombardment Studies",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Bombardment Studies",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Bombardment Studies",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Bombardment Studies",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<002>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<012>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "fartooth": {
     "name": null,
@@ -39864,7 +42075,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<042>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<002>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<012>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "justice-knight": {
     "name": null,
@@ -39921,7 +42146,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "power_prod_spd_P<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "pudding": {
     "name": null,
@@ -40098,7 +42333,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<010>": {
+        "name": null,
+        "description": null
+      },
+      "control_token_prod_spd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "wild-mane": {
     "name": null,
@@ -40288,7 +42533,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<002>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<012>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "corroserum": {
     "name": null,
@@ -40478,7 +42733,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<113>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<123>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_drop<030>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "honeyberry": {
     "name": null,
@@ -40612,7 +42881,21 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<114>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<124>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single<032>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "flametail": {
     "name": null,
@@ -40914,7 +43197,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<007>": {
+        "name": null,
+        "description": null
+      },
+      "control_mp_psk<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "nearl-the-radiant-knight": {
     "name": null,
@@ -41210,7 +43503,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd_tag<000>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd_tag<010>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -41346,7 +43650,21 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&team<041>": {
+        "name": null,
+        "description": null
+      },
+      "meet_flag<040>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "aurora": {
     "name": null,
@@ -41536,7 +43854,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<030>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<130>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "gnosis": {
     "name": null,
@@ -41774,7 +44102,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<030>": {
+        "name": null,
+        "description": null
+      },
+      "control_tra_limit&spd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "shalem": {
     "name": null,
@@ -41914,7 +44252,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession3<130>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession3<131>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "nine-colored-deer": {
     "name": null,
@@ -42076,7 +44424,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_bonus1<000>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_bonus2<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "blacknight": {
     "name": null,
@@ -42247,7 +44605,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd&profession2<010>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<110>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -42439,7 +44808,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<900>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession3<140>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "ling": {
     "name": null,
@@ -42745,7 +45124,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10020_ling_soul2": {
         "name": null,
@@ -42817,7 +45197,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10020_ling_soul3": {
         "name": null,
@@ -42889,7 +45270,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "control_facCostReset<000>": {
+        "name": null,
+        "description": null
+      },
+      "control_costToBD<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -43121,7 +45513,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_allCost_condChar<000>": {
+        "name": null,
+        "description": null
+      },
+      "control_upMeetingSpeed<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "quercus": {
     "name": null,
@@ -43311,7 +45713,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_team<070>": {
+        "name": null,
+        "description": null
+      },
+      "meet_flag<070>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "goldenglow": {
     "name": null,
@@ -43497,7 +45909,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<003>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd<023>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "enforcer": {
     "name": null,
@@ -43687,7 +46109,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&cost<100>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "kazemaru": {
     "name": null,
@@ -43919,7 +46351,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "meet_spd<010>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd_condChar<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -44160,9 +46603,61 @@
             }
           }
         }
+      },
+      "uniequip_003_phenxi": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Sufferer of Tribulations",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Sufferer of Tribulations",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_recExcludeOther<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_exchangeAp<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "chestnut": {
     "name": null,
@@ -44296,7 +46791,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<201>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "rockrock": {
     "name": null,
@@ -44430,7 +46935,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<031>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_drop<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "heidi": {
     "name": null,
@@ -44570,7 +47085,21 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd<021>": {
+        "name": null,
+        "description": null
+      },
+      "control_clue_faction<070>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "horn": {
     "name": null,
@@ -44756,7 +47285,73 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "modules": {
+      "uniequip_001_horn": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_horn": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Military Fortress",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Military Fortress",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Military Fortress",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Military Fortress",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<112>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_device<111>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "windflit": {
     "name": null,
@@ -45109,7 +47704,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_formula_probability<115>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd&power<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -45407,7 +48013,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<080>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<680>": {
+        "name": null,
+        "description": null
+      },
+      "train_cost&profession<380>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "lumen": {
     "name": null,
@@ -45683,7 +48303,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_powToRecAll<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_powToRecAll<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "irene": {
     "name": null,
@@ -45917,7 +48547,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd_doubleProf<000>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd_reduceTime<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "erato": {
     "name": null,
@@ -46111,7 +48751,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<040>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<240>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "hibiscus-the-purifier": {
     "name": null,
@@ -46245,7 +48895,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&faction<900>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<270>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "czerny": {
     "name": null,
@@ -46379,7 +49039,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_bd_n1_n3<000>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_bd_n1<100>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "ebenholz": {
     "name": null,
@@ -46669,6 +49339,72 @@
             }
           }
         }
+      },
+      "uniequip_004_ebnhlz": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "Appoggiatura",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Appoggiatura",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "Appoggiatura",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Appoggiatura",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {
@@ -46728,7 +49464,22 @@
           }
         },
         "traitCandidates": {},
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd_bd_n1<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd_bd<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd_bd<010>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -46907,7 +49658,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<001>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<011>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "greyy-the-lightningbearer": {
     "name": null,
@@ -47081,7 +49842,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_drone<000>": {
+        "name": null,
+        "description": null
+      },
+      "power_count<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "dorothy": {
     "name": null,
@@ -47470,7 +50241,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "manu_skill_spd1<010>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<011>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -47606,7 +50388,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd_notOwned<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd_notOwned<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "minimalist": {
     "name": null,
@@ -47740,7 +50532,21 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_constrLv<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd_bd<100>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd_bd<110>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "pozemka": {
     "name": null,
@@ -48102,7 +50908,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd&gold<100>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_line_durin<010>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -48346,7 +51163,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<020>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<620>": {
+        "name": null,
+        "description": null
+      },
+      "train_cost&profession<320>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "proviso": {
     "name": null,
@@ -48552,7 +51383,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_law<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_against<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_against<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "mlynar": {
     "name": null,
@@ -48738,7 +51583,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<008>": {
+        "name": null,
+        "description": null
+      },
+      "control_mp_lonely<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "luo-xiaohei": {
     "name": null,
@@ -48848,7 +51703,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_lolxh<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "reserve-operator-defender": {
     "name": null,
@@ -48861,7 +51726,8 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "tulip": {
     "name": null,
@@ -48929,7 +51795,8 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {}
   },
   "highmore": {
     "name": null,
@@ -49129,7 +51996,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_skill_change<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "totter": {
     "name": null,
@@ -49343,7 +52220,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd_reduce<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd_addition&cost<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "dagda": {
     "name": null,
@@ -49475,7 +52362,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession3<150>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession3<151>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "paprika": {
     "name": null,
@@ -49609,7 +52506,21 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_tra_spd<020>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_wt&cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_wt&cost<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "stainless": {
     "name": null,
@@ -49925,7 +52836,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10027_ironmn_pile2": {
         "name": null,
@@ -49997,7 +52909,8 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
       },
       "token_10027_ironmn_pile3": {
         "name": null,
@@ -50066,7 +52979,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "workshop_formula_cost&dorm<000>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_dorm<002>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -50202,7 +53126,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&formula<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "qanipalaat": {
     "name": null,
@@ -50392,7 +53326,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost&clue<001>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd_cost&clue<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "lunacub": {
     "name": null,
@@ -50566,7 +53510,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<001>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_probability<011>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "vigil": {
     "name": null,
@@ -50829,7 +53783,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "meet_spd<032>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&meet<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -51057,7 +54022,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd_doubleProf2<001>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd_doubleProf2<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "penance": {
     "name": null,
@@ -51251,7 +54226,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost<210>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_hireToRecAll<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "puzzle": {
     "name": null,
@@ -51385,7 +54370,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&team<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd_notOwned<001>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "harmonie": {
     "name": null,
@@ -51575,7 +54570,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_oneself<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&cost_condChar<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "reed-the-flame-shadow": {
     "name": null,
@@ -51761,7 +54766,21 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd_doubleProf<100>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd_doubleProf<110>": {
+        "name": null,
+        "description": null
+      },
+      "control_dorm_rec<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "jieyun": {
     "name": null,
@@ -51954,7 +54973,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_bd_to_bd<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd_bd<200>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd_bd<201>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "firewhistle": {
     "name": null,
@@ -52088,7 +55121,73 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "modules": {
+      "uniequip_001_firwhl": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_firwhl": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Flexible Fighter",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Flexible Fighter",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Flexible Fighter",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Flexible Fighter",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&share<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "lin": {
     "name": null,
@@ -52330,7 +55429,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_cost<111>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd_cost&extra<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "chongyue": {
     "name": null,
@@ -52512,7 +55621,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&bd_up<000>": {
+        "name": null,
+        "description": null
+      },
+      "control_mp_bd_cost_expand<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "wind-chimes": {
     "name": null,
@@ -52646,7 +55765,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_cost&bd2<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_cost&bd2<001>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "qiubai": {
     "name": null,
@@ -52832,7 +55961,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession3<160>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession3<161>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "terra-research-commission": {
     "name": null,
@@ -52889,7 +56028,17 @@
         "description": null
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit&bd<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd&limit&bd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "rathalos-s-noir-corne": {
     "name": null,
@@ -53103,7 +56252,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_bd2<000>": {
+        "name": null,
+        "description": null
+      },
+      "control_token_tra_spd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "kirin-r-yato": {
     "name": null,
@@ -53341,7 +56500,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost&bd2<010>": {
+        "name": null,
+        "description": null
+      },
+      "control_token_prod_spd2<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "u-official": {
     "name": "U-Official",
@@ -53398,7 +56567,17 @@
         "description": "Does not attack but continuously restores the <#ba.kw>HP</> of all allies within range (the HP restored per second is equal to 10{'%'} of self ATK). Self is unaffected by <?ba.inspire>Inspiration</> and ignores <#ba.kw>Deployment Limit</>, but has a long Redeployment Time"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&wt<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd_Owned<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "humus": {
     "name": "Humus",
@@ -53588,7 +56767,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_proc_probability<013>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_rub<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "morgan": {
     "name": "Morgan",
@@ -53784,7 +56973,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_toone<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd_par<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "cement": {
     "name": "Cement",
@@ -53974,7 +57173,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_prod_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_limit&cost<021>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "ines": {
     "name": "Ines",
@@ -54159,7 +57368,17 @@
         "description": "Has <#ba.kw>reduced</> Redeployment Time, can use ranged attacks"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd<001>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd_hast<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "melanite": {
     "name": "Melanite",
@@ -54349,7 +57568,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession2<040>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession2<630>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "muelsyse": {
     "name": "Muelsyse",
@@ -54578,7 +57807,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "dorm_rec_all&oneself<022>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_rhine<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -54818,7 +58058,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&cost_condChar<001>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&cost_condChar<011>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&condChar_mustget<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "silence-the-paradigmatic": {
     "name": "Silence the Paradigmatic",
@@ -55127,7 +58381,18 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "hire_spd<032>": {
+        "name": null,
+        "description": null
+      },
+      "manu_prod_spd<021>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -55186,7 +58451,17 @@
         "description": "Blocks 3 enemies and ignores the <#ba.kw>Deployment Limit</>, but has a long Redeployment Time"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd_P<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "insider": {
     "name": "Insider",
@@ -55360,7 +58635,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue<110>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_single&oneself<040>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "spuria": {
     "name": "Spuria",
@@ -55554,7 +58839,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd&addition<000>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd&addition<001>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd&cost<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "executor-the-ex-foedere": {
     "name": "Executor the Ex Foedere",
@@ -55792,7 +59091,21 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<030>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd<031>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_limit<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "santalla": {
     "name": "Santalla",
@@ -55985,7 +59298,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_single_power<000>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd_power<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "typhon": {
     "name": "Typhon",
@@ -56227,7 +59550,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&sami<000>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession3<170>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "valarqvin": {
     "name": "Valarqvin",
@@ -56363,7 +59696,17 @@
         "description": "Attacks deal <#ba.kw>Arts damage</> and can deal <#ba.kw>Elemental damage</>"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd&bd<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_spd&bd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "poncirus": {
     "name": "Poncirus",
@@ -56553,7 +59896,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_probability<221>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_cost3<221>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "bryophyta": {
     "name": "Bryophyta",
@@ -56751,7 +60104,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd<100>": {
+        "name": null,
+        "description": null
+      },
+      "manu_skill_spd1<020>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "swire-the-elegant-wit": {
     "name": "Swire the Elegant Wit",
@@ -57047,7 +60410,18 @@
           }
         },
         "traitCandidates": {},
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd_variable<000>": {
+        "name": null,
+        "description": null
       }
     }
   },
@@ -57227,7 +60601,21 @@
         "description": "Restores the HP of allied units and recovers <?ba.dt.element>Elemental Damage</> by <#ba.kw>{'{'}ep_heal_ratio:0{'%'}{'}'}</> of ATK (can recover <?ba.dt.element>Elemental Damage</> of unhurt allied units)"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession3<180>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd&profession3<181>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all&profession<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "coldshot": {
     "name": "Coldshot",
@@ -57367,7 +60755,17 @@
         "description": "Attacks require ammo and ATK increases to <#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</>; Reloads ammo gradually when not attacking (up to {'{'}value{'}'} ammo)"
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "control_mp_cost<009>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all&single<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "almond": {
     "name": "Almond",
@@ -57557,7 +60955,17 @@
         }
       }
     },
-    "tokenSummons": {}
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "manu_formula_spd&cost<000>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd&cost_bd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
   },
   "jessica-the-liberated": {
     "name": "Jessica the Liberated",
@@ -57776,7 +61184,772 @@
             "description": null
           }
         },
-        "tokenSummons": {}
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<001>": {
+        "name": null,
+        "description": null
+      },
+      "control_bd_spd<000>": {
+        "name": null,
+        "description": null
+      }
+    }
+  },
+  "verdant": {
+    "name": "Verdant",
+    "appellation": null,
+    "description": "Does not retreat upon receiving lethal damage, instead swaps to a <<Substitute>> (Substitute has 0 Block). Swaps back to the original after 20 seconds",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_vrdant_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_vrdant_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "Does not retreat upon receiving lethal damage, instead swaps to a <<Substitute>> (Substitute has 0 Block). Swaps back to the original after 20 seconds"
+      }
+    },
+    "modules": {
+      "uniequip_001_vrdant": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_vrdant": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Instead of retreating when defeated, switch to a <<Substitute>> (Substitute has 0 Block, but HP is <#ba.kw>increased</>) for 20 seconds before switching back to the original"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Instead of retreating when defeated, switch to a <<Substitute>> (Substitute has 0 Block, but HP is <#ba.kw>increased</>) for 20 seconds before switching back to the original"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Instead of retreating when defeated, switch to a <<Substitute>> (Substitute has 0 Block, but HP is <#ba.kw>increased</>) for 20 seconds before switching back to the original"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "workshop_formula_cost3<101>": {
+        "name": null,
+        "description": null
+      },
+      "workshop_formula_device<060>": {
+        "name": null,
+        "description": null
+      }
+    }
+  },
+  "delphine": {
+    "name": "Delphine",
+    "appellation": null,
+    "description": "Attacks deal <#ba.kw>Arts damage</>; When unable to find a target, attacks can be <#ba.kw>stored up</> and fired all at once (Up to 3 charges)",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_delphn_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_delphn_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "Attacks deal <#ba.kw>Arts damage</>; When unable to find a target, attacks can be <#ba.kw>stored up</> and fired all at once (Up to 3 charges)"
+      }
+    },
+    "modules": {
+      "uniequip_001_delphn": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_delphn": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "ASPD +30 when there are stored attacks"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "ASPD +30 when there are stored attacks"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "ASPD +30 when there are stored attacks"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd&clue2<260>": {
+        "name": null,
+        "description": null
+      },
+      "control_tra_limit&spd<010>": {
+        "name": null,
+        "description": null
+      }
+    }
+  },
+  "vendela": {
+    "name": "Vendela",
+    "appellation": null,
+    "description": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 50{'%'} of the damage dealt",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skcom_magic_rage<3>": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_vendla_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<023>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all&tired<000>": {
+        "name": null,
+        "description": null
+      }
+    }
+  },
+  "hoederer": {
+    "name": "Hoederer",
+    "appellation": null,
+    "description": "Attacks <#ba.kw>all blocked enemies</>",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_hodrer_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_hodrer_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_hodrer_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "Attacks <#ba.kw>all blocked enemies</>"
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_par&per<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_par&per<001>": {
+        "name": null,
+        "description": null
       }
     }
   }
