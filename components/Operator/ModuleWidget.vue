@@ -41,7 +41,7 @@ const moduleState = ref<ModuleState>({
 defineEmits(["update:moduleId", "update:moduleStage", "update:potential"])
 
 const i18n = useI18n()
-const { t } = i18n
+const { t, locale } = i18n
 
 const combinedModuleTypeName = computed<string>(() => {
   if (!module.typeName2) return module.typeName1
@@ -59,6 +59,18 @@ const moduleName = computed<string>(() =>
 const currentTraitCandidate = computed<GeneratedTraitCandidateData>(() =>
   getCurrentTraitCandidate(operator, { ...operatorState, elite: 2, level: 60 })
 )
+
+function getValueString(attribute: string, value: number): string {
+  if (attribute === "respawn_time")
+    return value.toLocaleString(locale.value, {
+      style: "unit",
+      unit: "second",
+      signDisplay: "always",
+    })
+  return value.toLocaleString(locale.value, {
+    signDisplay: "always",
+  })
+}
 
 watch(
   () => potential,
@@ -196,7 +208,7 @@ await useOperatorLocale(i18n, operator.key)
           <td>
             <ul>
               <li v-for="{ key, value } in stage.attributes" :key="key">
-                {{ t(`operator.attribute.${String(key)}`) }} +{{ value }}
+                {{ t(`operator.attribute.${key}`) }} {{ getValueString(key, value!!) }}
               </li>
             </ul>
           </td>
