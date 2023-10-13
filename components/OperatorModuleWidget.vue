@@ -5,7 +5,7 @@ import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator
 import type { ModuleState, OperatorState } from "~/utils"
 import { getCurrentTraitCandidate } from "~/utils/traits"
 
-const { operator, module, operatorState, potential } = defineProps<{
+const { operator, module, operatorState, potential, moduleId } = defineProps<{
   operator: GeneratedOperatorData
   module: GeneratedModuleData
   operatorState: OperatorState
@@ -44,8 +44,15 @@ const i18n = useI18n()
 const { t, locale } = i18n
 
 const combinedModuleTypeName = computed<string>(() => {
-  if (!module.typeName2) return module.typeName1
-  return `${module.typeName1}-${module.typeName2}`
+  let { typeName1: branchCode, typeName2: moduleCode } = module
+  switch (moduleCode) {
+    case null:
+      return branchCode
+    case "D":
+      moduleCode = "Δ"
+      break
+  }
+  return `${branchCode}-${moduleCode}`
 })
 
 const moduleName = computed<string>(() =>
@@ -72,11 +79,15 @@ function getValueString(attribute: string, value: number): string {
   })
 }
 
+const isModuleSelected = ref<boolean>(module.id === moduleId)
+
 watch(
   () => potential,
-  () => {
-    moduleState.value.potential = bestPotential.value
-  }
+  () => (moduleState.value.potential = bestPotential.value)
+)
+watch(
+  () => moduleId,
+  () => (isModuleSelected.value = module.id === moduleId)
 )
 await useOperatorLocale(i18n, operator.key)
 </script>
@@ -87,7 +98,7 @@ await useOperatorLocale(i18n, operator.key)
       <!-- Icon and name -->
       <div class="flex gap-2">
         <div
-          class="h-12 w-12 bg-slate-900 bg-contain bg-center bg-no-repeat p-1"
+          class="h-12 w-12 rounded-theme bg-gray-900 bg-contain bg-center bg-no-repeat p-1"
           :style="{
             backgroundImage: module.stages
               ? `url('https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/shining/${module.shiningColor}_shining.png')`
@@ -112,12 +123,12 @@ await useOperatorLocale(i18n, operator.key)
         v-if="modulePotentialNumbers.length > 1"
       >
         <button
-          class="h-8 w-8 flex-shrink-0 p-0.5"
+          class="h-8 w-8 flex-shrink-0 rounded-theme p-0.5"
           v-for="potential in modulePotentialNumbers"
           :class="{
-            'bg-slate-400 hover:bg-slate-500':
+            'bg-gray-400 hover:bg-gray-500':
               moduleState.potential !== potential,
-            'bg-slate-900': moduleState.potential === potential,
+            'bg-gray-900': moduleState.potential === potential,
           }"
           :key="potential"
           @click="moduleState.potential = potential"
@@ -129,10 +140,15 @@ await useOperatorLocale(i18n, operator.key)
         </button>
       </div>
       <!-- Select module -->
-      <div class="ml-auto">
-        <button
-          class="flex gap-1 bg-bg-container-1-normal p-1 text-fg-container-1 hover:bg-bg-container-1-focus focus:bg-bg-container-1-focus"
-          @click="
+      <div class="ml-auto h-fit rounded-theme bg-bg-container-1-normal p-1">
+        <UCheckbox
+          v-model="isModuleSelected"
+          :label="
+            isModuleSelected
+              ? t('operator.module.moduleSelected')
+              : t('operator.module.selectModule')
+          "
+          @update:model-value="
             () => {
               $emit('update:moduleId', module.id)
               if (module.stages && !moduleStage) {
@@ -142,27 +158,13 @@ await useOperatorLocale(i18n, operator.key)
               }
             }
           "
-        >
-          <div
-            class="h-6 w-6 flex-shrink-0 text-slate-50"
-            :class="{
-              'bg-green-400': moduleId === module.id,
-              'bg-slate-50': moduleId !== module.id,
-            }"
-          >
-            <Icon name="fa-solid:check" />
-          </div>
-          <span>
-            {{
-              moduleId === module.id
-                ? t("operator.module.moduleSelected")
-                : t("operator.module.selectModule")
-            }}
-          </span>
-        </button>
+        />
       </div>
     </div>
-    <table class="mr-auto table-fixed border-hidden" v-if="module.stages">
+    <table
+      class="mr-auto table-fixed overflow-hidden rounded-theme border-hidden"
+      v-if="module.stages"
+    >
       <thead class="text-center">
         <tr class="bg-bg-primary text-fg-primary">
           <th class="w-8 sm:w-16">{{ t("operator.module.stage") }}</th>
@@ -188,42 +190,41 @@ await useOperatorLocale(i18n, operator.key)
           "
         >
           <td
-            class="text-center font-bold text-slate-50"
+            class="text-center font-bold text-gray-50"
             :class="{
-              'bg-slate-400':
+              'bg-gray-400':
                 module.id !== moduleId || stage.stage !== moduleStage,
-              'bg-slate-900':
+              'bg-gray-900':
                 module.id === moduleId && stage.stage === moduleStage,
             }"
           >
             <span class="align-middle">
               {{ stage.stage }}
             </span>
-            <Icon
-              class="ml-0.5"
+            <UIcon
+              class="ml-0.5 align-middle"
               v-if="module.id === moduleId && stage.stage === moduleStage"
-              name="mdi:check-bold"
+              name="i-mdi-check-bold"
             />
           </td>
           <td>
             <ul>
               <li v-for="{ key, value } in stage.attributes" :key="key">
-                {{ t(`operator.attribute.${key}`) }} {{ getValueString(key, value!!) }}
+                {{ t(`operator.attribute.${key}`) }}
+                {{ getValueString(key, value!!) }}
               </li>
             </ul>
           </td>
           <td class="description">
             <!-- Trait upgrade stage -->
             <template v-if="stage.stage === 1">
-              <div
-                class="w-fit bg-bg-primary px-1 py-0.5 text-xs text-fg-primary"
-              >
+              <UBadge>
                 {{
                   t("operator.ui.specificBranchTrait", {
                     branch: t(`operator.classBranch.${operator.classBranch}`),
                   })
                 }}
-              </div>
+              </UBadge>
               <template v-if="stage.traitUpgrade.hasAdditionalDescription">
                 <div
                   class="opacity-60"
@@ -237,7 +238,10 @@ await useOperatorLocale(i18n, operator.key)
                   "
                 />
                 <div class="flex items-center gap-1">
-                  <Icon class="text-green-500" name="fa-solid:plus" />
+                  <UIcon
+                    class="text-green-500 dark:text-green-400"
+                    name="i-fa-solid-plus"
+                  />
                   <span
                     v-html="
                       convertRichText(
@@ -250,7 +254,7 @@ await useOperatorLocale(i18n, operator.key)
                   />
                 </div>
               </template>
-              <span
+              <div
                 v-else-if="stage.traitUpgrade.hasOverrideDescription"
                 v-html="
                   convertRichText(
@@ -269,16 +273,14 @@ await useOperatorLocale(i18n, operator.key)
               :key="upgrade.index"
             >
               <template v-if="!upgrade.isHidden">
-                <div
-                  class="w-fit bg-bg-primary px-1 py-0.5 text-xs text-fg-primary"
-                >
+                <UBadge>
                   {{
                     t(
                       `${operator.key}.modules.${module.id}.stages.${stage.stage}.talentUpgrades.${upgrade.index}.candidates.${moduleState.potential}.name`
                     )
                   }}
-                </div>
-                <span
+                </UBadge>
+                <div
                   v-html="
                     convertRichText(
                       t(
@@ -312,7 +314,7 @@ tbody tr:hover {
   }
 
   &:not(.active) td:first-child {
-    @apply bg-slate-500;
+    @apply bg-gray-500;
   }
 }
 

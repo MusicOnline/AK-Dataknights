@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useSeoMeta } from "@unhead/vue"
+import type { OperatorLevelSelectWidget } from "#components"
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { GeneratedModuleData } from "~/tools/generate-data/operator/module"
 import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait"
@@ -14,13 +15,18 @@ const { t } = i18n
 
 const useOperatorLocalePromise = useOperatorLocale(i18n, <string>operatorKey)
 
-const operator: GeneratedOperatorData = await useOperatorData(
-  <string>operatorKey
+const { data } = await useAsyncData(`operators.${operatorKey}`, async () =>
+  useOperatorData(<string>operatorKey)
 )
+
+if (!data.value)
+  throw createError({ statusCode: 404, statusMessage: "Page Not Found" })
+
+const operator = <Ref<GeneratedOperatorData>>data
 
 const finalTraitCandidate = computed<GeneratedTraitCandidateData>(() => {
   let finalCandidate: GeneratedTraitCandidateData | null = null
-  operator.traitCandidates.forEach((candidate) => {
+  operator.value.traitCandidates.forEach((candidate) => {
     if (
       !finalCandidate ||
       candidate.unlockConditions.elite >
@@ -38,17 +44,17 @@ const finalTraitCandidate = computed<GeneratedTraitCandidateData>(() => {
 
 const pageMetaTitle = computed<string>(() =>
   t("operator.meta.title", {
-    name: t(`${operator.key}.name`),
-    rarity: operator.rarity,
-    class: t(`operator.class.${operator.class}`),
-    branch: t(`operator.classBranch.${operator.classBranch}`),
+    name: t(`${operator.value.key}.name`),
+    rarity: operator.value.rarity,
+    class: t(`operator.class.${operator.value.class}`),
+    branch: t(`operator.classBranch.${operator.value.classBranch}`),
   })
 )
 
 const pageDescription = computed<string>(() =>
   convertRichText(
     t(
-      `${operator.key}.traitCandidates.E${finalTraitCandidate.value.unlockConditions.elite}-L${finalTraitCandidate.value.unlockConditions.level}.description`
+      `${operator.value.key}.traitCandidates.E${finalTraitCandidate.value.unlockConditions.elite}-L${finalTraitCandidate.value.unlockConditions.level}.description`
     ),
     { replace: finalTraitCandidate.value.variables, html: false }
   )
@@ -62,14 +68,12 @@ useSeoMeta({
 })
 
 useHead({
-  title: () => t(`${operator.key}.name`),
+  title: () => t(`${operator.value.key}.name`),
   meta: () => [
     {
       key: "og:image",
       property: "og:image",
-      content: `https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${
-        operator.phases[0].outfit!.avatarId
-      }.png`,
+      content: getAvatarUrl(operator.value, { elite: 0 }),
     },
     {
       key: "og:image:type",
@@ -85,27 +89,27 @@ useHead({
   ],
 })
 
-const finalPhase = operator.phases.slice(-1)[0]
+const finalPhase = operator.value.phases.slice(-1)[0]
 
-const isSidebarExpanded = ref<boolean>(false)
+const isSidebarExpanded = useIsSidebarExpanded()
 const operatorState = ref<OperatorState>({
   elite: finalPhase.elite,
   level: finalPhase.maxLevel,
   potential: 1,
-  moduleId: operator.modules?.[0].id ?? null, // ORIGINAL module or null
+  moduleId: operator.value.modules?.[0].id ?? null, // ORIGINAL module or null
   moduleStage: null,
   isMaxTrustIncluded: true,
   areBonusesIncluded: true,
 })
 
 const currentPhase = computed<GeneratedElitePhaseData>(
-  () => operator.phases[operatorState.value.elite]
+  () => operator.value.phases[operatorState.value.elite]
 )
 
 const talentEliteLevelNumbers = computed<[number, number][]>(
   () =>
-    operator.talents
-      ?.reduce((accumulator, talent) => {
+    operator
+      .value!.talents?.reduce((accumulator, talent) => {
         talent.candidates.forEach(({ unlockConditions: { elite, level } }) => {
           if (
             !accumulator.find(
@@ -123,8 +127,8 @@ const talentEliteLevelNumbers = computed<[number, number][]>(
 )
 const talentPotentialNumbers = computed<number[]>(
   () =>
-    operator.talents
-      ?.reduce((accumulator, talent) => {
+    operator
+      .value!.talents?.reduce((accumulator, talent) => {
         talent.candidates.forEach(({ unlockConditions: { potential } }) => {
           if (!accumulator.includes(potential)) accumulator.push(potential)
         })
@@ -140,7 +144,7 @@ const talentState = ref<TalentState>({
 })
 
 function changeToNearestEliteLevel() {
-  if (!operator.talents?.length) return
+  if (!operator.value.talents?.length) return
   let bestEliteLevel: [number, number] | null = null
   talentEliteLevelNumbers.value.forEach(([elite, level]) => {
     if (elite === operatorState.value.elite) {
@@ -175,28 +179,56 @@ watch(
 )
 
 await useOperatorLocalePromise
+
+const observer: Ref<any> = ref(null)
+const levelSelect = ref<InstanceType<typeof OperatorLevelSelectWidget> | null>(
+  null
+)
+onMounted(() => {
+  observer.value = new IntersectionObserver(
+    ([e]) => {
+      const isStuck = e.intersectionRatio === 0
+      e.target.classList.toggle("rounded-t-theme", !isStuck)
+    },
+    {
+      rootMargin: "-84px 0px 0px 0px", // 42px navbar + 42px level select
+      threshold: [0],
+    }
+  )
+  observer.value.observe(levelSelect.value!.$el)
+})
+
+onBeforeUnmount(() => {
+  observer.value?.disconnect()
+})
 </script>
 
 <template>
   <div class="relative flex gap-2">
+    <Transition
+      enter-active-class="ease-out duration-300 opacity-0"
+      enter-from-class="opacity-0"
+      enter-to-class="opacity-100"
+      leave-active-class="ease-in duration-200 opacity-100"
+      leave-from-class="opacity-100"
+      leave-to-class="opacity-0"
+    >
+      <div
+        class="fixed inset-0 z-[19] h-screen w-screen bg-gray-200/75 transition-opacity dark:bg-gray-800/75 md:hidden"
+        v-show="isSidebarExpanded"
+        @click="isSidebarExpanded = false"
+      />
+    </Transition>
     <OperatorSidebar
-      class="sticky top-12 z-20 -mt-2 ml-[-14.5rem] h-[calc(100vh-7rem)] w-56 md:left-0 md:right-auto md:-ml-2 md:mb-0 md:h-[calc(100vh-3rem)] lg:w-72"
-      v-model:is-sidebar-expanded="isSidebarExpanded"
+      class="sticky top-12 z-20 -mt-2 ml-[-18.5rem] h-[calc(100vh-7rem)] w-72 flex-none transition-all md:left-0 md:right-auto md:-ml-2 md:mb-0 md:h-[calc(100vh-3rem)]"
       :class="{
-        'left-0': isSidebarExpanded,
-        'left-auto right-0': !isSidebarExpanded,
+        'left-0 duration-300': isSidebarExpanded,
+        '-left-72 duration-200': !isSidebarExpanded,
       }"
       :operator="operator"
     />
     <!-- Main content -->
-    <!--
-      Page:     max-w-7xl  = 80rem (from app.vue NuxtPage)
-      Sidebar:  lg:w-72    = 18rem 
-      Gap:      p-2        = 0.5rem (from app.vue NuxtPage's parent)
-      Main lg:ml should be = 80rem + 2 * (18rem + 0.5rem)
-    -->
     <main class="flex w-full flex-col gap-4">
-      <!-- <Breadcrumbs class="text-sm" /> -->
       <!-- General information -->
       <div>
         <div class="anchor-ghost" id="introduction" />
@@ -207,17 +239,18 @@ await useOperatorLocalePromise
       </div>
       <!-- Sticky level select -->
       <OperatorLevelSelectWidget
-        class="sticky top-12 z-10 bg-bg-container-1-normal p-2 text-fg-container-1 shadow"
+        class="sticky top-[calc(3rem-1px)] z-10 rounded-b-theme rounded-t-theme bg-gray-100 p-2 shadow dark:bg-gray-700"
         v-model:elite="operatorState.elite"
         v-model:level="operatorState.level"
         v-model:are-bonuses-included="operatorState.areBonusesIncluded"
+        ref="levelSelect"
         :operator="operator"
       />
       <!-- Range, stats, potentials, trust -->
       <div>
         <div class="anchor-ghost" id="stats" />
         <div
-          class="flex flex-wrap justify-center gap-1 p-2 outline outline-1 outline-bg-container-1-normal sm:flex-nowrap sm:justify-start lg:gap-4"
+          class="flex flex-wrap justify-center gap-1 rounded-theme p-2 outline outline-1 outline-bg-container-1-normal sm:flex-nowrap sm:justify-start lg:gap-4"
         >
           <div class="grid w-full p-2 sm:max-w-[8rem]">
             <OperatorRangeGrid
@@ -245,7 +278,7 @@ await useOperatorLocalePromise
           {{ t("operator.ui.talents") }}
         </h1>
         <OperatorTalentWidget
-          class="outline outline-1 outline-bg-container-1-normal"
+          class="rounded-theme outline outline-1 outline-bg-container-1-normal"
           v-model:elite="talentState.elite"
           v-model:level="talentState.level"
           v-model:potential="talentState.potential"
@@ -266,7 +299,7 @@ await useOperatorLocalePromise
             <li v-if="skill">
               <div class="anchor-ghost" :id="`skill-${index + 1}`" />
               <OperatorSkillWidget
-                class="p-2 outline outline-1 outline-bg-container-1-normal"
+                class="rounded-theme p-2 outline outline-1 outline-bg-container-1-normal"
                 :operator="operator"
                 :skill="skill"
                 :operator-state="operatorState"
@@ -289,7 +322,7 @@ await useOperatorLocalePromise
               :id="`module-${getCombinedModuleTypeName(mod)}`"
             />
             <OperatorModuleWidget
-              class="p-2 outline outline-1 outline-bg-container-1-normal"
+              class="rounded-theme p-2 outline outline-1 outline-bg-container-1-normal"
               v-model:module-id="operatorState.moduleId"
               v-model:module-stage="operatorState.moduleStage"
               :potential="operatorState.potential"
@@ -314,7 +347,7 @@ await useOperatorLocalePromise
             <li>
               <div class="anchor-ghost" :id="`riic-base-skill-${index + 1}`" />
               <OperatorRiicBaseSkillWidget
-                class="p-2 outline outline-1 outline-bg-container-1-normal"
+                class="rounded-theme p-2 outline outline-1 outline-bg-container-1-normal"
                 :key="index"
                 :operator="operator"
                 :riic-base-skill-group="buffData"

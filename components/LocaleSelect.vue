@@ -1,71 +1,52 @@
 <script setup lang="ts">
 import type { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables"
 
-const {
-  locale: currentLocale,
-  locales,
-  setLocale,
-} = useI18n({ useScope: "global" })
+const { locale, locales } = useI18n({ useScope: "global" })
 const switchLocalePath = useSwitchLocalePath()
 
-function setLocaleByNavigation(locale: string) {
-  return navigateTo({ path: switchLocalePath(locale) })
+function setLocaleByNavigation(localeCode: string) {
+  return navigateTo({ path: switchLocalePath(localeCode) })
 }
 
-const availableLocales = computed<LocaleObject[]>(() => {
-  return (<LocaleObject[] | string[]>locales.value).map((locale) => {
-    if (typeof locale === "object") return locale
+const availableLocaleObjs = computed<LocaleObject[]>(() => {
+  return locales.value.map((localeObjOrCode) => {
+    if (typeof localeObjOrCode === "object") return localeObjOrCode
     return {
-      code: locale,
-      name: locale,
+      code: localeObjOrCode,
+      name: localeObjOrCode,
     }
   })
 })
 
 const currentLocaleObject = computed<LocaleObject>(
   () =>
-    (<LocaleObject[]>locales.value).find(
-      (locale) => locale.code === currentLocale.value
+    availableLocaleObjs.value.find(
+      (localeObj) => localeObj.code === locale.value
     )!
 )
+
+const dropdownItems = computed(() => [
+  availableLocaleObjs.value.map((localeObj) => ({
+    label: localeObj.name ?? localeObj.code,
+    click: () => setLocaleByNavigation(localeObj.code),
+  })),
+])
 </script>
 
 <template>
-  <ODropdown
-    v-model="currentLocale"
-    :triggers="['click', 'hover', 'focus']"
-    menu-class="bg-bg-container-1-normal w-max sm:w-full shadow p-1"
-    aria-role="list"
-    @update:modelValue="setLocaleByNavigation(currentLocale)"
+  <UDropdown
+    :items="dropdownItems"
+    :popper="{ placement: 'bottom-end' }"
   >
-    <template #trigger="{ active }">
-      <OButton
-        label-class="flex items-center gap-1 bg-bg-container-1-normal p-1 text-fg-container-1"
-      >
-        <Icon class="text-xl" name="heroicons:globe-alt" />
-        <span class="hidden sm:block">{{ currentLocaleObject.name }}</span>
-        <Icon class="text-xl" name="heroicons:chevron-down" />
-      </OButton>
-    </template>
-
-    <ODropdownItem
-      class="bg-bg-container-1-normal p-1 hover:bg-bg-container-1-focus"
-      v-for="locale in availableLocales"
-      :key="locale.code"
-      :value="locale.code"
-      :data-lang="locale.code"
-      item-active-class="bg-bg-primary hover:bg-bg-primary text-fg-primary"
-      aria-role="listitem"
+    <UButton
+      color="gray"
+      variant="solid"
+      leading-icon="i-heroicons-globe-alt"
+      trailing-icon="i-heroicons-chevron-down-20-solid"
     >
-      {{ locale.name }}
-    </ODropdownItem>
-  </ODropdown>
+      <span class="hidden sm:inline">
+        {{ currentLocaleObject.name }}
+      </span>
+    </UButton>
+  </UDropdown>
 </template>
-
-<style scoped lang="scss">
-/* stylelint-disable-next-line selector-class-pattern */
-:deep(.o-drop__menu) {
-  right: 0;
-  left: auto;
-}
-</style>

@@ -41,7 +41,7 @@ await useOperatorLocale(i18n, operator.key)
 </script>
 
 <template>
-  <div class="flex flex-col gap-4 overflow-x-auto">
+  <div class="flex flex-col gap-2 overflow-x-auto">
     <div class="flex flex-wrap gap-2">
       <!-- Name, SP recovery type, activation type -->
       <OperatorSkillWidgetIntroductionCard
@@ -54,28 +54,34 @@ await useOperatorLocale(i18n, operator.key)
         v-if="!isAdvancedViewEnabled"
       >
         <label
-          class="flex h-10 items-center gap-1 border-primary-main p-1 font-bold text-slate-50"
+          class="flex h-10 items-center gap-1 rounded-theme border-b-2 p-1 font-bold text-gray-50"
           :class="{
-            'border-b-2 bg-slate-900': skillLevel <= 7,
-            'bg-slate-600 focus-within:bg-slate-700 hover:bg-slate-700':
+            'border-primary bg-gray-900': skillLevel <= 7,
+            'border-transparent bg-gray-600 focus-within:bg-gray-700 hover:bg-gray-700':
               skillLevel > 7,
           }"
         >
           <span>{{ t("operator.ui.level") }}</span>
-          <input
-            class="ml-auto w-14 bg-slate-600 px-1 text-xl"
+          <UInput
             v-model.number="visualSkillLevel"
             :min="1"
             :max="7"
+            color="gray"
+            size="xl"
+            :ui="{
+              base: 'w-14',
+              size: { xl: 'text-xl' },
+              padding: { xl: 'px-1 py-0.5' },
+            }"
             type="number"
           />
         </label>
         <button
-          class="w-12 border-primary-main p-0.5 drop-shadow"
+          class="w-12 rounded-theme border-b-2 p-0.5 drop-shadow"
           v-for="masteryNumber in [...Array(numberOfMasteryLevels + 1).keys()]"
           :class="{
-            'border-b-2 bg-slate-900': skillLevel - 7 === masteryNumber,
-            'bg-slate-600 hover:bg-slate-700 focus-visible:bg-slate-700':
+            'border-primary bg-gray-900': skillLevel - 7 === masteryNumber,
+            'border-transparent bg-gray-600 hover:bg-gray-700 focus-visible:bg-gray-700':
               skillLevel - 7 !== masteryNumber,
           }"
           @click="skillLevel = masteryNumber + 7"

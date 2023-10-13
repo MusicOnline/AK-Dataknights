@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
+import type { GeneratedPotentialData } from "~/tools/generate-data/operator/potential"
 import { ALTERNATE_ATTRIBUTE_NAMES } from "~/utils"
-import type { GeneratedPotentialData } from "tools/generate-data/operator/potential"
 
 type UnderscoredAttributeNames = keyof typeof ALTERNATE_ATTRIBUTE_NAMES
 
@@ -88,10 +88,12 @@ await useOperatorLocale(i18n, operator.key)
     <ul class="flex flex-col gap-1 text-sm">
       <li>
         <button
-          class="flex w-full gap-0.5 text-left hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal"
+          class="flex w-full items-center gap-1 rounded-theme text-left hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal"
           @click="$emit('update:potential', (operatorState.potential = 1))"
         >
-          <div class="block h-6 w-6 flex-shrink-0 bg-slate-900 p-0.5">
+          <div
+            class="block h-6 w-6 flex-shrink-0 rounded-theme bg-gray-900 p-0.5"
+          >
             <img
               src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/potential/1.png"
             />
@@ -104,7 +106,7 @@ await useOperatorLocale(i18n, operator.key)
         :key="potential.potentialNumber"
       >
         <button
-          class="group flex w-full gap-0.5 text-left hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal"
+          class="group flex w-full items-center gap-1 rounded-theme text-left hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal"
           @click="
             $emit(
               'update:potential',
@@ -113,11 +115,11 @@ await useOperatorLocale(i18n, operator.key)
           "
         >
           <div
-            class="block h-6 w-6 flex-shrink-0 p-0.5"
+            class="block h-6 w-6 flex-shrink-0 rounded-theme p-0.5"
             :class="{
-              'bg-slate-400 group-hover:bg-slate-500 group-focus:bg-slate-500':
+              'bg-gray-400 group-hover:bg-gray-500 group-focus:bg-gray-500':
                 operatorState.potential < potential.potentialNumber,
-              'bg-slate-900':
+              'bg-gray-900':
                 operatorState.potential >= potential.potentialNumber,
             }"
           >
@@ -136,7 +138,7 @@ await useOperatorLocale(i18n, operator.key)
       </li>
     </ul>
     <button
-      class="group flex gap-0.5 text-left text-sm hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal"
+      class="group flex items-center gap-1 rounded-theme text-left text-sm hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal"
       v-if="trustStats"
       @click="
         $emit(
@@ -146,19 +148,19 @@ await useOperatorLocale(i18n, operator.key)
       "
     >
       <div
-        class="flex h-6 w-6 flex-shrink-0 p-0.5"
+        class="flex h-6 w-6 flex-shrink-0 rounded-theme p-0.5"
         :class="{
-          'bg-slate-400 text-orange-300 group-hover:bg-slate-500 group-focus:bg-slate-500':
+          'bg-gray-400 text-orange-300 group-hover:bg-gray-500 group-focus:bg-gray-500':
             !operatorState.isMaxTrustIncluded,
-          'bg-slate-900 text-orange-400': operatorState.isMaxTrustIncluded,
+          'bg-gray-900 text-orange-400': operatorState.isMaxTrustIncluded,
         }"
       >
-        <Icon
+        <UIcon
           class="h-full w-full"
           :class="{
             'opacity-90': !operatorState.isMaxTrustIncluded,
           }"
-          name="mdi:handshake"
+          name="i-mdi-handshake"
         />
       </div>
       <div class="flex flex-wrap gap-x-1">

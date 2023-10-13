@@ -16,7 +16,8 @@ export type GeneratedElitePhaseData = {
 }
 
 export type GeneratedElitePhaseIndexData = {
-  outfit: GeneratedOutfitIndexData | null
+  elite: number
+  outfit?: GeneratedOutfitIndexData
 }
 
 export class ElitePhase {
@@ -55,7 +56,8 @@ export class ElitePhase {
 
   public toIndexData(): GeneratedElitePhaseIndexData {
     return {
-      outfit: this.outfit?.toIndexData() ?? null,
+      elite: this.elite,
+      outfit: this.outfit?.toIndexData(),
     }
   }
 }

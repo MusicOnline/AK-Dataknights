@@ -182,7 +182,8 @@
       "viewDetails": "詳細確認",
       "randomOperator": "ランダム",
       "enableAdvancedViewForMore": "設定で詳細一覧を有効にして、詳細データが表示されます。",
-      "riicBaseSkills": "基地スキル"
+      "riicBaseSkills": "基地スキル",
+      "noSearchResults": "一致する結果はありません。"
     },
     "module": {
       "attributes": "ステータス",
@@ -212,7 +213,6 @@
     "operators": "オペレーター"
   },
   "settings": {
-    "language": "表示言語",
     "title": "設定",
     "enableAdvancedView": {
       "title": "詳細一覧",
@@ -220,6 +220,12 @@
     },
     "enableDarkMode": {
       "title": "ダークモード"
+    },
+    "setLanguage": {
+      "title": "言語"
+    },
+    "setTheme": {
+      "title": "カラーテーマ"
     }
   },
   "general": {

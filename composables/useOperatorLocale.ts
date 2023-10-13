@@ -1,5 +1,5 @@
 import type { Composer } from "@nuxtjs/i18n/dist/runtime/composables"
-import type { LocaleObject } from "tools/generate-data/utils"
+import type { LocaleObject } from "~/tools/generate-data/utils"
 
 function getFullLocaleName(locale: string): string {
   switch (locale) {
@@ -53,7 +53,11 @@ async function getOperatorLocale(
   return (await import(`../locales/${locale}/generated/_${key}.json`)).default
 }
 
-export default async function (i18n: Composer, key: string): Promise<void> {
+export default async function (
+  i18n: Composer,
+  key: string,
+  isNonFallbackUrgent: boolean = false
+): Promise<any> {
   const { locale, fallbackLocale, mergeLocaleMessage } = i18n
   // @ts-ignore
   const fallbackLocaleList: string[] = fallbackLocale.value[locale.value]
@@ -67,8 +71,9 @@ export default async function (i18n: Composer, key: string): Promise<void> {
       locale.value,
       <Record<string, string[]>>fallbackLocale.value
     )
-    nonCurrentFallbackLocales.forEach((loc) => {
+    const promises = nonCurrentFallbackLocales.map((loc) =>
       getOperatorLocale(loc, key).then((data) => mergeLocaleMessage(loc, data))
-    })
+    )
+    if (isNonFallbackUrgent) return Promise.all(promises)
   })
 }

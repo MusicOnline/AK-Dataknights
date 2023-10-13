@@ -109,11 +109,12 @@ await useOperatorLocale(i18n, operator.key)
       <div class="flex gap-1">
         <button
           class="relative h-8 w-8 flex-shrink-0 p-0.5"
-          v-for="[elite, level] in talentEliteLevelNumbers"
+          v-for="([elite, level], index) in talentEliteLevelNumbers"
           :class="{
-            'bg-slate-400 hover:bg-slate-500':
+            'rounded-tl-theme': index === 0,
+            'bg-gray-400 hover:bg-gray-500':
               talentState.elite !== elite || talentState.level !== level,
-            'bg-slate-800':
+            'bg-gray-800':
               talentState.elite === elite && talentState.level === level,
           }"
           :key="`${elite}-${level}`"
@@ -132,7 +133,7 @@ await useOperatorLocale(i18n, operator.key)
             }"
           />
           <span
-            class="absolute left-0 top-0 h-full w-full text-center text-xs text-slate-50"
+            class="absolute left-0 top-0 h-full w-full text-center text-xs text-gray-50"
             v-if="level !== 1"
             :class="{
               'opacity-90':
@@ -147,11 +148,12 @@ await useOperatorLocale(i18n, operator.key)
       <div class="ml-auto flex gap-1">
         <button
           class="h-8 w-8 flex-shrink-0 p-0.5"
-          v-for="potential in talentPotentialNumbers"
+          v-for="(potential, index) in talentPotentialNumbers"
           :class="{
-            'bg-slate-400 hover:bg-slate-500':
+            'rounded-tr-theme': index === talentPotentialNumbers.length - 1,
+            'bg-gray-400 hover:bg-gray-500':
               talentState.potential !== potential,
-            'bg-slate-900': talentState.potential === potential,
+            'bg-gray-900': talentState.potential === potential,
           }"
           :key="potential"
           @click="
@@ -176,13 +178,13 @@ await useOperatorLocale(i18n, operator.key)
         :key="talent.talentNumber"
       >
         <template v-if="bestCandidate">
-          <div class="w-fit bg-bg-primary px-1 py-0.5 text-xs text-fg-primary">
+          <UBadge>
             {{
               t(
                 `${operator.key}.talents.${talent.talentNumber}.${bestCandidate.key}.name`
               )
             }}
-          </div>
+          </UBadge>
           <div>
             <span
               v-html="
@@ -196,7 +198,7 @@ await useOperatorLocale(i18n, operator.key)
           </div>
         </template>
         <button
-          class="block"
+          class="flex flex-col gap-0.5"
           v-else-if="nextCandidate"
           @click="
             () => {
@@ -211,15 +213,15 @@ await useOperatorLocale(i18n, operator.key)
             }
           "
         >
-          <div class="w-fit bg-slate-500 px-1 py-0.5 text-xs text-slate-50">
+          <UBadge color="gray">
             {{
               t(
                 `${operator.key}.talents.${talent.talentNumber}.${nextCandidate.key}.name`
               )
             }}
-          </div>
+          </UBadge>
           <div class="flex items-center gap-1">
-            <Icon name="heroicons:lock-closed-solid" />
+            <UIcon name="i-heroicons-lock-closed-solid" />
             <div v-if="nextCandidate.unlockConditions.level === 1">
               {{
                 t(

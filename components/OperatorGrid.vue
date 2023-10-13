@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const operators = useOperatorsIndexData()
+const { data: operators } = await useAsyncData("operators", async () =>
+  useOperatorsIndexData()
+)
 </script>
 
 <template>
   <ul class="operator-grid">
     <OperatorGridItem
-      v-for="operator in operators"
+      v-for="operator in operators ?? []"
       :key="operator.key"
       :operator="operator"
     />

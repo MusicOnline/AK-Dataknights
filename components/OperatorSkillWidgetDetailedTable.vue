@@ -90,7 +90,7 @@ await useOperatorLocale(i18n, operator.key)
 </script>
 
 <template>
-  <table class="table-fixed border-hidden">
+  <table class="table-fixed overflow-hidden rounded-theme border-hidden">
     <thead class="text-center">
       <tr>
         <th class="w-8 sm:w-16">{{ t("operator.ui.level") }}</th>
@@ -107,7 +107,7 @@ await useOperatorLocale(i18n, operator.key)
           {{ t("operator.skill.ammoAmount") }}
         </th>
         <th
-          class="w-16 min-w-[3rem] bg-primary-alt text-xs font-normal [overflow-wrap:anywhere]"
+          class="bg-primary-800 w-16 min-w-[3rem] text-xs font-normal [overflow-wrap:anywhere]"
           v-for="key in variableKeys"
           :key="key"
         >
@@ -228,7 +228,7 @@ tbody td {
 }
 
 tbody tr td:first-child {
-  @apply bg-slate-900 font-bold text-slate-50;
+  @apply bg-gray-900 font-bold text-gray-50;
 }
 
 .description {

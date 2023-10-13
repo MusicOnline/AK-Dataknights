@@ -1,5 +1,5 @@
 import type { Composer } from "@nuxtjs/i18n/dist/runtime/composables"
-import type { LocaleObject } from "tools/generate-data/utils"
+import type { LocaleObject } from "~/tools/generate-data/utils"
 
 function getFullLocaleName(locale: string): string {
   switch (locale) {

@@ -1,0 +1,35 @@
+<script setup lang="ts">
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
+
+defineProps<{
+  operator: GeneratedOperatorData
+}>()
+
+const isSidebarExpanded = useIsSidebarExpanded()
+</script>
+
+<template>
+  <div
+    class="flex flex-col gap-2 bg-bg-container-1-normal bg-opacity-90 p-2 text-fg-container-1 shadow backdrop-blur"
+  >
+    <!-- Mobile pull out button -->
+    <button
+      class="absolute bottom-28 rounded-r-theme left-full flex items-center bg-bg-primary p-0.5 text-[2.5rem] text-fg-primary shadow md:hidden"
+      @click="isSidebarExpanded = !isSidebarExpanded"
+    >
+      <UIcon name="i-heroicons-list-bullet" />
+      <UIcon
+        class="text-xl"
+        v-if="isSidebarExpanded"
+        name="i-ph-caret-left-fill"
+      />
+      <UIcon class="text-xl" v-else name="i-ph-caret-right-fill" />
+    </button>
+    <OperatorTableOfContentsList :operator="operator" />
+    <OperatorSearchBar
+      class="flex-none overflow-y-auto"
+      :operator="operator"
+      small
+    />
+  </div>
+</template>

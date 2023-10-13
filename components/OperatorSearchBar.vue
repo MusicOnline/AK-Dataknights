@@ -1,141 +1,171 @@
 <script setup lang="ts">
+import { AvatarSize } from "@nuxt/ui/dist/runtime/types"
+import { UCommandPalette } from "#components"
 import type {
   GeneratedOperatorData,
   GeneratedOperatorIndexData,
 } from "~/tools/generate-data/operator"
 
-const NUMBER_OF_SEARCH_RESULTS = 11
+const SEARCH_RESULTS_LIMIT = 10
 
 const {
   operator,
-  resultsCount = NUMBER_OF_SEARCH_RESULTS,
   overlayResults = false,
-  large = false,
+  small = false,
 } = defineProps<{
   operator?: GeneratedOperatorData
-  resultsCount?: number
   overlayResults?: boolean
-  large?: boolean
+  small?: boolean
 }>()
 
+const router = useRouter()
 const i18n = useI18n()
+const localePath = useLocalePath()
 const { t } = i18n
+const useOperatorsIndexLocalePromise = useOperatorsIndexLocale(i18n)
 
-const nameInput = useDebounceRef<string>("", 150)
+const commandPaletteRef = ref<InstanceType<typeof UCommandPalette> | null>(null)
 
-const operators: GeneratedOperatorIndexData[] = useOperatorsIndexData()
+const { data: operators, pending: isDataPending } = useLazyAsyncData(
+  "operators",
+  async () => useOperatorsIndexData(),
+  { server: false }
+)
 
-const operatorSearchResults = computed<GeneratedOperatorIndexData[]>(() => {
-  if (!nameInput.value && !operator) return []
-  if (!nameInput.value) {
-    const index: number = operators.findIndex(({ id }) => operator!.id === id)
+const operatorItems = computed(() => {
+  if (isDataPending.value || !operators.value) return []
+  let operatorsToMap: GeneratedOperatorIndexData[] = operators.value
+  if (operator && !commandPaletteRef.value?.query) {
+    const index: number = operators.value.findIndex(
+      ({ id }) => operator!.id === id
+    )
 
     const lowerBoundIndex: number = Math.max(
       0,
-      index - Math.trunc(resultsCount / 2)
+      index - Math.trunc(SEARCH_RESULTS_LIMIT / 2)
     )
-    const upperBoundIndex: number = lowerBoundIndex + resultsCount
+    const upperBoundIndex: number = lowerBoundIndex + SEARCH_RESULTS_LIMIT
 
-    return operators.slice(lowerBoundIndex, upperBoundIndex)
+    operatorsToMap = operators.value.slice(lowerBoundIndex, upperBoundIndex)
   }
-
-  const input: string = nameInput.value.toLowerCase()
-  const searchResults: GeneratedOperatorIndexData[] = []
-
-  console.time(`searchResults (${input})`)
-  for (const otherOperator of operators) {
-    if (searchResults.length >= resultsCount) break
-    if (
-      otherOperator.key.length >= input.length &&
-      otherOperator.key.toLowerCase().includes(input)
-    ) {
-      searchResults.push(otherOperator)
-      continue
+  return operatorsToMap.map((operator) => {
+    return {
+      id: operator.key,
+      label: t(`${operator.key}.name`),
+      avatar: {
+        src: getAvatarUrl(operator, { elite: 0 }),
+        size: <AvatarSize>"md",
+        alt: t(`${operator.key}.name`),
+      },
+      class: operator.class,
+      classBranch: operator.classBranch,
     }
-
-    const localizedName: string = t(`${otherOperator.key}.name`)
-    if (
-      localizedName.length >= input.length &&
-      localizedName.toLowerCase().includes(input)
-    ) {
-      searchResults.push(otherOperator)
-      continue
-    }
-
-    // // Takes >500 ms
-    // const languageSearchOrder = {
-    //   en: ["zh", "ja", "ko"],
-    //   zh: ["ja", "ko", "en"],
-    //   ja: ["zh", "ko", "en"],
-    //   ko: ["zh", "ja", "en"],
-    // };
-    // let isLoopBroken: boolean = false;
-
-    // for (const lang in languageSearchOrder) {
-    //   if (
-    //     locale.value.startsWith(lang) &&
-    //     languageSearchOrder[<keyof typeof languageSearchOrder>lang].some(
-    //       (locale) => {
-    //         const localizedName = t(
-    //           `${otherOperator.key}.name`,
-    //           {},
-    //           { locale }
-    //         );
-    //         return (
-    //           localizedName.length >= input.length &&
-    //           localizedName.toLowerCase().includes(input)
-    //         );
-    //       }
-    //     )
-    //   ) {
-    //     searchResults.push(otherOperator);
-    //     isLoopBroken = true;
-    //     break;
-    //   }
-    // }
-    // if (isLoopBroken) continue;
-
-    if (
-      otherOperator.id.length >= input.length &&
-      otherOperator.id.toLowerCase().includes(input)
-    ) {
-      searchResults.push(otherOperator)
-      continue
-    }
-  }
-  console.timeEnd(`searchResults (${input})`)
-
-  return searchResults
+  })
 })
 
-await useOperatorsIndexLocale(i18n)
+const groups = computed(() => [
+  {
+    key: "operators",
+    label: t("navigation.operators"),
+    commands: operatorItems.value,
+  },
+])
+
+function onSelect(option: any) {
+  router.push(localePath(`/operators/${option.id}`))
+}
+
+const nonFloatingContainerUi = /*ui*/ ""
+
+const floatingContainerUi =
+  /*ui*/ "absolute w-[calc(100%+2px)] top-[48px] left-[-1px] rounded-b-md !border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900"
+
+const ui = computed(() => /*ui*/ ({
+  wrapper:
+    (commandPaletteRef.value?.query && overlayResults
+      ? "rounded-t-md"
+      : "rounded-md") +
+    " relative z-10 border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900 divide-y divide-gray-200 dark:divide-gray-700",
+  container:
+    (overlayResults ? floatingContainerUi : nonFloatingContainerUi) +
+    " divide-gray-200 dark:divide-gray-700",
+  input: {
+    base: "h-14 px-4",
+  },
+  group: {
+    wrapper: small ? "p-1" : "p-2",
+    label: "text-gray-500 dark:text-gray-400",
+    command: {
+      base: (small ? "px-1" : "") + " cursor-default py-0.5 group",
+      active: "bg-gray-200 dark:bg-gray-700/50",
+      container: (small ? "gap-2" : "gap-3") + " flex items-center min-w-0",
+    },
+  },
+  emptyState: {
+    wrapper: commandPaletteRef.value?.query
+      ? (overlayResults ? floatingContainerUi : nonFloatingContainerUi) +
+        " flex"
+      : "hidden",
+  },
+}))
+
+await useOperatorsIndexLocalePromise
 </script>
 
 <template>
-  <div class="relative flex flex-col" :class="{ 'gap-2 ': !overlayResults }">
-    <div
-      class="sticky left-0 top-0 z-20 flex items-center gap-2 bg-bg-input-normal p-2 text-fg-input-normal outline outline-1 outline-fg-input-placeholder focus-within:bg-bg-input-focus"
-    >
-      <Icon name="heroicons:magnifying-glass" />
-      <input
-        class="min-w-0 flex-grow bg-transparent outline-none placeholder:text-fg-input-placeholder"
-        v-model.trim="nameInput"
-        type="text"
-        :placeholder="t('operator.ui.searchOperator')"
+  <UCommandPalette
+    ref="commandPaletteRef"
+    :groups="groups"
+    icon="i-heroicons-magnifying-glass"
+    :fuse="{
+      fuseOptions: {
+        ignoreLocation: true,
+        includeMatches: true,
+        threshold: 0,
+        keys: ['label', 'id'],
+      },
+      resultLimit: SEARCH_RESULTS_LIMIT,
+      matchAllWhenSearchEmpty: Boolean(operator),
+    }"
+    :loading="Boolean(commandPaletteRef?.query && isDataPending)"
+    :placeholder="t('operator.ui.searchOperator')"
+    @update:model-value="onSelect"
+    :ui="ui"
+    :empty-state="{
+      icon: 'i-heroicons-magnifying-glass-20-solid',
+      label: t('operator.ui.noSearchResults'),
+      queryLabel: t('operator.ui.noSearchResults'),
+    }"
+  >
+    <template #operators-icon="{ command: cmdOperator }">
+      <UAvatar
+        size="lg"
+        :src="cmdOperator.avatar.src"
+        :alt="cmdOperator.label"
+        :ui="{ rounded: 'rounded-theme' }"
       />
-    </div>
-    <div class="relative z-10" v-if="operatorSearchResults.length">
-      <!-- 
-        TODO: Search suggestion enter, up, down
-       -->
-      <OperatorSearchBarList
-        :operators="operatorSearchResults"
-        :class="{
-          'absolute left-0 top-0 w-full bg-bg-input-focus p-2 outline outline-1 outline-fg-input-placeholder drop-shadow-2xl':
-            overlayResults,
-        }"
-        :large="large"
-      />
-    </div>
-  </div>
+    </template>
+    <template #operators-inactive="{ command: cmdOperator }">
+      <div class="flex items-center gap-1">
+        <UTooltip class="h-8 w-8" :ui="{ popper: { strategy: 'absolute' } }">
+          <img
+            class="h-full w-full rounded-theme bg-gray-700 object-contain p-0.5 group-hover:bg-gray-900 group-focus:bg-gray-900"
+            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_${cmdOperator.class.toLowerCase()}.png`"
+          />
+          <template #text>
+            {{ t(`operator.class.${cmdOperator.class}`) }}
+          </template>
+        </UTooltip>
+        <UTooltip class="h-8 w-8" :ui="{ popper: { strategy: 'absolute' } }">
+          <img
+            class="h-full w-full rounded-theme bg-gray-700 object-contain p-0.5 group-hover:bg-gray-900 group-focus:bg-gray-900"
+            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/subclass/sub_${cmdOperator.classBranch}_icon.png`"
+          />
+          <template #text>
+            {{ t(`operator.classBranch.${cmdOperator.classBranch}`) }}
+          </template>
+        </UTooltip>
+      </div>
+    </template>
+  </UCommandPalette>
 </template>

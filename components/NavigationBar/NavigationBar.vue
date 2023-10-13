@@ -7,18 +7,21 @@ const isSettingsModalActive = ref<boolean>(false)
 
 <template>
   <div>
-    <header class="bg-bg-navbar fixed top-0 left-0 z-30 h-12 w-full p-2 shadow">
-      <nav class="m-auto flex max-w-7xl items-center gap-4">
+    <header class="fixed left-0 top-0 z-30 h-12 w-full bg-bg-navbar p-2 shadow">
+      <nav class="m-auto flex max-w-7xl items-center gap-1 md:gap-4">
         <NuxtLink class="block" :to="localePath('/')">
-          <SiteBrand class="text-2xl transition-colors md:text-3xl" />
+          <SiteBrand
+            class="-translate-y-0.5 transform text-2xl transition-colors md:text-3xl"
+          />
         </NuxtLink>
-        <ul
-          class="text-fg-navbar-inactive hidden w-full items-center gap-2 md:flex"
-        >
+        <ul class="hidden items-center gap-2 text-fg-navbar-inactive md:flex">
           <li class="nav-item">
             <NuxtLink class="nav-link" :to="localePath('/operators')">
-              <Icon class="inactive-icon" name="heroicons:users" />
-              <Icon class="active-icon" name="heroicons:users-solid" />
+              <UIcon class="nav-icon inactive-icon" name="i-heroicons-users" />
+              <UIcon
+                class="nav-icon active-icon"
+                name="i-heroicons-users-solid"
+              />
               <span class="nav-text">
                 {{ t("navigation.operators") }}
               </span>
@@ -27,23 +30,26 @@ const isSettingsModalActive = ref<boolean>(false)
 
           <li class="nav-item">
             <button class="nav-link" @click="isSettingsModalActive = true">
-              <Icon class="inactive-icon" name="heroicons:cog-6-tooth" />
-              <Icon class="active-icon" name="heroicons:cog-6-tooth-solid" />
+              <UIcon
+                class="nav-icon inactive-icon"
+                name="i-heroicons-cog-6-tooth"
+              />
+              <UIcon
+                class="nav-icon active-icon"
+                name="i-heroicons-cog-6-tooth-solid"
+              />
               <span class="nav-text">
                 {{ t("settings.title") }}
               </span>
             </button>
           </li>
-
-          <OModal
-            v-model:active="isSettingsModalActive"
-            mobile-breakpoint="640px"
-          >
-            <SettingsWidget class="bg-bg-body text-fg-body w-96 p-4" />
-          </OModal>
         </ul>
-        <DarkModeSwitch class="ml-auto" />
-        <LocaleSelect />
+        <UModal v-model="isSettingsModalActive">
+          <SettingsWidget />
+        </UModal>
+        <ColorModeSwitch class="ml-auto hidden sm:flex" />
+        <ThemePicker class="hidden sm:flex" />
+        <LocaleSelect class="ml-auto sm:ml-0" mode="hover" />
       </nav>
     </header>
     <BottomNavigationBar class="md:hidden" />
@@ -53,13 +59,13 @@ const isSettingsModalActive = ref<boolean>(false)
 <style scoped lang="scss">
 .nav-item {
   .nav-link {
-    @apply hover:text-fg-navbar-focus focus:text-fg-navbar-focus gap-1 rounded py-1 px-2 transition-colors;
+    @apply gap-1 px-2 py-1 transition-colors hover:text-fg-navbar-focus focus:text-fg-navbar-focus;
 
     display: flex;
     width: 100%;
     text-align: center;
 
-    .icon {
+    .nav-icon {
       @apply text-2xl;
 
       display: block;

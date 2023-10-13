@@ -5,7 +5,6 @@ import type { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables"
 import { useSeoMeta } from "@unhead/vue"
 
 const { t, locale, locales } = useI18n()
-const colorMode = useColorMode()
 const theme = ref<string>("mizuki")
 
 useSeoMeta({
@@ -72,24 +71,6 @@ useHead({
   ],
 })
 
-onMounted(() => {
-  updateColorMode()
-})
-
-watch(getIsDarkModeSystemPreference, updateColorMode)
-
-function getIsDarkModeSystemPreference(): boolean {
-  return window?.matchMedia("(prefers-color-scheme: dark)").matches || false
-}
-
-function updateColorMode(): void {
-  if (getIsDarkModeSystemPreference()) {
-    colorMode.value = "dark"
-  } else {
-    colorMode.value = "light"
-  }
-}
-
 function transformLocaleCode(locale: string): string {
   locale = locale.replace("-", "_")
   switch (locale) {
@@ -108,9 +89,7 @@ function transformLocaleCode(locale: string): string {
 
 <template>
   <div>
-    <Html :lang="locale" prefix="og: https://ogp.me/ns#">
-      <Body :data-theme="theme" :data-mode="colorMode" />
-    </Html>
+    <Html :lang="locale" :data-theme="theme" prefix="og: https://ogp.me/ns#" />
     <NavigationBar />
     <div
       class="flex min-h-[calc(100vh-7rem)] flex-col justify-between md:min-h-[calc(100vh-3rem)]"
@@ -118,9 +97,7 @@ function transformLocaleCode(locale: string): string {
       <div class="p-2">
         <NuxtPage class="mx-auto max-w-7xl" />
       </div>
-      <div
-        class="relative z-20 w-full bg-bg-body bg-opacity-60 pt-4 backdrop-blur"
-      >
+      <div class="relative w-full bg-bg-body bg-opacity-60 pt-4 backdrop-blur">
         <hr class="mx-auto w-full max-w-7xl border-t-2 border-fg-container-1" />
         <Footer class="mx-auto w-full max-w-7xl px-2 py-4 md:py-8" />
       </div>
@@ -133,10 +110,6 @@ function transformLocaleCode(locale: string): string {
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --header-height: 3rem;
-}
-
 @layer base {
   body {
     @apply mb-16 mt-12 bg-bg-body text-fg-body md:mb-0;
@@ -147,29 +120,32 @@ function transformLocaleCode(locale: string): string {
   }
 }
 
-html {
+:root {
+  --header-height: 3rem;
+  
   scroll-behavior: smooth;
+  font-size: 14px;
 }
 
 .ba-keyword {
-  @apply text-primary-main;
+  @apply text-primary;
 
   font-weight: bold;
 }
 
 .ba-reminder {
-  @apply text-orange-500;
+  @apply text-orange-500 dark:text-orange-400;
 }
 
 .ba-value-increase,
 .ba-potential {
-  @apply text-blue-500;
+  @apply text-blue-500 dark:text-blue-400;
 
   font-weight: bold;
 }
 
 .ba-value-decrease {
-  @apply text-red-500;
+  @apply text-red-500 dark:text-red-400;
 
   font-weight: bold;
 }

@@ -88,7 +88,7 @@ export default defineNuxtConfig({
   },
   sourcemap: process.env.NODE_ENV !== "production",
   ssr: process.env.ENABLE_SSR?.toLowerCase() === "true",
-  modules: ["nuxt-lodash", "@nuxtjs/i18n", "@nuxtjs/tailwindcss", "nuxt-icon"],
+  modules: ["nuxt-lodash", "@nuxtjs/i18n", "@nuxt/ui"],
   i18n: {
     locales: [
       { code: "en", name: "English" },
@@ -99,6 +99,21 @@ export default defineNuxtConfig({
     strategy: "prefix_and_default",
     defaultLocale: "en",
     compilation: { strictMessage: false },
+  },
+  ui: {
+    global: true,
+    icons: [
+      "heroicons",
+      "mdi",
+      "game-icons",
+      "fa-solid",
+      "bx",
+      "material-symbols",
+      "logos",
+      "emojione",
+      "ph",
+      "uil",
+    ],
   },
   hooks: {
     "build:before": async () => {

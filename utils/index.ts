@@ -1,4 +1,4 @@
-import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
+import type { GeneratedOperatorData, GeneratedOperatorIndexData } from "~/tools/generate-data/operator"
 
 export const ALTERNATE_ATTRIBUTE_NAMES = {
   max_hp: "maxHp",
@@ -37,8 +37,8 @@ export function isKeyOfObject<T extends object>(
 }
 
 export function getAvatarUrl(
-  operator: GeneratedOperatorData,
-  operatorState: OperatorState
+  operator: GeneratedOperatorData | GeneratedOperatorIndexData,
+  operatorState: { elite: number }
 ): string {
   let phase = operator.phases[operatorState.elite]
   while (!phase.outfit?.avatarId && phase.elite !== 0)

@@ -94,7 +94,7 @@ await useOperatorLocale(i18n, operator.key)
     <!-- Icon & trait -->
     <div class="flex w-fit flex-wrap justify-center gap-2 sm:flex-nowrap">
       <img
-        class="m-auto h-16 w-16 bg-slate-900 object-contain p-0.5 sm:m-0 sm:h-fit"
+        class="m-auto h-16 w-16 rounded-theme bg-gray-900 object-contain p-0.5 sm:m-0 sm:h-fit"
         :src="currentAvatarUrl"
       />
       <div>
@@ -142,13 +142,13 @@ await useOperatorLocale(i18n, operator.key)
         :key="talent.talentNumber"
       >
         <template v-if="bestCandidate">
-          <div class="w-fit bg-bg-primary px-1 py-0.5 text-xs text-fg-primary">
+          <UBadge>
             {{
               t(
                 `${tokenSummonKey}.talents.${talent.talentNumber}.${bestCandidate.key}.name`
               )
             }}
-          </div>
+          </UBadge>
           <div>
             <span
               v-html="
@@ -161,16 +161,16 @@ await useOperatorLocale(i18n, operator.key)
             />
           </div>
         </template>
-        <template class="block" v-else-if="nextCandidate">
-          <div class="w-fit bg-slate-500 px-1 py-0.5 text-xs text-slate-50">
+        <template v-else-if="nextCandidate">
+          <UBadge color="gray">
             {{
               t(
                 `${operator.key}.talents.${talent.talentNumber}.${nextCandidate.key}.name`
               )
             }}
-          </div>
+          </UBadge>
           <div class="flex items-center gap-1">
-            <Icon name="heroicons:lock-closed-solid" />
+            <UIcon name="i-heroicons-lock-closed-solid" />
             <div v-if="nextCandidate.unlockConditions.level === 1">
               {{
                 t(

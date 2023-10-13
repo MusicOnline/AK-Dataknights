@@ -40,7 +40,7 @@ await useOperatorLocale(i18n, operator.key)
         <div class="font-bold">{{ t(`${getSkillTranslationPrefix(skill)}.name`) }}</div>
         <div class="flex items-center gap-2">
           <div
-            class="w-8 bg-slate-800 p-0.5"
+            class="w-8 bg-gray-800 p-0.5"
             v-if="
               skill.unlockConditions.elite !== 0 ||
               skill.unlockConditions.level !== 1

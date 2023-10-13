@@ -1,24 +1,18 @@
-@mixin core-colors($light-mode: true) {
-  --color-primary-main: 96, 165, 250;
-  --color-primary-alt: 30, 64, 175;
-  --color-secondary-main: 224, 142, 214;
-  --color-secondary-alt: 100, 78, 204;
-  --color-tertiary-main: 241, 255, 122;
-}
+/* stylelint-disable custom-property-pattern */
 
 @mixin brand-colors($light-mode: true) {
   @if $light-mode {
-    --color-brand-icon: var(--color-primary-main);
-    --color-brand-text: var(--tw-slate-900);
+    --color-brand-icon: var(--color-primary-DEFAULT);
+    --color-brand-text: var(--color-gray-900);
   } @else {
-    --color-brand-icon: var(--color-primary-main);
-    --color-brand-text: var(--tw-slate-50);
+    --color-brand-icon: var(--color-primary-DEFAULT);
+    --color-brand-text: var(--color-gray-50);
   }
 }
 
 /* stylelint-disable custom-property-empty-line-before */
 @mixin rarity-colors($light-mode: true) {
-  --color-rarity-1-card: var(--tw-gray-400);
+  --color-rarity-1-card: var(--tw-slate-400);
   --color-rarity-2-card: var(--tw-lime-400);
   --color-rarity-3-card: var(--tw-sky-400);
   --color-rarity-4-card: var(--tw-indigo-400);
@@ -26,8 +20,8 @@
   --color-rarity-6-card: var(--tw-orange-400);
 
   @if $light-mode {
-    --color-rarity-1-item: var(--tw-gray-200);
-    --color-rarity-1-item-focus: var(--tw-gray-300);
+    --color-rarity-1-item: var(--color-gray-200);
+    --color-rarity-1-item-focus: var(--color-gray-300);
 
     --color-rarity-2-item: var(--tw-lime-200);
     --color-rarity-2-item-focus: var(--tw-lime-300);
@@ -44,8 +38,8 @@
     --color-rarity-6-item: var(--tw-orange-200);
     --color-rarity-6-item-focus: var(--tw-orange-300);
   } @else {
-    --color-rarity-1-item: var(--tw-gray-300);
-    --color-rarity-1-item-focus: var(--tw-gray-400);
+    --color-rarity-1-item: var(--color-gray-300);
+    --color-rarity-1-item-focus: var(--color-gray-400);
 
     --color-rarity-2-item: var(--tw-lime-300);
     --color-rarity-2-item-focus: var(--tw-lime-400);
@@ -67,61 +61,60 @@
 
 @mixin body-colors($light-mode: true) {
   @if $light-mode {
-    --color-bg-body: var(--tw-slate-50);
-    --color-fg-body: var(--tw-slate-900);
+    --color-bg-body: var(--color-gray-50);
+    --color-fg-body: var(--color-gray-900);
   } @else {
-    --color-bg-body: var(--tw-slate-800);
-    --color-fg-body: var(--tw-slate-50);
+    --color-bg-body: var(--color-gray-800);
+    --color-fg-body: var(--color-gray-50);
   }
 }
 
 @mixin navbar-colors($light-mode: true) {
   @if $light-mode {
-    --color-bg-navbar: var(--tw-slate-50);
-    --color-fg-navbar-inactive: var(--tw-slate-700);
-    --color-fg-navbar-active: var(--color-primary-main);
-    --color-fg-navbar-focus: var(--tw-slate-900);
+    --color-bg-navbar: var(--color-gray-50);
+    --color-fg-navbar-inactive: var(--color-gray-700);
+    --color-fg-navbar-active: var(--color-primary-DEFAULT);
+    --color-fg-navbar-focus: var(--color-gray-900);
   } @else {
-    --color-bg-navbar: var(--tw-slate-900);
-    --color-fg-navbar-inactive: var(--tw-slate-300);
-    --color-fg-navbar-active: var(--color-primary-main);
-    --color-fg-navbar-focus: var(--tw-slate-50);
+    --color-bg-navbar: var(--color-gray-900);
+    --color-fg-navbar-inactive: var(--color-gray-300);
+    --color-fg-navbar-active: var(--color-primary-DEFAULT);
+    --color-fg-navbar-focus: var(--color-gray-50);
   }
 }
 
 @mixin primary-color-container-colors($light-mode: true) {
-  --color-bg-primary: var(--color-primary-main);
-  --color-fg-primary: var(--tw-slate-50);
+  --color-bg-primary: var(--color-primary-DEFAULT);
+  --color-fg-primary: var(--color-gray-50);
 }
 
 @mixin input-colors($light-mode: true) {
   @if $light-mode {
-    --color-bg-input: var(--tw-slate-50);
-    --color-bg-input-focus: var(--tw-slate-50);
-    --color-fg-input: var(--tw-slate-900);
-    --color-fg-input-placeholder: var(--tw-slate-400);
+    --color-bg-input: var(--color-gray-50);
+    --color-bg-input-focus: var(--color-gray-50);
+    --color-fg-input: var(--color-gray-900);
+    --color-fg-input-placeholder: var(--color-gray-400);
   } @else {
-    --color-bg-input: var(--tw-slate-800);
-    --color-bg-input-focus: var(--tw-slate-700);
-    --color-fg-input: var(--tw-slate-50);
-    --color-fg-input-placeholder: var(--tw-slate-400);
+    --color-bg-input: var(--color-gray-800);
+    --color-bg-input-focus: var(--color-gray-700);
+    --color-fg-input: var(--color-gray-50);
+    --color-fg-input-placeholder: var(--color-gray-400);
   }
 }
 
 @mixin container-1-colors($light-mode: true) {
   @if $light-mode {
-    --color-bg-container-1: var(--tw-slate-200);
-    --color-bg-container-1-focus: var(--tw-slate-300);
-    --color-fg-container-1: var(--tw-slate-700);
+    --color-bg-container-1: var(--color-gray-200);
+    --color-bg-container-1-focus: var(--color-gray-300);
+    --color-fg-container-1: var(--color-gray-700);
   } @else {
-    --color-bg-container-1: var(--tw-slate-700);
-    --color-bg-container-1-focus: var(--tw-slate-600);
-    --color-fg-container-1: var(--tw-slate-300);
+    --color-bg-container-1: var(--color-gray-700);
+    --color-bg-container-1-focus: var(--color-gray-600);
+    --color-fg-container-1: var(--color-gray-300);
   }
 }
 
 @mixin dark-mode-override {
-  @include core-colors($light-mode: false);
   @include brand-colors($light-mode: false);
   @include rarity-colors($light-mode: false);
   @include body-colors($light-mode: false);
@@ -133,7 +126,6 @@
 
 :root,
 [data-theme="mizuki"] {
-  @include core-colors;
   @include brand-colors;
   @include rarity-colors;
   @include body-colors;
@@ -142,12 +134,12 @@
   @include input-colors;
   @include container-1-colors;
 
-  &[data-mode="dark"] {
+  &.dark {
     @include dark-mode-override;
   }
 
   @media (prefers-color-scheme: dark) {
-    &:not([data-mode="light"]) {
+    &:not(.light) {
       @include dark-mode-override;
     }
   }

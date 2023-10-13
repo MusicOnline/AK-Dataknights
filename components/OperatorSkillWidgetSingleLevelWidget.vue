@@ -5,10 +5,6 @@ import type {
   GeneratedSkillLevelData,
 } from "~~/tools/generate-data/operator/skill"
 
-const EQUAL_ICON_NAME = "ph:equals-bold"
-const INCREASE_ICON_NAME = "ph:caret-double-up-fill"
-const DECREASE_ICON_NAME = "ph:caret-double-down-fill"
-
 const { operator, skill, levelNumber, ownerOperatorKey } = defineProps<{
   operator: GeneratedOperatorData
   skill: GeneratedSkillData
@@ -19,8 +15,8 @@ const { operator, skill, levelNumber, ownerOperatorKey } = defineProps<{
 const i18n = useI18n()
 const { t, locale } = i18n
 
-const tokenSummonKey = computed<string | null>(
-  () => ownerOperatorKey ? `${ownerOperatorKey}.tokenSummons.${operator.key}` : null
+const tokenSummonKey = computed<string | null>(() =>
+  ownerOperatorKey ? `${ownerOperatorKey}.tokenSummons.${operator.key}` : null
 )
 const operatorKey = computed<string>(() => tokenSummonKey.value ?? operator.key)
 
@@ -80,10 +76,10 @@ function accessDeepestAttribute(
   return <number>currentItem
 }
 
-function getComparisonIconName(
+function getComparisonValue(
   attributeAccesses: (string | any)[],
   isAscending: boolean = true
-): string {
+): boolean | null {
   if (!previousLevelData.value)
     throw new Error("previousLevelData is undefined")
   const previousValue = accessDeepestAttribute(
@@ -94,9 +90,9 @@ function getComparisonIconName(
     levelData.value,
     attributeAccesses
   )
-  if (currentValue === previousValue) return EQUAL_ICON_NAME
-  if (currentValue > previousValue) return INCREASE_ICON_NAME
-  return DECREASE_ICON_NAME
+  if (currentValue === previousValue) return null
+  if (currentValue > previousValue) return true
+  return false
 }
 
 function getComparisonColorClass(
@@ -113,7 +109,7 @@ function getComparisonColorClass(
     levelData.value,
     attributeAccesses
   )
-  if (currentValue === previousValue) return "text-slate-400"
+  if (currentValue === previousValue) return "text-gray-400"
   if (
     (isAscending && currentValue > previousValue) ||
     (!isAscending && currentValue < previousValue)
@@ -128,59 +124,65 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
 <template>
   <div class="flex flex-col gap-2">
     <div
-      class="flex flex-wrap items-center gap-2 font-bold"
+      class="flex flex-wrap items-center gap-2 text-sm"
       v-if="isSpDurationAmmoRowUsed"
     >
-      <div class="flex bg-bg-container-1-focus" v-if="isInitialSpShown">
+      <div class="flex" v-if="isInitialSpShown">
         <div
-          class="flex items-center gap-0.5 bg-bg-primary p-1 text-fg-primary"
+          class="flex items-center gap-0.5 rounded-l-theme bg-bg-primary px-1 py-0.5 text-fg-primary"
         >
-          <Icon name="heroicons:forward-solid" />
+          <UIcon name="i-heroicons-forward-solid" />
           <span>
             {{ t("operator.skill.initSp") }}
           </span>
         </div>
-        <div class="flex items-center gap-0.5 bg-bg-container-1-normal p-1">
+        <div
+          class="flex items-center gap-0.5 rounded-r-theme bg-bg-container-1-normal px-1 py-0.5"
+        >
           <span>
             {{ levelData.spData.initSp }}
           </span>
-          <Icon
+          <OperatorSkillWidgetStatChangeIcon
             v-if="previousLevelData"
-            :name="getComparisonIconName(['spData', 'initSp'])"
+            :type="getComparisonValue(['spData', 'initSp'])"
             :class="getComparisonColorClass(['spData', 'initSp'])"
           />
         </div>
       </div>
       <div class="flex" v-if="isSpCostShown">
         <div
-          class="flex items-center gap-0.5 bg-bg-primary p-1 text-fg-primary"
+          class="flex items-center gap-0.5 rounded-l-theme bg-bg-primary px-1 py-0.5 text-fg-primary"
         >
-          <Icon name="heroicons:bolt-solid" />
+          <UIcon name="i-heroicons-bolt-solid" />
           <span>
             {{ t("operator.skill.spCost") }}
           </span>
         </div>
-        <div class="flex items-center gap-0.5 bg-bg-container-1-normal p-1">
+        <div
+          class="flex items-center gap-0.5 rounded-r-theme bg-bg-container-1-normal px-1 py-0.5"
+        >
           <span>
             {{ levelData.spData.spCost }}
           </span>
-          <Icon
+          <OperatorSkillWidgetStatChangeIcon
             v-if="previousLevelData"
-            :name="getComparisonIconName(['spData', 'spCost'], false)"
+            :type="getComparisonValue(['spData', 'spCost'], false)"
             :class="getComparisonColorClass(['spData', 'spCost'], false)"
           />
         </div>
       </div>
       <div class="flex" v-if="isDurationShown">
         <div
-          class="flex items-center gap-0.5 bg-bg-primary p-1 text-fg-primary"
+          class="flex items-center gap-0.5 rounded-l-theme bg-bg-primary px-1 py-0.5 text-fg-primary"
         >
-          <Icon name="heroicons:clock-solid" />
+          <UIcon name="i-heroicons-clock-solid" />
           <span>
             {{ t("operator.skill.duration") }}
           </span>
         </div>
-        <div class="flex items-center gap-0.5 bg-bg-container-1-normal p-1">
+        <div
+          class="flex items-center gap-0.5 rounded-r-theme bg-bg-container-1-normal px-1 py-0.5"
+        >
           <span>
             {{
               levelData.duration.toLocaleString(locale, {
@@ -189,23 +191,25 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
               })
             }}
           </span>
-          <Icon
+          <OperatorSkillWidgetStatChangeIcon
             v-if="previousLevelData"
-            :name="getComparisonIconName(['duration'])"
+            :type="getComparisonValue(['duration'])"
             :class="getComparisonColorClass(['duration'])"
           />
         </div>
       </div>
       <div class="flex" v-else-if="isAmmoSkill">
         <div
-          class="flex items-center gap-0.5 bg-bg-primary p-1 text-fg-primary"
+          class="flex items-center gap-0.5 rounded-l-theme bg-bg-primary px-1 py-0.5 text-fg-primary"
         >
-          <Icon name="mdi:ammunition" />
+          <UIcon name="i-mdi-ammunition" />
           <span>
             {{ t("operator.skill.ammoAmount") }}
           </span>
         </div>
-        <div class="flex items-center gap-0.5 bg-bg-container-1-normal p-1">
+        <div
+          class="flex items-center gap-0.5 rounded-r-theme bg-bg-container-1-normal px-1 py-0.5"
+        >
           <span>
             {{
               levelData.variables.find(
@@ -213,13 +217,10 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
               )?.value
             }}
           </span>
-          <Icon
+          <OperatorSkillWidgetStatChangeIcon
             v-if="previousLevelData"
-            :name="
-              getComparisonIconName([
-                'variables',
-                { key: 'attack@trigger_time' },
-              ])
+            :type="
+              getComparisonValue(['variables', { key: 'attack@trigger_time' }])
             "
             :class="
               getComparisonColorClass([
@@ -250,19 +251,26 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
         v-for="keyName in variableKeys"
         :key="keyName"
       >
-        <div class="bg-bg-container-1-focus p-1">{{ keyName }}</div>
-        <div class="flex items-center gap-0.5 bg-bg-container-1-normal p-1">
+        <div class="rounded-l-theme bg-bg-container-1-focus px-1 py-0.5">
+          {{ keyName }}
+        </div>
+        <div
+          class="flex items-center gap-0.5 rounded-r-theme bg-bg-container-1-normal px-1 py-0.5"
+        >
           <span>
             {{ levelData.variables.find(({ key }) => key === keyName)?.value }}
           </span>
-          <Icon
+          <OperatorSkillWidgetStatChangeIcon
             v-if="previousLevelData"
-            :name="getComparisonIconName(['variables', { key: keyName }])"
+            :type="getComparisonValue(['variables', { key: keyName }])"
             :class="getComparisonColorClass(['variables', { key: keyName }])"
           />
         </div>
       </div>
-      <div class="mx-auto p-1 sm:ml-auto sm:mr-0" v-if="levelData.range">
+      <div
+        class="mx-auto px-1 py-0.5 sm:ml-auto sm:mr-0"
+        v-if="levelData.range"
+      >
         <OperatorRangeGrid :range="levelData.range" />
       </div>
     </div>

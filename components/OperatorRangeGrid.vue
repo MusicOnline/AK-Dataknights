@@ -51,8 +51,8 @@ const gridData = computed<{
       class="border"
       v-for="{ row, col } in editedGrid"
       :class="{
-        'bg-primary-main border-primary-alt': row === 0 && col === 0,
-        'border-slate-800 bg-slate-300': row !== 0 || col !== 0,
+        'bg-primary border-gray-800': row === 0 && col === 0,
+        'bg-gray-300 border-gray-800': row !== 0 || col !== 0,
       }"
       :key="`${row}-${col}`"
       :style="{

@@ -13,8 +13,8 @@ const {
   small?: boolean
 }>()
 
-const tokenSummonKey = computed<string | null>(
-  () => ownerOperatorKey ? `${ownerOperatorKey}.tokenSummons.${operator.key}` : null
+const tokenSummonKey = computed<string | null>(() =>
+  ownerOperatorKey ? `${ownerOperatorKey}.tokenSummons.${operator.key}` : null
 )
 const operatorKey = computed<string>(() => tokenSummonKey.value ?? operator.key)
 
@@ -26,6 +26,7 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
 <template>
   <div class="flex gap-2" :class="{ 'text-sm': small }">
     <img
+      class="rounded-theme"
       v-if="skill.levels[0].hasDescription"
       :class="{ 'h-14 w-14': small, 'h-16 w-16': !small }"
       :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/skills/skill_icon_${
@@ -42,27 +43,35 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
           )
         }}
       </div>
-      <div class="flex gap-2 text-slate-900">
-        <div
-          class="px-2"
+      <div class="flex gap-2">
+        <UBadge
           v-if="
             skill.levels[0].skillType !== 'PASSIVE' &&
             skill.levels[0].spData.spType !== 'ON_DEPLOY'
           "
-          :class="{
-            'bg-green-400':
-              skill.levels[0].spData.spType === 'INCREASE_WITH_TIME',
-            'bg-orange-400':
-              skill.levels[0].spData.spType === 'INCREASE_WHEN_ATTACK',
-            'bg-yellow-400':
-              skill.levels[0].spData.spType === 'INCREASE_WHEN_TAKEN_DAMAGE',
-          }"
+          size="md"
+          :color="
+            {
+              INCREASE_WITH_TIME: 'green',
+              INCREASE_WHEN_ATTACK: 'orange',
+              INCREASE_WHEN_TAKEN_DAMAGE: 'yellow',
+            }[skill.levels[0].spData.spType]
+          "
         >
           {{ t(`operator.skill.spType.${skill.levels[0].spData.spType}`) }}
-        </div>
-        <div class="bg-slate-300 px-2">
+        </UBadge>
+        <UBadge
+          size="md"
+          :color="
+            {
+              PASSIVE: 'gray',
+              MANUAL: 'black',
+              AUTO: 'white',
+            }[skill.levels[0].skillType]
+          "
+        >
           {{ t(`operator.skill.skillType.${skill.levels[0].skillType}`) }}
-        </div>
+        </UBadge>
       </div>
     </div>
   </div>

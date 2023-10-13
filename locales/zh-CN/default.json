@@ -184,7 +184,8 @@
       "viewDetails": "查看详情",
       "randomOperator": "随机",
       "enableAdvancedViewForMore": "在设置中开启详细展示以显示详细数据。",
-      "riicBaseSkills": "后勤技能"
+      "riicBaseSkills": "后勤技能",
+      "noSearchResults": "无匹配结果。"
     },
     "module": {
       "attributes": "属性",
@@ -214,7 +215,6 @@
     "operators": "干员"
   },
   "settings": {
-    "language": "显示语言",
     "title": "设置",
     "enableAdvancedView": {
       "title": "详细展示",
@@ -222,6 +222,12 @@
     },
     "enableDarkMode": {
       "title": "深色模式"
+    },
+    "setLanguage": {
+      "title": "语言"
+    },
+    "setTheme": {
+      "title": "色彩主题"
     }
   },
   "general": {

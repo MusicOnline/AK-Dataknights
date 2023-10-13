@@ -209,13 +209,18 @@
     "operators": "오퍼레이터"
   },
   "settings": {
-    "language": "표시 언어",
     "title": "설정",
     "enableAdvancedView": {
       "title": "상세 전시"
     },
     "enableDarkMode": {
       "title": "다크 모드"
+    },
+    "setLanguage": {
+      "title": "언어"
+    },
+    "setTheme": {
+      "title": "색상 테마"
     }
   },
   "general": {

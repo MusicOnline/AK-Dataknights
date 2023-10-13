@@ -476,10 +476,10 @@
   "pith": {
     "cnReleaseTime": 1598371200000
   },
-  "stormeye": {
+  "sharp": {
     "cnReleaseTime": 1598371200000
   },
-  "sharp": {
+  "stormeye": {
     "cnReleaseTime": 1598371200000
   },
   "aciddrop": {
@@ -913,5 +913,17 @@
   },
   "jessica-the-liberated": {
     "cnReleaseTime": 1693929600000
+  },
+  "verdant": {
+    "cnReleaseTime": 1696780800000
+  },
+  "delphine": {
+    "cnReleaseTime": 1696780800000
+  },
+  "vendela": {
+    "cnReleaseTime": 1696780800000
+  },
+  "hoederer": {
+    "cnReleaseTime": 1696780800000
   }
 }

@@ -49346,7 +49346,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "Deals Necrosis impairment equivalent to 8{'%'} of Arts damage dealt"
             },
             "talentUpgrades": {
               "1": {
@@ -49358,7 +49358,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "Deals Necrosis impairment equivalent to 8{'%'} of Arts damage dealt"
             },
             "talentUpgrades": {
               "1": {
@@ -49382,7 +49382,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "Deals Necrosis impairment equivalent to 8{'%'} of Arts damage dealt"
             },
             "talentUpgrades": {
               "1": {
@@ -59565,7 +59565,7 @@
   "valarqvin": {
     "name": "Valarqvin",
     "appellation": null,
-    "description": "Attacks deal <#ba.kw>Arts damage</> and can deal <#ba.kw>Elemental damage</>",
+    "description": "Attacks deal <#ba.kw>Arts damage</> and can deal <#ba.kw>Elemental impairment</>",
     "potentials": {
       "2": {
         "description": null
@@ -59693,7 +59693,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "Attacks deal <#ba.kw>Arts damage</> and can deal <#ba.kw>Elemental damage</>"
+        "description": "Attacks deal <#ba.kw>Arts damage</> and can deal <#ba.kw>Elemental impairment</>"
       }
     },
     "tokenSummons": {},

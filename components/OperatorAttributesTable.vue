@@ -88,7 +88,7 @@ function getPotentialBonus(attribute: keyof KeyFrameData): number {
   for (let i = 2; i <= operatorState.potential; i++) {
     // Index 0 = Potential 2
     const potential = operator.potentials[i - 2]
-    if (!potential.attribute) continue
+    if (!potential?.attribute) continue // Token summons may not have the potential data
     let attributeKey = potential.attribute.key.toLowerCase()
     if (ALTERNATE_ATTRIBUTE_NAMES.hasOwnProperty(attributeKey))
       attributeKey =
@@ -166,7 +166,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-1 md:order-1 lg:order-1"
     >
       <div class="flex gap-1 text-emerald-500">
-        <Icon class="mt-1 flex-shrink-0" name="bx:plus-medical" />
+        <UIcon class="mt-1 flex-shrink-0" name="i-bx-plus-medical" />
         <span>{{ t("operator.attribute.maxHp") }}</span>
       </div>
       <div>{{ operatorAttributes.maxHp }}</div>
@@ -175,7 +175,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-3 md:order-2 lg:order-3"
     >
       <div class="flex gap-1 text-red-500">
-        <Icon class="mt-1 flex-shrink-0" name="mdi:sword-cross" />
+        <UIcon class="mt-1 flex-shrink-0" name="i-mdi-sword-cross" />
         <span>{{ t("operator.attribute.atk") }}</span>
       </div>
       <div>{{ operatorAttributes.atk }}</div>
@@ -184,7 +184,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-5 md:order-3 lg:order-5"
     >
       <div class="flex gap-1 text-sky-500">
-        <Icon class="mt-1 flex-shrink-0" name="mdi:shield" />
+        <UIcon class="mt-1 flex-shrink-0" name="i-mdi-shield" />
         <span>{{ t("operator.attribute.def") }}</span>
       </div>
       <div>{{ operatorAttributes.def }}</div>
@@ -193,9 +193,9 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-7 md:order-4 lg:order-7"
     >
       <div class="flex gap-1 text-violet-500">
-        <Icon
+        <UIcon
           class="mt-1 flex-shrink-0 rotate-45"
-          name="uil:vector-square-alt"
+          name="i-uil-vector-square-alt"
         />
         <span>{{ t("operator.attribute.magicResistance") }}</span>
       </div>
@@ -207,7 +207,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-2 md:order-5 lg:order-2"
     >
       <div class="flex gap-1 text-lime-500">
-        <Icon class="mt-1 flex-shrink-0" name="mdi:alpha-c-circle" />
+        <UIcon class="mt-1 flex-shrink-0" name="i-mdi-alpha-c-circle" />
         <span>{{ t("operator.attribute.cost") }}</span>
       </div>
       <div>{{ operatorAttributes.cost }}</div>
@@ -216,7 +216,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-4 md:order-6 lg:order-4"
     >
       <div class="flex gap-1 text-rose-500">
-        <Icon class="mt-1 flex-shrink-0" name="game-icons:spinning-sword" />
+        <UIcon class="mt-1 flex-shrink-0" name="i-game-icons-spinning-sword" />
         <span>{{ t("operator.attribute.baseAttackTime") }}</span>
       </div>
       <div>
@@ -232,7 +232,7 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-6 md:order-7 lg:order-6"
     >
       <div class="flex gap-1 text-blue-500">
-        <Icon class="mt-1 flex-shrink-0" name="mdi:shield-account" />
+        <UIcon class="mt-1 flex-shrink-0" name="i-mdi-shield-account" />
         <span>{{ t("operator.attribute.blockCnt") }}</span>
       </div>
       <div>{{ operatorAttributes.blockCnt }}</div>
@@ -241,9 +241,9 @@ function calculateFinalAttackTime(baseAttackTime: number): number {
       class="flex flex-col bg-bg-body px-2 py-0.5 sm:order-8 md:order-8 lg:order-8"
     >
       <div class="flex gap-1 text-pink-500">
-        <Icon
+        <UIcon
           class="mt-1 flex-shrink-0"
-          name="ph:clock-counter-clockwise-bold"
+          name="i-ph-clock-counter-clockwise-bold"
         />
         <span>{{ t("operator.attribute.respawnTime") }}</span>
       </div>
