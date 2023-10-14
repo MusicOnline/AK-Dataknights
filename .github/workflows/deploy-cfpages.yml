@@ -90,8 +90,10 @@ jobs:
           directory: .output/public
           # Optional: Enable this to have GitHub Deployments triggered
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Zip artifact for upload
+        run: zip output.zip .output/public/* -r
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: cloudflare-pages
-          path: .output/public
+          path: output.zip
