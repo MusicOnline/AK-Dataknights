@@ -18,7 +18,6 @@ const {
   small?: boolean
 }>()
 
-const router = useRouter()
 const i18n = useI18n()
 const localePath = useLocalePath()
 const { t } = i18n
@@ -29,7 +28,7 @@ const commandPaletteRef = ref<InstanceType<typeof UCommandPalette> | null>(null)
 const { data: operators, pending: isDataPending } = useLazyAsyncData(
   "operators",
   async () => useOperatorsIndexData(),
-  { server: false }
+  { server: false },
 )
 
 const operatorItems = computed(() => {
@@ -37,12 +36,12 @@ const operatorItems = computed(() => {
   let operatorsToMap: GeneratedOperatorIndexData[] = operators.value
   if (operator && !commandPaletteRef.value?.query) {
     const index: number = operators.value.findIndex(
-      ({ id }) => operator!.id === id
+      ({ id }) => operator!.id === id,
     )
 
     const lowerBoundIndex: number = Math.max(
       0,
-      index - Math.trunc(SEARCH_RESULTS_LIMIT / 2)
+      index - Math.trunc(SEARCH_RESULTS_LIMIT / 2),
     )
     const upperBoundIndex: number = lowerBoundIndex + SEARCH_RESULTS_LIMIT
 
@@ -71,8 +70,8 @@ const groups = computed(() => [
   },
 ])
 
-function onSelect(option: any) {
-  router.push(localePath(`/operators/${option.id}`))
+async function onSelect(option: any) {
+  return navigateTo(localePath(`/operators/${option.id}`))
 }
 
 const nonFloatingContainerUi = /*ui*/ ""

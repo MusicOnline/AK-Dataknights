@@ -1,11 +1,45 @@
 <script setup lang="ts">
 import "~/assets/css/index.scss"
-
-import type { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables"
 import { useSeoMeta } from "@unhead/vue"
 
-const { t, locale, locales } = useI18n()
+const { t, locale } = useI18n()
+
+const runtimeConfig = useRuntimeConfig()
+const route = useRoute()
+const localePath = useLocalePath()
+const registeredLocales = useRegisteredLocales()
+
 const theme = ref<string>("mizuki")
+
+const headLinks = computed<any[]>(() => [
+  {
+    rel: "preconnect",
+    href: "https://fonts.googleapis.com",
+  },
+  {
+    rel: "preconnect",
+    href: "https://fonts.gstatic.com",
+    crossorigin: "",
+  },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;700&family=Noto+Sans+SC:wght@300;400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+KR:wght@300;400;700&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+  },
+  ...registeredLocales.value.flatMap((localeObj) => {
+    if (localeObj.code === locale.value) return []
+    return {
+      rel: "alternate",
+      hreflang: localeObj.code,
+      href:
+        runtimeConfig.public.fullBaseUrl + localePath(route, localeObj.code),
+    }
+  }),
+  {
+    rel: "alternate",
+    hreflang: "x-default",
+    href: runtimeConfig.public.fullBaseUrl + localePath(route, "en"),
+  },
+])
 
 useSeoMeta({
   ogSiteName: () => t("general.siteIndexTitle"),
@@ -24,21 +58,7 @@ useHead({
       ? t("general.sitePageTitle", [title])
       : t("general.siteIndexTitle")
   },
-  link: [
-    {
-      rel: "preconnect",
-      href: "https://fonts.googleapis.com",
-    },
-    {
-      rel: "preconnect",
-      href: "https://fonts.gstatic.com",
-      crossorigin: "",
-    },
-    {
-      rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;700&family=Noto+Sans+SC:wght@300;400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+KR:wght@300;400;700&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap",
-    },
-  ],
+  link: headLinks,
   meta: () => [
     {
       key: "og:image",
@@ -62,7 +82,7 @@ useHead({
     },
     {
       property: "og:locale:alternate",
-      content: (<LocaleObject[]>locales.value).flatMap(({ code }) => {
+      content: registeredLocales.value.flatMap(({ code }) => {
         const transformedCode = transformLocaleCode(code)
         if (code === locale.value) return []
         return transformedCode

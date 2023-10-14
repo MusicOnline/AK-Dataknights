@@ -11,7 +11,7 @@ const i18n = useI18n()
 const { t } = i18n
 await useOperatorLocale(i18n, operator.key)
 
-const router = useRouter()
+const route = useRoute()
 
 function getCombinedModuleTypeName(module: GeneratedModuleData): string {
   if (!module.typeName2) return module.typeName1.toLowerCase()
@@ -54,7 +54,7 @@ const links = computed<VerticalNavigationLink[]>(() => {
           label: t(
             `${operator.key}.skills.${skill.id
               .replace(/\[/g, "<")
-              .replace(/\]/g, ">")}.1.name`
+              .replace(/\]/g, ">")}.1.name`,
           ),
           to: `#skill-${index + 1}`,
           "exact-hash": true,
@@ -82,8 +82,6 @@ const links = computed<VerticalNavigationLink[]>(() => {
 
   return linksList
 })
-
-const currentHash = computed(() => router.currentRoute.value.hash)
 
 const ui = /*ui*/ {
   wrapper: "border-s-2 border-gray-300 dark:border-gray-600 space-y-2",
@@ -123,8 +121,8 @@ const innerUi = /*ui*/ {
               class="text-left"
               :class="{
                 'border-primary-500 dark:border-primary-400':
-                  currentHash === link.destination,
-                'border-transparent': currentHash !== link.destination,
+                  route.hash === link.destination,
+                'border-transparent': route.hash !== link.destination,
                 'ml-[calc(-1rem-2px)] border-l-2 pl-4': link.destination,
               }"
             >

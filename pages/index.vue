@@ -2,10 +2,26 @@
 import type { GeneratedOperatorIndexData } from "~/tools/generate-data/operator"
 
 const { t } = useI18n()
+const runtimeConfig = useRuntimeConfig()
 const localePath = useLocalePath()
 
+useHead({
+  script: [
+    {
+      type: "application/ld+json",
+      children: `{
+        "@context" : "https://schema.org",
+        "@type" : "WebSite",
+        "name" : "AK Dataknights",
+        "alternateName" : ["Dataknights", "AKDK"],
+        "url" : "${runtimeConfig.public.fullBaseUrl}"
+      }`,
+    },
+  ],
+})
+
 const { data: operators } = await useAsyncData("operators", () =>
-  useOperatorsIndexData()
+  useOperatorsIndexData(),
 )
 
 const randomOperator = ref<GeneratedOperatorIndexData | null>(null)
@@ -18,7 +34,7 @@ onMounted(() => {
 <template>
   <div class="flex">
     <div
-      class="relative top-[10vh] sm:top-32 z-10 my-auto flex w-full flex-col gap-4 lg:top-56"
+      class="relative top-[10vh] z-10 my-auto flex w-full flex-col gap-4 sm:top-32 lg:top-56"
     >
       <SiteBrand class="mx-auto text-3xl md:text-5xl" />
       <OperatorSearchBar

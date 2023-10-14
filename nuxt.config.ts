@@ -83,12 +83,22 @@ export default defineNuxtConfig({
       ],
     },
   },
-  experimental: {
-    payloadExtraction: true, // Fix missing _payload.json files
-  },
   sourcemap: process.env.NODE_ENV !== "production",
   ssr: process.env.ENABLE_SSR?.toLowerCase() === "true",
   modules: ["nuxt-lodash", "@nuxtjs/i18n", "@nuxt/ui"],
+  hooks: {
+    "build:before": async () => {
+      await generateDataFiles()
+    },
+  },
+  runtimeConfig: {
+    public: {
+      fullBaseUrl: process.env.NUXT_PUBLIC_FULL_BASE_URL,
+    },
+  },
+  experimental: {
+    payloadExtraction: true, // Fix missing _payload.json files
+  },
   i18n: {
     locales: [
       { code: "en", name: "English" },
@@ -114,11 +124,6 @@ export default defineNuxtConfig({
       "ph",
       "uil",
     ],
-  },
-  hooks: {
-    "build:before": async () => {
-      await generateDataFiles()
-    },
   },
   vite: {
     vue: {
