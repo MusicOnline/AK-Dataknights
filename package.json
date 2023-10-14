@@ -3,11 +3,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --host",
-    "dev-linux": "NODE_OPTIONS=--max_old_space_size=8192 nuxt dev --host",
-    "dev-windows": "set NODE_OPTIONS=--max_old_space_size=8192 && nuxt dev --host",
-    "generate-ci": "bash ./tools/ci-generate.sh",
-    "generate-linux": "NODE_OPTIONS=--max_old_space_size=8192 nuxt generate",
-    "generate-windows": "set NODE_OPTIONS=--max_old_space_size=8192 && nuxt generate",
+    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "get-operator-release": "python tools/get_operator_release.py"

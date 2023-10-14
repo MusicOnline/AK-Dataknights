@@ -6,7 +6,7 @@
 
 [![Deploy SSG to Cloudflare Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-cfpages.yml) [![Deploy SSG to GitHub Pages](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml/badge.svg)](https://github.com/MusicOnline/AK-Dataknights/actions/workflows/deploy-ghpages.yml)
 
-Work-in-progress Arknights database made with [Nuxt](https://nuxt.com) for educational purposes. Features Mainland Chinese, English, Japanese and Korean game data and technical support for custom translations (English only for now).
+Work-in-progress Arknights database made with [Nuxt](https://nuxt.com) for educational purposes. Features Mainland Chinese, English, Japanese and Korean game data and technical support for custom translations.
 
 All Arknights content is the copyright of Hypergryph Network Technology Co. Ltd.
 
@@ -16,13 +16,14 @@ All Arknights content is the copyright of Hypergryph Network Technology Co. Ltd.
 
 Prerequisites:
 
-- Node.js (developed with version 18)
+- Node.js (developed & tested with version 20.8.0)
+- pnpm
 
 Clone the repository, then install the dependencies:
 
 ```bash
 git clone https://github.com/MusicOnline/AK-Dataknights
-npm install
+pnpm install
 ```
 
 ### Configuration
@@ -34,13 +35,14 @@ Create a `.env` file with the following content or define the environment variab
 # Game data is processed before being used to generate the website
 GAME_DATA_ROOT_PATH=/path/to/ArknightsGameData
 
-# Set to true if "npm run generate" should be prerendered
+# Set to true if "pnpm run generate" should be prerendered to HTML
+# Set to false to only render HTML using JS when browsed to (no SEO support)
 # Alternatively, this can be set in nuxt.config.ts in ssr
 ENABLE_SSR=true
 
-# For generating SSG for GitHub Pages deployment,
+# For generating static files for GitHub Pages deployment,
 # repository pages are deployed to username.github.io/RespositoryNameHere
-# Therefore this must be set to correct routing base URL
+# Therefore this must be set to correct the routing base URL
 # Alternatively, this can be set in nuxt.config.ts in app.baseURL
 # Omit this variable if pages are deployed to the root URL
 NUXT_APP_BASE_URL=RepositoryNameHere
@@ -51,31 +53,31 @@ NUXT_APP_BASE_URL=RepositoryNameHere
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ### Production
 
-Server-Side Rendering (SSR):
+Serve with a Node.js Server:
 
 ```bash
-npm run build
+pnpm run build
 # Start server
 node .output/server/index.mjs
 ```
 
-Static Site Generation (SSG):
+Static hosting:
 
 ```bash
-npm run generate
+pnpm run generate
 # Serve .output/public, example:
-npx http-server .output/public
+pnpm dlx serve .output/public
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+pnpm run preview
 ```
 
 ### Continuous Deployment

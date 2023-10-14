@@ -36,6 +36,10 @@ jobs:
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             exit 0
+          elif [ -f "${{ github.workspace }}/pnpm-lock.yaml" ]; then
+            echo "manager=pnpm" >> $GITHUB_OUTPUT
+            echo "command=install" >> $GITHUB_OUTPUT
+            exit 0
           elif [ -f "${{ github.workspace }}/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
@@ -62,7 +66,7 @@ jobs:
       - name: Generate static site
         env:
           NODE_OPTIONS: --max_old_space_size=8192
-        run: ${{ steps.detect-package-manager.outputs.manager }} run generate-linux
+        run: ${{ steps.detect-package-manager.outputs.manager }} run generate
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
