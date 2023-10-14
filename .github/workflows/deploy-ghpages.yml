@@ -16,7 +16,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: ${{ github.workflow }}
   cancel-in-progress: true
 
 jobs:
@@ -55,9 +55,17 @@ jobs:
             echo "Unable to determine packager manager"
             exit 1
           fi
+      # Must be done before Setup Node
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        if: ${{ steps.detect-package-manager.outputs.manager == 'pnpm' }}
+        with:
+          version: latest
+          run_install: false
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
+          node-version: 20
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Restore cache
         uses: actions/cache@v3
