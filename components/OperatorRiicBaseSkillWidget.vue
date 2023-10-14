@@ -22,11 +22,11 @@ await useOperatorLocale(i18n, operator.key)
 <template>
   <div class="flex flex-col gap-2">
     <div
-      class="flex flex-col gap-1 hover:opacity-100"
-      :class="{
-        'opacity-60': index !== riicBaseSkillGroup.length - 1
-      }"
+      class="flex flex-col gap-1 hover:opacity-100 focus-visible:opacity-100"
       v-for="(skill, index) in riicBaseSkillGroup"
+      :class="{
+        'opacity-60': index !== riicBaseSkillGroup.length - 1,
+      }"
       :key="skill.id"
     >
       <div class="flex items-center gap-2">
@@ -37,7 +37,9 @@ await useOperatorLocale(i18n, operator.key)
             skill.skillIcon
           )}.png`"
         />
-        <div class="font-bold">{{ t(`${getSkillTranslationPrefix(skill)}.name`) }}</div>
+        <div class="font-bold">
+          {{ t(`${getSkillTranslationPrefix(skill)}.name`) }}
+        </div>
         <div class="flex items-center gap-2">
           <div
             class="w-8 bg-gray-800 p-0.5"

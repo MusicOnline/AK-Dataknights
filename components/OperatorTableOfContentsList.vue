@@ -94,7 +94,7 @@ const ui = /*ui*/ {
   ring: "",
   active: "text-primary-500 dark:text-primary-400 border-current font-bold",
   inactive:
-    "border-transparent hover:border-gray-400 dark:hover:border-gray-500 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300",
+    "border-transparent text-gray-700 hover:border-gray-400 hover:text-gray-900 focus-visible:border-gray-400 focus-visible:text-gray-900 dark:text-gray-400 dark:hover:border-gray-500 dark:hover:text-gray-300 dark:focus-visible:border-gray-500 dark:focus-visible:text-gray-300",
 }
 
 const innerUi = /*ui*/ {

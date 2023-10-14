@@ -7,14 +7,14 @@ const isSettingsModalActive = ref<boolean>(false)
 
 <template>
   <div>
-    <header class="fixed left-0 top-0 z-30 h-12 w-full bg-bg-navbar p-2 shadow">
+    <header class="fixed left-0 top-0 z-30 h-12 w-full bg-navbar-bg p-2 shadow">
       <nav class="m-auto flex max-w-7xl items-center gap-1 md:gap-4">
         <NuxtLink class="block" :to="localePath('/')">
           <SiteBrand
             class="-translate-y-0.5 transform text-2xl transition-colors md:text-3xl"
           />
         </NuxtLink>
-        <ul class="hidden items-center gap-2 text-fg-navbar-inactive md:flex">
+        <ul class="hidden items-center gap-2 text-navbar-fg-inactive md:flex">
           <li class="nav-item">
             <NuxtLink class="nav-link" :to="localePath('/operators')">
               <UIcon class="nav-icon inactive-icon" name="i-heroicons-users" />
@@ -59,7 +59,7 @@ const isSettingsModalActive = ref<boolean>(false)
 <style scoped lang="scss">
 .nav-item {
   .nav-link {
-    @apply gap-1 px-2 py-1 transition-colors hover:text-fg-navbar-focus focus:text-fg-navbar-focus;
+    @apply gap-1 px-2 py-1 transition-colors hover:text-navbar-fg-focus focus-visible:text-navbar-fg-focus;
 
     display: flex;
     width: 100%;
@@ -74,7 +74,7 @@ const isSettingsModalActive = ref<boolean>(false)
 
     &.router-link-active,
     &.active {
-      @apply text-fg-navbar-active;
+      @apply text-navbar-fg-active;
 
       .inactive-icon {
         display: none;

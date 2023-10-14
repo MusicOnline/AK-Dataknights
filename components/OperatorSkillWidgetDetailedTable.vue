@@ -216,11 +216,11 @@ await useOperatorLocale(i18n, operator.key)
 <style scoped lang="scss">
 thead th,
 tbody td {
-  @apply border-2 border-bg-body;
+  @apply border-2 border-body-bg;
 }
 
 thead tr {
-  @apply bg-bg-primary text-fg-primary;
+  @apply bg-primary text-container-primary-fg;
 }
 
 tbody td {
@@ -237,6 +237,6 @@ tbody tr td:first-child {
 
 tbody tr td:not(:first-child, .description),
 tbody tr:nth-child(odd) .description {
-  @apply bg-bg-container-1-normal;
+  @apply bg-container-1-bg;
 }
 </style>

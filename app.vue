@@ -97,8 +97,8 @@ function transformLocaleCode(locale: string): string {
       <div class="p-2">
         <NuxtPage class="mx-auto max-w-7xl" />
       </div>
-      <div class="relative w-full bg-bg-body bg-opacity-60 pt-4 backdrop-blur">
-        <hr class="mx-auto w-full max-w-7xl border-t-2 border-fg-container-1" />
+      <div class="relative w-full bg-body-bg/60 pt-4 backdrop-blur">
+        <hr class="mx-auto w-full max-w-7xl border-t-2 border-container-1-fg" />
         <Footer class="mx-auto w-full max-w-7xl px-2 py-4 md:py-8" />
       </div>
     </div>
@@ -106,25 +106,19 @@ function transformLocaleCode(locale: string): string {
 </template>
 
 <style lang="scss">
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  body {
-    @apply mb-16 mt-12 bg-bg-body text-fg-body md:mb-0;
-  }
-
-  svg {
-    user-select: none;
-  }
-}
-
 :root {
   --header-height: 3rem;
-  
+
   scroll-behavior: smooth;
   font-size: 14px;
+}
+
+body {
+  @apply mb-16 mt-12 bg-body-bg text-body-fg md:mb-0;
+}
+
+svg {
+  user-select: none;
 }
 
 .ba-keyword {

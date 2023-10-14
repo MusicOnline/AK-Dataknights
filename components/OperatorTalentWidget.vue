@@ -104,7 +104,7 @@ await useOperatorLocale(i18n, operator.key)
 <template>
   <div class="flex flex-col">
     <!-- Elite & potential buttons -->
-    <div class="flex gap-1 bg-bg-container-1-normal">
+    <div class="flex gap-1 bg-container-1-bg">
       <!-- Elites -->
       <div class="flex gap-1">
         <button
@@ -112,7 +112,7 @@ await useOperatorLocale(i18n, operator.key)
           v-for="([elite, level], index) in talentEliteLevelNumbers"
           :class="{
             'rounded-tl-theme': index === 0,
-            'bg-gray-400 hover:bg-gray-500':
+            'bg-gray-400 hover:bg-gray-500 focus-visible:bg-gray-500':
               talentState.elite !== elite || talentState.level !== level,
             'bg-gray-800':
               talentState.elite === elite && talentState.level === level,
@@ -151,7 +151,7 @@ await useOperatorLocale(i18n, operator.key)
           v-for="(potential, index) in talentPotentialNumbers"
           :class="{
             'rounded-tr-theme': index === talentPotentialNumbers.length - 1,
-            'bg-gray-400 hover:bg-gray-500':
+            'bg-gray-400 hover:bg-gray-500 focus-visible:bg-gray-500':
               talentState.potential !== potential,
             'bg-gray-900': talentState.potential === potential,
           }"

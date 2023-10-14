@@ -84,8 +84,7 @@
 }
 
 @mixin primary-color-container-colors($light-mode: true) {
-  --color-bg-primary: var(--color-primary-DEFAULT);
-  --color-fg-primary: var(--color-gray-50);
+  --color-fg-container-primary: var(--color-gray-50);
 }
 
 @mixin input-colors($light-mode: true) {

@@ -10,11 +10,11 @@ const isSidebarExpanded = useIsSidebarExpanded()
 
 <template>
   <div
-    class="flex flex-col gap-2 bg-bg-container-1-normal bg-opacity-90 p-2 text-fg-container-1 shadow backdrop-blur"
+    class="flex flex-col gap-2 bg-container-1-bg/90 p-2 text-container-1-fg shadow backdrop-blur"
   >
     <!-- Mobile pull out button -->
     <button
-      class="absolute bottom-28 rounded-r-theme left-full flex items-center bg-bg-primary p-0.5 text-[2.5rem] text-fg-primary shadow md:hidden"
+      class="absolute bottom-28 left-full flex items-center rounded-r-theme bg-primary p-0.5 text-[2.5rem] text-container-primary-fg shadow md:hidden"
       @click="isSidebarExpanded = !isSidebarExpanded"
     >
       <UIcon name="i-heroicons-list-bullet" />

@@ -220,7 +220,7 @@ onBeforeUnmount(() => {
       />
     </Transition>
     <OperatorSidebar
-      class="sticky top-12 z-20 -mt-2 ml-[-18.5rem] h-[calc(100vh-7rem)] w-72 flex-none transition-all md:left-0 md:right-auto md:-ml-2 md:mb-0 md:h-[calc(100vh-3rem)]"
+      class="sticky top-12 z-20 -mt-2 ml-[-18.5rem] h-[calc(100vh-7rem)] w-72 flex-none transition-[left] md:left-0 md:right-auto md:-ml-2 md:mb-0 md:h-[calc(100vh-3rem)]"
       :class="{
         'left-0 duration-300': isSidebarExpanded,
         '-left-72 duration-200': !isSidebarExpanded,
@@ -250,7 +250,7 @@ onBeforeUnmount(() => {
       <div>
         <div class="anchor-ghost" id="stats" />
         <div
-          class="flex flex-wrap justify-center gap-1 rounded-theme p-2 outline outline-1 outline-bg-container-1-normal sm:flex-nowrap sm:justify-start lg:gap-4"
+          class="flex flex-wrap justify-center gap-1 rounded-theme p-2 outline outline-1 outline-container-1-bg sm:flex-nowrap sm:justify-start lg:gap-4"
         >
           <div class="grid w-full p-2 sm:max-w-[8rem]">
             <OperatorRangeGrid
@@ -278,7 +278,7 @@ onBeforeUnmount(() => {
           {{ t("operator.ui.talents") }}
         </h1>
         <OperatorTalentWidget
-          class="rounded-theme outline outline-1 outline-bg-container-1-normal"
+          class="rounded-theme outline outline-1 outline-container-1-bg"
           v-model:elite="talentState.elite"
           v-model:level="talentState.level"
           v-model:potential="talentState.potential"
@@ -299,7 +299,7 @@ onBeforeUnmount(() => {
             <li v-if="skill">
               <div class="anchor-ghost" :id="`skill-${index + 1}`" />
               <OperatorSkillWidget
-                class="rounded-theme p-2 outline outline-1 outline-bg-container-1-normal"
+                class="rounded-theme p-2 outline outline-1 outline-container-1-bg"
                 :operator="operator"
                 :skill="skill"
                 :operator-state="operatorState"
@@ -322,7 +322,7 @@ onBeforeUnmount(() => {
               :id="`module-${getCombinedModuleTypeName(mod)}`"
             />
             <OperatorModuleWidget
-              class="rounded-theme p-2 outline outline-1 outline-bg-container-1-normal"
+              class="rounded-theme p-2 outline outline-1 outline-container-1-bg"
               v-model:module-id="operatorState.moduleId"
               v-model:module-stage="operatorState.moduleStage"
               :potential="operatorState.potential"
@@ -347,7 +347,7 @@ onBeforeUnmount(() => {
             <li>
               <div class="anchor-ghost" :id="`riic-base-skill-${index + 1}`" />
               <OperatorRiicBaseSkillWidget
-                class="rounded-theme p-2 outline outline-1 outline-bg-container-1-normal"
+                class="rounded-theme p-2 outline outline-1 outline-container-1-bg"
                 :key="index"
                 :operator="operator"
                 :riic-base-skill-group="buffData"

@@ -126,7 +126,7 @@ await useOperatorLocale(i18n, operator.key)
           class="h-8 w-8 flex-shrink-0 rounded-theme p-0.5"
           v-for="potential in modulePotentialNumbers"
           :class="{
-            'bg-gray-400 hover:bg-gray-500':
+            'bg-gray-400 hover:bg-gray-500 focus-visible:bg-gray-500':
               moduleState.potential !== potential,
             'bg-gray-900': moduleState.potential === potential,
           }"
@@ -140,7 +140,7 @@ await useOperatorLocale(i18n, operator.key)
         </button>
       </div>
       <!-- Select module -->
-      <div class="ml-auto h-fit rounded-theme bg-bg-container-1-normal p-1">
+      <div class="ml-auto h-fit rounded-theme bg-container-1-bg p-1">
         <UCheckbox
           v-model="isModuleSelected"
           :label="
@@ -166,7 +166,7 @@ await useOperatorLocale(i18n, operator.key)
       v-if="module.stages"
     >
       <thead class="text-center">
-        <tr class="bg-bg-primary text-fg-primary">
+        <tr class="bg-primary text-container-primary-fg">
           <th class="w-8 sm:w-16">{{ t("operator.module.stage") }}</th>
           <th class="sm:w-32">{{ t("operator.module.attributes") }}</th>
           <th>{{ t("operator.module.moduleDescription") }}</th>
@@ -174,7 +174,7 @@ await useOperatorLocale(i18n, operator.key)
       </thead>
       <tbody>
         <tr
-          class="hover:cursor-pointer"
+          class="hover:cursor-pointer focus-visible:cursor-pointer"
           v-for="stage in module.stages"
           :class="{
             active: stage.stage === moduleStage && module.id === moduleId,
@@ -301,7 +301,7 @@ await useOperatorLocale(i18n, operator.key)
 <style scoped lang="scss">
 thead th,
 tbody td {
-  @apply border-2 border-bg-body;
+  @apply border-2 border-body-bg;
 }
 
 tbody td:not(:first-child) {
@@ -310,7 +310,7 @@ tbody td:not(:first-child) {
 
 tbody tr:hover {
   td:not(:first-child) {
-    @apply bg-bg-container-1-focus;
+    @apply bg-container-1-bg-focus;
   }
 
   &:not(.active) td:first-child {
@@ -319,7 +319,7 @@ tbody tr:hover {
 }
 
 tbody tr:nth-child(odd):not(:hover) td:not(:first-child) {
-  @apply bg-bg-container-1-normal;
+  @apply bg-container-1-bg;
 }
 
 .description {

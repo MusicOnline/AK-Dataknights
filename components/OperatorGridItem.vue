@@ -20,9 +20,9 @@ await useOperatorsIndexLocale(i18n)
 <template>
   <li>
     <NuxtLink
-      class="flex h-full flex-col rounded-theme p-1 text-gray-900 shadow-sm transition-all duration-75 hover:shadow focus:shadow"
+      class="flex h-full flex-col rounded-theme p-1 text-gray-900 shadow-sm transition-all duration-75 hover:shadow focus-visible:shadow"
       :to="localePath(`/operators/${operator.key}`)"
-      :class="`bg-rarity-${operator.rarity}-item-normal hover:bg-rarity-${operator.rarity}-item-focus focus:bg-rarity-${operator.rarity}-item-focus`"
+      :class="`bg-rarity-${operator.rarity}-item hover:bg-rarity-${operator.rarity}-item-focus focus-visible:bg-rarity-${operator.rarity}-item-focus`"
     >
       <UAvatar
         :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${encodeURI(

@@ -85,7 +85,7 @@ function changeElite(eliteChoice: number) {
           class="w-8 rounded-theme p-0.5"
           :class="{
             'bg-gray-800': elite === eliteChoice,
-            'bg-gray-400 hover:bg-gray-500 focus:bg-gray-500':
+            'bg-gray-400 hover:bg-gray-500 focus-visible:bg-gray-500':
               elite !== eliteChoice,
           }"
           @click="changeElite(eliteChoice)"

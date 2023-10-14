@@ -24,7 +24,7 @@ await useOperatorLocale(i18n, operator.key)
 </script>
 
 <template>
-  <div :class="`operator-rarity-${operator.rarity}`">
+  <div>
     <div class="flex max-w-4xl flex-col gap-1 sm:flex-row">
       <img
         class="m-auto h-32 w-32 rounded-theme sm:m-0 sm:h-fit"
@@ -47,7 +47,7 @@ await useOperatorLocale(i18n, operator.key)
               {{ t(`operator.classBranch.${operator.classBranch}`) }}
             </div>
             <div
-              class="rounded-b-theme rounded-tr-theme bg-bg-container-1-normal px-1 py-0.5 text-fg-body"
+              class="rounded-b-theme rounded-tr-theme bg-container-1-bg px-1 py-0.5 text-body-fg"
               v-html="
                 convertRichText(
                   t(

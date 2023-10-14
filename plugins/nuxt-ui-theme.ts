@@ -23,11 +23,12 @@ export default defineNuxtPlugin({
   setup() {
     const appConfig = useAppConfig()
     const root = computed(() => {
-      const primary: Record<string, string> | undefined =
-        // @ts-ignore
-        colors[appConfig.ui.primary]
-      // @ts-ignore
-      const gray: Record<string, string> | undefined = colors[appConfig.ui.gray]
+      const primary = <Record<string, string> | undefined>(
+        colors[<keyof typeof colors>appConfig.ui.primary]
+      )
+      const gray = <Record<string, string> | undefined>(
+        colors[<keyof typeof colors>appConfig.ui.gray]
+      )
 
       return `:root {
         ${Object.entries(primary || colors.green)
@@ -38,12 +39,12 @@ export default defineNuxtPlugin({
         ${Object.entries(gray || colors.cool)
           .map(([key, value]) => `--color-gray-${key}: ${hexToRgb(value)};`)
           .join("\n")}
-        }
+      }
 
-        .dark {
-          --color-primary-DEFAULT: var(--color-primary-400);
-        }
-        `
+      .dark {
+        --color-primary-DEFAULT: var(--color-primary-400);
+      }
+      `.replace(/\s+/g, " ")
     })
 
     if (process.client) {

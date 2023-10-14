@@ -3,7 +3,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <footer class="text-fg-container-1">
+  <footer class="text-container-1-fg">
     <div class="flex flex-wrap gap-2">
       <div class="flex flex-col gap-1">
         <div class="flex items-center gap-1 font-bold md:text-xl">

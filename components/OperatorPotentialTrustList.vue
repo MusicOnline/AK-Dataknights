@@ -88,7 +88,7 @@ await useOperatorLocale(i18n, operator.key)
     <ul class="flex flex-col gap-1 text-sm">
       <li>
         <button
-          class="flex w-full items-center gap-1 rounded-theme text-left hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal"
+          class="flex w-full items-center gap-1 rounded-theme text-left hover:bg-container-1-bg focus-visible:bg-container-1-bg"
           @click="$emit('update:potential', (operatorState.potential = 1))"
         >
           <div
@@ -106,7 +106,7 @@ await useOperatorLocale(i18n, operator.key)
         :key="potential.potentialNumber"
       >
         <button
-          class="group flex w-full items-center gap-1 rounded-theme text-left hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal"
+          class="group flex w-full items-center gap-1 rounded-theme text-left hover:bg-container-1-bg focus-visible:bg-container-1-bg"
           @click="
             $emit(
               'update:potential',
@@ -117,7 +117,7 @@ await useOperatorLocale(i18n, operator.key)
           <div
             class="block h-6 w-6 flex-shrink-0 rounded-theme p-0.5"
             :class="{
-              'bg-gray-400 group-hover:bg-gray-500 group-focus:bg-gray-500':
+              'bg-gray-400 group-hover:bg-gray-500 group-focus-visible:bg-gray-500':
                 operatorState.potential < potential.potentialNumber,
               'bg-gray-900':
                 operatorState.potential >= potential.potentialNumber,
@@ -138,7 +138,7 @@ await useOperatorLocale(i18n, operator.key)
       </li>
     </ul>
     <button
-      class="group flex items-center gap-1 rounded-theme text-left text-sm hover:bg-bg-container-1-normal focus:bg-bg-container-1-normal"
+      class="group flex items-center gap-1 rounded-theme text-left text-sm hover:bg-container-1-bg focus-visible:bg-container-1-bg"
       v-if="trustStats"
       @click="
         $emit(
@@ -150,7 +150,7 @@ await useOperatorLocale(i18n, operator.key)
       <div
         class="flex h-6 w-6 flex-shrink-0 rounded-theme p-0.5"
         :class="{
-          'bg-gray-400 text-orange-300 group-hover:bg-gray-500 group-focus:bg-gray-500':
+          'bg-gray-400 text-orange-300 group-hover:bg-gray-500 group-focus-visible:bg-gray-500':
             !operatorState.isMaxTrustIncluded,
           'bg-gray-900 text-orange-400': operatorState.isMaxTrustIncluded,
         }"

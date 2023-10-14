@@ -17,8 +17,9 @@ defineEmits(["select"])
         color: {
           white: {
             solid:
-              'ring-0 bg-gray-100 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800',
-            ghost: 'hover:bg-gray-50 dark:hover:bg-gray-800/50',
+              'ring-0 bg-gray-100 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 focus-visible:bg-gray-100 dark:focus-visible:bg-gray-800',
+            ghost:
+              'hover:bg-gray-50 dark:hover:bg-gray-800/50 focus-visible:bg-gray-50 dark:focus-visible:bg-gray-800/50',
           },
         },
       }"

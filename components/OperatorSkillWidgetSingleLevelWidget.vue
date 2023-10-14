@@ -129,7 +129,7 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
     >
       <div class="flex" v-if="isInitialSpShown">
         <div
-          class="flex items-center gap-0.5 rounded-l-theme bg-bg-primary px-1 py-0.5 text-fg-primary"
+          class="flex items-center gap-0.5 rounded-l-theme bg-primary px-1 py-0.5 text-container-primary-fg"
         >
           <UIcon name="i-heroicons-forward-solid" />
           <span>
@@ -137,7 +137,7 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
           </span>
         </div>
         <div
-          class="flex items-center gap-0.5 rounded-r-theme bg-bg-container-1-normal px-1 py-0.5"
+          class="flex items-center gap-0.5 rounded-r-theme bg-container-1-bg px-1 py-0.5"
         >
           <span>
             {{ levelData.spData.initSp }}
@@ -151,7 +151,7 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
       </div>
       <div class="flex" v-if="isSpCostShown">
         <div
-          class="flex items-center gap-0.5 rounded-l-theme bg-bg-primary px-1 py-0.5 text-fg-primary"
+          class="flex items-center gap-0.5 rounded-l-theme bg-primary px-1 py-0.5 text-container-primary-fg"
         >
           <UIcon name="i-heroicons-bolt-solid" />
           <span>
@@ -159,7 +159,7 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
           </span>
         </div>
         <div
-          class="flex items-center gap-0.5 rounded-r-theme bg-bg-container-1-normal px-1 py-0.5"
+          class="flex items-center gap-0.5 rounded-r-theme bg-container-1-bg px-1 py-0.5"
         >
           <span>
             {{ levelData.spData.spCost }}
@@ -173,7 +173,7 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
       </div>
       <div class="flex" v-if="isDurationShown">
         <div
-          class="flex items-center gap-0.5 rounded-l-theme bg-bg-primary px-1 py-0.5 text-fg-primary"
+          class="flex items-center gap-0.5 rounded-l-theme bg-primary px-1 py-0.5 text-container-primary-fg"
         >
           <UIcon name="i-heroicons-clock-solid" />
           <span>
@@ -181,7 +181,7 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
           </span>
         </div>
         <div
-          class="flex items-center gap-0.5 rounded-r-theme bg-bg-container-1-normal px-1 py-0.5"
+          class="flex items-center gap-0.5 rounded-r-theme bg-container-1-bg px-1 py-0.5"
         >
           <span>
             {{
@@ -200,7 +200,7 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
       </div>
       <div class="flex" v-else-if="isAmmoSkill">
         <div
-          class="flex items-center gap-0.5 rounded-l-theme bg-bg-primary px-1 py-0.5 text-fg-primary"
+          class="flex items-center gap-0.5 rounded-l-theme bg-primary px-1 py-0.5 text-container-primary-fg"
         >
           <UIcon name="i-mdi-ammunition" />
           <span>
@@ -208,7 +208,7 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
           </span>
         </div>
         <div
-          class="flex items-center gap-0.5 rounded-r-theme bg-bg-container-1-normal px-1 py-0.5"
+          class="flex items-center gap-0.5 rounded-r-theme bg-container-1-bg px-1 py-0.5"
         >
           <span>
             {{
@@ -247,15 +247,15 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
     />
     <div class="flex flex-wrap items-start gap-2 text-xs">
       <div
-        class="flex text-fg-container-1"
+        class="flex text-container-1-fg"
         v-for="keyName in variableKeys"
         :key="keyName"
       >
-        <div class="rounded-l-theme bg-bg-container-1-focus px-1 py-0.5">
+        <div class="rounded-l-theme bg-container-1-bg-focus px-1 py-0.5">
           {{ keyName }}
         </div>
         <div
-          class="flex items-center gap-0.5 rounded-r-theme bg-bg-container-1-normal px-1 py-0.5"
+          class="flex items-center gap-0.5 rounded-r-theme bg-container-1-bg px-1 py-0.5"
         >
           <span>
             {{ levelData.variables.find(({ key }) => key === keyName)?.value }}
