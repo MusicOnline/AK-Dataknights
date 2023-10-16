@@ -17,13 +17,15 @@ All Arknights content is the copyright of Hypergryph Network Technology Co. Ltd.
 Prerequisites:
 
 - Node.js (developed & tested with version 20.8.0)
-- pnpm
+- pnpm (or convert the lockfile/commands yourself)
 
 Clone the repository, then install the dependencies:
 
 ```bash
 git clone https://github.com/MusicOnline/AK-Dataknights
 pnpm install
+# After cloning game data and preparing .env file as in the Configuration section
+pnpm run prepare-nuxt
 ```
 
 ### Configuration

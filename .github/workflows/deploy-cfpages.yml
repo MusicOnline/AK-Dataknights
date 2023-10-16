@@ -3,7 +3,8 @@ name: Deploy SSG to Cloudflare Pages
 on:
   # Runs on pushes targeting all branches
   # The main branch is for production, others for preview
-  push:
+  # Commented out to use Cloudflare's own automatic deployments
+  # push:
 
   # Allows running this workflow manually from the Actions tab
   workflow_dispatch:
@@ -78,9 +79,9 @@ jobs:
             ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Prepare nuxt (postinstall)
+        run: ${{ steps.detect-package-manager.outputs.manager }} run prepare-nuxt
       - name: Generate static site
-        env:
-          NODE_OPTIONS: --max_old_space_size=8192
         run: ${{ steps.detect-package-manager.outputs.manager }} run generate
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
