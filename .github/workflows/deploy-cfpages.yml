@@ -3,8 +3,8 @@ name: Deploy SSG to Cloudflare Pages
 on:
   # Runs on pushes targeting all branches
   # The main branch is for production, others for preview
-  # Commented out to use Cloudflare's own automatic deployments
-  # push:
+  # Comment out when using Cloudflare's own automatic deployments
+  push:
 
   # Allows running this workflow manually from the Actions tab
   workflow_dispatch:
