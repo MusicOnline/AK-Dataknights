@@ -1,3 +1,4 @@
+import { Operator } from "."
 import * as constants from "../constants"
 import {
   GeneratedOutfitData,
@@ -27,21 +28,35 @@ export class ElitePhase {
   attributeKeyFrames: KeyFrame[]
   range: Range | null
 
-  public constructor(id: string, elite: number, data: Character) {
+  public constructor(
+    id: string,
+    elite: number,
+    data: Character,
+    originalCharacterPatch: Operator | null = null,
+  ) {
     const phase = data.phases[elite]
     this.elite = elite
     this.maxLevel = phase.maxLevel
 
     const skinTable = globalThis.GAME_TABLES!.Outfit[constants.ORIGINAL_LOCALE]
-    const skinId = skinTable.buildinEvolveMap[id][<0 | 1 | 2>elite]
+    let skinId: string | undefined
+    if (originalCharacterPatch) {
+      skinId = skinTable.buildinPatchMap[originalCharacterPatch.id][id]
+    } else {
+      skinId = skinTable.buildinEvolveMap[id][<0 | 1 | 2>elite]
+    }
     this.outfit = skinId ? new Outfit(skinTable.charSkins[skinId]) : null
 
     this.attributeKeyFrames = phase.attributesKeyFrames
     this.range = phase.rangeId ? new Range(phase.rangeId) : null
   }
 
-  public static getAllFromData(id: string, data: Character): ElitePhase[] {
-    return data.phases.map((phase, index) => new ElitePhase(id, index, data))
+  public static getAllFromData(
+    id: string,
+    data: Character,
+    originalCharacterPatch: Operator | null = null,
+  ): ElitePhase[] {
+    return data.phases.map((phase, index) => new ElitePhase(id, index, data, originalCharacterPatch))
   }
 
   public toData(): GeneratedElitePhaseData {

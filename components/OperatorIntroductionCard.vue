@@ -13,11 +13,11 @@ const { operator, operatorState } = defineProps<{
 }>()
 
 const currentAvatarUrl = computed<string>(() =>
-  getAvatarUrl(operator, operatorState)
+  getAvatarUrl(operator, operatorState),
 )
 
 const currentTraitCandidate = computed<GeneratedTraitCandidateData>(() =>
-  getCurrentTraitCandidate(operator, operatorState)
+  getCurrentTraitCandidate(operator, operatorState),
 )
 
 await useOperatorLocale(i18n, operator.key)
@@ -25,7 +25,7 @@ await useOperatorLocale(i18n, operator.key)
 
 <template>
   <div>
-    <div class="flex max-w-4xl flex-col gap-1 sm:flex-row">
+    <div class="flex max-w-4xl flex-col flex-wrap gap-1 sm:flex-row">
       <img
         class="m-auto h-32 w-32 rounded-theme sm:m-0 sm:h-fit"
         :src="currentAvatarUrl"
@@ -51,9 +51,9 @@ await useOperatorLocale(i18n, operator.key)
               v-html="
                 convertRichText(
                   t(
-                    `${operator.key}.traitCandidates.E${currentTraitCandidate.unlockConditions.elite}-L${currentTraitCandidate.unlockConditions.level}.description`
+                    `${operator.key}.traitCandidates.E${currentTraitCandidate.unlockConditions.elite}-L${currentTraitCandidate.unlockConditions.level}.description`,
                   ),
-                  { replace: currentTraitCandidate.variables }
+                  { replace: currentTraitCandidate.variables },
                 )
               "
             />
@@ -76,6 +76,35 @@ await useOperatorLocale(i18n, operator.key)
               {{ t(`operator.tag.${tag}`) }}
             </UBadge>
           </li>
+        </ul>
+      </div>
+      <div
+        class="sm:ml-auto"
+        v-if="
+          operator.originalCharacterPatch ||
+          operator.characterPatches ||
+          operator.originalAlterOperator ||
+          operator.alterOperators
+        "
+      >
+        <span> {{ t("operator.ui.otherForms") }} </span>
+        <ul>
+          <li v-if="operator.originalCharacterPatch">
+            <OperatorLink :operator="operator.originalCharacterPatch" />
+          </li>
+          <template v-if="operator.characterPatches">
+            <li v-for="patch in operator.characterPatches" :key="patch.key">
+              <OperatorLink :operator="patch" />
+            </li>
+          </template>
+          <li v-if="operator.originalAlterOperator">
+            <OperatorLink :operator="operator.originalAlterOperator" />
+          </li>
+          <template v-if="operator.alterOperators">
+            <li v-for="alter in operator.alterOperators" :key="alter.key">
+              <OperatorLink :operator="alter" />
+            </li>
+          </template>
         </ul>
       </div>
     </div>

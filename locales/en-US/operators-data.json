@@ -178,6 +178,13 @@
         "name": "Standardization α",
         "description": "When this Operator is assigned to a Factory, productivity <#cc.vup>+15{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "kirin-r-yato": {
+        "name": "Kirin R Yato",
+        "appellation": "",
+        "description": "Significantly <#ba.kw>reduced</> Redeployment Time"
+      }
     }
   },
   "noir-corne": {
@@ -224,6 +231,13 @@
       "trade_ord_spd&limit<000>": {
         "name": "Order Management α",
         "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <#cc.vup>+10{'%'}</> and the order limit <#cc.vup>+2</>"
+      }
+    },
+    "alterOperators": {
+      "rathalos-s-noir-corne": {
+        "name": "Rathalos S Noir Corne",
+        "appellation": "",
+        "description": "Can't be healed by other units. Recovers <#ba.kw>{'{'}value{'}'}</> self HP every time this operator attacks an enemy"
       }
     }
   },
@@ -944,6 +958,13 @@
         "name": "Solitude",
         "description": "When this Operator is assigned to a Dormitory, self Morale recovered <#cc.vup>+0.7</> per hour"
       }
+    },
+    "alterOperators": {
+      "kroos-the-keen-glint": {
+        "name": "Kroos the Keen Glint",
+        "appellation": "",
+        "description": "Attacks aerial enemies first"
+      }
     }
   },
   "adnachiel": {
@@ -1116,6 +1137,13 @@
         "name": "Originium Work β",
         "description": "When this Operator is assigned to a Factory, <#cc.kw>Originium</> formula related productivity <#cc.vup>+35{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "lava-the-purgatory": {
+        "name": "Lava the Purgatory",
+        "appellation": "",
+        "description": "Deals <#ba.kw>AOE Arts damage</>"
+      }
     }
   },
   "hibiscus": {
@@ -1197,6 +1225,13 @@
       "workshop_formula_probability<100>": {
         "name": "Nutriology",
         "description": "When this Operator is assigned to the Workshop to process <#cc.kw>elite material</>, the production rate of byproduct increases by <#cc.vup>70{'%'}</>"
+      }
+    },
+    "alterOperators": {
+      "hibiscus-the-purifier": {
+        "name": "Hibiscus the Purifier",
+        "appellation": "",
+        "description": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 50{'%'} of the damage dealt"
       }
     }
   },
@@ -2070,6 +2105,13 @@
       "meet_spd&team<030>": {
         "name": "Liaison",
         "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by <#cc.vup>10{'%'}</> and it's easier to obtain the clues of <#cc.kw>Blacksteel Worldwide</>"
+      }
+    },
+    "alterOperators": {
+      "jessica-the-liberated": {
+        "name": null,
+        "appellation": null,
+        "description": null
       }
     }
   },
@@ -4734,6 +4776,13 @@
         "name": "Medic Expert α",
         "description": "When this Operator is assigned to be the Trainer in the Training Room, <#cc.kw>Medic</> Operators' Specialization training speed <#cc.vup>+30{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "gavial-the-invincible": {
+        "name": "Gavial the Invincible",
+        "appellation": "",
+        "description": "Attacks <#ba.kw>all blocked enemies</>"
+      }
     }
   },
   "perfumer": {
@@ -6708,6 +6757,13 @@
         "name": "Tacit Understanding",
         "description": "When this Operator is assigned to the same Trading Post as <#cc.kw>Exusiai</>, Morale consumed each hour <#cc.vup>-0.3</>"
       }
+    },
+    "alterOperators": {
+      "texas-the-omertosa": {
+        "name": "Texas the Omertosa",
+        "appellation": "",
+        "description": "Significantly <#ba.kw>reduced</> Redeployment Time"
+      }
     }
   },
   "franka": {
@@ -7380,6 +7436,13 @@
         "name": "Craze",
         "description": "When this Operator is assigned to a Dormitory, self Morale recovered <#cc.vup>+0.85</> per hour"
       }
+    },
+    "alterOperators": {
+      "specter-the-unchained": {
+        "name": "Specter the Unchained",
+        "appellation": "",
+        "description": "Does not retreat upon receiving lethal damage, instead swaps to a <<Substitute>> (Substitute has 0 Block). Swaps back to the original after 20 seconds"
+      }
     }
   },
   "blue-poison": {
@@ -7989,6 +8052,9 @@
     "name": "Amiya",
     "appellation": "",
     "description": "Deals <#ba.kw>Arts damage</>",
+    "characterPatchDetailInfo": {
+      "infoParam": "Caster"
+    },
     "potentials": {
       "2": {
         "description": "Max HP +200"
@@ -8220,6 +8286,16 @@
       "dorm_rec_all<010>": {
         "name": "Violin Solo",
         "description": "When this Operator is assigned to a Dormitory, restores <#cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+      }
+    },
+    "characterPatches": {
+      "amiya-guard": {
+        "name": "Amiya",
+        "appellation": "",
+        "description": "Deals <#ba.kw>Arts damage</>",
+        "characterPatchDetailInfo": {
+          "infoParam": "Guard"
+        }
       }
     }
   },
@@ -8966,6 +9042,13 @@
         "name": "Rhine Tech β",
         "description": "When this Operator is assigned to a Factory, productivity <#cc.vup>+25{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "silence-the-paradigmatic": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "warfarin": {
@@ -9349,6 +9432,13 @@
       "dorm_rec_single&oneself<030>": {
         "name": "Followers",
         "description": "When this Operator is assigned to a Dormitory, restores <#cc.vup>+0.5</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour <#cc.vup>+0.25</>"
+      }
+    },
+    "alterOperators": {
+      "nearl-the-radiant-knight": {
+        "name": "Nearl the Radiant Knight",
+        "appellation": "",
+        "description": "Blocks 1 enemy"
       }
     }
   },
@@ -12658,6 +12748,13 @@
         "name": "Catastrophe Messenger β",
         "description": "When this Operator is assigned to the HR Office, HR contacting speed <#cc.vup>+45{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "eyjafjalla-the-hvit-aska": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "angelina": {
@@ -15602,6 +15699,13 @@
         "name": "Elegy",
         "description": "When this Operator is assigned to a Dormitory, self Morale recovered <#cc.vup>+1</> per hour"
       }
+    },
+    "alterOperators": {
+      "skadi-the-corrupting-heart": {
+        "name": "Skadi the Corrupting Heart",
+        "appellation": "",
+        "description": "Does not attack but continuously restores the <#ba.kw>HP</> of all allies within range (the HP restored per second is equal to 10{'%'} of self ATK). Self is unaffected by <?ba.inspire>Inspiration</>"
+      }
     }
   },
   "popukar": {
@@ -15969,6 +16073,13 @@
         "name": "Skillful Craftsman",
         "description": "When this Operator is assigned to the Workshop to process <#cc.kw>any material</>, the production rate of byproduct increases by <#cc.vup>50{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "greyy-the-lightningbearer": {
+        "name": "Greyy the Lightningbearer",
+        "appellation": "",
+        "description": "Attacks deal <#ba.kw>two instances</> of Physical damage to <#ba.kw>ground</> enemies in a small area (The second instance is a shockwave that has half the normal ATK)"
+      }
     }
   },
   "swire": {
@@ -16168,6 +16279,13 @@
       "train_spd<000>": {
         "name": "Drillmaster",
         "description": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <#cc.vup>+25{'%'}</>"
+      }
+    },
+    "alterOperators": {
+      "swire-the-elegant-wit": {
+        "name": null,
+        "appellation": null,
+        "description": null
       }
     }
   },
@@ -16459,6 +16577,13 @@
       "meet_spd&team<100>": {
         "name": "Police Superintendent",
         "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by <#cc.vup>25{'%'}</>"
+      }
+    },
+    "alterOperators": {
+      "chen-the-holungday": {
+        "name": "Ch'en the Holungday",
+        "appellation": "",
+        "description": "Attacks <#ba.kw>all enemies</> within range, and deals 150{'%'} damage to enemies in the row directly in front of this unit."
       }
     }
   },
@@ -18706,6 +18831,13 @@
         "name": "Cleaning Agreement",
         "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <#cc.vup>+0.05</> per hour."
       }
+    },
+    "alterOperators": {
+      "executor-the-ex-foedere": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "magallan": {
@@ -20765,6 +20897,13 @@
       "control_mp_cost<004>": {
         "name": "Substitute",
         "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <#cc.vup>+0.05</> per hour."
+      }
+    },
+    "alterOperators": {
+      "reed-the-flame-shadow": {
+        "name": "Reed the Flame Shadow",
+        "appellation": "",
+        "description": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 50{'%'} of the damage dealt"
       }
     }
   },
@@ -33247,6 +33386,144 @@
       }
     }
   },
+  "amiya-guard": {
+    "name": "Amiya",
+    "appellation": "",
+    "description": "Deals <#ba.kw>Arts damage</>",
+    "characterPatchDetailInfo": {
+      "infoParam": "Guard"
+    },
+    "potentials": {
+      "2": {
+        "description": "Max HP +200"
+      },
+      "3": {
+        "description": "DP Cost -1"
+      },
+      "4": {
+        "description": "ATK +28"
+      },
+      "5": {
+        "description": "DP Cost -1"
+      },
+      "6": {
+        "description": "DEF +22"
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": "Wrathful Cerulean Flame",
+          "description": "All allied units on the battlefield gain +4{'%'} ATK and DEF, doubled when this unit's skill is active"
+        },
+        "E2-L1-P1": {
+          "name": "Wrathful Cerulean Flame",
+          "description": "All allied units on the battlefield gain +7{'%'} ATK and DEF, doubled when this unit's skill is active"
+        }
+      }
+    },
+    "skills": {
+      "skchr_amiya2_1": {
+        "1": {
+          "name": "Ying Xiao - Fleeting Night",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, <#ba.vup>{'{'}prob:0{'%'}{'}'}</> Arts Dodge, and attacks turn into double strikes"
+        },
+        "2": {
+          "name": "Ying Xiao - Fleeting Night",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, <#ba.vup>{'{'}prob:0{'%'}{'}'}</> Arts Dodge, and attacks turn into double strikes"
+        },
+        "3": {
+          "name": "Ying Xiao - Fleeting Night",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, <#ba.vup>{'{'}prob:0{'%'}{'}'}</> Arts Dodge, and attacks turn into double strikes"
+        },
+        "4": {
+          "name": "Ying Xiao - Fleeting Night",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, <#ba.vup>{'{'}prob:0{'%'}{'}'}</> Arts Dodge, and attacks turn into double strikes"
+        },
+        "5": {
+          "name": "Ying Xiao - Fleeting Night",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, <#ba.vup>{'{'}prob:0{'%'}{'}'}</> Arts Dodge, and attacks turn into double strikes"
+        },
+        "6": {
+          "name": "Ying Xiao - Fleeting Night",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, <#ba.vup>{'{'}prob:0{'%'}{'}'}</> Arts Dodge, and attacks turn into double strikes"
+        },
+        "7": {
+          "name": "Ying Xiao - Fleeting Night",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, <#ba.vup>{'{'}prob:0{'%'}{'}'}</> Arts Dodge, and attacks turn into double strikes"
+        },
+        "8": {
+          "name": "Ying Xiao - Fleeting Night",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, <#ba.vup>{'{'}prob:0{'%'}{'}'}</> Arts Dodge, and attacks turn into double strikes"
+        },
+        "9": {
+          "name": "Ying Xiao - Fleeting Night",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, <#ba.vup>{'{'}prob:0{'%'}{'}'}</> Arts Dodge, and attacks turn into double strikes"
+        },
+        "10": {
+          "name": "Ying Xiao - Fleeting Night",
+          "description": "ATK <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, <#ba.vup>{'{'}prob:0{'%'}{'}'}</> Arts Dodge, and attacks turn into double strikes"
+        }
+      },
+      "skchr_amiya2_2": {
+        "1": {
+          "name": "Ying Xiao - Shadowless",
+          "description": "Immediately searches for the lowest HP target in front of this unit and attacks <#ba.vup>{'{'}times{'}'}</> times for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK as Arts damage (The last hit deals double damage as <#ba.vup>True</> damage); Each enemy defeated during these slashes will increase Amiya's ATK by <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> and RES by <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>, stacking up to <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</> times; Afterwards, Amiya will deal <#ba.vup>True damage</>; <#ba.rem>This skill can only be used once per battle</>"
+        },
+        "2": {
+          "name": "Ying Xiao - Shadowless",
+          "description": "Immediately searches for the lowest HP target in front of this unit and attacks <#ba.vup>{'{'}times{'}'}</> times for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK as Arts damage (The last hit deals double damage as <#ba.vup>True</> damage); Each enemy defeated during these slashes will increase Amiya's ATK by <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> and RES by <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>, stacking up to <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</> times; Afterwards, Amiya will deal <#ba.vup>True damage</>; <#ba.rem>This skill can only be used once per battle</>"
+        },
+        "3": {
+          "name": "Ying Xiao - Shadowless",
+          "description": "Immediately searches for the lowest HP target in front of this unit and attacks <#ba.vup>{'{'}times{'}'}</> times for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK as Arts damage (The last hit deals double damage as <#ba.vup>True</> damage); Each enemy defeated during these slashes will increase Amiya's ATK by <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> and RES by <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>, stacking up to <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</> times; Afterwards, Amiya will deal <#ba.vup>True damage</>; <#ba.rem>This skill can only be used once per battle</>"
+        },
+        "4": {
+          "name": "Ying Xiao - Shadowless",
+          "description": "Immediately searches for the lowest HP target in front of this unit and attacks <#ba.vup>{'{'}times{'}'}</> times for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK as Arts damage (The last hit deals double damage as <#ba.vup>True</> damage); Each enemy defeated during these slashes will increase Amiya's ATK by <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> and RES by <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>, stacking up to <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</> times; Afterwards, Amiya will deal <#ba.vup>True damage</>; <#ba.rem>This skill can only be used once per battle</>"
+        },
+        "5": {
+          "name": "Ying Xiao - Shadowless",
+          "description": "Immediately searches for the lowest HP target in front of this unit and attacks <#ba.vup>{'{'}times{'}'}</> times for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK as Arts damage (The last hit deals double damage as <#ba.vup>True</> damage); Each enemy defeated during these slashes will increase Amiya's ATK by <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> and RES by <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>, stacking up to <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</> times; Afterwards, Amiya will deal <#ba.vup>True damage</>; <#ba.rem>This skill can only be used once per battle</>"
+        },
+        "6": {
+          "name": "Ying Xiao - Shadowless",
+          "description": "Immediately searches for the lowest HP target in front of this unit and attacks <#ba.vup>{'{'}times{'}'}</> times for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK as Arts damage (The last hit deals double damage as <#ba.vup>True</> damage); Each enemy defeated during these slashes will increase Amiya's ATK by <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> and RES by <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>, stacking up to <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</> times; Afterwards, Amiya will deal <#ba.vup>True damage</>; <#ba.rem>This skill can only be used once per battle</>"
+        },
+        "7": {
+          "name": "Ying Xiao - Shadowless",
+          "description": "Immediately searches for the lowest HP target in front of this unit and attacks <#ba.vup>{'{'}times{'}'}</> times for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK as Arts damage (The last hit deals double damage as <#ba.vup>True</> damage); Each enemy defeated during these slashes will increase Amiya's ATK by <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> and RES by <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>, stacking up to <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</> times; Afterwards, Amiya will deal <#ba.vup>True damage</>; <#ba.rem>This skill can only be used once per battle</>"
+        },
+        "8": {
+          "name": "Ying Xiao - Shadowless",
+          "description": "Immediately searches for the lowest HP target in front of this unit and attacks <#ba.vup>{'{'}times{'}'}</> times for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK as Arts damage (The last hit deals double damage as <#ba.vup>True</> damage); Each enemy defeated during these slashes will increase Amiya's ATK by <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> and RES by <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>, stacking up to <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</> times; Afterwards, Amiya will deal <#ba.vup>True damage</>; <#ba.rem>This skill can only be used once per battle</>"
+        },
+        "9": {
+          "name": "Ying Xiao - Shadowless",
+          "description": "Immediately searches for the lowest HP target in front of this unit and attacks <#ba.vup>{'{'}times{'}'}</> times for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK as Arts damage (The last hit deals double damage as <#ba.vup>True</> damage); Each enemy defeated during these slashes will increase Amiya's ATK by <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> and RES by <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>, stacking up to <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</> times; Afterwards, Amiya will deal <#ba.vup>True damage</>; <#ba.rem>This skill can only be used once per battle</>"
+        },
+        "10": {
+          "name": "Ying Xiao - Shadowless",
+          "description": "Immediately searches for the lowest HP target in front of this unit and attacks <#ba.vup>{'{'}times{'}'}</> times for <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> ATK as Arts damage (The last hit deals double damage as <#ba.vup>True</> damage); Each enemy defeated during these slashes will increase Amiya's ATK by <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> and RES by <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>, stacking up to <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</> times; Afterwards, Amiya will deal <#ba.vup>True damage</>; <#ba.rem>This skill can only be used once per battle</>"
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "Deals <#ba.kw>Arts damage</>"
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {},
+    "originalCharacterPatch": {
+      "name": "Amiya",
+      "appellation": "",
+      "description": "Deals <#ba.kw>Arts damage</>",
+      "characterPatchDetailInfo": {
+        "infoParam": "Caster"
+      }
+    }
+  },
   "pinecone": {
     "name": "Pinecone",
     "appellation": "",
@@ -35187,6 +35464,11 @@
         "name": "Heat Charge γ",
         "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <#cc.vup>+20{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "Lava",
+      "appellation": "",
+      "description": "Deals <#ba.kw>AOE Arts damage</>"
     }
   },
   "mr-nothing": {
@@ -38271,6 +38553,11 @@
         "name": "Mutation",
         "description": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <#cc.vdown>+1</> when training a <#cc.kw>Supporter</> Operator's skill to Specialization Level <#cc.vup>3</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "Skadi",
+      "appellation": "",
+      "description": "Blocks 1 enemy"
     }
   },
   "gladiia": {
@@ -40588,6 +40875,11 @@
         "name": "Workaholic",
         "description": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour is increased by <#cc.vdown>+1</> when training a <#cc.kw>Sniper</> Operator's skill to Specialization Level <#cc.vup>1</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "Ch'en",
+      "appellation": "",
+      "description": "Normal attacks deal damage <#ba.kw>twice</>"
     }
   },
   "mizuki": {
@@ -43516,6 +43808,11 @@
         "name": "Noble Creed",
         "description": "When this Operator is assigned to be the Trainer in the Training Room, for every <?cc.tag.knight><#cc.kw>Knight</></> Operator in the Base (excluding Base Assistants), Operators' Specialization training speed <#cc.vup>+5{'%'}</> (caps at <#cc.kw>8</> Operators)"
       }
+    },
+    "originalAlterOperator": {
+      "name": "Nearl",
+      "appellation": "",
+      "description": "Can heal allies by using skill(s)"
     }
   },
   "kjera": {
@@ -44818,6 +45115,11 @@
         "name": "Combat Techniques: Marksman",
         "description": "When this Operator is assigned to be the Trainer in the Training Room, <#cc.kw>Sniper</> Operators' Specialization training speed <#cc.vup>+30{'%'}</>; if the trainee's Job Branch is <#cc.kw>Marksman</>, training speed will be further increased by <#cc.vup>+45{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "Kroos",
+      "appellation": "",
+      "description": "Attacks aerial enemies first"
     }
   },
   "ling": {
@@ -47311,7 +47613,7 @@
                     "name": null,
                     "description": null
                   },
-                  "5": {
+                  "3": {
                     "name": null,
                     "description": null
                   }
@@ -47330,7 +47632,7 @@
                     "name": null,
                     "description": null
                   },
-                  "5": {
+                  "3": {
                     "name": null,
                     "description": null
                   }
@@ -48027,6 +48329,11 @@
         "name": "War Fever",
         "description": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <#cc.vdown>+1</> when training a <#cc.kw>Specialist</> Operator's skill to Specialization Level <#cc.vup>3</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "Specter",
+      "appellation": "",
+      "description": "Attacks <#ba.kw>all blocked enemies</>"
     }
   },
   "lumen": {
@@ -48905,6 +49212,11 @@
         "name": "Nursing Specialist",
         "description": "When this Operator is assigned to be the Trainer in the Training Room, <#cc.kw>Medic</> Operators' Specialization training speed <#cc.vup>+30{'%'}</>; if training this skill to Specialization Level <#cc.vup>2</>, training speed will be further increased by <#cc.vup>+45{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "Hibiscus",
+      "appellation": "",
+      "description": "Restores the HP of allies"
     }
   },
   "czerny": {
@@ -49852,6 +50164,11 @@
         "name": "Dawnlight",
         "description": "When this Operator is assigned to a Power Plant, if there are no <?cc.tag.op><#cc.kw>Operation Platforms</></> in other <#cc.kw>Power Plants</>, <#cc.kw>Power Plant </><#cc.vup>+1</>(only affects facility quantity)"
       }
+    },
+    "originalAlterOperator": {
+      "name": "Greyy",
+      "appellation": "",
+      "description": "Deals <#ba.kw>AOE Arts damage</>"
     }
   },
   "dorothy": {
@@ -51177,6 +51494,11 @@
         "name": "Excessive Training",
         "description": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour is increased by <#cc.vdown>+1</> when training a <#cc.kw>Guard</> Operator's skill to Specialization Level <#cc.vup>3</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "Gavial",
+      "appellation": "",
+      "description": "Restores the HP of allies"
     }
   },
   "proviso": {
@@ -54032,6 +54354,11 @@
         "name": "Break the Shackles",
         "description": "When this Operator is assigned to be the Trainer in the Training Room, <#cc.kw>Specialist</> and <#cc.kw>Vanguard</> Operators' Specialization training speed <#cc.vup>+30{'%'}</>; if training a skill to Specialization Level <#cc.vup>2</>, training speed will be further increased by <#cc.vup>+50{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "Texas",
+      "appellation": "",
+      "description": "Blocks 2 enemies"
     }
   },
   "penance": {
@@ -54780,6 +55107,11 @@
         "name": "Leader",
         "description": "When this Operator is assigned to the Control Center, all Operators in Dormitories recover <#cc.vup>+0.05</> Morale per hour (strongest effect of the same type applies)"
       }
+    },
+    "originalAlterOperator": {
+      "name": "Reed",
+      "appellation": "",
+      "description": "Obtain 1 DP after this unit defeats an enemy; Refunds the original DP Cost when retreated"
     }
   },
   "jieyun": {
@@ -56262,6 +56594,11 @@
         "name": "Esoteric Negotiations",
         "description": "When this Operator is assigned together with other <?cc.tag.mh><#cc.kw>Monster Hunter Party</></> Operators to the Control Center, all Trading Posts' order efficiency <#cc.vup>+7{'%'}</> (Only the strongest effect of this type takes place)"
       }
+    },
+    "originalAlterOperator": {
+      "name": "Noir Corne",
+      "appellation": "",
+      "description": "Blocks 3 enemies"
     }
   },
   "kirin-r-yato": {
@@ -56510,6 +56847,11 @@
         "name": "Leading By Example",
         "description": "When this Operator is assigned together with other <?cc.tag.mh><#cc.kw>Monster Hunter Party</></> Operators to the Control Center, all Factories' productivity <#cc.vup>+2{'%'}</> (Only the strongest effect of this type takes place)"
       }
+    },
+    "originalAlterOperator": {
+      "name": "Yato",
+      "appellation": "",
+      "description": "Blocks 2 enemies"
     }
   },
   "u-official": {
@@ -58394,6 +58736,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "Silence",
+      "appellation": "",
+      "description": "Restores the HP of allies"
     }
   },
   "friston-3": {
@@ -59105,6 +59452,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "Executor",
+      "appellation": "",
+      "description": "Attacks <#ba.kw>all enemies</> within range, and deals 150{'%'} damage to enemies in the row directly in front of this unit."
     }
   },
   "santalla": {
@@ -60423,6 +60775,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "Swire",
+      "appellation": "",
+      "description": "Can attack enemies <#ba.kw>from range</>; When attacking enemies not blocked by self, increase ATK to 120{'%'}"
     }
   },
   "eyjafjalla-the-hvit-aska": {
@@ -60615,6 +60972,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "Eyjafjalla",
+      "appellation": "",
+      "description": "Deals <#ba.kw>Arts damage</>"
     }
   },
   "coldshot": {
@@ -61197,6 +61559,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "Jessica",
+      "appellation": "",
+      "description": "Attacks aerial enemies first"
     }
   },
   "verdant": {

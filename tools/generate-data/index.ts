@@ -35,45 +35,54 @@ async function getOperators(): Promise<Operator[]> {
   const characterTable: CharacterTable =
     globalThis.GAME_TABLES!.Operator[constants.ORIGINAL_LOCALE]
 
-  return Object.keys(characterTable)
-    .flatMap((id) => {
-      // Get original data
-      const data = characterTable[id]
+  const patchOperators: Operator[] = []
 
-      // Ignore certain data
-      if (
-        constants.NON_OPERATOR_CLASSES.includes(data.profession) ||
-        constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(id)
-      )
-        return []
+  const operators = Object.keys(characterTable).flatMap((id) => {
+    // Get original data
+    const data = characterTable[id]
 
-      const operator = new Operator(id, data)
-      operator.addTokenInformation(characterTable)
+    // Ignore certain data
+    if (
+      constants.NON_OPERATOR_CLASSES.includes(data.profession) ||
+      constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(id)
+    )
+      return []
 
-      // Add official locales
-      Object.entries(globalThis.GAME_TABLES!.Operator).forEach(
-        ([locale, table]) => {
-          if (locale === constants.ORIGINAL_LOCALE) return
-          operator.addLocale(<constants.GameLocale>locale, table)
-        }
-      )
+    const operator = new Operator(id, data)
 
-      // Add custom locales
-      Object.entries(translatedLocaleData).forEach(([locale, table]) =>
-        operator.addLocaleTL(<constants.TranslatedLocale>locale, table)
-      )
+    // Add official locales
+    Object.entries(globalThis.GAME_TABLES!.Operator).forEach(
+      ([locale, table]) => {
+        if (locale === constants.ORIGINAL_LOCALE) return
+        operator.addLocale(<constants.GameLocale>locale, table)
+      },
+    )
 
-      return operator
+    // Add custom locales
+    Object.entries(translatedLocaleData).forEach(([locale, table]) =>
+      operator.addLocaleTL(<constants.TranslatedLocale>locale, table),
+    )
+
+    operator.characterPatches?.forEach((patch) => {
+      if (!patchOperators.includes(patch)) patchOperators.push(patch)
     })
-    .sort((a, b) => {
-      const aTime = a.cnReleaseTime ?? 9999999999999
-      const bTime = b.cnReleaseTime ?? 9999999999999
-      return aTime - bTime
-    })
+
+    return operator
+  })
+
+  operators.forEach((operator) =>
+    operator.addAlterOperatorInformation(operators),
+  )
+
+  return [...operators, ...patchOperators].sort((a, b) => {
+    const aTime = a.cnReleaseTime ?? 9999999999999
+    const bTime = b.cnReleaseTime ?? 9999999999999
+    return aTime - bTime
+  })
 }
 
 function getLocaleStringNumberOfTranslations(
-  localeString: LocaleString
+  localeString: LocaleString,
 ): number {
   return constants.GAME_LOCALES.reduce((accumulator, current) => {
     if (localeString.getString(current)) accumulator++
@@ -103,7 +112,7 @@ async function generateTraitLocales(operators?: Operator[]) {
     }
     const newNumber = getLocaleStringNumberOfTranslations(localeString)
     const oldNumber = getLocaleStringNumberOfTranslations(
-      localeStrings[localeString.zh_CN]
+      localeStrings[localeString.zh_CN],
     )
     if (newNumber > oldNumber) localeStrings[localeString.zh_CN] = localeString
   }
@@ -126,10 +135,13 @@ async function generateTraitLocales(operators?: Operator[]) {
 
   localeStrings = Object.keys(localeStrings)
     .sort()
-    .reduce((accumulator, current) => {
-      accumulator[current] = localeStrings[current]
-      return accumulator
-    }, <Record<string, LocaleString>>{})
+    .reduce(
+      (accumulator, current) => {
+        accumulator[current] = localeStrings[current]
+        return accumulator
+      },
+      <Record<string, LocaleString>>{},
+    )
 
   return Promise.all(
     constants.GAME_LOCALES.flatMap((locale) => {
@@ -137,23 +149,26 @@ async function generateTraitLocales(operators?: Operator[]) {
       return fs.writeFile(
         `locales/${locale.substring(0, 2)}-TL/traits.json`,
         JSON.stringify(
-          Object.values(localeStrings).reduce((accumulator, current) => {
-            accumulator[current.zh_CN] =
-              current.getString(locale) ??
-              (<Record<string, string | null>>(
-                currentTranslationsByLang[locale]
-              ))[current.zh_CN] ??
-              null
-            return accumulator
-          }, <Record<string, string | null>>{}),
+          Object.values(localeStrings).reduce(
+            (accumulator, current) => {
+              accumulator[current.zh_CN] =
+                current.getString(locale) ??
+                (<Record<string, string | null>>(
+                  currentTranslationsByLang[locale]
+                ))[current.zh_CN] ??
+                null
+              return accumulator
+            },
+            <Record<string, string | null>>{},
+          ),
           null,
-          2
+          2,
         ),
         {
           encoding: "utf-8",
-        }
+        },
       )
-    })
+    }),
   )
 }
 
@@ -170,21 +185,21 @@ async function generateOperatorFiles(operators?: Operator[]) {
   ]
 
   await Promise.all(
-    requiredDirs.map((dir) => fs.mkdir(dir, { recursive: true }))
+    requiredDirs.map((dir) => fs.mkdir(dir, { recursive: true })),
   )
 
   const generateIndividualOperatorDataPromiseList = operators.map((operator) =>
     fs.writeFile(
       `data/operators/${operator.key}.json`,
       JSON.stringify(operator.toData(), null, 2),
-      { encoding: "utf-8" }
-    )
+      { encoding: "utf-8" },
+    ),
   )
 
   const generateOperatorsIndexDataPromise = fs.writeFile(
     "data/operators/index.json",
     JSON.stringify(indexFileObject, null, 2),
-    { encoding: "utf-8" }
+    { encoding: "utf-8" },
   )
 
   const generateOperatorsLocalesPromiseList = constants.OUTPUT_LOCALES.flatMap(
@@ -193,17 +208,17 @@ async function generateOperatorFiles(operators?: Operator[]) {
 
       ;(<Operator[]>operators).forEach(
         (operator) =>
-          (fullLocaleObj[operator.key] = operator.toLocaleData(locale))
+          (fullLocaleObj[operator.key] = operator.toLocaleData(locale)),
       )
 
       const generateFullLocalesPromise = fs.writeFile(
         `locales/${locale}/operators-data.json`,
         JSON.stringify(fullLocaleObj, null, 2),
-        { encoding: "utf-8" }
+        { encoding: "utf-8" },
       )
 
       const purgedLocaleObj: LocaleObject<string> = Object.entries(
-        fullLocaleObj
+        fullLocaleObj,
       ).reduce((accumulator: LocaleObject<string>, [key, value]) => {
         accumulator[key] = purgeLocaleObject(<LocaleObject>value)
         return accumulator
@@ -214,22 +229,22 @@ async function generateOperatorFiles(operators?: Operator[]) {
           accumulator[key] = { name: (<{ name: string }>value).name }
           return accumulator
         },
-        {}
+        {},
       )
 
       const generateIndexLocalePromise = fs.writeFile(
         `locales/${locale}/generated/_operators-index.json`,
         JSON.stringify(indexLocaleObj, null, 2),
-        { encoding: "utf-8" }
+        { encoding: "utf-8" },
       )
 
       const generateIndividualOperatorLocalePromiseList = Object.entries(
-        purgedLocaleObj
+        purgedLocaleObj,
       ).map(([key, value]) => {
         return fs.writeFile(
           `locales/${locale}/generated/_${key}.json`,
           JSON.stringify({ [key]: value }, null, 2),
-          { encoding: "utf-8" }
+          { encoding: "utf-8" },
         )
       })
 
@@ -238,7 +253,7 @@ async function generateOperatorFiles(operators?: Operator[]) {
         generateIndexLocalePromise,
         ...generateIndividualOperatorLocalePromiseList,
       ]
-    }
+    },
   )
 
   return Promise.all([
@@ -253,10 +268,10 @@ export async function generateDataFiles() {
   console.time("Generate data files")
   await Promise.all(
     constants.OUTPUT_LOCALES.map((locale) =>
-      fs.mkdir(`locales/${locale}`, { recursive: true })
-    )
+      fs.mkdir(`locales/${locale}`, { recursive: true }),
+    ),
   )
   return Promise.all([generateOperatorFiles()]).then(() =>
-    console.timeEnd("Generate data files")
+    console.timeEnd("Generate data files"),
   )
 }

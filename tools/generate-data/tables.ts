@@ -18,6 +18,14 @@ import { RangeTable, RangeTableSchema } from "./raw/range"
 import { SkillTable, SkillTableSchema } from "./raw/skill"
 import { SkinTable, SkinTableSchema } from "./raw/skin"
 import { UniEquipTable, UniEquipTableSchema } from "./raw/uni-equip"
+import {
+  CharacterPatchTable,
+  CharacterPatchTableSchema,
+} from "./raw/character-patch"
+import {
+  CharacterMetaTable,
+  CharacterMetaTableSchema,
+} from "./raw/character-meta"
 
 export const OPERATOR_TABLE_PATH = "gamedata/excel/character_table.json"
 export const MODULE_TABLE_PATH = "gamedata/excel/uniequip_table.json"
@@ -27,6 +35,8 @@ export const SKILL_TABLE_PATH = "gamedata/excel/skill_table.json"
 export const UNI_EQUIP_TABLE_PATH = "gamedata/excel/uniequip_table.json"
 export const BATTLE_EQUIP_TABLE_PATH = "gamedata/excel/battle_equip_table.json"
 export const BUILDING_DATA_TABLE_PATH = "gamedata/excel/building_data.json"
+export const OPERATOR_PATCH_TABLE_PATH = "gamedata/excel/char_patch_table.json"
+export const OPERATOR_META_TABLE_PATH = "gamedata/excel/char_meta_table.json"
 export const OPERATOR_RELEASE_DATA_PATH = "data/custom/operator-release.json"
 
 export type LocaleTableMap<Table> = Record<GameLocale, Table>
@@ -39,6 +49,8 @@ export type GameTableMap = {
   UniEquip: LocaleTableMap<UniEquipTable>
   BattleEquip: LocaleTableMap<BattleEquipTable>
   BuildingData: LocaleTableMap<BuildingDataTable>
+  OperatorPatch: LocaleTableMap<CharacterPatchTable>
+  OperatorMeta: LocaleTableMap<CharacterMetaTable>
 }
 
 export type TraitLocalesMap = Record<TranslatedLocale, Record<string, string>>
@@ -59,7 +71,7 @@ function getFilePath(locale: GameLocale, location: string): string {
   return path.join(
     process.env.GAME_DATA_ROOT_PATH!,
     locale.replace("-", "_"),
-    location
+    location,
   )
 }
 
@@ -71,7 +83,7 @@ function requireByReadFileSync(filepath: string, schema?: z.ZodTypeAny): any {
 
 async function requireByReadFileAsync(
   filepath: string,
-  schema?: z.ZodTypeAny
+  schema?: z.ZodTypeAny,
 ): Promise<any> {
   const json = await fsAsync
     .readFile(filepath, { encoding: "utf-8" })
@@ -82,30 +94,36 @@ async function requireByReadFileAsync(
 
 function requireAllLocaleTablesSync<T>(
   tablePath: string,
-  schema?: z.ZodTypeAny
+  schema?: z.ZodTypeAny,
 ): LocaleTableMap<T> {
-  const map = GAME_LOCALES.reduce((accumulator, locale) => {
-    const location = getFilePath(locale, tablePath)
-    accumulator[locale] = requireByReadFileSync(location, schema)
+  const map = GAME_LOCALES.reduce(
+    (accumulator, locale) => {
+      const location = getFilePath(locale, tablePath)
+      accumulator[locale] = requireByReadFileSync(location, schema)
 
-    return accumulator
-  }, <LocaleTableMap<T>>{})
+      return accumulator
+    },
+    <LocaleTableMap<T>>{},
+  )
   return map
 }
 
 async function requireAllLocaleTablesAsync<T>(
   tablePath: string,
-  schema?: z.ZodTypeAny
+  schema?: z.ZodTypeAny,
 ): Promise<LocaleTableMap<T>> {
   const promises: Promise<void>[] = []
-  const map = GAME_LOCALES.reduce((accumulator, locale) => {
-    const location = getFilePath(locale, tablePath)
-    const promise = requireByReadFileAsync(location, schema).then(
-      (val) => (accumulator[locale] = val)
-    )
-    promises.push(promise)
-    return accumulator
-  }, <LocaleTableMap<T>>{})
+  const map = GAME_LOCALES.reduce(
+    (accumulator, locale) => {
+      const location = getFilePath(locale, tablePath)
+      const promise = requireByReadFileAsync(location, schema).then(
+        (val) => (accumulator[locale] = val),
+      )
+      promises.push(promise)
+      return accumulator
+    },
+    <LocaleTableMap<T>>{},
+  )
 
   await Promise.all(Object.values(promises))
   return map
@@ -115,25 +133,33 @@ export function requireAllGameTablesSync(): GameTableMap {
   return {
     Operator: requireAllLocaleTablesSync(
       OPERATOR_TABLE_PATH,
-      CharacterTableSchema
+      CharacterTableSchema,
     ),
     Outfit: requireAllLocaleTablesSync(OUTFIT_TABLE_PATH, SkinTableSchema),
     Range: requireByReadFileSync(
       getFilePath(ORIGINAL_LOCALE, RANGE_TABLE_PATH),
-      RangeTableSchema
+      RangeTableSchema,
     ),
     Skill: requireAllLocaleTablesSync(SKILL_TABLE_PATH, SkillTableSchema),
     UniEquip: requireAllLocaleTablesSync(
       UNI_EQUIP_TABLE_PATH,
-      UniEquipTableSchema
+      UniEquipTableSchema,
     ),
     BattleEquip: requireAllLocaleTablesSync(
       BATTLE_EQUIP_TABLE_PATH,
-      BattleEquipTableSchema
+      BattleEquipTableSchema,
     ),
     BuildingData: requireAllLocaleTablesSync(
       BUILDING_DATA_TABLE_PATH,
-      BuildingDataTableSchema
+      BuildingDataTableSchema,
+    ),
+    OperatorPatch: requireAllLocaleTablesSync(
+      OPERATOR_PATCH_TABLE_PATH,
+      CharacterPatchTableSchema,
+    ),
+    OperatorMeta: requireAllLocaleTablesSync(
+      OPERATOR_META_TABLE_PATH,
+      CharacterMetaTableSchema,
     ),
   }
 }
@@ -142,33 +168,41 @@ export async function requireAllGameTablesAsync(): Promise<GameTableMap> {
   const map = {
     Operator: requireAllLocaleTablesAsync<CharacterTable>(
       OPERATOR_TABLE_PATH,
-      CharacterTableSchema
+      CharacterTableSchema,
     ),
     Outfit: requireAllLocaleTablesAsync<SkinTable>(
       OUTFIT_TABLE_PATH,
-      SkinTableSchema
+      SkinTableSchema,
     ),
     Range: <Promise<RangeTable>>(
       requireByReadFileAsync(
         getFilePath(ORIGINAL_LOCALE, RANGE_TABLE_PATH),
-        RangeTableSchema
+        RangeTableSchema,
       )
     ),
     Skill: requireAllLocaleTablesAsync<SkillTable>(
       SKILL_TABLE_PATH,
-      SkillTableSchema
+      SkillTableSchema,
     ),
     UniEquip: requireAllLocaleTablesAsync<UniEquipTable>(
       UNI_EQUIP_TABLE_PATH,
-      UniEquipTableSchema
+      UniEquipTableSchema,
     ),
     BattleEquip: requireAllLocaleTablesAsync<BattleEquipTable>(
       BATTLE_EQUIP_TABLE_PATH,
-      BattleEquipTableSchema
+      BattleEquipTableSchema,
     ),
     BuildingData: requireAllLocaleTablesAsync<BuildingDataTable>(
       BUILDING_DATA_TABLE_PATH,
-      BuildingDataTableSchema
+      BuildingDataTableSchema,
+    ),
+    OperatorPatch: requireAllLocaleTablesAsync<CharacterPatchTable>(
+      OPERATOR_PATCH_TABLE_PATH,
+      CharacterPatchTableSchema,
+    ),
+    OperatorMeta: requireAllLocaleTablesAsync<CharacterMetaTable>(
+      OPERATOR_META_TABLE_PATH,
+      CharacterMetaTableSchema,
     ),
   }
   await Promise.all(Object.values(map))
@@ -180,31 +214,36 @@ export async function requireAllGameTablesAsync(): Promise<GameTableMap> {
     UniEquip: await map.UniEquip,
     BattleEquip: await map.BattleEquip,
     BuildingData: await map.BuildingData,
+    OperatorPatch: await map.OperatorPatch,
+    OperatorMeta: await map.OperatorMeta,
   }
 }
 
 export function requireTraitLocalesSync(): TraitLocalesMap {
-  return <TraitLocalesMap>TRANSLATED_LOCALES.reduce((accumulator, current) => {
-    try {
-      accumulator[current] = requireByReadFileSync(
-        path.join("locales", current, "traits.json")
-      )
-    } catch {
-      accumulator[current] = {}
-    }
-    return accumulator
-  }, <Partial<TraitLocalesMap>>{})
+  return <TraitLocalesMap>TRANSLATED_LOCALES.reduce(
+    (accumulator, current) => {
+      try {
+        accumulator[current] = requireByReadFileSync(
+          path.join("locales", current, "traits.json"),
+        )
+      } catch {
+        accumulator[current] = {}
+      }
+      return accumulator
+    },
+    <Partial<TraitLocalesMap>>{},
+  )
 }
 
 export async function requireTraitLocalesAsync(): Promise<TraitLocalesMap> {
   const map = <Record<TranslatedLocale, Promise<any>>>TRANSLATED_LOCALES.reduce(
     (accumulator, current) => {
       accumulator[current] = requireByReadFileAsync(
-        path.join("locales", current, "traits.json")
+        path.join("locales", current, "traits.json"),
       )
       return accumulator
     },
-    <Partial<Record<TranslatedLocale, Promise<any>>>>{}
+    <Partial<Record<TranslatedLocale, Promise<any>>>>{},
   )
   await Promise.all(Object.values(map))
   return {

@@ -178,6 +178,13 @@
         "name": "标准化·α",
         "description": "进驻制造站时，生产力<#cc.vup>+15{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "kirin-r-yato": {
+        "name": "麒麟R夜刀",
+        "appellation": "Kirin R Yato",
+        "description": "再部署时间大幅度<#ba.kw>减少</>"
+      }
     }
   },
   "noir-corne": {
@@ -224,6 +231,13 @@
       "trade_ord_spd&limit<000>": {
         "name": "订单管理·α",
         "description": "进驻贸易站时，订单获取效率<#cc.vup>+10{'%'}</>，且订单上限<#cc.vup>+2</>"
+      }
+    },
+    "alterOperators": {
+      "rathalos-s-noir-corne": {
+        "name": "火龙S黑角",
+        "appellation": "Rathalos S Noir Corne",
+        "description": "不成为其他角色的治疗目标，每次攻击到敌人后回复自身<#ba.kw>{'{'}value{'}'}</>生命"
       }
     }
   },
@@ -944,6 +958,13 @@
         "name": "独处",
         "description": "进驻宿舍时，自身心情每小时恢复<#cc.vup>+0.7</>"
       }
+    },
+    "alterOperators": {
+      "kroos-the-keen-glint": {
+        "name": "寒芒克洛丝",
+        "appellation": "Kroos the Keen Glint",
+        "description": "优先攻击空中单位"
+      }
     }
   },
   "adnachiel": {
@@ -1116,6 +1137,13 @@
         "name": "源石工艺·β",
         "description": "进驻制造站时，<#cc.kw>源石</>类配方的生产力<#cc.vup>+35{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "lava-the-purgatory": {
+        "name": "炎狱炎熔",
+        "appellation": "Lava the Purgatory",
+        "description": "攻击造成<#ba.kw>群体法术伤害</>"
+      }
     }
   },
   "hibiscus": {
@@ -1197,6 +1225,13 @@
       "workshop_formula_probability<100>": {
         "name": "营养学",
         "description": "进驻加工站加工<#cc.kw>精英材料</>时，副产品的产出概率提升<#cc.vup>70{'%'}</>"
+      }
+    },
+    "alterOperators": {
+      "hibiscus-the-purifier": {
+        "name": "濯尘芙蓉",
+        "appellation": "Hibiscus the Purifier",
+        "description": "攻击造成法术伤害，攻击敌人时为攻击范围内一名友方干员治疗相当于50{'%'}伤害的生命值"
       }
     }
   },
@@ -2070,6 +2105,13 @@
       "meet_spd&team<030>": {
         "name": "联络员",
         "description": "进驻会客室时，线索搜集速度提升<#cc.vup>10{'%'}</>，且更容易获得<#cc.kw>黑钢国际</>线索（工作时长影响概率）"
+      }
+    },
+    "alterOperators": {
+      "jessica-the-liberated": {
+        "name": "涤火杰西卡",
+        "appellation": "Jessica the Liberated",
+        "description": "能够阻挡三个敌人，可以进行远程攻击"
       }
     }
   },
@@ -4734,6 +4776,13 @@
         "name": "医疗专精·α",
         "description": "进驻训练室协助位时，<#cc.kw>医疗</>干员的专精技能训练速度<#cc.vup>+30{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "gavial-the-invincible": {
+        "name": "百炼嘉维尔",
+        "appellation": "Gavial the Invincible",
+        "description": "同时攻击阻挡的<#ba.kw>所有敌人</>"
+      }
     }
   },
   "perfumer": {
@@ -6708,6 +6757,13 @@
         "name": "默契",
         "description": "当与<#cc.kw>能天使</>在同一个贸易站时，心情每小时消耗<#cc.vup>-0.3</>"
       }
+    },
+    "alterOperators": {
+      "texas-the-omertosa": {
+        "name": "缄默德克萨斯",
+        "appellation": "Texas the Omertosa",
+        "description": "再部署时间大幅度<#ba.kw>减少</>"
+      }
     }
   },
   "franka": {
@@ -7380,6 +7436,13 @@
         "name": "狂热",
         "description": "进驻宿舍时，自身心情每小时恢复<#cc.vup>+0.85</>"
       }
+    },
+    "alterOperators": {
+      "specter-the-unchained": {
+        "name": "归溟幽灵鲨",
+        "appellation": "Specter the Unchained",
+        "description": "受到致命伤时不撤退，切换成<<替身>>作战（替身阻挡数为0），持续20秒后自身再次替换<<替身>>"
+      }
     }
   },
   "blue-poison": {
@@ -7989,6 +8052,9 @@
     "name": "阿米娅",
     "appellation": "Amiya",
     "description": "攻击造成<#ba.kw>法术伤害</>",
+    "characterPatchDetailInfo": {
+      "infoParam": "术师"
+    },
     "potentials": {
       "2": {
         "description": "生命上限+200"
@@ -8220,6 +8286,16 @@
       "dorm_rec_all<010>": {
         "name": "小提琴独奏",
         "description": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<#cc.vup>+0.15</>（同种效果取最高）"
+      }
+    },
+    "characterPatches": {
+      "amiya-guard": {
+        "name": "阿米娅",
+        "appellation": "Amiya",
+        "description": "攻击造成<#ba.kw>法术伤害</>",
+        "characterPatchDetailInfo": {
+          "infoParam": "近卫"
+        }
       }
     }
   },
@@ -8966,6 +9042,13 @@
         "name": "莱茵科技·β",
         "description": "进驻制造站时，生产力<#cc.vup>+25{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "silence-the-paradigmatic": {
+        "name": "淬羽赫默",
+        "appellation": "Silence the Paradigmatic",
+        "description": "攻击造成<#ba.kw>法术伤害</>，技能开启后改为治疗友方单位（治疗量相当于75{'%'}攻击力）"
+      }
     }
   },
   "warfarin": {
@@ -9349,6 +9432,13 @@
       "dorm_rec_single&oneself<030>": {
         "name": "使徒",
         "description": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<#cc.vup>+0.5</>（同种效果取最高）；同时自身心情每小时恢复<#cc.vup>+0.25</>"
+      }
+    },
+    "alterOperators": {
+      "nearl-the-radiant-knight": {
+        "name": "耀骑士临光",
+        "appellation": "Nearl the Radiant Knight",
+        "description": "能够阻挡一个敌人"
       }
     }
   },
@@ -12658,6 +12748,13 @@
         "name": "天灾信使·β",
         "description": "进驻人力办公室时，人脉资源的联络速度<#cc.vup>+45{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "eyjafjalla-the-hvit-aska": {
+        "name": "纯烬艾雅法拉",
+        "appellation": "Eyjafjalla the Hvít Aska",
+        "description": "恢复友方单位生命，并回复相当于攻击力50{'%'}的<#ba.dt.element>元素损伤</>（可以回复未受伤友方单位的<#ba.dt.element>元素损伤</>）"
+      }
     }
   },
   "angelina": {
@@ -15602,6 +15699,13 @@
         "name": "悲歌",
         "description": "进驻宿舍时，自身心情每小时恢复<#cc.vup>+1</>"
       }
+    },
+    "alterOperators": {
+      "skadi-the-corrupting-heart": {
+        "name": "浊心斯卡蒂",
+        "appellation": "Skadi the Corrupting Heart",
+        "description": "不攻击，持续恢复范围内所有友军<#ba.kw>生命</>（每秒恢复相当于自身攻击力10{'%'}的生命），自身不受<?ba.inspire>鼓舞</>影响"
+      }
     }
   },
   "popukar": {
@@ -15969,6 +16073,13 @@
         "name": "能工巧匠",
         "description": "进驻加工站加工<#cc.kw>任意类材料</>时，副产品的产出概率提升<#cc.vup>50{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "greyy-the-lightningbearer": {
+        "name": "承曦格雷伊",
+        "appellation": "Greyy the Lightningbearer",
+        "description": "攻击对小范围的<#ba.kw>地面</>敌人造成<#ba.kw>两次</>物理伤害（第二次为余震，伤害降低至攻击力的一半）"
+      }
     }
   },
   "swire": {
@@ -16168,6 +16279,13 @@
       "train_spd<000>": {
         "name": "教官",
         "description": "进驻训练室协助位时，干员的专精技能训练速度<#cc.vup>+25{'%'}</>"
+      }
+    },
+    "alterOperators": {
+      "swire-the-elegant-wit": {
+        "name": "琳琅诗怀雅",
+        "appellation": "Swire the Elegant Wit",
+        "description": "再部署时间<#ba.kw>减少</>，撤退时不返还<#ba.kw>部署费用</>，在场时每3秒<#ba.kw>消耗</>3点部署费用（不足时自动撤退）"
       }
     }
   },
@@ -16459,6 +16577,13 @@
       "meet_spd&team<100>": {
         "name": "警司",
         "description": "进驻会客室时，线索搜集速度提升<#cc.vup>25{'%'}</>"
+      }
+    },
+    "alterOperators": {
+      "chen-the-holungday": {
+        "name": "假日威龙陈",
+        "appellation": "Ch'en the Holungday",
+        "description": "攻击范围内的<#ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至150{'%'}"
       }
     }
   },
@@ -18706,6 +18831,13 @@
         "name": "清理协议",
         "description": "进驻控制中枢时，控制中枢内所有干员的心情每小时恢复<#cc.vup>+0.05</>"
       }
+    },
+    "alterOperators": {
+      "executor-the-ex-foedere": {
+        "name": "圣约送葬人",
+        "appellation": "Executor the Ex Foedere",
+        "description": "无法被友方角色治疗，攻击造成<#ba.kw>群体伤害</>，每攻击到一个敌人回复自身<#ba.kw>50</>生命，最大生效数等于阻挡数"
+      }
     }
   },
   "magallan": {
@@ -20765,6 +20897,13 @@
       "control_mp_cost<004>": {
         "name": "替身",
         "description": "进驻控制中枢时，控制中枢内所有干员的心情每小时恢复<#cc.vup>+0.05</>"
+      }
+    },
+    "alterOperators": {
+      "reed-the-flame-shadow": {
+        "name": "焰影苇草",
+        "appellation": "Reed The Flame Shadow",
+        "description": "攻击造成法术伤害，攻击敌人时为攻击范围内一名友方干员治疗相当于50{'%'}伤害的生命值"
       }
     }
   },
@@ -33247,6 +33386,144 @@
       }
     }
   },
+  "amiya-guard": {
+    "name": "阿米娅",
+    "appellation": "Amiya",
+    "description": "攻击造成<#ba.kw>法术伤害</>",
+    "characterPatchDetailInfo": {
+      "infoParam": "近卫"
+    },
+    "potentials": {
+      "2": {
+        "description": "生命上限+200"
+      },
+      "3": {
+        "description": "部署费用-1"
+      },
+      "4": {
+        "description": "攻击力+28"
+      },
+      "5": {
+        "description": "部署费用-1"
+      },
+      "6": {
+        "description": "防御力+22"
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": "青色怒火",
+          "description": "在场时所有友方单位的攻击力和防御力+4{'%'}，技能开启期间效果加倍"
+        },
+        "E2-L1-P1": {
+          "name": "青色怒火",
+          "description": "在场时所有友方单位的攻击力和防御力+7{'%'}，技能开启期间效果加倍"
+        }
+      }
+    },
+    "skills": {
+      "skchr_amiya2_1": {
+        "1": {
+          "name": "影霄·奔夜",
+          "description": "攻击力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>，攻击变为二连击，获得<#ba.vup>{'{'}prob:0{'%'}{'}'}</>的法术闪避"
+        },
+        "2": {
+          "name": "影霄·奔夜",
+          "description": "攻击力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>，攻击变为二连击，获得<#ba.vup>{'{'}prob:0{'%'}{'}'}</>的法术闪避"
+        },
+        "3": {
+          "name": "影霄·奔夜",
+          "description": "攻击力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>，攻击变为二连击，获得<#ba.vup>{'{'}prob:0{'%'}{'}'}</>的法术闪避"
+        },
+        "4": {
+          "name": "影霄·奔夜",
+          "description": "攻击力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>，攻击变为二连击，获得<#ba.vup>{'{'}prob:0{'%'}{'}'}</>的法术闪避"
+        },
+        "5": {
+          "name": "影霄·奔夜",
+          "description": "攻击力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>，攻击变为二连击，获得<#ba.vup>{'{'}prob:0{'%'}{'}'}</>的法术闪避"
+        },
+        "6": {
+          "name": "影霄·奔夜",
+          "description": "攻击力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>，攻击变为二连击，获得<#ba.vup>{'{'}prob:0{'%'}{'}'}</>的法术闪避"
+        },
+        "7": {
+          "name": "影霄·奔夜",
+          "description": "攻击力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>，攻击变为二连击，获得<#ba.vup>{'{'}prob:0{'%'}{'}'}</>的法术闪避"
+        },
+        "8": {
+          "name": "影霄·奔夜",
+          "description": "攻击力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>，攻击变为二连击，获得<#ba.vup>{'{'}prob:0{'%'}{'}'}</>的法术闪避"
+        },
+        "9": {
+          "name": "影霄·奔夜",
+          "description": "攻击力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>，攻击变为二连击，获得<#ba.vup>{'{'}prob:0{'%'}{'}'}</>的法术闪避"
+        },
+        "10": {
+          "name": "影霄·奔夜",
+          "description": "攻击力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>，攻击变为二连击，获得<#ba.vup>{'{'}prob:0{'%'}{'}'}</>的法术闪避"
+        }
+      },
+      "skchr_amiya2_2": {
+        "1": {
+          "name": "影霄·绝影",
+          "description": "立即寻找前方生命值最低的目标，进行<#ba.vup>{'{'}times{'}'}</>次攻击力为<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>的法术斩击（最后一击系数加倍且为<#ba.vup>真实</>伤害）；斩击期间每击败一个敌人获得攻击力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>和法术抗性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（最多叠加<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>次），并且接下来的伤害类型变为<#ba.vup>真实</>；<#ba.rem>整场战斗中该技能只能释放一次</>"
+        },
+        "2": {
+          "name": "影霄·绝影",
+          "description": "立即寻找前方生命值最低的目标，进行<#ba.vup>{'{'}times{'}'}</>次攻击力为<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>的法术斩击（最后一击系数加倍且为<#ba.vup>真实</>伤害）；斩击期间每击败一个敌人获得攻击力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>和法术抗性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（最多叠加<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>次），并且接下来的伤害类型变为<#ba.vup>真实</>；<#ba.rem>整场战斗中该技能只能释放一次</>"
+        },
+        "3": {
+          "name": "影霄·绝影",
+          "description": "立即寻找前方生命值最低的目标，进行<#ba.vup>{'{'}times{'}'}</>次攻击力为<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>的法术斩击（最后一击系数加倍且为<#ba.vup>真实</>伤害）；斩击期间每击败一个敌人获得攻击力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>和法术抗性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（最多叠加<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>次），并且接下来的伤害类型变为<#ba.vup>真实</>；<#ba.rem>整场战斗中该技能只能释放一次</>"
+        },
+        "4": {
+          "name": "影霄·绝影",
+          "description": "立即寻找前方生命值最低的目标，进行<#ba.vup>{'{'}times{'}'}</>次攻击力为<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>的法术斩击（最后一击系数加倍且为<#ba.vup>真实</>伤害）；斩击期间每击败一个敌人获得攻击力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>和法术抗性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（最多叠加<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>次），并且接下来的伤害类型变为<#ba.vup>真实</>；<#ba.rem>整场战斗中该技能只能释放一次</>"
+        },
+        "5": {
+          "name": "影霄·绝影",
+          "description": "立即寻找前方生命值最低的目标，进行<#ba.vup>{'{'}times{'}'}</>次攻击力为<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>的法术斩击（最后一击系数加倍且为<#ba.vup>真实</>伤害）；斩击期间每击败一个敌人获得攻击力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>和法术抗性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（最多叠加<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>次），并且接下来的伤害类型变为<#ba.vup>真实</>；<#ba.rem>整场战斗中该技能只能释放一次</>"
+        },
+        "6": {
+          "name": "影霄·绝影",
+          "description": "立即寻找前方生命值最低的目标，进行<#ba.vup>{'{'}times{'}'}</>次攻击力为<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>的法术斩击（最后一击系数加倍且为<#ba.vup>真实</>伤害）；斩击期间每击败一个敌人获得攻击力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>和法术抗性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（最多叠加<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>次），并且接下来的伤害类型变为<#ba.vup>真实</>；<#ba.rem>整场战斗中该技能只能释放一次</>"
+        },
+        "7": {
+          "name": "影霄·绝影",
+          "description": "立即寻找前方生命值最低的目标，进行<#ba.vup>{'{'}times{'}'}</>次攻击力为<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>的法术斩击（最后一击系数加倍且为<#ba.vup>真实</>伤害）；斩击期间每击败一个敌人获得攻击力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>和法术抗性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（最多叠加<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>次），并且接下来的伤害类型变为<#ba.vup>真实</>；<#ba.rem>整场战斗中该技能只能释放一次</>"
+        },
+        "8": {
+          "name": "影霄·绝影",
+          "description": "立即寻找前方生命值最低的目标，进行<#ba.vup>{'{'}times{'}'}</>次攻击力为<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>的法术斩击（最后一击系数加倍且为<#ba.vup>真实</>伤害）；斩击期间每击败一个敌人获得攻击力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>和法术抗性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（最多叠加<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>次），并且接下来的伤害类型变为<#ba.vup>真实</>；<#ba.rem>整场战斗中该技能只能释放一次</>"
+        },
+        "9": {
+          "name": "影霄·绝影",
+          "description": "立即寻找前方生命值最低的目标，进行<#ba.vup>{'{'}times{'}'}</>次攻击力为<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>的法术斩击（最后一击系数加倍且为<#ba.vup>真实</>伤害）；斩击期间每击败一个敌人获得攻击力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>和法术抗性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（最多叠加<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>次），并且接下来的伤害类型变为<#ba.vup>真实</>；<#ba.rem>整场战斗中该技能只能释放一次</>"
+        },
+        "10": {
+          "name": "影霄·绝影",
+          "description": "立即寻找前方生命值最低的目标，进行<#ba.vup>{'{'}times{'}'}</>次攻击力为<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>的法术斩击（最后一击系数加倍且为<#ba.vup>真实</>伤害）；斩击期间每击败一个敌人获得攻击力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>和法术抗性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（最多叠加<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>次），并且接下来的伤害类型变为<#ba.vup>真实</>；<#ba.rem>整场战斗中该技能只能释放一次</>"
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "攻击造成<#ba.kw>法术伤害</>"
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {},
+    "originalCharacterPatch": {
+      "name": "阿米娅",
+      "appellation": "Amiya",
+      "description": "攻击造成<#ba.kw>法术伤害</>",
+      "characterPatchDetailInfo": {
+        "infoParam": "术师"
+      }
+    }
+  },
   "pinecone": {
     "name": "松果",
     "appellation": "Pinecone",
@@ -35187,6 +35464,11 @@
         "name": "热能充能·γ",
         "description": "进驻发电站时，无人机充能速度<#cc.vup>+20{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "炎熔",
+      "appellation": "Lava",
+      "description": "攻击造成<#ba.kw>群体法术伤害</>"
     }
   },
   "mr-nothing": {
@@ -38271,6 +38553,11 @@
         "name": "变异",
         "description": "进驻训练室协助<#cc.kw>辅助</>干员训练专精技能至<#cc.vup>3</>级时，心情每小时消耗<#cc.vdown>+1</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "斯卡蒂",
+      "appellation": "Skadi",
+      "description": "能够阻挡一个敌人"
     }
   },
   "gladiia": {
@@ -40588,6 +40875,11 @@
         "name": "工作狂",
         "description": "进驻训练室协助<#cc.kw>狙击</>干员训练专精技能至<#cc.vup>1</>级时，心情每小时消耗<#cc.vdown>+1</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "陈",
+      "appellation": "Ch'en",
+      "description": "普通攻击连续造成<#ba.kw>两次</>伤害"
     }
   },
   "mizuki": {
@@ -43516,6 +43808,11 @@
         "name": "崇高准则",
         "description": "进驻训练室协助位时，基建内（不包含副手）每名<?cc.tag.knight><#cc.kw>骑士</></>干员为当前干员的专精技能训练速度<#cc.vup>+5{'%'}</>（最多生效<#cc.kw>8</>名）"
       }
+    },
+    "originalAlterOperator": {
+      "name": "临光",
+      "appellation": "Nearl",
+      "description": "技能可以治疗友方单位"
     }
   },
   "kjera": {
@@ -44818,6 +45115,11 @@
         "name": "实战技巧：速射",
         "description": "进驻训练室协助位时，<#cc.kw>狙击</>干员的专精技能训练速度<#cc.vup>+30{'%'}</>，如果训练位干员分支为<#cc.kw>速射手</>，则训练速度额外<#cc.vup>+45{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "克洛丝",
+      "appellation": "Kroos",
+      "description": "优先攻击空中单位"
     }
   },
   "ling": {
@@ -47311,7 +47613,7 @@
                     "name": "军事要塞",
                     "description": "在场时所有重装干员的攻击力+25{'%'}"
                   },
-                  "5": {
+                  "3": {
                     "name": "军事要塞",
                     "description": "在场时所有重装干员的攻击力+28{'%'}<#ba.talpu>（+3{'%'}）</>"
                   }
@@ -47330,7 +47632,7 @@
                     "name": "军事要塞",
                     "description": "在场时所有重装干员的攻击力+28{'%'}"
                   },
-                  "5": {
+                  "3": {
                     "name": "军事要塞",
                     "description": "在场时所有重装干员的攻击力+31{'%'}<#ba.talpu>（+3{'%'}）</>"
                   }
@@ -48027,6 +48329,11 @@
         "name": "斗争渴望",
         "description": "进驻训练室协助<#cc.kw>特种</>干员训练专精技能至<#cc.vup>3</>级时，心情每小时消耗<#cc.vdown>+1</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "幽灵鲨",
+      "appellation": "Specter",
+      "description": "同时攻击阻挡的<#ba.kw>所有敌人</>"
     }
   },
   "lumen": {
@@ -48905,6 +49212,11 @@
         "name": "护理专精",
         "description": "进驻训练室协助位时，<#cc.kw>医疗</>干员的专精技能训练速度<#cc.vup>+30{'%'}</>，如果本次训练专精技能至<#cc.vup>2</>级，则训练速度额外<#cc.vup>+45{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "芙蓉",
+      "appellation": "Hibiscus",
+      "description": "恢复友方单位生命"
     }
   },
   "czerny": {
@@ -49852,6 +50164,11 @@
         "name": "晨曦",
         "description": "进驻发电站时，如果其他<#cc.kw>发电站</>内没有进驻<?cc.tag.op><#cc.kw>作业平台</></>，则<#cc.kw>发电站</>额外<#cc.vup>+1</>(仅影响设施数量)"
       }
+    },
+    "originalAlterOperator": {
+      "name": "格雷伊",
+      "appellation": "Greyy",
+      "description": "攻击造成<#ba.kw>群体法术伤害</>"
     }
   },
   "dorothy": {
@@ -51177,6 +51494,11 @@
         "name": "过量训练",
         "description": "进驻训练室协助<#cc.kw>近卫</>干员训练专精技能至<#cc.vup>3</>级时，心情每小时消耗<#cc.vdown>+1</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "嘉维尔",
+      "appellation": "Gavial",
+      "description": "恢复友方单位生命"
     }
   },
   "proviso": {
@@ -54032,6 +54354,11 @@
         "name": "破斩桎梏",
         "description": "进驻训练室协助位时，<#cc.kw>特种</>与<#cc.kw>先锋</>干员的专精技能训练速度<#cc.vup>+30{'%'}</>，如果本次训练专精技能至<#cc.vup>2</>级，则训练速度额外<#cc.vup>+50{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "德克萨斯",
+      "appellation": "Texas",
+      "description": "能够阻挡两个敌人"
     }
   },
   "penance": {
@@ -54780,6 +55107,11 @@
         "name": "领袖",
         "description": "进驻控制中枢时，所有宿舍内所有干员的心情每小时恢复<#cc.vup>+0.05</>（同种效果取最高）"
       }
+    },
+    "originalAlterOperator": {
+      "name": "苇草",
+      "appellation": "Reed",
+      "description": "击杀敌人后获得1点部署费用，撤退时返还初始部署费用"
     }
   },
   "jieyun": {
@@ -56262,6 +56594,11 @@
         "name": "秘传交涉术",
         "description": "当与<?cc.tag.mh><#cc.kw>怪物猎人小队</></>干员进驻控制中枢一起工作时，所有贸易站订单效率<#cc.vup>+7{'%'}</>（同种效果取最高）"
       }
+    },
+    "originalAlterOperator": {
+      "name": "黑角",
+      "appellation": "Noir Corne",
+      "description": "能够阻挡三个敌人"
     }
   },
   "kirin-r-yato": {
@@ -56510,6 +56847,11 @@
         "name": "以身作则",
         "description": "当与<?cc.tag.mh><#cc.kw>怪物猎人小队</></>干员进驻控制中枢一起工作时，所有制造站生产力<#cc.vup>+2{'%'}</>（同种效果取最高）"
       }
+    },
+    "originalAlterOperator": {
+      "name": "夜刀",
+      "appellation": "Yato",
+      "description": "能够阻挡两个敌人"
     }
   },
   "u-official": {
@@ -58394,6 +58736,11 @@
         "name": "莱茵科技·γ",
         "description": "进驻制造站时，生产力<#cc.vup>+30{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "赫默",
+      "appellation": "Silence",
+      "description": "恢复友方单位生命"
     }
   },
   "friston-3": {
@@ -59105,6 +59452,11 @@
         "name": "合理利用",
         "description": "进驻制造站时，生产<#cc.kw>作战记录</>类配方时，仓库容量上限<#cc.vup>+4</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "送葬人",
+      "appellation": "Executor",
+      "description": "攻击范围内的<#ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至150{'%'}"
     }
   },
   "santalla": {
@@ -60423,6 +60775,11 @@
         "name": "招商引资",
         "description": "进驻贸易站时，当前贸易站内干员提升的每个订单上限，提供<#cc.vup>4{'%'}</>订单获取效率"
       }
+    },
+    "originalAlterOperator": {
+      "name": "诗怀雅",
+      "appellation": "Swire",
+      "description": "可以攻击到<#ba.kw>较远敌人</>，攻击自身未阻挡的敌人时攻击力提升至120{'%'}"
     }
   },
   "eyjafjalla-the-hvit-aska": {
@@ -60615,6 +60972,11 @@
         "name": "火山温泉浴",
         "description": "进驻宿舍时，基建内（不包括副手）每名<#cc.kw>行医</>干员为该宿舍内所有干员心情每小时恢复速度<#cc.vup>+6{'%'}</>（最多生效<#cc.kw>4</>名）"
       }
+    },
+    "originalAlterOperator": {
+      "name": "艾雅法拉",
+      "appellation": "Eyjafjalla",
+      "description": "攻击造成<#ba.kw>法术伤害</>"
     }
   },
   "coldshot": {
@@ -61197,6 +61559,11 @@
         "name": "老友相聚",
         "description": "进驻控制中枢时，自身心情每小时消耗<#cc.vdown>+0.5</>；每个进驻在制造站的<?cc.g.bs><#cc.kw>黑钢国际</></>干员，生产力<#cc.vup>+5{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "杰西卡",
+      "appellation": "Jessica",
+      "description": "优先攻击空中单位"
     }
   },
   "verdant": {

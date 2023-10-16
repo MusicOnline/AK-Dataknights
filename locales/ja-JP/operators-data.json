@@ -178,6 +178,13 @@
         "name": "標準化α",
         "description": "製造所配置時、製造効率<#cc.vup>+15{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "kirin-r-yato": {
+        "name": "キリンRヤトウ",
+        "appellation": "Kirin R Yato",
+        "description": "再配置までの時間が極めて<#ba.kw>短い</>"
+      }
     }
   },
   "noir-corne": {
@@ -224,6 +231,13 @@
       "trade_ord_spd&limit<000>": {
         "name": "注文管理α",
         "description": "貿易所配置時、受注効率<#cc.vup>+10{'%'}</>、注文上限<#cc.vup>+2</>"
+      }
+    },
+    "alterOperators": {
+      "rathalos-s-noir-corne": {
+        "name": "レウスSノイルホーン",
+        "appellation": "Rathalos S Noir Corne",
+        "description": "味方の治療対象にならない\n敵を攻撃する度自身のHPを<#ba.kw>{'{'}value{'}'}</>回復"
       }
     }
   },
@@ -944,6 +958,13 @@
         "name": "一人きり",
         "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.7</>"
       }
+    },
+    "alterOperators": {
+      "kroos-the-keen-glint": {
+        "name": "寒芒クルース",
+        "appellation": "Kroos the Keen Glint",
+        "description": "飛行ユニットを優先して攻撃"
+      }
     }
   },
   "adnachiel": {
@@ -1116,6 +1137,13 @@
         "name": "源石工芸β",
         "description": "製造所配置時、<#cc.kw>源石</>製造の製造効率<#cc.vup>+35{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "lava-the-purgatory": {
+        "name": "炎獄ラヴァ",
+        "appellation": "Lava the Purgatory",
+        "description": "敵に<#ba.kw>範囲術ダメージ</>を与える"
+      }
     }
   },
   "hibiscus": {
@@ -1197,6 +1225,13 @@
       "workshop_formula_probability<100>": {
         "name": "栄養学",
         "description": "加工所で<#cc.kw>昇進素材</>を加工時、副産物の入手確率<#cc.vup>+70{'%'}</>"
+      }
+    },
+    "alterOperators": {
+      "hibiscus-the-purifier": {
+        "name": "濯塵ハイビスカス",
+        "appellation": "Hibiscus the Purifier",
+        "description": "術ダメージを与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの50{'%'}回復"
       }
     }
   },
@@ -2070,6 +2105,13 @@
       "meet_spd&team<030>": {
         "name": "連絡員",
         "description": "応接室配置時、手がかり捜索速度<#cc.vup>+10{'%'}</>、<#cc.kw>BSW</>の手がかりを入手しやすい（勤務時間が確率に影響する）"
+      }
+    },
+    "alterOperators": {
+      "jessica-the-liberated": {
+        "name": null,
+        "appellation": null,
+        "description": null
       }
     }
   },
@@ -4734,6 +4776,13 @@
         "name": "医療エキスパートα",
         "description": "訓練室で協力者として配置時、<#cc.kw>医療</>の訓練速度<#cc.vup>+30{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "gavial-the-invincible": {
+        "name": "百錬ガヴィル",
+        "appellation": "Gavial the Invincible",
+        "description": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃"
+      }
     }
   },
   "perfumer": {
@@ -6708,6 +6757,13 @@
         "name": "チームワーク",
         "description": "<#cc.kw>エクシア</>と同じ貿易所に配置時、1時間ごとの体力消費量<#cc.vup>-0.3</>"
       }
+    },
+    "alterOperators": {
+      "texas-the-omertosa": {
+        "name": "血掟テキサス",
+        "appellation": "Texas the Omertosa",
+        "description": "再配置までの時間が極めて<#ba.kw>短い</>"
+      }
     }
   },
   "franka": {
@@ -7380,6 +7436,13 @@
         "name": "狂熱",
         "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+0.85</>"
       }
+    },
+    "alterOperators": {
+      "specter-the-unchained": {
+        "name": "帰溟スペクター",
+        "appellation": "Specter the Unchained",
+        "description": "致命的なダメージを受けても撤退せず、<<身替り>>と入れ替わり戦闘を続行する（身替りのブロック数は0）。20秒後<<身替り>>から再び自身に入れ替わる"
+      }
     }
   },
   "blue-poison": {
@@ -7989,6 +8052,9 @@
     "name": "アーミヤ",
     "appellation": "Amiya",
     "description": "敵に<#ba.kw>術ダメージ</>を与える",
+    "characterPatchDetailInfo": {
+      "infoParam": "術師"
+    },
     "potentials": {
       "2": {
         "description": "最大HP+200"
@@ -8220,6 +8286,16 @@
       "dorm_rec_all<010>": {
         "name": "バイオリン独奏",
         "description": "配置宿舎内、全員の1時間ごとの体力回復量<#cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      }
+    },
+    "characterPatches": {
+      "amiya-guard": {
+        "name": "アーミヤ",
+        "appellation": "Amiya",
+        "description": "敵に<#ba.kw>術ダメージ</>を与える",
+        "characterPatchDetailInfo": {
+          "infoParam": "前衛"
+        }
       }
     }
   },
@@ -8966,6 +9042,13 @@
         "name": "ラインテクβ",
         "description": "製造所配置時、製造効率<#cc.vup>+25{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "silence-the-paradigmatic": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "warfarin": {
@@ -9349,6 +9432,13 @@
       "dorm_rec_single&oneself<030>": {
         "name": "使徒",
         "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<#cc.vup>+0.5</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<#cc.vup>+0.25</>"
+      }
+    },
+    "alterOperators": {
+      "nearl-the-radiant-knight": {
+        "name": "耀騎士ニアール",
+        "appellation": "Nearl the Radiant Knight",
+        "description": "敵を1体までブロック"
       }
     }
   },
@@ -12658,6 +12748,13 @@
         "name": "天災トランスポーターβ",
         "description": "事務室配置時、事務連絡速度<#cc.vup>+45{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "eyjafjalla-the-hvit-aska": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "angelina": {
@@ -15602,6 +15699,13 @@
         "name": "悲歌",
         "description": "宿舎休養時、自身の1時間ごとの体力回復量<#cc.vup>+1</>"
       }
+    },
+    "alterOperators": {
+      "skadi-the-corrupting-heart": {
+        "name": "濁心スカジ",
+        "appellation": "Skadi the Corrupting Heart",
+        "description": "攻撃しない\n攻撃範囲内の味方全員の<#ba.kw>HP</>を継続回復(1秒ごとに攻撃力の10{'%'}回復)\n自身は<?ba.inspire>鼓舞</>状態の効果を受けない"
+      }
     }
   },
   "popukar": {
@@ -15969,6 +16073,13 @@
         "name": "能工巧匠",
         "description": "加工所で<#cc.kw>任意の素材</>を加工時、副産物の入手確率<#cc.vup>+50{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "greyy-the-lightningbearer": {
+        "name": "承曦グレイ",
+        "appellation": "Greyy the Lightningbearer",
+        "description": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>2回</>の範囲物理ダメージを与える（2回目は余震、攻撃力の半分でダメージを計算する）"
+      }
     }
   },
   "swire": {
@@ -16168,6 +16279,13 @@
       "train_spd<000>": {
         "name": "教官",
         "description": "訓練室で協力者として配置時、訓練速度<#cc.vup>+25{'%'}</>"
+      }
+    },
+    "alterOperators": {
+      "swire-the-elegant-wit": {
+        "name": null,
+        "appellation": null,
+        "description": null
       }
     }
   },
@@ -16459,6 +16577,13 @@
       "meet_spd&team<100>": {
         "name": "警視",
         "description": "応接室配置時、手がかり捜索速度<#cc.vup>+25{'%'}</>"
+      }
+    },
+    "alterOperators": {
+      "chen-the-holungday": {
+        "name": "遊龍チェン",
+        "appellation": "Ch'en the Holungday",
+        "description": "攻撃範囲内の<#ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が150{'%'}まで上昇"
       }
     }
   },
@@ -18706,6 +18831,13 @@
         "name": "執行協定",
         "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
       }
+    },
+    "alterOperators": {
+      "executor-the-ex-foedere": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "magallan": {
@@ -20765,6 +20897,13 @@
       "control_mp_cost<004>": {
         "name": "影武者",
         "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<#cc.vup>+0.05</>回復"
+      }
+    },
+    "alterOperators": {
+      "reed-the-flame-shadow": {
+        "name": "焔影リード",
+        "appellation": "Reed The Flame Shadow",
+        "description": "術ダメージを与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの50{'%'}回復"
       }
     }
   },
@@ -33247,6 +33386,144 @@
       }
     }
   },
+  "amiya-guard": {
+    "name": "アーミヤ",
+    "appellation": "Amiya",
+    "description": "敵に<#ba.kw>術ダメージ</>を与える",
+    "characterPatchDetailInfo": {
+      "infoParam": "前衛"
+    },
+    "potentials": {
+      "2": {
+        "description": "最大HP+200"
+      },
+      "3": {
+        "description": "配置コスト-1"
+      },
+      "4": {
+        "description": "攻撃力+28"
+      },
+      "5": {
+        "description": "配置コスト-1"
+      },
+      "6": {
+        "description": "防御力+22"
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": "蒼き怒火",
+          "description": "配置中、味方全員の攻撃力と防御力+4％、スキル発動中素質の効果倍増"
+        },
+        "E2-L1-P1": {
+          "name": "蒼き怒火",
+          "description": "配置中、味方全員の攻撃力と防御力+7％、スキル発動中素質の効果倍増"
+        }
+      }
+    },
+    "skills": {
+      "skchr_amiya2_1": {
+        "1": {
+          "name": "影霄・奔夜",
+          "description": "攻撃力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>、通常攻撃が2回攻撃になり、術回避<#ba.vup>+{'{'}prob:0{'%'}{'}'}</>"
+        },
+        "2": {
+          "name": "影霄・奔夜",
+          "description": "攻撃力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>、通常攻撃が2回攻撃になり、術回避<#ba.vup>+{'{'}prob:0{'%'}{'}'}</>"
+        },
+        "3": {
+          "name": "影霄・奔夜",
+          "description": "攻撃力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>、通常攻撃が2回攻撃になり、術回避<#ba.vup>+{'{'}prob:0{'%'}{'}'}</>"
+        },
+        "4": {
+          "name": "影霄・奔夜",
+          "description": "攻撃力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>、通常攻撃が2回攻撃になり、術回避<#ba.vup>+{'{'}prob:0{'%'}{'}'}</>"
+        },
+        "5": {
+          "name": "影霄・奔夜",
+          "description": "攻撃力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>、通常攻撃が2回攻撃になり、術回避<#ba.vup>+{'{'}prob:0{'%'}{'}'}</>"
+        },
+        "6": {
+          "name": "影霄・奔夜",
+          "description": "攻撃力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>、通常攻撃が2回攻撃になり、術回避<#ba.vup>+{'{'}prob:0{'%'}{'}'}</>"
+        },
+        "7": {
+          "name": "影霄・奔夜",
+          "description": "攻撃力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>、通常攻撃が2回攻撃になり、術回避<#ba.vup>+{'{'}prob:0{'%'}{'}'}</>"
+        },
+        "8": {
+          "name": "影霄・奔夜",
+          "description": "攻撃力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>、通常攻撃が2回攻撃になり、術回避<#ba.vup>+{'{'}prob:0{'%'}{'}'}</>"
+        },
+        "9": {
+          "name": "影霄・奔夜",
+          "description": "攻撃力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>、通常攻撃が2回攻撃になり、術回避<#ba.vup>+{'{'}prob:0{'%'}{'}'}</>"
+        },
+        "10": {
+          "name": "影霄・奔夜",
+          "description": "攻撃力<#ba.vup>+{'{'}atk:0{'%'}{'}'}</>、通常攻撃が2回攻撃になり、術回避<#ba.vup>+{'{'}prob:0{'%'}{'}'}</>"
+        }
+      },
+      "skchr_amiya2_2": {
+        "1": {
+          "name": "影霄・絶影",
+          "description": "一定範囲内のHPが最も低い敵に攻撃力の<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>の術ダメージを<#ba.vup>{'{'}times{'}'}</>回与える（最後の一撃はダメージ計算係数が倍増し、<#ba.vup>確定</>ダメージになる）。連撃中で撃破した敵１体につき、攻撃力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>、術耐性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（上限<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>回まで）。連撃終了後、スキル効果時間内の通常攻撃が<#ba.vup>確定</>ダメージを与えるようになる\n<#ba.rem>1回の作戦につき発動上限1回</>"
+        },
+        "2": {
+          "name": "影霄・絶影",
+          "description": "一定範囲内のHPが最も低い敵に攻撃力の<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>の術ダメージを<#ba.vup>{'{'}times{'}'}</>回与える（最後の一撃はダメージ計算係数が倍増し、<#ba.vup>確定</>ダメージになる）。連撃中で撃破した敵１体につき、攻撃力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>、術耐性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（上限<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>回まで）。連撃終了後、スキル効果時間内の通常攻撃が<#ba.vup>確定</>ダメージを与えるようになる\n<#ba.rem>1回の作戦につき発動上限1回</>"
+        },
+        "3": {
+          "name": "影霄・絶影",
+          "description": "一定範囲内のHPが最も低い敵に攻撃力の<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>の術ダメージを<#ba.vup>{'{'}times{'}'}</>回与える（最後の一撃はダメージ計算係数が倍増し、<#ba.vup>確定</>ダメージになる）。連撃中で撃破した敵１体につき、攻撃力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>、術耐性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（上限<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>回まで）。連撃終了後、スキル効果時間内の通常攻撃が<#ba.vup>確定</>ダメージを与えるようになる\n<#ba.rem>1回の作戦につき発動上限1回</>"
+        },
+        "4": {
+          "name": "影霄・絶影",
+          "description": "一定範囲内のHPが最も低い敵に攻撃力の<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>の術ダメージを<#ba.vup>{'{'}times{'}'}</>回与える（最後の一撃はダメージ計算係数が倍増し、<#ba.vup>確定</>ダメージになる）。連撃中で撃破した敵１体につき、攻撃力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>、術耐性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（上限<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>回まで）。連撃終了後、スキル効果時間内の通常攻撃が<#ba.vup>確定</>ダメージを与えるようになる\n<#ba.rem>1回の作戦につき発動上限1回</>"
+        },
+        "5": {
+          "name": "影霄・絶影",
+          "description": "一定範囲内のHPが最も低い敵に攻撃力の<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>の術ダメージを<#ba.vup>{'{'}times{'}'}</>回与える（最後の一撃はダメージ計算係数が倍増し、<#ba.vup>確定</>ダメージになる）。連撃中で撃破した敵１体につき、攻撃力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>、術耐性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（上限<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>回まで）。連撃終了後、スキル効果時間内の通常攻撃が<#ba.vup>確定</>ダメージを与えるようになる\n<#ba.rem>1回の作戦につき発動上限1回</>"
+        },
+        "6": {
+          "name": "影霄・絶影",
+          "description": "一定範囲内のHPが最も低い敵に攻撃力の<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>の術ダメージを<#ba.vup>{'{'}times{'}'}</>回与える（最後の一撃はダメージ計算係数が倍増し、<#ba.vup>確定</>ダメージになる）。連撃中で撃破した敵１体につき、攻撃力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>、術耐性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（上限<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>回まで）。連撃終了後、スキル効果時間内の通常攻撃が<#ba.vup>確定</>ダメージを与えるようになる\n<#ba.rem>1回の作戦につき発動上限1回</>"
+        },
+        "7": {
+          "name": "影霄・絶影",
+          "description": "一定範囲内のHPが最も低い敵に攻撃力の<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>の術ダメージを<#ba.vup>{'{'}times{'}'}</>回与える（最後の一撃はダメージ計算係数が倍増し、<#ba.vup>確定</>ダメージになる）。連撃中で撃破した敵１体につき、攻撃力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>、術耐性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（上限<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>回まで）。連撃終了後、スキル効果時間内の通常攻撃が<#ba.vup>確定</>ダメージを与えるようになる\n<#ba.rem>1回の作戦につき発動上限1回</>"
+        },
+        "8": {
+          "name": "影霄・絶影",
+          "description": "一定範囲内のHPが最も低い敵に攻撃力の<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>の術ダメージを<#ba.vup>{'{'}times{'}'}</>回与える（最後の一撃はダメージ計算係数が倍増し、<#ba.vup>確定</>ダメージになる）。連撃中で撃破した敵１体につき、攻撃力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>、術耐性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（上限<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>回まで）。連撃終了後、スキル効果時間内の通常攻撃が<#ba.vup>確定</>ダメージを与えるようになる\n<#ba.rem>1回の作戦につき発動上限1回</>"
+        },
+        "9": {
+          "name": "影霄・絶影",
+          "description": "一定範囲内のHPが最も低い敵に攻撃力の<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>の術ダメージを<#ba.vup>{'{'}times{'}'}</>回与える（最後の一撃はダメージ計算係数が倍増し、<#ba.vup>確定</>ダメージになる）。連撃中で撃破した敵１体につき、攻撃力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>、術耐性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（上限<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>回まで）。連撃終了後、スキル効果時間内の通常攻撃が<#ba.vup>確定</>ダメージを与えるようになる\n<#ba.rem>1回の作戦につき発動上限1回</>"
+        },
+        "10": {
+          "name": "影霄・絶影",
+          "description": "一定範囲内のHPが最も低い敵に攻撃力の<#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>の術ダメージを<#ba.vup>{'{'}times{'}'}</>回与える（最後の一撃はダメージ計算係数が倍増し、<#ba.vup>確定</>ダメージになる）。連撃中で撃破した敵１体につき、攻撃力<#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</>、術耐性<#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</>（上限<#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>回まで）。連撃終了後、スキル効果時間内の通常攻撃が<#ba.vup>確定</>ダメージを与えるようになる\n<#ba.rem>1回の作戦につき発動上限1回</>"
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "敵に<#ba.kw>術ダメージ</>を与える"
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {},
+    "originalCharacterPatch": {
+      "name": "アーミヤ",
+      "appellation": "Amiya",
+      "description": "敵に<#ba.kw>術ダメージ</>を与える",
+      "characterPatchDetailInfo": {
+        "infoParam": "術師"
+      }
+    }
+  },
   "pinecone": {
     "name": "パインコーン",
     "appellation": "Pinecone",
@@ -35187,6 +35464,11 @@
         "name": "火力発電γ",
         "description": "発電所配置時、ドローンの回復速度<#cc.vup>+20{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "ラヴァ",
+      "appellation": "Lava",
+      "description": "敵に<#ba.kw>範囲術ダメージ</>を与える"
     }
   },
   "mr-nothing": {
@@ -38271,6 +38553,11 @@
         "name": "変異",
         "description": "訓練室で<#cc.kw>補助</>の特化ランク<#cc.vup>3</>への訓練の協力者として配置時、体力消費が1時間ごと<#cc.vdown>+1</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "スカジ",
+      "appellation": "Skadi",
+      "description": "敵を1体までブロック"
     }
   },
   "gladiia": {
@@ -40588,6 +40875,11 @@
         "name": "仕事中毒",
         "description": "訓練室で<#cc.kw>狙撃</>の特化ランク<#cc.vup>1</>への訓練の協力者として配置時、体力消費が1時間ごと<#cc.vdown>+1</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "チェン",
+      "appellation": "Ch'en",
+      "description": "通常攻撃時、1回の攻撃で<#ba.kw>2回</>ダメージを与える"
     }
   },
   "mizuki": {
@@ -43516,6 +43808,11 @@
         "name": "グランド・オーダー",
         "description": "訓練室で協力者として配置時、基地の<?cc.tag.knight><#cc.kw>騎士</></>オペレーター1人につき、訓練速度<#cc.vup>+5{'%'}</>（最大<#cc.kw>8</>人まで）"
       }
+    },
+    "originalAlterOperator": {
+      "name": "ニアール",
+      "appellation": "Nearl",
+      "description": "HP回復スキルを所持"
     }
   },
   "kjera": {
@@ -44818,6 +45115,11 @@
         "name": "実戦技術：速射手",
         "description": "訓練室で協力者として配置時、<#cc.kw>狙撃</>の訓練速度<#cc.vup>+30{'%'}</>。訓練者の職分が<#cc.kw>速射手</>であるとき、訓練速度がさらに<#cc.vup>+45{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "クルース",
+      "appellation": "Kroos",
+      "description": "飛行ユニットを優先して攻撃"
     }
   },
   "ling": {
@@ -47311,7 +47613,7 @@
                     "name": null,
                     "description": null
                   },
-                  "5": {
+                  "3": {
                     "name": null,
                     "description": null
                   }
@@ -47330,7 +47632,7 @@
                     "name": null,
                     "description": null
                   },
-                  "5": {
+                  "3": {
                     "name": null,
                     "description": null
                   }
@@ -48027,6 +48329,11 @@
         "name": "闘争への渇望",
         "description": "訓練室で<#cc.kw>特殊</>の特化ランク<#cc.vup>3</>への訓練の協力者として配置時、体力消費が1時間ごと<#cc.vdown>+1</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "スペクター",
+      "appellation": "Specter",
+      "description": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃"
     }
   },
   "lumen": {
@@ -48905,6 +49212,11 @@
         "name": "健康管理",
         "description": "訓練室で協力者として配置時、<#cc.kw>医療</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>2</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+45{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "ハイビスカス",
+      "appellation": "Hibiscus",
+      "description": "味方のHPを回復"
     }
   },
   "czerny": {
@@ -49852,6 +50164,11 @@
         "name": "曙光",
         "description": "発電所配置時、他の<#cc.kw>発電所</>に<?cc.tag.op><#cc.kw>作業用プラットフォーム </></>が配置されていない場合、<#cc.kw>発電所</>の施設数<#cc.vup>+1</>（施設の数以外に影響なし）"
       }
+    },
+    "originalAlterOperator": {
+      "name": "グレイ",
+      "appellation": "Greyy",
+      "description": "敵に<#ba.kw>範囲術ダメージ</>を与える"
     }
   },
   "dorothy": {
@@ -51177,6 +51494,11 @@
         "name": "オーバートレーニング",
         "description": "訓練室で<#cc.kw>前衛</>の特化ランク<#cc.vup>3</>への訓練の協力者として配置時、体力消費が1時間ごと<#cc.vdown>+1</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "ガヴィル",
+      "appellation": "Gavial",
+      "description": "味方のHPを回復"
     }
   },
   "proviso": {
@@ -54032,6 +54354,11 @@
         "name": "道を拓く刃",
         "description": "訓練室で協力者として配置する際、<#cc.kw>特殊</>と<#cc.kw>先鋒</>の訓練速度<#cc.vup>+30{'%'}</>。特化ランク<#cc.vup>2</>への訓練をサポートする場合、訓練速度がさらに<#cc.vup>+50{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "テキサス",
+      "appellation": "Texas",
+      "description": "敵を2体までブロック"
     }
   },
   "penance": {
@@ -54780,6 +55107,11 @@
         "name": "カリスマ",
         "description": "制御中枢配置時、全ての宿舎内のオペレーターの1時間ごとの体力回復量<#cc.vup>+0.05</>（同種の効果は高いほうのみ適応）"
       }
+    },
+    "originalAlterOperator": {
+      "name": "リード",
+      "appellation": "Reed",
+      "description": "敵を倒す度所持コスト+1\n撤退時に初期配置時のコストを返却"
     }
   },
   "jieyun": {
@@ -56262,6 +56594,11 @@
         "name": "秘伝交渉術",
         "description": "<?cc.tag.mh><#cc.kw>アイルーと愉快な仲間たち</></>所属オペレーターと共に制御中枢に配置時、全貿易所の受注効率<#cc.vup>+7{'%'}</>（同種の効果は高いほうのみ適応）"
       }
+    },
+    "originalAlterOperator": {
+      "name": "ノイルホーン",
+      "appellation": "Noir Corne",
+      "description": "敵を3体までブロック"
     }
   },
   "kirin-r-yato": {
@@ -56510,6 +56847,11 @@
         "name": "率先垂範",
         "description": "<?cc.tag.mh><#cc.kw>アイルーと愉快な仲間たち</></>所属オペレーターと共に制御中枢に配置時、全製造所の製造効率<#cc.vup>+2{'%'}</>（同種の効果は高いほうのみ適応）"
       }
+    },
+    "originalAlterOperator": {
+      "name": "ヤトウ",
+      "appellation": "Yato",
+      "description": "敵を2体までブロック"
     }
   },
   "u-official": {
@@ -58394,6 +58736,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "サイレンス",
+      "appellation": "Silence",
+      "description": "味方のHPを回復"
     }
   },
   "friston-3": {
@@ -59105,6 +59452,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "イグゼキュター",
+      "appellation": "Executor",
+      "description": "攻撃範囲内の<#ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が150{'%'}まで上昇"
     }
   },
   "santalla": {
@@ -60423,6 +60775,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "スワイヤー",
+      "appellation": "Swire",
+      "description": "攻撃距離が<#ba.kw>やや長い</>、自身がブロックしていない敵を攻撃時、攻撃力が120％まで上昇"
     }
   },
   "eyjafjalla-the-hvit-aska": {
@@ -60615,6 +60972,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "エイヤフィヤトラ",
+      "appellation": "Eyjafjalla",
+      "description": "敵に<#ba.kw>術ダメージ</>を与える"
     }
   },
   "coldshot": {
@@ -61197,6 +61559,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "ジェシカ",
+      "appellation": "Jessica",
+      "description": "飛行ユニットを優先して攻撃"
     }
   },
   "verdant": {

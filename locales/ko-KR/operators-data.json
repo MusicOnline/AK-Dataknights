@@ -178,6 +178,13 @@
         "name": "표준화 α",
         "description": "제조소에 배치 시, 생산력 <#cc.vup>+15{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "kirin-r-yato": {
+        "name": "키린R 야토",
+        "appellation": "Kirin R Yato",
+        "description": "재배치 시간 대폭 <#ba.kw>감소</>"
+      }
     }
   },
   "noir-corne": {
@@ -224,6 +231,13 @@
       "trade_ord_spd&limit<000>": {
         "name": "오더 관리 α",
         "description": "무역소에 배치 시, 오더 수주 효율 <#cc.vup>+10{'%'}</>, 오더 상한 <#cc.vup>+2</>"
+      }
+    },
+    "alterOperators": {
+      "rathalos-s-noir-corne": {
+        "name": "레우스S 느와르 코르네",
+        "appellation": "Rathalos S Noir Corne",
+        "description": "치료 대상으로 판정되지 않으며, 매 회 공격을 통해 자신의 HP를 <#ba.kw>{'{'}value{'}'}</> 회복한다"
       }
     }
   },
@@ -944,6 +958,13 @@
         "name": "독거",
         "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.7</>"
       }
+    },
+    "alterOperators": {
+      "kroos-the-keen-glint": {
+        "name": "크루스 더 킨 글린트",
+        "appellation": "Kroos the Keen Glint",
+        "description": "비행 유닛 우선 공격"
+      }
     }
   },
   "adnachiel": {
@@ -1116,6 +1137,13 @@
         "name": "오리지늄공예 β",
         "description": "제조소에 배치 시, <#cc.kw>오리지늄</>류에 대한 생산력 <#cc.vup>+35{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "lava-the-purgatory": {
+        "name": "라바 더 퍼거토리",
+        "appellation": "Lava the Purgatory",
+        "description": "일반 공격으로 적에게 <#ba.kw>광역 마법 대미지</>"
+      }
     }
   },
   "hibiscus": {
@@ -1197,6 +1225,13 @@
       "workshop_formula_probability<100>": {
         "name": "영양학",
         "description": "가공소에 배치 후 <#cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>70{'%'}</> 상승"
+      }
+    },
+    "alterOperators": {
+      "hibiscus-the-purifier": {
+        "name": "히비스커스 더 퓨리파이어",
+        "appellation": "Hibiscus the Purifier",
+        "description": "공격 시 마법 대미지 부여, 적을 공격할 때마다 공격 범위 내 아군 유닛 1명의 HP를 대미지의 50{'%'}만큼 회복"
       }
     }
   },
@@ -2070,6 +2105,13 @@
       "meet_spd&team<030>": {
         "name": "연락원",
         "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>10{'%'}</> 상승, <#cc.kw>블랙스틸 월드와이드</> 단서를 더 쉽게 획득 (업무시간이 확률에 영향을 줌)"
+      }
+    },
+    "alterOperators": {
+      "jessica-the-liberated": {
+        "name": null,
+        "appellation": null,
+        "description": null
       }
     }
   },
@@ -4734,6 +4776,13 @@
         "name": "메딕 마스터리 α",
         "description": "훈련실에 배치 시, <#cc.kw>메딕</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "gavial-the-invincible": {
+        "name": "가비알 디 인빈서블",
+        "appellation": "Gavial the Invincible",
+        "description": "저지 중인 <#ba.kw>모든 적</> 동시 공격"
+      }
     }
   },
   "perfumer": {
@@ -6708,6 +6757,13 @@
         "name": "묵계",
         "description": "<#cc.kw>엑시아</>와 함께 무역소에 배치 시, 시간당 컨디션 소모 <#cc.vup>-0.3</>"
       }
+    },
+    "alterOperators": {
+      "texas-the-omertosa": {
+        "name": "텍사스 디 오메르토사",
+        "appellation": "Texas the Omertosa",
+        "description": "재배치 시간 대폭 <#ba.kw>감소</>"
+      }
     }
   },
   "franka": {
@@ -7380,6 +7436,13 @@
         "name": "열광",
         "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+0.85</>"
       }
+    },
+    "alterOperators": {
+      "specter-the-unchained": {
+        "name": "스펙터 디 언체인드",
+        "appellation": "Specter the Unchained",
+        "description": "치명상을 입어도 퇴각하지 않고 [대역]을 교체 투입하며(저지 가능 수 0), 20초 후 다시 본체로 교체"
+      }
     }
   },
   "blue-poison": {
@@ -7989,6 +8052,9 @@
     "name": "아미야",
     "appellation": "Amiya",
     "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>",
+    "characterPatchDetailInfo": {
+      "infoParam": "캐스터"
+    },
     "potentials": {
       "2": {
         "description": "최대 HP +200"
@@ -8220,6 +8286,16 @@
       "dorm_rec_all<010>": {
         "name": "바이올린 독주",
         "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
+      }
+    },
+    "characterPatches": {
+      "amiya-guard": {
+        "name": "아미야",
+        "appellation": "Amiya",
+        "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>",
+        "characterPatchDetailInfo": {
+          "infoParam": "가드"
+        }
       }
     }
   },
@@ -8966,6 +9042,13 @@
         "name": "라인테크 β",
         "description": "제조소에 배치 시, 생산력 <#cc.vup>+25{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "silence-the-paradigmatic": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "warfarin": {
@@ -9349,6 +9432,13 @@
       "dorm_rec_single&oneself<030>": {
         "name": "사도",
         "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.5</> (동종 효과 중 가장 높은 수치만 적용); 동시에 자신의 시간당 컨디션 회복 <#cc.vup>+0.25</>"
+      }
+    },
+    "alterOperators": {
+      "nearl-the-radiant-knight": {
+        "name": "니어 더 래디언트 나이트",
+        "appellation": "Nearl the Radiant Knight",
+        "description": "적 1명 저지 가능"
       }
     }
   },
@@ -12658,6 +12748,13 @@
         "name": "재앙정보전달자 β",
         "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <#cc.vup>+45{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "eyjafjalla-the-hvit-aska": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "angelina": {
@@ -15602,6 +15699,13 @@
         "name": "비가",
         "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <#cc.vup>+1</>"
       }
+    },
+    "alterOperators": {
+      "skadi-the-corrupting-heart": {
+        "name": "스카디 더 커럽팅 하트",
+        "appellation": "Skadi the Corrupting Heart",
+        "description": "공격을 진행하지 않고 공격 범위 내 모든 아군의 <#ba.kw>HP</>를 매초마다 자신의 공격력의 10{'%'} 만큼 회복, 자신은 <?ba.inspire>격려</>의 영향을 받지 않는다."
+      }
     }
   },
   "popukar": {
@@ -15969,6 +16073,13 @@
         "name": "솜씨좋은 장인",
         "description": "가공소에 배치 후 <#cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <#cc.vup>50{'%'}</>"
       }
+    },
+    "alterOperators": {
+      "greyy-the-lightningbearer": {
+        "name": "그레이 더 라이트닝베어러",
+        "appellation": "Greyy the Lightningbearer",
+        "description": "<#ba.kw>지상에 위치한</> 작은 범위 내 적에게 <#ba.kw>2회</> 물리 대미지를 준다(2번째 공격은 여진으로써, 대미지가 공격력의 절반으로 감소)"
+      }
     }
   },
   "swire": {
@@ -16168,6 +16279,13 @@
       "train_spd<000>": {
         "name": "교관",
         "description": "훈련실에 배치 시, 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+25{'%'}</>"
+      }
+    },
+    "alterOperators": {
+      "swire-the-elegant-wit": {
+        "name": null,
+        "appellation": null,
+        "description": null
       }
     }
   },
@@ -16459,6 +16577,13 @@
       "meet_spd&team<100>": {
         "name": "총경",
         "description": "응접실에 배치 시, 단서 수집 속도 <#cc.vup>25{'%'}</> 상승"
+      }
+    },
+    "alterOperators": {
+      "chen-the-holungday": {
+        "name": "첸 더 홀룽데이",
+        "appellation": "Ch'en the Holungday",
+        "description": "공격 범위 내 <#ba.kw>모든 적</>을 공격\n자신의 전방 첫 줄의 적에게 공격력이 150{'%'}까지 상승한다"
       }
     }
   },
@@ -18706,6 +18831,13 @@
         "name": "처분 협의",
         "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
       }
+    },
+    "alterOperators": {
+      "executor-the-ex-foedere": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "magallan": {
@@ -20765,6 +20897,13 @@
       "control_mp_cost<004>": {
         "name": "대리인",
         "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</>"
+      }
+    },
+    "alterOperators": {
+      "reed-the-flame-shadow": {
+        "name": "리드 더 플레임 섀도우",
+        "appellation": "Reed The Flame Shadow",
+        "description": "공격 시 마법 대미지 부여, 적을 공격할 때마다 공격 범위 내 아군 유닛 1명의 HP를 대미지의 50{'%'}만큼 회복"
       }
     }
   },
@@ -33247,6 +33386,144 @@
       }
     }
   },
+  "amiya-guard": {
+    "name": "아미야",
+    "appellation": "Amiya",
+    "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>",
+    "characterPatchDetailInfo": {
+      "infoParam": "가드"
+    },
+    "potentials": {
+      "2": {
+        "description": "최대 HP +200"
+      },
+      "3": {
+        "description": "배치 코스트 -1"
+      },
+      "4": {
+        "description": "공격력 +28"
+      },
+      "5": {
+        "description": "배치 코스트 -1"
+      },
+      "6": {
+        "description": "방어력 +22"
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": "푸른 분노",
+          "description": "전장에 있을 때 모든 아군 유닛의 공격력 및 방어력 +4{'%'}, 스킬 발동 중에는 효과 2배"
+        },
+        "E2-L1-P1": {
+          "name": "푸른 분노",
+          "description": "전장에 있을 때 모든 아군 유닛의 공격력 및 방어력 +7{'%'}, 스킬 발동 중에는 효과 2배"
+        }
+      }
+    },
+    "skills": {
+      "skchr_amiya2_1": {
+        "1": {
+          "name": "영소·분야",
+          "description": "공격력 <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, 공격이 2연격 공격으로 변경되며, 마법 회피 <#ba.vup>{'{'}prob:0{'%'}{'}'}</> 획득"
+        },
+        "2": {
+          "name": "영소·분야",
+          "description": "공격력 <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, 공격이 2연격 공격으로 변경되며, 마법 회피 <#ba.vup>{'{'}prob:0{'%'}{'}'}</> 획득"
+        },
+        "3": {
+          "name": "영소·분야",
+          "description": "공격력 <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, 공격이 2연격 공격으로 변경되며, 마법 회피 <#ba.vup>{'{'}prob:0{'%'}{'}'}</> 획득"
+        },
+        "4": {
+          "name": "영소·분야",
+          "description": "공격력 <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, 공격이 2연격 공격으로 변경되며, 마법 회피 <#ba.vup>{'{'}prob:0{'%'}{'}'}</> 획득"
+        },
+        "5": {
+          "name": "영소·분야",
+          "description": "공격력 <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, 공격이 2연격 공격으로 변경되며, 마법 회피 <#ba.vup>{'{'}prob:0{'%'}{'}'}</> 획득"
+        },
+        "6": {
+          "name": "영소·분야",
+          "description": "공격력 <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, 공격이 2연격 공격으로 변경되며, 마법 회피 <#ba.vup>{'{'}prob:0{'%'}{'}'}</> 획득"
+        },
+        "7": {
+          "name": "영소·분야",
+          "description": "공격력 <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, 공격이 2연격 공격으로 변경되며, 마법 회피 <#ba.vup>{'{'}prob:0{'%'}{'}'}</> 획득"
+        },
+        "8": {
+          "name": "영소·분야",
+          "description": "공격력 <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, 공격이 2연격 공격으로 변경되며, 마법 회피 <#ba.vup>{'{'}prob:0{'%'}{'}'}</> 획득"
+        },
+        "9": {
+          "name": "영소·분야",
+          "description": "공격력 <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, 공격이 2연격 공격으로 변경되며, 마법 회피 <#ba.vup>{'{'}prob:0{'%'}{'}'}</> 획득"
+        },
+        "10": {
+          "name": "영소·분야",
+          "description": "공격력 <#ba.vup>+{'{'}atk:0{'%'}{'}'}</>, 공격이 2연격 공격으로 변경되며, 마법 회피 <#ba.vup>{'{'}prob:0{'%'}{'}'}</> 획득"
+        }
+      },
+      "skchr_amiya2_2": {
+        "1": {
+          "name": "영소·절영",
+          "description": "즉시 전방에서 HP가 가장 낮은 목표에게 공격력의 <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>로 마법 참격 <#ba.vup>{'{'}times{'}'}</>회 진행(최후 일격은 2배의 <#ba.vup>트루 대미지</> 부여). 마법 참격 중 적을 처치할 때마다 공격력 <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> 및 마법 저항력 <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</> 상승(최대 <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>회 중첩), 남은 스킬 시간 중 이어지는 공격은 <#ba.vup>트루 대미지</>로 적용. <#ba.rem>본 스킬은 한 작전 당 1회만 시전 가능</>"
+        },
+        "2": {
+          "name": "영소·절영",
+          "description": "즉시 전방에서 HP가 가장 낮은 목표에게 공격력의 <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>로 마법 참격 <#ba.vup>{'{'}times{'}'}</>회 진행(최후 일격은 2배의 <#ba.vup>트루 대미지</> 부여). 마법 참격 중 적을 처치할 때마다 공격력 <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> 및 마법 저항력 <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</> 상승(최대 <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>회 중첩), 남은 스킬 시간 중 이어지는 공격은 <#ba.vup>트루 대미지</>로 적용. <#ba.rem>본 스킬은 한 작전 당 1회만 시전 가능</>"
+        },
+        "3": {
+          "name": "영소·절영",
+          "description": "즉시 전방에서 HP가 가장 낮은 목표에게 공격력의 <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>로 마법 참격 <#ba.vup>{'{'}times{'}'}</>회 진행(최후 일격은 2배의 <#ba.vup>트루 대미지</> 부여). 마법 참격 중 적을 처치할 때마다 공격력 <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> 및 마법 저항력 <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</> 상승(최대 <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>회 중첩), 남은 스킬 시간 중 이어지는 공격은 <#ba.vup>트루 대미지</>로 적용. <#ba.rem>본 스킬은 한 작전 당 1회만 시전 가능</>"
+        },
+        "4": {
+          "name": "영소·절영",
+          "description": "즉시 전방에서 HP가 가장 낮은 목표에게 공격력의 <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>로 마법 참격 <#ba.vup>{'{'}times{'}'}</>회 진행(최후 일격은 2배의 <#ba.vup>트루 대미지</> 부여). 마법 참격 중 적을 처치할 때마다 공격력 <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> 및 마법 저항력 <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</> 상승(최대 <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>회 중첩), 남은 스킬 시간 중 이어지는 공격은 <#ba.vup>트루 대미지</>로 적용. <#ba.rem>본 스킬은 한 작전 당 1회만 시전 가능</>"
+        },
+        "5": {
+          "name": "영소·절영",
+          "description": "즉시 전방에서 HP가 가장 낮은 목표에게 공격력의 <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>로 마법 참격 <#ba.vup>{'{'}times{'}'}</>회 진행(최후 일격은 2배의 <#ba.vup>트루 대미지</> 부여). 마법 참격 중 적을 처치할 때마다 공격력 <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> 및 마법 저항력 <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</> 상승(최대 <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>회 중첩), 남은 스킬 시간 중 이어지는 공격은 <#ba.vup>트루 대미지</>로 적용. <#ba.rem>본 스킬은 한 작전 당 1회만 시전 가능</>"
+        },
+        "6": {
+          "name": "영소·절영",
+          "description": "즉시 전방에서 HP가 가장 낮은 목표에게 공격력의 <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>로 마법 참격 <#ba.vup>{'{'}times{'}'}</>회 진행(최후 일격은 2배의 <#ba.vup>트루 대미지</> 부여). 마법 참격 중 적을 처치할 때마다 공격력 <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> 및 마법 저항력 <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</> 상승(최대 <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>회 중첩), 남은 스킬 시간 중 이어지는 공격은 <#ba.vup>트루 대미지</>로 적용. <#ba.rem>본 스킬은 한 작전 당 1회만 시전 가능</>"
+        },
+        "7": {
+          "name": "영소·절영",
+          "description": "즉시 전방에서 HP가 가장 낮은 목표에게 공격력의 <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>로 마법 참격 <#ba.vup>{'{'}times{'}'}</>회 진행(최후 일격은 2배의 <#ba.vup>트루 대미지</> 부여). 마법 참격 중 적을 처치할 때마다 공격력 <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> 및 마법 저항력 <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</> 상승(최대 <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>회 중첩), 남은 스킬 시간 중 이어지는 공격은 <#ba.vup>트루 대미지</>로 적용. <#ba.rem>본 스킬은 한 작전 당 1회만 시전 가능</>"
+        },
+        "8": {
+          "name": "영소·절영",
+          "description": "즉시 전방에서 HP가 가장 낮은 목표에게 공격력의 <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>로 마법 참격 <#ba.vup>{'{'}times{'}'}</>회 진행(최후 일격은 2배의 <#ba.vup>트루 대미지</> 부여). 마법 참격 중 적을 처치할 때마다 공격력 <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> 및 마법 저항력 <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</> 상승(최대 <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>회 중첩), 남은 스킬 시간 중 이어지는 공격은 <#ba.vup>트루 대미지</>로 적용. <#ba.rem>본 스킬은 한 작전 당 1회만 시전 가능</>"
+        },
+        "9": {
+          "name": "영소·절영",
+          "description": "즉시 전방에서 HP가 가장 낮은 목표에게 공격력의 <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>로 마법 참격 <#ba.vup>{'{'}times{'}'}</>회 진행(최후 일격은 2배의 <#ba.vup>트루 대미지</> 부여). 마법 참격 중 적을 처치할 때마다 공격력 <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> 및 마법 저항력 <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</> 상승(최대 <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>회 중첩), 남은 스킬 시간 중 이어지는 공격은 <#ba.vup>트루 대미지</>로 적용. <#ba.rem>본 스킬은 한 작전 당 1회만 시전 가능</>"
+        },
+        "10": {
+          "name": "영소·절영",
+          "description": "즉시 전방에서 HP가 가장 낮은 목표에게 공격력의 <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>로 마법 참격 <#ba.vup>{'{'}times{'}'}</>회 진행(최후 일격은 2배의 <#ba.vup>트루 대미지</> 부여). 마법 참격 중 적을 처치할 때마다 공격력 <#ba.vup>+{'{'}amiya2_s_2[kill].atk:0{'%'}{'}'}</> 및 마법 저항력 <#ba.vup>+{'{'}amiya2_s_2[kill].magic_resistance{'}'}</> 상승(최대 <#ba.vup>{'{'}amiya2_s_2[kill].max_stack_cnt{'}'}</>회 중첩), 남은 스킬 시간 중 이어지는 공격은 <#ba.vup>트루 대미지</>로 적용. <#ba.rem>본 스킬은 한 작전 당 1회만 시전 가능</>"
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>"
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {},
+    "originalCharacterPatch": {
+      "name": "아미야",
+      "appellation": "Amiya",
+      "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>",
+      "characterPatchDetailInfo": {
+        "infoParam": "캐스터"
+      }
+    }
+  },
   "pinecone": {
     "name": "파인콘",
     "appellation": "Pinecone",
@@ -35187,6 +35464,11 @@
         "name": "열에너지 충전 γ",
         "description": "발전소에 배치 시, 드론 회복 <#cc.vup>+20{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "라바",
+      "appellation": "Lava",
+      "description": "일반 공격으로 적에게 <#ba.kw>광역 마법 대미지</>"
     }
   },
   "mr-nothing": {
@@ -38271,6 +38553,11 @@
         "name": "변이",
         "description": "훈련실에 배치 시, <#cc.kw>서포터</> 오퍼레이터의 훈련 마스터리 스킬이 <#cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <#cc.vdown>+1</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "스카디",
+      "appellation": "Skadi",
+      "description": "적 1명 저지 가능"
     }
   },
   "gladiia": {
@@ -40588,6 +40875,11 @@
         "name": "워커홀릭",
         "description": "훈련실에 배치하여 <#cc.kw>스나이퍼</> 훈련 마스터리 스킬이 <#cc.vup>1</>레벨까지 도달한 경우, 시간당 컨디션 소모 <#cc.vdown>+1</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "첸",
+      "appellation": "Ch'en",
+      "description": "일반 공격이 <#ba.kw>2회</> 연속 공격"
     }
   },
   "mizuki": {
@@ -43516,6 +43808,11 @@
         "name": "숭고한 원칙",
         "description": "훈련실에 배치 시, 기반시설(어시스턴트 미포함) 내 배치된 <?cc.tag.knight><#cc.kw>기사</></> 오퍼레이터마다 스킬 훈련 속도 <#cc.vup>+5{'%'}</> (최대 <#cc.kw>8</>명 적용)"
       }
+    },
+    "originalAlterOperator": {
+      "name": "니어",
+      "appellation": "Nearl",
+      "description": "스킬로 아군 유닛 HP 회복"
     }
   },
   "kjera": {
@@ -44818,6 +45115,11 @@
         "name": "실전 기술: 명사수",
         "description": "훈련실에 배치 시, <#cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 대상의 오퍼레이터 세부 분류가 <#cc.kw>명사수</>일 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "크루스",
+      "appellation": "Kroos",
+      "description": "비행 유닛 우선 공격"
     }
   },
   "ling": {
@@ -47311,7 +47613,7 @@
                     "name": null,
                     "description": null
                   },
-                  "5": {
+                  "3": {
                     "name": null,
                     "description": null
                   }
@@ -47330,7 +47632,7 @@
                     "name": null,
                     "description": null
                   },
-                  "5": {
+                  "3": {
                     "name": null,
                     "description": null
                   }
@@ -48027,6 +48329,11 @@
         "name": "투쟁의 갈망",
         "description": "훈련실에 배치하여 <#cc.kw>스페셜리스트</> 훈련 마스터리 스킬이 <#cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <#cc.vdown>+1</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "스펙터",
+      "appellation": "Specter",
+      "description": "저지 중인 <#ba.kw>모든 적</> 동시 공격"
     }
   },
   "lumen": {
@@ -48905,6 +49212,11 @@
         "name": "간호 마스터리",
         "description": "훈련실에 배치 시, <#cc.kw>메딕</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 마스터리 스킬이 <#cc.vup>2</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+45{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "히비스커스",
+      "appellation": "Hibiscus",
+      "description": "아군 HP 회복"
     }
   },
   "czerny": {
@@ -49852,6 +50164,11 @@
         "name": "아침 햇살",
         "description": "발전소에 배치 시, 다른 <#cc.kw>발전소</>에 배치된 <?cc.tag.op><#cc.kw>작업 플랫폼</></>이 없을 경우, <#cc.kw>발전소</> <#cc.vup>+1</>개로 간주함 (시설 수량에만 영향을 줌)"
       }
+    },
+    "originalAlterOperator": {
+      "name": "그레이",
+      "appellation": "Greyy",
+      "description": "일반 공격으로 적에게 <#ba.kw>광역 마법 대미지</>"
     }
   },
   "dorothy": {
@@ -51177,6 +51494,11 @@
         "name": "과잉 훈련",
         "description": "훈련실에 배치하여 <#cc.kw>가드</> 오퍼레이터의 훈련 마스터리 스킬이 <#cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <#cc.vdown>+1</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "가비알",
+      "appellation": "Gavial",
+      "description": "아군 HP 회복"
     }
   },
   "proviso": {
@@ -54032,6 +54354,11 @@
         "name": "질곡 타파",
         "description": "훈련실에 배치 시, <#cc.kw>스페셜리스트</> 및 <#cc.kw>뱅가드</> 오퍼레이터의 스킬 훈련 속도 <#cc.vup>+30{'%'}</>, 만약 훈련 마스터리 스킬이 <#cc.vup>2</>레벨까지 도달한 경우, 훈련 속도가 추가로 <#cc.vup>+50{'%'}</>"
       }
+    },
+    "originalAlterOperator": {
+      "name": "텍사스",
+      "appellation": "Texas",
+      "description": "적 2명 저지 가능"
     }
   },
   "penance": {
@@ -54780,6 +55107,11 @@
         "name": "지도자",
         "description": "제어 센터에 배치 시, 모든 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <#cc.vup>+0.05</> (동종 효과 중 가장 높은 수치만 적용)"
       }
+    },
+    "originalAlterOperator": {
+      "name": "리드",
+      "appellation": "Reed",
+      "description": "적 처치 시 배치 코스트 +1, 퇴각 시 초기 배치 코스트 반환"
     }
   },
   "jieyun": {
@@ -56262,6 +56594,11 @@
         "name": "비전 교섭술",
         "description": "<?cc.tag.mh><#cc.kw>아이루와 유쾌한 친구들</></> 오퍼레이터와 함께 제어 센터에 배치 시, 모든 무역소의 오더 수주 효율 <#cc.vup>+7{'%'}</> (동종 효과 중 가장 높은 수치만 적용)"
       }
+    },
+    "originalAlterOperator": {
+      "name": "느와르 코르네",
+      "appellation": "Noir Corne",
+      "description": "적 3명 저지 가능"
     }
   },
   "kirin-r-yato": {
@@ -56510,6 +56847,11 @@
         "name": "솔선수범",
         "description": "<?cc.tag.mh><#cc.kw>아이루와 유쾌한 친구들</></> 오퍼레이터와 함께 제어 센터에 배치 시, 모든 제조소의 생산력 <#cc.vup>+2{'%'}</> (동종 효과 중 가장 높은 수치만 적용)"
       }
+    },
+    "originalAlterOperator": {
+      "name": "야토",
+      "appellation": "Yato",
+      "description": "적 2명 저지 가능"
     }
   },
   "u-official": {
@@ -58394,6 +58736,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "사일런스",
+      "appellation": "Silence",
+      "description": "아군 HP 회복"
     }
   },
   "friston-3": {
@@ -59105,6 +59452,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "이그제큐터",
+      "appellation": "Executor",
+      "description": "공격 범위 내 <#ba.kw>모든 적</>을 공격\n자신의 전방 첫 줄의 적에게 공격력이 150{'%'}까지 상승한다"
     }
   },
   "santalla": {
@@ -60423,6 +60775,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "스와이어",
+      "appellation": "Swire",
+      "description": "<#ba.kw>비교적 먼 곳의 적</>도 공격 가능, 저지하지 않은 적 공격 시 공격력이 120{'%'}까지 상승"
     }
   },
   "eyjafjalla-the-hvit-aska": {
@@ -60615,6 +60972,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "에이야퍄들라",
+      "appellation": "Eyjafjalla",
+      "description": "일반 공격으로 적에게 <#ba.kw>마법 대미지</>"
     }
   },
   "coldshot": {
@@ -61197,6 +61559,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": "제시카",
+      "appellation": "Jessica",
+      "description": "비행 유닛 우선 공격"
     }
   },
   "verdant": {

@@ -178,6 +178,13 @@
         "name": null,
         "description": null
       }
+    },
+    "alterOperators": {
+      "kirin-r-yato": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "noir-corne": {
@@ -223,6 +230,13 @@
       },
       "trade_ord_spd&limit<000>": {
         "name": null,
+        "description": null
+      }
+    },
+    "alterOperators": {
+      "rathalos-s-noir-corne": {
+        "name": null,
+        "appellation": null,
         "description": null
       }
     }
@@ -944,6 +958,13 @@
         "name": null,
         "description": null
       }
+    },
+    "alterOperators": {
+      "kroos-the-keen-glint": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "adnachiel": {
@@ -1116,6 +1137,13 @@
         "name": null,
         "description": null
       }
+    },
+    "alterOperators": {
+      "lava-the-purgatory": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "hibiscus": {
@@ -1196,6 +1224,13 @@
       },
       "workshop_formula_probability<100>": {
         "name": null,
+        "description": null
+      }
+    },
+    "alterOperators": {
+      "hibiscus-the-purifier": {
+        "name": null,
+        "appellation": null,
         "description": null
       }
     }
@@ -2070,6 +2105,13 @@
       "meet_spd&team<030>": {
         "name": null,
         "description": null
+      }
+    },
+    "alterOperators": {
+      "jessica-the-liberated": {
+        "name": null,
+        "appellation": null,
+        "description": "적 3명 저지 가능, 원거리 공격 가능"
       }
     }
   },
@@ -4734,6 +4776,13 @@
         "name": null,
         "description": null
       }
+    },
+    "alterOperators": {
+      "gavial-the-invincible": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "perfumer": {
@@ -6708,6 +6757,13 @@
         "name": null,
         "description": null
       }
+    },
+    "alterOperators": {
+      "texas-the-omertosa": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "franka": {
@@ -7380,6 +7436,13 @@
         "name": null,
         "description": null
       }
+    },
+    "alterOperators": {
+      "specter-the-unchained": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "blue-poison": {
@@ -7989,6 +8052,9 @@
     "name": null,
     "appellation": null,
     "description": null,
+    "characterPatchDetailInfo": {
+      "infoParam": null
+    },
     "potentials": {
       "2": {
         "description": null
@@ -8220,6 +8286,16 @@
       "dorm_rec_all<010>": {
         "name": null,
         "description": null
+      }
+    },
+    "characterPatches": {
+      "amiya-guard": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "characterPatchDetailInfo": {
+          "infoParam": null
+        }
       }
     }
   },
@@ -8966,6 +9042,13 @@
         "name": null,
         "description": null
       }
+    },
+    "alterOperators": {
+      "silence-the-paradigmatic": {
+        "name": null,
+        "appellation": null,
+        "description": "공격 시 <#ba.kw>마법 대미지</>를 입히고, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75{'%'}에 해당)"
+      }
     }
   },
   "warfarin": {
@@ -9348,6 +9431,13 @@
       },
       "dorm_rec_single&oneself<030>": {
         "name": null,
+        "description": null
+      }
+    },
+    "alterOperators": {
+      "nearl-the-radiant-knight": {
+        "name": null,
+        "appellation": null,
         "description": null
       }
     }
@@ -12658,6 +12748,13 @@
         "name": null,
         "description": null
       }
+    },
+    "alterOperators": {
+      "eyjafjalla-the-hvit-aska": {
+        "name": null,
+        "appellation": null,
+        "description": "아군 유닛의 HP 회복, 동시에 공격력의 50{'%'}에 해당하는 <#ba.dt.element>원소 피해</> 회복 (부상이 없는 아군 유닛의 <#ba.dt.element>원소 피해</>도 회복 가능)"
+      }
     }
   },
   "angelina": {
@@ -15602,6 +15699,13 @@
         "name": null,
         "description": null
       }
+    },
+    "alterOperators": {
+      "skadi-the-corrupting-heart": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "popukar": {
@@ -15969,6 +16073,13 @@
         "name": null,
         "description": null
       }
+    },
+    "alterOperators": {
+      "greyy-the-lightningbearer": {
+        "name": null,
+        "appellation": null,
+        "description": null
+      }
     }
   },
   "swire": {
@@ -16168,6 +16279,13 @@
       "train_spd<000>": {
         "name": null,
         "description": null
+      }
+    },
+    "alterOperators": {
+      "swire-the-elegant-wit": {
+        "name": null,
+        "appellation": null,
+        "description": "재배치 시간 <#ba.kw>감소</>, 퇴각 시 <#ba.kw>배치 코스트</>를 반환하지 않고, 전장에서 3초마다 배치 코스트를 3 <#ba.kw>소모</> (코스트 부족 시 자동 퇴각)"
       }
     }
   },
@@ -16458,6 +16576,13 @@
       },
       "meet_spd&team<100>": {
         "name": null,
+        "description": null
+      }
+    },
+    "alterOperators": {
+      "chen-the-holungday": {
+        "name": null,
+        "appellation": null,
         "description": null
       }
     }
@@ -18706,6 +18831,13 @@
         "name": null,
         "description": null
       }
+    },
+    "alterOperators": {
+      "executor-the-ex-foedere": {
+        "name": null,
+        "appellation": null,
+        "description": "아군의 치료를 받을 수 없으며, 공격 시 <#ba.kw>광역 대미지</>를 입히고, 적 1명 적중할 때마다 자신의 HP가 <#ba.kw>{'{'}value{'}'}</>만큼 회복, 최대 효과 수는 저지 가능 수와 동일"
+      }
     }
   },
   "magallan": {
@@ -20764,6 +20896,13 @@
       },
       "control_mp_cost<004>": {
         "name": null,
+        "description": null
+      }
+    },
+    "alterOperators": {
+      "reed-the-flame-shadow": {
+        "name": null,
+        "appellation": null,
         "description": null
       }
     }
@@ -33247,6 +33386,144 @@
       }
     }
   },
+  "amiya-guard": {
+    "name": null,
+    "appellation": null,
+    "description": null,
+    "characterPatchDetailInfo": {
+      "infoParam": null
+    },
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_amiya2_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_amiya2_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {},
+    "originalCharacterPatch": {
+      "name": null,
+      "appellation": null,
+      "description": null,
+      "characterPatchDetailInfo": {
+        "infoParam": null
+      }
+    }
+  },
   "pinecone": {
     "name": null,
     "appellation": null,
@@ -35187,6 +35464,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "mr-nothing": {
@@ -38271,6 +38553,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "gladiia": {
@@ -40588,6 +40875,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "mizuki": {
@@ -43516,6 +43808,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "kjera": {
@@ -44818,6 +45115,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "ling": {
@@ -47311,7 +47613,7 @@
                     "name": "군사 요새",
                     "description": null
                   },
-                  "5": {
+                  "3": {
                     "name": "군사 요새",
                     "description": null
                   }
@@ -47330,7 +47632,7 @@
                     "name": "군사 요새",
                     "description": null
                   },
-                  "5": {
+                  "3": {
                     "name": "군사 요새",
                     "description": null
                   }
@@ -48027,6 +48329,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "lumen": {
@@ -48905,6 +49212,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "czerny": {
@@ -49852,6 +50164,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "dorothy": {
@@ -51177,6 +51494,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "proviso": {
@@ -54032,6 +54354,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "penance": {
@@ -54780,6 +55107,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "jieyun": {
@@ -56262,6 +56594,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "kirin-r-yato": {
@@ -56510,6 +56847,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "u-official": {
@@ -58394,6 +58736,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "friston-3": {
@@ -59105,6 +59452,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "santalla": {
@@ -60423,6 +60775,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "eyjafjalla-the-hvit-aska": {
@@ -60615,6 +60972,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "coldshot": {
@@ -61197,6 +61559,11 @@
         "name": null,
         "description": null
       }
+    },
+    "originalAlterOperator": {
+      "name": null,
+      "appellation": null,
+      "description": null
     }
   },
   "verdant": {
