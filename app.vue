@@ -6,7 +6,7 @@ const { t, locale } = useI18n()
 
 const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
-const localePath = useLocalePath()
+const switchLocalePath = useSwitchLocalePath()
 const registeredLocales = useRegisteredLocales()
 
 const theme = ref<string>("mizuki")
@@ -30,14 +30,13 @@ const headLinks = computed<any[]>(() => [
     return {
       rel: "alternate",
       hreflang: localeObj.code,
-      href:
-        runtimeConfig.public.fullBaseUrl + localePath(route, localeObj.code),
+      href: runtimeConfig.public.fullBaseUrl + switchLocalePath(localeObj.code),
     }
   }),
   {
     rel: "alternate",
     hreflang: "x-default",
-    href: runtimeConfig.public.fullBaseUrl + localePath(route, "en"),
+    href: runtimeConfig.public.fullBaseUrl + switchLocalePath("en"),
   },
 ])
 
@@ -46,6 +45,7 @@ useSeoMeta({
   ogTitle: () => t("general.siteIndexMetaTitle"),
   description: () => t("general.siteIndexDescription"),
   ogDescription: () => t("general.siteIndexDescription"),
+  ogUrl: () => runtimeConfig.public.fullBaseUrl + route.path,
   ogLocale: () => transformLocaleCode(locale.value),
   ogType: "website",
   twitterCard: "summary",
