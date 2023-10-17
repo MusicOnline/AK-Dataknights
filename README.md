@@ -94,7 +94,7 @@ pnpm preview
 
 The [`check-data-update`](./.github/workflows/check-data-update.yml) workflow checks for updates in the master branch of Kengxxiao/ArknightsGameData. If there is an update, [`.game-data-sha`](./data/.game-data-sha) is updated in this repository.
 
-Any pushes to this repository may trigger Cloudflare Pages to build and deploy the website with its automatic deployments feature (without using workers). In addition to the above environment variables, `NITRO_PRESET=static` is required. This is the build command:
+Any pushes to this repository may trigger Cloudflare Pages to build and deploy the website with its automatic deployments feature (without using workers). This is currently disabled due to it being unstable (works sometimes, and segfaults other times). In addition to the above environment variables, `NITRO_PRESET=static` is required. This is the build command:
 
 ```bash
 git clone --depth 1 https://github.com/Kengxxiao/ArknightsGameData ArknightsGameData \
