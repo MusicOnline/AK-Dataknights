@@ -32,23 +32,32 @@ const { t } = useI18n()
         <div class="flex items-center gap-1">
           <span>{{ t("ui.madeWithTechnologiesPrefix") }}</span>
           <a class="flex items-center" href="https://nuxt.com/" target="_blank">
-            <UIcon class="text-lg" name="i-logos-nuxt-icon" />
+            <UIcon
+              class="bg-contain bg-center text-xl md:text-2xl"
+              name="i-logos-nuxt-icon"
+            />
           </a>
           <a
             class="flex items-center"
             href="https://vuejs.org/"
             target="_blank"
           >
-            <UIcon class="text-lg" name="i-logos-vue" />
+            <UIcon class="bg-contain bg-center text-xl md:text-2xl" name="i-logos-vue" />
           </a>
           <a
             class="flex items-center"
             href="https://tailwindcss.com/"
             target="_blank"
           >
-            <UIcon class="text-lg" name="i-logos-tailwindcss-icon" />
+            <UIcon
+              class="bg-contain bg-center text-xl md:text-2xl"
+              name="i-logos-tailwindcss-icon"
+            />
           </a>
-          <UIcon class="text-lg" name="i-emojione-red-heart" />
+          <UIcon
+            class="bg-contain bg-center text-xl md:text-2xl"
+            name="i-emojione-red-heart"
+          />
         </div>
         <div>
           <a
@@ -57,7 +66,7 @@ const { t } = useI18n()
             target="_blank"
           >
             <span>{{ t("ui.viewRepositoryPrefix") }}</span>
-            <UIcon class="text-lg" name="i-mdi-github" />
+            <UIcon class="bg-contain bg-center text-xl md:text-2xl" name="i-mdi-github" />
           </a>
         </div>
       </div>
