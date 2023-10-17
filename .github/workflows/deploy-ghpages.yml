@@ -82,9 +82,10 @@ jobs:
       - name: Prepare nuxt (postinstall)
         run: ${{ steps.detect-package-manager.outputs.manager }} run prepare-nuxt
       - name: Generate static site
-        run: ${{ steps.detect-package-manager.outputs.manager }} run generate
+        run: ${{ steps.detect-package-manager.outputs.manager }} run build
         env:
           NODE_OPTIONS: --max_old_space_size=8192
+          NITRO_PRESET: github_pages
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:

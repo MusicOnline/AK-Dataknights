@@ -25,7 +25,7 @@ Clone the repository, then install the dependencies:
 git clone https://github.com/MusicOnline/AK-Dataknights
 pnpm install
 # After cloning game data and preparing .env file as in the Configuration section
-pnpm run prepare-nuxt
+pnpm prepare-nuxt
 ```
 
 ### Configuration
@@ -37,7 +37,7 @@ Create a `.env` file with the following content or define the environment variab
 # Game data is processed before being used to generate the website
 GAME_DATA_ROOT_PATH=/path/to/ArknightsGameData
 
-# Set to true if "pnpm run generate" should be prerendered to HTML
+# Set to true if "pnpm generate" should be prerendered to HTML
 # Set to false to only render HTML using JS when browsed to (no SEO support)
 # Alternatively, this can be set in nuxt.config.ts in ssr
 ENABLE_SSR=true
@@ -55,12 +55,15 @@ NUXT_APP_BASE_URL=/RepositoryNameHere/
 NUXT_PUBLIC_FULL_BASE_URL=http://localhost:3000
 ```
 
+Builds may require `NODE_OPTIONS=--max_old_space_size=8192` to run.
+This should be set in the operating system or through the terminal, not in the `.env` file.
+
 ### Development Server
 
 Start the development server on http://localhost:3000
 
 ```bash
-pnpm run dev
+pnpm dev
 ```
 
 ### Production
@@ -68,7 +71,7 @@ pnpm run dev
 Serve with a Node.js Server:
 
 ```bash
-pnpm run build
+pnpm build
 # Start server
 node .output/server/index.mjs
 ```
@@ -76,7 +79,7 @@ node .output/server/index.mjs
 Static hosting:
 
 ```bash
-pnpm run generate
+pnpm generate
 # Serve .output/public, example:
 pnpm dlx serve .output/public
 ```
@@ -84,19 +87,19 @@ pnpm dlx serve .output/public
 Locally preview production build:
 
 ```bash
-pnpm run preview
+pnpm preview
 ```
 
 ### Continuous Deployment
 
 The [`check-data-update`](./.github/workflows/check-data-update.yml) workflow checks for updates in the master branch of Kengxxiao/ArknightsGameData. If there is an update, [`.game-data-sha`](./data/.game-data-sha) is updated in this repository.
 
-Any pushes to this repository may trigger Cloudflare Pages to build and deploy the website with its automatic deployments feature (currently disabled). This is the build command:
+Any pushes to this repository may trigger Cloudflare Pages to build and deploy the website with its automatic deployments feature (without using workers). In addition to the above environment variables, `NITRO_PRESET=static` is required. This is the build command:
 
 ```bash
 git clone --depth 1 https://github.com/Kengxxiao/ArknightsGameData ArknightsGameData \
-&& pnpm run prepare-nuxt \
-&& pnpm run build
+&& pnpm prepare-nuxt \
+&& pnpm build
 ```
 
 [`deploy-cfpages`](./.github/workflows/deploy-cfpages.yml) can be triggered manually with GitHub Actions in case the Cloudflare build fails. This workflow is used on push instead of Cloudflare's own automatic deployments.
