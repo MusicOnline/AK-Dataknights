@@ -34,7 +34,7 @@ await useOperatorLocale(i18n, operator.key)
         <img
           class="h-8 w-8"
           :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/infrastructure/skill/${encodeURI(
-            skill.skillIcon
+            skill.skillIcon,
           )}.png`"
         />
         <div class="font-bold">
@@ -42,7 +42,7 @@ await useOperatorLocale(i18n, operator.key)
         </div>
         <div class="flex items-center gap-2">
           <div
-            class="w-8 bg-gray-800 p-0.5"
+            class="w-8 rounded-theme bg-gray-800 p-0.5"
             v-if="
               skill.unlockConditions.elite !== 0 ||
               skill.unlockConditions.level !== 1
