@@ -16,13 +16,16 @@ const { operator, module, operatorState, potential, moduleId } = defineProps<{
 
 const modulePotentialNumbers = module.stages
   ?.slice(-1)[0]
-  .talentUpgrades?.reduce((accumulator, upgrade) => {
-    upgrade.candidates.forEach((candidate) => {
-      if (!accumulator.includes(candidate.unlockCondition.potential))
-        accumulator.push(candidate.unlockCondition.potential)
-    })
-    return accumulator
-  }, <number[]>[])
+  .talentUpgrades?.reduce(
+    (accumulator, upgrade) => {
+      upgrade.candidates.forEach((candidate) => {
+        if (!accumulator.includes(candidate.unlockCondition.potential))
+          accumulator.push(candidate.unlockCondition.potential)
+      })
+      return accumulator
+    },
+    <number[]>[],
+  )
   .sort() ?? [1]
 
 const bestPotential = computed<number>(() => {
@@ -60,11 +63,11 @@ const moduleName = computed<string>(() =>
     ? t(`operator.module.originalModuleName`, {
         name: t(`${operator.key}.name`),
       })
-    : t(`${operator.key}.modules.${module.id}.name`)
+    : t(`${operator.key}.modules.${module.id}.name`),
 )
 
 const currentTraitCandidate = computed<GeneratedTraitCandidateData>(() =>
-  getCurrentTraitCandidate(operator, { ...operatorState, elite: 2, level: 60 })
+  getCurrentTraitCandidate(operator, { ...operatorState, elite: 2, level: 60 }),
 )
 
 function getValueString(attribute: string, value: number): string {
@@ -79,15 +82,23 @@ function getValueString(attribute: string, value: number): string {
   })
 }
 
+const accordionItems = computed(() => [
+  {
+    label: t("operator.module.story"),
+    icon: "i-heroicons-newspaper",
+    slot: "story",
+  },
+])
+
 const isModuleSelected = ref<boolean>(module.id === moduleId)
 
 watch(
   () => potential,
-  () => (moduleState.value.potential = bestPotential.value)
+  () => (moduleState.value.potential = bestPotential.value),
 )
 watch(
   () => moduleId,
-  () => (isModuleSelected.value = module.id === moduleId)
+  () => (isModuleSelected.value = module.id === moduleId),
 )
 await useOperatorLocale(i18n, operator.key)
 </script>
@@ -231,9 +242,9 @@ await useOperatorLocale(i18n, operator.key)
                   v-html="
                     convertRichText(
                       t(
-                        `${operator.key}.traitCandidates.E${currentTraitCandidate.unlockConditions.elite}-L${currentTraitCandidate.unlockConditions.level}.description`
+                        `${operator.key}.traitCandidates.E${currentTraitCandidate.unlockConditions.elite}-L${currentTraitCandidate.unlockConditions.level}.description`,
                       ),
-                      { replace: currentTraitCandidate.variables }
+                      { replace: currentTraitCandidate.variables },
                     )
                   "
                 />
@@ -246,9 +257,9 @@ await useOperatorLocale(i18n, operator.key)
                     v-html="
                       convertRichText(
                         t(
-                          `${operator.key}.modules.${module.id}.stages.${stage.stage}.traitUpgrade.additionalDescription`
+                          `${operator.key}.modules.${module.id}.stages.${stage.stage}.traitUpgrade.additionalDescription`,
                         ),
-                        { replace: stage.traitUpgrade.variables }
+                        { replace: stage.traitUpgrade.variables },
                       )
                     "
                   />
@@ -259,9 +270,9 @@ await useOperatorLocale(i18n, operator.key)
                 v-html="
                   convertRichText(
                     t(
-                      `${operator.key}.modules.${module.id}.stages.${stage.stage}.traitUpgrade.overrideDescription`
+                      `${operator.key}.modules.${module.id}.stages.${stage.stage}.traitUpgrade.overrideDescription`,
                     ),
-                    { replace: stage.traitUpgrade.variables }
+                    { replace: stage.traitUpgrade.variables },
                   )
                 "
               />
@@ -276,7 +287,7 @@ await useOperatorLocale(i18n, operator.key)
                 <UBadge>
                   {{
                     t(
-                      `${operator.key}.modules.${module.id}.stages.${stage.stage}.talentUpgrades.${upgrade.index}.candidates.${moduleState.potential}.name`
+                      `${operator.key}.modules.${module.id}.stages.${stage.stage}.talentUpgrades.${upgrade.index}.candidates.${moduleState.potential}.name`,
                     )
                   }}
                 </UBadge>
@@ -284,8 +295,15 @@ await useOperatorLocale(i18n, operator.key)
                   v-html="
                     convertRichText(
                       t(
-                        `${operator.key}.modules.${module.id}.stages.${stage.stage}.talentUpgrades.${upgrade.index}.candidates.${moduleState.potential}.description`
-                      ), {replace: upgrade.candidates.find((candidate) => candidate.unlockCondition.potential === moduleState.potential)!.variables}
+                        `${operator.key}.modules.${module.id}.stages.${stage.stage}.talentUpgrades.${upgrade.index}.candidates.${moduleState.potential}.description`,
+                      ),
+                      {
+                        replace: upgrade.candidates.find(
+                          (candidate) =>
+                            candidate.unlockCondition.potential ===
+                            moduleState.potential,
+                        )!.variables,
+                      },
                     )
                   "
                 />
@@ -295,6 +313,25 @@ await useOperatorLocale(i18n, operator.key)
         </tr>
       </tbody>
     </table>
+    <UAccordion :items="accordionItems" variant="solid">
+      <template #story>
+        <div>
+          <img
+            class="mx-auto w-72 lg:w-80 md:float-right md:mx-4"
+            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/icon/${
+              module.type === 'INITIAL' ? 'original' : module.icon
+            }.png`"
+          />
+          <span
+            v-html="
+              convertRichText(
+                t(`${operator.key}.modules.${module.id}.description`),
+              )
+            "
+          />
+        </div>
+      </template>
+    </UAccordion>
   </div>
 </template>
 

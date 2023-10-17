@@ -194,7 +194,8 @@
       "stage": "等级",
       "selectModule": "选择模组",
       "moduleSelected": "当前模组",
-      "originalModuleName": "{name}证章"
+      "originalModuleName": "{name}证章",
+      "story": "故事"
     },
     "meta": {
       "title": "{name} — {rarity}★ {class} ({branch})"

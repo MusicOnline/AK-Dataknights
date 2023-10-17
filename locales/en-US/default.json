@@ -239,7 +239,8 @@
       "stage": "Stage",
       "attributes": "Stats",
       "moduleDescription": "Upgrade Description",
-      "originalModuleName": "{name}'s Badge"
+      "originalModuleName": "{name}'s Badge",
+      "story": "Story"
     }
   }
 }

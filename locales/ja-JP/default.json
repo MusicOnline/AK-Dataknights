@@ -192,7 +192,8 @@
       "stage": "STAGE",
       "selectModule": "モジュールを選択",
       "moduleSelected": "選択済み",
-      "originalModuleName": "{name}の記章"
+      "originalModuleName": "{name}の記章",
+      "story": "ストーリー"
     },
     "meta": {
       "title": "{name} — ★{rarity} {class}（{branch}）"

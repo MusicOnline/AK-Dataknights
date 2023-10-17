@@ -13,9 +13,31 @@ await useOperatorLocale(i18n, operator.key)
 
 const route = useRoute()
 
+function getModuleAnchorId(module: GeneratedModuleData): string {
+  if (!module.typeName2) return `#module-${module.typeName1}`.toLowerCase()
+  return `#module-${module.typeName1}-${module.typeName2}`.toLowerCase()
+}
+
 function getCombinedModuleTypeName(module: GeneratedModuleData): string {
-  if (!module.typeName2) return module.typeName1.toLowerCase()
-  return `${module.typeName1}-${module.typeName2}`.toLowerCase()
+  let { typeName1: branchCode, typeName2: moduleCode } = module
+  switch (moduleCode) {
+    case null:
+      return branchCode
+    case "D":
+      moduleCode = "Δ"
+      break
+  }
+  return `${branchCode}-${moduleCode}`
+}
+
+function getModuleName(module: GeneratedModuleData): string {
+  if (module.type === "INITIAL")
+    return t(`operator.module.originalModuleName`, {
+      name: t(`${operator.key}.name`),
+    })
+  return `${getCombinedModuleTypeName(module)}: ${t(
+    `${operator.key}.modules.${module.id}.name`,
+  )}`
 }
 
 const items = computed(() => [
@@ -67,8 +89,8 @@ const links = computed<VerticalNavigationLink[]>(() => {
       label: t("operator.ui.modules"),
       destination: "#modules",
       childLinks: operator.modules.map((mod) => ({
-        label: t(`${operator.key}.modules.${mod.id}.name`),
-        to: `#module-${getCombinedModuleTypeName(mod)}`,
+        label: getModuleName(mod),
+        to: getModuleAnchorId(mod),
         "exact-hash": true,
       })),
     })
