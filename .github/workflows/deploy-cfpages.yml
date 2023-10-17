@@ -85,6 +85,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} run generate
         env:
           NODE_OPTIONS: --max_old_space_size=8192
+          NITRO_PRESET: static
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
