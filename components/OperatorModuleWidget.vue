@@ -118,7 +118,7 @@ await useOperatorLocale(i18n, operator.key)
         >
           <img
             class="h-full w-full object-contain"
-            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/type/${module.typeIcon}.png`"
+            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/type/${module.typeIcon.toLowerCase()}.png`"
           />
         </div>
         <div class="flex flex-col">
@@ -317,7 +317,7 @@ await useOperatorLocale(i18n, operator.key)
       <template #story>
         <div>
           <img
-            class="mx-auto w-72 lg:w-80 md:float-right md:mx-4"
+            class="mx-auto w-72 md:float-right md:mx-4 lg:w-80"
             :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/icon/${
               module.type === 'INITIAL' ? 'original' : module.icon
             }.png`"

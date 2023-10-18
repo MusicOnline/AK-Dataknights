@@ -85,15 +85,23 @@ export function normalizeForLocaleFile(original: string | null): string | null {
   if (original === null) return null
   return (
     original
-      // "{a}" -> "{'{'}a{'}'}"
+      // R1: "{a}" -> "{'{'}a{'}'}"
+      // Escape braces (variable placeholders)
       .replace(/\{(?!')(.*?)\}/g, "{'{'}$1{'}'}")
-      // <Substitute> -> <<Substitute>>
+      // R2: <Substitute> -> <<Substitute>>
+      // Escape non-tag literal <text> in angle brackets
       .replace(/(?<!<)<(?!<|@|\$|\/|#|\?)(.+?)(?<!>)>(?!>)/g, "<<$1>>")
-      // <@tag.sub>text</> to <#tag.sub>text</> (Formatting only)
+      // R3: <<tag>>text</tag> to <tag>text</tag>
+      // Recover builtin formatting tags (e.g., <i>text</i>), must be after R2
+      .replace(/<<(?<tag>[^<]+?)>>(?<text>.+?)<\/\k<tag>>/g, "<$<tag>>$<text></$<tag>>")
+      // R4: <@tag.sub>text</> to <#tag.sub>text</>
+      // Custom formatting only
       .replace(/<@(?<tag>[^<]+?)>(?<text>.+?)<\/>/g, "<#$<tag>>$<text></>")
-      // <$tag.sub>text</> to <?tag.sub>text</> (With tooltip explanation)
+      // R5: <$tag.sub>text</> to <?tag.sub>text</>
+      // With tooltip explanation
       .replace(/<\$(?<tag>[^<]+?)>(?<text>.+?)<\/>/g, "<?$<tag>>$<text></>")
-      // {variable:0%} to <#>variable:0{'%'}</#>
+      // R6: variable:0% to variable:0{'%'}
+      // Escape literal special characters
       .replace(/(?<!{')(@|\$|%|\|)(?!'})/g, "{'$1'}")
   )
 }

@@ -3,8 +3,26 @@ import { Blackboard } from "~/tools/generate-data/raw/common"
 const VARIABLE_REGEX =
   /\{(?<sign>-)?(?<name>.+?)(?::(?<formatSpecifier>.+?))?\}/g
 
+const BUILTIN_RICH_TEXT_TAG_TO_CLASS = {
+  i: "italic",
+  b: "text-bold",
+}
+
+const BUILTIN_CLASS_TO_RICH_TEXT_REGEX = Object.entries(
+  BUILTIN_RICH_TEXT_TAG_TO_CLASS,
+).reduce(
+  (accumulator: { [key: string]: RegExp }, [richTextTag, englishClass]) => {
+    accumulator[englishClass] = new RegExp(
+      `<${richTextTag}>(.+?)</${richTextTag}>`,
+      "g",
+    )
+    return accumulator
+  },
+  {},
+)
+
 // gamedata_const.json
-export const RICH_TEXT_TAG_TO_ENGLISH = {
+const CUSTOM_RICH_TEXT_TAG_TO_ENGLISH = {
   // General
   kw: "keyword", // Arts Damage, Shift etc
   rem: "reminder", // Skill can be manually toggled etc
@@ -48,17 +66,17 @@ export const RICH_TEXT_TAG_TO_ENGLISH = {
   "dt.apoptosis": "necrosis-damage",
 }
 
-export const ENGLISH_CLASS_TO_RICH_TEXT_REGEX = Object.entries(
-  RICH_TEXT_TAG_TO_ENGLISH
+const CUSTOM_CLASS_TO_RICH_TEXT_REGEX = Object.entries(
+  CUSTOM_RICH_TEXT_TAG_TO_ENGLISH,
 ).reduce(
   (accumulator: { [key: string]: RegExp }, [richTextTag, englishClass]) => {
     accumulator[englishClass] = new RegExp(
-      `<[#?](?:ba|cc).${richTextTag.replace(/\./g, "\\.")}>(.+?)</>`,
-      "g"
+      `<[#?](?:ba|cc)\\.${richTextTag.replace(/\./g, "\\.")}>(.+?)</>`,
+      "g",
     )
     return accumulator
   },
-  {}
+  {},
 )
 
 export type ConvertRichTextOptions = {
@@ -73,7 +91,7 @@ export type ConvertRichTextOptions = {
 
 export function convertRichText(
   richText: string,
-  options: ConvertRichTextOptions = {}
+  options: ConvertRichTextOptions = {},
 ): string {
   const { locale = "en-US" } = options
 
@@ -83,16 +101,26 @@ export function convertRichText(
       .replace(/\n/g, "<br/>")
       .replace(/<</g, "&lt;")
       .replace(/>>/g, "&gt;")
-    Object.entries(ENGLISH_CLASS_TO_RICH_TEXT_REGEX).forEach(
+    Object.entries(BUILTIN_CLASS_TO_RICH_TEXT_REGEX).forEach(
       ([targetClass, regex]) =>
         (transformedString = transformedString.replace(
           regex,
-          `<span class="ba-markup ba-${targetClass}">$1</span>`
-        ))
+          `<span class="${targetClass}">$1</span>`,
+        )),
+    )
+    Object.entries(CUSTOM_CLASS_TO_RICH_TEXT_REGEX).forEach(
+      ([targetClass, regex]) =>
+        (transformedString = transformedString.replace(
+          regex,
+          `<span class="ba-markup ba-${targetClass}">$1</span>`,
+        )),
     )
   } else {
-    Object.values(ENGLISH_CLASS_TO_RICH_TEXT_REGEX).forEach(
-      (regex) => (transformedString = transformedString.replace(regex, "$1"))
+    Object.values(BUILTIN_CLASS_TO_RICH_TEXT_REGEX).forEach(
+      (regex) => (transformedString = transformedString.replace(regex, "$1")),
+    )
+    Object.values(CUSTOM_CLASS_TO_RICH_TEXT_REGEX).forEach(
+      (regex) => (transformedString = transformedString.replace(regex, "$1")),
     )
     transformedString = transformedString
       .replace(/<</g, "<")
@@ -105,9 +133,8 @@ export function convertRichText(
     let value
     if (Array.isArray(options?.replace)) {
       // options.replace: Blackboard[]
-      value = options.replace.find(
-        ({ key }) => key === name.toLowerCase()
-      )?.value
+      value = options.replace.find(({ key }) => key === name.toLowerCase())
+        ?.value
     } else {
       value = options?.replace?.[name.toLowerCase()]
     }
