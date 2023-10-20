@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { KeyFrameData } from "~/tools/generate-data/raw/character"
-import { ALTERNATE_ATTRIBUTE_NAMES, OperatorState } from "~/utils"
+import type { OperatorState } from "~/utils"
+import { ALTERNATE_ATTRIBUTE_NAMES } from "~/utils"
 
 const CALCULATED_ATTRIBUTES = [
   "maxHp",
@@ -66,7 +67,7 @@ const operatorAttributes = computed<KeyFrameData>(() => {
       }
       return accumulator
     },
-    <Partial<KeyFrameData>>{}
+    <Partial<KeyFrameData>>{},
   )
 })
 
@@ -111,7 +112,7 @@ function getModuleBonus(attribute: keyof KeyFrameData): number {
 
   let moduleBonus: number = 0
   const module = operator.modules!.find(
-    ({ id }) => id === operatorState.moduleId
+    ({ id }) => id === operatorState.moduleId,
   )!
 
   if (

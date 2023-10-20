@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AvatarSize } from "@nuxt/ui/dist/runtime/types"
+import type { AvatarSize } from "@nuxt/ui/dist/runtime/types"
 import { UCommandPalette } from "#components"
 import type {
   GeneratedOperatorData,
