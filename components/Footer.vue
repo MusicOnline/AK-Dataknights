@@ -4,7 +4,7 @@ const { t } = useI18n()
 
 <template>
   <footer class="text-container-1-fg">
-    <div class="flex flex-wrap gap-2">
+    <div class="flex flex-wrap items-center gap-2">
       <div class="flex flex-col gap-1">
         <div class="flex items-center gap-1 font-bold md:text-xl">
           <UIcon
@@ -15,16 +15,19 @@ const { t } = useI18n()
             t("general.siteIndexMetaTitle")
           }}</span>
         </div>
-        <ul class="flex gap-2 text-sm underline md:gap-4 md:text-base">
-          <li>
-            <a
-              href="https://github.com/MusicOnline/AK-Dataknights#special-thanks"
-              target="_blank"
-            >
-              {{ t("ui.credits") }}
-            </a>
-          </li>
-        </ul>
+        <div>
+          <ul class="flex gap-2 text-sm underline md:gap-4 md:text-base">
+            <li>
+              <a
+                href="https://github.com/MusicOnline/AK-Dataknights#special-thanks"
+                target="_blank"
+              >
+                {{ t("ui.credits") }}
+              </a>
+            </li>
+          </ul>
+          <GitStatus class="text-xs" />
+        </div>
       </div>
       <div
         class="ml-auto flex flex-col items-end gap-1 text-sm md:gap-2 md:text-base"
@@ -42,7 +45,10 @@ const { t } = useI18n()
             href="https://vuejs.org/"
             target="_blank"
           >
-            <UIcon class="bg-contain bg-center text-xl md:text-2xl" name="i-logos-vue" />
+            <UIcon
+              class="bg-contain bg-center text-xl md:text-2xl"
+              name="i-logos-vue"
+            />
           </a>
           <a
             class="flex items-center"
@@ -66,7 +72,10 @@ const { t } = useI18n()
             target="_blank"
           >
             <span>{{ t("ui.viewRepositoryPrefix") }}</span>
-            <UIcon class="bg-contain bg-center text-xl md:text-2xl" name="i-mdi-github" />
+            <UIcon
+              class="bg-contain bg-center text-xl md:text-2xl"
+              name="i-mdi-github"
+            />
           </a>
         </div>
       </div>

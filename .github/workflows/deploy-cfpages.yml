@@ -37,6 +37,7 @@ jobs:
           echo "GAME_DATA_ROOT_PATH=$(echo $GITHUB_WORKSPACE)/ArknightsGameData" >> $GITHUB_ENV
           echo "ENABLE_SSR=true" >> $GITHUB_ENV
           echo "NUXT_PUBLIC_FULL_BASE_URL=https://dataknights.pages.dev" >> $GITHUB_ENV
+          echo "NUXT_PUBLIC_COMMIT_BASE_URL=https://github.com/MusicOnline/AK-Dataknights/commit" >> $GITHUB_ENV
       - name: Detect package manager
         id: detect-package-manager
         run: |

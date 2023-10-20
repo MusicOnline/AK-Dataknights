@@ -53,6 +53,9 @@ NUXT_APP_BASE_URL=/RepositoryNameHere/
 # For generating SEO meta tags that require the base URL including the domain name
 # Omit the trailing slash
 NUXT_PUBLIC_FULL_BASE_URL=http://localhost:3000
+
+# Optional git remote repository commit base URL
+NUXT_PUBLIC_COMMIT_BASE_URL=https://github.com/MusicOnline/AK-Dataknights/commit
 ```
 
 Builds may require `NODE_OPTIONS=--max_old_space_size=8192` to run.

@@ -1,6 +1,10 @@
+import { execSync } from "child_process"
 import { generateDataFiles } from "./tools/generate-data"
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+function runTerminal(command: string): string {
+  return execSync(command).toString().trim()
+}
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -94,6 +98,18 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       fullBaseUrl: process.env.NUXT_PUBLIC_FULL_BASE_URL,
+      commit: {
+        id:
+          process.env.NUXT_PUBLIC_COMMIT_ID ||
+          runTerminal("git log --format=%h -n 1"),
+        message:
+          process.env.NUXT_PUBLIC_COMMIT_MESSAGE ||
+          runTerminal("git log --format=%s -n 1"),
+        timestamp:
+          process.env.NUXT_PUBLIC_COMMIT_TIMESTAMP ||
+          runTerminal("git log --format=%ct -n 1"),
+        baseUrl: process.env.NUXT_PUBLIC_COMMIT_BASE_URL,
+      },
     },
   },
   experimental: {
