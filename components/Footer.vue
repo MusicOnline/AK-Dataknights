@@ -34,53 +34,46 @@ const { t } = useI18n()
       </div>
       <div class="ml-auto flex flex-col items-end gap-1 text-sm md:gap-2">
         <div class="flex items-center gap-1">
-          <span>
-            {{ t("ui.madeWithTechnologiesPrefix") }}
-          </span>
-          <UButton
-            class="p-0"
-            variant="ghost"
-            color="gray"
-            icon="i-logos-nuxt-icon"
-            to="https://nuxt.com"
+          <span>{{ t("ui.madeWithTechnologiesPrefix") }}</span>
+          <a class="flex items-center" href="https://nuxt.com" target="_blank">
+            <UIcon
+              class="bg-contain bg-center text-xl md:text-2xl"
+              name="i-logos-nuxt-icon"
+            />
+          </a>
+          <a class="flex items-center" href="https://vuejs.org" target="_blank">
+            <UIcon
+              class="bg-contain bg-center text-xl md:text-2xl"
+              name="i-logos-vue"
+            />
+          </a>
+          <a
+            class="flex items-center"
+            href="https://tailwindcss.com"
             target="_blank"
-          />
-          <UButton
-            class="p-0"
-            variant="ghost"
-            color="gray"
-            icon="i-logos-vue"
-            to="https://vuejs.org"
-            target="_blank"
-          />
-          <UButton
-            class="p-0"
-            variant="ghost"
-            color="gray"
-            icon="i-logos-tailwindcss-icon"
-            to="https://tailwindcss.com"
-            target="_blank"
-          />
-          <!-- TODO: Go to favorite operator page -->
-          <UButton
-            class="p-0"
-            variant="ghost"
-            color="gray"
-            icon="i-emojione-red-heart"
+          >
+            <UIcon
+              class="bg-contain bg-center text-xl md:text-2xl"
+              name="i-logos-tailwindcss-icon"
+            />
+          </a>
+          <UIcon
+            class="bg-contain bg-center text-xl md:text-2xl"
+            name="i-emojione-red-heart"
           />
         </div>
-        <div class="flex items-center gap-1">
-          <span>
-            {{ t("ui.viewRepositoryPrefix") }}
-          </span>
-          <UButton
-            class="p-0"
-            variant="ghost"
-            color="gray"
-            icon="i-mdi-github"
-            to="https://github.com/MusicOnline/AK-Dataknights"
+        <div>
+          <a
+            class="flex items-center gap-1"
+            href="https://github.com/MusicOnline/AK-Dataknights"
             target="_blank"
-          />
+          >
+            <span>{{ t("ui.viewRepositoryPrefix") }}</span>
+            <UIcon
+              class="bg-contain bg-center text-xl md:text-2xl"
+              name="i-mdi-github"
+            />
+          </a>
         </div>
       </div>
     </div>
