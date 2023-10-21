@@ -25,8 +25,7 @@ const headLinks = computed<any[]>(() => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;700&family=Noto+Sans+SC:wght@300;400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+KR:wght@300;400;700&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap",
   },
-  ...registeredLocales.value.flatMap((localeObj) => {
-    if (localeObj.code === locale.value) return []
+  ...registeredLocales.value.map((localeObj) => {
     return {
       rel: "alternate",
       hreflang: localeObj.code,
