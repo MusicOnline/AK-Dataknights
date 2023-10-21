@@ -1,4 +1,4 @@
-import { CharSkin, VoiceType } from "./raw/skin"
+import type { CharSkin, VoiceType } from "./raw/skin"
 
 export type GeneratedOutfitData = {
   id: string

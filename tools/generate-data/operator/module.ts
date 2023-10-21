@@ -1,13 +1,13 @@
 import * as constants from "../constants"
 import {
-  AddOrOverrideTalentDataBundleCandidate,
-  BattleEquip,
-  Phase,
   Target,
+  type AddOrOverrideTalentDataBundleCandidate,
+  type BattleEquip,
+  type Phase,
 } from "../raw/battle-equip"
-import { Blackboard } from "../raw/common"
-import { EquipDict, EquipDictType } from "../raw/uni-equip"
-import { LocaleString, Localizable } from "../utils"
+import type { Blackboard } from "../raw/common"
+import type { EquipDict, EquipDictType } from "../raw/uni-equip"
+import { LocaleString, type Localizable } from "../utils"
 import { Talent } from "./talent"
 
 export type GeneratedModuleData = {
@@ -148,7 +148,7 @@ export class Module implements Localizable {
   public addLocaleTL(
     locale: constants.TranslatedLocale,
     data: any,
-    talents?: Talent[] | null
+    talents?: Talent[] | null,
   ): void {
     this.name.addLocaleTL(locale, data?.modules?.[this.id]?.name)
     this.description.addLocaleTL(locale, data?.modules?.[this.id]?.description)
@@ -156,8 +156,8 @@ export class Module implements Localizable {
       stage.addLocaleTL(
         locale,
         data?.modules?.[this.id]?.stages?.[index],
-        talents
-      )
+        talents,
+      ),
     )
   }
 
@@ -165,10 +165,13 @@ export class Module implements Localizable {
     return {
       name: this.name.toLocaleData(locale),
       description: this.description.toLocaleData(locale),
-      stages: this.stages?.reduce((accumulator, stage) => {
-        accumulator[stage.stage] = stage.toLocaleData(locale)
-        return accumulator
-      }, <{ [stage: number]: any }>{}),
+      stages: this.stages?.reduce(
+        (accumulator, stage) => {
+          accumulator[stage.stage] = stage.toLocaleData(locale)
+          return accumulator
+        },
+        <{ [stage: number]: any }>{},
+      ),
     }
   }
 }
@@ -213,7 +216,7 @@ export class ModuleStage implements Localizable {
           const talentCandidates = part.addOrOverrideTalentDataBundle.candidates
           if (talentCandidates)
             this.talentUpgrades.push(
-              new TalentUpgrade(index, part.isToken, talentCandidates)
+              new TalentUpgrade(index, part.isToken, talentCandidates),
             )
           break
       }
@@ -222,7 +225,7 @@ export class ModuleStage implements Localizable {
     this.traitUpgrade = new TraitUpgrade(
       traitUpgradeAttributes.additionalDescription,
       traitUpgradeAttributes.overrideDescription,
-      traitUpgradeAttributes.variables!
+      traitUpgradeAttributes.variables!,
     )
   }
 
@@ -255,11 +258,11 @@ export class ModuleStage implements Localizable {
           const talentCandidates = part.addOrOverrideTalentDataBundle.candidates
           if (talentCandidates) {
             const sameUpgrade = this.talentUpgrades.find(
-              (upgrade) => upgrade.index === index
+              (upgrade) => upgrade.index === index,
             )
             if (!sameUpgrade)
               throw new Error(
-                `Same talent upgrade not found for module ${this.moduleId} stage ${this.stage} part index ${index} in locale ${locale}`
+                `Same talent upgrade not found for module ${this.moduleId} stage ${this.stage} part index ${index} in locale ${locale}`,
               )
 
             sameUpgrade.addLocale(locale, talentCandidates)
@@ -270,32 +273,35 @@ export class ModuleStage implements Localizable {
     this.traitUpgrade.addLocale(
       locale,
       additionalDescription,
-      overrideDescription
+      overrideDescription,
     )
   }
 
   public addLocaleTL(
     locale: constants.TranslatedLocale,
     data: any,
-    talents?: Talent[] | null
+    talents?: Talent[] | null,
   ): void {
     this.traitUpgrade.addLocaleTL(locale, data?.traitUpgrade)
     this.talentUpgrades.forEach((upgrade) =>
       upgrade.addLocaleTL(
         locale,
         data?.talentUpgrades?.[upgrade.index],
-        talents
-      )
+        talents,
+      ),
     )
   }
 
   public toLocaleData(locale: constants.OutputLocale) {
     return {
       traitUpgrade: this.traitUpgrade.toLocaleData(locale),
-      talentUpgrades: this.talentUpgrades.reduce((accumulator, current) => {
-        accumulator[current.index] = current.toLocaleData(locale)
-        return accumulator
-      }, <{ [index: number]: any }>{}),
+      talentUpgrades: this.talentUpgrades.reduce(
+        (accumulator, current) => {
+          accumulator[current.index] = current.toLocaleData(locale)
+          return accumulator
+        },
+        <{ [index: number]: any }>{},
+      ),
     }
   }
 }
@@ -310,10 +316,10 @@ export class TraitUpgrade implements Localizable {
   public constructor(
     additionalDescription: string | null,
     overrideDescription: string | null,
-    variables: Blackboard[]
+    variables: Blackboard[],
   ) {
     this.additionalDescription = LocaleString.fromDataOrNull(
-      additionalDescription
+      additionalDescription,
     )
     this.overrideDescription = LocaleString.fromDataOrNull(overrideDescription)
     this.variables = variables
@@ -330,7 +336,7 @@ export class TraitUpgrade implements Localizable {
   public addLocale(
     locale: constants.GameLocale,
     additionalDescription: string | null,
-    overrideDescription: string | null
+    overrideDescription: string | null,
   ): void {
     this.additionalDescription?.addLocale(locale, additionalDescription)
     this.overrideDescription?.addLocale(locale, overrideDescription)
@@ -339,27 +345,27 @@ export class TraitUpgrade implements Localizable {
   public addLocaleTL(locale: constants.TranslatedLocale, data: any): void {
     if (
       typeof this.additionalDescription?.getString(
-        constants.TRANSLATED_TO_GAME_LOCALE[locale]
+        constants.TRANSLATED_TO_GAME_LOCALE[locale],
       ) !== "string"
     ) {
       this.additionalDescription?.addLocaleTL(
         locale,
-        globalThis.TRAIT_LOCALES![locale][this.additionalDescription.zh_CN]
+        globalThis.TRAIT_LOCALES![locale][this.additionalDescription.zh_CN],
       )
     } else {
       this.additionalDescription?.addLocaleTL(
         locale,
-        data?.additionalDescription
+        data?.additionalDescription,
       )
     }
     if (
       typeof this.overrideDescription?.getString(
-        constants.TRANSLATED_TO_GAME_LOCALE[locale]
+        constants.TRANSLATED_TO_GAME_LOCALE[locale],
       ) !== "string"
     ) {
       this.overrideDescription?.addLocaleTL(
         locale,
-        globalThis.TRAIT_LOCALES![locale][this.overrideDescription.zh_CN]
+        globalThis.TRAIT_LOCALES![locale][this.overrideDescription.zh_CN],
       )
     } else {
       this.overrideDescription?.addLocaleTL(locale, data?.overrideDescription)
@@ -383,12 +389,12 @@ export class TalentUpgrade implements Localizable {
   public constructor(
     index: number,
     isToken: boolean,
-    candidates: AddOrOverrideTalentDataBundleCandidate[]
+    candidates: AddOrOverrideTalentDataBundleCandidate[],
   ) {
     this.index = index
     this.isToken = isToken
     this.candidates = candidates.map(
-      (candidate) => new TalentUpgradeCandidate(candidate)
+      (candidate) => new TalentUpgradeCandidate(candidate),
     )
   }
 
@@ -407,7 +413,7 @@ export class TalentUpgrade implements Localizable {
 
   public addLocale(
     locale: constants.GameLocale,
-    candidates: AddOrOverrideTalentDataBundleCandidate[]
+    candidates: AddOrOverrideTalentDataBundleCandidate[],
   ): void {
     this.candidates.forEach((candidate, index) => {
       const otherCandidate = candidates[index]
@@ -418,7 +424,7 @@ export class TalentUpgrade implements Localizable {
   public addLocaleTL(
     locale: constants.TranslatedLocale,
     data: any,
-    talents?: Talent[] | null
+    talents?: Talent[] | null,
   ): void {
     this.candidates.forEach((candidate, index) => {
       candidate.addLocaleTL(locale, data?.candidates?.[index], talents)
@@ -427,10 +433,13 @@ export class TalentUpgrade implements Localizable {
 
   public toLocaleData(locale: constants.OutputLocale) {
     return {
-      candidates: this.candidates.reduce((accumulator, current) => {
-        accumulator[current.key] = current.toLocaleData(locale)
-        return accumulator
-      }, <any>{}),
+      candidates: this.candidates.reduce(
+        (accumulator, current) => {
+          accumulator[current.key] = current.toLocaleData(locale)
+          return accumulator
+        },
+        <any>{},
+      ),
     }
   }
 }
@@ -473,7 +482,7 @@ export class TalentUpgradeCandidate implements Localizable {
 
   public addLocale(
     locale: constants.GameLocale,
-    candidate: AddOrOverrideTalentDataBundleCandidate
+    candidate: AddOrOverrideTalentDataBundleCandidate,
   ): void {
     this.name?.addLocale(locale, candidate.name)
     this.description?.addLocale(locale, candidate.upgradeDescription)
@@ -482,7 +491,7 @@ export class TalentUpgradeCandidate implements Localizable {
   public addLocaleTL(
     locale: constants.TranslatedLocale,
     data: any,
-    talents?: Talent[] | null
+    talents?: Talent[] | null,
   ): void {
     const gameLocale = constants.TRANSLATED_TO_GAME_LOCALE[locale]
     // Auto translate if no official localization yet

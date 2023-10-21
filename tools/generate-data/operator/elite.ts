@@ -1,12 +1,12 @@
 import { Operator } from "."
 import * as constants from "../constants"
 import {
-  GeneratedOutfitData,
-  GeneratedOutfitIndexData,
   Outfit,
+  type GeneratedOutfitData,
+  type GeneratedOutfitIndexData,
 } from "../outfit"
-import { Character, KeyFrame } from "../raw/character"
-import { GeneratedRangeData, Range } from "./range"
+import type { Character, KeyFrame } from "../raw/character"
+import { Range, type GeneratedRangeData } from "./range"
 
 export type GeneratedElitePhaseData = {
   elite: number
@@ -56,7 +56,9 @@ export class ElitePhase {
     data: Character,
     originalCharacterPatch: Operator | null = null,
   ): ElitePhase[] {
-    return data.phases.map((phase, index) => new ElitePhase(id, index, data, originalCharacterPatch))
+    return data.phases.map(
+      (phase, index) => new ElitePhase(id, index, data, originalCharacterPatch),
+    )
   }
 
   public toData(): GeneratedElitePhaseData {

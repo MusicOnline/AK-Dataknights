@@ -1,12 +1,12 @@
 import * as constants from "../constants"
-import {
+import type {
   Character,
   Talent as RawTalent,
   TalentCandidate as RawTalentCandidate,
 } from "../raw/character"
-import { Blackboard } from "../raw/common"
-import { LocaleString, Localizable } from "../utils"
-import { GeneratedRangeData, Range } from "./range"
+import type { Blackboard } from "../raw/common"
+import { LocaleString, type Localizable } from "../utils"
+import { Range, type GeneratedRangeData } from "./range"
 
 export type GeneratedTalentCandidateData = {
   key: string

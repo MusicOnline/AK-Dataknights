@@ -1,4 +1,4 @@
-import { Grid, RangeTable } from "../raw/range"
+import type { Grid, RangeTable } from "../raw/range"
 
 export type GeneratedRangeData = {
   id: keyof RangeTable

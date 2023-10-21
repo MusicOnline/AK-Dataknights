@@ -1,11 +1,11 @@
 import * as constants from "../constants"
-import {
+import type {
   BuffCategory,
   BuffDatum,
   BuffIcon,
   RoomType,
 } from "../raw/building-data"
-import { LocaleObject, LocaleString, Localizable } from "../utils"
+import { LocaleString, type LocaleObject, type Localizable } from "../utils"
 
 export type GeneratedRiicBaseSkillData = {
   id: string

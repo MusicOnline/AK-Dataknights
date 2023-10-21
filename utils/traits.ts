@@ -1,10 +1,10 @@
-import type { GeneratedOperatorData } from "tools/generate-data/operator"
-import type { GeneratedTraitCandidateData } from "tools/generate-data/operator/trait"
-import type { OperatorState } from "utils"
+import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
+import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait"
+import type { OperatorState } from "~/utils"
 
 export function getCurrentTraitCandidate(
   operator: GeneratedOperatorData,
-  operatorState: OperatorState
+  operatorState: OperatorState,
 ): GeneratedTraitCandidateData {
   let currentCandidate: GeneratedTraitCandidateData | null = null
   operator.traitCandidates.forEach((candidate) => {

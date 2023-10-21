@@ -1,16 +1,16 @@
 import * as z from "zod"
 
 import * as constants from "../constants"
-import { Character, Skill as RawSkill } from "../raw/character"
-import { Blackboard } from "../raw/common"
+import type { Character, Skill as RawSkill } from "../raw/character"
+import type { Blackboard } from "../raw/common"
 import {
   DurationTypeEnum,
-  SkillLevel as RawSkillLevel,
   SkillType,
   SpDataSchema,
+  type SkillLevel as RawSkillLevel,
 } from "../raw/skill"
-import { LocaleObject, LocaleString, Localizable } from "../utils"
-import { GeneratedRangeData, Range } from "./range"
+import { LocaleString, type LocaleObject, type Localizable } from "../utils"
+import { Range, type GeneratedRangeData } from "./range"
 
 export const GeneratedSpDataSchema = SpDataSchema.pick({
   spType: true,
@@ -84,7 +84,7 @@ export class SkillLevel implements Localizable {
   public addLocaleTL(
     locale: constants.TranslatedLocale,
     skillId: string,
-    data: any
+    data: any,
   ): void {
     const skill = data?.skills?.[skillId]?.[this.level]
     this.name.addLocaleTL(locale, skill?.name)
@@ -121,13 +121,13 @@ export class Skill implements Localizable {
       level: data.unlockCond.level,
     }
     this.levels = moreData.levels.map(
-      (levelData, index) => new SkillLevel(index + 1, levelData)
+      (levelData, index) => new SkillLevel(index + 1, levelData),
     )
   }
 
   public static getAllFromData(data: Character): (Skill | null)[] {
     return data.skills.map((skillData) =>
-      skillData.skillId ? new Skill(skillData) : null
+      skillData.skillId ? new Skill(skillData) : null,
     )
   }
 
@@ -150,9 +150,12 @@ export class Skill implements Localizable {
   }
 
   public toLocaleData(locale: constants.OutputLocale): LocaleObject {
-    return this.levels.reduce((accumulator, level) => {
-      accumulator[level.level] = level.toLocaleData(locale)
-      return accumulator
-    }, <LocaleObject>{})
+    return this.levels.reduce(
+      (accumulator, level) => {
+        accumulator[level.level] = level.toLocaleData(locale)
+        return accumulator
+      },
+      <LocaleObject>{},
+    )
   }
 }

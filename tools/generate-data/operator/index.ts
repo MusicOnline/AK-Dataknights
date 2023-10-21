@@ -2,33 +2,32 @@ import OPERATOR_KEY_OVERRIDE from "../../../data/custom/operator-key-override.js
 import { isKeyOfObject } from "../../../utils"
 import * as constants from "../constants"
 import {
-  Character,
-  CharacterTable,
-  KeyFrame,
-  Position,
   ProfessionEnum,
   SubProfessionEnum,
   Tag,
-  TagEnum,
+  type Character,
+  type CharacterTable,
+  type KeyFrame,
+  type Position,
 } from "../raw/character"
-import { PatchInfo } from "../raw/character-patch"
+import type { PatchInfo } from "../raw/character-patch"
 import {
-  LocaleObject,
   LocaleString,
-  Localizable,
   normalizeForLocaleFile,
+  type LocaleObject,
+  type Localizable,
 } from "../utils"
-import { GeneratedRiicBaseSkillData, RiicBaseSkill } from "./base-skill"
+import { RiicBaseSkill, type GeneratedRiicBaseSkillData } from "./base-skill"
 import {
   ElitePhase,
-  GeneratedElitePhaseData,
-  GeneratedElitePhaseIndexData,
+  type GeneratedElitePhaseData,
+  type GeneratedElitePhaseIndexData,
 } from "./elite"
-import { GeneratedModuleData, Module } from "./module"
-import { GeneratedPotentialData, Potential } from "./potential"
-import { GeneratedSkillData, Skill } from "./skill"
-import { GeneratedTalentData, Talent } from "./talent"
-import { GeneratedTraitCandidateData, TraitCandidate } from "./trait"
+import { Module, type GeneratedModuleData } from "./module"
+import { Potential, type GeneratedPotentialData } from "./potential"
+import { Skill, type GeneratedSkillData } from "./skill"
+import { Talent, type GeneratedTalentData } from "./talent"
+import { TraitCandidate, type GeneratedTraitCandidateData } from "./trait"
 
 export type GeneratedOperatorData = {
   key: string

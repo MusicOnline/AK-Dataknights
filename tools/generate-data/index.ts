@@ -2,9 +2,9 @@ import * as fs from "fs/promises"
 
 import * as constants from "./constants"
 import { Operator } from "./operator"
-import { CharacterTable } from "./raw/character"
+import type { CharacterTable } from "./raw/character"
 import * as tables from "./tables"
-import { LocaleObject, LocaleString, purgeLocaleObject } from "./utils"
+import { LocaleString, purgeLocaleObject, type LocaleObject } from "./utils"
 
 async function readData() {
   if (!globalThis.GAME_TABLES)

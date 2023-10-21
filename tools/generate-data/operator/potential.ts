@@ -1,11 +1,11 @@
 import * as constants from "../constants"
 import {
   AttributeType,
-  Character,
-  PotentialRank,
   TalentImprovePotential,
+  type Character,
+  type PotentialRank,
 } from "../raw/character"
-import { LocaleString, Localizable } from "../utils"
+import { LocaleString, type Localizable } from "../utils"
 
 const POTENTIAL_NUMBER_OFFSET_FROM_ZERO_INDEX = 2
 
@@ -34,7 +34,7 @@ export class Potential implements Localizable {
     if (data.type === "BUFF" && data.buff) {
       if (data.buff.attributes.attributeModifiers.length !== 1)
         throw new Error(
-          "Unexpected more than one attribute modifier in potential buff"
+          "Unexpected more than one attribute modifier in potential buff",
         )
       const modifier = data.buff.attributes.attributeModifiers[0]
       this.attribute = {
@@ -58,8 +58,8 @@ export class Potential implements Localizable {
       (potentialData, index) =>
         new Potential(
           index + POTENTIAL_NUMBER_OFFSET_FROM_ZERO_INDEX,
-          potentialData
-        )
+          potentialData,
+        ),
     )
   }
 
@@ -76,14 +76,14 @@ export class Potential implements Localizable {
       locale,
       data.potentialRanks[
         this.potentialNumber - POTENTIAL_NUMBER_OFFSET_FROM_ZERO_INDEX
-      ]?.description
+      ]?.description,
     )
   }
 
   public addLocaleTL(locale: constants.TranslatedLocale, data: any) {
     this.description.addLocaleTL(
       locale,
-      data?.potentials?.[this.potentialNumber]?.description ?? null
+      data?.potentials?.[this.potentialNumber]?.description ?? null,
     )
   }
 

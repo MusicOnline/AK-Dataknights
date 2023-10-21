@@ -6,26 +6,32 @@ import * as z from "zod"
 
 import {
   GAME_LOCALES,
-  GameLocale,
   ORIGINAL_LOCALE,
   TRANSLATED_LOCALES,
-  TranslatedLocale,
+  type GameLocale,
+  type TranslatedLocale,
 } from "./constants"
-import { BattleEquipTable, BattleEquipTableSchema } from "./raw/battle-equip"
-import { BuildingDataTable, BuildingDataTableSchema } from "./raw/building-data"
-import { CharacterTable, CharacterTableSchema } from "./raw/character"
-import { RangeTable, RangeTableSchema } from "./raw/range"
-import { SkillTable, SkillTableSchema } from "./raw/skill"
-import { SkinTable, SkinTableSchema } from "./raw/skin"
-import { UniEquipTable, UniEquipTableSchema } from "./raw/uni-equip"
 import {
-  CharacterPatchTable,
-  CharacterPatchTableSchema,
-} from "./raw/character-patch"
+  BattleEquipTableSchema,
+  type BattleEquipTable,
+} from "./raw/battle-equip"
 import {
-  CharacterMetaTable,
+  BuildingDataTableSchema,
+  type BuildingDataTable,
+} from "./raw/building-data"
+import { CharacterTableSchema, type CharacterTable } from "./raw/character"
+import {
   CharacterMetaTableSchema,
+  type CharacterMetaTable,
 } from "./raw/character-meta"
+import {
+  CharacterPatchTableSchema,
+  type CharacterPatchTable,
+} from "./raw/character-patch"
+import { RangeTableSchema, type RangeTable } from "./raw/range"
+import { SkillTableSchema, type SkillTable } from "./raw/skill"
+import { SkinTableSchema, type SkinTable } from "./raw/skin"
+import { UniEquipTableSchema, type UniEquipTable } from "./raw/uni-equip"
 
 export const OPERATOR_TABLE_PATH = "gamedata/excel/character_table.json"
 export const MODULE_TABLE_PATH = "gamedata/excel/uniequip_table.json"

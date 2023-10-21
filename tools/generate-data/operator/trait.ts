@@ -1,7 +1,7 @@
 import * as constants from "../constants"
-import { Character } from "../raw/character"
-import { Blackboard } from "../raw/common"
-import { LocaleString, Localizable } from "../utils"
+import type { Character } from "../raw/character"
+import type { Blackboard } from "../raw/common"
+import { LocaleString, type Localizable } from "../utils"
 
 export type GeneratedTraitCandidateData = {
   unlockConditions: { elite: number; level: number }
@@ -22,7 +22,7 @@ export class TraitCandidate implements Localizable {
       elite: number
       level: number
     },
-    variables: Blackboard[] = []
+    variables: Blackboard[] = [],
   ) {
     this.description = new LocaleString(description)
     this.unlockConditions = unlockConditions
@@ -45,8 +45,8 @@ export class TraitCandidate implements Localizable {
           new TraitCandidate(
             candidate.overrideDescripton || data.description!,
             { elite: 0, level: 1 },
-            candidate.blackboard
-          )
+            candidate.blackboard,
+          ),
         )
         isFirstCandidateAdded = true
       } else {
@@ -59,8 +59,8 @@ export class TraitCandidate implements Localizable {
               elite: candidate.unlockCondition.phase,
               level: candidate.unlockCondition.level,
             },
-            candidate.blackboard
-          )
+            candidate.blackboard,
+          ),
         )
       }
     })
@@ -68,7 +68,7 @@ export class TraitCandidate implements Localizable {
       candidates.splice(
         0,
         0,
-        new TraitCandidate(data.description, { elite: 0, level: 1 })
+        new TraitCandidate(data.description, { elite: 0, level: 1 }),
       )
     return candidates
   }
@@ -88,7 +88,7 @@ export class TraitCandidate implements Localizable {
     const traitCandidateIndex = data.trait.candidates.findIndex(
       ({ unlockCondition: { phase, level } }) =>
         phase === this.unlockConditions.elite &&
-        level === this.unlockConditions.level
+        level === this.unlockConditions.level,
     )
     const traitCandidate = data.trait.candidates[traitCandidateIndex]
     let description = traitCandidate.overrideDescripton
@@ -104,17 +104,17 @@ export class TraitCandidate implements Localizable {
   public addLocaleTL(locale: constants.TranslatedLocale, data: any) {
     if (
       typeof this.description?.getString(
-        constants.TRANSLATED_TO_GAME_LOCALE[locale]
+        constants.TRANSLATED_TO_GAME_LOCALE[locale],
       ) !== "string"
     ) {
       this.description?.addLocaleTL(
         locale,
-        globalThis.TRAIT_LOCALES![locale][this.description.zh_CN]
+        globalThis.TRAIT_LOCALES![locale][this.description.zh_CN],
       )
     } else {
       this.description.addLocaleTL(
         locale,
-        data?.traitCandidates?.[this.key]?.description
+        data?.traitCandidates?.[this.key]?.description,
       )
     }
   }
