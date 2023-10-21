@@ -112,9 +112,6 @@ export default defineNuxtConfig({
       },
     },
   },
-  experimental: {
-    payloadExtraction: true, // Fix missing _payload.json files
-  },
   i18n: {
     locales: [
       { code: "en", name: "English" },
@@ -150,5 +147,10 @@ export default defineNuxtConfig({
   },
   devtools: {
     enabled: true,
+  },
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false,
+    },
   },
 })
