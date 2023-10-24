@@ -10,20 +10,41 @@ jobs:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.REPO_SCOPED_TOKEN }}
-      - name: Fetch latest commit SHA
+      - name: Fetch latest CN commit SHA
         run: |
           SHA=$(curl -sL https://api.github.com/repos/Kengxxiao/ArknightsGameData/commits/master | jq -r ".sha")
           if [ "$SHA" != "null" ]; then 
             echo $SHA > data/.game-data-sha
           fi
-      - name: Check for modified files
-        id: git-check
+      - name: Check for modified CN commit SHA
+        id: git-check-cn
         run: echo "modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")" >> $GITHUB_OUTPUT
-      - name: Commit & push latest commit SHA
-        if: steps.git-check.outputs.modified == 'true'
+      - name: Commit latest CN commit SHA
+        if: steps.git-check-cn.outputs.modified == 'true'
         run: |
           git config --global user.name 'Mizuki'
           git config --global user.email 'mizuki@arknights'
-          git commit -am "chore: update latest game data commit SHA" \
+          git add data/.game-data-sha
+          git commit -m "chore: update latest CN game data commit SHA" \
             -m "This is an automated commit triggered by GitHub Actions. Data repository: Kengxxiao/ArknightsGameData"
+      - name: Fetch latest Yostar commit SHA
+        run: |
+          SHA=$(curl -sL https://api.github.com/repos/Kengxxiao/ArknightsGameData_YoStar/commits/master | jq -r ".sha")
+          if [ "$SHA" != "null" ]; then 
+            echo $SHA > data/.game-data-yostar-sha
+          fi
+      - name: Check for modified Yostar commit SHA
+        id: git-check-yostar
+        run: echo "modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")" >> $GITHUB_OUTPUT
+      - name: Commit latest Yostar commit SHA
+        if: steps.git-check-yostar.outputs.modified == 'true'
+        run: |
+          git config --global user.name 'Mizuki'
+          git config --global user.email 'mizuki@arknights'
+          git add data/.game-data-yostar-sha
+          git commit -m "chore: update latest Yostar game data commit SHA" \
+            -m "This is an automated commit triggered by GitHub Actions. Data repository: Kengxxiao/ArknightsGameData_YoStar"
+      - name: Push commits
+        if: steps.git-check-cn.outputs.modified == 'true' || steps.git-check-yostar.outputs.modified == 'true'
+        run: |
           git push

@@ -90,6 +90,16 @@ export class TraitCandidate implements Localizable {
         phase === this.unlockConditions.elite &&
         level === this.unlockConditions.level,
     )
+    if (traitCandidateIndex === -1) {
+      const isFirstCandidateInData = Boolean(
+        data.trait.candidates.find(
+          ({ unlockCondition: { phase, level } }) => phase === 0 && level === 1,
+        ),
+      )
+      if (!isFirstCandidateInData && data.description !== null)
+        this.description.addLocale(locale, data.description)
+      return
+    }
     const traitCandidate = data.trait.candidates[traitCandidateIndex]
     let description = traitCandidate.overrideDescripton
     let lastAvailableDescIndex = traitCandidateIndex

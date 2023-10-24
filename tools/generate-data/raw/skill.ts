@@ -3,7 +3,13 @@ import * as z from "zod"
 import { CoerceEnumKeyOf } from "../utils"
 import { BlackboardSchema } from "./common"
 
-export const DurationTypeEnum = z.enum(["NONE", "AMMO"])
+export const DurationTypeEnum = z.enum([
+  "NONE", // CN
+  "AMMO", // CN
+  "PASSIVE", // Yostar
+  "INSTANT", // Yostar
+  "LIMITED", // Yostar
+])
 export type DurationTypeEnum = z.infer<typeof DurationTypeEnum>
 
 export enum SkillType {

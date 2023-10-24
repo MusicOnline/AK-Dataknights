@@ -65,8 +65,7 @@ const variableRowSpanValues = computed<number[][]>(() =>
 )
 const isAmmoSkill = computed<boolean>(() =>
   Boolean(
-    skill.levels[0].durationType === "AMMO" &&
-      skill.levels[0].variables.find(({ key }) => key === "attack@trigger_time")
+    skill.levels[0].variables.find(({ key }) => key === "attack@trigger_time")
   )
 )
 

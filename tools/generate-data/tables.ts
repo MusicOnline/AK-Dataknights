@@ -80,11 +80,11 @@ if (!globalThis.TRAIT_LOCALES) globalThis.TRAIT_LOCALES = null
 if (!globalThis.OPERATOR_RELEASE) globalThis.OPERATOR_RELEASE = null
 
 function getFilePath(locale: GameLocale, location: string): string {
-  return path.join(
-    process.env.GAME_DATA_ROOT_PATH!,
-    locale.replace("-", "_"),
-    location,
-  )
+  const rootPath =
+    locale === "zh-CN"
+      ? process.env.CN_GAME_DATA_ROOT_PATH!
+      : process.env.YOSTAR_GAME_DATA_ROOT_PATH!
+  return path.join(rootPath, locale.replace("-", "_"), location)
 }
 
 function requireByReadFileSync<T extends z.ZodTypeAny | undefined>(

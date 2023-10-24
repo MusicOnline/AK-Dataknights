@@ -22640,23 +22640,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "적 4명 저지 가능"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "적 4명 저지 가능"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "적갑성산",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "적갑성산",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -22665,17 +22665,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "적 4명 저지 가능"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "적갑성산",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "적갑성산",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -23151,19 +23151,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "일반 공격이 정예 또는 리더 적 명중 시 SP +<#ba.kw>{'{'}sp{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "일반 공격이 정예 또는 리더 적 명중 시 SP +<#ba.kw>{'{'}sp{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "홀로가는 먼 길",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -23172,13 +23172,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "일반 공격이 정예 또는 리더 적 명중 시 SP +<#ba.kw>{'{'}sp{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "홀로가는 먼 길",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -28804,7 +28804,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "사막의 가호",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -28819,7 +28819,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "사막의 가호",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -31444,11 +31444,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "지질학자",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "지질학자",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -31463,11 +31463,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "지질학자",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "지질학자",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -36852,11 +36852,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "전술 함정",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "전술 함정",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -36876,11 +36876,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "전술 함정",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "전술 함정",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -40002,11 +40002,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "생명의 식사",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "생명의 식사",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -40021,11 +40021,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "생명의 식사",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "생명의 식사",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -50386,11 +50386,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "몽상가",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "몽상가",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -50405,11 +50405,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "몽상가",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "몽상가",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -55728,11 +55728,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "감춰버린 빛",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "감춰버린 빛",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -55747,11 +55747,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "감춰버린 빛",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "감춰버린 빛",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -56924,7 +56924,7 @@
   "humus": {
     "name": null,
     "appellation": null,
-    "description": "아군의 치료를 받을 수 없으며, 공격 시 <#ba.kw>광역 대미지</>를 입히고, 적 1명 적중할 때마다 자신의 HP가 <#ba.kw>{'{'}value{'}'}</>만큼 회복, 최대 효과 수는 저지 가능 수와 동일",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -57076,11 +57076,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "재활용",
                     "description": null
                   },
                   "5": {
-                    "name": null,
+                    "name": "재활용",
                     "description": null
                   }
                 }
@@ -57095,11 +57095,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "재활용",
                     "description": null
                   },
                   "5": {
-                    "name": null,
+                    "name": "재활용",
                     "description": null
                   }
                 }
@@ -57124,7 +57124,7 @@
   "morgan": {
     "name": null,
     "appellation": null,
-    "description": "적 1명 저지 가능",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -57270,13 +57270,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "저지 중인 적 공격 시 공격력이 <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>까지 상승"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "저지 중인 적 공격 시 공격력이 <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>까지 상승"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -57295,7 +57295,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "저지 중인 적 공격 시 공격력이 <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</>까지 상승"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -57330,7 +57330,7 @@
   "cement": {
     "name": null,
     "appellation": null,
-    "description": "적을 저지할 때만 SP 회복 가능",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -57470,13 +57470,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "SP를 서서히 회복, 적을 저지했을 때만 SP 회복 속도 복구"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "SP를 서서히 회복, 적을 저지했을 때만 SP 회복 속도 복구"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -57495,7 +57495,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "SP를 서서히 회복, 적을 저지했을 때만 SP 회복 속도 복구"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -57530,7 +57530,7 @@
   "ines": {
     "name": null,
     "appellation": null,
-    "description": "재배치 시간이 <#ba.kw>감소</>, 원거리 공격 가능",
+    "description": null,
     "potentials": {
       "2": {
         "description": null

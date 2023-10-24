@@ -35,7 +35,10 @@ Create a `.env` file with the following content or define the environment variab
 ```bash
 # Clone https://github.com/Kengxxiao/ArknightsGameData to this path
 # Game data is processed before being used to generate the website
-GAME_DATA_ROOT_PATH=/path/to/ArknightsGameData
+CN_GAME_DATA_ROOT_PATH=/path/to/ArknightsGameData
+
+# Clone https://github.com/Kengxxiao/ArknightsGameData_YoStar to this path
+YOSTAR_GAME_DATA_ROOT_PATH=/path/to/ArknightsGameData_YoStar
 
 # Set to true if "pnpm generate" should be prerendered to HTML
 # Set to false to only render HTML using JS when browsed to (no SEO support)
@@ -95,12 +98,13 @@ pnpm preview
 
 ### Continuous Deployment
 
-The [`check-data-update`](./.github/workflows/check-data-update.yml) workflow checks for updates in the master branch of Kengxxiao/ArknightsGameData. If there is an update, [`.game-data-sha`](./data/.game-data-sha) is updated in this repository.
+The [`check-data-update`](./.github/workflows/check-data-update.yml) workflow checks for updates in the master branch of Kengxxiao/ArknightsGameData and Kengxxiao/ArknightsGameData_YoStar. If there is an update, [`.game-data-sha`](./data/.game-data-sha) and [`.game-data-yostar-sha`](./data/.game-data-yostar-sha) is updated in this repository.
 
 Any pushes to this repository may trigger Cloudflare Pages to build and deploy the website with its automatic deployments feature (without using workers). This is currently disabled due to it being unstable (works sometimes, and segfaults other times). In addition to the above environment variables, `NITRO_PRESET=static` is required. This is the build command:
 
 ```bash
 git clone --depth 1 https://github.com/Kengxxiao/ArknightsGameData ArknightsGameData \
+&& git clone --depth 1 https://github.com/Kengxxiao/ArknightsGameData_YoStar ArknightsGameData_YoStar \
 && pnpm prepare-nuxt \
 && pnpm build
 ```
@@ -117,5 +121,5 @@ Artifacts for both builds are available for download in their respective GitHub 
 
 In no particular order:
 
-- [Kengxxiao](https://github.com/Kengxxiao) ([ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData))
+- [Kengxxiao](https://github.com/Kengxxiao) ([ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData), [ArknightsGameData_YoStar](https://github.com/Kengxxiao/ArknightsGameData_YoStar))
 - [Aceship](https://github.com/Aceship) ([Arknight-Images](https://github.com/Aceship/Arknight-Images))

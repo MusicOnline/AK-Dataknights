@@ -44,8 +44,7 @@ const isSpCostShown = computed<boolean>(
 const isDurationShown = computed<boolean>(() => levelData.value.duration > 0)
 const isAmmoSkill = computed<boolean>(() =>
   Boolean(
-    skill.levels[0].durationType === "AMMO" &&
-      skill.levels[0].variables.find(({ key }) => key === "attack@trigger_time")
+    skill.levels[0].variables.find(({ key }) => key === "attack@trigger_time")
   )
 )
 const isSpDurationAmmoRowUsed = computed<boolean>(() =>

@@ -26,14 +26,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Checkout game data
+      - name: Checkout CN game data
         uses: actions/checkout@v3
         with:
           repository: Kengxxiao/ArknightsGameData
           path: ArknightsGameData
+      - name: Checkout Yostar game data
+        uses: actions/checkout@v3
+        with:
+          repository: Kengxxiao/ArknightsGameData_YoStar
+          path: ArknightsGameData_YoStar
       - name: Set environment variables
         run: |
-          echo "GAME_DATA_ROOT_PATH=$(echo $GITHUB_WORKSPACE)/ArknightsGameData" >> $GITHUB_ENV
+          echo "CN_GAME_DATA_ROOT_PATH=$(echo $GITHUB_WORKSPACE)/ArknightsGameData" >> $GITHUB_ENV
+          echo "YOSTAR_GAME_DATA_ROOT_PATH=$(echo $GITHUB_WORKSPACE)/ArknightsGameData_YoStar" >> $GITHUB_ENV
           echo "ENABLE_SSR=true" >> $GITHUB_ENV
           echo "NUXT_APP_BASE_URL=/$(echo ${GITHUB_REPOSITORY##*/})/" >> $GITHUB_ENV
           echo "NUXT_PUBLIC_FULL_BASE_URL=https://$(echo ${GITHUB_REPOSITORY_OWNER}).github.io//$(echo ${GITHUB_REPOSITORY##*/})" >> $GITHUB_ENV

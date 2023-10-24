@@ -22640,23 +22640,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 4 enemies"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 4 enemies"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Tectonic Armor",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Tectonic Armor",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -22665,17 +22665,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 4 enemies"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Tectonic Armor",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Tectonic Armor",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -23151,19 +23151,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Gain <#ba.kw>{'{'}sp{'}'}</> SP when normal attacks hit an elite or leader enemy."
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Gain <#ba.kw>{'{'}sp{'}'}</> SP when normal attacks hit an elite or leader enemy."
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Lone Journey",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -23172,13 +23172,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Gain <#ba.kw>{'{'}sp{'}'}</> SP when normal attacks hit an elite or leader enemy."
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Lone Journey",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -28792,19 +28792,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>even more greatly increased</> DEF and RES; When skill is active, retains partial effect and attacks deal <#ba.kw>AoE Arts damage</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>even more greatly increased</> DEF and RES; When skill is active, retains partial effect and attacks deal <#ba.kw>AoE Arts damage</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Shambhala's Sanctuary",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -28813,13 +28813,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>even more greatly increased</> DEF and RES; When skill is active, retains partial effect and attacks deal <#ba.kw>AoE Arts damage</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Shambhala's Sanctuary",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -31432,23 +31432,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>even more greatly increased</> DEF and RES; When skill is active, retains partial effect and attacks deal <#ba.kw>AoE Arts damage</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>even more greatly increased</> DEF and RES; When skill is active, retains partial effect and attacks deal <#ba.kw>AoE Arts damage</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Geologist",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Geologist",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -31457,17 +31457,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>even more greatly increased</> DEF and RES; When skill is active, retains partial effect and attacks deal <#ba.kw>AoE Arts damage</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Geologist",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Geologist",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -34023,13 +34023,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Has 20{'%'} chance to deploy traps that deal twice the damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Has 20{'%'} chance to deploy traps that deal twice the damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -34044,7 +34044,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Has 20{'%'} chance to deploy traps that deal twice the damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -36835,13 +36835,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Has 20{'%'} chance to deploy traps that deal twice the damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Has 20{'%'} chance to deploy traps that deal twice the damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -36852,11 +36852,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Welcome Mat",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Welcome Mat",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -36865,7 +36865,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Has 20{'%'} chance to deploy traps that deal twice the damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -36876,11 +36876,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Welcome Mat",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Welcome Mat",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -39990,23 +39990,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>even more greatly increased</> DEF and RES; When skill is active, retains partial effect and attacks deal <#ba.kw>AoE Arts damage</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>even more greatly increased</> DEF and RES; When skill is active, retains partial effect and attacks deal <#ba.kw>AoE Arts damage</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Meal of Life",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Meal of Life",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -40015,17 +40015,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>even more greatly increased</> DEF and RES; When skill is active, retains partial effect and attacks deal <#ba.kw>AoE Arts damage</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Meal of Life",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Meal of Life",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -50374,23 +50374,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Has 20{'%'} chance to deploy traps that deal twice the damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Has 20{'%'} chance to deploy traps that deal twice the damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Dreamer",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Dreamer",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -50399,17 +50399,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Has 20{'%'} chance to deploy traps that deal twice the damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Dreamer",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Dreamer",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -55716,23 +55716,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>even more greatly increased</> DEF and RES; When skill is active, retains partial effect and attacks deal <#ba.kw>AoE Arts damage</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>even more greatly increased</> DEF and RES; When skill is active, retains partial effect and attacks deal <#ba.kw>AoE Arts damage</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Shrouded Strength",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Shrouded Strength",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -55741,17 +55741,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Normally <#ba.kw>does not attack</>, but has <#ba.kw>even more greatly increased</> DEF and RES; When skill is active, retains partial effect and attacks deal <#ba.kw>AoE Arts damage</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Shrouded Strength",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Shrouded Strength",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -56924,7 +56924,7 @@
   "humus": {
     "name": "Humus",
     "appellation": null,
-    "description": "Cannot be healed by allies; Attacks deal <#ba.kw>AoE damage</>; Recovers <#ba.kw>{'{'}value{'}'}</> HP for every enemy hit during attacks, up to Block count",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -57076,11 +57076,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "Re-recycle",
                     "description": null
                   },
                   "5": {
-                    "name": null,
+                    "name": "Re-recycle",
                     "description": null
                   }
                 }
@@ -57095,11 +57095,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "Re-recycle",
                     "description": null
                   },
                   "5": {
-                    "name": null,
+                    "name": "Re-recycle",
                     "description": null
                   }
                 }
@@ -57124,7 +57124,7 @@
   "morgan": {
     "name": "Morgan",
     "appellation": null,
-    "description": "Blocks 1 enemy",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -57270,13 +57270,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -57295,7 +57295,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Increases ATK to <#ba.vup>{'{'}atk_scale:0{'%'}{'}'}</> when attacking blocked enemies"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -57330,7 +57330,7 @@
   "cement": {
     "name": "Cement",
     "appellation": null,
-    "description": "Only restores SP when blocking enemies",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -57470,13 +57470,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "SP recovery is slowed except when blocking enemies"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "SP recovery is slowed except when blocking enemies"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -57495,7 +57495,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "SP recovery is slowed except when blocking enemies"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -57530,7 +57530,7 @@
   "ines": {
     "name": "Ines",
     "appellation": null,
-    "description": "Has <#ba.kw>reduced</> Redeployment Time, can use ranged attacks",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
