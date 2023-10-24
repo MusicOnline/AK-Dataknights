@@ -1,11 +1,10 @@
 import * as z from "zod"
-
-import * as constants from "./constants"
+import type { GameLocale, OutputLocale, TranslatedLocale } from "./constants"
 
 export interface Localizable {
-  addLocale(locale: constants.GameLocale, ...data: any): void
-  addLocaleTL(locale: constants.TranslatedLocale, ...data: any): void
-  toLocaleData(locale: constants.OutputLocale): any
+  addLocale(locale: GameLocale, ...data: any): void
+  addLocaleTL(locale: TranslatedLocale, ...data: any): void
+  toLocaleData(locale: OutputLocale): LocaleObject | string | null | undefined
 }
 
 export type UnderscoreOutputLocale =
@@ -36,8 +35,8 @@ export class LocaleString implements Localizable {
   }
 
   private addLocaleCommon(
-    locale: constants.OutputLocale | UnderscoreOutputLocale,
-    translation?: string | null
+    locale: OutputLocale | UnderscoreOutputLocale,
+    translation?: string | null,
   ) {
     if (translation === null || translation === undefined) return
 
@@ -47,29 +46,28 @@ export class LocaleString implements Localizable {
     this[normalisedLocale] = translation.trim()
   }
 
-  public addLocale(locale: constants.GameLocale, translation?: string | null) {
+  public addLocale(locale: GameLocale, translation?: string | null) {
     this.addLocaleCommon(locale, translation)
   }
 
-  public addLocaleTL(
-    locale: constants.TranslatedLocale,
-    translation?: string | null
-  ) {
+  public addLocaleTL(locale: TranslatedLocale, translation?: string | null) {
     this.addLocaleCommon(locale, translation)
   }
 
   public getString(
-    locale: constants.OutputLocale | UnderscoreOutputLocale
+    locale: OutputLocale | UnderscoreOutputLocale,
   ): string | null {
     return this[this.underscorifyLocale(locale)]
   }
 
-  public toLocaleData(locale: constants.OutputLocale | UnderscoreOutputLocale) {
+  public toLocaleData(
+    locale: OutputLocale | UnderscoreOutputLocale,
+  ): string | null {
     return normalizeForLocaleFile(this[this.underscorifyLocale(locale)] ?? null)
   }
 
   private underscorifyLocale(
-    locale: constants.OutputLocale | UnderscoreOutputLocale
+    locale: OutputLocale | UnderscoreOutputLocale,
   ): UnderscoreOutputLocale {
     return <UnderscoreOutputLocale>locale.replace("-", "_")
   }
@@ -93,7 +91,10 @@ export function normalizeForLocaleFile(original: string | null): string | null {
       .replace(/(?<!<)<(?!<|@|\$|\/|#|\?)(.+?)(?<!>)>(?!>)/g, "<<$1>>")
       // R3: <<tag>>text</tag> to <tag>text</tag>
       // Recover builtin formatting tags (e.g., <i>text</i>), must be after R2
-      .replace(/<<(?<tag>[^<]+?)>>(?<text>.+?)<\/\k<tag>>/g, "<$<tag>>$<text></$<tag>>")
+      .replace(
+        /<<(?<tag>[^<]+?)>>(?<text>.+?)<\/\k<tag>>/g,
+        "<$<tag>>$<text></$<tag>>",
+      )
       // R4: <@tag.sub>text</> to <#tag.sub>text</>
       // Custom formatting only
       .replace(/<@(?<tag>[^<]+?)>(?<text>.+?)<\/>/g, "<#$<tag>>$<text></>")
@@ -112,11 +113,11 @@ export function normalizeForLocaleFile(original: string | null): string | null {
  * @returns A Zod schema that validates/transforms to the enum key
  */
 export function CoerceEnumKeyOf<T extends z.EnumLike>(
-  zNativeEnum: z.ZodNativeEnum<T>
+  zNativeEnum: z.ZodNativeEnum<T>,
 ): z.ZodUnion<
   [
     z.ZodEffects<z.ZodString, keyof T, string>,
-    z.ZodEffects<z.ZodNativeEnum<T>, keyof T, T[keyof T]>
+    z.ZodEffects<z.ZodNativeEnum<T>, keyof T, T[keyof T]>,
   ]
 > {
   return z.union([
@@ -132,7 +133,7 @@ export function CoerceEnumKeyOf<T extends z.EnumLike>(
  * @returns A Zod schema that validates/transforms to the enum key
  */
 export function CoerceEnumValueOf<T extends z.EnumLike>(
-  zNativeEnum: z.ZodNativeEnum<T>
+  zNativeEnum: z.ZodNativeEnum<T>,
 ): z.ZodUnion<
   [z.ZodNativeEnum<T>, z.ZodEffects<z.ZodString, T[keyof T], string>]
 > {
@@ -158,7 +159,7 @@ export type LocaleObject<Content = string | null | undefined> = {
 }
 
 const LocaleObjectSchema: z.ZodType<LocaleObject> = z.record(
-  z.lazy(() => LocaleObjectSchema)
+  z.lazy(() => LocaleObjectSchema),
 )
 
 export function purgeLocaleObject(item: LocaleObject): LocaleObject<string> {
@@ -173,6 +174,6 @@ export function purgeLocaleObject(item: LocaleObject): LocaleObject<string> {
       }
       return accumulator
     },
-    {}
+    {},
   )
 }
