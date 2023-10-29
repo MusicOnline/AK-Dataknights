@@ -16,7 +16,7 @@ const { t } = i18n
 const useOperatorLocalePromise = useOperatorLocale(i18n, <string>operatorKey)
 
 const { data } = await useAsyncData(`operators.${operatorKey}`, async () =>
-  useOperatorData(<string>operatorKey)
+  useOperatorData(<string>operatorKey),
 )
 
 if (!data.value)
@@ -48,16 +48,16 @@ const pageMetaTitle = computed<string>(() =>
     rarity: operator.value.rarity,
     class: t(`operator.class.${operator.value.class}`),
     branch: t(`operator.classBranch.${operator.value.classBranch}`),
-  })
+  }),
 )
 
 const pageDescription = computed<string>(() =>
   convertRichText(
     t(
-      `${operator.value.key}.traitCandidates.E${finalTraitCandidate.value.unlockConditions.elite}-L${finalTraitCandidate.value.unlockConditions.level}.description`
+      `${operator.value.key}.traitCandidates.E${finalTraitCandidate.value.unlockConditions.elite}-L${finalTraitCandidate.value.unlockConditions.level}.description`,
     ),
-    { replace: finalTraitCandidate.value.variables, html: false }
-  )
+    { replace: finalTraitCandidate.value.variables, html: false },
+  ),
 )
 
 useSeoMeta({
@@ -103,38 +103,46 @@ const operatorState = ref<OperatorState>({
 })
 
 const currentPhase = computed<GeneratedElitePhaseData>(
-  () => operator.value.phases[operatorState.value.elite]
+  () => operator.value.phases[operatorState.value.elite],
 )
 
 const talentEliteLevelNumbers = computed<[number, number][]>(
   () =>
     operator
-      .value!.talents?.reduce((accumulator, talent) => {
-        talent.candidates.forEach(({ unlockConditions: { elite, level } }) => {
-          if (
-            !accumulator.find(
-              ([otherElite, otherLevel]) =>
-                otherElite === elite && otherLevel === level
-            )
+      .value!.talents?.reduce(
+        (accumulator, talent) => {
+          talent.candidates.forEach(
+            ({ unlockConditions: { elite, level } }) => {
+              if (
+                !accumulator.find(
+                  ([otherElite, otherLevel]) =>
+                    otherElite === elite && otherLevel === level,
+                )
+              )
+                accumulator.push([elite, level])
+            },
           )
-            accumulator.push([elite, level])
-        })
-        return accumulator
-      }, <[number, number][]>[])
+          return accumulator
+        },
+        <[number, number][]>[],
+      )
       .sort(([aElite, aLevel], [bElite, bLevel]) =>
-        aElite === bElite ? aLevel - bLevel : aElite - bElite
-      ) || []
+        aElite === bElite ? aLevel - bLevel : aElite - bElite,
+      ) || [],
 )
 const talentPotentialNumbers = computed<number[]>(
   () =>
     operator
-      .value!.talents?.reduce((accumulator, talent) => {
-        talent.candidates.forEach(({ unlockConditions: { potential } }) => {
-          if (!accumulator.includes(potential)) accumulator.push(potential)
-        })
-        return accumulator
-      }, <number[]>[])
-      .sort() || []
+      .value!.talents?.reduce(
+        (accumulator, talent) => {
+          talent.candidates.forEach(({ unlockConditions: { potential } }) => {
+            if (!accumulator.includes(potential)) accumulator.push(potential)
+          })
+          return accumulator
+        },
+        <number[]>[],
+      )
+      .sort() || [],
 )
 
 const talentState = ref<TalentState>({
@@ -175,14 +183,14 @@ watch(
       bestPotential = potential
     }
     talentState.value.potential = bestPotential!
-  }
+  },
 )
 
 await useOperatorLocalePromise
 
 const observer: Ref<any> = ref(null)
 const levelSelect = ref<InstanceType<typeof OperatorLevelSelectWidget> | null>(
-  null
+  null,
 )
 onMounted(() => {
   observer.value = new IntersectionObserver(
@@ -193,7 +201,7 @@ onMounted(() => {
     {
       rootMargin: "-84px 0px 0px 0px", // 42px navbar + 42px level select
       threshold: [0],
-    }
+    },
   )
   observer.value.observe(levelSelect.value!.$el)
 })
@@ -246,6 +254,24 @@ onBeforeUnmount(() => {
         ref="levelSelect"
         :operator="operator"
       />
+      <!-- Profile -->
+      <div v-if="operator.profile">
+        <div class="anchor-ghost" id="profile" />
+        <UAccordion
+          class="rounded-theme outline outline-1 outline-container-1-bg"
+          v-if="operator.profile"
+          :items="[{ label: t('operator.ui.profile') }]"
+          color="black"
+          :ui="{
+            item: { padding: 'pb-0' },
+            default: { class: 'font-bold text-2xl' },
+          }"
+        >
+          <template #item>
+            <OperatorProfile class="p-2" :operator="operator" />
+          </template>
+        </UAccordion>
+      </div>
       <!-- Range, stats, potentials, trust -->
       <div>
         <div class="anchor-ghost" id="stats" />

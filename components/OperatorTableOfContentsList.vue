@@ -56,6 +56,11 @@ const links = computed<VerticalNavigationLink[]>(() => {
       "exact-hash": true,
     },
     {
+      label: t("operator.ui.profile"),
+      to: "#profile",
+      "exact-hash": true,
+    },
+    {
       label: t("operator.ui.attributes"),
       to: "#stats",
       "exact-hash": true,

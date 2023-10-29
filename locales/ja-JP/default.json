@@ -184,7 +184,9 @@
       "enableAdvancedViewForMore": "設定で詳細一覧を有効にして、詳細データが表示されます。",
       "riicBaseSkills": "基地スキル",
       "noSearchResults": "一致する結果はありません。",
-      "otherForms": "その他の昇格:"
+      "otherForms": "その他の昇格:",
+      "profile": "プロファイル",
+      "voicelines": "ボイス"
     },
     "module": {
       "attributes": "ステータス",

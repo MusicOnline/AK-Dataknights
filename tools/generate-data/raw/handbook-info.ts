@@ -1,15 +1,13 @@
 import * as z from "zod"
-import { CoerceEnumKeyOf } from "../utils"
 
-export enum LockType {
-  DIRECT = 0,
-  AWAKE = 1,
-  FAVOR = 2,
-  STAGE = 3,
-  PATCH = 6,
-}
-export const LockTypeSchema = z.nativeEnum(LockType)
-export type LockTypeEnum = z.infer<typeof LockTypeSchema>
+export const LockTypeSchema = z.enum([
+  "AWAKE",
+  "DIRECT",
+  "FAVOR",
+  "PATCH",
+  "STAGE",
+])
+export type LockType = z.infer<typeof LockTypeSchema>
 
 export const TypeSchema = z.enum([
   "DIAMOND_SHD", // Orundum
@@ -47,8 +45,8 @@ export const TeamMissionListSchema = z.object({
 export type TeamMissionList = z.infer<typeof TeamMissionListSchema>
 
 export const UnlockDictValueSchema = z.object({
-  storyText: z.string().optional(),
-  unLockType: CoerceEnumKeyOf(LockTypeSchema),
+  storyText: z.string(),
+  unLockType: LockTypeSchema,
   unLockParam: z.string(),
   unLockString: z.string().nullable(),
 })
@@ -70,7 +68,7 @@ export const NpcDictSchema = z.object({
   cv: z.string(),
   displayNumber: z.string(),
   nationId: NationIdSchema,
-  groupId: z.union([z.null(), z.string()]),
+  groupId: z.string().nullable(),
   teamId: z.null(),
   resType: ResTypeSchema,
   npcShowAudioInfoFlag: z.boolean(),
@@ -85,10 +83,10 @@ export const HandbookStageTimeSchema = z.object({
 export type HandbookStageTime = z.infer<typeof HandbookStageTimeSchema>
 
 export const UnlockParamSchema = z.object({
-  unlockType: CoerceEnumKeyOf(LockTypeSchema),
+  unlockType: LockTypeSchema,
   unlockParam1: z.string(),
   unlockParam2: z.string().nullable(),
-  unlockParam3: z.null(),
+  unlockParam3: z.string().nullable(),
 })
 export type UnlockParam = z.infer<typeof UnlockParamSchema>
 
@@ -121,11 +119,13 @@ export type HandbookDisplayConditionList = z.infer<
 
 export const StoryTextAudioStoryElementSchema = z.object({
   storyText: z.string(),
-  unLockType: CoerceEnumKeyOf(LockTypeSchema),
+  unLockType: LockTypeSchema,
   unLockParam: z.string(),
   unLockString: z.string().nullable(),
 })
-export type StoryTextAudioStoryElement = z.infer<typeof StoryTextAudioStoryElementSchema>
+export type StoryTextAudioStoryElement = z.infer<
+  typeof StoryTextAudioStoryElementSchema
+>
 
 export const StoryTextAudioSchema = z.object({
   stories: z.array(StoryTextAudioStoryElementSchema),
@@ -160,7 +160,7 @@ export type HandbookAvgList = z.infer<typeof HandbookAvgListSchema>
 export const HandbookDictSchema = z.object({
   charID: z.string(),
   // infoName: InfoNameSchema,
-  isLimited: z.boolean().optional(), // Crossover only (incl Kirin R Yato etc)
+  isLimited: z.boolean(), // True if Crossover only (incl Kirin R Yato etc)
   storyTextAudio: z.array(StoryTextAudioSchema), // Not voice files!
   handbookAvgList: z.array(HandbookAvgListSchema), // Operator Records
 })

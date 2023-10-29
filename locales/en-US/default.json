@@ -69,6 +69,8 @@
       "modules": "Modules",
       "trait": "Trait",
       "riicBaseSkills": "RIIC Base Skills",
+      "profile": "File",
+      "voicelines": "Audio Records",
       "searchOperator": "Search Operators by code name...",
       "noSearchResults": "No matching results.",
       "specificBranchTrait": "{branch} Trait",

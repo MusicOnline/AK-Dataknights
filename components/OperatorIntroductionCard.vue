@@ -30,7 +30,7 @@ await useOperatorLocale(i18n, operator.key)
         class="m-auto h-32 w-32 rounded-theme sm:m-0 sm:h-fit"
         :src="currentAvatarUrl"
       />
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-2 md:max-w-lg">
         <!-- Icon, name, rarity, class -->
         <OperatorNameClassRarityLabel :operator="operator" />
         <!-- Class branch, trait -->

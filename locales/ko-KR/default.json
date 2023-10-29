@@ -179,7 +179,9 @@
       "searchOperator": "코드네임으로 오퍼레이터 검색...",
       "viewDetails": "상세확인",
       "randomOperator": "랜덤",
-      "riicBaseSkills": "인프라 스킬을"
+      "riicBaseSkills": "인프라 스킬을",
+      "voicelines": "음성 기록",
+      "profile": "파일"
     },
     "module": {
       "moduleDescription": "강화 설명",

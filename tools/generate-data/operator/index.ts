@@ -25,6 +25,7 @@ import {
 } from "./elite"
 import { Module, type GeneratedModuleData } from "./module"
 import { Potential, type GeneratedPotentialData } from "./potential"
+import { Profile, type GeneratedOperatorProfileData } from "./profile"
 import { Skill, type GeneratedSkillData } from "./skill"
 import { Talent, type GeneratedTalentData } from "./talent"
 import { TraitCandidate, type GeneratedTraitCandidateData } from "./trait"
@@ -54,6 +55,7 @@ export type GeneratedOperatorData = {
   modules: GeneratedModuleData[] | null
   tokenSummons: Record<string, GeneratedOperatorData>
   riicBaseSkills: GeneratedRiicBaseSkillData[][]
+  profile?: GeneratedOperatorProfileData
   originalCharacterPatch?: GeneratedOperatorIndexData
   characterPatches?: Record<string, GeneratedOperatorIndexData>
   originalAlterOperator?: GeneratedOperatorIndexData
@@ -122,6 +124,7 @@ export class Operator implements Localizable {
   modules: Module[] | null
   tokenSummons: Operator[]
   riicBaseSkills: RiicBaseSkill[][]
+  profile: Profile | null
 
   // Amiya-only class changes
   originalCharacterPatch: Operator | undefined
@@ -180,6 +183,7 @@ export class Operator implements Localizable {
     this.modules = Module.getAllFromData(id)
     this.tokenSummons = []
     this.riicBaseSkills = RiicBaseSkill.getAllFromData(id)
+    this.profile = Profile.fromDataOrNull(id)
     this.addTokenInformation()
     if (originalCharacterPatch) {
       this.originalCharacterPatch = originalCharacterPatch
@@ -299,6 +303,7 @@ export class Operator implements Localizable {
       riicBaseSkills: this.riicBaseSkills.map((buffData) =>
         buffData.map((datum) => datum.toData()),
       ),
+      profile: this.profile?.toData(),
       originalCharacterPatch: this.originalCharacterPatch?.toIndexData(),
       characterPatches: this.characterPatches?.reduce(
         (accumulator: Record<string, GeneratedOperatorIndexData>, current) => {
@@ -353,6 +358,7 @@ export class Operator implements Localizable {
     this.riicBaseSkills.forEach((buffData) =>
       buffData.forEach((datum) => datum.addLocale(locale)),
     )
+    this.profile?.addLocale(locale)
 
     if (this.characterPatches) {
       const table = globalThis.GAME_TABLES!.OperatorPatch[locale].patchChars
@@ -399,6 +405,7 @@ export class Operator implements Localizable {
     this.riicBaseSkills.forEach((buffData) =>
       buffData.forEach((datum) => datum.addLocaleTL(locale, data)),
     )
+    this.profile?.addLocaleTL(locale, data)
 
     if (this.characterPatches)
       this.characterPatches.forEach((patch) => patch.addLocaleTL(locale, table))
@@ -500,6 +507,7 @@ export class Operator implements Localizable {
       },
       <LocaleObject>{},
     )
+    const profile = this.profile?.toLocaleData(locale)
 
     const localeObject: LocaleObject = {
       ...commonAttributes,
@@ -510,6 +518,7 @@ export class Operator implements Localizable {
       modules,
       tokenSummons,
       riicBaseSkills,
+      profile,
     }
 
     if (this.originalCharacterPatch)

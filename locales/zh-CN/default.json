@@ -186,7 +186,9 @@
       "enableAdvancedViewForMore": "在设置中开启详细展示以显示详细数据。",
       "riicBaseSkills": "后勤技能",
       "noSearchResults": "无匹配结果。",
-      "otherForms": "其他异格："
+      "otherForms": "其他异格：",
+      "voicelines": "语音记录",
+      "profile": "人员档案"
     },
     "module": {
       "attributes": "属性",
