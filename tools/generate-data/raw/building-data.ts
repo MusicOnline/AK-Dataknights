@@ -5,19 +5,19 @@ import { UnlockConditionSchema } from "./common"
 export const BuffCategorySchema = z.enum(["FUNCTION", "OUTPUT", "RECOVERY"])
 export type BuffCategory = z.infer<typeof BuffCategorySchema>
 
-export const BuffColorSchema = z.enum([
-  "#dd653f",
-  "#e3eb00",
-  "#ffd800",
-  "#ffd801",
-  "#005752",
-  "#0075a9",
-  "#21cdcb",
-  "#565656",
-  "#7d0022",
-  "#8fc31f",
-])
-export type BuffColor = z.infer<typeof BuffColorSchema>
+// export const BuffColorSchema = z.enum([
+//   "#dd653f",
+//   "#e3eb00",
+//   "#ffd800",
+//   "#ffd801",
+//   "#005752",
+//   "#0075a9",
+//   "#21cdcb",
+//   "#565656",
+//   "#7d0022",
+//   "#8fc31f",
+// ])
+// export type BuffColor = z.infer<typeof BuffColorSchema>
 
 export const BuffIconSchema = z.enum([
   "control",
@@ -76,7 +76,7 @@ export const BuffSchema = z.object({
   buffIcon: BuffIconSchema,
   skillIcon: z.string(),
   sortId: z.number(),
-  buffColor: BuffColorSchema,
+  buffColor: z.string(),
   textColor: TextColorSchema,
   buffCategory: BuffCategorySchema,
   roomType: RoomTypeSchema,

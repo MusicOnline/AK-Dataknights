@@ -86,6 +86,7 @@ export enum SubProfession {
   Besieger = "siegesniper",
   Flinger = "bombarder",
   Hunter = "hunter",
+  Loopshooter = "loopshooter",
   // Caster
   CoreCaster = "corecaster",
   SplashCaster = "splashcaster",
@@ -94,6 +95,7 @@ export enum SubProfession {
   MysticCaster = "mystic",
   ChainCaster = "chain",
   BlastCaster = "blastcaster",
+  PrimalCaster = "primcaster",
   // Medic
   Medic = "physician",
   MultiTargetMedic = "ringhealer",

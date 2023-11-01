@@ -185,7 +185,9 @@
       "chainhealer": "Chain Medic",
       "crusher": "Crusher",
       "ritualist": "Ritualist",
-      "hunter": "Hunter"
+      "hunter": "Hunter",
+      "loopshooter": "Loopshooter",
+      "primcaster": "Primal Caster"
     },
     "attribute": {
       "maxHp": "HP",

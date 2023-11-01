@@ -75,8 +75,8 @@ async function getOperators(): Promise<Operator[]> {
   )
 
   return [...operators, ...patchOperators].sort((a, b) => {
-    const aTime = a.cnReleaseTime ?? 9999999999999
-    const bTime = b.cnReleaseTime ?? 9999999999999
+    const aTime = a.cnReleaseTime ?? 9_999_999_999_999
+    const bTime = b.cnReleaseTime ?? 9_999_999_999_999
     return aTime - bTime
   })
 }
