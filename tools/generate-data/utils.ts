@@ -104,6 +104,10 @@ export function normalizeForLocaleFile(original: string | null): string | null {
       // R6: variable:0% to variable:0{'%'}
       // Escape literal special characters
       .replace(/(?<!{')(@|\$|%|\|)(?!'})/g, "{'$1'}")
+      // R7: Escape stray left braces (e.g. Ifrit's corrupted file)
+      .replace(/\{(?!')/g, "{'{'}")
+      // R8: Escape stray right braces (e.g. Ifrit's corrupted file)
+      .replace(/(?<!')\}/g, "{'}'}")
   )
 }
 
