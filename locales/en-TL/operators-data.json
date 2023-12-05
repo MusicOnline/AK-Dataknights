@@ -31526,6 +31526,48 @@
             }
           }
         }
+      },
+      "uniequip_003_weedy": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>; When blocking 2 or more enemies, increases shift level by 1\nCan be deployed on ranged tiles"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>; When blocking 2 or more enemies, increases shift level by 1\nCan be deployed on ranged tiles"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Industrial Water Cannon",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>; When blocking 2 or more enemies, increases shift level by 1\nCan be deployed on ranged tiles"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Industrial Water Cannon",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {
@@ -33249,6 +33291,54 @@
         "description": null
       }
     },
+    "modules": {
+      "uniequip_001_cammou": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_cammou": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Coordinated",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Coordinated",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {},
     "riicBaseSkills": {
       "manu_formula_cost<000>": {
@@ -33952,6 +34042,56 @@
                 "candidates": {
                   "1": {
                     "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "uniequip_003_lisa": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Attacks deal <#ba.kw>Arts damage</>, and <?ba.sluggish>Slow</> the enemy for a <#ba.kw>moderate</> period of time"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Attacks deal <#ba.kw>Arts damage</>, and <?ba.sluggish>Slow</> the enemy for a <#ba.kw>moderate</> period of time"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Binding Circle",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Binding Circle",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Attacks deal <#ba.kw>Arts damage</>, and <?ba.sluggish>Slow</> the enemy for a <#ba.kw>moderate</> period of time"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Binding Circle",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Binding Circle",
                     "description": null
                   }
                 }
@@ -47657,6 +47797,74 @@
             }
           }
         }
+      },
+      "uniequip_003_billro": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "The more enemies there are within range, the more damage is dealt (up to an increase of <#ba.kw>{'{'}damage_scale:0{'%'}{'}'}</>)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "The more enemies there are within range, the more damage is dealt (up to an increase of <#ba.kw>{'{'}damage_scale:0{'%'}{'}'}</>)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "3": {
+                "candidates": {
+                  "1": {
+                    "name": "Poised for Action",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "The more enemies there are within range, the more damage is dealt (up to an increase of <#ba.kw>{'{'}damage_scale:0{'%'}{'}'}</>)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "3": {
+                "candidates": {
+                  "1": {
+                    "name": "Poised for Action",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -52333,6 +52541,62 @@
         "description": null
       }
     },
+    "modules": {
+      "uniequip_001_kjera": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_kjera": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Deference",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Deference",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Deference",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Deference",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {},
     "riicBaseSkills": {
       "meet_spd&team<000>": {
@@ -54519,6 +54783,72 @@
             }
           }
         }
+      },
+      "uniequip_003_lmlee": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "Gain ATK +4{'%'} every time DP is consumed by trait (up to 5 stacks)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "Gain ATK +4{'%'} every time DP is consumed by trait (up to 5 stacks)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "Kindness Begets Prosperity",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Kindness Begets Prosperity",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "Gain ATK +4{'%'} every time DP is consumed by trait (up to 5 stacks)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "Kindness Begets Prosperity",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Kindness Begets Prosperity",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -54995,6 +55325,62 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_gdglow": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_gdglow": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (the Drone's initial damage increases, up to 110{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (the Drone's initial damage increases, up to 110{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Beacon's Wrath",
+                    "description": null
+                  },
+                  "3": {
+                    "name": "Beacon's Wrath",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (the Drone's initial damage increases, up to 110{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Beacon's Wrath",
+                    "description": null
+                  },
+                  "3": {
+                    "name": "Beacon's Wrath",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -56221,6 +56607,68 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_rockr": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_rockr": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (the Drone's initial damage increases, up to 110{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (the Drone's initial damage increases, up to 110{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Firm Foundation",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Firm Foundation",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (the Drone's initial damage increases, up to 110{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Firm Foundation",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Firm Foundation",
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {},
+                  "5": {}
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -58508,6 +58956,62 @@
         "description": null
       }
     },
+    "modules": {
+      "uniequip_001_hbisc2": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_hbisc2": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Dusk and Dawn",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Dusk and Dawn",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Dusk and Dawn",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Dusk and Dawn",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {},
     "riicBaseSkills": {
       "control_mp_cost&faction<900>": {
@@ -60433,6 +60937,62 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_malist": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_malist": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Flash of Insight",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Flash of Insight",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Flash of Insight",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Flash of Insight",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -65517,6 +66077,62 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_reed2": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_reed2": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Reflected Shine",
+                    "description": null
+                  },
+                  "6": {
+                    "name": "Reflected Shine",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Reflected Shine",
+                    "description": null
+                  },
+                  "6": {
+                    "name": "Reflected Shine",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -73902,6 +74518,62 @@
         "description": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
       }
     },
+    "modules": {
+      "uniequip_001_vendla": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_vendla": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {},
     "riicBaseSkills": {
       "dorm_rec_all<023>": {
@@ -75499,6 +76171,670 @@
         "description": null
       },
       "workshop_formula_probability<139>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
+      }
+    }
+  },
+  "leto": {
+    "name": "Лето",
+    "appellation": null,
+    "description": "Can launch <#ba.kw>Ranged Attacks</> that deal 80{'%'} of normal ATK",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skcom_quickattack<3>": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_leto_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "Can launch <#ba.kw>Ranged Attacks</> that deal 80{'%'} of normal ATK"
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "train_spd&profession<020>": {
+        "name": null,
+        "description": null
+      },
+      "manu_formula_spd_P<000>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
+      }
+    }
+  },
+  "harold": {
+    "name": "Harold",
+    "appellation": null,
+    "description": "Restores the HP of allied units and recovers <#ba.dt.element>Elemental Damage</> by 50{'%'} of ATK (can recover <#ba.dt.element>Elemental Damage</> of unhurt allied units)",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skcom_heal_up<3>": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_harold_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "Restores the HP of allied units and recovers <?ba.dt.element>Elemental Damage</> by <#ba.kw>{'{'}ep_heal_ratio:0{'%'}{'}'}</> of ATK (can recover <?ba.dt.element>Elemental Damage</> of unhurt allied units)"
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "meet_spd<000>": {
+        "name": null,
+        "description": null
+      },
+      "meet_team&char<000>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
+      }
+    }
+  },
+  "degenbrecher": {
+    "name": "Degenbrecher",
+    "appellation": null,
+    "description": "Normal attacks deal damage <#ba.kw>twice</>",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P3": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P3": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_blkkgt_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_blkkgt_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_blkkgt_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "Normal attacks deal damage <#ba.kw>twice</>"
+      }
+    },
+    "modules": {
+      "uniequip_001_blkkgt": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_blkkgt": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "Deals <#ba.vup>{'{'}value:0{'%'}{'}'}</> more damage with skills"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "Deals <#ba.vup>{'{'}value:0{'%'}{'}'}</> more damage with skills"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "3": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "Deals <#ba.vup>{'{'}value:0{'%'}{'}'}</> more damage with skills"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "3": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd&limit<100>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&limit<101>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd_variable3<000>": {
         "name": null,
         "description": null
       }
