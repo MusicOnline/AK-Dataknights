@@ -29,7 +29,7 @@ jobs:
             -m "This is an automated commit triggered by GitHub Actions. Data repository: Kengxxiao/ArknightsGameData"
       - name: Fetch latest Yostar commit SHA
         run: |
-          SHA=$(curl -sL https://api.github.com/repos/Kengxxiao/ArknightsGameData_YoStar/commits/master | jq -r ".sha")
+          SHA=$(curl -sL https://api.github.com/repos/Kengxxiao/ArknightsGameData_YoStar/commits/main | jq -r ".sha")
           if [ "$SHA" != "null" ]; then 
             echo $SHA > data/.game-data-yostar-sha
           fi
