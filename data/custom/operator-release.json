@@ -458,28 +458,28 @@
   "thorns": {
     "cnReleaseTime": 1597161600000
   },
-  "reserve-operator-melee": {
-    "cnReleaseTime": 1598371200000
-  },
-  "reserve-operator-sniper": {
-    "cnReleaseTime": 1598371200000
-  },
   "reserve-operator-logistics": {
     "cnReleaseTime": 1598371200000
   },
   "reserve-operator-caster": {
     "cnReleaseTime": 1598371200000
   },
-  "touch": {
+  "reserve-operator-sniper": {
     "cnReleaseTime": 1598371200000
   },
-  "pith": {
+  "reserve-operator-melee": {
+    "cnReleaseTime": 1598371200000
+  },
+  "touch": {
     "cnReleaseTime": 1598371200000
   },
   "sharp": {
     "cnReleaseTime": 1598371200000
   },
   "stormeye": {
+    "cnReleaseTime": 1598371200000
+  },
+  "pith": {
     "cnReleaseTime": 1598371200000
   },
   "aciddrop": {
@@ -946,5 +946,77 @@
   },
   "virtuosa": {
     "cnReleaseTime": 1698854400000
+  },
+  "harold": {
+    "cnReleaseTime": 1701792000000
+  },
+  "leto": {
+    "cnReleaseTime": 1701792000000
+  },
+  "degenbrecher": {
+    "cnReleaseTime": 1701792000000
+  },
+  "warmy": {
+    "cnReleaseTime": 1704816000000
+  },
+  "ray": {
+    "cnReleaseTime": 1704816000000
+  },
+  "wanqing": {
+    "cnReleaseTime": 1706803200000
+  },
+  "grain-buds": {
+    "cnReleaseTime": 1706803200000
+  },
+  "zuo-le": {
+    "cnReleaseTime": 1706803200000
+  },
+  "shu": {
+    "cnReleaseTime": 1706803200000
+  },
+  "kestrel": {
+    "cnReleaseTime": 1706958000000
+  },
+  "fuze": {
+    "cnReleaseTime": 1709827200000
+  },
+  "iana": {
+    "cnReleaseTime": 1709827200000
+  },
+  "doc": {
+    "cnReleaseTime": 1709827200000
+  },
+  "ela": {
+    "cnReleaseTime": 1709827200000
+  },
+  "lutonada": {
+    "cnReleaseTime": 1712851200000
+  },
+  "odda": {
+    "cnReleaseTime": 1712851200000
+  },
+  "aroma": {
+    "cnReleaseTime": 1712851200000
+  },
+  "ascalon": {
+    "cnReleaseTime": 1712851200000
+  },
+  "phonor-0": {
+    "cnReleaseTime": 1714579200000
+  },
+  "fang-the-fire-sharpened": {
+    "cnReleaseTime": 1714579200000
+  },
+  "civilight-eterna": {
+    "cnReleaseTime": 1714579200000
+  },
+  "logos": {
+    "cnReleaseTime": 1714579200000
+  },
+  "wisadel": {
+    "cnReleaseTime": 1714579200000
+  },
+  "amiya-medic": {
+    "cnReleaseTime": 1714579200000
   }
 }

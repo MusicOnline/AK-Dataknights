@@ -228,7 +228,12 @@ export class Operator implements Localizable {
     const info: PatchInfo | undefined = table.infos[originalId]
     if (!info) return
     this.characterPatches = info.tmplIds.flatMap((templateId) => {
-      if (templateId === originalId || templateId === this.id) return []
+      if (
+        templateId === originalId ||
+        templateId === this.id ||
+        (templateId !== originalId && this.id !== originalId)
+      )
+        return []
       return new Operator(templateId, table.patchChars[templateId], this)
     })
     if (this.characterPatches.length === 0) this.characterPatches = undefined
@@ -344,7 +349,11 @@ export class Operator implements Localizable {
 
   public addLocale(locale: constants.GameLocale, table: CharacterTable) {
     const data: Character | undefined = table[this.id]
-    if (!data) return
+    if (!data) {
+      if (this.originalCharacterPatch?.id === constants.AMIYA_IDS[0])
+        this.profile?.addLocale(locale)
+      return
+    }
 
     Operator.LOCALIZATION_STRING_ATTRIBUTES.forEach(
       (attribute) => this[attribute]?.addLocale(locale, data[attribute]),

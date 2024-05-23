@@ -12,12 +12,16 @@ export type GeneratedOperatorProfileStoryData = {
 }
 
 export class Story implements Localizable {
+  private operatorId: string
+  private index: number
   private title: LocaleString
   private text: LocaleString
   private unlockType: LockType
   private unlockParam: string
 
-  public constructor(data: StoryTextAudio) {
+  public constructor(operatorId: string, index: number, data: StoryTextAudio) {
+    this.operatorId = operatorId
+    this.index = index
     this.title = new LocaleString(data.storyTitle)
     this.text = new LocaleString(data.stories[0].storyText)
     this.unlockType = data.stories[0].unLockType
@@ -31,7 +35,22 @@ export class Story implements Localizable {
     }
   }
 
-  public addLocale(locale: constants.GameLocale, data: StoryTextAudio): void {
+  public addLocale(
+    locale: constants.GameLocale,
+    dataList: StoryTextAudio[],
+  ): void {
+    let data: StoryTextAudio | null = null
+    if (
+      constants.AMIYA_IDS.includes(this.operatorId) &&
+      Object.keys(constants.AMIYA_STORY_CN_TO_EJK).includes(
+        this.index.toString(),
+      )
+    ) {
+      data = dataList[constants.AMIYA_STORY_CN_TO_EJK[this.index]]
+    } else if (!constants.AMIYA_IDS.includes(this.operatorId)) {
+      data = dataList[this.index]
+    }
+    if (!data) return
     this.title.addLocale(locale, data.storyTitle)
     this.text.addLocale(locale, data.stories[0].storyText)
   }
@@ -65,14 +84,27 @@ export class Profile implements Localizable {
   public constructor(operatorId: string, handbookDict: HandbookDict) {
     this.operatorId = operatorId
     this.isCrossoverLimited = handbookDict.isLimited
-    this.stories = handbookDict.storyTextAudio.map((story) => new Story(story))
+    this.stories = handbookDict.storyTextAudio.flatMap((story, index) => {
+      if (
+        constants.AMIYA_IDS.includes(operatorId) &&
+        story.stories[0].patchIdList &&
+        !story.stories[0].patchIdList.includes(operatorId)
+      )
+        return []
+      return new Story(operatorId, index, story)
+    })
   }
 
   public static fromDataOrNull(operatorId: string): Profile | null {
     const table =
       globalThis.GAME_TABLES!.HandbookInfo[constants.ORIGINAL_LOCALE]
         .handbookDict
-    const handbookDict: HandbookDict | undefined = table[operatorId]
+    let handbookDict: HandbookDict | undefined = undefined
+    if (constants.AMIYA_IDS.includes(operatorId)) {
+      handbookDict = table[constants.AMIYA_IDS[0]]
+    } else {
+      handbookDict = table[operatorId]
+    }
     if (!handbookDict) return null
     return new Profile(operatorId, handbookDict)
   }
@@ -86,10 +118,15 @@ export class Profile implements Localizable {
 
   public addLocale(locale: constants.GameLocale): void {
     const table = globalThis.GAME_TABLES!.HandbookInfo[locale].handbookDict
-    const handbookDict: HandbookDict | undefined = table[this.operatorId]
+    let handbookDict: HandbookDict | undefined = undefined
+    if (constants.AMIYA_IDS.includes(this.operatorId)) {
+      handbookDict = table[constants.AMIYA_IDS[0]]
+    } else {
+      handbookDict = table[this.operatorId]
+    }
     if (!handbookDict) return
-    this.stories.forEach((story, index) =>
-      story.addLocale(locale, handbookDict.storyTextAudio[index]),
+    this.stories.forEach((story) =>
+      story.addLocale(locale, handbookDict.storyTextAudio),
     )
   }
 

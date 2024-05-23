@@ -120,7 +120,11 @@
       "incantationmedic": "呪癒師",
       "chainhealer": "連鎖癒師",
       "shotprotector": "哨戒衛士",
-      "crusher": "重剣士"
+      "crusher": "重剣士",
+      "ritualist": "祭儀師",
+      "hunter": "狩人",
+      "loopshooter": "旋輪射手",
+      "primcaster": "本源術師"
     },
     "attribute": {
       "atk": "攻撃力",

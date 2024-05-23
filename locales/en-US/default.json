@@ -187,7 +187,8 @@
       "ritualist": "Ritualist",
       "hunter": "Hunter",
       "loopshooter": "Loopshooter",
-      "primcaster": "Primal Caster"
+      "primcaster": "Primal Caster",
+      "hammer": "Earthshaker"
     },
     "attribute": {
       "maxHp": "HP",

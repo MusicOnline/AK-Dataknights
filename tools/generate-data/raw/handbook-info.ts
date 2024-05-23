@@ -122,6 +122,7 @@ export const StoryTextAudioStoryElementSchema = z.object({
   unLockType: LockTypeSchema,
   unLockParam: z.string(),
   unLockString: z.string().nullable(),
+  patchIdList: z.array(z.string()).nullish(), // CN vs EJK
 })
 export type StoryTextAudioStoryElement = z.infer<
   typeof StoryTextAudioStoryElementSchema

@@ -124,7 +124,8 @@
       "ritualist": "巫役",
       "hunter": "猎手",
       "primcaster": "本源术师",
-      "loopshooter": "回环射手"
+      "loopshooter": "回环射手",
+      "hammer": "撼地者"
     },
     "attribute": {
       "atk": "攻击力",

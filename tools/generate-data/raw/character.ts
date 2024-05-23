@@ -69,6 +69,7 @@ export enum SubProfession {
   Reaper = "reaper",
   Liberator = "librator",
   Crusher = "crusher",
+  Earthshaker = "hammer",
   // Defender
   Protector = "protector",
   Guardian = "guardian",

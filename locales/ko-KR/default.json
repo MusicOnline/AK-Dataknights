@@ -119,7 +119,12 @@
       "agent": "에이전트",
       "incantationmedic": "주술 메딕",
       "chainhealer": "체인 메딕",
-      "shotprotector": "센트리 프로텍터"
+      "shotprotector": "센트리 프로텍터",
+      "crusher": "대검사",
+      "ritualist": "의식술사",
+      "hunter": "사냥꾼",
+      "loopshooter": "루프슈터",
+      "primcaster": "프라이멀 캐스터"
     },
     "attribute": {
       "atk": "공격력",
