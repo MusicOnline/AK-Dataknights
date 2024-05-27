@@ -25,7 +25,7 @@ await useOperatorsIndexLocale(i18n)
       :class="`bg-rarity-${operator.rarity}-item hover:bg-rarity-${operator.rarity}-item-focus focus-visible:bg-rarity-${operator.rarity}-item-focus`"
     >
       <UAvatar
-        :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${encodeURI(
+        :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/charavatars/${encodeURI(
           operator.phases[0].outfit!.avatarId
         )}.png`"
         :alt="name"

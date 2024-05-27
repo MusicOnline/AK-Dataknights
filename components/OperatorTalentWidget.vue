@@ -126,7 +126,7 @@ await useOperatorLocale(i18n, operator.key)
           "
         >
           <img
-            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/${elite}.png`"
+            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/arts/elite_${elite}.png`"
             :class="{
               'opacity-90':
                 talentState.elite !== elite || talentState.level !== level,
@@ -162,7 +162,7 @@ await useOperatorLocale(i18n, operator.key)
         >
           <img
             :class="{ 'opacity-90': talentState.potential !== potential }"
-            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/potential/${potential}.png`"
+            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/arts/potential_${potential-1}.png`"
           />
         </button>
       </div>

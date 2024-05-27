@@ -44,7 +44,7 @@ export function getAvatarUrl(
   while (!phase.outfit?.avatarId && phase.elite !== 0)
     phase = operator.phases[phase.elite - 1]
 
-  return `https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${encodeURI(
+  return `https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/charavatars/${encodeURI(
     phase.outfit!.avatarId
   )}.png`
 }

@@ -33,7 +33,7 @@ await useOperatorLocale(i18n, operator.key)
         <!-- Name, icon -->
         <img
           class="h-8 w-8"
-          :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/infrastructure/skill/${encodeURI(
+          :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/building/skills/${encodeURI(
             skill.skillIcon,
           )}.png`"
         />
@@ -50,7 +50,7 @@ await useOperatorLocale(i18n, operator.key)
           >
             <img
               class="object-contain"
-              :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/${skill.unlockConditions.elite}.png`"
+              :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/arts/elite_${skill.unlockConditions.elite}.png`"
             />
           </div>
           <div v-if="skill.unlockConditions.level !== 1">

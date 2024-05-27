@@ -112,13 +112,13 @@ await useOperatorLocale(i18n, operator.key)
           class="h-12 w-12 rounded-theme bg-gray-900 bg-contain bg-center bg-no-repeat p-1"
           :style="{
             backgroundImage: module.stages
-              ? `url('https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/shining/${module.shiningColor}_shining.png')`
+              ? `url('https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/ui/uniequipcolorshining/${module.shiningColor}_shining.png')`
               : undefined,
           }"
         >
           <img
             class="h-full w-full object-contain"
-            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/type/${module.typeIcon.toLowerCase()}.png`"
+            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/ui/uniequiptype/${module.typeIcon.toLowerCase()}.png`"
           />
         </div>
         <div class="flex flex-col">
@@ -146,7 +146,7 @@ await useOperatorLocale(i18n, operator.key)
         >
           <img
             :class="{ 'opacity-90': moduleState.potential !== potential }"
-            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/potential/${potential}.png`"
+            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/arts/potential_${potential-1}.png`"
           />
         </button>
       </div>
@@ -318,8 +318,8 @@ await useOperatorLocale(i18n, operator.key)
         <div>
           <img
             class="mx-auto w-72 md:float-right md:mx-4 lg:w-80"
-            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/icon/${
-              module.type === 'INITIAL' ? 'original' : module.icon
+            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/ui/uniequipimg/${
+              module.type === 'INITIAL' ? 'default' : module.icon
             }.png`"
           />
           <span
