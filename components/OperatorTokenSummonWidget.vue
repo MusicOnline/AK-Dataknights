@@ -26,7 +26,7 @@ const tokenSummonKey = computed<string>(
 )
 
 const currentAvatarUrl = computed<string>(() =>
-  getAvatarUrl(tokenSummon, operatorState)
+  getAvatarUrl(tokenSummon, { ...operatorState, elite: 0 })
 )
 
 const currentPhase = computed<GeneratedElitePhaseData>(
