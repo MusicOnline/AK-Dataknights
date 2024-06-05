@@ -350,7 +350,7 @@ export class Operator implements Localizable {
   public addLocale(locale: constants.GameLocale, table: CharacterTable) {
     const data: Character | undefined = table[this.id]
     if (!data) {
-      if (this.originalCharacterPatch?.id === constants.AMIYA_IDS[0])
+      if (this.originalCharacterPatch?.id === constants.ORIGINAL_AMIYA_ID)
         this.profile?.addLocale(locale)
       return
     }

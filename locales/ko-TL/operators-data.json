@@ -15425,6 +15425,66 @@
             }
           }
         }
+      },
+      "uniequip_003_ifrit": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "정신 융해",
+                    "description": null
+                  },
+                  "3": {
+                    "name": "정신 융해",
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "정신 융해",
+                    "description": null
+                  },
+                  "3": {
+                    "name": "정신 융해",
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -47330,6 +47390,72 @@
             }
           }
         }
+      },
+      "uniequip_003_glady": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "약육강식",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "약육강식",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "약육강식",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "약육강식",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -66677,6 +66803,56 @@
             }
           }
         }
+      },
+      "uniequip_003_judge": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "가시의 고리",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "가시의 고리",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "가시의 고리",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "가시의 고리",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -74820,6 +74996,62 @@
         "description": null
       }
     },
+    "modules": {
+      "uniequip_001_coldst": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_coldst": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "승부욕",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "승부욕",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "승부욕",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "승부욕",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {},
     "riicBaseSkills": {
       "control_mp_cost<009>": {
@@ -78909,6 +79141,54 @@
       },
       "E2-L1": {
         "description": "공격 시 탄약을 소모하며 공격력이 <#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</>까지 상승, 비공격 상태에서 서서히 탄약 장전 (최대 {'{'}value{'}'}발)"
+      }
+    },
+    "modules": {
+      "uniequip_001_ray": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_ray": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {
@@ -83948,6 +84228,54 @@
         "description": "공격 시 <#ba.kw>마법 대미지</> 부여, 적을 공격할 때마다 공격 범위 내 아군 유닛 1명의 HP를 대미지의 <#ba.kw>{'{'}scale:0{'%'}{'}'}</>만큼 회복"
       }
     },
+    "modules": {
+      "uniequip_001_amiya3": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_amiya3": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "공격 시 <#ba.kw>마법 대미지</> 부여, 적을 공격할 때마다 공격 범위 내 아군 유닛 1명의 HP를 대미지의 <#ba.kw>{'{'}scale:0{'%'}{'}'}</>만큼 회복"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "공격 시 <#ba.kw>마법 대미지</> 부여, 적을 공격할 때마다 공격 범위 내 아군 유닛 1명의 HP를 대미지의 <#ba.kw>{'{'}scale:0{'%'}{'}'}</>만큼 회복"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "공격 시 <#ba.kw>마법 대미지</> 부여, 적을 공격할 때마다 공격 범위 내 아군 유닛 1명의 HP를 대미지의 <#ba.kw>{'{'}scale:0{'%'}{'}'}</>만큼 회복"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {},
     "riicBaseSkills": {},
     "profile": {
@@ -83984,6 +84312,755 @@
       "description": null,
       "characterPatchDetailInfo": {
         "infoParam": null
+      }
+    }
+  },
+  "underflow": {
+    "name": null,
+    "appellation": null,
+    "description": "적 3명 저지 가능, 원거리 공격 가능",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_udflow_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_udflow_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "적 3명 저지 가능, 원거리 공격 가능"
+      }
+    },
+    "modules": {
+      "uniequip_001_udflow": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_udflow": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd_ext<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd_ext<001>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
+      }
+    }
+  },
+  "lucilla": {
+    "name": null,
+    "appellation": null,
+    "description": "공격 시 <#ba.kw>마법 대미지</> 부여",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_haini_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_haini_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "공격 시 <#ba.kw>마법 대미지</> 부여"
+      }
+    },
+    "modules": {
+      "uniequip_001_haini": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_haini": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "목표에 10{'%'}의 <?ba.weaken>약화</> 효과 적용, 2초간 지속"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "목표에 10{'%'}의 <?ba.weaken>약화</> 효과 적용, 2초간 지속"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "목표에 10{'%'}의 <?ba.weaken>약화</> 효과 적용, 2초간 지속"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<025>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd<026>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
+      }
+    }
+  },
+  "ulpianus": {
+    "name": null,
+    "appellation": null,
+    "description": "저지 중인 <#ba.kw>모든 적</> 동시 공격",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      },
+      "3": {
+        "E0-L1-P1": {}
+      }
+    },
+    "skills": {
+      "skchr_ulpia_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_ulpia_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_ulpia_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "저지 중인 <#ba.kw>모든 적</> 동시 공격"
+      }
+    },
+    "tokenSummons": {
+      "token_10039_ulpia_block": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {},
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd_doubleProf<201>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd_power_down<000>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
       }
     }
   }

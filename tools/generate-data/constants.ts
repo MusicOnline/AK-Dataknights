@@ -36,6 +36,8 @@ export const AMIYA_IDS = [
   "char_1037_amiya3",
 ]
 
+export const ORIGINAL_AMIYA_ID = AMIYA_IDS[0]
+
 export const AMIYA_STORY_CN_TO_EJK: { [cnIndex: number]: number } = {
   0: 0, // Basic Info
   1: 1, // Physical Exam

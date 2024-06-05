@@ -15425,6 +15425,66 @@
             }
           }
         }
+      },
+      "uniequip_003_ifrit": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "精神融解",
+                    "description": null
+                  },
+                  "3": {
+                    "name": "精神融解",
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "精神融解",
+                    "description": null
+                  },
+                  "3": {
+                    "name": "精神融解",
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -47330,6 +47390,72 @@
             }
           }
         }
+      },
+      "uniequip_003_glady": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "弱肉強食",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "弱肉強食",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": "弱肉強食",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "弱肉強食",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -66677,6 +66803,56 @@
             }
           }
         }
+      },
+      "uniequip_003_judge": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "茨纏う身",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "茨纏う身",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "茨纏う身",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "茨纏う身",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -74820,6 +74996,62 @@
         "description": "攻撃時に弾薬を消費し、攻撃力が<#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</>まで上昇。攻撃していない時はゆっくりと弾薬を装填する（最大{'{'}value{'}'}発）"
       }
     },
+    "modules": {
+      "uniequip_001_coldst": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_coldst": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "負けん気",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "負けん気",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "負けん気",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "負けん気",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {},
     "riicBaseSkills": {
       "control_mp_cost<009>": {
@@ -78909,6 +79141,54 @@
       },
       "E2-L1": {
         "description": "弾が装填されている状態でのみ攻撃でき、攻撃力が<#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</>に上昇する。攻撃をしていない時は弾の装填を行う（最大装弾数：{'{'}value{'}'}）"
+      }
+    },
+    "modules": {
+      "uniequip_001_ray": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_ray": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {
@@ -83948,6 +84228,54 @@
         "description": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
       }
     },
+    "modules": {
+      "uniequip_001_amiya3": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_amiya3": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {},
     "riicBaseSkills": {},
     "profile": {
@@ -83984,6 +84312,755 @@
       "description": null,
       "characterPatchDetailInfo": {
         "infoParam": null
+      }
+    }
+  },
+  "underflow": {
+    "name": null,
+    "appellation": null,
+    "description": "敵を3体までブロック、遠距離攻撃も行える",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_udflow_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_udflow_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "敵を3体までブロック、遠距離攻撃も行える"
+      }
+    },
+    "modules": {
+      "uniequip_001_udflow": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_udflow": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "trade_ord_spd_ext<000>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd_ext<001>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
+      }
+    }
+  },
+  "lucilla": {
+    "name": null,
+    "appellation": null,
+    "description": "敵に<#ba.kw>術ダメージ</>を与える",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P5": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_haini_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_haini_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "敵に<#ba.kw>術ダメージ</>を与える"
+      }
+    },
+    "modules": {
+      "uniequip_001_haini": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_haini": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "対象に10{'%'}の<?ba.weaken>虚弱</>効果を2秒間付与する"
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "対象に10{'%'}の<?ba.weaken>虚弱</>効果を2秒間付与する"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "対象に10{'%'}の<?ba.weaken>虚弱</>効果を2秒間付与する"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  },
+                  "5": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "power_rec_spd<025>": {
+        "name": null,
+        "description": null
+      },
+      "power_rec_spd<026>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
+      }
+    }
+  },
+  "ulpianus": {
+    "name": null,
+    "appellation": null,
+    "description": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      },
+      "3": {
+        "E0-L1-P1": {}
+      }
+    },
+    "skills": {
+      "skchr_ulpia_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_ulpia_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_ulpia_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃"
+      }
+    },
+    "tokenSummons": {
+      "token_10039_ulpia_block": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "description": null
+            }
+          }
+        },
+        "skills": {},
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "train_spd_doubleProf<201>": {
+        "name": null,
+        "description": null
+      },
+      "train_spd_power_down<000>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
       }
     }
   }

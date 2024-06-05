@@ -101,7 +101,7 @@ export class Profile implements Localizable {
         .handbookDict
     let handbookDict: HandbookDict | undefined = undefined
     if (constants.AMIYA_IDS.includes(operatorId)) {
-      handbookDict = table[constants.AMIYA_IDS[0]]
+      handbookDict = table[constants.ORIGINAL_AMIYA_ID]
     } else {
       handbookDict = table[operatorId]
     }
@@ -120,7 +120,7 @@ export class Profile implements Localizable {
     const table = globalThis.GAME_TABLES!.HandbookInfo[locale].handbookDict
     let handbookDict: HandbookDict | undefined = undefined
     if (constants.AMIYA_IDS.includes(this.operatorId)) {
-      handbookDict = table[constants.AMIYA_IDS[0]]
+      handbookDict = table[constants.ORIGINAL_AMIYA_ID]
     } else {
       handbookDict = table[this.operatorId]
     }

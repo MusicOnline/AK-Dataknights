@@ -40,7 +40,7 @@ export const EquipDictSchema = z.object({
   showEvolvePhase: CoerceEnumValueOf(PhaseEnum),
   unlockEvolvePhase: CoerceEnumValueOf(PhaseEnum),
   charId: z.string(),
-  tmplId: z.null(),
+  tmplId: z.string().nullable(), // Amiya-only class changes
   showLevel: z.number(),
   unlockLevel: z.number(),
   unlockFavorPoint: z.number(),
