@@ -122,4 +122,5 @@ Artifacts for both builds are available for download in their respective GitHub 
 In no particular order:
 
 - [Kengxxiao](https://github.com/Kengxxiao) ([ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData), [ArknightsGameData_YoStar](https://github.com/Kengxxiao/ArknightsGameData_YoStar))
+- [astral4](https://github.com/astral4), [akgcc](https://github.com/akgcc) ([arkdata](https://github.com/akgcc/arkdata))
 - [Aceship](https://github.com/Aceship) ([Arknight-Images](https://github.com/Aceship/Arknight-Images))
