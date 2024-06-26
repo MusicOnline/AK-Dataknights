@@ -158,7 +158,7 @@ await useOperatorsIndexLocalePromise
         <UTooltip class="h-8 w-8" :ui="{ popper: { strategy: 'absolute' } }">
           <img
             class="h-full w-full rounded-theme bg-gray-700 object-contain p-0.5 group-hover:bg-gray-900 group-focus-visible:bg-gray-900"
-            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/subclass/sub_${cmdOperator.classBranch}_icon.png`"
+            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/ui/subprofessionicon/sub_${cmdOperator.classBranch}_icon.png`"
           />
           <template #text>
             {{ t(`operator.classBranch.${cmdOperator.classBranch}`) }}

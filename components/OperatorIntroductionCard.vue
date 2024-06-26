@@ -37,7 +37,7 @@ await useOperatorLocale(i18n, operator.key)
         <div class="flex">
           <img
             class="h-9 w-9 rounded-l-theme bg-gray-900 object-contain p-0.5"
-            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/subclass/sub_${operator.classBranch}_icon.png`"
+            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/ui/subprofessionicon/sub_${operator.classBranch}_icon.png`"
           />
           <div>
             <div

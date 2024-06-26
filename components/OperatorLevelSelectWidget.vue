@@ -95,7 +95,7 @@ function changeElite(eliteChoice: number) {
             :class="{
               'brightness-90': elite !== eliteChoice,
             }"
-            :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/${eliteChoice}.png`"
+            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/arts/elite_${eliteChoice}.png`"
           />
         </button>
       </li>

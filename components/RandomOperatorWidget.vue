@@ -14,7 +14,7 @@ function getPortraitUrl(elite: number): string | null {
       operator.phases[0].outfit?.portraitId
   )
     return null
-  return `https://raw.githubusercontent.com/Aceship/Arknight-Images/main/characters/${encodeURI(
+  return `https://raw.githubusercontent.com/akgcc/arkdata/main/assets/chararts/${encodeURI(
     operator.phases[elite].outfit!.portraitId!
   )}.png`
 }
