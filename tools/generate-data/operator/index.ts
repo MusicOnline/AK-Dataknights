@@ -568,21 +568,6 @@ export class Operator implements Localizable {
       .toLowerCase()
       .replace(/[.'()]/g, "")
       .replace(/[-\s/]+/g, "-")
-    if (this.isActualOperator) {
-      const parts = this.id.split("_")
-      if (parts.length >= 3) {
-        const idSuffix = parts[2]
-        if (
-          constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(this.id) ||
-          idSuffix.startsWith("a") ||
-          idSuffix.startsWith("c") ||
-          idSuffix.startsWith("r")
-        ) {
-          // These are likely IS or reserve operators that have duplicates
-          return `${key}-${idSuffix}`
-        }
-      }
-    }
     return key
   }
 
