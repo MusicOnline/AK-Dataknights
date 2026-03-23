@@ -563,11 +563,27 @@ export class Operator implements Localizable {
     if (isKeyOfObject(this.id, OPERATOR_KEY_OVERRIDE))
       return OPERATOR_KEY_OVERRIDE[this.id]
     if (constants.NON_OPERATOR_CLASSES.includes(this.class)) return this.id
-    return this._unnormalizedKey
+    const key = this._unnormalizedKey
       .trim()
       .toLowerCase()
       .replace(/[.'()]/g, "")
       .replace(/[-\s/]+/g, "-")
+    if (this.isActualOperator) {
+      const parts = this.id.split("_")
+      if (parts.length >= 3) {
+        const idSuffix = parts[2]
+        if (
+          constants.FALSE_POSITIVE_ACTUAL_OPERATORS.includes(this.id) ||
+          idSuffix.startsWith("a") ||
+          idSuffix.startsWith("c") ||
+          idSuffix.startsWith("r")
+        ) {
+          // These are likely IS or reserve operators that have duplicates
+          return `${key}-${idSuffix}`
+        }
+      }
+    }
+    return key
   }
 
   public get isActualOperator(): boolean {
