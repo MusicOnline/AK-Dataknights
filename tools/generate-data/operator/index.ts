@@ -567,7 +567,7 @@ export class Operator implements Localizable {
       .trim()
       .toLowerCase()
       .replace(/[.'()]/g, "")
-      .replace(/[-\s]+/g, "-")
+      .replace(/[-\s/]+/g, "-")
   }
 
   public get isActualOperator(): boolean {

@@ -96,7 +96,7 @@ export class Module implements Localizable {
     this.unlockConditions = {
       elite: uniEquipData.unlockEvolvePhase,
       level: uniEquipData.unlockLevel,
-      trust: uniEquipData.unlockFavorPoint,
+      trust: uniEquipData.unlockFavors?.["1"] ?? 0,
     }
     this.type = uniEquipData.type
     this.sortOrder = uniEquipData.charEquipOrder

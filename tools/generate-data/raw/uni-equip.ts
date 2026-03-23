@@ -9,6 +9,7 @@ export const EquipShiningColorSchema = z.enum([
   "grey",
   "red",
   "yellow",
+  "purple",
 ])
 export type EquipShiningColor = z.infer<typeof EquipShiningColorSchema>
 
@@ -18,7 +19,7 @@ export type ItemCostType = z.infer<typeof ItemCostTypeSchema>
 export const EquipDictTypeSchema = z.enum(["ADVANCED", "INITIAL"])
 export type EquipDictType = z.infer<typeof EquipDictTypeSchema>
 
-export const TypeName2Schema = z.enum(["X", "Y", "D"])
+export const TypeName2Schema = z.enum(["X", "Y", "D", "A", "B"])
 export type TypeName2 = z.infer<typeof TypeName2Schema>
 
 export const ItemCostSchema = z.object({
@@ -43,7 +44,7 @@ export const EquipDictSchema = z.object({
   tmplId: z.string().nullable(), // Amiya-only class changes
   showLevel: z.number(),
   unlockLevel: z.number(),
-  unlockFavorPoint: z.number(),
+  unlockFavors: z.record(z.number()).nullable(),
   missionList: z.array(z.string()),
   itemCost: z.record(z.array(ItemCostSchema)).nullable(),
   type: EquipDictTypeSchema,
