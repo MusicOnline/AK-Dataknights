@@ -60,7 +60,9 @@ export default async function (
 ): Promise<any> {
   const { locale, fallbackLocale, mergeLocaleMessage } = i18n
   // @ts-ignore
-  const fallbackLocaleList: string[] = fallbackLocale.value[locale.value]
+  const fb = fallbackLocale.value as Record<string, string[]>
+  const fallbackLocaleList: string[] =
+    fb[locale.value] ?? fb.default ?? []
   const promises = fallbackLocaleList.map((fallback) =>
     getOperatorLocale(fallback, key).then((data) =>
       mergeLocaleMessage(fallback, data)

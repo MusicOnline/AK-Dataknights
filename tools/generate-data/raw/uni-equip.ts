@@ -44,7 +44,7 @@ export const EquipDictSchema = z.object({
   tmplId: z.string().nullable(), // Amiya-only class changes
   showLevel: z.number(),
   unlockLevel: z.number(),
-  unlockFavors: z.record(z.number()).nullable(),
+  unlockFavors: z.record(z.number()).nullable().optional(),
   missionList: z.array(z.string()),
   itemCost: z.record(z.array(ItemCostSchema)).nullable(),
   type: EquipDictTypeSchema,

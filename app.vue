@@ -84,7 +84,7 @@ useHead({
       content: registeredLocales.value.flatMap(({ code }) => {
         const transformedCode = transformLocaleCode(code)
         if (code === locale.value) return []
-        return transformedCode
+        return [transformedCode]
       }),
     },
   ],

@@ -35,7 +35,9 @@ async function getOperatorsIndexLocale(locale: string): Promise<LocaleObject> {
 export default async function (i18n: Composer): Promise<void[]> {
   const { locale, fallbackLocale, mergeLocaleMessage } = i18n
   // @ts-ignore
-  const fallbackLocaleList: string[] = fallbackLocale.value[locale.value]
+  const fb = fallbackLocale.value as Record<string, string[]>
+  const fallbackLocaleList: string[] =
+    fb[locale.value] ?? fb.default ?? []
   const promises = fallbackLocaleList.map((fallback) =>
     getOperatorsIndexLocale(fallback).then((data) =>
       mergeLocaleMessage(fallback, data)

@@ -172,8 +172,24 @@ async function generateTraitLocales(operators?: Operator[]) {
   )
 }
 
+function dedupeOperatorKeys(operators: Operator[]) {
+  const byKey = new Map<string, Operator[]>()
+  for (const op of operators) {
+    const k = op.naturalKey
+    const list = byKey.get(k)
+    if (list) list.push(op)
+    else byKey.set(k, [op])
+  }
+  for (const ops of byKey.values()) {
+    if (ops.length <= 1) continue
+    for (const op of ops) op.resolveKeyCollision()
+  }
+}
+
 async function generateOperatorFiles(operators?: Operator[]) {
   if (!operators) operators = await getOperators()
+
+  dedupeOperatorKeys(operators)
 
   const indexFileObject = operators.map((operator) => operator.toIndexData())
 
