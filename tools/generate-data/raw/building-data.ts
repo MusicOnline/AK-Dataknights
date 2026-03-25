@@ -49,7 +49,7 @@ export const RoomTypeSchema = z.enum([
 ])
 export type RoomType = z.infer<typeof RoomTypeSchema>
 
-export const TextColorSchema = z.enum(["#ffffff", "#333333"])
+export const TextColorSchema = z.enum(["#ffffff", "#333333", "#333334"])
 export type TextColor = z.infer<typeof TextColorSchema>
 
 export const BuffDatumSchema = z.object({

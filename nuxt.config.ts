@@ -89,6 +89,9 @@ export default defineNuxtConfig({
   },
   sourcemap: process.env.NODE_ENV !== "production",
   ssr: process.env.ENABLE_SSR?.toLowerCase() === "true",
+  experimental: {
+    asyncContext: true,
+  },
   modules: ["nuxt-lodash", "@nuxtjs/i18n", "@nuxt/ui"],
   hooks: {
     "build:before": async () => {
@@ -151,6 +154,8 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       autoSubfolderIndex: false,
+      // Linked from app head; prerender fetch 404s while public/ is still copied to output.
+      ignore: ["/manifest.json"],
     },
   },
 })

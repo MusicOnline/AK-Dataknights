@@ -559,15 +559,47 @@ export class Operator implements Localizable {
     return localeObject
   }
 
-  public get key(): string {
+  private _resolvedKey?: string
+
+  /**
+   * URL and filesystem-safe slug. Non-ASCII names (e.g. Cyrillic) become empty after
+   * ASCII folding, so we fall back to the game id. Colliding slugs are disambiguated
+   * in generateOperatorFiles via resolveKeyCollision.
+   */
+  private static slugFromUnnormalizedKey(
+    unnormalizedKey: string,
+    id: string,
+  ): string {
+    let s = unnormalizedKey
+      .trim()
+      .normalize("NFD")
+      .replace(/\p{M}/gu, "")
+      .toLowerCase()
+    s = s.replace(/[.'()]/g, "").replace(/\//g, "-")
+    s = s.replace(/[-\s]+/g, "-")
+    s = s.replace(/[^a-z0-9-]+/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "")
+    if (s.length === 0)
+      s = id.replace(/^char_/, "").replace(/_/g, "-")
+    return s
+  }
+
+  private computeNaturalKey(): string {
     if (isKeyOfObject(this.id, OPERATOR_KEY_OVERRIDE))
       return OPERATOR_KEY_OVERRIDE[this.id]
     if (constants.NON_OPERATOR_CLASSES.includes(this.class)) return this.id
-    return this._unnormalizedKey
-      .trim()
-      .toLowerCase()
-      .replace(/[.'()]/g, "")
-      .replace(/[-\s]+/g, "-")
+    return Operator.slugFromUnnormalizedKey(this._unnormalizedKey, this.id)
+  }
+
+  public get naturalKey(): string {
+    return this.computeNaturalKey()
+  }
+
+  public get key(): string {
+    return this._resolvedKey ?? this.computeNaturalKey()
+  }
+
+  public resolveKeyCollision(): void {
+    this._resolvedKey = `${this.computeNaturalKey()}-${this.id.replace(/^char_/, "").replace(/_/g, "-")}`
   }
 
   public get isActualOperator(): boolean {

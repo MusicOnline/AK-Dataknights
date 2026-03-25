@@ -16,6 +16,7 @@ export const Target = z.enum([
   "TRAIT",
   // Used to update existing trait attributes, no new attributes
   "TRAIT_DATA_ONLY",
+  "OVERWRITE_BATTLE_DATA",
 ])
 export type Target = z.infer<typeof Target>
 
