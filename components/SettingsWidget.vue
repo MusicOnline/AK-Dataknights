@@ -15,7 +15,9 @@ const isAdvancedViewEnabled = useIsAdvancedViewEnabled()
     <div class="flex flex-col gap-2">
       <div class="flex items-center gap-1">
         <span> {{ t("settings.setLanguage.title") }} </span>
-        <LocaleSelect class="ml-auto" />
+        <ClientOnly>
+          <LocaleSelect class="ml-auto" />
+        </ClientOnly>
       </div>
       <div class="flex items-center gap-1">
         <span> {{ t("settings.enableAdvancedView.title") }} </span>

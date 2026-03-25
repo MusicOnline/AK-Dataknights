@@ -49,7 +49,9 @@ const isSettingsModalActive = ref<boolean>(false)
         </UModal>
         <ColorModeSwitch class="ml-auto hidden sm:flex" />
         <ThemePicker class="hidden sm:flex" />
-        <LocaleSelect class="ml-auto sm:ml-0" mode="hover" />
+        <ClientOnly>
+          <LocaleSelect class="ml-auto sm:ml-0" mode="hover" />
+        </ClientOnly>
       </nav>
     </header>
     <BottomNavigationBar class="md:hidden" />
