@@ -12,7 +12,6 @@ const switchLocalePath = useSwitchLocalePath()
 const theme = ref<string>("mizuki")
 
 const headLinks = computed<any[]>(() => {
-  const locales = nuxtApp.$i18n?.locales?.value || []
   return [
     {
       rel: "preconnect",
@@ -27,13 +26,6 @@ const headLinks = computed<any[]>(() => {
       rel: "stylesheet",
       href: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;700&family=Noto+Sans+SC:wght@300;400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+KR:wght@300;400;700&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap",
     },
-    ...locales.map((localeObj) => {
-      return {
-        rel: "alternate",
-        hreflang: localeObj.code,
-        href: runtimeConfig.public.fullBaseUrl + switchLocalePath(localeObj.code),
-      }
-    }),
     {
       rel: "alternate",
       hreflang: "x-default",
@@ -62,7 +54,6 @@ useHead({
   },
   link: headLinks,
   meta: () => {
-    const locales = nuxtApp.$i18n?.locales?.value || []
     return [
       {
         key: "og:image",
@@ -83,14 +74,6 @@ useHead({
         key: "og:image:height",
         property: "og:image:height",
         content: "96",
-      },
-      {
-        property: "og:locale:alternate",
-        content: locales.flatMap(({ code }) => {
-          const transformedCode = transformLocaleCode(code)
-          if (code === locale.value) return []
-          return transformedCode
-        }),
       },
     ]
   },

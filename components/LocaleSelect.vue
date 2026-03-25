@@ -5,17 +5,20 @@ const { locale } = useI18n({ useScope: "global" })
 const nuxtApp = useNuxtApp()
 const switchLocalePath = useSwitchLocalePath()
 
-const locales = computed(() => nuxtApp.$i18n?.locales?.value || [])
+const locales = computed(() => {
+  if (import.meta.server) return []
+  return nuxtApp.$i18n?.locales?.value || []
+})
 
 function setLocaleByNavigation(localeCode: string) {
   return navigateTo({ path: switchLocalePath(localeCode) })
 }
 
-const currentLocaleObject = computed<LocaleObject>(
+const currentLocaleObject = computed<LocaleObject | undefined>(
   () =>
     locales.value.find(
       (localeObj) => localeObj.code === locale.value,
-    )!,
+    ) || { code: locale.value, name: locale.value },
 )
 
 const dropdownItems = computed(() => [
