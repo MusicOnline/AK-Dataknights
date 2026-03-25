@@ -699,7 +699,7 @@
       "fang-the-fire-sharpened": {
         "name": null,
         "appellation": null,
-        "description": "敵を倒す度所持コスト+1\n撤退時に初期配置時のコストを返却"
+        "description": null
       }
     }
   },
@@ -4673,7 +4673,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "援護攻撃",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -4693,7 +4693,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "援護攻撃",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -8814,11 +8814,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "迅虎拳",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "迅虎拳",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -8833,11 +8833,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "迅虎拳",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "迅虎拳",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -9050,11 +9050,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "精神破壊",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "精神破壊",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -9069,11 +9069,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "精神破壊",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "精神破壊",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -10373,7 +10373,7 @@
       "amiya-medic": {
         "name": null,
         "appellation": null,
-        "description": "術ダメージを与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの50{'%'}回復",
+        "description": null,
         "characterPatchDetailInfo": {
           "infoParam": null
         }
@@ -12128,7 +12128,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "戦術防御",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -12153,7 +12153,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "戦術防御",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -17774,11 +17774,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "カリスマ",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "カリスマ",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -17798,11 +17798,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "カリスマ",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "カリスマ",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -18493,11 +18493,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "一騎打ち",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "一騎打ち",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -18512,11 +18512,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "一騎打ち",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "一騎打ち",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -23104,6 +23104,62 @@
         "description": null
       }
     },
+    "modules": {
+      "uniequip_001_excu": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_excu": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "アサルトカスタム",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "アサルトカスタム",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "アサルトカスタム",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "アサルトカスタム",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {},
     "riicBaseSkills": {
       "train_spd&profession<040>": {
@@ -25244,6 +25300,67 @@
                     "name": null,
                     "description": null
                   }
+                }
+              }
+            }
+          }
+        }
+      },
+      "uniequip_003_mostma": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "攻撃範囲<#ba.kw>拡大</>",
+              "overrideDescription": "敵に<#ba.kw>範囲術ダメージ</>を与える"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "攻撃範囲<#ba.kw>拡大</>",
+              "overrideDescription": "敵に<#ba.kw>範囲術ダメージ</>を与える"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "スキルブースト・術師",
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "攻撃範囲<#ba.kw>拡大</>",
+              "overrideDescription": "敵に<#ba.kw>範囲術ダメージ</>を与える"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "スキルブースト・術師",
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
                 }
               }
             }
@@ -31738,7 +31855,7 @@
       "wisadel": {
         "name": null,
         "appellation": null,
-        "description": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>2回</>の範囲物理ダメージを与える（2回目は余震、与ダメージが攻撃力の50{'%'}になる）"
+        "description": null
       }
     }
   },
@@ -31993,19 +32110,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\nブロック中の敵が2体以上の場合、敵を突き飛ばす際の力加減が1ランク上昇\n遠距離マスにも配置可能"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\nブロック中の敵が2体以上の場合、敵を突き飛ばす際の力加減が1ランク上昇\n遠距離マスにも配置可能"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "工事用蓄水砲",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -32014,13 +32131,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃\nブロック中の敵が2体以上の場合、敵を突き飛ばす際の力加減が1ランク上昇\n遠距離マスにも配置可能"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "工事用蓄水砲",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -33774,7 +33891,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "シンクロ",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -33789,7 +33906,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "シンクロ",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -34006,11 +34123,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "索敵支援",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "索敵支援",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -34030,11 +34147,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "索敵支援",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "索敵支援",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -34582,23 +34699,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与え\n攻撃時、敵を<#ba.kw>やや長い間</><?ba.sluggish>足止め</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与え\n攻撃時、敵を<#ba.kw>やや長い間</><?ba.sluggish>足止め</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "狐の祟り",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "狐の祟り",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -34607,17 +34724,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "敵に<#ba.kw>術ダメージ</>を与え\n攻撃時、敵を<#ba.kw>やや長い間</><?ba.sluggish>足止め</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "狐の祟り",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "狐の祟り",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -36212,11 +36329,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "神経猛毒",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "神経猛毒",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -36231,11 +36348,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "神経猛毒",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "神経猛毒",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -36825,11 +36942,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "アウトボクシング",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "アウトボクシング",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -36844,11 +36961,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "アウトボクシング",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "アウトボクシング",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -37941,11 +38058,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "構造分解",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "構造分解",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -37965,11 +38082,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "構造分解",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "構造分解",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -39353,6 +39470,62 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_aosta": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_aosta": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "釘刺創",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "釘刺創",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "釘刺創",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "釘刺創",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -40791,11 +40964,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "ブーストドッジ",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "ブーストドッジ",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -40810,11 +40983,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "ブーストドッジ",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "ブーストドッジ",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -41172,6 +41345,62 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_pinecn": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_pinecn": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "ポータブル電源",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "ポータブル電源",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "ポータブル電源",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "ポータブル電源",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -42013,11 +42242,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "ハードパンチャー",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "ハードパンチャー",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -42032,11 +42261,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "ハードパンチャー",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "ハードパンチャー",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -42255,7 +42484,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "プロブリーダー",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -42268,7 +42497,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "プロブリーダー",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -42283,7 +42512,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "プロブリーダー",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -42296,7 +42525,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "プロブリーダー",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -44880,11 +45109,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "盾持ち射撃",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "盾持ち射撃",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -44904,11 +45133,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "盾持ち射撃",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "盾持ち射撃",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -45581,19 +45810,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "飛行ユニットを攻撃時、攻撃力が<#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</>まで上昇"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "飛行ユニットを攻撃時、攻撃力が<#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</>まで上昇"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "スタングレネード",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -45602,13 +45831,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "飛行ユニットを攻撃時、攻撃力が<#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</>まで上昇"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "スタングレネード",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -48942,7 +49171,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "狂嵐の兆し",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -48967,7 +49196,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "狂嵐の兆し",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -49961,6 +50190,62 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_chen2": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_chen2": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "勤倹節約",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "勤倹節約",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "勤倹節約",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "勤倹節約",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -53674,11 +53959,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "俯瞰",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "俯瞰",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -53693,11 +53978,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "俯瞰",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "俯瞰",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -55987,11 +56272,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "三寸不爛の舌",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "三寸不爛の舌",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -56011,11 +56296,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "三寸不爛の舌",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "三寸不爛の舌",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -56524,11 +56809,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "電流暴走",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "電流暴走",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -56543,11 +56828,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "電流暴走",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "電流暴走",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -57806,11 +58091,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "礎石",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "礎石",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -57825,11 +58110,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "礎石",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "礎石",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -60141,23 +60426,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "朝瞬の花",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "朝瞬の花",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -60166,17 +60451,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "朝瞬の花",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "朝瞬の花",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -62136,11 +62421,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "インスピレーション",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "インスピレーション",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -62155,11 +62440,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "インスピレーション",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "インスピレーション",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -63584,7 +63869,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "執行人見習い",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -63609,7 +63894,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "執行人見習い",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -64445,7 +64730,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "ストリートソウル",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -64460,7 +64745,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "ストリートソウル",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -66089,7 +66374,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "群狼の統率者",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -66097,7 +66382,7 @@
               "4": {
                 "candidates": {
                   "1": {
-                    "name": "群狼の統率者",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -66122,7 +66407,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "群狼の統率者",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -66130,7 +66415,7 @@
               "4": {
                 "candidates": {
                   "1": {
-                    "name": "群狼の統率者",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -67526,23 +67811,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "耀映",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "耀映",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -67551,17 +67836,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "耀映",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "耀映",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -68614,7 +68899,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "万象客となり",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -68629,7 +68914,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "万象客となり",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -69087,11 +69372,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "虚突",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "虚突",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -69106,11 +69391,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "虚突",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "虚突",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -71336,7 +71621,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "清き水、即ち命なり",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -71366,7 +71651,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "清き水、即ち命なり",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -71724,19 +72009,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "通常攻撃が敵【エリート】または【ボス】に命中するたびにSPが<#ba.kw>{'{'}sp{'}'}</>回復"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "通常攻撃が敵【エリート】または【ボス】に命中するたびにSPが<#ba.kw>{'{'}sp{'}'}</>回復"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "今は無き翼",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -71750,13 +72035,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "通常攻撃が敵【エリート】または【ボス】に命中するたびにSPが<#ba.kw>{'{'}sp{'}'}</>回復"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "今は無き翼",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -74509,6 +74794,72 @@
             }
           }
         }
+      },
+      "uniequip_003_swire2": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "特性によるコスト消費時、攻撃力+4{'%'}、最大5回まで"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "特性によるコスト消費時、攻撃力+4{'%'}、最大5回まで"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "財あれば憂いなし",
+                    "description": null
+                  },
+                  "3": {
+                    "name": "財あれば憂いなし",
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "特性によるコスト消費時、攻撃力+4{'%'}、最大5回まで"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "財あれば憂いなし",
+                    "description": null
+                  },
+                  "3": {
+                    "name": "財あれば憂いなし",
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {
@@ -75570,11 +75921,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "オールラウンド",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "オールラウンド",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -75600,11 +75951,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "オールラウンド",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "オールラウンド",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -76350,23 +76701,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "土壌改良",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "土壌改良",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -76375,17 +76726,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>術ダメージ</>を与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの<#ba.kw>{'{'}scale:0{'%'}{'}'}</>回復"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "土壌改良",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "土壌改良",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -78040,7 +78391,7 @@
   "leto": {
     "name": null,
     "appellation": null,
-    "description": "80％の攻撃力で<#ba.kw>遠距離攻撃</>も行える",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -78296,7 +78647,7 @@
   "harold": {
     "name": null,
     "appellation": null,
-    "description": "味方のHPを回復し、同時に対象に蓄積された<#ba.dt.element>元素損傷</>を自身の攻撃力の50％の値分治療する（HP最大の味方も<#ba.dt.element>元素損傷</>の治療対象となる）",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -78480,7 +78831,7 @@
   "degenbrecher": {
     "name": null,
     "appellation": null,
-    "description": "通常攻撃時、1回の攻撃で<#ba.kw>2回</>ダメージを与える",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -78672,13 +79023,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "スキルの与ダメージ<#ba.vup>+{'{'}value:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "スキルの与ダメージ<#ba.vup>+{'{'}value:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -78697,7 +79048,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "スキルの与ダメージ<#ba.vup>+{'{'}value:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -78776,7 +79127,7 @@
   "warmy": {
     "name": null,
     "appellation": null,
-    "description": "敵に<#ba.kw>術ダメージ</>を与える\n<#ba.kw>元素ダメージ</>を与える能力を持つ",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -78964,7 +79315,7 @@
   "ray": {
     "name": null,
     "appellation": null,
-    "description": "弾が装填されている状態でのみ攻撃でき、攻撃力が<#ba.kw>120{'%'}</>に上昇する。攻撃をしていない時は弾の装填を行う（最大装弾数：8）",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -79166,7 +79517,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "巡回のおとも",
                     "description": null
                   }
                 }
@@ -79181,7 +79532,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "巡回のおとも",
                     "description": null
                   }
                 }
@@ -79331,7 +79682,7 @@
   "wanqing": {
     "name": null,
     "appellation": null,
-    "description": "スキル発動中、ブロック数が0になる",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -79471,13 +79822,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "スキル発動中、ブロック数が0になるが、前方にいる味方1人のブロック数<#ba.kw>+1</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "スキル発動中、ブロック数が0になるが、前方にいる味方1人のブロック数<#ba.kw>+1</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -79496,7 +79847,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "スキル発動中、ブロック数が0になるが、前方にいる味方1人のブロック数<#ba.kw>+1</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -79571,7 +79922,7 @@
   "grain-buds": {
     "name": null,
     "appellation": null,
-    "description": "敵に<#ba.kw>術ダメージ</>を与える\n攻撃時、敵を一瞬<?ba.sluggish>足止め</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -79711,7 +80062,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "攻撃範囲内に敵がいる時、SPの自然回復速度＋0.2sp/秒"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -79723,7 +80074,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "攻撃範囲内に敵がいる時、SPの自然回復速度＋0.2sp/秒"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -79747,7 +80098,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "攻撃範囲内に敵がいる時、SPの自然回復速度＋0.2sp/秒"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -79827,7 +80178,7 @@
   "shu": {
     "name": null,
     "appellation": null,
-    "description": "HP回復スキルを所持",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -80015,13 +80366,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "HPが50{'%'}未満の味方を治療時、HP治療効果<#ba.kw>+15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "HPが50{'%'}未満の味方を治療時、HP治療効果<#ba.kw>+15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80040,7 +80391,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "HPが50{'%'}未満の味方を治療時、HP治療効果<#ba.kw>+15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80115,7 +80466,7 @@
   "zuo-le": {
     "name": null,
     "appellation": null,
-    "description": "味方の治療対象にならない\n敵を攻撃する度自身のHPを<#ba.kw>{'{'}value{'}'}</>回復",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -80309,7 +80660,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "HPが50％未満の時、25％の<?ba.protect>加護</>状態を獲得"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80321,7 +80672,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "HPが50％未満の時、25％の<?ba.protect>加護</>状態を獲得"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80341,7 +80692,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "HPが50％未満の時、25％の<?ba.protect>加護</>状態を獲得"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80417,7 +80768,7 @@
   "kestrel": {
     "name": null,
     "appellation": null,
-    "description": "敵を2体までブロック",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -80563,7 +80914,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "初回配置時、自身の配置コスト-4"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80575,7 +80926,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "初回配置時、自身の配置コスト-4"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80595,7 +80946,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "初回配置時、自身の配置コスト-4"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80671,7 +81022,7 @@
   "doc": {
     "name": null,
     "appellation": null,
-    "description": "攻撃距離が<#ba.kw>やや長い</>、自身がブロックしていない敵を攻撃時、攻撃力が120％まで上昇",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -80829,7 +81180,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "遠距離マスにも配置可能"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80841,7 +81192,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "遠距離マスにも配置可能"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80865,7 +81216,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "遠距離マスにも配置可能"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80945,7 +81296,7 @@
   "fuze": {
     "name": null,
     "appellation": null,
-    "description": "ブロック中の<#ba.kw>敵全員</>を同時に攻撃",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -81085,13 +81436,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "HPが最大値の50{'%'}以上の場合、物理の被ダメージ<#ba.kw>-{'{'}damage_resistance:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "HPが最大値の50{'%'}以上の場合、物理の被ダメージ<#ba.kw>-{'{'}damage_resistance:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -81110,7 +81461,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "HPが最大値の50{'%'}以上の場合、物理の被ダメージ<#ba.kw>-{'{'}damage_resistance:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -81185,7 +81536,7 @@
   "iana": {
     "name": null,
     "appellation": null,
-    "description": "致命的なダメージを受けても撤退せず、<<身替り>>と入れ替わり戦闘を続行する（身替りのブロック数は0）。20秒後<<身替り>>から再び自身に入れ替わる",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -81333,13 +81684,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "致命的なダメージを受けても撤退せず、<<身替り>>と入れ替わり戦闘を続行する（身替りのブロック数は0、攻撃力が<#ba.kw>上昇</>）。20秒後<<身替り>>から再び自身に入れ替わる"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "致命的なダメージを受けても撤退せず、<<身替り>>と入れ替わり戦闘を続行する（身替りのブロック数は0、攻撃力が<#ba.kw>上昇</>）。20秒後<<身替り>>から再び自身に入れ替わる"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -81358,7 +81709,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "致命的なダメージを受けても撤退せず、<<身替り>>と入れ替わり戦闘を続行する（身替りのブロック数は0、攻撃力が<#ba.kw>上昇</>）。20秒後<<身替り>>から再び自身に入れ替わる"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -81433,7 +81784,7 @@
   "ela": {
     "name": null,
     "appellation": null,
-    "description": "罠を使用可能、<#ba.kw>敵のいるマス</>に罠配置不可",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -81913,7 +82264,7 @@
   "lutonada": {
     "name": null,
     "appellation": null,
-    "description": "味方からの治療効果を<#ba.kw>受けない</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -82053,13 +82404,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "自身がブロックしている敵からの被ダメージ-<#ba.kw>15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "自身がブロックしている敵からの被ダメージ-<#ba.kw>15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82078,7 +82429,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "自身がブロックしている敵からの被ダメージ-<#ba.kw>15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82341,7 +82692,7 @@
   "aroma": {
     "name": null,
     "appellation": null,
-    "description": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -82481,13 +82832,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える\n攻撃時、攻撃対象との距離が離れるほど与ダメージが上昇する（最大110％まで上昇）"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える\n攻撃時、攻撃対象との距離が離れるほど与ダメージが上昇する（最大110％まで上昇）"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82506,7 +82857,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>直線上</>の敵に<#ba.kw>範囲術ダメージ</>を与える\n攻撃時、攻撃対象との距離が離れるほど与ダメージが上昇する（最大110％まで上昇）"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82581,7 +82932,7 @@
   "ascalon": {
     "name": null,
     "appellation": null,
-    "description": "攻撃範囲内の<#ba.kw>敵全員</>を同時に攻撃\n物理回避、術回避が50％上昇\n敵に<#ba.kw>狙われにくい</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -82769,7 +83120,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "攻撃範囲内の敵全員の移動速度<#ba.kw>-20{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82781,7 +83132,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "攻撃範囲内の敵全員の移動速度<#ba.kw>-20{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82801,7 +83152,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "攻撃範囲内の敵全員の移動速度<#ba.kw>-20{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82964,7 +83315,7 @@
   "fang-the-fire-sharpened": {
     "name": null,
     "appellation": null,
-    "description": "敵を倒す度所持コスト+1\n撤退時に初期配置時のコストを返却",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -83096,7 +83447,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "敵を倒す度所持コスト<#ba.vup>+{'{'}cost:0{'}'}</>\n撤退時に<#ba.kw>今回</>の配置時のコストを返却"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83108,7 +83459,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "敵を倒す度所持コスト<#ba.vup>+{'{'}cost:0{'}'}</>\n撤退時に<#ba.kw>今回</>の配置時のコストを返却"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83128,7 +83479,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "敵を倒す度所持コスト<#ba.vup>+{'{'}cost:0{'}'}</>\n撤退時に<#ba.kw>今回</>の配置時のコストを返却"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83209,7 +83560,7 @@
   "wisadel": {
     "name": null,
     "appellation": null,
-    "description": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>2回</>の範囲物理ダメージを与える（2回目は余震、与ダメージが攻撃力の50{'%'}になる）",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -83397,13 +83748,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>3回</>の範囲物理ダメージを与える（2回目以降は余震、与ダメージが攻撃力の50{'%'}になる）"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>3回</>の範囲物理ダメージを与える（2回目以降は余震、与ダメージが攻撃力の50{'%'}になる）"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83422,7 +83773,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "通常攻撃は<#ba.kw>地面上</>の敵に<#ba.kw>3回</>の範囲物理ダメージを与える（2回目以降は余震、与ダメージが攻撃力の50{'%'}になる）"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83564,7 +83915,7 @@
   "logos": {
     "name": null,
     "appellation": null,
-    "description": "敵に<#ba.kw>術ダメージ</>を与える",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -83756,7 +84107,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "術ダメージを与えたとき、追加で与ダメージの<#ba.vup>8{'%'}</>の<?ba.dt.apoptosis2>壊死損傷</>を与える"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83768,7 +84119,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "術ダメージを与えたとき、追加で与ダメージの<#ba.vup>8{'%'}</>の<?ba.dt.apoptosis2>壊死損傷</>を与える"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83792,7 +84143,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "術ダメージを与えたとき、追加で与ダメージの<#ba.vup>8{'%'}</>の<?ba.dt.apoptosis2>壊死損傷</>を与える"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83872,7 +84223,7 @@
   "civilight-eterna": {
     "name": null,
     "appellation": null,
-    "description": "攻撃しない\n攻撃範囲内の味方全員の<#ba.kw>HP</>を継続回復(1秒ごとに攻撃力の10{'%'}回復)\n自身は<?ba.inspire>鼓舞</>状態の効果を受けない",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -84104,7 +84455,7 @@
   "amiya-medic": {
     "name": null,
     "appellation": null,
-    "description": "術ダメージを与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの50{'%'}回復",
+    "description": null,
     "characterPatchDetailInfo": {
       "infoParam": null
     },
@@ -84251,7 +84602,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "切実なる嘱望",
                     "description": null
                   }
                 }
@@ -84266,7 +84617,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "切実なる嘱望",
                     "description": null
                   }
                 }
@@ -84458,7 +84809,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "攻撃範囲内の敵の<?ba.invisible>ステルス</>状態を無効にする"
             },
             "talentUpgrades": {
               "1": {
@@ -84470,7 +84821,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "攻撃範囲内の敵の<?ba.invisible>ステルス</>状態を無効にする"
             },
             "talentUpgrades": {
               "1": {
@@ -84494,7 +84845,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": null
+              "additionalDescription": "攻撃範囲内の敵の<?ba.invisible>ステルス</>状態を無効にする"
             },
             "talentUpgrades": {
               "1": {
@@ -85019,6 +85370,745 @@
         "description": null
       },
       "train_spd_power_down<000>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
+      }
+    }
+  },
+  "mitm": {
+    "name": null,
+    "appellation": null,
+    "description": "攻撃範囲内で<#ba.kw>戦術召集点</>を指定し援軍を召喚できる\n援軍がブロック中の敵を自身が攻撃する時、攻撃力が150％まで上昇",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E0-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_mitm_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_mitm_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "攻撃範囲内で<#ba.kw>戦術召集点</>を指定し援軍を召喚できる\n援軍がブロック中の敵を自身が攻撃する時、攻撃力が150％まで上昇"
+      }
+    },
+    "modules": {
+      "uniequip_001_mitm": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_mitm": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "攻撃範囲内で<#ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍によってブロックされている敵を攻撃する場合、攻撃力が165{'%'}まで上昇\n援軍がブロックしている敵は味方ユニットから狙われやすくなる"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "攻撃範囲内で<#ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍によってブロックされている敵を攻撃する場合、攻撃力が165{'%'}まで上昇\n援軍がブロックしている敵は味方ユニットから狙われやすくなる"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "3": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "攻撃範囲内で<#ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍によってブロックされている敵を攻撃する場合、攻撃力が165{'%'}まで上昇\n援軍がブロックしている敵は味方ユニットから狙われやすくなる"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "3": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "4": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {
+      "token_10037_mitm_trshrb": {
+        "name": null,
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "name": null,
+              "description": null
+            },
+            "E1-L1-P1": {
+              "name": null,
+              "description": null
+            },
+            "E2-L1-P1": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_mitm_trshrb_1": {
+            "1": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_mitm_trshrb_2": {
+            "1": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_wt&cost<003>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&meet<010>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
+      }
+    }
+  },
+  "tin-man": {
+    "name": null,
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E0-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P3": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P3": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_tinman_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_tinman_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_dorm&lv<000>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd_dorm&lv<010>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
+      }
+    }
+  },
+  "nymph": {
+    "name": null,
+    "appellation": null,
+    "description": "敵に<#ba.kw>術ダメージ</>を与える\n<#ba.kw>元素ダメージ</>を与える能力を持つ",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_nymph_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_nymph_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_nymph_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "敵に<#ba.kw>術ダメージ</>を与える\n<#ba.kw>元素ダメージ</>を与える能力を持つ"
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<017>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all<027>": {
+        "name": null,
+        "description": null
+      },
+      "control_dorm_rec<002>": {
         "name": null,
         "description": null
       }

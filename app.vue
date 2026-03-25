@@ -2,12 +2,11 @@
 import "~/assets/css/index.scss"
 import { useSeoMeta } from "@unhead/vue"
 
-const { t, locale } = useI18n()
+const { t, locale, locales } = useI18n()
 
 const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
 const switchLocalePath = useSwitchLocalePath()
-const registeredLocales = useRegisteredLocales()
 
 const theme = ref<string>("mizuki")
 
@@ -25,7 +24,7 @@ const headLinks = computed<any[]>(() => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;700&family=Noto+Sans+SC:wght@300;400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+KR:wght@300;400;700&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap",
   },
-  ...registeredLocales.value.map((localeObj) => {
+  ...locales.value.map((localeObj) => {
     return {
       rel: "alternate",
       hreflang: localeObj.code,
@@ -81,7 +80,7 @@ useHead({
     },
     {
       property: "og:locale:alternate",
-      content: registeredLocales.value.flatMap(({ code }) => {
+      content: locales.value.flatMap(({ code }) => {
         const transformedCode = transformLocaleCode(code)
         if (code === locale.value) return []
         return transformedCode

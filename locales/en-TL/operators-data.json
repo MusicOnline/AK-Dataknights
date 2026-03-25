@@ -699,7 +699,7 @@
       "fang-the-fire-sharpened": {
         "name": "Fang the Fire-sharpened",
         "appellation": null,
-        "description": "Obtain 1 DP after this unit defeats an enemy; Refunds the original DP Cost when retreated"
+        "description": null
       }
     }
   },
@@ -4656,13 +4656,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -4673,7 +4673,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Covered Strike",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -4682,7 +4682,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -4693,7 +4693,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Covered Strike",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -8802,23 +8802,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Quick Fists",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Quick Fists",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -8827,17 +8827,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Quick Fists",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Quick Fists",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -9038,23 +9038,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Spiritual Destruction",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Spiritual Destruction",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -9063,17 +9063,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Spiritual Destruction",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Spiritual Destruction",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -10373,7 +10373,7 @@
       "amiya-medic": {
         "name": "Amiya",
         "appellation": null,
-        "description": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 50{'%'} of the damage dealt",
+        "description": null,
         "characterPatchDetailInfo": {
           "infoParam": null
         }
@@ -12100,7 +12100,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Enemies within Attack Range lose <?ba.invisible>Invisibility</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -12112,7 +12112,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Enemies within Attack Range lose <?ba.invisible>Invisibility</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -12128,7 +12128,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Tactical Defense",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -12137,7 +12137,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Enemies within Attack Range lose <?ba.invisible>Invisibility</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -12153,7 +12153,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Tactical Defense",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -17762,23 +17762,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Leader",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Leader",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -17792,17 +17792,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Leader",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Leader",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -18481,23 +18481,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Boxer's Concentration",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Boxer's Concentration",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -18506,17 +18506,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Boxer's Concentration",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Boxer's Concentration",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -23104,6 +23104,62 @@
         "description": null
       }
     },
+    "modules": {
+      "uniequip_001_excu": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_excu": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Final Modification",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Final Modification",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Final Modification",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Final Modification",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "tokenSummons": {},
     "riicBaseSkills": {
       "train_spd&profession<040>": {
@@ -25244,6 +25300,67 @@
                     "name": null,
                     "description": null
                   }
+                }
+              }
+            }
+          }
+        }
+      },
+      "uniequip_003_mostma": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "Attack Range <#ba.kw>expands</>",
+              "overrideDescription": "Deals <#ba.kw>AOE Arts damage</>"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "Attack Range <#ba.kw>expands</>",
+              "overrideDescription": "Deals <#ba.kw>AOE Arts damage</>"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Skill Aura - Caster",
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "Attack Range <#ba.kw>expands</>",
+              "overrideDescription": "Deals <#ba.kw>AOE Arts damage</>"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Skill Aura - Caster",
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
                 }
               }
             }
@@ -31738,7 +31855,7 @@
       "wisadel": {
         "name": "Wiš'adel",
         "appellation": null,
-        "description": "Attacks deal <#ba.kw>two instances</> of Physical damage to <#ba.kw>ground</> enemies in a small area (The second instance is a shockwave that has half the normal ATK)"
+        "description": null
       }
     }
   },
@@ -31993,19 +32110,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>; When blocking 2 or more enemies, increases shift level by 1\nCan be deployed on ranged tiles"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>; When blocking 2 or more enemies, increases shift level by 1\nCan be deployed on ranged tiles"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Industrial Water Cannon",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -32014,13 +32131,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Simultaneously attacks <#ba.kw>all blocked enemies</>; When blocking 2 or more enemies, increases shift level by 1\nCan be deployed on ranged tiles"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Industrial Water Cannon",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -33762,19 +33879,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Coordinated",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -33783,13 +33900,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Coordinated",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -33994,23 +34111,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Seek Aid",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Seek Aid",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -34024,17 +34141,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Seek Aid",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Seek Aid",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -34582,23 +34699,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>Arts damage</>, and <?ba.sluggish>Slow</> the enemy for a <#ba.kw>moderate</> period of time"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>Arts damage</>, and <?ba.sluggish>Slow</> the enemy for a <#ba.kw>moderate</> period of time"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Binding Circle",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Binding Circle",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -34607,17 +34724,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>Arts damage</>, and <?ba.sluggish>Slow</> the enemy for a <#ba.kw>moderate</> period of time"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Binding Circle",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Binding Circle",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -36200,23 +36317,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Nerve Corrosion",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Nerve Corrosion",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -36225,17 +36342,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Nerve Corrosion",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Nerve Corrosion",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -36813,23 +36930,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Featherweight",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Featherweight",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -36838,17 +36955,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Featherweight",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Featherweight",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -37918,7 +38035,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "ASPD <#ba.vup>+12</> when there are 2 or more enemies within range"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -37930,7 +38047,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "ASPD <#ba.vup>+12</> when there are 2 or more enemies within range"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -37941,11 +38058,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Structural Decomposition",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Structural Decomposition",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -37954,7 +38071,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "ASPD <#ba.vup>+12</> when there are 2 or more enemies within range"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -37965,11 +38082,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Structural Decomposition",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Structural Decomposition",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -39353,6 +39470,62 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_aosta": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_aosta": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Sharp Nails",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Sharp Nails",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Sharp Nails",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Sharp Nails",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -40779,23 +40952,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy and has <#ba.kw>15{'%'}</> Physical Dodge"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy and has <#ba.kw>15{'%'}</> Physical Dodge"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Extreme Evasion",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Extreme Evasion",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -40804,17 +40977,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy and has <#ba.kw>15{'%'}</> Physical Dodge"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Extreme Evasion",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Extreme Evasion",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -41172,6 +41345,62 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_pinecn": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_pinecn": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Portable Energy Source",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Portable Energy Source",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Portable Energy Source",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Portable Energy Source",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -42001,23 +42230,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Forceful Fist",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Forceful Fist",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -42026,17 +42255,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Forceful Fist",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Forceful Fist",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -42237,7 +42466,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Enemies blocked by Reinforcements make them easier to be targeted by allies; ATK is increased to 165{'%'} when attacking enemies blocked by Reinforcements"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -42249,13 +42478,13 @@
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Enemies blocked by Reinforcements make them easier to be targeted by allies; ATK is increased to 165{'%'} when attacking enemies blocked by Reinforcements"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Professional Breeder",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -42268,7 +42497,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Professional Breeder",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -42277,13 +42506,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Enemies blocked by Reinforcements make them easier to be targeted by allies; ATK is increased to 165{'%'} when attacking enemies blocked by Reinforcements"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Professional Breeder",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -42296,7 +42525,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Professional Breeder",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -44857,7 +45086,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Enemies within Attack Range lose <?ba.invisible>Invisibility</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -44869,7 +45098,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Enemies within Attack Range lose <?ba.invisible>Invisibility</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -44880,11 +45109,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Shielded Shooting",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Shielded Shooting",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -44893,7 +45122,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Enemies within Attack Range lose <?ba.invisible>Invisibility</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -44904,11 +45133,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Shielded Shooting",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Shielded Shooting",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -45581,19 +45810,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Increases ATK to <#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</> when attacking aerial targets"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Increases ATK to <#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</> when attacking aerial targets"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Auxiliary Equipment",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -45602,13 +45831,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Increases ATK to <#ba.kw>{'{'}atk_scale:0{'%'}{'}'}</> when attacking aerial targets"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Auxiliary Equipment",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -48914,7 +49143,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "The more enemies there are within range, the more damage is dealt (up to an increase of <#ba.kw>{'{'}damage_scale:0{'%'}{'}'}</>)"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -48926,7 +49155,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "The more enemies there are within range, the more damage is dealt (up to an increase of <#ba.kw>{'{'}damage_scale:0{'%'}{'}'}</>)"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -48942,7 +49171,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Poised for Action",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -48951,7 +49180,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "The more enemies there are within range, the more damage is dealt (up to an increase of <#ba.kw>{'{'}damage_scale:0{'%'}{'}'}</>)"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -48967,7 +49196,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Poised for Action",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -49961,6 +50190,62 @@
     "traitCandidates": {
       "E0-L1": {
         "description": null
+      }
+    },
+    "modules": {
+      "uniequip_001_chen2": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_chen2": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {}
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Frugality",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Frugality",
+                    "description": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": null
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Frugality",
+                    "description": null
+                  },
+                  "5": {
+                    "name": "Frugality",
+                    "description": null
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {},
@@ -53662,23 +53947,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Deference",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Deference",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -53687,17 +53972,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Deference",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Deference",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -54832,7 +55117,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements take <#ba.kw>15{'%'}</> less damage from enemies blocked by itself; ATK is increased to 150{'%'} when attacking enemies blocked by Reinforcements"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -54844,7 +55129,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements take <#ba.kw>15{'%'}</> less damage from enemies blocked by itself; ATK is increased to 150{'%'} when attacking enemies blocked by Reinforcements"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -54864,7 +55149,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements take <#ba.kw>15{'%'}</> less damage from enemies blocked by itself; ATK is increased to 150{'%'} when attacking enemies blocked by Reinforcements"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -55964,7 +56249,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Gain ATK +4{'%'} every time DP is consumed by trait (up to 5 stacks)"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -55976,7 +56261,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Gain ATK +4{'%'} every time DP is consumed by trait (up to 5 stacks)"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -55987,11 +56272,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Kindness Begets Prosperity",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Kindness Begets Prosperity",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -56000,7 +56285,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Gain ATK +4{'%'} every time DP is consumed by trait (up to 5 stacks)"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -56011,11 +56296,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Kindness Begets Prosperity",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Kindness Begets Prosperity",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -56512,23 +56797,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (the Drone's initial damage increases, up to 110{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (the Drone's initial damage increases, up to 110{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Beacon's Wrath",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Beacon's Wrath",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -56537,17 +56822,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (the Drone's initial damage increases, up to 110{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Beacon's Wrath",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Beacon's Wrath",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -57794,23 +58079,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (the Drone's initial damage increases, up to 110{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (the Drone's initial damage increases, up to 110{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Firm Foundation",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Firm Foundation",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -57819,17 +58104,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (the Drone's initial damage increases, up to 110{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Firm Foundation",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Firm Foundation",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -60141,23 +60426,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Dusk and Dawn",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Dusk and Dawn",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -60166,17 +60451,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Dusk and Dawn",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Dusk and Dawn",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -62124,23 +62409,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Flash of Insight",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Flash of Insight",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -62149,17 +62434,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Controls a <#ba.kw>Drone</> that deals <#ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 120{'%'} of the operator's ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Flash of Insight",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Flash of Insight",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -63556,7 +63841,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "ASPD <#ba.vup>+12</> when there are 2 or more enemies within range"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -63568,7 +63853,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "ASPD <#ba.vup>+12</> when there are 2 or more enemies within range"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -63584,7 +63869,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Executor-in-Training",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -63593,7 +63878,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "ASPD <#ba.vup>+12</> when there are 2 or more enemies within range"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -63609,7 +63894,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Executor-in-Training",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -64433,19 +64718,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Gang Spirit",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -64454,13 +64739,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy; ASPD <#ba.vup>+{'{'}attack_speed{'}'}</> while above 50{'%'} HP"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Gang Spirit",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -66061,7 +66346,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements take <#ba.kw>15{'%'}</> less damage from enemies blocked by itself; ATK is increased to 150{'%'} when attacking enemies blocked by Reinforcements"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -66073,7 +66358,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements take <#ba.kw>15{'%'}</> less damage from enemies blocked by itself; ATK is increased to 150{'%'} when attacking enemies blocked by Reinforcements"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -66089,7 +66374,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Leader of the Wolfpack",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -66097,7 +66382,7 @@
               "4": {
                 "candidates": {
                   "1": {
-                    "name": "Leader of the Wolfpack",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -66106,7 +66391,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements take <#ba.kw>15{'%'}</> less damage from enemies blocked by itself; ATK is increased to 150{'%'} when attacking enemies blocked by Reinforcements"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -66122,7 +66407,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Leader of the Wolfpack",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -66130,7 +66415,7 @@
               "4": {
                 "candidates": {
                   "1": {
-                    "name": "Leader of the Wolfpack",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -67526,23 +67811,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Reflected Shine",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "Reflected Shine",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -67551,17 +67836,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Reflected Shine",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "Reflected Shine",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -68602,19 +68887,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy and has <#ba.kw>15{'%'}</> Physical Dodge"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy and has <#ba.kw>15{'%'}</> Physical Dodge"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "All Are Guests",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -68623,13 +68908,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Blocks 1 enemy and has <#ba.kw>15{'%'}</> Physical Dodge"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "All Are Guests",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -69075,23 +69360,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Find an Opening",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Find an Opening",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -69100,17 +69385,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Attacks deals an additional <#ba.vup>{'{'}atk_scale_m:0{'%'}{'}'}</> ATK as Arts damage"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Find an Opening",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Find an Opening",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -71308,7 +71593,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements take <#ba.kw>15{'%'}</> less damage from enemies blocked by itself; ATK is increased to 150{'%'} when attacking enemies blocked by Reinforcements"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -71320,7 +71605,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements take <#ba.kw>15{'%'}</> less damage from enemies blocked by itself; ATK is increased to 150{'%'} when attacking enemies blocked by Reinforcements"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -71336,7 +71621,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Pure Water is Life",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -71350,7 +71635,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements take <#ba.kw>15{'%'}</> less damage from enemies blocked by itself; ATK is increased to 150{'%'} when attacking enemies blocked by Reinforcements"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -71366,7 +71651,7 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Pure Water is Life",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -71724,19 +72009,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Gain <#ba.kw>{'{'}sp{'}'}</> SP when normal attacks hit an elite or leader enemy."
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Gain <#ba.kw>{'{'}sp{'}'}</> SP when normal attacks hit an elite or leader enemy."
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Bygone Wings",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -71750,13 +72035,13 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Gain <#ba.kw>{'{'}sp{'}'}</> SP when normal attacks hit an elite or leader enemy."
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Bygone Wings",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -74509,6 +74794,72 @@
             }
           }
         }
+      },
+      "uniequip_003_swire2": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "additionalDescription": "ATK +4{'%'} whenever Trait cost is paid, stacking up to 5 times"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "additionalDescription": "ATK +4{'%'} whenever Trait cost is paid, stacking up to 5 times"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Cash Claps Calamity",
+                    "description": null
+                  },
+                  "3": {
+                    "name": "Cash Claps Calamity",
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "additionalDescription": "ATK +4{'%'} whenever Trait cost is paid, stacking up to 5 times"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": "Cash Claps Calamity",
+                    "description": null
+                  },
+                  "3": {
+                    "name": "Cash Claps Calamity",
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          }
+        }
       }
     },
     "tokenSummons": {
@@ -75547,7 +75898,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Enemies within Attack Range lose <?ba.invisible>Invisibility</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -75559,7 +75910,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Enemies within Attack Range lose <?ba.invisible>Invisibility</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -75570,11 +75921,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Adaptable",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Adaptable",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -75589,7 +75940,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Enemies within Attack Range lose <?ba.invisible>Invisibility</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -75600,11 +75951,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Adaptable",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Adaptable",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -76350,23 +76701,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Soil Fertilizer Enhancement",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Soil Fertilizer Enhancement",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -76375,17 +76726,17 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Soil Fertilizer Enhancement",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Soil Fertilizer Enhancement",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -78040,7 +78391,7 @@
   "leto": {
     "name": "Лето",
     "appellation": null,
-    "description": "Can launch <#ba.kw>Ranged Attacks</> that deal 80{'%'} of normal ATK",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -78180,7 +78531,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "ASPD <#ba.vup>+12</> when there are 2 or more enemies within range"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -78192,7 +78543,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "ASPD <#ba.vup>+12</> when there are 2 or more enemies within range"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -78216,7 +78567,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "ASPD <#ba.vup>+12</> when there are 2 or more enemies within range"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -78296,7 +78647,7 @@
   "harold": {
     "name": "Harold",
     "appellation": null,
-    "description": "Restores the HP of allied units and recovers <#ba.dt.element>Elemental Damage</> by 50{'%'} of ATK (can recover <#ba.dt.element>Elemental Damage</> of unhurt allied units)",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -78480,7 +78831,7 @@
   "degenbrecher": {
     "name": "Degenbrecher",
     "appellation": null,
-    "description": "Normal attacks deal damage <#ba.kw>twice</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -78672,13 +79023,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Deals <#ba.vup>{'{'}value:0{'%'}{'}'}</> more damage with skills"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Deals <#ba.vup>{'{'}value:0{'%'}{'}'}</> more damage with skills"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -78697,7 +79048,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Deals <#ba.vup>{'{'}value:0{'%'}{'}'}</> more damage with skills"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -78776,7 +79127,7 @@
   "warmy": {
     "name": "Warmy",
     "appellation": null,
-    "description": "Attacks deal <#ba.kw>Arts damage</>, and can inflict <#ba.kw>Elemental damage</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -78964,7 +79315,7 @@
   "ray": {
     "name": "Ray",
     "appellation": null,
-    "description": "Attacks consume Ammo to increase ATK to <#ba.kw>120{'%'}</>; While not attacking, Ammo will be slowly reloaded (max capacity 8).",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -79166,7 +79517,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "Patrol Partner",
                     "description": null
                   }
                 }
@@ -79181,7 +79532,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "Patrol Partner",
                     "description": null
                   }
                 }
@@ -79331,7 +79682,7 @@
   "wanqing": {
     "name": "Wanqing",
     "appellation": null,
-    "description": "Cannot block enemies during the skill duration",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -79471,13 +79822,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Cannot block enemies during the skill duration, but grants <#ba.kw>+1</> Block to an Operator in front of this unit"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Cannot block enemies during the skill duration, but grants <#ba.kw>+1</> Block to an Operator in front of this unit"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -79496,7 +79847,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Cannot block enemies during the skill duration, but grants <#ba.kw>+1</> Block to an Operator in front of this unit"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -79571,7 +79922,7 @@
   "grain-buds": {
     "name": "Grain Buds",
     "appellation": null,
-    "description": "Deals <#ba.kw>Arts damage</> and <?ba.sluggish>Slows</> the target for a short time",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -79711,7 +80062,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "SP recovery +0.2/sec when there are enemies within range"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -79723,7 +80074,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "SP recovery +0.2/sec when there are enemies within range"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -79747,7 +80098,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "SP recovery +0.2/sec when there are enemies within range"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -79827,7 +80178,7 @@
   "shu": {
     "name": "Shu",
     "appellation": null,
-    "description": "Can heal allies by using skill(s)",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -80015,13 +80366,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "When healing allied units with less than 50{'%'} HP, increases heal amount by <#ba.kw>15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "When healing allied units with less than 50{'%'} HP, increases heal amount by <#ba.kw>15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80040,7 +80391,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "When healing allied units with less than 50{'%'} HP, increases heal amount by <#ba.kw>15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80115,7 +80466,7 @@
   "zuo-le": {
     "name": "Zuo Le",
     "appellation": null,
-    "description": "Can't be healed by other units. Recovers <#ba.kw>{'{'}value{'}'}</> self HP every time this operator attacks an enemy",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -80309,7 +80660,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Gain 25{'%'} <?ba.protect>Sanctuary</> when HP is below 50{'%'}"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80321,7 +80672,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Gain 25{'%'} <?ba.protect>Sanctuary</> when HP is below 50{'%'}"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80341,7 +80692,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Gain 25{'%'} <?ba.protect>Sanctuary</> when HP is below 50{'%'}"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80417,7 +80768,7 @@
   "kestrel": {
     "name": "Kestrel",
     "appellation": null,
-    "description": "Blocks 2 enemies",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -80563,7 +80914,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "The first Deployment Cost -4"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80575,7 +80926,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "The first Deployment Cost -4"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80595,7 +80946,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "The first Deployment Cost -4"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80671,7 +81022,7 @@
   "doc": {
     "name": "Doc",
     "appellation": null,
-    "description": "Can attack enemies <#ba.kw>from range</>; When attacking enemies not blocked by self, increase ATK to 120{'%'}",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -80829,7 +81180,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Can also be deployed on Ranged tiles"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80841,7 +81192,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Can also be deployed on Ranged tiles"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80865,7 +81216,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Can also be deployed on Ranged tiles"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80945,7 +81296,7 @@
   "fuze": {
     "name": "Fuze",
     "appellation": null,
-    "description": "Attacks <#ba.kw>all blocked enemies</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -81085,13 +81436,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "While above 50{'%'} HP, reduces the amount of Physical damage taken by <#ba.kw>{'{'}damage_resistance:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "While above 50{'%'} HP, reduces the amount of Physical damage taken by <#ba.kw>{'{'}damage_resistance:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -81110,7 +81461,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "While above 50{'%'} HP, reduces the amount of Physical damage taken by <#ba.kw>{'{'}damage_resistance:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -81185,7 +81536,7 @@
   "iana": {
     "name": "Iana",
     "appellation": null,
-    "description": "Does not retreat upon receiving lethal damage, instead swaps to a <<Substitute>> (Substitute has 0 Block). Swaps back to the original after 20 seconds",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -81333,13 +81684,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Instead of retreating when defeated, switch to a <<Substitute>> (Substitute has 0 Block, but ATK is <#ba.kw>increased</>) for 20 seconds before switching back to the original"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Instead of retreating when defeated, switch to a <<Substitute>> (Substitute has 0 Block, but ATK is <#ba.kw>increased</>) for 20 seconds before switching back to the original"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -81358,7 +81709,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Instead of retreating when defeated, switch to a <<Substitute>> (Substitute has 0 Block, but ATK is <#ba.kw>increased</>) for 20 seconds before switching back to the original"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -81433,7 +81784,7 @@
   "ela": {
     "name": "Ela",
     "appellation": null,
-    "description": "Can use traps to assist in combat, but traps cannot be placed <#ba.kw>on tiles already occupied by an enemy</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -81633,7 +81984,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Can also be deployed on Melee tiles; Traps can also be deployed on Ranged tiles"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -81650,7 +82001,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Can also be deployed on Melee tiles; Traps can also be deployed on Ranged tiles"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -81679,7 +82030,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Can also be deployed on Melee tiles; Traps can also be deployed on Ranged tiles"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -81913,7 +82264,7 @@
   "lutonada": {
     "name": "Lutonada",
     "appellation": null,
-    "description": "<#ba.kw>Cannot</> be healed by allies",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -82053,13 +82404,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Takes <#ba.kw>15{'%'}</> less damage from enemies blocked by this unit"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Takes <#ba.kw>15{'%'}</> less damage from enemies blocked by this unit"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82078,7 +82429,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Takes <#ba.kw>15{'%'}</> less damage from enemies blocked by this unit"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82153,7 +82504,7 @@
   "odda": {
     "name": "Odda",
     "appellation": null,
-    "description": "Attacks deal <#ba.kw>50{'%'}</> ATK as <#ba.kw>AoE</> Physical damage to other surrounding enemies",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -82341,7 +82692,7 @@
   "aroma": {
     "name": "Aroma",
     "appellation": null,
-    "description": "Deals <#ba.kw>AOE Arts damage in a long line</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -82481,13 +82832,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>extremely long-ranged AoE Arts damage</>; damage dealt increases with distance, up to <#ba.kw>110{'%'}</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>extremely long-ranged AoE Arts damage</>; damage dealt increases with distance, up to <#ba.kw>110{'%'}</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82506,7 +82857,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>extremely long-ranged AoE Arts damage</>; damage dealt increases with distance, up to <#ba.kw>110{'%'}</>"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82581,7 +82932,7 @@
   "ascalon": {
     "name": "Ascalon",
     "appellation": null,
-    "description": "Deals Damage to <#ba.kw>all targets</> within range\n50{'%'} chance to dodge Physical and Arts attacks and is less likely to be <#ba.kw>targeted</> by enemies",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -82769,7 +83120,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Slows the Movement Speed of enemies within this unit's attack range by <#ba.kw>20{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82781,7 +83132,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Slows the Movement Speed of enemies within this unit's attack range by <#ba.kw>20{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82801,7 +83152,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Slows the Movement Speed of enemies within this unit's attack range by <#ba.kw>20{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -82877,7 +83228,7 @@
   "phonor-0": {
     "name": "PhonoR-0",
     "appellation": null,
-    "description": "Attacks deal <#ba.kw>Arts damage</>, and can inflict <#ba.kw>Elemental Damage</>, and ignores the <#ba.kw>Deployment Limit</>, but has a long Redeployment Time",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -82964,7 +83315,7 @@
   "fang-the-fire-sharpened": {
     "name": "Fang the Fire-sharpened",
     "appellation": null,
-    "description": "Obtain 1 DP after this unit defeats an enemy; Refunds the original DP Cost when retreated",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -83096,7 +83447,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Generates <#ba.vup>{'{'}cost:0{'}'}</> DP after this unit defeats an enemy; Refunds the <#ba.kw>current</> DP Cost when retreated"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83108,7 +83459,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Generates <#ba.vup>{'{'}cost:0{'}'}</> DP after this unit defeats an enemy; Refunds the <#ba.kw>current</> DP Cost when retreated"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83128,7 +83479,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Generates <#ba.vup>{'{'}cost:0{'}'}</> DP after this unit defeats an enemy; Refunds the <#ba.kw>current</> DP Cost when retreated"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83209,7 +83560,7 @@
   "wisadel": {
     "name": "Wiš'adel",
     "appellation": null,
-    "description": "Attacks deal <#ba.kw>two instances</> of Physical damage to <#ba.kw>ground</> enemies in a small area (The second instance is a shockwave that has half the normal ATK)",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -83397,13 +83748,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>three instances</> of Physical damage to <#ba.kw>ground</> enemies in a small area (The second and third instances are shockwaves that have half the normal ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>three instances</> of Physical damage to <#ba.kw>ground</> enemies in a small area (The second and third instances are shockwaves that have half the normal ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83422,7 +83773,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>three instances</> of Physical damage to <#ba.kw>ground</> enemies in a small area (The second and third instances are shockwaves that have half the normal ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83564,7 +83915,7 @@
   "logos": {
     "name": "Logos",
     "appellation": null,
-    "description": "Deals <#ba.kw>Arts damage</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -83756,7 +84107,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "When dealing Arts damage, deals an additional <#ba.vup>8{'%'}</> as <?ba.dt.apoptosis2>Necrosis damage</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83768,7 +84119,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "When dealing Arts damage, deals an additional <#ba.vup>8{'%'}</> as <?ba.dt.apoptosis2>Necrosis damage</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83792,7 +84143,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "When dealing Arts damage, deals an additional <#ba.vup>8{'%'}</> as <?ba.dt.apoptosis2>Necrosis damage</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83872,7 +84223,7 @@
   "civilight-eterna": {
     "name": "Civilight Eterna",
     "appellation": null,
-    "description": "Does not attack but continuously restores the <#ba.kw>HP</> of all allies within range (the HP restored per second is equal to 10{'%'} of self ATK). Self is unaffected by <?ba.inspire>Inspiration</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -84104,7 +84455,7 @@
   "amiya-medic": {
     "name": "Amiya",
     "appellation": null,
-    "description": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 50{'%'} of the damage dealt",
+    "description": null,
     "characterPatchDetailInfo": {
       "infoParam": null
     },
@@ -84251,7 +84602,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "Prayer of Sincerity",
                     "description": null
                   }
                 }
@@ -84266,7 +84617,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "Prayer of Sincerity",
                     "description": null
                   }
                 }
@@ -84458,7 +84809,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Enemies within Attack Range lose <?ba.invisible>Invisibility</>"
+              "additionalDescription": "Reveals <?ba.invisible>Invisible</> enemies within range"
             },
             "talentUpgrades": {
               "1": {
@@ -84470,7 +84821,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Enemies within Attack Range lose <?ba.invisible>Invisibility</>"
+              "additionalDescription": "Reveals <?ba.invisible>Invisible</> enemies within range"
             },
             "talentUpgrades": {
               "1": {
@@ -84494,7 +84845,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Enemies within Attack Range lose <?ba.invisible>Invisibility</>"
+              "additionalDescription": "Reveals <?ba.invisible>Invisible</> enemies within range"
             },
             "talentUpgrades": {
               "1": {
@@ -85019,6 +85370,745 @@
         "description": null
       },
       "train_spd_power_down<000>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
+      }
+    }
+  },
+  "mitm": {
+    "name": "Mitm",
+    "appellation": null,
+    "description": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; ATK is increased to 150{'%'} when attacking enemies blocked by Reinforcements",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E0-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_mitm_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_mitm_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; ATK is increased to 150{'%'} when attacking enemies blocked by Reinforcements"
+      }
+    },
+    "modules": {
+      "uniequip_001_mitm": {
+        "name": null,
+        "description": null
+      },
+      "uniequip_002_mitm": {
+        "name": null,
+        "description": null,
+        "stages": {
+          "1": {
+            "traitUpgrade": {
+              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Enemies blocked by reinforcements are more likely to be attacked, and this unit's ATK is increased to 165{'%'} when attacking enemies blocked by Reinforcements"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "2": {
+            "traitUpgrade": {
+              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Enemies blocked by reinforcements are more likely to be attacked, and this unit's ATK is increased to 165{'%'} when attacking enemies blocked by Reinforcements"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "3": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          },
+          "3": {
+            "traitUpgrade": {
+              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Enemies blocked by reinforcements are more likely to be attacked, and this unit's ATK is increased to 165{'%'} when attacking enemies blocked by Reinforcements"
+            },
+            "talentUpgrades": {
+              "1": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "2": {
+                "candidates": {
+                  "1": {
+                    "name": null,
+                    "description": null
+                  }
+                }
+              },
+              "3": {
+                "candidates": {
+                  "1": {}
+                }
+              },
+              "4": {
+                "candidates": {
+                  "1": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenSummons": {
+      "token_10037_mitm_trshrb": {
+        "name": "Cherry-3",
+        "appellation": null,
+        "description": null,
+        "potentials": {},
+        "talents": {
+          "1": {
+            "E0-L1-P1": {
+              "name": null,
+              "description": null
+            },
+            "E1-L1-P1": {
+              "name": null,
+              "description": null
+            },
+            "E2-L1-P1": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "skills": {
+          "sktok_mitm_trshrb_1": {
+            "1": {
+              "name": null,
+              "description": null
+            }
+          },
+          "sktok_mitm_trshrb_2": {
+            "1": {
+              "name": null,
+              "description": null
+            }
+          }
+        },
+        "traitCandidates": {
+          "E0-L1": {
+            "description": null
+          }
+        },
+        "tokenSummons": {},
+        "riicBaseSkills": {}
+      }
+    },
+    "riicBaseSkills": {
+      "trade_ord_wt&cost<003>": {
+        "name": null,
+        "description": null
+      },
+      "trade_ord_spd&meet<010>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
+      }
+    }
+  },
+  "tin-man": {
+    "name": "Tin Man",
+    "appellation": null,
+    "description": null,
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E0-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E1-L1-P3": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P3": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_tinman_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_tinman_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": null
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "hire_spd_dorm&lv<000>": {
+        "name": null,
+        "description": null
+      },
+      "hire_spd_dorm&lv<010>": {
+        "name": null,
+        "description": null
+      }
+    },
+    "profile": {
+      "stories": {
+        "0": {
+          "title": null,
+          "text": null
+        },
+        "1": {
+          "title": null,
+          "text": null
+        },
+        "2": {
+          "title": null,
+          "text": null
+        },
+        "3": {
+          "title": null,
+          "text": null
+        },
+        "4": {
+          "title": null,
+          "text": null
+        },
+        "5": {
+          "title": null,
+          "text": null
+        },
+        "6": {
+          "title": null,
+          "text": null
+        },
+        "7": {
+          "title": null,
+          "text": null
+        },
+        "8": {
+          "title": null,
+          "text": null
+        }
+      }
+    }
+  },
+  "nymph": {
+    "name": "Nymph",
+    "appellation": null,
+    "description": "Attacks deal <#ba.kw>Arts damage</>, and can inflict <#ba.kw>Elemental damage</>",
+    "potentials": {
+      "2": {
+        "description": null
+      },
+      "3": {
+        "description": null
+      },
+      "4": {
+        "description": null
+      },
+      "5": {
+        "description": null
+      },
+      "6": {
+        "description": null
+      }
+    },
+    "talents": {
+      "1": {
+        "E1-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        }
+      },
+      "2": {
+        "E2-L1-P1": {
+          "name": null,
+          "description": null
+        },
+        "E2-L1-P5": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "skills": {
+      "skchr_nymph_1": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_nymph_2": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      },
+      "skchr_nymph_3": {
+        "1": {
+          "name": null,
+          "description": null
+        },
+        "2": {
+          "name": null,
+          "description": null
+        },
+        "3": {
+          "name": null,
+          "description": null
+        },
+        "4": {
+          "name": null,
+          "description": null
+        },
+        "5": {
+          "name": null,
+          "description": null
+        },
+        "6": {
+          "name": null,
+          "description": null
+        },
+        "7": {
+          "name": null,
+          "description": null
+        },
+        "8": {
+          "name": null,
+          "description": null
+        },
+        "9": {
+          "name": null,
+          "description": null
+        },
+        "10": {
+          "name": null,
+          "description": null
+        }
+      }
+    },
+    "traitCandidates": {
+      "E0-L1": {
+        "description": "Attacks deal <#ba.kw>Arts damage</>, and can inflict <#ba.kw>Elemental damage</>"
+      }
+    },
+    "tokenSummons": {},
+    "riicBaseSkills": {
+      "dorm_rec_all<017>": {
+        "name": null,
+        "description": null
+      },
+      "dorm_rec_all<027>": {
+        "name": null,
+        "description": null
+      },
+      "control_dorm_rec<002>": {
         "name": null,
         "description": null
       }
