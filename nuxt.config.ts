@@ -154,6 +154,8 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       autoSubfolderIndex: false,
+      // Linked from app head; prerender fetch 404s while public/ is still copied to output.
+      ignore: ["/manifest.json"],
     },
   },
 })
