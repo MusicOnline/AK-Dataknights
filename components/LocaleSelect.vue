@@ -2,13 +2,8 @@
 import type { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables"
 
 const { locale } = useI18n({ useScope: "global" })
-const nuxtApp = useNuxtApp()
 const switchLocalePath = useSwitchLocalePath()
-
-const locales = computed(() => {
-  if (import.meta.server) return []
-  return nuxtApp.$i18n?.locales?.value || []
-})
+const registeredLocales = useRegisteredLocales()
 
 function setLocaleByNavigation(localeCode: string) {
   return navigateTo({ path: switchLocalePath(localeCode) })
@@ -16,13 +11,13 @@ function setLocaleByNavigation(localeCode: string) {
 
 const currentLocaleObject = computed<LocaleObject | undefined>(
   () =>
-    locales.value.find(
+    registeredLocales.value.find(
       (localeObj) => localeObj.code === locale.value,
     ) || { code: locale.value, name: locale.value },
 )
 
 const dropdownItems = computed(() => [
-  locales.value.map((localeObj) => ({
+  registeredLocales.value.map((localeObj) => ({
     label: localeObj.name ?? localeObj.code,
     click: () => setLocaleByNavigation(localeObj.code),
   })),

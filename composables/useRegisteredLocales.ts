@@ -1,8 +1,10 @@
 import type { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables"
 
 const registeredLocales = computed<LocaleObject[]>(() => {
+  if (import.meta.server) return []
   const { locales } = useI18n({ useScope: "global" })
-  return locales.value.map((localeObjOrCode) => {
+  const localesArray = locales?.value || []
+  return localesArray.map((localeObjOrCode) => {
     if (typeof localeObjOrCode === "object") return localeObjOrCode
     return {
       code: localeObjOrCode,
