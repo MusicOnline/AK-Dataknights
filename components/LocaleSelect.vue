@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import type { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables"
 
-const { locale, locales } = useI18n({ useScope: "global" })
+const { locale } = useI18n({ useScope: "global" })
+const nuxtApp = useNuxtApp()
 const switchLocalePath = useSwitchLocalePath()
+
+const locales = computed(() => nuxtApp.$i18n?.locales?.value || [])
 
 function setLocaleByNavigation(localeCode: string) {
   return navigateTo({ path: switchLocalePath(localeCode) })

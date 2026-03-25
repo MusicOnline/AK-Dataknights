@@ -2,7 +2,8 @@
 import "~/assets/css/index.scss"
 import { useSeoMeta } from "@unhead/vue"
 
-const { t, locale, locales } = useI18n()
+const { t, locale } = useI18n()
+const nuxtApp = useNuxtApp()
 
 const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
@@ -10,33 +11,36 @@ const switchLocalePath = useSwitchLocalePath()
 
 const theme = ref<string>("mizuki")
 
-const headLinks = computed<any[]>(() => [
-  {
-    rel: "preconnect",
-    href: "https://fonts.googleapis.com",
-  },
-  {
-    rel: "preconnect",
-    href: "https://fonts.gstatic.com",
-    crossorigin: "",
-  },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;700&family=Noto+Sans+SC:wght@300;400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+KR:wght@300;400;700&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap",
-  },
-  ...locales.value.map((localeObj) => {
-    return {
+const headLinks = computed<any[]>(() => {
+  const locales = nuxtApp.$i18n?.locales?.value || []
+  return [
+    {
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com",
+    },
+    {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossorigin: "",
+    },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;700&family=Noto+Sans+SC:wght@300;400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+KR:wght@300;400;700&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+    },
+    ...locales.map((localeObj) => {
+      return {
+        rel: "alternate",
+        hreflang: localeObj.code,
+        href: runtimeConfig.public.fullBaseUrl + switchLocalePath(localeObj.code),
+      }
+    }),
+    {
       rel: "alternate",
-      hreflang: localeObj.code,
-      href: runtimeConfig.public.fullBaseUrl + switchLocalePath(localeObj.code),
-    }
-  }),
-  {
-    rel: "alternate",
-    hreflang: "x-default",
-    href: runtimeConfig.public.fullBaseUrl + switchLocalePath("en"),
-  },
-])
+      hreflang: "x-default",
+      href: runtimeConfig.public.fullBaseUrl + switchLocalePath("en"),
+    },
+  ]
+})
 
 useSeoMeta({
   ogSiteName: () => t("general.siteIndexTitle"),
@@ -57,36 +61,39 @@ useHead({
       : t("general.siteIndexTitle")
   },
   link: headLinks,
-  meta: () => [
-    {
-      key: "og:image",
-      property: "og:image",
-      content: "/favicon-96x96.png",
-    },
-    {
-      key: "og:image:type",
-      property: "og:image:type",
-      content: "image/png",
-    },
-    {
-      key: "og:image:width",
-      property: "og:image:width",
-      content: "96",
-    },
-    {
-      key: "og:image:height",
-      property: "og:image:height",
-      content: "96",
-    },
-    {
-      property: "og:locale:alternate",
-      content: locales.value.flatMap(({ code }) => {
-        const transformedCode = transformLocaleCode(code)
-        if (code === locale.value) return []
-        return transformedCode
-      }),
-    },
-  ],
+  meta: () => {
+    const locales = nuxtApp.$i18n?.locales?.value || []
+    return [
+      {
+        key: "og:image",
+        property: "og:image",
+        content: "/favicon-96x96.png",
+      },
+      {
+        key: "og:image:type",
+        property: "og:image:type",
+        content: "image/png",
+      },
+      {
+        key: "og:image:width",
+        property: "og:image:width",
+        content: "96",
+      },
+      {
+        key: "og:image:height",
+        property: "og:image:height",
+        content: "96",
+      },
+      {
+        property: "og:locale:alternate",
+        content: locales.flatMap(({ code }) => {
+          const transformedCode = transformLocaleCode(code)
+          if (code === locale.value) return []
+          return transformedCode
+        }),
+      },
+    ]
+  },
 })
 
 function transformLocaleCode(locale: string): string {
