@@ -1027,5 +1027,47 @@
   },
   "ulpianus": {
     "cnReleaseTime": 1717603200000
+  },
+  "mitm": {
+    "cnReleaseTime": 1720540800000
+  },
+  "nymph": {
+    "cnReleaseTime": 1720540800000
+  },
+  "pith-acast": {
+    "cnReleaseTime": 1598371200000
+  },
+  "reserve-caster-rcast": {
+    "cnReleaseTime": 1598371200000
+  },
+  "reserve-defender-rdfend": {
+    "cnReleaseTime": 1664294400000
+  },
+  "reserve-logistic-rmedic": {
+    "cnReleaseTime": 1598371200000
+  },
+  "reserve-melee-rguard": {
+    "cnReleaseTime": 1598371200000
+  },
+  "reserve-sniper-rsnipe": {
+    "cnReleaseTime": 1598371200000
+  },
+  "shalem-aprot2": {
+    "cnReleaseTime": 1641398400000
+  },
+  "sharp-aguard": {
+    "cnReleaseTime": 1598371200000
+  },
+  "stormeye-asnipe": {
+    "cnReleaseTime": 1598371200000
+  },
+  "tin-man": {
+    "cnReleaseTime": 1721145600000
+  },
+  "touch-amedic": {
+    "cnReleaseTime": 1598371200000
+  },
+  "tulip-apionr": {
+    "cnReleaseTime": 1664294400000
   }
 }
