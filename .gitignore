@@ -13,6 +13,10 @@ data/*
 locales/*/generated/*
 dist
 
+# Playwright
+playwright-report/
+test-results/
+
 # Not generated data
 !data/.game-data-sha
 !data/custom

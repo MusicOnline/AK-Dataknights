@@ -6,7 +6,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "prepare-nuxt": "nuxt prepare",
-    "get-operator-release": "python tools/get_operator_release.py"
+    "get-operator-release": "python tools/get_operator_release.py",
+    "test:performance": "playwright test"
   },
   "devDependencies": {
     "@iconify-json/bx": "^1.1.7",
@@ -22,6 +23,7 @@
     "@nuxt/devtools": "^1.0.2",
     "@nuxt/ui": "^2.10.0",
     "@nuxtjs/i18n": "^8.5.6",
+    "@playwright/test": "^1.49.1",
     "@types/node": "^20.9.0",
     "import-sort-style-module": "^6.0.0",
     "nuxt": "3.15.4",
