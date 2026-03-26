@@ -27,20 +27,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Checkout CN game data
+      - name: Checkout Arknights gamedata
         uses: actions/checkout@v4
         with:
-          repository: Kengxxiao/ArknightsGameData
-          path: ArknightsGameData
-      - name: Checkout Yostar game data
-        uses: actions/checkout@v4
-        with:
-          repository: Kengxxiao/ArknightsGameData_YoStar
-          path: ArknightsGameData_YoStar
+          repository: ArknightsAssets/ArknightsGamedata
+          path: ArknightsGamedata
       - name: Set environment variables
         run: |
-          echo "CN_GAME_DATA_ROOT_PATH=$(echo $GITHUB_WORKSPACE)/ArknightsGameData" >> $GITHUB_ENV
-          echo "YOSTAR_GAME_DATA_ROOT_PATH=$(echo $GITHUB_WORKSPACE)/ArknightsGameData_YoStar" >> $GITHUB_ENV
+          echo "GAME_DATA_ROOT_PATH=$(echo $GITHUB_WORKSPACE)/ArknightsGamedata" >> $GITHUB_ENV
           echo "ENABLE_SSR=true" >> $GITHUB_ENV
           echo "NUXT_PUBLIC_FULL_BASE_URL=https://dataknights.pages.dev" >> $GITHUB_ENV
           echo "NUXT_PUBLIC_COMMIT_BASE_URL=https://github.com/MusicOnline/AK-Dataknights/commit" >> $GITHUB_ENV

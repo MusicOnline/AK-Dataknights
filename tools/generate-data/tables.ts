@@ -79,12 +79,29 @@ if (!globalThis.GAME_TABLES) globalThis.GAME_TABLES = null
 if (!globalThis.TRAIT_LOCALES) globalThis.TRAIT_LOCALES = null
 if (!globalThis.OPERATOR_RELEASE) globalThis.OPERATOR_RELEASE = null
 
+/** ArknightsAssets/ArknightsGamedata top-level folder per locale (CN / EN / JP / KR). */
+const GAME_DATA_ROOT_SEGMENT: Record<GameLocale, string> = {
+  "zh-CN": "cn",
+  "en-US": "en",
+  "ja-JP": "jp",
+  "ko-KR": "kr",
+}
+
 function getFilePath(locale: GameLocale, location: string): string {
-  const rootPath =
+  const unifiedRoot = process.env.GAME_DATA_ROOT_PATH
+  if (unifiedRoot) {
+    return path.join(unifiedRoot, GAME_DATA_ROOT_SEGMENT[locale], location)
+  }
+  const legacyRoot =
     locale === "zh-CN"
-      ? process.env.CN_GAME_DATA_ROOT_PATH!
-      : process.env.YOSTAR_GAME_DATA_ROOT_PATH!
-  return path.join(rootPath, locale.replace("-", "_"), location)
+      ? process.env.CN_GAME_DATA_ROOT_PATH
+      : process.env.YOSTAR_GAME_DATA_ROOT_PATH
+  if (!legacyRoot) {
+    throw new Error(
+      "Set GAME_DATA_ROOT_PATH to the root of a clone of ArknightsAssets/ArknightsGamedata (or legacy CN_GAME_DATA_ROOT_PATH and YOSTAR_GAME_DATA_ROOT_PATH for old Kengxxiao repos).",
+    )
+  }
+  return path.join(legacyRoot, locale.replace("-", "_"), location)
 }
 
 function requireByReadFileSync<T extends z.ZodTypeAny | undefined>(

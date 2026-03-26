@@ -1,5 +1,7 @@
 import * as z from "zod"
 
+import { emptyObjectToArray } from "../utils"
+
 export const VoiceTypeSchema = z.enum(["ALL", "ILLUST", "NONE"])
 export type VoiceType = z.infer<typeof VoiceTypeSchema>
 
@@ -12,7 +14,7 @@ export type TokenSkinMap = z.infer<typeof TokenSkinMapSchema>
 export const DisplaySkinSchema = z.object({
   skinName: z.string().nullable(),
   colorList: z.array(z.string()).nullable(),
-  titleList: z.array(z.string()).nullable(),
+  titleList: emptyObjectToArray(z.array(z.string())).nullable(),
   modelName: z.string().nullable(),
   drawerName: z.string().nullish(), // CN 2.0 vs (EJK)
   drawerList: z.array(z.string()).nullish(), // (CN 2.0) vs EJK
@@ -81,7 +83,9 @@ export type KvImgIdList = z.infer<typeof KvImgIdListSchema>
 export const BrandListSchema = z.object({
   brandId: z.string(),
   groupList: z.array(z.union([GroupListSchema, z.string()])), // CN vs EJK
-  kvImgIdList: z.array(z.union([KvImgIdListSchema, z.string()])), // CN vs EJK
+  kvImgIdList: emptyObjectToArray(
+    z.array(z.union([KvImgIdListSchema, z.string()])),
+  ), // CN vs EJK; `{}` in newer dumps
   brandName: z.string(),
   brandCapitalName: z.string(),
   description: z.string(),

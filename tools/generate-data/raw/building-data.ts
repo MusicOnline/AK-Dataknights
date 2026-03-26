@@ -1,5 +1,6 @@
 import * as z from "zod"
 
+import { emptyObjectToArray } from "../utils"
 import { UnlockConditionSchema } from "./common"
 
 export const BuffCategorySchema = z.enum(["FUNCTION", "OUTPUT", "RECOVERY"])
@@ -59,7 +60,7 @@ export const BuffDatumSchema = z.object({
 export type BuffDatum = z.infer<typeof BuffDatumSchema>
 
 export const BuffCharSchema = z.object({
-  buffData: z.array(BuffDatumSchema),
+  buffData: emptyObjectToArray(z.array(BuffDatumSchema)),
 })
 export type BuffChar = z.infer<typeof BuffCharSchema>
 

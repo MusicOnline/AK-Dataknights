@@ -1,7 +1,7 @@
 import * as z from "zod"
 
 import { CoerceEnumKeyOf } from "../utils"
-import { BlackboardSchema } from "./common"
+import { BlackboardListSchema } from "./common"
 
 export const DurationTypeEnum = z.enum([
   "NONE", // CN
@@ -48,7 +48,7 @@ export const SkillLevelSchema = z.object({
   spData: SpDataSchema,
   prefabId: z.string().nullable(),
   duration: z.number(),
-  blackboard: z.array(BlackboardSchema),
+  blackboard: BlackboardListSchema,
 })
 export type SkillLevel = z.infer<typeof SkillLevelSchema>
 

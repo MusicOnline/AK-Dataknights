@@ -1,5 +1,7 @@
 import * as z from "zod"
 
+import { emptyObjectToArray } from "../utils"
+
 export const LockTypeSchema = z.enum([
   "AWAKE",
   "DIRECT",
@@ -100,7 +102,7 @@ export const HandbookStageDatumSchema = z.object({
   loadingPicId: z.string(),
   description: z.string(),
   unlockParam: z.array(UnlockParamSchema),
-  rewardItem: z.array(ItemSchema),
+  rewardItem: emptyObjectToArray(z.array(ItemSchema)),
   stageNameForShow: z.string(),
   zoneNameForShow: z.string(),
   picId: z.string(),
@@ -151,7 +153,7 @@ export const HandbookAvgListSchema = z.object({
   storySetName: z.string(),
   sortId: z.number(),
   storyGetTime: z.number(),
-  rewardItem: z.array(z.any()),
+  rewardItem: emptyObjectToArray(z.array(z.any())),
   unlockParam: z.array(UnlockParamSchema),
   avgList: z.array(AvgListSchema),
   charId: z.string(),
@@ -162,8 +164,8 @@ export const HandbookDictSchema = z.object({
   charID: z.string(),
   // infoName: InfoNameSchema,
   isLimited: z.boolean(), // True if Crossover only (incl Kirin R Yato etc)
-  storyTextAudio: z.array(StoryTextAudioSchema), // Not voice files!
-  handbookAvgList: z.array(HandbookAvgListSchema), // Operator Records
+  storyTextAudio: emptyObjectToArray(z.array(StoryTextAudioSchema)), // Not voice files!
+  handbookAvgList: emptyObjectToArray(z.array(HandbookAvgListSchema)), // Operator Records
 })
 export type HandbookDict = z.infer<typeof HandbookDictSchema>
 

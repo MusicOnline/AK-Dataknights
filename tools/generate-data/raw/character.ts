@@ -1,7 +1,11 @@
 import * as z from "zod"
 
-import { CoerceEnumKeyOf, CoerceEnumValueOf } from "../utils"
-import { BlackboardSchema, UnlockConditionSchema } from "./common"
+import {
+  CoerceEnumKeyOf,
+  CoerceEnumValueOf,
+  emptyObjectToArray,
+} from "../utils"
+import { BlackboardListSchema, UnlockConditionSchema } from "./common"
 
 export const LvlUpCostType = z.enum(["MATERIAL"])
 export type LvlUpCostType = z.infer<typeof LvlUpCostType>
@@ -176,7 +180,7 @@ export type TalentImprovePotentialEnum = z.infer<
 export const TraitCandidateSchema = z.object({
   unlockCondition: UnlockConditionSchema,
   requiredPotentialRank: z.number().int().min(0).max(5),
-  blackboard: z.array(BlackboardSchema),
+  blackboard: BlackboardListSchema,
   overrideDescripton: z.string().nullable(),
   prefabKey: z.string().nullable(),
   rangeId: z.string().nullable(),
@@ -184,7 +188,7 @@ export const TraitCandidateSchema = z.object({
 export type TraitCandidate = z.infer<typeof TraitCandidateSchema>
 
 export const TraitSchema = z.object({
-  candidates: z.array(TraitCandidateSchema),
+  candidates: emptyObjectToArray(z.array(TraitCandidateSchema)),
 })
 export type Trait = z.infer<typeof TraitSchema>
 
@@ -195,13 +199,16 @@ export const TalentCandidateSchema = z.object({
   name: z.string().nullable(),
   description: z.string().nullable(),
   rangeId: z.string().nullable(),
-  blackboard: z.array(BlackboardSchema),
+  blackboard: BlackboardListSchema,
   tokenKey: z.string().nullish(), // CN vs EJK
 })
 export type TalentCandidate = z.infer<typeof TalentCandidateSchema>
 
 export const TalentSchema = z.object({
-  candidates: z.array(TalentCandidateSchema).nullable(),
+  candidates: z.union([
+    emptyObjectToArray(z.array(TalentCandidateSchema)),
+    z.null(),
+  ]),
 })
 export type Talent = z.infer<typeof TalentSchema>
 
@@ -215,7 +222,7 @@ export type Cost = z.infer<typeof CostSchema>
 export const LevelUpCostCondSchema = z.object({
   unlockCond: UnlockConditionSchema,
   lvlUpTime: z.number(),
-  levelUpCost: z.array(CostSchema).nullable(),
+  levelUpCost: emptyObjectToArray(z.array(CostSchema)).nullable(),
 })
 export type LevelUpCostCond = z.infer<typeof LevelUpCostCondSchema>
 
@@ -223,7 +230,7 @@ export const SkillSchema = z.object({
   skillId: z.string().nullable(),
   overridePrefabKey: z.string().nullable(),
   overrideTokenKey: z.string().nullable(),
-  levelUpCostCond: z.array(LevelUpCostCondSchema),
+  levelUpCostCond: emptyObjectToArray(z.array(LevelUpCostCondSchema)),
   unlockCond: UnlockConditionSchema,
 })
 export type Skill = z.infer<typeof SkillSchema>
@@ -243,7 +250,7 @@ export const AttributesSchema = z.object({
   abnormalAntis: z.null(),
   abnormalCombos: z.null(),
   abnormalComboImmunes: z.null(),
-  attributeModifiers: z.array(AttributeModifierSchema),
+  attributeModifiers: emptyObjectToArray(z.array(AttributeModifierSchema)),
 })
 export type Attributes = z.infer<typeof AttributesSchema>
 
@@ -296,14 +303,14 @@ export const PhaseElementSchema = z.object({
   characterPrefabKey: z.string(),
   rangeId: z.string().nullable(),
   maxLevel: z.number(),
-  attributesKeyFrames: z.array(KeyFrameSchema),
-  evolveCost: z.array(CostSchema).nullable(),
+  attributesKeyFrames: emptyObjectToArray(z.array(KeyFrameSchema)),
+  evolveCost: emptyObjectToArray(z.array(CostSchema)).nullable(),
 })
 export type PhaseElement = z.infer<typeof PhaseElementSchema>
 
 export const AllSkillLvlupSchema = z.object({
   unlockCond: UnlockConditionSchema,
-  lvlUpCost: z.array(CostSchema).nullable(),
+  lvlUpCost: emptyObjectToArray(z.array(CostSchema)).nullable(),
 })
 export type AllSkillLvlup = z.infer<typeof AllSkillLvlupSchema>
 
@@ -323,7 +330,7 @@ export const CharacterSchema = z.object({
   displayNumber: z.string().nullable(),
   appellation: z.string(),
   position: PositionSchema,
-  tagList: z.array(z.string()).nullable(),
+  tagList: emptyObjectToArray(z.array(z.string())).nullable(),
   itemUsage: z.string().nullable(),
   itemDesc: z.string().nullable(),
   itemObtainApproach: z.string().nullable(),
@@ -342,12 +349,12 @@ export const CharacterSchema = z.object({
   profession: CoerceEnumValueOf(ProfessionEnum),
   subProfessionId: z.string(),
   trait: TraitSchema.nullable(),
-  phases: z.array(PhaseElementSchema),
-  skills: z.array(SkillSchema),
+  phases: emptyObjectToArray(z.array(PhaseElementSchema)),
+  skills: emptyObjectToArray(z.array(SkillSchema)),
   talents: z.array(TalentSchema).nullable(),
-  potentialRanks: z.array(PotentialRankSchema),
-  favorKeyFrames: z.array(KeyFrameSchema).nullable(),
-  allSkillLvlup: z.array(AllSkillLvlupSchema),
+  potentialRanks: emptyObjectToArray(z.array(PotentialRankSchema)),
+  favorKeyFrames: emptyObjectToArray(z.array(KeyFrameSchema)).nullable(),
+  allSkillLvlup: emptyObjectToArray(z.array(AllSkillLvlupSchema)),
   displayTokenDict: DisplayTokenDictSchema.nullish(), // CN vs EJK
 })
 export type Character = z.infer<typeof CharacterSchema>
