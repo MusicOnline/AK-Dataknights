@@ -1,6 +1,5 @@
 import * as fs from "fs/promises"
 
-import { bundleArkdataImages } from "../bundle-arkdata-images"
 import * as constants from "./constants"
 import { Operator } from "./operator"
 import type { CharacterTable } from "./raw/character"
@@ -288,7 +287,7 @@ export async function generateDataFiles() {
       fs.mkdir(`locales/${locale}`, { recursive: true }),
     ),
   )
-  await generateOperatorFiles()
-  await bundleArkdataImages()
-  console.timeEnd("Generate data files")
+  return Promise.all([generateOperatorFiles()]).then(() =>
+    console.timeEnd("Generate data files"),
+  )
 }

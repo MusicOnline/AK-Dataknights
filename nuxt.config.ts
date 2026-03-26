@@ -1,5 +1,6 @@
 import { execSync } from "child_process"
 import { generateDataFiles } from "./tools/generate-data"
+import { bundleArkdataImages } from "./tools/bundle-arkdata-images"
 
 function runTerminal(command: string): string {
   return execSync(command).toString().trim()
@@ -104,6 +105,7 @@ export default defineNuxtConfig({
   },
   modules: ["nuxt-lodash", "@nuxtjs/i18n", "@nuxt/ui"],
   hooks: {
+    // Game tables + operator JSON (also runs during `nuxt prepare`).
     "build:before": async () => {
       await generateDataFiles()
     },
@@ -162,6 +164,12 @@ export default defineNuxtConfig({
     enabled: process.env.NODE_ENV !== "production",
   },
   nitro: {
+    // Fetch arkdata PNGs into public/ only when Nitro builds (not during `nuxt prepare`).
+    hooks: {
+      "build:before": async () => {
+        await bundleArkdataImages()
+      },
+    },
     prerender: {
       autoSubfolderIndex: false,
       // Linked from app head; prerender fetch 404s while public/ is still copied to output.
