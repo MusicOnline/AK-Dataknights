@@ -21,6 +21,7 @@ await useOperatorsIndexLocale(i18n)
     :class="`bg-rarity-${operator.rarity}-item hover:bg-rarity-${operator.rarity}-item-focus focus-visible:bg-rarity-${operator.rarity}-item-focus`"
   >
     <UAvatar
+      loading="lazy"
       :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/charavatars/${encodeURI(
         operator.phases[0].outfit!.avatarId,
       )}.png`"
@@ -34,6 +35,7 @@ await useOperatorsIndexLocale(i18n)
     <div class="ml-auto flex items-center gap-1">
       <UTooltip class="h-8 w-8">
         <img
+          loading="lazy"
           class="h-full w-full rounded-theme bg-gray-700 object-contain p-0.5 group-hover:bg-gray-900 group-focus-visible:bg-gray-900"
           :src="`https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_${operator.class.toLowerCase()}.png`"
         />
@@ -43,6 +45,7 @@ await useOperatorsIndexLocale(i18n)
       </UTooltip>
       <UTooltip class="h-8 w-8">
         <img
+          loading="lazy"
           class="h-full w-full rounded-theme bg-gray-700 object-contain p-0.5 group-hover:bg-gray-900 group-focus-visible:bg-gray-900"
           :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/ui/subprofessionicon/sub_${operator.classBranch}_icon.png`"
         />

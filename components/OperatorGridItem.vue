@@ -13,8 +13,6 @@ const { t } = i18n
 const localePath = useLocalePath()
 
 const name = computed(() => t(`${operator.key}.name`))
-
-await useOperatorsIndexLocale(i18n)
 </script>
 
 <template>
@@ -25,6 +23,7 @@ await useOperatorsIndexLocale(i18n)
       :class="`bg-rarity-${operator.rarity}-item hover:bg-rarity-${operator.rarity}-item-focus focus-visible:bg-rarity-${operator.rarity}-item-focus`"
     >
       <UAvatar
+        loading="lazy"
         :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/charavatars/${encodeURI(
           operator.phases[0].outfit!.avatarId
         )}.png`"
