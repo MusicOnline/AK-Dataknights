@@ -38,6 +38,10 @@ Create a `.env` file with the following content or define the environment variab
 # (CN / EN / JP / KR live under cn/, en/, jp/, kr/ in that repository)
 GAME_DATA_ROOT_PATH=/path/to/ArknightsGamedata
 
+# Optional: regenerate locales/*/operators-data.json without a full Nuxt build
+# (defaults GAME_DATA_ROOT_PATH to ./ArknightsGamedata when that clone exists)
+# pnpm run generate-data
+
 # Set to true if "pnpm generate" should be prerendered to HTML
 # Set to false to only render HTML using JS when browsed to (no SEO support)
 # Alternatively, this can be set in nuxt.config.ts in ssr

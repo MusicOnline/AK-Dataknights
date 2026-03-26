@@ -6,7 +6,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "prepare-nuxt": "nuxt prepare",
-    "get-operator-release": "python tools/get_operator_release.py",
+    "generate-data": "tsx tools/run-generate-data.ts",
+    "get-operator-release": "python3 tools/get_operator_release.py",
     "test:performance": "playwright test"
   },
   "devDependencies": {
@@ -41,6 +42,7 @@
     "stylelint-config-standard-scss": "^11.1.0",
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-config-tailwindcss": "^0.0.7",
+    "tsx": "^4.21.0",
     "zod": "^3.22.4"
   },
   "stylelint": {

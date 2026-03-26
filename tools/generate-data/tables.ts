@@ -88,20 +88,13 @@ const GAME_DATA_ROOT_SEGMENT: Record<GameLocale, string> = {
 }
 
 function getFilePath(locale: GameLocale, location: string): string {
-  const unifiedRoot = process.env.GAME_DATA_ROOT_PATH
-  if (unifiedRoot) {
-    return path.join(unifiedRoot, GAME_DATA_ROOT_SEGMENT[locale], location)
-  }
-  const legacyRoot =
-    locale === "zh-CN"
-      ? process.env.CN_GAME_DATA_ROOT_PATH
-      : process.env.YOSTAR_GAME_DATA_ROOT_PATH
-  if (!legacyRoot) {
+  const root = process.env.GAME_DATA_ROOT_PATH
+  if (!root) {
     throw new Error(
-      "Set GAME_DATA_ROOT_PATH to the root of a clone of ArknightsAssets/ArknightsGamedata (or legacy CN_GAME_DATA_ROOT_PATH and YOSTAR_GAME_DATA_ROOT_PATH for old Kengxxiao repos).",
+      "Set GAME_DATA_ROOT_PATH to the root of a clone of https://github.com/ArknightsAssets/ArknightsGamedata (expected subfolders cn/, en/, jp/, kr/).",
     )
   }
-  return path.join(legacyRoot, locale.replace("-", "_"), location)
+  return path.join(root, GAME_DATA_ROOT_SEGMENT[locale], location)
 }
 
 function requireByReadFileSync<T extends z.ZodTypeAny | undefined>(
