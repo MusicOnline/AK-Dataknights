@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { GeneratedOperatorIndexData } from "~/tools/generate-data/operator"
-import { getAvatarUrl } from "~/utils"
+import { getAvatarUrl, getSubProfessionIconUrl } from "~/utils"
 
 const { operator } = defineProps<{
   operator: GeneratedOperatorIndexData
@@ -46,7 +46,7 @@ await useOperatorsIndexLocale(i18n)
         <img
           loading="lazy"
           class="h-full w-full rounded-theme bg-gray-700 object-contain p-0.5 group-hover:bg-gray-900 group-focus-visible:bg-gray-900"
-          :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/ui/subprofessionicon/sub_${operator.classBranch}_icon.png`"
+          :src="getSubProfessionIconUrl(operator.classBranch)"
         />
         <template #text>
           {{ t(`operator.classBranch.${operator.classBranch}`) }}

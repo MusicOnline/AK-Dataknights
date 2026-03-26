@@ -39,6 +39,58 @@ export function isKeyOfObject<T extends object>(
 /** Same-origin copies of akgcc/arkdata assets (filled at build time under public/arkdata). */
 export const BUNDLED_ARKDATA_BASE = "/arkdata"
 
+function arkdataPng(
+  pathUnderArkdataPublic: string,
+): string {
+  return `${BUNDLED_ARKDATA_BASE}/${pathUnderArkdataPublic.split("/").map(encodeURIComponent).join("/")}`
+}
+
+export function getSkillIconUrl(skillId: string, iconId: string | null): string {
+  const base = iconId ?? skillId
+  return arkdataPng(`torappu/dynamicassets/arts/skills/skill_icon_${base}.png`)
+}
+
+export function getRiicBaseSkillIconUrl(skillIconBasename: string): string {
+  return arkdataPng(`torappu/dynamicassets/arts/building/skills/${skillIconBasename}.png`)
+}
+
+export function getSubProfessionIconUrl(classBranch: string): string {
+  return arkdataPng(`torappu/dynamicassets/arts/ui/subprofessionicon/sub_${classBranch}_icon.png`)
+}
+
+export function getEliteBadgeUrl(elite: number): string {
+  return arkdataPng(`arts/elite_${elite}.png`)
+}
+
+export function getPotentialBadgeUrl(
+  index: number,
+  size: "normal" | "small" = "normal",
+): string {
+  const name =
+    size === "small" ? `potential_${index}_small.png` : `potential_${index}.png`
+  return arkdataPng(`arts/${name}`)
+}
+
+export function getModuleShiningBackgroundUrl(shiningColor: string): string {
+  return arkdataPng(
+    `torappu/dynamicassets/arts/ui/uniequipcolorshining/${shiningColor}_shining.png`,
+  )
+}
+
+export function getModuleTypeIconUrl(typeIcon: string): string {
+  return arkdataPng(
+    `torappu/dynamicassets/arts/ui/uniequiptype/${typeIcon.toLowerCase()}.png`,
+  )
+}
+
+export function getModuleStoryImageUrl(
+  moduleType: string,
+  moduleIcon: string,
+): string {
+  const key = moduleType === "INITIAL" ? "default" : moduleIcon
+  return arkdataPng(`torappu/dynamicassets/arts/ui/uniequipimg/${key}.png`)
+}
+
 export function getAvatarUrl(
   operator: GeneratedOperatorData | GeneratedOperatorIndexData,
   operatorState: { elite: number },

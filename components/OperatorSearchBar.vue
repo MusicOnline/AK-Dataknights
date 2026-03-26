@@ -5,6 +5,7 @@ import type {
   GeneratedOperatorData,
   GeneratedOperatorIndexData,
 } from "~/tools/generate-data/operator"
+import { getAvatarUrl, getSubProfessionIconUrl } from "~/utils"
 
 const SEARCH_RESULTS_LIMIT = 10
 
@@ -161,7 +162,7 @@ await useOperatorsIndexLocalePromise
           <img
             loading="lazy"
             class="h-full w-full rounded-theme bg-gray-700 object-contain p-0.5 group-hover:bg-gray-900 group-focus-visible:bg-gray-900"
-            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/ui/subprofessionicon/sub_${cmdOperator.classBranch}_icon.png`"
+            :src="getSubProfessionIconUrl(cmdOperator.classBranch)"
           />
           <template #text>
             {{ t(`operator.classBranch.${cmdOperator.classBranch}`) }}

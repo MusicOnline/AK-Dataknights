@@ -4,7 +4,7 @@
 import fs from "node:fs/promises"
 import path from "node:path"
 
-import { collectUsedCharacterArts } from "./used-character-arts"
+import { collectUsedArkdataAssets } from "./used-arkdata-assets"
 
 const RAW_BASE =
   "https://raw.githubusercontent.com/akgcc/arkdata/main/assets"
@@ -56,27 +56,95 @@ export async function fetchUsedCharacterArts(
   const skipExisting = options.skipExisting ?? true
   const concurrency = options.concurrency ?? DEFAULT_CONCURRENCY
 
-  const { avatars, splashes } = await collectUsedCharacterArts(operatorsDir)
+  const assets = await collectUsedArkdataAssets(operatorsDir)
 
   const jobs: { remote: string; local: string }[] = []
 
-  for (const name of avatars) {
+  const add = (remote: string, local: string) => jobs.push({ remote, local })
+
+  for (const name of assets.avatars) {
     const enc = encodeURI(`${name}.png`)
-    jobs.push({
-      remote: `torappu/dynamicassets/arts/charavatars/${enc}`,
-      local: path.join(
-        publicRoot,
-        "torappu/dynamicassets/arts/charavatars",
-        `${name}.png`,
-      ),
-    })
+    add(
+      `torappu/dynamicassets/arts/charavatars/${enc}`,
+      path.join(publicRoot, "torappu/dynamicassets/arts/charavatars", `${name}.png`),
+    )
   }
-  for (const name of splashes) {
+  for (const name of assets.splashes) {
     const enc = encodeURI(`${name}.png`)
-    jobs.push({
-      remote: `chararts/${enc}`,
-      local: path.join(publicRoot, "chararts", `${name}.png`),
-    })
+    add(`chararts/${enc}`, path.join(publicRoot, "chararts", `${name}.png`))
+  }
+  for (const base of assets.skillIcons) {
+    const enc = encodeURI(`skill_icon_${base}.png`)
+    add(
+      `torappu/dynamicassets/arts/skills/${enc}`,
+      path.join(
+        publicRoot,
+        "torappu/dynamicassets/arts/skills",
+        `skill_icon_${base}.png`,
+      ),
+    )
+  }
+  for (const base of assets.riicSkillIcons) {
+    const enc = encodeURI(`${base}.png`)
+    add(
+      `torappu/dynamicassets/arts/building/skills/${enc}`,
+      path.join(
+        publicRoot,
+        "torappu/dynamicassets/arts/building/skills",
+        `${base}.png`,
+      ),
+    )
+  }
+  for (const branch of assets.subProfessionBranches) {
+    const file = `sub_${branch}_icon.png`
+    const enc = encodeURI(file)
+    add(
+      `torappu/dynamicassets/arts/ui/subprofessionicon/${enc}`,
+      path.join(
+        publicRoot,
+        "torappu/dynamicassets/arts/ui/subprofessionicon",
+        file,
+      ),
+    )
+  }
+  for (const color of assets.moduleShiningColors) {
+    const file = `${color}_shining.png`
+    const enc = encodeURI(file)
+    add(
+      `torappu/dynamicassets/arts/ui/uniequipcolorshining/${enc}`,
+      path.join(
+        publicRoot,
+        "torappu/dynamicassets/arts/ui/uniequipcolorshining",
+        file,
+      ),
+    )
+  }
+  for (const icon of assets.moduleTypeIcons) {
+    const file = `${icon}.png`
+    const enc = encodeURI(file)
+    add(
+      `torappu/dynamicassets/arts/ui/uniequiptype/${enc}`,
+      path.join(publicRoot, "torappu/dynamicassets/arts/ui/uniequiptype", file),
+    )
+  }
+  for (const key of assets.moduleUniequipImgKeys) {
+    const file = `${key}.png`
+    const enc = encodeURI(file)
+    add(
+      `torappu/dynamicassets/arts/ui/uniequipimg/${enc}`,
+      path.join(publicRoot, "torappu/dynamicassets/arts/ui/uniequipimg", file),
+    )
+  }
+  for (const e of assets.eliteLevels) {
+    const file = `elite_${e}.png`
+    const enc = encodeURI(file)
+    add(`arts/${enc}`, path.join(publicRoot, "arts", file))
+  }
+  for (const i of assets.potentialIndices) {
+    const normal = `potential_${i}.png`
+    const small = `potential_${i}_small.png`
+    add(`arts/${encodeURI(normal)}`, path.join(publicRoot, "arts", normal))
+    add(`arts/${encodeURI(small)}`, path.join(publicRoot, "arts", small))
   }
 
   const batches = chunk(jobs, concurrency)
@@ -86,12 +154,11 @@ export async function fetchUsedCharacterArts(
       batch.map((j) => fetchOne(j.remote, j.local, skipExisting)),
     )
     done += batch.length
-    if (done % 100 === 0 || done === jobs.length) {
+    if (done % 200 === 0 || done === jobs.length) {
       console.log(`[arkdata images] ${done}/${jobs.length}`)
     }
   }
   console.log(
-    `[arkdata images] finished (${avatars.length} avatars, ${splashes.length} splashes)`,
+    `[arkdata images] finished (${jobs.length} files: ${assets.avatars.length} avatars, ${assets.splashes.length} splashes, ${assets.skillIcons.length} skills, ${assets.riicSkillIcons.length} riic, …)`,
   )
 }
-

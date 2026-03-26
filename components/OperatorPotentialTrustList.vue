@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { GeneratedPotentialData } from "~/tools/generate-data/operator/potential"
-import { ALTERNATE_ATTRIBUTE_NAMES } from "~/utils"
+import { ALTERNATE_ATTRIBUTE_NAMES, getPotentialBadgeUrl } from "~/utils"
 
 type UnderscoredAttributeNames = keyof typeof ALTERNATE_ATTRIBUTE_NAMES
 
@@ -95,7 +95,7 @@ await useOperatorLocale(i18n, operator.key)
             class="block h-6 w-6 flex-shrink-0 rounded-theme bg-gray-900 p-0.5"
           >
             <img
-              src="https://raw.githubusercontent.com/akgcc/arkdata/main/assets/arts/potential_0_small.png"
+              :src="getPotentialBadgeUrl(0, 'small')"
             />
           </div>
           <div>{{ t("operator.ui.operatorRecruited") }}</div>
@@ -128,7 +128,7 @@ await useOperatorLocale(i18n, operator.key)
                 'opacity-90':
                   operatorState.potential < potential.potentialNumber,
               }"
-              :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/arts/potential_${potential.potentialNumber-1}_small.png`"
+              :src="getPotentialBadgeUrl(potential.potentialNumber - 1, 'small')"
             />
           </div>
           <div>
