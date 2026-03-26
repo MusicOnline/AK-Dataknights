@@ -15655,7 +15655,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "When dealing Arts damage, deals an additional <#ba.vup>8{'%'}</> as <?ba.dt.burning2>Burn damage</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -15977,23 +15977,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Gain <#ba.kw>{'{'}sp{'}'}</> SP when normal attacks hit an elite or leader enemy."
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Gain <#ba.kw>{'{'}sp{'}'}</> SP when normal attacks hit an elite or leader enemy."
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Wild Fire",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Wild Fire",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -16008,11 +16008,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Wild Fire",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Wild Fire",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -17619,7 +17619,7 @@
       "hoshiguma-the-breacher": {
         "name": "Hoshiguma the Breacher",
         "appellation": null,
-        "description": "Normal attacks deal Arts damage while the skill is active"
+        "description": null
       }
     }
   },
@@ -18259,7 +18259,7 @@
       "silverash-the-reignfrost": {
         "name": "SilverAsh the Reignfrost",
         "appellation": null,
-        "description": null
+        "description": "Blocks 2 enemies, and can support allies in the Deployment Waiting Zone"
       }
     }
   },
@@ -23627,7 +23627,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks <#ba.kw>all enemies</> within range, and deals <#ba.kw>160{'%'}</> damage to enemies in the row directly in front of this unit."
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -25828,7 +25828,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Attack Range <#ba.kw>expands</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -27097,23 +27097,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "While above 50{'%'} HP, reduces the amount of Physical damage taken by <#ba.kw>{'{'}damage_resistance:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "While above 50{'%'} HP, reduces the amount of Physical damage taken by <#ba.kw>{'{'}damage_resistance:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Emergency Defibrillation",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Emergency Defibrillation",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -27133,11 +27133,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Emergency Defibrillation",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Emergency Defibrillation",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -28620,7 +28620,7 @@
       "leizi-the-thunderbringer": {
         "name": "Leizi the Thunderbringer",
         "appellation": null,
-        "description": "Normally does not attack and has 0 Block; When skill is inactive, ATK gradually increases up to <#ba.kw>+{'{'}atk:0{'%'}{'}'}</> over <#ba.kw>{'{'}max_stack_cnt{'}'}</> seconds. ATK is reset when the skill ends"
+        "description": null
       }
     }
   },
@@ -41690,7 +41690,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks <#ba.kw>all enemies</> within range, and deals <#ba.kw>160{'%'}</> damage to enemies in the row directly in front of this unit."
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -43714,7 +43714,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks <#ba.kw>all enemies</> within range, and deals <#ba.kw>160{'%'}</> damage to enemies in the row directly in front of this unit."
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -50367,7 +50367,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Can <#ba.kw>Shift</> enemies by using skills; increases the strength of the shift by 1 degree when dragging enemies far away towards herself\nCan be deployed on Ranged tiles"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -53080,7 +53080,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks <#ba.kw>all enemies</> within range, and deals <#ba.kw>160{'%'}</> damage to enemies in the row directly in front of this unit."
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -53105,19 +53105,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "<#ba.kw>Reduces</> Deployment Cost"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "<#ba.kw>Reduces</> Deployment Cost"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Vestiges of Vacation",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -53132,7 +53132,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Vestiges of Vacation",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -60235,23 +60235,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Attack with <#ba.kw>Drones</> to deal <#ba.kw>Arts damage</>\nDrone deals more damage when it attacks the same enemy again (deals up to 120{'%'} of Operator's ATK as damage)"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Attack with <#ba.kw>Drones</> to deal <#ba.kw>Arts damage</>\nDrone deals more damage when it attacks the same enemy again (deals up to 120{'%'} of Operator's ATK as damage)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Precise Redirection",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "Precise Redirection",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -60266,11 +60266,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Precise Redirection",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "Precise Redirection",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -67190,23 +67190,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "While above 50{'%'} HP, reduces the amount of Physical damage taken by <#ba.kw>{'{'}damage_resistance:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "While above 50{'%'} HP, reduces the amount of Physical damage taken by <#ba.kw>{'{'}damage_resistance:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Medical Background",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Medical Background",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -67226,11 +67226,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Medical Background",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Medical Background",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -71927,7 +71927,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "When there are no allies in the surrounding 8 tiles, ATK and DEF <#ba.kw>+8{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -78639,7 +78639,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Empathy by Shotgun",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -78659,7 +78659,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Empathy by Shotgun",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -79215,23 +79215,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "The further away the enemy, the higher the damage dealt (up to an increase of <#ba.kw>{'{'}damage_scale:0{'%'}{'}'}</>)"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "The further away the enemy, the higher the damage dealt (up to an increase of <#ba.kw>{'{'}damage_scale:0{'%'}{'}'}</>)"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Heavy as the Swamp's Mire",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Heavy as the Swamp's Mire",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -79246,11 +79246,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Heavy as the Swamp's Mire",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Heavy as the Swamp's Mire",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -80327,7 +80327,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "ATK +4{'%'} whenever Trait cost is paid, stacking up to 5 times"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80380,11 +80380,11 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "Big Spendthrift",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Big Spendthrift",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -80414,11 +80414,11 @@
               "4": {
                 "candidates": {
                   "1": {
-                    "name": "Big Spendthrift",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Big Spendthrift",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -81052,7 +81052,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "When Ammo count is empty, the next reload +1 Ammo additionally"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83019,11 +83019,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Larking About",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Larking About",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -83043,11 +83043,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Larking About",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Larking About",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -83264,11 +83264,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Advanced Notice",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Advanced Notice",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -83283,11 +83283,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Advanced Notice",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Advanced Notice",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -83851,11 +83851,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Mental Inversion",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Mental Inversion",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -83875,11 +83875,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Mental Inversion",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Mental Inversion",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -85570,11 +85570,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Overflowing Pot",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Overflowing Pot",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -85589,11 +85589,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Overflowing Pot",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Overflowing Pot",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -85873,7 +85873,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "When Ammo count is empty, the next reload +1 Ammo additionally"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -91286,7 +91286,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks deal <#ba.kw>Arts</> damage and heal the HP of an ally within Attack Range for <#ba.kw>{'{'}scale:0{'%'}{'}'}</> of the damage dealt"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -91520,7 +91520,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Reveals <?ba.invisible>Invisible</> enemies within range"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -91765,7 +91765,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Applies 10{'%'} <?ba.weaken>Enfeeble</> to targets for 2 seconds"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -92317,7 +92317,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "This unit can designate one <#ba.kw>Tactical Point</> within attack range to call Reinforcements; Enemies blocked by reinforcements are more likely to be attacked, and this unit's ATK is increased to 165{'%'} when attacking enemies blocked by Reinforcements"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -92646,11 +92646,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Key to the Heart",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Key to the Heart",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -92665,11 +92665,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Key to the Heart",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Key to the Heart",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -93847,11 +93847,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "'I See, I Take'",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "'I See, I Take'",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -93871,11 +93871,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "'I See, I Take'",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "'I See, I Take'",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -94194,11 +94194,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Perfuse With Lotus",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Perfuse With Lotus",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -94211,11 +94211,11 @@
               "4": {
                 "candidates": {
                   "1": {
-                    "name": "Perfuse With Lotus",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Perfuse With Lotus",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -94230,11 +94230,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Perfuse With Lotus",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Perfuse With Lotus",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -94247,11 +94247,11 @@
               "4": {
                 "candidates": {
                   "1": {
-                    "name": "Perfuse With Lotus",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "Perfuse With Lotus",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -100765,11 +100765,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Meltdown",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Meltdown",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -100789,11 +100789,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Meltdown",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Meltdown",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -101928,11 +101928,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Practiced Knot-Tier",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Practiced Knot-Tier",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -101952,11 +101952,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "Practiced Knot-Tier",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Practiced Knot-Tier",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -104722,11 +104722,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Captivating Delicacy",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Captivating Delicacy",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -104746,11 +104746,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "Captivating Delicacy",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "Captivating Delicacy",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -105421,7 +105421,7 @@
   "record-keeper": {
     "name": "Record Keeper",
     "appellation": null,
-    "description": "Restores the HP of allies",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -105561,13 +105561,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "When healing allied units with less than 50{'%'} HP, increases heal amount by <#ba.kw>15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "When healing allied units with less than 50{'%'} HP, increases heal amount by <#ba.kw>15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -105661,7 +105661,7 @@
   "leizi-the-thunderbringer": {
     "name": "Leizi the Thunderbringer",
     "appellation": null,
-    "description": "Normally does not attack and has 0 Block; When skill is inactive, ATK gradually increases up to <#ba.kw>+{'{'}atk:0{'%'}{'}'}</> over <#ba.kw>{'{'}max_stack_cnt{'}'}</> seconds. ATK is reset when the skill ends",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -105864,8 +105864,8 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Directly gains <#ba.kw>+100{'%'}</> charge after deployment",
-              "overrideDescription": "Normally does not attack and has 0 Block; when skill is inactive, ATK gradually increases up to <#ba.kw>+200{'%'}</> over <#ba.kw>40</> seconds; ATK is reset when the skill ends"
+              "additionalDescription": null,
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -105877,8 +105877,8 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Directly gains <#ba.kw>+100{'%'}</> charge after deployment",
-              "overrideDescription": "Normally does not attack and has 0 Block; when skill is inactive, ATK gradually increases up to <#ba.kw>+200{'%'}</> over <#ba.kw>40</> seconds; ATK is reset when the skill ends"
+              "additionalDescription": null,
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -105988,7 +105988,7 @@
   "raidian": {
     "name": "Raidian",
     "appellation": null,
-    "description": "Deals <#ba.kw>Arts damage</>\nCan use <#ba.kw>Summons</> in battles",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -106291,7 +106291,7 @@
       "token_10051_radian_tower1": {
         "name": "dive",
         "appellation": null,
-        "description": "Blocks 3 enemies",
+        "description": null,
         "potentials": {},
         "skills": {
           "sktok_radian_1": {
@@ -106681,7 +106681,7 @@
   "kichisei": {
     "name": "Kichisei",
     "appellation": null,
-    "description": "Attacks <#ba.kw>all enemies</> within range, and deals 150{'%'} damage to enemies in the row directly in front of this unit.",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -106821,13 +106821,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks <#ba.kw>all enemies</> within range, and deals <#ba.kw>160{'%'}</> damage to enemies in the row directly in front of this unit."
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Attacks <#ba.kw>all enemies</> within range, and deals <#ba.kw>160{'%'}</> damage to enemies in the row directly in front of this unit."
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -106921,7 +106921,7 @@
   "haruka": {
     "name": "Haruka",
     "appellation": null,
-    "description": "Deals <#ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to 75{'%'} of ATK)",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -107109,13 +107109,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Deals Arts damage to <#ba.kw>2</> targets; when skill is active, attacks instead restore the HP of <#ba.kw>2</> allies (heal amount is equal to 75{'%'} of ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Deals Arts damage to <#ba.kw>2</> targets; when skill is active, attacks instead restore the HP of <#ba.kw>2</> allies (heal amount is equal to 75{'%'} of ATK)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -107209,7 +107209,7 @@
   "hoshiguma-the-breacher": {
     "name": "Hoshiguma the Breacher",
     "appellation": null,
-    "description": "Normal attacks deal Arts damage while the skill is active",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -107412,7 +107412,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "Oni Battle Stance",
                     "description": null
                   }
                 }
@@ -107427,7 +107427,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "Oni Battle Stance",
                     "description": null
                   }
                 }
@@ -107494,10 +107494,10 @@
       "description": null
     }
   },
-  "yutenji-nyamu": {
-    "name": "Yūtenji Nyamu",
+  "nyamu-yutenji": {
+    "name": null,
     "appellation": null,
-    "description": "Attacks deal <#ba.kw>50{'%'}</> ATK as <#ba.kw>AOE</> Physical damage to enemies around the target.",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -107648,7 +107648,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "Attacks deal <#ba.kw>{'{'}attack{'@'}atk_scale_2:0{'%'}{'}'}</> ATK as <#ba.kw>AOE</> Physical damage to enemies around the target."
+        "description": null
       }
     },
     "modules": {
@@ -107662,7 +107662,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "When there are 3 or more enemies within the splash area, ATK of the current instance of attack increases to <#ba.kw>{'{'}atk_scale_e:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -107674,7 +107674,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "When there are 3 or more enemies within the splash area, ATK of the current instance of attack increases to <#ba.kw>{'{'}atk_scale_e:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -107694,7 +107694,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "When there are 3 or more enemies within the splash area, ATK of the current instance of attack increases to <#ba.kw>{'{'}atk_scale_e:0{'%'}{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -107767,10 +107767,10 @@
       }
     }
   },
-  "misumi-uika": {
-    "name": "Misumi Uika",
+  "uika-misumi": {
+    "name": null,
     "appellation": null,
-    "description": "Does not attack but continuously restores the <#ba.kw>HP</> of all allies within range (the HP restored per second is equal to 10{'%'} of self ATK). Self is unaffected by <?ba.inspire>Inspiration</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -108050,10 +108050,10 @@
       }
     }
   },
-  "yahata-umiri": {
-    "name": "Yahata Umiri",
+  "umiri-yahata": {
+    "name": null,
     "appellation": null,
-    "description": "Deals Damage to <#ba.kw>all targets</> within range\n50{'%'} chance to dodge Physical and Arts attacks and is less likely to be <#ba.kw>targeted</> by enemies",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -108193,7 +108193,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "Deals Damage to <#ba.kw>all targets</> within range\n50{'%'} chance to dodge Physical and Arts attacks and is less likely to be <#ba.kw>targeted</> by enemies"
+        "description": null
       }
     },
     "modules": {
@@ -108207,13 +108207,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Deals Damage to <#ba.kw>all targets</> within range\n65{'%'} chance to dodge Physical and Arts attacks and is less likely to be <#ba.kw>targeted</> by enemies"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Deals Damage to <#ba.kw>all targets</> within range\n65{'%'} chance to dodge Physical and Arts attacks and is less likely to be <#ba.kw>targeted</> by enemies"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -108228,7 +108228,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Deals Damage to <#ba.kw>all targets</> within range\n65{'%'} chance to dodge Physical and Arts attacks and is less likely to be <#ba.kw>targeted</> by enemies"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -108296,10 +108296,10 @@
       }
     }
   },
-  "wakaba-mutsumi": {
-    "name": "Wakaba Mutsumi",
+  "mutsumi-wakaba": {
+    "name": null,
     "appellation": null,
-    "description": "Does not retreat upon receiving lethal damage, instead swaps to a <<Substitute>> (Substitute has 0 Block). Swaps back to the original after 20 seconds",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -108447,7 +108447,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "Does not retreat upon receiving lethal damage, instead swaps to a <<Substitute>> (Substitute has 0 Block). Swaps back to the original after 20 seconds"
+        "description": null
       }
     },
     "modules": {
@@ -108461,13 +108461,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "Instead of retreating when defeated, switch to a <<Substitute>> (Substitute has 0 Block, but HP is <#ba.kw>increased</>) for 20 seconds before switching back to the original"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "Instead of retreating when defeated, switch to a <<Substitute>> (Substitute has 0 Block, but HP is <#ba.kw>increased</>) for 20 seconds before switching back to the original"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -108486,7 +108486,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "Instead of retreating when defeated, switch to a <<Substitute>> (Substitute has 0 Block, but HP is <#ba.kw>increased</>) for 20 seconds before switching back to the original"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -108558,10 +108558,10 @@
       }
     }
   },
-  "togawa-sakiko": {
-    "name": "Togawa Sakiko",
+  "sakiko-togawa": {
+    "name": null,
     "appellation": null,
-    "description": "Can launch <#ba.kw>Ranged Attacks</> that deal 80{'%'} of normal ATK",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -108747,7 +108747,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "Can launch <#ba.kw>Ranged Attacks</> that deal 80{'%'} of normal ATK"
+        "description": null
       }
     },
     "modules": {
@@ -108761,13 +108761,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "ASPD <#ba.vup>+12</> when there are 2 or more enemies in attack range."
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "ASPD <#ba.vup>+12</> when there are 2 or more enemies in attack range."
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -108787,7 +108787,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "ASPD <#ba.vup>+12</> when there are 2 or more enemies in attack range."
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -108864,10 +108864,10 @@
       }
     }
   },
-  "4208-wintim": {
-    "name": "Снегурочка",
+  "snegurochka": {
+    "name": null,
     "appellation": null,
-    "description": "Has <#ba.kw>reduced</> Redeployment Time, can use ranged attacks",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -108993,7 +108993,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "Has <#ba.kw>reduced</> Redeployment Time, can use ranged attacks"
+        "description": null
       }
     },
     "modules": {
@@ -109007,13 +109007,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Less likely to be attacked by enemies"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Less likely to be attacked by enemies"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -109032,7 +109032,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Less likely to be attacked by enemies"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -109104,10 +109104,10 @@
       }
     }
   },
-  "4207-branch": {
-    "name": "Веточки",
+  "vetochki": {
+    "name": null,
     "appellation": null,
-    "description": "<#ba.kw>Cannot</> be healed by allies",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -109233,7 +109233,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "<#ba.kw>Cannot</> be healed by allies"
+        "description": null
       }
     },
     "modules": {
@@ -109247,13 +109247,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "Takes <#ba.kw>15{'%'}</> less damage from enemies blocked by this unit"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "Takes <#ba.kw>15{'%'}</> less damage from enemies blocked by this unit"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -109277,7 +109277,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "Takes <#ba.kw>15{'%'}</> less damage from enemies blocked by this unit"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -109357,7 +109357,7 @@
   "mantra": {
     "name": "Mantra",
     "appellation": null,
-    "description": "Attacks deal <#ba.kw>Arts damage</>, and can inflict <#ba.kw>Elemental Damage</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -110319,7 +110319,7 @@
   "silverash-the-reignfrost": {
     "name": "SilverAsh the Reignfrost",
     "appellation": null,
-    "description": null,
+    "description": "Blocks 2 enemies, and can support allies in the Deployment Waiting Zone",
     "potentials": {
       "2": {
         "description": null
@@ -110511,7 +110511,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": null
+        "description": "Blocks 2 enemies, and can support allies in the Deployment Waiting Zone"
       }
     },
     "tokenSummons": {

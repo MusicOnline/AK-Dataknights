@@ -15655,7 +15655,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "마법 대미지를 입힐 시 추가로 대미지의 <#ba.vup>8{'%'}</>에 해당하는 <?ba.dt.burning2>소각 손상</>을 입힘"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -15977,23 +15977,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "일반 공격이 정예 또는 리더 적 명중 시 SP +<#ba.kw>{'{'}sp{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "일반 공격이 정예 또는 리더 적 명중 시 SP +<#ba.kw>{'{'}sp{'}'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "카오스 플레임",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "카오스 플레임",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -16008,11 +16008,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "카오스 플레임",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "카오스 플레임",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -17619,7 +17619,7 @@
       "hoshiguma-the-breacher": {
         "name": null,
         "appellation": null,
-        "description": "스킬 발동 시 일반 공격이 마법 대미지를 입힘"
+        "description": null
       }
     }
   },
@@ -18259,7 +18259,7 @@
       "silverash-the-reignfrost": {
         "name": null,
         "appellation": null,
-        "description": null
+        "description": "적 2명 저지 가능, 배치 구역의 아군 유닛 지원 가능"
       }
     }
   },
@@ -23627,7 +23627,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "범위 내의 <#ba.kw>모든 적</> 공격, 전방 첫 줄의 적에 대한 공격력이 <#ba.kw>160{'%'}</>로 증가"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -25828,7 +25828,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "공격 범위 <#ba.kw>확대</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -27097,23 +27097,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "HP가 50{'%'}보다 높을 경우, 피격 물리 대미지가 <#ba.kw>{'{'}damage_resistance:0{'%'}{'}'}</> 감소"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "HP가 50{'%'}보다 높을 경우, 피격 물리 대미지가 <#ba.kw>{'{'}damage_resistance:0{'%'}{'}'}</> 감소"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "긴급 제세동기",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "긴급 제세동기",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -27133,11 +27133,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "긴급 제세동기",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "긴급 제세동기",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -28620,7 +28620,7 @@
       "leizi-the-thunderbringer": {
         "name": null,
         "appellation": null,
-        "description": "저지 가능 수 0, 공격을 진행하지 않으며, <#ba.kw>{'{'}max_stack_cnt{'}'}</>초간 공격력이 최대 <#ba.kw>+{'{'}atk:0{'%'}{'}'}</>까지 증가, 스킬 종료 후 공격력 초기화"
+        "description": null
       }
     }
   },
@@ -41690,7 +41690,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "범위 내의 <#ba.kw>모든 적</> 공격, 전방 첫 줄의 적에 대한 공격력이 <#ba.kw>160{'%'}</>로 증가"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -43714,7 +43714,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "범위 내의 <#ba.kw>모든 적</> 공격, 전방 첫 줄의 적에 대한 공격력이 <#ba.kw>160{'%'}</>로 증가"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -50367,7 +50367,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "스킬로 적의 위치를 <#ba.kw>강제이동</>시킴, 거리가 먼 적을 끌어당길 때 당기는 힘이 1랭크 증가\n원거리 유닛 칸에도 배치 가능"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -53080,7 +53080,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "범위 내의 <#ba.kw>모든 적</> 공격, 전방 첫 줄의 적에 대한 공격력이 <#ba.kw>160{'%'}</>로 증가"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -53105,19 +53105,19 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "배치 코스트 <#ba.kw>감소</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "배치 코스트 <#ba.kw>감소</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "휴일의 여운",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -53132,7 +53132,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "휴일의 여운",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -60235,23 +60235,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>공중 유닛</>을 조종하여 적에게 <#ba.kw>마법 대미지</> 부여\n같은 적을 연속으로 공격할 경우 대미지 증가 (최대 오퍼레이터 공격력의 120{'%'}에 해당하는 대미지)"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "<#ba.kw>공중 유닛</>을 조종하여 적에게 <#ba.kw>마법 대미지</> 부여\n같은 적을 연속으로 공격할 경우 대미지 증가 (최대 오퍼레이터 공격력의 120{'%'}에 해당하는 대미지)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "정확한 유도",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "정확한 유도",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -60266,11 +60266,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "정확한 유도",
+                    "name": null,
                     "description": null
                   },
                   "6": {
-                    "name": "정확한 유도",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -67190,23 +67190,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "HP가 50{'%'}보다 높을 경우, 피격 물리 대미지가 <#ba.kw>{'{'}damage_resistance:0{'%'}{'}'}</> 감소"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "HP가 50{'%'}보다 높을 경우, 피격 물리 대미지가 <#ba.kw>{'{'}damage_resistance:0{'%'}{'}'}</> 감소"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "의학적 배경",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "의학적 배경",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -67226,11 +67226,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "의학적 배경",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "의학적 배경",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -71927,7 +71927,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "주변 8칸에 아군 오퍼레이터가 없을 시 공격력, 방어력 <#ba.kw>+8{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -78639,7 +78639,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "총탄과의 교감",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -78659,7 +78659,7 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "총탄과의 교감",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -79215,23 +79215,23 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "적이 멀수록 대미지가 더 높음 (최대 <#ba.kw>{'{'}damage_scale:0{'%'}{'}'}</> 증가)"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "적이 멀수록 대미지가 더 높음 (최대 <#ba.kw>{'{'}damage_scale:0{'%'}{'}'}</> 증가)"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "진흙처럼 무겁게",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "진흙처럼 무겁게",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -79246,11 +79246,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "진흙처럼 무겁게",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "진흙처럼 무겁게",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -80327,7 +80327,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "특성으로 인해 배치 코스트를 소모할 때마다 공격력 +4{'%'}, 최대 5회 중첩"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -80380,11 +80380,11 @@
               "3": {
                 "candidates": {
                   "1": {
-                    "name": "큰손",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "큰손",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -80414,11 +80414,11 @@
               "4": {
                 "candidates": {
                   "1": {
-                    "name": "큰손",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "큰손",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -81052,7 +81052,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "탄약이 비었을 시, 다음 장전에 추가로 탄약 1개 장전"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -83019,11 +83019,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "농락",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "농락",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -83043,11 +83043,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "농락",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "농락",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -83264,11 +83264,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "사전 고지",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "사전 고지",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -83283,11 +83283,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "사전 고지",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "사전 고지",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -83851,11 +83851,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "정신의 역구성",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "정신의 역구성",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -83875,11 +83875,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "정신의 역구성",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "정신의 역구성",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -85570,11 +85570,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "넘쳐버린 냄비",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "넘쳐버린 냄비",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -85589,11 +85589,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "넘쳐버린 냄비",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "넘쳐버린 냄비",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -85873,7 +85873,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "탄약이 비었을 시, 다음 장전에 추가로 탄약 1개 장전"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -91286,7 +91286,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "공격 시 <#ba.kw>마법 대미지</> 부여, 적을 공격할 때마다 공격 범위 내 아군 유닛 1명의 HP를 대미지의 <#ba.kw>{'{'}scale:0{'%'}{'}'}</>만큼 회복"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -91520,7 +91520,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "공격 범위 내 적의 <?ba.invisible>은신</> 효과 무효화"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -91765,7 +91765,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "목표에 10{'%'}의 <?ba.weaken>약화</> 효과 적용, 2초간 지속"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -92317,7 +92317,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "공격 범위 내 <#ba.kw>전술 포인트</>를 1회 선택해 지원군 소환, 지원군이 저지한 적이 아군의 공격을 더 쉽게 받으며, 지원군이 저지한 적 공격 시 자신의 공격력이 165{'%'}로 증가"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -92646,11 +92646,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "마음을 엿보는 열쇠",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "마음을 엿보는 열쇠",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -92665,11 +92665,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "마음을 엿보는 열쇠",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "마음을 엿보는 열쇠",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -93847,11 +93847,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "'본 것, 얻은 것'",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "'본 것, 얻은 것'",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -93871,11 +93871,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "'본 것, 얻은 것'",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "'본 것, 얻은 것'",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -94194,11 +94194,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "만연한 연꽃향",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "만연한 연꽃향",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -94211,11 +94211,11 @@
               "4": {
                 "candidates": {
                   "1": {
-                    "name": "만연한 연꽃향",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "만연한 연꽃향",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -94230,11 +94230,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "만연한 연꽃향",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "만연한 연꽃향",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -94247,11 +94247,11 @@
               "4": {
                 "candidates": {
                   "1": {
-                    "name": "만연한 연꽃향",
+                    "name": null,
                     "description": null
                   },
                   "3": {
-                    "name": "만연한 연꽃향",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -100765,11 +100765,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "융해점 기폭",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "융해점 기폭",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -100789,11 +100789,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "융해점 기폭",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "융해점 기폭",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -101928,11 +101928,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "매듭 고수",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "매듭 고수",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -101952,11 +101952,11 @@
               "2": {
                 "candidates": {
                   "1": {
-                    "name": "매듭 고수",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "매듭 고수",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -104722,11 +104722,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "진수성찬",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "진수성찬",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -104746,11 +104746,11 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": "진수성찬",
+                    "name": null,
                     "description": null
                   },
                   "5": {
-                    "name": "진수성찬",
+                    "name": null,
                     "description": null
                   }
                 }
@@ -105421,7 +105421,7 @@
   "record-keeper": {
     "name": null,
     "appellation": null,
-    "description": "아군 HP 회복",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -105561,13 +105561,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "HP가 50{'%'} 미만인 아군 유닛 치료 시 치유량 <#ba.kw>+15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "HP가 50{'%'} 미만인 아군 유닛 치료 시 치유량 <#ba.kw>+15{'%'}</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -105661,7 +105661,7 @@
   "leizi-the-thunderbringer": {
     "name": null,
     "appellation": null,
-    "description": "저지 가능 수 0, 공격을 진행하지 않으며, <#ba.kw>{'{'}max_stack_cnt{'}'}</>초간 공격력이 최대 <#ba.kw>+{'{'}atk:0{'%'}{'}'}</>까지 증가, 스킬 종료 후 공격력 초기화",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -105864,8 +105864,8 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "배치 후 <#ba.kw>+100{'%'}</> 효과 적용",
-              "overrideDescription": "저지 가능 수 0, 공격을 진행하지 않으며, <#ba.kw>40</>초간 공격력이 최대 <#ba.kw>+200{'%'}</>까지 증가, 스킬 종료 후 공격력 초기화"
+              "additionalDescription": null,
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -105877,8 +105877,8 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "배치 후 <#ba.kw>+100{'%'}</> 효과 적용",
-              "overrideDescription": "저지 가능 수 0, 공격을 진행하지 않으며, <#ba.kw>40</>초간 공격력이 최대 <#ba.kw>+200{'%'}</>까지 증가, 스킬 종료 후 공격력 초기화"
+              "additionalDescription": null,
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -105988,7 +105988,7 @@
   "raidian": {
     "name": null,
     "appellation": null,
-    "description": "공격 시 <#ba.kw>마법 대미지</>를 입힘\n<#ba.kw>소환물</> 사용 가능",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -106291,7 +106291,7 @@
       "token_10051_radian_tower1": {
         "name": null,
         "appellation": null,
-        "description": "적 3명 저지 가능",
+        "description": null,
         "potentials": {},
         "skills": {
           "sktok_radian_1": {
@@ -106681,7 +106681,7 @@
   "kichisei": {
     "name": null,
     "appellation": null,
-    "description": "공격 범위 내 <#ba.kw>모든 적</> 공격, 전방 첫 줄의 적에 대한 공격력이 150{'%'}로 증가",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -106821,13 +106821,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "범위 내의 <#ba.kw>모든 적</> 공격, 전방 첫 줄의 적에 대한 공격력이 <#ba.kw>160{'%'}</>로 증가"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "범위 내의 <#ba.kw>모든 적</> 공격, 전방 첫 줄의 적에 대한 공격력이 <#ba.kw>160{'%'}</>로 증가"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -106921,7 +106921,7 @@
   "haruka": {
     "name": null,
     "appellation": null,
-    "description": "공격 시 <#ba.kw>마법 대미지</>를 입히며, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75{'%'}에 해당)",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -107109,13 +107109,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "공격 시 <#ba.kw>2</>명의 목표에게 마법 대미지를 입히며, 스킬 발동 후 아군 <#ba.kw>2</>명 치료로 변경 (치유량은 공격력의 75{'%'}에 해당)"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "공격 시 <#ba.kw>2</>명의 목표에게 마법 대미지를 입히며, 스킬 발동 후 아군 <#ba.kw>2</>명 치료로 변경 (치유량은 공격력의 75{'%'}에 해당)"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -107209,7 +107209,7 @@
   "hoshiguma-the-breacher": {
     "name": null,
     "appellation": null,
-    "description": "스킬 발동 시 일반 공격이 마법 대미지를 입힘",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -107412,7 +107412,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "오니의 자세",
                     "description": null
                   }
                 }
@@ -107427,7 +107427,7 @@
               "1": {
                 "candidates": {
                   "1": {
-                    "name": null,
+                    "name": "오니의 자세",
                     "description": null
                   }
                 }
@@ -107494,10 +107494,10 @@
       "description": null
     }
   },
-  "yutenji-nyamu": {
+  "nyamu-yutenji": {
     "name": null,
     "appellation": null,
-    "description": "공격 시 목표 주변의 다른 적에게 공격력의 <#ba.kw>50{'%'}</>에 해당하는 <#ba.kw>광역</> 물리 대미지를 입힘",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -107648,7 +107648,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "공격 시 목표 주변의 다른 적에게 공격력의 <#ba.kw>{'{'}attack{'@'}atk_scale_2:0{'%'}{'}'}</>에 해당하는 <#ba.kw>광역</> 물리 대미지를 입힘"
+        "description": null
       }
     },
     "modules": {
@@ -107662,7 +107662,7 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "스플래시 범위 내 적이 3명 이상 있을 시 해당 회차의 공격력이 <#ba.kw>{'{'}atk_scale_e:0{'%'}{'}'}</>로 증가"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -107674,7 +107674,7 @@
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "스플래시 범위 내 적이 3명 이상 있을 시 해당 회차의 공격력이 <#ba.kw>{'{'}atk_scale_e:0{'%'}{'}'}</>로 증가"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -107694,7 +107694,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "스플래시 범위 내 적이 3명 이상 있을 시 해당 회차의 공격력이 <#ba.kw>{'{'}atk_scale_e:0{'%'}{'}'}</>로 증가"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -107767,10 +107767,10 @@
       }
     }
   },
-  "misumi-uika": {
+  "uika-misumi": {
     "name": null,
     "appellation": null,
-    "description": "공격을 진행하지 않으며, 범위 내 모든 아군의 <#ba.kw>HP</>를 초당 자신 공격력의 10{'%'}만큼 회복, 자신은 <?ba.inspire>격려</>의 영향을 받지 않음",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -108050,10 +108050,10 @@
       }
     }
   },
-  "yahata-umiri": {
+  "umiri-yahata": {
     "name": null,
     "appellation": null,
-    "description": "공격 범위 내 <#ba.kw>모든 적</> 동시 공격\n50{'%'}의 물리 및 마법 회피 보유, <#ba.kw>적의 공격</>을 쉽게 받지 않음",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -108193,7 +108193,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "공격 범위 내 <#ba.kw>모든 적</> 동시 공격\n50{'%'}의 물리 및 마법 회피 보유, <#ba.kw>적의 공격</>을 쉽게 받지 않음"
+        "description": null
       }
     },
     "modules": {
@@ -108207,13 +108207,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "공격 범위 내 <#ba.kw>모든 적</> 동시 공격\n65{'%'}의 물리 및 마법 회피율 보유, 쉽게 <#ba.kw>적의 목표</>가 되지 않음"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "공격 범위 내 <#ba.kw>모든 적</> 동시 공격\n65{'%'}의 물리 및 마법 회피율 보유, 쉽게 <#ba.kw>적의 목표</>가 되지 않음"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -108228,7 +108228,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "공격 범위 내 <#ba.kw>모든 적</> 동시 공격\n65{'%'}의 물리 및 마법 회피율 보유, 쉽게 <#ba.kw>적의 목표</>가 되지 않음"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -108296,10 +108296,10 @@
       }
     }
   },
-  "wakaba-mutsumi": {
+  "mutsumi-wakaba": {
     "name": null,
     "appellation": null,
-    "description": "치명상을 입어도 퇴각하지 않고, [대역]을 교체 투입하며(저지 가능 수 0), 20초 후 다시 본체로 교체",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -108447,7 +108447,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "치명상을 입어도 퇴각하지 않고, [대역]을 교체 투입하며(저지 가능 수 0), 20초 후 다시 본체로 교체"
+        "description": null
       }
     },
     "modules": {
@@ -108461,13 +108461,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "overrideDescription": "치명상을 입어도 퇴각하지 않고 [대역]을 교체 투입하며(저지 가능 수 0, HP <#ba.kw>상승</>), 20초 후 다시 본체로 교체"
+              "overrideDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "overrideDescription": "치명상을 입어도 퇴각하지 않고 [대역]을 교체 투입하며(저지 가능 수 0, HP <#ba.kw>상승</>), 20초 후 다시 본체로 교체"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -108486,7 +108486,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "overrideDescription": "치명상을 입어도 퇴각하지 않고 [대역]을 교체 투입하며(저지 가능 수 0, HP <#ba.kw>상승</>), 20초 후 다시 본체로 교체"
+              "overrideDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -108558,10 +108558,10 @@
       }
     }
   },
-  "togawa-sakiko": {
+  "sakiko-togawa": {
     "name": null,
     "appellation": null,
-    "description": "<#ba.kw>원거리 공격</> 가능, 원거리 공격 시 공격력이 80{'%'}로 감소",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -108747,7 +108747,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "<#ba.kw>원거리 공격</> 가능, 원거리 공격 시 공격력이 80{'%'}로 감소"
+        "description": null
       }
     },
     "modules": {
@@ -108761,13 +108761,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "공격 범위 내에 2명 이상의 적 존재 시 공격 속도 <#ba.vup>+12</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "공격 범위 내에 2명 이상의 적 존재 시 공격 속도 <#ba.vup>+12</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -108787,7 +108787,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "공격 범위 내에 2명 이상의 적 존재 시 공격 속도 <#ba.vup>+12</>"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -108864,10 +108864,10 @@
       }
     }
   },
-  "4208-wintim": {
+  "snegurochka": {
     "name": null,
     "appellation": null,
-    "description": "재배치 시간 <#ba.kw>감소</>, 원거리 공격 가능",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -108993,7 +108993,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "재배치 시간 <#ba.kw>감소</>, 원거리 공격 가능"
+        "description": null
       }
     },
     "modules": {
@@ -109007,13 +109007,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "적에게 쉽게 피격되지 않음"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "적에게 쉽게 피격되지 않음"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -109032,7 +109032,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "적에게 쉽게 피격되지 않음"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -109104,10 +109104,10 @@
       }
     }
   },
-  "4207-branch": {
+  "vetochki": {
     "name": null,
     "appellation": null,
-    "description": "아군의 치료를 받을 수 <#ba.kw>없음</>",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -109233,7 +109233,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "아군의 치료를 받을 수 <#ba.kw>없음</>"
+        "description": null
       }
     },
     "modules": {
@@ -109247,13 +109247,13 @@
         "stages": {
           "1": {
             "traitUpgrade": {
-              "additionalDescription": "자신이 저지한 적으로부터 받는 대미지가 <#ba.kw>15{'%'}</> 감소"
+              "additionalDescription": null
             },
             "talentUpgrades": {}
           },
           "2": {
             "traitUpgrade": {
-              "additionalDescription": "자신이 저지한 적으로부터 받는 대미지가 <#ba.kw>15{'%'}</> 감소"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -109277,7 +109277,7 @@
           },
           "3": {
             "traitUpgrade": {
-              "additionalDescription": "자신이 저지한 적으로부터 받는 대미지가 <#ba.kw>15{'%'}</> 감소"
+              "additionalDescription": null
             },
             "talentUpgrades": {
               "1": {
@@ -109357,7 +109357,7 @@
   "mantra": {
     "name": null,
     "appellation": null,
-    "description": "공격 시 <#ba.kw>마법 대미지</>를 입히며, <#ba.kw>원소 대미지</>를 입힐 수 있음",
+    "description": null,
     "potentials": {
       "2": {
         "description": null
@@ -110319,7 +110319,7 @@
   "silverash-the-reignfrost": {
     "name": null,
     "appellation": null,
-    "description": null,
+    "description": "적 2명 저지 가능, 배치 구역의 아군 유닛 지원 가능",
     "potentials": {
       "2": {
         "description": null
@@ -110511,7 +110511,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": null
+        "description": "적 2명 저지 가능, 배치 구역의 아군 유닛 지원 가능"
       }
     },
     "tokenSummons": {
@@ -111606,7 +111606,7 @@
   "alliance-supportive-opertator": {
     "name": null,
     "appellation": null,
-    "description": "공격 시 <#ba.kw>마법 대미지</>를 입히고, <#ba.kw>원소 손상</>을 입힐 수 있음",
+    "description": "공격 시 <#ba.kw>마법 대미지</>를 입히며, <#ba.kw>원소 손상</>을 입힐 수 있음",
     "potentials": {},
     "talents": {
       "1": {
@@ -111668,7 +111668,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "공격 시 <#ba.kw>마법 대미지</>를 입히고, <#ba.kw>원소 손상</>을 입힐 수 있음"
+        "description": "공격 시 <#ba.kw>마법 대미지</>를 입히며, <#ba.kw>원소 손상</>을 입힐 수 있음"
       }
     },
     "modules": {
@@ -112587,7 +112587,7 @@
   "cairn": {
     "name": null,
     "appellation": null,
-    "description": "적 3명 저지 가능, 공격 시 원소 손상을 입힘",
+    "description": "적 3명 저지 가능, 공격 시 <#ba.kw>원소 손상</>을 입힐 수 있음",
     "potentials": {
       "2": {
         "description": null
@@ -112713,7 +112713,7 @@
     },
     "traitCandidates": {
       "E0-L1": {
-        "description": "적 3명 저지 가능, 공격 시 원소 손상을 입힘"
+        "description": "적 3명 저지 가능, 공격 시 <#ba.kw>원소 손상</>을 입힐 수 있음"
       }
     },
     "modules": {
