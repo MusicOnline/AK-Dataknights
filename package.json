@@ -8,6 +8,7 @@
     "prepare-nuxt": "nuxt prepare",
     "generate-data": "tsx tools/run-generate-data.ts",
     "list-used-character-arts": "tsx tools/list-used-character-arts.ts",
+    "bundle-arkdata-images": "tsx tools/run-bundle-arkdata-images.ts",
     "get-operator-release": "python3 tools/get_operator_release.py",
     "test:performance": "playwright test"
   },

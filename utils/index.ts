@@ -36,15 +36,22 @@ export function isKeyOfObject<T extends object>(
   return obj.hasOwnProperty(key)
 }
 
+/** Same-origin copies of akgcc/arkdata assets (filled at build time under public/arkdata). */
+export const BUNDLED_ARKDATA_BASE = "/arkdata"
+
 export function getAvatarUrl(
   operator: GeneratedOperatorData | GeneratedOperatorIndexData,
-  operatorState: { elite: number }
+  operatorState: { elite: number },
 ): string {
   let phase = operator.phases[operatorState.elite]
   while (!phase.outfit?.avatarId && phase.elite !== 0)
     phase = operator.phases[phase.elite - 1]
 
-  return `https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/charavatars/${encodeURI(
-    phase.outfit!.avatarId
+  return `${BUNDLED_ARKDATA_BASE}/torappu/dynamicassets/arts/charavatars/${encodeURI(
+    phase.outfit!.avatarId,
   )}.png`
+}
+
+export function getOperatorSplashUrl(portraitBasename: string): string {
+  return `${BUNDLED_ARKDATA_BASE}/chararts/${encodeURI(portraitBasename)}.png`
 }
