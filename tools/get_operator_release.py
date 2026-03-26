@@ -17,6 +17,8 @@ NAME_TO_KEY_OVERRIDE = {
     "阿米娅(医疗)": "amiya-medic",
     # Wiki lists the summon separately; release aligns with Kal'tsit in site data.
     "Mon3tr": "kaltsit",
+    # Not yet in bundled operators-data / character_table snapshot; slug matches EN codename.
+    "贝洛内": "bellone",
 }
 
 
