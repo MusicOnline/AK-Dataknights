@@ -1,4 +1,5 @@
 import json
+import os
 import re
 import unicodedata
 from pathlib import Path
@@ -51,9 +52,17 @@ def _natural_key(char_id: str, appellation: str, overrides: dict[str, str]) -> s
     return _slug_from_appellation(appellation, char_id)
 
 
-def _build_name_to_key_from_game_data(root: Path) -> dict[str, str]:
-    """Map zh-CN display name -> site operator key (same rules as generate-data)."""
-    char_path = (
+def _cn_character_table_paths(root: Path) -> tuple[Path, Path] | None:
+    """Resolve CN character_table.json and char_patch_table.json (unified or legacy Kengxxiao)."""
+    candidates: list[Path] = []
+    env_root = os.environ.get("GAME_DATA_ROOT_PATH")
+    if env_root:
+        base = Path(env_root)
+        candidates.append(base / "cn" / "gamedata" / "excel" / "character_table.json")
+    candidates.append(
+        root / "ArknightsGamedata" / "cn" / "gamedata" / "excel" / "character_table.json"
+    )
+    candidates.append(
         root
         / "ArknightsGameData"
         / "zh_CN"
@@ -61,16 +70,19 @@ def _build_name_to_key_from_game_data(root: Path) -> dict[str, str]:
         / "excel"
         / "character_table.json"
     )
-    patch_path = (
-        root
-        / "ArknightsGameData"
-        / "zh_CN"
-        / "gamedata"
-        / "excel"
-        / "char_patch_table.json"
-    )
-    if not char_path.is_file() or not patch_path.is_file():
+    for char_path in candidates:
+        patch_path = char_path.parent / "char_patch_table.json"
+        if char_path.is_file() and patch_path.is_file():
+            return char_path, patch_path
+    return None
+
+
+def _build_name_to_key_from_game_data(root: Path) -> dict[str, str]:
+    """Map zh-CN display name -> site operator key (same rules as generate-data)."""
+    paths = _cn_character_table_paths(root)
+    if not paths:
         return {}
+    char_path, patch_path = paths
 
     with char_path.open(encoding="utf-8") as f:
         character_table = json.load(f)
