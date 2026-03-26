@@ -6,6 +6,11 @@ function runTerminal(command: string): string {
 }
 
 export default defineNuxtConfig({
+  defaults: {
+    nuxtLink: {
+      prefetchOn: { visibility: true, interaction: true },
+    },
+  },
   app: {
     head: {
       meta: [

@@ -13,8 +13,6 @@ const { t } = i18n
 const localePath = useLocalePath()
 
 const name = computed(() => t(`${operator.key}.name`))
-
-await useOperatorsIndexLocale(i18n)
 </script>
 
 <template>
