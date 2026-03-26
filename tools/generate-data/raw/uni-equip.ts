@@ -1,6 +1,6 @@
 import * as z from "zod"
 
-import { CoerceEnumValueOf } from "../utils"
+import { CoerceEnumValueOf, emptyObjectToArray } from "../utils"
 import { PhaseEnum } from "./common"
 
 export const EquipShiningColorSchema = z.enum([
@@ -45,8 +45,10 @@ export const EquipDictSchema = z.object({
   showLevel: z.number(),
   unlockLevel: z.number(),
   unlockFavors: z.record(z.number()).nullable().optional(),
-  missionList: z.array(z.string()),
-  itemCost: z.record(z.array(ItemCostSchema)).nullable(),
+  missionList: emptyObjectToArray(z.array(z.string())),
+  itemCost: z
+    .record(emptyObjectToArray(z.array(ItemCostSchema)))
+    .nullable(),
   type: EquipDictTypeSchema,
   uniEquipGetTime: z.number(),
   charEquipOrder: z.number(),

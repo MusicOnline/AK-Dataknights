@@ -1,6 +1,6 @@
 import * as z from "zod"
 
-import { BlackboardSchema, UnlockConditionSchema } from "./common"
+import { BlackboardListSchema, UnlockConditionSchema } from "./common"
 
 export const Target = z.enum([
   // If a new function is added to trait (e.g., new Shelter effect),
@@ -24,7 +24,7 @@ export const OverrideTraitDataBundleCandidateSchema = z.object({
   additionalDescription: z.string().nullable(),
   unlockCondition: UnlockConditionSchema,
   requiredPotentialRank: z.number(),
-  blackboard: z.array(BlackboardSchema),
+  blackboard: BlackboardListSchema,
   overrideDescripton: z.string().nullable(),
   prefabKey: z.string().nullable(),
   rangeId: z.string().nullable(),
@@ -53,7 +53,7 @@ export const AddOrOverrideTalentDataBundleCandidateSchema = z.object({
   name: z.string().nullable(),
   description: z.null(),
   rangeId: z.string().nullable(),
-  blackboard: z.array(BlackboardSchema),
+  blackboard: BlackboardListSchema,
 })
 export type AddOrOverrideTalentDataBundleCandidate = z.infer<
   typeof AddOrOverrideTalentDataBundleCandidateSchema
@@ -96,8 +96,8 @@ export type Part = z.infer<typeof PartSchema>
 export const PhaseSchema = z.object({
   equipLevel: z.number(),
   parts: z.array(PartSchema),
-  attributeBlackboard: z.array(BlackboardSchema),
-  tokenAttributeBlackboard: z.record(z.array(BlackboardSchema)),
+  attributeBlackboard: BlackboardListSchema,
+  tokenAttributeBlackboard: z.record(BlackboardListSchema),
 })
 export type Phase = z.infer<typeof PhaseSchema>
 

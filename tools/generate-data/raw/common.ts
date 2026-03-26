@@ -1,6 +1,6 @@
 import * as z from "zod"
 
-import { CoerceEnumValueOf } from "../utils"
+import { CoerceEnumValueOf, emptyObjectToArray } from "../utils"
 
 export enum PhaseNumber {
   PHASE_0 = 0,
@@ -22,3 +22,5 @@ export const BlackboardSchema = z.object({
   valueStr: z.string().nullish(),
 })
 export type Blackboard = z.infer<typeof BlackboardSchema>
+
+export const BlackboardListSchema = emptyObjectToArray(z.array(BlackboardSchema))

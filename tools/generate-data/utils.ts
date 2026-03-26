@@ -1,6 +1,15 @@
 import * as z from "zod"
 import type { GameLocale, OutputLocale, TranslatedLocale } from "./constants"
 
+/** ArknightsAssets gamedata sometimes uses `{}` where older dumps used `[]`. */
+export function emptyObjectToArray<T extends z.ZodTypeAny>(inner: T) {
+  return z.preprocess((val) => {
+    if (val && typeof val === "object" && !Array.isArray(val))
+      return Object.keys(val as object).length === 0 ? [] : val
+    return val
+  }, inner)
+}
+
 export interface Localizable {
   addLocale(locale: GameLocale, ...data: any): void
   addLocaleTL(locale: TranslatedLocale, ...data: any): void
