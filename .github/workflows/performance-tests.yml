@@ -1,8 +1,10 @@
+# Standalone performance run for branches and PRs. Pushes to `main` reuse the
+# GitHub Pages build in deploy-ghpages.yml (navigation-performance job) instead
+# of generating the site twice.
+
 name: Performance tests
 
 on:
-  push:
-    branches: [main]
   pull_request:
   workflow_dispatch:
 

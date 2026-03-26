@@ -1,6 +1,9 @@
 import { defineConfig, devices } from "@playwright/test"
 
 const baseURL = process.env.PERF_BASE_URL ?? "http://127.0.0.1:3000"
+const serveRoot = process.env.PERF_SERVE_ROOT
+/** External URL only: no local webServer (e.g. PERF_BASE_URL=https://staging.example). */
+const skipWebServer = !!process.env.PERF_BASE_URL && !serveRoot
 
 export default defineConfig({
   testDir: "./performance",
@@ -21,12 +24,19 @@ export default defineConfig({
     video: "off",
   },
   projects: [{ name: "chromium", use: { ...devices["Desktop Chrome"] } }],
-  webServer: process.env.PERF_BASE_URL
+  webServer: skipWebServer
     ? undefined
-    : {
-        command: "pnpm exec nuxt preview --port 3000",
-        url: baseURL,
-        reuseExistingServer: !process.env.CI,
-        timeout: 180_000,
-      },
+    : serveRoot
+      ? {
+          command: `npx --yes serve "${serveRoot}" --listen 3000 --no-port-switching`,
+          url: baseURL,
+          reuseExistingServer: !process.env.CI,
+          timeout: 120_000,
+        }
+      : {
+          command: "pnpm exec nuxt preview --port 3000",
+          url: baseURL,
+          reuseExistingServer: !process.env.CI,
+          timeout: 180_000,
+        },
 })

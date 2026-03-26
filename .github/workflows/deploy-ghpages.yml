@@ -87,10 +87,62 @@ jobs:
         env:
           NODE_OPTIONS: --max_old_space_size=8192
           NITRO_PRESET: github_pages
+      - name: Upload static output for performance tests
+        uses: actions/upload-artifact@v4
+        with:
+          name: nuxt-static-output
+          path: .output/public
+          retention-days: 2
+          if-no-files-found: error
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .output/public
+
+  # Performance tests (reuse build output; no second generate)
+  navigation-performance:
+    runs-on: ubuntu-latest
+    needs: build
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: latest
+          run_install: false
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Download static site from build job
+        uses: actions/download-artifact@v4
+        with:
+          name: nuxt-static-output
+          path: .output/public
+      - name: Stage site under GitHub Pages path
+        run: |
+          mkdir -p "staging/${{ github.event.repository.name }}"
+          cp -a .output/public/. "staging/${{ github.event.repository.name }}/"
+      - name: Install Playwright Chromium
+        run: pnpm exec playwright install --with-deps chromium
+      - name: Run navigation performance tests
+        run: pnpm run test:performance
+        env:
+          PERF_BASE_URL: http://127.0.0.1:3000
+          PERF_SERVE_ROOT: ${{ github.workspace }}/staging
+          PERF_BASE_PATH: /${{ github.event.repository.name }}/
+          PERF_MAX_DOCUMENT_LOAD_MS: "120000"
+          PERF_MAX_CLIENT_NAV_MS: "120000"
+      - name: Upload Playwright report
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
 
   # Deployment job
   deploy:

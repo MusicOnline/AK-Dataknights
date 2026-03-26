@@ -6,11 +6,28 @@ import {
   type DocumentNavTimings,
 } from "./navigation-timing"
 
+/** GitHub Pages (and similar) builds use NUXT_APP_BASE_URL; mirror that in tests via PERF_BASE_PATH. */
+function withBase(path: string): string {
+  const raw = (process.env.PERF_BASE_PATH ?? "").replace(/\/$/, "")
+  const p = path.startsWith("/") ? path : `/${path}`
+  return raw ? `${raw}${p}` : p
+}
+
 const paths = {
-  home: "/",
-  operators: "/operators",
-  operatorDetail: "/operators/amiya",
+  home: withBase("/"),
+  operators: withBase("/operators"),
+  operatorDetail: withBase("/operators/amiya"),
 } as const
+
+function normalizePathname(p: string) {
+  const x = p.replace(/\/+$/, "")
+  return x === "" ? "/" : x
+}
+
+async function waitForPath(page: Page, path: string) {
+  const want = normalizePathname(path)
+  await page.waitForURL((url) => normalizePathname(new URL(url).pathname) === want)
+}
 
 async function attachTimings(
   page: Page,
@@ -57,7 +74,7 @@ test.describe("client-side navigation", () => {
 
     const t0 = Date.now()
     await page.getByRole("navigation").getByRole("link", { name: "Operators" }).click()
-    await page.waitForURL(`**${paths.operators}`)
+    await waitForPath(page, paths.operators)
     await expect(
       page.getByRole("heading", { name: "Operators", level: 1 }),
     ).toBeVisible()
@@ -82,7 +99,10 @@ test.describe("client-side navigation", () => {
 
     const t0 = Date.now()
     await firstLink.click()
-    await page.waitForURL(`**${href!.split("?")[0]}`)
+    const targetPath = normalizePathname(
+      new URL(href!, page.url()).pathname,
+    )
+    await waitForPath(page, targetPath)
     await expect(page.locator("main")).toBeVisible()
     const elapsed = Date.now() - t0
 
