@@ -33,12 +33,10 @@ pnpm prepare-nuxt
 Create a `.env` file with the following content or define the environment variables elsewhere:
 
 ```bash
-# Clone https://github.com/Kengxxiao/ArknightsGameData to this path
+# Clone https://github.com/ArknightsAssets/ArknightsGamedata to this path
 # Game data is processed before being used to generate the website
-CN_GAME_DATA_ROOT_PATH=/path/to/ArknightsGameData
-
-# Clone https://github.com/Kengxxiao/ArknightsGameData_YoStar to this path
-YOSTAR_GAME_DATA_ROOT_PATH=/path/to/ArknightsGameData_YoStar
+# (CN / EN / JP / KR live under cn/, en/, jp/, kr/ in that repository)
+GAME_DATA_ROOT_PATH=/path/to/ArknightsGamedata
 
 # Set to true if "pnpm generate" should be prerendered to HTML
 # Set to false to only render HTML using JS when browsed to (no SEO support)
@@ -98,13 +96,12 @@ pnpm preview
 
 ### Continuous Deployment
 
-The [`check-data-update`](./.github/workflows/check-data-update.yml) workflow checks for updates in the master branch of Kengxxiao/ArknightsGameData and Kengxxiao/ArknightsGameData_YoStar. If there is an update, [`.game-data-sha`](./data/.game-data-sha) and [`.game-data-yostar-sha`](./data/.game-data-yostar-sha) is updated in this repository.
+The [`check-data-update`](./.github/workflows/check-data-update.yml) workflow checks for updates in the master branch of [ArknightsAssets/ArknightsGamedata](https://github.com/ArknightsAssets/ArknightsGamedata). If there is an update, [`.game-data-sha`](./data/.game-data-sha) is updated in this repository.
 
 Any pushes to this repository may trigger Cloudflare Pages to build and deploy the website with its automatic deployments feature (without using workers). This is currently disabled due to it being unstable (works sometimes, and segfaults other times). In addition to the above environment variables, `NITRO_PRESET=static` is required. This is the build command:
 
 ```bash
-git clone --depth 1 https://github.com/Kengxxiao/ArknightsGameData ArknightsGameData \
-&& git clone --depth 1 https://github.com/Kengxxiao/ArknightsGameData_YoStar ArknightsGameData_YoStar \
+git clone --depth 1 https://github.com/ArknightsAssets/ArknightsGamedata ArknightsGamedata \
 && pnpm prepare-nuxt \
 && pnpm build
 ```
@@ -121,6 +118,7 @@ Artifacts for both builds are available for download in their respective GitHub 
 
 In no particular order:
 
-- [Kengxxiao](https://github.com/Kengxxiao) ([ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData), [ArknightsGameData_YoStar](https://github.com/Kengxxiao/ArknightsGameData_YoStar))
+- [ArknightsAssets](https://github.com/ArknightsAssets) ([ArknightsGamedata](https://github.com/ArknightsAssets/ArknightsGamedata))
+- [Kengxxiao](https://github.com/Kengxxiao) (legacy [ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData) sources, superseded by ArknightsAssets)
 - [astral4](https://github.com/astral4), [akgcc](https://github.com/akgcc) ([arkdata](https://github.com/akgcc/arkdata))
 - [Aceship](https://github.com/Aceship) ([Arknight-Images](https://github.com/Aceship/Arknight-Images))

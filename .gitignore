@@ -15,5 +15,4 @@ dist
 
 # Not generated data
 !data/.game-data-sha
-!data/.game-data-yostar-sha
 !data/custom
