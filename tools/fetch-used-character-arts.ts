@@ -20,11 +20,11 @@ async function fetchOne(
   remotePath: string,
   destFsPath: string,
   skipExisting: boolean,
-): Promise<void> {
+): Promise<"ok" | "missing" | "skipped"> {
   if (skipExisting) {
     try {
       const st = await fs.stat(destFsPath)
-      if (st.isFile() && st.size > 0) return
+      if (st.isFile() && st.size > 0) return "skipped"
     } catch {
       /* missing */
     }
@@ -32,12 +32,17 @@ async function fetchOne(
 
   const url = `${RAW_BASE}/${remotePath}`
   const res = await fetch(url, { signal: AbortSignal.timeout(90_000) })
+  if (res.status === 404) {
+    console.warn(`[arkdata images] missing upstream (404): ${url}`)
+    return "missing"
+  }
   if (!res.ok) {
     throw new Error(`fetch ${url} -> HTTP ${res.status}`)
   }
   const buf = Buffer.from(await res.arrayBuffer())
   await fs.mkdir(path.dirname(destFsPath), { recursive: true })
   await fs.writeFile(destFsPath, buf)
+  return "ok"
 }
 
 export type FetchUsedCharacterArtsOptions = {
@@ -149,16 +154,20 @@ export async function fetchUsedCharacterArts(
 
   const batches = chunk(jobs, concurrency)
   let done = 0
+  let missing = 0
   for (const batch of batches) {
-    await Promise.all(
+    const results = await Promise.all(
       batch.map((j) => fetchOne(j.remote, j.local, skipExisting)),
     )
+    for (const r of results) {
+      if (r === "missing") missing++
+    }
     done += batch.length
     if (done % 200 === 0 || done === jobs.length) {
       console.log(`[arkdata images] ${done}/${jobs.length}`)
     }
   }
   console.log(
-    `[arkdata images] finished (${jobs.length} files: ${assets.avatars.length} avatars, ${assets.splashes.length} splashes, ${assets.skillIcons.length} skills, ${assets.riicSkillIcons.length} riic, …)`,
+    `[arkdata images] finished (${jobs.length} jobs, ${missing} missing upstream, ${assets.avatars.length} avatars, ${assets.splashes.length} splashes, ${assets.skillIcons.length} skills, ${assets.riicSkillIcons.length} riic, …)`,
   )
 }
