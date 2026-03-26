@@ -8,7 +8,12 @@ function runTerminal(command: string): string {
 export default defineNuxtConfig({
   defaults: {
     nuxtLink: {
-      prefetchOn: { visibility: true, interaction: true },
+      // Visibility prefetch on hundreds of grid links is expensive (observers + work).
+      // Interaction prefetch still warms routes on hover/focus; see plugins/preload-operator-routes.client.ts.
+      prefetchOn: { visibility: false, interaction: true },
+    },
+    useAsyncData: {
+      deep: false,
     },
   },
   app: {
@@ -154,7 +159,7 @@ export default defineNuxtConfig({
     },
   },
   devtools: {
-    enabled: true,
+    enabled: process.env.NODE_ENV !== "production",
   },
   nitro: {
     prerender: {
