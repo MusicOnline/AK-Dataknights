@@ -20,3 +20,4 @@ test-results/
 # Not generated data
 !data/.game-data-sha
 !data/custom
+!data/used-character-arts.json
