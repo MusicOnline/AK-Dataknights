@@ -6,7 +6,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "prepare-nuxt": "nuxt prepare",
-    "get-operator-release": "python tools/get_operator_release.py",
+    "get-operator-release": "python3 tools/get_operator_release.py",
     "test:performance": "playwright test"
   },
   "devDependencies": {
