@@ -5,6 +5,7 @@ node_modules
 .nitro
 .cache
 .output
+public/arkdata
 .env
 .vscode
 
@@ -20,3 +21,4 @@ test-results/
 # Not generated data
 !data/.game-data-sha
 !data/custom
+!data/used-character-arts.json

@@ -4,7 +4,7 @@ import type {
   GeneratedTalentCandidateData,
   GeneratedTalentData,
 } from "~/tools/generate-data/operator/talent"
-import type { TalentState } from "~/utils"
+import { getEliteBadgeUrl, getPotentialBadgeUrl, type TalentState } from "~/utils"
 import { getBestTalentCandidate, getNextTalentCandidate } from "~/utils/talents"
 
 const { operator, elite, level, potential } = defineProps<{
@@ -126,7 +126,7 @@ await useOperatorLocale(i18n, operator.key)
           "
         >
           <img
-            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/arts/elite_${elite}.png`"
+            :src="getEliteBadgeUrl(elite)"
             :class="{
               'opacity-90':
                 talentState.elite !== elite || talentState.level !== level,
@@ -162,7 +162,7 @@ await useOperatorLocale(i18n, operator.key)
         >
           <img
             :class="{ 'opacity-90': talentState.potential !== potential }"
-            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/arts/potential_${potential-1}.png`"
+            :src="getPotentialBadgeUrl(potential - 1)"
           />
         </button>
       </div>

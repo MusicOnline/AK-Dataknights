@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
+import { getEliteBadgeUrl } from "~/utils"
 import type { GeneratedElitePhaseData } from "~/tools/generate-data/operator/elite"
 
 const { t } = useI18n()
@@ -95,7 +96,7 @@ function changeElite(eliteChoice: number) {
             :class="{
               'brightness-90': elite !== eliteChoice,
             }"
-            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/arts/elite_${eliteChoice}.png`"
+            :src="getEliteBadgeUrl(eliteChoice)"
           />
         </button>
       </li>
