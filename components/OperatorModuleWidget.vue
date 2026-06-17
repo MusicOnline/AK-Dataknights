@@ -2,7 +2,14 @@
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { GeneratedModuleData } from "~/tools/generate-data/operator/module"
 import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait"
-import type { ModuleState, OperatorState } from "~/utils"
+import {
+  getModuleShiningBackgroundUrl,
+  getModuleStoryImageUrl,
+  getModuleTypeIconUrl,
+  getPotentialBadgeUrl,
+  type ModuleState,
+  type OperatorState,
+} from "~/utils"
 import { getCurrentTraitCandidate } from "~/utils/traits"
 
 const { operator, module, operatorState, potential, moduleId } = defineProps<{
@@ -112,13 +119,13 @@ await useOperatorLocale(i18n, operator.key)
           class="h-12 w-12 rounded-theme bg-gray-900 bg-contain bg-center bg-no-repeat p-1"
           :style="{
             backgroundImage: module.stages
-              ? `url('https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/ui/uniequipcolorshining/${module.shiningColor}_shining.png')`
+              ? `url('${getModuleShiningBackgroundUrl(module.shiningColor)}')`
               : undefined,
           }"
         >
           <img
             class="h-full w-full object-contain"
-            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/ui/uniequiptype/${module.typeIcon.toLowerCase()}.png`"
+            :src="getModuleTypeIconUrl(module.typeIcon)"
           />
         </div>
         <div class="flex flex-col">
@@ -146,7 +153,7 @@ await useOperatorLocale(i18n, operator.key)
         >
           <img
             :class="{ 'opacity-90': moduleState.potential !== potential }"
-            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/arts/potential_${potential-1}.png`"
+            :src="getPotentialBadgeUrl(potential - 1)"
           />
         </button>
       </div>
@@ -318,9 +325,7 @@ await useOperatorLocale(i18n, operator.key)
         <div>
           <img
             class="mx-auto w-72 md:float-right md:mx-4 lg:w-80"
-            :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/ui/uniequipimg/${
-              module.type === 'INITIAL' ? 'default' : module.icon
-            }.png`"
+            :src="getModuleStoryImageUrl(module.type, module.icon)"
           />
           <span
             v-html="

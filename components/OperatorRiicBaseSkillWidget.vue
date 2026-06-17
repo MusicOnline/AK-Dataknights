@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { GeneratedRiicBaseSkillData } from "~/tools/generate-data/operator/base-skill"
+import { getEliteBadgeUrl, getRiicBaseSkillIconUrl } from "~/utils"
 
 const { operator, riicBaseSkillGroup } = defineProps<{
   operator: GeneratedOperatorData
@@ -33,9 +34,7 @@ await useOperatorLocale(i18n, operator.key)
         <!-- Name, icon -->
         <img
           class="h-8 w-8"
-          :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/building/skills/${encodeURI(
-            skill.skillIcon,
-          )}.png`"
+          :src="getRiicBaseSkillIconUrl(skill.skillIcon)"
         />
         <div class="font-bold">
           {{ t(`${getSkillTranslationPrefix(skill)}.name`) }}
@@ -50,7 +49,7 @@ await useOperatorLocale(i18n, operator.key)
           >
             <img
               class="object-contain"
-              :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/arts/elite_${skill.unlockConditions.elite}.png`"
+              :src="getEliteBadgeUrl(skill.unlockConditions.elite)"
             />
           </div>
           <div v-if="skill.unlockConditions.level !== 1">

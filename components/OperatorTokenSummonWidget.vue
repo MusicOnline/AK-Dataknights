@@ -7,7 +7,7 @@ import type {
   GeneratedTalentData,
 } from "~/tools/generate-data/operator/talent"
 import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait"
-import type { OperatorState } from "~/utils"
+import { getAvatarUrl, type OperatorState } from "~/utils"
 import { getBestTalentCandidate, getNextTalentCandidate } from "~/utils/talents"
 
 const { operator, tokenSummon, operatorState } = defineProps<{
