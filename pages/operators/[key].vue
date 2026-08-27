@@ -4,7 +4,7 @@ import type { OperatorLevelSelectWidget } from "#components"
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { GeneratedModuleData } from "~/tools/generate-data/operator/module"
 import type { GeneratedTraitCandidateData } from "~/tools/generate-data/operator/trait"
-import type { OperatorState, TalentState } from "~/utils"
+import { getAvatarUrl, type OperatorState, type TalentState } from "~/utils"
 import type { GeneratedElitePhaseData } from "~~/tools/generate-data/operator/elite"
 
 const {
@@ -23,6 +23,14 @@ if (!data.value)
   throw createError({ statusCode: 404, statusMessage: "Page Not Found" })
 
 const operator = <Ref<GeneratedOperatorData>>data
+
+const runtimeConfig = useRuntimeConfig()
+const operatorOgImageUrl = computed(() => {
+  const path = getAvatarUrl(operator.value, { elite: 0 })
+  const base = runtimeConfig.public.fullBaseUrl
+  if (typeof base !== "string" || !base) return path
+  return `${base.replace(/\/$/, "")}${path}`
+})
 
 const finalTraitCandidate = computed<GeneratedTraitCandidateData>(() => {
   let finalCandidate: GeneratedTraitCandidateData | null = null
@@ -73,7 +81,7 @@ useHead({
     {
       key: "og:image",
       property: "og:image",
-      content: getAvatarUrl(operator.value, { elite: 0 }),
+      content: () => operatorOgImageUrl.value,
     },
     {
       key: "og:image:type",
