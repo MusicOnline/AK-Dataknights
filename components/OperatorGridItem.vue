@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { GeneratedOperatorIndexData } from "~/tools/generate-data/operator"
+import { getAvatarUrl } from "~/utils"
 
 const OPERATOR_NAME_LENGTH_SIZE_FIRST_CUTOFF = 10
 const OPERATOR_NAME_LENGTH_SIZE_SECOND_CUTOFF = 18
@@ -24,9 +25,7 @@ const name = computed(() => t(`${operator.key}.name`))
     >
       <UAvatar
         loading="lazy"
-        :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/charavatars/${encodeURI(
-          operator.phases[0].outfit!.avatarId
-        )}.png`"
+        :src="getAvatarUrl(operator, { elite: 0 })"
         :alt="name"
         :ui="{
           rounded: '',

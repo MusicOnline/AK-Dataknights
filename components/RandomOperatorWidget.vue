@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { GeneratedOperatorIndexData } from "~/tools/generate-data/operator"
+import { getOperatorSplashUrl } from "~/utils"
 
 const { operator } = defineProps<{
   operator: GeneratedOperatorIndexData
@@ -14,9 +15,7 @@ function getPortraitUrl(elite: number): string | null {
       operator.phases[0].outfit?.portraitId
   )
     return null
-  return `https://raw.githubusercontent.com/akgcc/arkdata/main/assets/chararts/${encodeURI(
-    operator.phases[elite].outfit!.portraitId!
-  )}.png`
+  return getOperatorSplashUrl(operator.phases[elite].outfit!.portraitId!)
 }
 </script>
 

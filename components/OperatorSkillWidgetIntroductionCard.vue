@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { GeneratedOperatorData } from "~/tools/generate-data/operator"
 import type { GeneratedSkillData } from "~/tools/generate-data/operator/skill"
+import { getSkillIconUrl } from "~/utils"
 
 const {
   operator,
@@ -29,9 +30,7 @@ await useOperatorLocale(i18n, ownerOperatorKey ?? operator.key)
       class="rounded-theme"
       v-if="skill.levels[0].hasDescription"
       :class="{ 'h-14 w-14': small, 'h-16 w-16': !small }"
-      :src="`https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/skills/skill_icon_${
-        skill.iconId || skill.id
-      }.png`"
+      :src="getSkillIconUrl(skill.id, skill.iconId)"
     />
     <div class="flex flex-col gap-1">
       <div class="font-bold" :class="{ 'text-lg': small, 'text-2xl': !small }">
